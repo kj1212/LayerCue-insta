@@ -1,0 +1,11 @@
+What if you could just ask?
+
+Connect your AI app to LayerCue over MCP — Claude, Cursor, LM Studio — and say "make a presentation that explains LayerCue's features." It builds the slides straight into LayerCue, checks what LayerCue actually drew, and lines them up in a cue sheet.
+
+Libraries for your slides. Cue sheets for the night. Click once, and it's live on the big screen.
+
+Free while it's in beta, on Mac and Windows. layercue.com — link in bio
+
+The narration and music in this video were made with AI running on a Mac.
+
+#LayerCue #MCP #AIapps #LiveProduction #EventProduction #AVTech #ProjectionSoftware #ChurchMedia

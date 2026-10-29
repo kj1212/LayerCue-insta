@@ -1,0 +1,152 @@
+<!doctype html>
+<!--
+  쇼츠·릴스용 모션 — 1080×1920. 시간을 직접 받아 그리는 판이라(render(t)) 한 프레임씩 찍어도 어긋나지 않는다.
+    motion.html?part=open   0–8.6 s  질문 → 입력창에 타이핑 → 만드는 중 → 색 층 와이프
+    motion.html?part=end    0–4.4 s  어긋난 LAYERCUE 가 맞물림 → ASK. CUE. LIVE. → 받는 곳
+  브라우저에서 그냥 열면 저절로 돈다(미리보기). 찍을 때는 render.mjs 가 window.__manual 을 켜고 render(t) 를 부른다.
+  색·글꼴은 카드(tools/make-cards.py)와 같다.
+-->
+<html><head><meta charset="utf-8"><title>LayerCue motion</title>
+<style>
+@font-face { font-family: Archivo; src: url(fonts/Archivo.ttf); font-weight: 100 900; font-stretch: 62% 125%; }
+@font-face { font-family: DMMono; src: url(fonts/DMMono-Medium.ttf); }
+:root { --void:#0b0b0d; --cream:#f2eee4; --mute:#9c988e; --faint:#67645d; --hot:#ff4a1a;
+        --amber:#ff7a00; --violet:#7a2bff; --green:#00b96c; --panel:#16161a; --line:#2e2e32; }
+html, body { margin:0; background:var(--void); }
+#stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:var(--void);
+         font-family:Archivo, sans-serif; color:var(--cream); }
+.grid { position:absolute; inset:0; background-image:linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+        background-size:135px 100%; }
+.label { position:absolute; left:0; right:0; text-align:center; font-family:DMMono, monospace; font-size:30px;
+         letter-spacing:.22em; color:var(--faint); }
+.head { position:absolute; left:0; right:0; text-align:center; }
+.row { position:relative; height:200px; overflow:hidden; }
+.word { position:absolute; left:0; right:0; text-align:center; white-space:nowrap; font-weight:900; font-stretch:84%;
+        font-size:172px; line-height:200px; letter-spacing:-.035em; }
+.ghost { mix-blend-mode:screen; }
+#panel { position:absolute; left:70px; right:70px; border-radius:36px; background:var(--panel);
+         border:2px solid var(--line); padding:44px 48px 40px; box-sizing:border-box; }
+#via { font-family:DMMono, monospace; font-size:26px; letter-spacing:.14em; color:var(--faint); margin-bottom:26px; }
+#via b { color:var(--mute); font-weight:400; }
+#field { font-size:54px; line-height:72px; font-weight:500; min-height:216px; color:var(--cream); }
+#caret { display:inline-block; width:4px; height:58px; background:var(--hot); vertical-align:-8px; margin-left:4px; }
+#bar { display:flex; justify-content:flex-end; margin-top:26px; }
+#send { width:96px; height:96px; border-radius:50%; background:var(--hot); display:flex; align-items:center; justify-content:center; }
+#send svg { width:44px; height:44px; }
+#steps { position:absolute; left:110px; right:110px; }
+.step { display:flex; align-items:center; gap:26px; font-size:40px; font-weight:600; height:84px; color:var(--mute); }
+.dot { width:30px; height:30px; border-radius:50%; border:3px solid var(--faint); box-sizing:border-box; flex:none; position:relative; }
+.dot.done { background:var(--hot); border-color:var(--hot); }
+.wipe { position:absolute; left:0; right:0; height:1920px; }
+.tag { position:absolute; left:0; right:0; text-align:center; font-weight:800; font-stretch:96%; letter-spacing:.06em; }
+.foot { position:absolute; left:80px; right:80px; bottom:110px; display:flex; justify-content:space-between;
+        border-top:1px solid #2e2e32; padding-top:30px; font-weight:700; font-size:28px; color:var(--faint); letter-spacing:.04em; }
+.foot i { display:inline-block; width:18px; height:18px; background:var(--hot); margin-right:14px; vertical-align:-1px; }
+</style></head>
+<body><div id="stage"></div>
+<script>
+const P = new URLSearchParams(location.search).get('part') || 'open';
+const DUR = { open: 8.6, end: 4.4 }[P];
+const S = document.getElementById('stage');
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lin = (t, a, b) => clamp((t - a) / (b - a));
+const outExpo = x => x >= 1 ? 1 : 1 - Math.pow(2, -10 * x);
+const outBack = x => { const c = 1.6; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const inCubic = x => x * x * x;   // 가속 — 천천히 출발해 점점 빨라지며 붙는다
+const inOut = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+// ★ 홈페이지(Hero.astro .g1–.g3)와 같은 어긋남 — 낱말 폭의 −2.2 · 1.6 · 2.6 %, 글자 높이의 −13 · −6 · 9 %.
+//   글자 한 자의 1/3 을 넘지 않는다. 멀리서 날아오면 더 빨라 보였다(2026-10-29). 여기 값은 낱말 폭 ~770 · 줄 높이 200 px 기준.
+const GH = [['--amber', -17, -26], ['--violet', 12, -12], ['--green', 20, 18]];
+
+function word(text, color, y, t0, t, ghosts = true) {
+  // 한 줄: 아래에서 올라오고(가림 상자 안), 색 층 셋이 크게 어긋났다가 모여 붙고, 잠깐 떨린 뒤 하나로 겹친다
+  const k = outExpo(lin(t, t0, t0 + .55));
+  // ★ 펼쳐진 시간은 짧게(0.85 s), 붙은 시간은 길게 — 가속(inCubic)으로 모여 「탁」 하고 한 벌로 겹친다
+  //   0.42 s 는 사람이 보기에 너무 빨랐다(2026-10-29)
+  const off = 1 - inCubic(lin(t, t0, t0 + .85));
+  const rise = (1 - k) * 210;
+  let html = `<div class="row" style="position:absolute;left:0;right:0;top:${y}px">`;
+  if (ghosts) for (const [c, dx, dy] of GH)
+    html += `<div class="word ghost" style="color:var(${c});transform:translate(${dx * off}px,${rise + dy * off}px);opacity:${.9 * k}">${text}</div>`;
+  html += `<div class="word" style="color:${color};transform:translateY(${rise}px)">${text}</div></div>`;
+  return html;
+}
+
+const PROMPT = "Make a presentation that explains LayerCue’s features.";
+const STEPS = ["Designing five presentations", "Checking what LayerCue drew", "Adding them to a cue sheet"];
+const SEND = '<svg viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+
+function open(t) {
+  let h = `<div class="grid" style="opacity:${lin(t, 0, .5)}"></div>`;
+  // ── 질문 ── 2.7 s 부터 위로 비켜 작아진다
+  const up = inOut(lin(t, 2.7, 3.3));
+  const qa = 1 - lin(t, 2.9, 3.3) * .65;
+  h += `<div class="label" style="top:300px;opacity:${lin(t, .15, .5) * (1 - lin(t, 2.6, 2.9))}">[ LAYERCUE ]</div>`;
+  h += `<div style="position:absolute;left:0;right:0;top:0;transform:translateY(${-up * 260}px) scale(${1 - up * .38});transform-origin:50% 0;opacity:${qa}">`;
+  h += word('WHAT IF', 'var(--cream)', 640, .25, t);
+  h += word('YOU COULD', 'var(--cream)', 840, .42, t);
+  h += word('JUST ASK?', 'var(--hot)', 1040, .6, t);
+  h += `</div>`;
+  // ── 입력창 ── 아래에서 올라와 한 글자씩 친다
+  const pin = outExpo(lin(t, 2.85, 3.5));
+  const typed = Math.floor(clamp((t - 3.35) * 19, 0, PROMPT.length));
+  const press = lin(t, 6.15, 6.25) - lin(t, 6.3, 6.45);
+  const sent = t >= 6.3;
+  const caretOn = !sent && (t < 3.35 || typed >= PROMPT.length ? Math.floor(t * 2.2) % 2 === 0 : true);
+  const panelY = 760 - (sent ? outExpo(lin(t, 6.35, 6.9)) * 230 : 0);
+  h += `<div id="panel" style="top:${panelY + (1 - pin) * 1100}px;opacity:${pin}">
+          <div id="via">ASK YOUR <b>AI APP</b> · CONNECTED OVER MCP</div>
+          <div id="field">${PROMPT.slice(0, typed)}<span id="caret" style="opacity:${caretOn ? 1 : 0}"></span></div>
+          <div id="bar"><div id="send" style="transform:scale(${1 - press * .14});opacity:${typed >= PROMPT.length ? 1 : .35}">${SEND}</div></div>
+        </div>`;
+  // ── 만드는 중 ── 세 줄이 차례로 켜지고 점이 찬다
+  let st = `<div id="steps" style="top:${1210}px">`;
+  STEPS.forEach((s, i) => {
+    const a = outExpo(lin(t, 6.55 + i * .32, 6.9 + i * .32));
+    const done = t > 6.95 + i * .32;
+    st += `<div class="step" style="opacity:${a};transform:translateX(${(1 - a) * 60}px);color:${done ? 'var(--cream)' : 'var(--mute)'}">
+             <span class="dot${done ? ' done' : ''}"></span>${s}${done ? '' : '…'}</div>`;
+  });
+  h += st + `</div>`;
+  // ── 색 층 와이프 ── 호박·보라·초록이 차례로 아래에서 위로 덮고, 마지막에 검정
+  const W = [['--amber', 8.0], ['--violet', 8.1], ['--green', 8.2], ['--void', 8.3]];
+  for (const [c, a] of W) {
+    const k = inOut(lin(t, a, a + .3));
+    h += `<div class="wipe" style="background:var(${c});top:${(1 - k) * 1920}px"></div>`;
+  }
+  S.innerHTML = h;
+}
+
+function end(t) {
+  let h = `<div class="grid"></div>`;
+  // LAYERCUE — 크게 어긋난 세 층이 맞물린다 (홈페이지 첫 화면의 그 움직임)
+  const sp = (1 - inCubic(lin(t, .05, .9))) * 1.15;   // 가속으로 모여 0.9 s 에 한 벌로 — 낱말이 조금 넓어 1.15 배
+  const a = lin(t, 0, .3);
+  h += `<div class="head" style="top:620px">`;
+  for (const [c, dx, dy] of GH)
+    h += `<div class="word ghost" style="position:absolute;left:0;right:0;font-size:150px;font-stretch:112%;color:var(${c});opacity:${.95 * a};transform:translate(${dx * sp}px,${dy * sp}px)">LAYERCUE</div>`;
+  h += `<div class="word" style="position:absolute;left:0;right:0;font-size:150px;font-stretch:112%;opacity:${lin(t, .82, .95)}">LAYERCUE</div></div>`;
+  // ASK. CUE. LIVE.
+  ['ASK.', 'CUE.', 'LIVE.'].forEach((w, i) => {
+    const k = outBack(lin(t, 1.0 + i * .22, 1.4 + i * .22));
+    h += `<div class="tag" style="top:${980}px;font-size:84px;color:${i === 2 ? 'var(--hot)' : 'var(--cream)'};
+            transform:translateX(${(i - 1) * 290}px) scale(${k});opacity:${clamp(k)}">${w}</div>`;
+  });
+  const b = outExpo(lin(t, 1.9, 2.4));
+  h += `<div class="tag" style="top:1200px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">FREE WHILE IT’S IN BETA</div>`;
+  h += `<div class="tag" style="top:1262px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">MAC & WINDOWS</div>`;
+  const c = outExpo(lin(t, 2.2, 2.7));
+  h += `<div class="tag" style="top:1440px;font-size:96px;font-weight:900;font-stretch:100%;letter-spacing:-.02em;opacity:${c};transform:scale(${.94 + .06 * c})">LAYERCUE.COM</div>`;
+  h += `<div class="foot" style="opacity:${b}"><span>MADE BY CASTPAD</span><span><i></i>FREE BETA · 0.9.12</span></div>`;
+  S.innerHTML = h;
+}
+
+window.DUR = DUR;
+window.render = t => (P === 'end' ? end : open)(t);
+document.fonts.ready.then(() => {
+  window.__ready = true;
+  if (window.__manual) return;
+  const t0 = performance.now();
+  (function loop() { render(((performance.now() - t0) / 1000) % (DUR + .8)); requestAnimationFrame(loop); })();
+});
+</script></body></html>

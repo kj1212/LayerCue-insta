@@ -1,0 +1,8 @@
+{
+ "id": "layercue_short_bgm_instr",
+ "style": "instrumental only, no vocals, no singing, no choir, modern electronic product promo, tight four-on-the-floor kick, crisp claps, punchy synth bass, bright plucked arpeggio synth, airy pads, confident and uplifting, clean mix, 120 BPM",
+ "lyrics": "[Intro]\n\n[Verse]\n\n[Chorus]\n\n[Outro]",
+ "cot": "melody",
+ "seed": 4242,
+ "abc_path": "bgm-instrumental.abc"
+}

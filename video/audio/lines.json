@@ -1,0 +1,47 @@
+[
+ {
+  "file": "01.wav",
+  "line": "What if you could just ask?",
+  "seconds": 1.33
+ },
+ {
+  "file": "02.wav",
+  "line": "Make a presentation that explains LayerCue.",
+  "seconds": 2.6
+ },
+ {
+  "file": "03.wav",
+  "line": "Claude builds it. Straight into LayerCue.",
+  "seconds": 2.44
+ },
+ {
+  "file": "04.wav",
+  "line": "Libraries for your slides.",
+  "seconds": 1.52
+ },
+ {
+  "file": "05.wav",
+  "line": "Cue sheets for the night.",
+  "seconds": 1.26
+ },
+ {
+  "file": "06.wav",
+  "line": "Click once.",
+  "seconds": 0.8
+ },
+ {
+  "file": "07.wav",
+  "line": "It's live.",
+  "seconds": 0.77
+ },
+ {
+  "file": "08.wav",
+  "line": "LayerCue.",
+  "seconds": 0.81
+ },
+ {
+  "file": "09.wav",
+  "line": "Free while it's in beta, on Mac and Windows.",
+  "seconds": 2.88
+ }
+]
