@@ -215,7 +215,10 @@ def post_facebook(env, p):
             params[f"attached_media[{i}]"] = json.dumps({"media_fbid": ph["id"]})
         post_id = api.call("POST", f"{page_id}/feed", params)["id"]
     info = api.call("GET", post_id, {"fields": "permalink_url,created_time"})
-    return {"post_id": post_id, "permalink": info.get("permalink_url"),
+    link = info.get("permalink_url") or ""
+    if link.startswith("/"):            # 동영상(릴스)은 「/reel/…」처럼 앞부분 없이 온다
+        link = "https://www.facebook.com" + link
+    return {"post_id": post_id, "permalink": link,
             "timestamp": info.get("created_time"), "kind": p["kind"]}
 
 
