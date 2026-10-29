@@ -12,7 +12,9 @@
   python3 publish.py refresh                # 단기 토큰을 장기 토큰(60일)으로 바꿔 .env 에 다시 씀
 
 게시물 폴더:
-  post.json   {"media": ["1.jpg", "2.jpg"], "share_to_feed": true}
+  post.json   {"media": ["1.jpg", "2.jpg"], "share_to_feed": true, "cover": "cover.jpg"}
+              cover 는 릴스 표지(인스타). 없으면 thumb_offset(밀리초, 기본 2500)의 장면이 표지가 된다 —
+              첫 프레임은 검은 화면이기 쉽다(2026-10-30 첫 릴스가 그랬다).
   caption.txt 캡션(해시태그 포함)
   media 가 http 로 시작하면 그대로, 아니면 MEDIA_BASE_URL + 이 저장소 기준 경로로 씀.
   .jpg 1장 = 사진, 여러 장 = 캐러셀, .mp4 1개 = 릴스.
@@ -153,8 +155,10 @@ def plan_post(env, post_dir):
         kind = "CAROUSEL"
     else:
         sys.exit("캐러셀은 2~10장입니다.")
+    cover = media_url(env, post_dir, meta["cover"]) if meta.get("cover") else None
     return {"kind": kind, "caption": caption, "urls": urls, "exts": exts,
-            "share_to_feed": meta.get("share_to_feed", True)}
+            "share_to_feed": meta.get("share_to_feed", True),
+            "cover": cover, "thumb_offset": int(meta.get("thumb_offset", 2500))}
 
 
 def wait_ready(api, container_id):
@@ -183,6 +187,8 @@ def post(env, post_dir, dry_run):
         print(f"[dry-run] 종류: {p['kind']}")
         for u in p["urls"]:
             print(f"[dry-run] 미디어: {u}")
+        if p["kind"] == "REELS":
+            print(f"[dry-run] 표지: {p['cover'] or str(p['thumb_offset']) + ' ms 장면'}")
         print(f"[dry-run] 캡션 ({len(p['caption'])}자):\n{p['caption']}")
         return
 
@@ -229,9 +235,13 @@ def post_instagram(env, p):
     if p["kind"] == "IMAGE":
         c = api.call("POST", f"{uid}/media", {"image_url": p["urls"][0], "caption": p["caption"]})
     elif p["kind"] == "REELS":
-        c = api.call("POST", f"{uid}/media", {
-            "media_type": "REELS", "video_url": p["urls"][0], "caption": p["caption"],
-            "share_to_feed": str(p["share_to_feed"]).lower()})
+        params = {"media_type": "REELS", "video_url": p["urls"][0], "caption": p["caption"],
+                  "share_to_feed": str(p["share_to_feed"]).lower()}
+        if p["cover"]:
+            params["cover_url"] = p["cover"]
+        else:
+            params["thumb_offset"] = str(p["thumb_offset"])
+        c = api.call("POST", f"{uid}/media", params)
     else:
         children = []
         for url, ext in zip(p["urls"], p["exts"]):
