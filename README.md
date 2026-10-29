@@ -10,7 +10,7 @@
    - 본인 계정만 쓰므로 앱 검수(App Review)는 필요 없다. 앱은 개발 모드로 둔다.
 4. **`.env` 채우기**: `.env.example` 을 `.env` 로 복사하고 `IG_ACCESS_TOKEN` 에 토큰을 붙여 넣는다. 토큰은 직접 넣는다.
 5. **확인**: `python3 publish.py whoami` 를 실행하면 계정 정보가 나오고 `IG_USER_ID` 가 채워진다.
-6. **사진 공개 주소**: 인스타 API 는 파일을 직접 받지 않고 공개 URL 에서 가져간다. 이 저장소를 GitHub Pages 로 공개하는 식으로 `MEDIA_BASE_URL` 을 정한다.
+6. **사진 공개 주소**: 인스타 API 는 파일을 직접 받지 않고 공개 URL 에서 가져간다. 이 저장소는 GitHub Pages(<https://kj1212.github.io/LayerCue-insta>)로 공개돼 있고, `.env.example` 의 `MEDIA_BASE_URL` 이 그 주소다. 게시물 폴더는 발행 전에 커밋·푸시해서 Pages 에 올라가 있어야 한다.
 
 ## 게시물 올리기
 
