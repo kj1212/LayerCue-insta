@@ -1,6 +1,7 @@
 // motion.html 을 한 프레임씩 찍어 PNG 묶음으로 — AE 가 이미지 시퀀스로 불러간다.
 //   node render.mjs open [fps]   → frames/open/00000.png …
 //   node render.mjs end  [fps]   → frames/end/00000.png …
+//   node render.mjs end 30 'dur=4.6&tags=STACK.,CUE.,LIVE.' end-intro   → frames/end-intro/ (쿼리 · 폴더 이름)
 // 이 맥의 Chrome 을 그대로 쓴다(puppeteer-core). 화면 녹화가 아니라 시간을 넘기며 찍으므로 프레임이 튀지 않는다.
 import puppeteer from 'puppeteer-core';
 import { mkdirSync, rmSync } from 'node:fs';
@@ -10,7 +11,8 @@ import path from 'node:path';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const part = process.argv[2] || 'open';
 const fps = Number(process.argv[3] || 30);
-const out = path.join(here, 'frames', part);
+const extra = process.argv[4] ? '&' + process.argv[4] : '';
+const out = path.join(here, 'frames', process.argv[5] || part);
 rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });
 
@@ -21,7 +23,7 @@ const browser = await puppeteer.launch({
 const page = await browser.newPage();
 await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
 await page.evaluateOnNewDocument(() => { window.__manual = true; });
-await page.goto(pathToFileURL(path.join(here, 'motion.html')).href + `?part=${part}`);
+await page.goto(pathToFileURL(path.join(here, 'motion.html')).href + `?part=${part}${extra}`);
 await page.waitForFunction('window.__ready === true');
 const dur = await page.evaluate('window.DUR');
 const n = Math.round(dur * fps);

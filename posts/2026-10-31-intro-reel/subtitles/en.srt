@@ -1,0 +1,39 @@
+1
+00:00:00,500 --> 00:00:02,516
+Seven layers. Every screen.
+
+2
+00:00:02,900 --> 00:00:04,681
+A background that loops,
+
+3
+00:00:04,750 --> 00:00:06,624
+your slides on top,
+
+4
+00:00:06,674 --> 00:00:09,010
+a logo and a name over it all.
+
+5
+00:00:10,300 --> 00:00:11,911
+Each one is its own layer.
+
+6
+00:00:13,600 --> 00:00:15,150
+Send it to every screen,
+
+7
+00:00:15,200 --> 00:00:17,169
+each with only the layers it needs.
+
+8
+00:00:17,800 --> 00:00:20,020
+Change one. The rest don't move.
+
+9
+00:00:20,900 --> 00:00:22,388
+This is LayerCue.
+
+10
+00:00:22,550 --> 00:00:25,200
+It's free while it's in beta, on Mac and Windows.

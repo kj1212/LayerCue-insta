@@ -37,30 +37,32 @@ def cmds(*c):
     time.sleep(1.2)          # 전환(크로스페이드)이 끝난 뒤에 찍는다
 
 
-main, stage = windows()
-print("windows", main, stage)
+# ★ 다른 촬영 스크립트가 windows()·grab() 만 빌려 쓴다 — 불러오기만 해도 이 차례가 돌면 안 된다(2026-10-30 한 번 그랬다)
+if __name__ == "__main__":
+    main, stage = windows()
+    print("windows", main, stage)
 
-# 1) 처음 모습 — 라이브러리의 「Start here」, 아무것도 송출 안 함
-cmds({"op": "clear", "layer": "all"})
-grab(main, "main-01-library")
+    # 1) 처음 모습 — 라이브러리의 「Start here」, 아무것도 송출 안 함
+    cmds({"op": "clear", "layer": "all"})
+    grab(main, "main-01-library")
 
-# 2) 큐시트 「Tour」를 연 모습
-cmds({"op": "useCue", "name": "Tour"}, {"op": "usePt", "name": "Start here"}, {"op": "select", "n": 1})
-grab(main, "main-02-cuesheet")
+    # 2) 큐시트 「Tour」를 연 모습
+    cmds({"op": "useCue", "name": "Tour"}, {"op": "usePt", "name": "Start here"}, {"op": "select", "n": 1})
+    grab(main, "main-02-cuesheet")
 
-# 3) 첫 장을 송출 — 앱 창(LIVE 표시)과 4K 무대
-cmds({"op": "present", "n": 1})
-grab(main, "main-03-live")
-grab(stage, "stage-start-here-1")
+    # 3) 첫 장을 송출 — 앱 창(LIVE 표시)과 4K 무대
+    cmds({"op": "present", "n": 1})
+    grab(main, "main-03-live")
+    grab(stage, "stage-start-here-1")
 
-# 4) READ ME 의 장들을 무대에서 차례로 — 몽타주 재료
-decks = json.loads(open(OUT.parent / "sandbox" / "decks.json").read())
-for name, n in decks:
-    for i in range(1, n + 1):
-        cmds({"op": "usePt", "name": name}, {"op": "present", "n": i})
-        grab(stage, f"stage-{name.lower().replace(' ', '-').replace('&', 'and')}-{i}")
-    print("shot", name, n)
+    # 4) READ ME 의 장들을 무대에서 차례로 — 몽타주 재료
+    decks = json.loads(open(OUT.parent / "sandbox" / "decks.json").read())
+    for name, n in decks:
+        for i in range(1, n + 1):
+            cmds({"op": "usePt", "name": name}, {"op": "present", "n": i})
+            grab(stage, f"stage-{name.lower().replace(' ', '-').replace('&', 'and')}-{i}")
+        print("shot", name, n)
 
-# 끝에 다시 첫 장으로 돌려 둔다
-cmds({"op": "usePt", "name": "Start here"}, {"op": "present", "n": 1})
-print("done")
+    # 끝에 다시 첫 장으로 돌려 둔다
+    cmds({"op": "usePt", "name": "Start here"}, {"op": "present", "n": 1})
+    print("done")

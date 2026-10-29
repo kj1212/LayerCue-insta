@@ -45,8 +45,11 @@ html, body { margin:0; background:var(--void); }
 </style></head>
 <body><div id="stage"></div>
 <script>
-const P = new URLSearchParams(location.search).get('part') || 'open';
-const DUR = { open: 8.6, end: 4.4 }[P];
+const Q = new URLSearchParams(location.search);
+const P = Q.get('part') || 'open';
+// ?dur= 로 끝 장면 길이를, ?tags=STACK.,CUE.,LIVE. 로 끝의 세 낱말을 바꾼다 — 쇼츠마다 다르다
+const DUR = Number(Q.get('dur')) || { open: 8.6, end: 4.4, hook: 2.6 }[P];
+const TAGS = (Q.get('tags') || 'ASK.,CUE.,LIVE.').split(',');
 const S = document.getElementById('stage');
 const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
 const lin = (t, a, b) => clamp((t - a) / (b - a));
@@ -58,7 +61,7 @@ const inOut = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
 //   글자 한 자의 1/3 을 넘지 않는다. 멀리서 날아오면 더 빨라 보였다(2026-10-29). 여기 값은 낱말 폭 ~770 · 줄 높이 200 px 기준.
 const GH = [['--amber', -17, -26], ['--violet', 12, -12], ['--green', 20, 18]];
 
-function word(text, color, y, t0, t, ghosts = true) {
+function word(text, color, y, t0, t, ghosts = true, size = 172) {
   // 한 줄: 아래에서 올라오고(가림 상자 안), 색 층 셋이 크게 어긋났다가 모여 붙고, 잠깐 떨린 뒤 하나로 겹친다
   const k = outExpo(lin(t, t0, t0 + .55));
   // ★ 펼쳐진 시간은 짧게(0.85 s), 붙은 시간은 길게 — 가속(inCubic)으로 모여 「탁」 하고 한 벌로 겹친다
@@ -67,8 +70,8 @@ function word(text, color, y, t0, t, ghosts = true) {
   const rise = (1 - k) * 210;
   let html = `<div class="row" style="position:absolute;left:0;right:0;top:${y}px">`;
   if (ghosts) for (const [c, dx, dy] of GH)
-    html += `<div class="word ghost" style="color:var(${c});transform:translate(${dx * off}px,${rise + dy * off}px);opacity:${.9 * k}">${text}</div>`;
-  html += `<div class="word" style="color:${color};transform:translateY(${rise}px)">${text}</div></div>`;
+    html += `<div class="word ghost" style="font-size:${size}px;color:var(${c});transform:translate(${dx * off}px,${rise + dy * off}px);opacity:${.9 * k}">${text}</div>`;
+  html += `<div class="word" style="font-size:${size}px;color:${color};transform:translateY(${rise}px)">${text}</div></div>`;
   return html;
 }
 
@@ -127,11 +130,11 @@ function end(t) {
     h += `<div class="word ghost" style="position:absolute;left:0;right:0;font-size:150px;font-stretch:112%;color:var(${c});opacity:${.95 * a};transform:translate(${dx * sp}px,${dy * sp}px)">LAYERCUE</div>`;
   h += `<div class="word" style="position:absolute;left:0;right:0;font-size:150px;font-stretch:112%;opacity:${lin(t, .82, .95)}">LAYERCUE</div></div>`;
   // ASK. CUE. LIVE.
-  ['ASK.', 'CUE.', 'LIVE.'].forEach((w, i) => {
+  // 세 낱말을 한 줄(flex)로 — 낱말 폭이 달라도 사이가 같다(STACK. 이 CUE. 와 붙던 것)
+  h += `<div class="tag" style="top:980px;font-size:84px;display:flex;justify-content:center;gap:56px">` + TAGS.map((w, i) => {
     const k = outBack(lin(t, 1.0 + i * .22, 1.4 + i * .22));
-    h += `<div class="tag" style="top:${980}px;font-size:84px;color:${i === 2 ? 'var(--hot)' : 'var(--cream)'};
-            transform:translateX(${(i - 1) * 290}px) scale(${k});opacity:${clamp(k)}">${w}</div>`;
-  });
+    return `<span style="display:inline-block;color:${i === TAGS.length - 1 ? 'var(--hot)' : 'var(--cream)'};transform:scale(${k});opacity:${clamp(k)}">${w}</span>`;
+  }).join('') + `</div>`;
   const b = outExpo(lin(t, 1.9, 2.4));
   h += `<div class="tag" style="top:1200px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">FREE WHILE IT’S IN BETA</div>`;
   h += `<div class="tag" style="top:1262px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">MAC & WINDOWS</div>`;
@@ -142,7 +145,38 @@ function end(t) {
 }
 
 window.DUR = DUR;
-window.render = t => (P === 'end' ? end : open)(t);
+// 글 뒤의 겹친 판 셋 — 앱 아이콘·홈페이지 판과 같은 비율(make-cards.py 의 PLATE_R · PLATE_L).
+// 아래(배경 · 호박)부터 위(덧씌움 · 녹)로 선이 그려지고, 그린 뒤에는 아주 천천히 떠 있다.
+function plates(t) {
+  const K = 30, R = [5.72 * K, 4.46 * K], L = [-8.32 * K, 6.50 * K], cx = 540, cy = 1390, GAP = 64;   // 글 아래 엠블럼 — 글 뒤에 두니 글자를 가로질렀다
+  const per = 2 * (Math.hypot(...R) + Math.hypot(...L));
+  const cols = ['--amber', '--violet', '--green'];
+  let svg = `<svg width="1080" height="1920" style="position:absolute;left:0;top:0">`;
+  cols.forEach((c, i) => {
+    const y = cy + (1 - i) * GAP + Math.sin(t * 1.4 + i) * 4;
+    const p0 = [cx - (R[0] + L[0]) / 2, y - (R[1] + L[1]) / 2];
+    const pts = [p0, [p0[0] + R[0], p0[1] + R[1]], [p0[0] + R[0] + L[0], p0[1] + R[1] + L[1]], [p0[0] + L[0], p0[1] + L[1]]];
+    const k = inOut(lin(t, .05 + i * .14, .8 + i * .14));
+    svg += `<polygon points="${pts.map(q => q.join(',')).join(' ')}" fill="none" stroke="var(${c})" stroke-width="3"
+             stroke-opacity=".55" stroke-dasharray="${per}" stroke-dashoffset="${per * (1 - k)}" stroke-linejoin="round"/>`;
+  });
+  return svg + `</svg>`;
+}
+
+// ── 기본 소개 쇼츠의 첫 2.6 s — SEVEN LAYERS. / EVERY SCREEN. 이 맞물리고, 끝에 위로 빠진다 ──
+function hook(t) {
+  let h = `<div class="grid" style="opacity:${lin(t, 0, .4)}"></div>`;
+  h += `<div class="label" style="top:520px;opacity:${lin(t, .1, .4) * (1 - lin(t, 2.2, 2.5))}">[ LAYERCUE ]</div>`;
+  const out = inOut(lin(t, 2.15, 2.6));
+  h += `<div style="position:absolute;left:0;right:0;top:0;transform:translateY(${-out * 140}px);opacity:${1 - out}">`;
+  h += plates(t);
+  h += word('SEVEN LAYERS.', 'var(--cream)', 760, .15, t, true, 128);
+  h += word('EVERY SCREEN.', 'var(--hot)', 920, .5, t, true, 128);
+  h += `</div>`;
+  S.innerHTML = h;
+}
+
+window.render = t => ({ end, hook, open }[P] || open)(t);
 document.fonts.ready.then(() => {
   window.__ready = true;
   if (window.__manual) return;
