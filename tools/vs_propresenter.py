@@ -3,9 +3,9 @@
 
     python3 tools/vs_propresenter.py   → posts/2026-10-30-propresenter/1.jpg … 4.jpg
 
-★ 남의 제품 이름을 건 글이다. 지키는 것 둘:
-  - 값은 공식 페이지(renewedvision.com/propresenter/#pricing, 2026-10-29 확인)에 적힌 그대로.
-    바뀌면 PRICE 와 캡션을 같이 고친다.
+★ 남의 제품 이름을 건 글이다. 지키는 것 셋:
+  - 값(숫자)은 적지 않는다. 「부담됐다면」까지만 — 남의 값을 광고에 박으면 바뀔 때마다 틀린 글이 된다.
+  - 교회·주일에 묶지 않는다. 행사·학교·공연장 어디서나 쓰는 물건이다.
   - 깎아내리지 않는다. 「다 쓰면 그대로 쓰라」를 3장에 적는다 — 이 글의 신용이 거기서 나온다.
 판은 whats_new_0912.py 의 것을 그대로 쓴다.
 """
@@ -19,22 +19,18 @@ spec.loader.exec_module(wn)
 c, W, H = wn.c, wn.W, wn.H
 OUT = os.path.join(os.path.dirname(HERE), "posts", "2026-10-30-propresenter")
 
-PRICE = "$289"
-SOURCE = "*PROPRESENTER STANDARD, PER SEAT, BILLED YEARLY — RENEWEDVISION.COM, OCT 2026"
-
-
-# ── 1. 값 ─────────────────────────────────────────────────────────────────────
+# ── 1. 부담 ───────────────────────────────────────────────────────────────────
 def s1():
     img, d = c.base()
     c.tracked(d, "[ FOR THE REST OF US ]", c.font(22, 500), W // 2, 118, c.FAINT, track=2.6)
-    size = c.fit_size("PER COMPUTER.*", W * 0.84, 900, 84)     # 긴 줄에 맞춘다
-    c.tracked(d, f"{PRICE} A YEAR,", c.font(size, 900, 84), W // 2, 300, c.CREAM, track=c.TRACK * size)
-    c.tracked(d, "PER COMPUTER.*", c.font(size, 900, 84), W // 2, 300 + size * 0.92, c.HOT, track=c.TRACK * size)
+    # ★ 제품 이름은 제 표기(ProPresenter) 그대로 — 다 대문자로 쓰면 무슨 물건인지 한눈에 안 들어온다
+    size = c.fit_size("PRICED OUT OF", W * 0.84, 900, 84)
+    c.tracked(d, "PRICED OUT OF", c.font(size, 900, 84), W // 2, 300, c.CREAM, track=c.TRACK * size)
+    c.tracked(d, "ProPresenter?", c.font(size, 900, 84), W // 2, 300 + size * 0.98, c.HOT, track=c.TRACK * size)
 
-    c.tracked(d, "THAT’S PROPRESENTER.", c.font(40, 800, 96), W // 2, 720, c.CREAM, track=1.0)
-    c.tracked(d, "FOR A LOT OF ROOMS, THAT’S THE WHOLE MEDIA BUDGET.",
+    c.tracked(d, "A LICENSE FOR EVERY COMPUTER ADDS UP.", c.font(36, 800, 96), W // 2, 720, c.CREAM, track=1.0)
+    c.tracked(d, "ESPECIALLY WHEN YOU USE A FRACTION OF IT.",
               c.font(22, 500), W // 2, 790, c.MUTE, track=1.6)
-    c.tracked(d, SOURCE, c.font(15, 500), W // 2, H - 160, c.FAINT, track=1.2)
     return img
 
 
@@ -78,9 +74,9 @@ def s3():
 def s4():
     img, d = c.base(footer_left="MADE BY CASTPAD", footer_right="MAC & WINDOWS")
     c.tracked(d, "[ 0.9.12 — BETA ]", c.font(22, 500), W // 2, 118, c.FAINT, track=2.6)
-    size = c.fit_size("THIS SUNDAY.", W * 0.80, 900, 84)
-    c.tracked(d, "TRY IT", c.font(size, 900, 84), W // 2, 330, c.CREAM, track=c.TRACK * size)
-    c.tracked(d, "THIS SUNDAY.", c.font(size, 900, 84), W // 2, 330 + size * 0.92, c.HOT, track=c.TRACK * size)
+    size = c.fit_size("YOUR NEXT SHOW.", W * 0.80, 900, 84)
+    c.tracked(d, "TRY IT AT", c.font(size, 900, 84), W // 2, 330, c.CREAM, track=c.TRACK * size)
+    c.tracked(d, "YOUR NEXT SHOW.", c.font(size, 900, 84), W // 2, 330 + size * 0.92, c.HOT, track=c.TRACK * size)
     d.line([(W * 0.30, 800), (W * 0.70, 800)], fill=(46, 46, 50), width=1)
     wn.table(d, [("PRICE", "free during the beta"),
                  ("MAC", "macOS 13+ · Apple silicon & Intel"),
