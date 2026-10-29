@@ -1,0 +1,13 @@
+What's new in LayerCue since August — 0.9.4 through 0.9.12.
+
+Now on Windows. Free in the Microsoft Store, right alongside the Mac. Same layers, same one-click cues — on the PC in the booth, too.
+
+Every screen in the room. One stage on as many monitors as you have, sent over NDI® and Syphon, straight out of Blackmagic SDI on the Mac, or as fill & key over a switcher. As of 0.9.12 the music and video ride along over NDI® and SDI as well.
+
+Bring what you have. PowerPoint comes in still editable — text as text, pictures as pictures. PDF in and out. Search inside every song's lyrics without opening one. Cue sheets point at your slides instead of copying them, so a fix in one place is fixed everywhere.
+
+Ask for the slides. Connect Claude, LM Studio or Cursor from Settings › AI apps and say "make slides from these lyrics." LayerCue looks at what it actually drew — overflow, contrast, overlaps — so the AI can fix its own work, and every edit undoes.
+
+Still free while it's in beta, and still most interested in what broke. layercue.com — link in bio
+
+#LayerCue #ChurchMedia #WorshipTech #ChurchTech #LiveProduction #ProjectionSoftware #NDI #Blackmagic
