@@ -30,6 +30,8 @@ def do(m, a):
         elif op == "move": m.move(*xy)
         elif op == "drag": m.drag(*xy)
         elif op == "jump": m.jump(*xy)
+        elif op == "cmdclick": m.cmd_click(*xy)
+        elif op == "slowdrag": m.slow_drag(*xy)
         elif op == "lg": m.lg_move(xy[0], xy[1], click=False)          # 3편: LG(송출) 위로
         elif op == "lgclick": m.lg_move(xy[0], xy[1], click=True)
     if "mcp" in a:
@@ -39,6 +41,12 @@ def do(m, a):
     if "front" in a:                    # LayerCue(촬영용) 창을 맨 앞으로 — 다른 앱이 맥북 화면을 덮고 있을 수 있다
         subprocess.run(["osascript", "-e", 'tell application "System Events" to set frontmost of (first process whose unix id is %s) to true' %
                         subprocess.run(["pgrep", "-f", "LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue( |$)"], capture_output=True, text=True).stdout.split()[0]])
+    if "clip" in a:                     # 5편: 붙여넣을 글을 클립보드에
+        subprocess.run(["pbcopy"], input=a["clip"].encode())
+    if "fclear" in a:                   # Finder 선택을 비운다 — 남은 선택이 있으면 여러 파일이 함께 끌려갔다
+        subprocess.run(["osascript", "-e", 'tell application "Finder" to set selection to {}'])
+    if "finder" in a:                   # 5편: Finder(데모 폴더 창)를 앞으로 — 끌어 넣기 전에
+        subprocess.run(["osascript", "-e", 'tell application "Finder" to activate'])
     if "key" in a:
         m.key(*a["key"])
     if "sleep" in a:

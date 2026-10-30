@@ -1,0 +1,152 @@
+1
+00:00:06,400 --> 00:00:10,480
+Welcome back! Today, we fill a presentation with real media.
+
+2
+00:00:10,550 --> 00:00:14,450
+A slide is one thing you put on the screen, or a sound you play.
+
+3
+00:00:14,520 --> 00:00:18,630
+Each card wears a badge: Video, Image, Music, or Text.
+
+4
+00:00:18,700 --> 00:00:21,230
+The file extension decides the kind.
+
+5
+00:00:21,300 --> 00:00:26,430
+Anything LayerCue can't play is refused up front, so it can't fail on stage.
+
+6
+00:00:27,850 --> 00:00:31,000
+At the right of the title bar, the plus is Add File.
+
+7
+00:00:32,070 --> 00:00:36,930
+New files go to the end. Sound files hide under the Audio file type.
+
+8
+00:00:37,000 --> 00:00:39,640
+You can also drag files in from the Finder.
+
+9
+00:00:41,110 --> 00:00:44,020
+A line between the cards shows where they'll land.
+
+10
+00:00:45,690 --> 00:00:49,180
+LayerCue copies every file into its own media folder.
+
+11
+00:00:49,850 --> 00:00:52,960
+Here's a text file. It's refused, with a notice.
+
+12
+00:00:56,380 --> 00:00:57,850
+Now watch closely.
+
+13
+00:00:57,920 --> 00:01:01,760
+Hold one file over the middle of a card, and the card lights up.
+
+14
+00:01:03,430 --> 00:01:06,220
+Drop it, and it swaps that slide's picture.
+
+15
+00:01:07,690 --> 00:01:10,700
+Handy on purpose. Alarming by accident.
+
+16
+00:01:10,770 --> 00:01:15,600
+To put it back, drop the right file on it again. Command Z undoes it too.
+
+17
+00:01:17,270 --> 00:01:20,750
+Between cards adds. The middle of a card replaces.
+
+18
+00:01:22,170 --> 00:01:23,610
+Paste works too.
+
+19
+00:01:23,680 --> 00:01:27,130
+Copy some text, select a card, and press Command V.
+
+20
+00:01:29,600 --> 00:01:33,770
+It splits at blank lines into text slides, right after that card.
+
+21
+00:01:35,040 --> 00:01:39,970
+Paste a YouTube address, and you get a YouTube slide. That's Episode 13.
+
+22
+00:01:41,390 --> 00:01:42,830
+Now, read a card.
+
+23
+00:01:42,900 --> 00:01:46,080
+Top left, its number. Top right, the layer chip.
+
+24
+00:01:46,750 --> 00:01:48,910
+Bottom right, how long it runs.
+
+25
+00:01:48,980 --> 00:01:51,770
+An orange border means it's on the screen now.
+
+26
+00:01:52,440 --> 00:01:54,640
+Indigo means it's only selected.
+
+27
+00:01:56,060 --> 00:01:58,130
+Drag a card to change the order.
+
+28
+00:01:59,800 --> 00:02:01,740
+Command click selects several.
+
+29
+00:02:03,210 --> 00:02:07,030
+Drag them onto another presentation, and they're copied there.
+
+30
+00:02:09,100 --> 00:02:12,050
+Hold Option as you let go to move them instead.
+
+31
+00:02:12,120 --> 00:02:14,750
+Command D duplicates the selection.
+
+32
+00:02:17,570 --> 00:02:21,210
+The Delete key removes only the slides. The files stay.
+
+33
+00:02:22,680 --> 00:02:24,490
+A notice offers Undo.
+
+34
+00:02:25,560 --> 00:02:30,510
+LayerCue asks first only when a slide is on air, or ten or more go at once.
+
+35
+00:02:30,580 --> 00:02:33,800
+The slider in the status bar sets the card size.
+
+36
+00:02:35,870 --> 00:02:38,280
+Bigger cards mean fewer wrong clicks.
+
+37
+00:02:39,700 --> 00:02:42,730
+You can now fill a presentation with real media.
+
+38
+00:02:42,800 --> 00:02:46,390
+Next time: running the slide list, with keys and layers.
+

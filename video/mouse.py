@@ -79,6 +79,17 @@ class M:
         time.sleep(hold)
         self._post(Quartz.kCGEventLeftMouseUp, px, py); self._rec("up", px, py)
 
+    def cmd_click(self, px, py, dur=0.6):
+        """⌘ 를 누른 채 클릭(여러 장 고르기) — ⌘ 키를 실제로 눌렀다 뗀다(마우스 이벤트 플래그만으로는 Qt 가 못 읽었다)."""
+        self.move(px, py, dur); time.sleep(0.1)
+        F = Quartz.kCGEventFlagMaskCommand
+        k = Quartz.CGEventCreateKeyboardEvent(None, 55, True); Quartz.CGEventSetFlags(k, F); Quartz.CGEventPost(Quartz.kCGHIDEventTap, k); time.sleep(0.06)
+        for kind in (Quartz.kCGEventLeftMouseDown, Quartz.kCGEventLeftMouseUp):
+            e = Quartz.CGEventCreateMouseEvent(None, kind, self.g(px, py), Quartz.kCGMouseButtonLeft)
+            Quartz.CGEventSetFlags(e, F); Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.08)
+        k = Quartz.CGEventCreateKeyboardEvent(None, 55, False); Quartz.CGEventSetFlags(k, 0); Quartz.CGEventPost(Quartz.kCGHIDEventTap, k)
+        self._rec("down", px, py)
+
     def double_click(self, px, py, dur=0.7):
         self.move(px, py, dur); time.sleep(0.12)
         for n in (1, 2):
@@ -102,6 +113,18 @@ class M:
             s = i / n; s = 0.5 - 0.5 * math.cos(math.pi * s)
             self._post(Quartz.kCGEventLeftMouseDragged, x1 + (x2 - x1) * s, y1 + (y2 - y1) * s); time.sleep(dur / n)
         time.sleep(0.15); self._post(Quartz.kCGEventLeftMouseUp, x2, y2); self._rec("up", x2, y2)
+
+    def slow_drag(self, x1, y1, x2, y2, hold=1.2, dur=1.0, fps=120):
+        """끌어서 목표 위에 hold 초 머문 뒤 놓는다(카드 한가운데 교체 · Copy 배지를 보여 줄 때)."""
+        self.move(x1, y1, 0.5); time.sleep(0.15)
+        self._post(Quartz.kCGEventLeftMouseDown, x1, y1); self._rec("down", x1, y1); time.sleep(0.2)
+        n = max(2, int(dur * fps))
+        for i in range(1, n + 1):
+            s = i / n; s = 0.5 - 0.5 * math.cos(math.pi * s)
+            self._post(Quartz.kCGEventLeftMouseDragged, x1 + (x2 - x1) * s, y1 + (y2 - y1) * s); time.sleep(dur / n)
+        for i in range(int(hold * 30)):
+            self._post(Quartz.kCGEventLeftMouseDragged, x2 + (i % 2), y2); time.sleep(1 / 30)
+        self._post(Quartz.kCGEventLeftMouseUp, x2, y2); self._rec("up", x2, y2)
 
     def hover(self, px, py, dur=0.7, stay=1.5):
         self.move(px, py, dur); self._rec("hover", px, py); time.sleep(stay)

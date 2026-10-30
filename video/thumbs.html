@@ -61,6 +61,13 @@
   #F .side img { width: 100%; display: block; }
   #F .chip { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 22px; letter-spacing: .16em; padding: 8px 14px; color: #111; }
   #F .ring { position: absolute; border: 5px solid; border-radius: 10px; }
+  /* G — 슬라이드 넣기 편: 실제 카드 줄 + 사이에 끼어드는 파일 · 넣는 선 */
+  #G .row { position: absolute; left: 600px; top: 250px; width: 760px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 2px var(--hair), 0 40px 90px rgba(0,0,0,.7); }
+  #G .row img { width: 100%; display: block; }
+  #G .bar { position: absolute; left: 826px; top: 240px; width: 10px; height: 230px; background: var(--accent-soft); transform: rotate(-3deg); box-shadow: 0 0 30px rgba(139,149,245,.9); }
+  #G .file { position: absolute; left: 760px; top: 100px; width: 150px; height: 110px; border-radius: 10px; background: #2b2b2e; box-shadow: 0 0 0 3px var(--cream), 0 30px 60px rgba(0,0,0,.6); transform: rotate(6deg); display:flex; align-items:center; justify-content:center; font-family: var(--mono); font-size: 22px; letter-spacing:.1em; color: var(--cream); }
+  #G .plus { position: absolute; left: 888px; top: 80px; width: 48px; height: 48px; border-radius: 50%; background: #2ecc71; color: #fff; font-size: 40px; font-weight: 700; display:flex; align-items:center; justify-content:center; }
+  #G .tg { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 22px; letter-spacing: .16em; padding: 8px 14px; color: #111; }
 </style>
 <div id="A" class="t"><div class="grid"></div>
   <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
@@ -103,6 +110,14 @@
   <div class="side"><img class="img"></div>
   <div class="chip" style="left:720px;top:96px;background:var(--fg-lit)">≡ CUE SHEET</div>
   <div class="chip" style="left:730px;top:396px;background:var(--bg-lit)">▢ LIBRARY</div>
+</div>
+<div id="G" class="t"><div class="grid"></div>
+  <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
+  <div class="ttl" style="left:56px;top:130px;font-size:132px;width:540px"></div>
+  <div class="mic" style="left:60px;top:620px;color:var(--fg2)">video · image · music · <b>text</b></div>
+  <div class="row"><img class="img"></div>
+  <div class="bar"></div><div class="file">.MP4</div><div class="plus">+</div>
+  <div class="tg" style="left:640px;top:520px;background:var(--accent-soft)">BETWEEN = ADD</div>
 </div>
 <script>
 const Q = new URLSearchParams(location.search);

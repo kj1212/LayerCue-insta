@@ -1,0 +1,29 @@
+TITLE
+Adding Slides and Reading Cards | LayerCue from Zero, Episode 5
+
+DESCRIPTION
+Fill a presentation with real media: what a slide is, Add File and drag and drop, the difference between adding between cards and replacing on a card (and undo), pasting text into slides, reading a card, reordering, copying and moving slides, deleting with undo, and card size.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12.
+Manual: https://layercue.com/docs/slides/
+The narration is AI-generated and the music is built from GarageBand loops. The event, sponsors and media in the demo are fictional.
+
+Chapters
+0:00 Intro
+0:06 What a slide is
+0:27 Adding files
+0:55 Add or replace
+1:21 Pasting text
+1:40 Reading a card
+1:55 Arranging
+2:17 Deleting and card size
+2:39 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, add slides, drag and drop, media playback, presentation software, event production, slide list, Mac, Windows, beginner tutorial
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep05-en.srt (English), ep05-ko.srt (Korean) and ep05-ja.srt (Japanese) as 'With timing'.

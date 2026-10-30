@@ -7,25 +7,624 @@
  "rec_t0": 0.8,
  "segments": {
   "s1": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "click",
+      225,
+      873
+     ]
+    },
+    {
+     "sleep": 0.8
+    },
+    {
+     "mouse": [
+      "click",
+      1700,
+      1700
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "b.video",
+     "lbl": [
+      "Badge",
+      "the kind of slide"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 3,
+     "at": 0.6,
+     "hl": "b.image"
+    },
+    {
+     "line": 3,
+     "at": 1.2,
+     "hl": "b.music"
+    },
+    {
+     "line": 3,
+     "at": 1.8,
+     "hl": "b.text"
+    },
+    {
+     "line": 5,
+     "at": 0.2,
+     "cap": "notes.txt isn't a format we can play, so it wasn't added",
+     "capdur": 4.0
+    }
+   ]
   },
   "s2": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "click",
+      1700,
+      942
+     ]
+    },
+    {
+     "finder": 1
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "hdr.add",
+     "lbl": [
+      "+ Add File",
+      "to the end"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 3,
+     "at": -0.05,
+     "finder": 1
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "fclear": 1
+    },
+    {
+     "line": 3,
+     "at": 1.1,
+     "mouse": [
+      "drag",
+      2484,
+      1734,
+      1500,
+      1080
+     ]
+    },
+    {
+     "line": 4,
+     "at": -0.25,
+     "finder": 1
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "fclear": 1
+    },
+    {
+     "line": 4,
+     "at": 0.9,
+     "mouse": [
+      "drag",
+      3312,
+      1470,
+      1290,
+      1100
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.35,
+     "finder": 1
+    },
+    {
+     "line": 4,
+     "at": 2.6,
+     "fclear": 1
+    },
+    {
+     "line": 4,
+     "at": 3.5,
+     "mouse": [
+      "drag",
+      3036,
+      1470,
+      1760,
+      1100
+     ]
+    },
+    {
+     "line": 5,
+     "at": -0.05,
+     "finder": 1
+    },
+    {
+     "line": 5,
+     "at": 0.2,
+     "fclear": 1
+    },
+    {
+     "line": 5,
+     "at": 1.1,
+     "mouse": [
+      "drag",
+      3588,
+      1470,
+      2230,
+      1100
+     ]
+    },
+    {
+     "line": 6,
+     "at": -0.15,
+     "finder": 1
+    },
+    {
+     "line": 6,
+     "at": 0.1,
+     "fclear": 1
+    },
+    {
+     "line": 6,
+     "at": 1.0,
+     "mouse": [
+      "drag",
+      2484,
+      1470,
+      2650,
+      1100
+     ]
+    }
+   ]
   },
   "s3": {
-   "events": []
+   "setup": [
+    {
+     "finder": 1
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": -0.25,
+     "finder": 1
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "fclear": 1
+    },
+    {
+     "line": 2,
+     "at": 0.9,
+     "mouse": [
+      "slowdrag",
+      2760,
+      1470,
+      1206,
+      1125,
+      1.6
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "card2",
+     "lbl": [
+      "Swapped",
+      "same slide, new picture"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 5,
+     "at": -0.25,
+     "finder": 1
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "fclear": 1
+    },
+    {
+     "line": 5,
+     "at": 0.9,
+     "mouse": [
+      "slowdrag",
+      3312,
+      1470,
+      1206,
+      1125,
+      1.0
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "cap": "Between cards → add   ·   middle of a card → replace   ·   ⌘Z / Ctrl+Z undoes",
+     "capdur": 4.0
+    }
+   ]
   },
   "s4": {
-   "events": []
+   "setup": [
+    {
+     "clip": "Wi-Fi: Riverside-Guest\nPassword on your badge\n\nLunch is served at 12:30 in Hall B"
+    },
+    {
+     "mouse": [
+      "click",
+      1700,
+      1700
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 0.6,
+     "mouse": [
+      "cmdclick",
+      2148,
+      1125
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.0,
+     "key": [
+      9,
+      true
+     ]
+    }
+   ]
   },
   "s5": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "click",
+      1700,
+      1700
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "cards.row",
+     "scale": 1.25,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "card1.num",
+     "lbl": [
+      "Number",
+      "top left"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "mouse": [
+      "move",
+      2460,
+      1125
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.6,
+     "hl": "card5.chip",
+     "lbl": [
+      "Layer chip",
+      "FG shows on hover"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "card4.time",
+     "lbl": [
+      "Run time",
+      "bottom right"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "mcp": [
+      {
+       "op": "usePt",
+       "name": "Opening keynote"
+      },
+      {
+       "op": "present",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.6,
+     "hl": "card1",
+     "color": "hot",
+     "lbl": [
+      "On air",
+      "orange border"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "mouse": [
+      "cmdclick",
+      1206,
+      1125
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.4,
+     "hl": "card2",
+     "lbl": [
+      "Selected",
+      "indigo border"
+     ],
+     "lblSide": "below"
+    }
+   ]
   },
   "s6": {
-   "events": []
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      1700,
+      1700
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "drag",
+      1677,
+      1125,
+      1000,
+      1125
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "mouse": [
+      "cmdclick",
+      2619,
+      1125
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.8,
+     "mouse": [
+      "cmdclick",
+      3090,
+      1125
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "slowdrag",
+      2619,
+      1125,
+      220,
+      1440,
+      0.8
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "cap": "Hold Option / Alt as you let go → Move instead of Copy",
+     "capdur": 3.4
+    },
+    {
+     "line": 5,
+     "at": 0.4,
+     "key": [
+      2,
+      true
+     ]
+    },
+    {
+     "line": 2,
+     "at": -0.5,
+     "mouse": [
+      "click",
+      1700,
+      1700
+     ]
+    }
+   ]
   },
   "s7": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "click",
+      220,
+      1440
+     ]
+    },
+    {
+     "sleep": 0.8
+    },
+    {
+     "mouse": [
+      "drag",
+      3450,
+      2112,
+      3340,
+      2112
+     ]
+    },
+    {
+     "sleep": 0.5
+    },
+    {
+     "mouse": [
+      "click",
+      1700,
+      1700
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 4,
+     "at": 0.3,
+     "mouse": [
+      "drag",
+      3340,
+      2112,
+      3450,
+      2112
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "slider",
+     "lbl": [
+      "Card size",
+      "slider"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 1,
+     "at": 0.0,
+     "mouse": [
+      "cmdclick",
+      2148,
+      1125
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.7,
+     "mouse": [
+      "cmdclick",
+      2619,
+      1125
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.75,
+     "hl": "toast",
+     "lbl": [
+      "Deleted 2",
+      "with Undo"
+     ],
+     "lblSide": "above",
+     "dur": 1.7,
+     "exact": true
+    }
+   ]
   },
   "s9": {
    "noclip": true,

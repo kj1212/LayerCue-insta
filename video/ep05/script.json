@@ -145,7 +145,7 @@
      "keys": ""
     },
     {
-     "text": "Command Z puts it back. On Windows, Control Z.",
+     "text": "To put it back, drop the right file on it again. Command Z undoes it too.",
      "pause": 1.6,
      "screen": "",
      "action": "",
@@ -177,7 +177,7 @@
      "keys": ""
     },
     {
-     "text": "Copy some text, click an empty spot, and press Command V.",
+     "text": "Copy some text, select a card, and press Command V.",
      "pause": 2.4,
      "screen": "",
      "action": "",
@@ -185,7 +185,7 @@
      "keys": ""
     },
     {
-     "text": "It splits at blank lines into text slides.",
+     "text": "It splits at blank lines into text slides, right after that card.",
      "pause": 1.2,
      "screen": "",
      "action": "",
