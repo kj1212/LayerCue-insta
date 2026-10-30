@@ -67,6 +67,8 @@
   작업은 LayerCue 폴더에 저장돼요.
 - That's inside Documents on a Mac, and in your user folder on Windows.  
   Mac은 문서(Documents) 안에, Windows는 사용자 폴더 안에 있습니다.
+- You can also choose where your videos and pictures go. We'll see that in Settings.  
+  영상과 사진을 어디에 둘지도 고를 수 있어요. Settings에서 볼게요.
 
 ## Sign in once
 
@@ -106,8 +108,14 @@
 - So the master always starts at full, and a muted rehearsal never carries over.  
   그래서 마스터는 늘 최대에서 시작하고, 음소거한 리허설이 다음으로 넘어가지 않아요.
 
-## Updates
+## Files and updates
 
+- First, the Files and YouTube page.  
+  먼저 Files & YouTube 페이지.
+- Media folder is where your videos, pictures and music are copied.  
+  Media folder는 영상·사진·음악이 복사되는 곳이에요.
+- Press Choose to keep them somewhere else, like a bigger drive.  
+  Choose를 누르면 더 큰 드라이브 같은 다른 곳으로 바꿀 수 있습니다.
 - Next, the Tools page.  
   다음은 Tools(도구) 페이지.
 - The LayerCue row shows the version you have.  
