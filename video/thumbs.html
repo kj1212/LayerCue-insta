@@ -56,6 +56,11 @@
   #E .ctl .sw { width: 92px; height: 46px; border-radius: 6px; background: var(--hot); position: relative; }
   #E .ctl .sw::after { content: ""; position: absolute; right: 8px; top: 8px; width: 30px; height: 30px; border-radius: 4px; background: #fff; }
   #E .ctl .clr { font-family: var(--mono); font-weight: 500; font-size: 26px; letter-spacing: .12em; padding: 8px 18px; border: 2px solid var(--cream); border-radius: 6px; }
+  /* F — 정리 편: 실제 사이드바를 크게 + 큐시트 · 라이브러리 이름표 */
+  #F .side { position: absolute; left: 660px; top: 150px; width: 540px; border-radius: 14px; overflow: hidden; transform: rotate(-4deg) scale(1.0); transform-origin: top left; box-shadow: 0 0 0 2px var(--hair), 0 40px 90px rgba(0,0,0,.7); }
+  #F .side img { width: 100%; display: block; }
+  #F .chip { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 22px; letter-spacing: .16em; padding: 8px 14px; color: #111; }
+  #F .ring { position: absolute; border: 5px solid; border-radius: 10px; }
 </style>
 <div id="A" class="t"><div class="grid"></div>
   <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
@@ -90,6 +95,14 @@
   <div class="onair">● ON AIR</div>
   <div class="proj"><img class="img"></div>
   <div class="ctl"><span class="n">01</span><span class="nm">Audience</span><span class="sw"></span><span class="clr">CLEAR</span></div>
+</div>
+<div id="F" class="t"><div class="grid"></div>
+  <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
+  <div class="ttl" style="left:56px;top:130px;font-size:132px;width:560px"></div>
+  <div class="mic" style="left:60px;top:620px;color:var(--fg2)">libraries · presentations · <b>cue sheets</b></div>
+  <div class="side"><img class="img"></div>
+  <div class="chip" style="left:720px;top:96px;background:var(--fg-lit)">≡ CUE SHEET</div>
+  <div class="chip" style="left:730px;top:396px;background:var(--bg-lit)">▢ LIBRARY</div>
 </div>
 <script>
 const Q = new URLSearchParams(location.search);

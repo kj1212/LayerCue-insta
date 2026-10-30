@@ -1,0 +1,29 @@
+TITLE
+Libraries, Presentations and Cue Sheets | LayerCue from Zero, Episode 4
+
+DESCRIPTION
+Build a running order from scratch: what a presentation, a library and a cue sheet are, how to read the sidebar, how to make each one, three ways to put a presentation in a cue sheet, renaming and moving, deleting safely with undo, and hiding the sidebar and finding things with Command F.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12.
+Manual: https://layercue.com/docs/library/
+The narration is AI-generated and the music is built from GarageBand loops. The event names in the demo are fictional.
+
+Chapters
+0:00 Intro
+0:06 Three words
+0:27 Reading the sidebar
+0:48 Making things
+1:23 Building the running order
+1:50 Organising
+2:17 Deleting and undo
+2:44 Hide and find
+3:07 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, cue sheet, running order, presentation library, presentation software, event production, show control, Mac, Windows, beginner tutorial
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep04-en.srt (English), ep04-ko.srt (Korean) and ep04-ja.srt (Japanese) as 'With timing'.

@@ -1,0 +1,180 @@
+1
+00:00:06,400 --> 00:00:09,250
+Welcome back! Today, we put things in order.
+
+2
+00:00:09,320 --> 00:00:10,980
+First, three words.
+
+3
+00:00:11,050 --> 00:00:13,830
+A presentation is one set of slides.
+
+4
+00:00:13,900 --> 00:00:17,650
+A library is where it lives: a real folder on your disk.
+
+5
+00:00:17,720 --> 00:00:20,770
+A cue sheet is the running order for one event.
+
+6
+00:00:20,840 --> 00:00:26,020
+It holds links, not copies. Edit once, and every cue sheet shows the change.
+
+7
+00:00:27,440 --> 00:00:30,680
+In the sidebar, a folder icon is a library.
+
+8
+00:00:30,750 --> 00:00:34,000
+An indigo name with a list icon is a cue sheet.
+
+9
+00:00:34,070 --> 00:00:38,630
+Click a presentation inside a cue sheet, and you see the whole running order.
+
+10
+00:00:39,700 --> 00:00:42,750
+Click it in the Library, and you see that one alone.
+
+11
+00:00:43,820 --> 00:00:47,210
+A short orange bar means something from it is on stage.
+
+12
+00:00:48,630 --> 00:00:52,270
+Press the plus beside Cue Sheets, and choose New Cue Sheet.
+
+13
+00:00:53,340 --> 00:00:56,350
+Name it right away. We'll call it Summit Day 1.
+
+14
+00:00:58,020 --> 00:01:01,320
+The plus in the Library drawer makes a new library.
+
+15
+00:01:02,390 --> 00:01:04,950
+This one is Summit 2026.
+
+16
+00:01:06,420 --> 00:01:09,820
+Now point at the library row, and press its own plus.
+
+17
+00:01:11,090 --> 00:01:14,820
+The dialog asks for a name, a library, and a cue sheet.
+
+18
+00:01:16,490 --> 00:01:18,930
+Pick Summit Day 1, and press Create.
+
+19
+00:01:20,400 --> 00:01:22,590
+It lands at the end of the cue sheet.
+
+20
+00:01:24,010 --> 00:01:27,280
+There are three ways in. You just saw one: the dialog.
+
+21
+00:01:27,350 --> 00:01:31,060
+Or right-click a presentation, and choose Add to Cue Sheet.
+
+22
+00:01:33,130 --> 00:01:36,170
+Or drag it from the drawer, up onto the cue sheet.
+
+23
+00:01:38,240 --> 00:01:40,270
+Drag rows to change the order.
+
+24
+00:01:41,940 --> 00:01:45,010
+Remove from Cue Sheet changes only the order.
+
+25
+00:01:46,680 --> 00:01:49,350
+The presentation stays in its library.
+
+26
+00:01:50,770 --> 00:01:53,670
+The right-click menu depends on where you click.
+
+27
+00:01:53,740 --> 00:01:56,960
+Inside a cue sheet, you get Remove from Cue Sheet.
+
+28
+00:01:57,830 --> 00:02:01,830
+In the Library, you get Rename, Move to Library, and Delete.
+
+29
+00:02:02,700 --> 00:02:05,340
+Rename changes the file on your disk too.
+
+30
+00:02:07,610 --> 00:02:11,300
+Every presentation lives in exactly one library.
+
+31
+00:02:11,370 --> 00:02:14,340
+Drag it onto another library to move it there.
+
+32
+00:02:17,760 --> 00:02:20,690
+Delete a cue sheet, and only the order goes.
+
+33
+00:02:22,360 --> 00:02:25,060
+Its presentations stay in their libraries.
+
+34
+00:02:25,130 --> 00:02:28,890
+Command Z brings it back. On Windows, it's Control Z.
+
+35
+00:02:30,360 --> 00:02:34,050
+Delete a library, and every presentation in it goes too.
+
+36
+00:02:34,120 --> 00:02:39,280
+Nothing is gone for good. It goes to the Trash, and undo works up to fifty steps.
+
+37
+00:02:39,350 --> 00:02:43,340
+One rule for show day: leave the sidebar alone during the show.
+
+38
+00:02:44,760 --> 00:02:47,160
+Command backslash hides the sidebar.
+
+39
+00:02:48,030 --> 00:02:50,770
+A picker in the status bar takes its place.
+
+40
+00:02:50,840 --> 00:02:53,580
+Press it again, and the sidebar comes back.
+
+41
+00:02:54,250 --> 00:02:57,550
+Command F opens Find. There's no button for it.
+
+42
+00:02:58,420 --> 00:03:00,710
+It searches names and slide text.
+
+43
+00:03:02,380 --> 00:03:05,710
+Return jumps there. Nothing goes out to the screen.
+
+44
+00:03:08,130 --> 00:03:10,840
+You can now build a running order from scratch.
+
+45
+00:03:10,910 --> 00:03:14,220
+Next time: adding slides, and reading the cards.
+
