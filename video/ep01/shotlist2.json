@@ -1,0 +1,1238 @@
+{
+ "_note": "1편 2판 연출표. 줄 번호 = script.json 의 그 구간 안 순서(1부터). at = 그 줄 음성 시작에서의 초. 영역 = regions.json(창 px) · stage.* = 무대 px. zoom.scale = 창 px → 화면 px 배율(쉬는 자리 0.859), center = 그 영역 가운데가 올 화면 점(가장자리는 150 px 넘게 비지 않게 잘린다).",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.4,
+ "music": {
+  "style": "pop"
+ },
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "useCue",
+       "name": "Tour"
+      },
+      {
+       "op": "openCue",
+       "name": "Tour"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      1920,
+      90
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.right"
+     ]
+    }
+   ],
+   "stage_until": {
+    "line": 8,
+    "at": 0.2
+   },
+   "events": [
+    {
+     "line": 3,
+     "at": 0.0,
+     "cap": "Mac and Windows",
+     "capdur": 2.6
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "space": "stage",
+     "hl": "stage.video",
+     "color": "amber",
+     "lbl": [
+      "Background",
+      "a video, underneath"
+     ],
+     "lblColor": "amber"
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "space": "stage",
+     "hl": "stage.words",
+     "color": "indigo",
+     "dim": true,
+     "lbl": [
+      "Foreground",
+      "words, on top"
+     ],
+     "lblColor": "indigo"
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "space": "stage",
+     "hl": "stage.logo",
+     "color": "green",
+     "dim": true,
+     "lbl": [
+      "Overlay 1",
+      "a logo, in the corner"
+     ],
+     "lblColor": "green"
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      1920,
+      90
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.right"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "sidebar",
+     "dim": true,
+     "lbl": [
+      "Sidebar",
+      "cue sheets and libraries"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "middle",
+     "dim": true,
+     "lbl": [
+      "Slides",
+      "in running order"
+     ],
+     "lblSide": "inside"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "band",
+     "dim": true,
+     "lbl": [
+      "Stage band",
+      "what goes out"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "hl": "status",
+     "dim": true,
+     "lbl": [
+      "Status bar",
+      "the show at a glance"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 7,
+     "at": 0.0,
+     "hl": "sidebar",
+     "color": "amber",
+     "dim": true,
+     "cap": "Pick on the left.",
+     "capdur": 1.9
+    },
+    {
+     "line": 8,
+     "at": 0.0,
+     "hl": "middle",
+     "color": "amber",
+     "dim": true,
+     "cap": "Pick on the left.  Click in the middle.",
+     "capdur": 1.9
+    },
+    {
+     "line": 9,
+     "at": 0.0,
+     "hl": "tile",
+     "color": "amber",
+     "dim": true,
+     "cap": "Pick on the left.  Click in the middle.  Watch the top.",
+     "capdur": 1.9
+    },
+    {
+     "line": 10,
+     "at": 0.0,
+     "hl": "slideSettings",
+     "color": "amber",
+     "dim": true,
+     "cap": "Pick on the left.  Click in the middle.  Watch the top.  Adjust on the right.",
+     "capdur": 7.0
+    },
+    {
+     "line": 11,
+     "at": 0.0,
+     "hl": "slideSettings.heading",
+     "color": "amber",
+     "lbl": [
+      "Slide settings",
+      "adjust one slide before it goes out"
+     ],
+     "lblSide": "below"
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      1920,
+      90
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.right"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "sidebar.upper",
+     "scale": 1.55,
+     "center": [
+      760,
+      1110
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "sidebar.cueSheetsHeading",
+     "lbl": [
+      "Cue Sheets",
+      "at the top"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "sidebar.tourRow",
+     "lbl": [
+      "Cue sheet",
+      "the running order for one event"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "sidebar.tourItems",
+     "lbl": [
+      "Tour",
+      "six short guides"
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "hl": "sidebar.libraryHeading",
+     "lbl": [
+      "Library",
+      "a drawer, below the line"
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "hl": "sidebar.readMeRow",
+     "lbl": [
+      "Library",
+      "a folder of presentations"
+     ]
+    },
+    {
+     "line": 7,
+     "at": 0.0,
+     "hl": "sidebar.startHereUnderReadMe",
+     "lbl": [
+      "Presentation",
+      "one set of slides"
+     ]
+    },
+    {
+     "line": 8,
+     "at": 0.0,
+     "hl": "sidebar.slideCount4",
+     "lbl": [
+      "4",
+      "slides in it"
+     ]
+    },
+    {
+     "line": 9,
+     "at": -0.8,
+     "mouse": [
+      "hover",
+      "sidebar.libraryArrow"
+     ]
+    },
+    {
+     "line": 9,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      "sidebar.libraryArrow"
+     ]
+    },
+    {
+     "line": 9,
+     "at": 2.1,
+     "mouse": [
+      "move",
+      "sidebar.libraryArrowRaised"
+     ]
+    },
+    {
+     "line": 10,
+     "at": 0.6,
+     "mouse": [
+      "click",
+      "sidebar.libraryArrowRaised"
+     ]
+    },
+    {
+     "line": 11,
+     "at": 0.0,
+     "mouse": [
+      "hover",
+      "sidebar.libraryHeading"
+     ]
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      1920,
+      90
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      "sidebar.startHereUnderTour"
+     ]
+    },
+    {
+     "sleep": 3.0
+    },
+    {
+     "mouse": [
+      "click",
+      "sidebar.startHereUnderReadMe"
+     ]
+    },
+    {
+     "sleep": 1.5
+    },
+    {
+     "mouse": [
+      "jump",
+      60,
+      1139
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 1,
+     "at": 1.3,
+     "mouse": [
+      "click",
+      "sidebar.startHereUnderTour"
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "hl": "middle",
+     "lbl": [
+      "The Tour cue sheet",
+      "every presentation, in order"
+     ],
+     "lblSide": "inside"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "middle.firstTitleBar",
+     "lbl": [
+      "Title bar",
+      "name and slide count"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "zoom": "middle.titleBarRight",
+     "scale": 2.4,
+     "center": [
+      2560,
+      900
+     ]
+    },
+    {
+     "line": 5,
+     "at": -1.0,
+     "mouse": [
+      "hover",
+      "middle.btn.addFile"
+     ]
+    },
+    {
+     "line": 6,
+     "at": -1.0,
+     "mouse": [
+      "hover",
+      "middle.btn.link"
+     ]
+    },
+    {
+     "line": 7,
+     "at": -1.0,
+     "mouse": [
+      "hover",
+      "middle.btn.edit"
+     ]
+    },
+    {
+     "line": 8,
+     "at": -1.0,
+     "mouse": [
+      "hover",
+      "middle.btn.layerForList"
+     ]
+    },
+    {
+     "line": 9,
+     "at": -1.0,
+     "mouse": [
+      "hover",
+      "middle.btn.presentationSettings"
+     ]
+    },
+    {
+     "line": 10,
+     "at": -0.3,
+     "mouse": [
+      "move",
+      "middle.empty.right"
+     ]
+    },
+    {
+     "line": 10,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 10,
+     "at": 0.3,
+     "hl": "middle.cards",
+     "lbl": [
+      "Slide cards",
+      "one per slide"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 11,
+     "at": 0.0,
+     "hl": "middle.card1.nameRow",
+     "lbl": [
+      "Kind and name",
+      "Text, Video, Image, Music"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 12,
+     "at": 0.0,
+     "hl": "middle.card1",
+     "color": "hot",
+     "dur": 6.0,
+     "lbl": [
+      "Click = send",
+      "no confirmation, no second step"
+     ],
+     "lblColor": "hot"
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      "sidebar.startHereUnderTour"
+     ]
+    },
+    {
+     "mouse": [
+      "move",
+      "middle.empty.right"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "band.zoom",
+     "scale": 1.3,
+     "center": [
+      1920,
+      760
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "tile",
+     "lbl": [
+      "Screen 1",
+      "the monitor tile"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "tile.tab",
+     "lbl": [
+      "Virtual screen",
+      "no projector needed"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "tile.power",
+     "color": "hot",
+     "lbl": [
+      "Power switch",
+      "output on and off"
+     ],
+     "lblColor": "hot",
+     "lblSide": "below"
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "hl": "tile.layersShown",
+     "lbl": [
+      "Layers shown",
+      "what this monitor shows"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "hl": "tile.layerColumn",
+     "lbl": [
+      "Layer column",
+      "what's up, for the whole stage"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 7,
+     "at": 0.0,
+     "hl": "tile.clear",
+     "color": "white",
+     "lbl": [
+      "Clear",
+      "takes everything down"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 8,
+     "at": 0.0,
+     "hl": "tile.cells15",
+     "color": "green",
+     "lbl": [
+      "1 – 5",
+      "overlays"
+     ],
+     "lblColor": "green",
+     "lblSide": "right"
+    },
+    {
+     "line": 9,
+     "at": 0.0,
+     "hl": "tile.cellF",
+     "color": "indigo",
+     "lbl": [
+      "F",
+      "foreground"
+     ],
+     "lblColor": "indigo",
+     "lblSide": "right"
+    },
+    {
+     "line": 10,
+     "at": 0.0,
+     "hl": "tile.cellB",
+     "color": "amber",
+     "lbl": [
+      "B",
+      "background"
+     ],
+     "lblColor": "amber",
+     "lblSide": "right"
+    },
+    {
+     "line": 11,
+     "at": 0.0,
+     "hl": "meter",
+     "lbl": [
+      "Meter",
+      "the sound going out"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 12,
+     "at": 0.0,
+     "hl": "music",
+     "lbl": [
+      "Music",
+      "its own channel"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 13,
+     "at": 0.0,
+     "hl": "slideSettings",
+     "lbl": [
+      "Slide settings",
+      "saved on that one slide"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 14,
+     "at": 0.0,
+     "hl": "slideSettings.optionHint",
+     "color": "amber",
+     "cap": "Option-click a slide to load it — nothing goes out",
+     "keys": "⌥ click · Alt+click",
+     "capdur": 4.6
+    }
+   ]
+  },
+  "s6": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      "sidebar.startHereUnderTour"
+     ]
+    },
+    {
+     "mouse": [
+      "move",
+      "middle.empty.right"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "status.left",
+     "scale": 1.9,
+     "center": [
+      1700,
+      1900
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "status.showEdit",
+     "lbl": [
+      "Show · Edit",
+      "run the show, or edit slides"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "status.onAir",
+     "color": "hot",
+     "lbl": [
+      "On air",
+      "monitors that are showing"
+     ],
+     "lblColor": "hot",
+     "lblSide": "above"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "status.speaker",
+     "lbl": [
+      "Sound device",
+      "where the sound goes"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "hl": "status.stageTitle",
+     "lbl": [
+      "On stage",
+      "what's up right now"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "zoom": "status.right",
+     "scale": 2.2,
+     "center": [
+      2600,
+      1900
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.6,
+     "hl": "status.tellUs",
+     "lbl": [
+      "Tell us what's wrong",
+      "send us a note"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 7,
+     "at": 0.0,
+     "hl": "status.cardSize",
+     "lbl": [
+      "Card size",
+      "bigger cards, fewer mis-clicks"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 8,
+     "at": -1.5,
+     "mouse": [
+      "hover",
+      "status.lock"
+     ]
+    },
+    {
+     "line": 8,
+     "at": 0.0,
+     "hl": "status.lock",
+     "lbl": [
+      "Lock editing",
+      "slides still go out"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 9,
+     "at": 0.0,
+     "hl": "status.gear",
+     "lbl": [
+      "Settings",
+      ""
+     ],
+     "lblSide": "above"
+    }
+   ]
+  },
+  "s7": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      "sidebar.startHereUnderTour"
+     ]
+    },
+    {
+     "mouse": [
+      "move",
+      3740,
+      2102
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 1,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      "sidebar.welcomeLoopRow"
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.4,
+     "mouse": [
+      "move",
+      "middle.empty.low"
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "cap": "Scripted demo on a virtual screen — the event is made up.",
+     "capdur": 5.6
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "zoom": "tile",
+     "scale": 2.0,
+     "center": [
+      1500,
+      900
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "mcp": [
+      {
+       "op": "usePt",
+       "name": "Welcome loop"
+      },
+      {
+       "op": "present",
+       "n": 1
+      },
+      {
+       "op": "openCue",
+       "name": "Summit Day 1"
+      }
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "tile.cellB",
+     "color": "amber",
+     "lbl": [
+      "B",
+      "background"
+     ],
+     "lblColor": "amber",
+     "lblSide": "right"
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "mcp": [
+      {
+       "op": "usePt",
+       "name": "Welcome words"
+      },
+      {
+       "op": "present",
+       "n": 1
+      },
+      {
+       "op": "openCue",
+       "name": "Summit Day 1"
+      }
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "hl": "tile.cellF",
+     "color": "indigo",
+     "lbl": [
+      "F",
+      "foreground"
+     ],
+     "lblColor": "indigo",
+     "lblSide": "right"
+    },
+    {
+     "line": 7,
+     "at": 0.3,
+     "mcp": [
+      {
+       "op": "usePt",
+       "name": "Summit logo"
+      },
+      {
+       "op": "present",
+       "n": 1
+      },
+      {
+       "op": "openCue",
+       "name": "Summit Day 1"
+      }
+     ]
+    },
+    {
+     "line": 8,
+     "at": 0.0,
+     "hl": "tile.cell1",
+     "color": "green",
+     "lbl": [
+      "1",
+      "overlay"
+     ],
+     "lblColor": "green",
+     "lblSide": "right"
+    },
+    {
+     "line": 9,
+     "at": 0.4,
+     "mcp": [
+      {
+       "op": "usePt",
+       "name": "Welcome words"
+      },
+      {
+       "op": "present",
+       "n": 2
+      },
+      {
+       "op": "openCue",
+       "name": "Summit Day 1"
+      }
+     ]
+    },
+    {
+     "line": 10,
+     "at": 0.3,
+     "mcp": [
+      {
+       "op": "usePt",
+       "name": "Welcome words"
+      },
+      {
+       "op": "present",
+       "n": 3
+      },
+      {
+       "op": "openCue",
+       "name": "Summit Day 1"
+      }
+     ]
+    },
+    {
+     "line": 10,
+     "at": 0.0,
+     "hl": "tile.cellB",
+     "color": "amber"
+    },
+    {
+     "line": 11,
+     "at": -0.6,
+     "mouse": [
+      "hover",
+      "tile.cellF.x"
+     ]
+    },
+    {
+     "line": 11,
+     "at": 1.5,
+     "mouse": [
+      "click",
+      "tile.cellF.x"
+     ]
+    },
+    {
+     "line": 11,
+     "at": 2.6,
+     "mouse": [
+      "move",
+      "middle.empty.low"
+     ]
+    },
+    {
+     "line": 12,
+     "at": 0.0,
+     "hl": "tile.layerColumn",
+     "lbl": [
+      "Layers",
+      "each one on its own"
+     ],
+     "lblSide": "right"
+    }
+   ]
+  },
+  "s8": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      "sidebar.welcomeWordsRow"
+     ]
+    },
+    {
+     "mcp": [
+      {
+       "op": "usePt",
+       "name": "Welcome loop"
+      },
+      {
+       "op": "present",
+       "n": 1
+      },
+      {
+       "op": "usePt",
+       "name": "Summit logo"
+      },
+      {
+       "op": "present",
+       "n": 1
+      },
+      {
+       "op": "openCue",
+       "name": "Summit Day 1"
+      }
+     ]
+    },
+    {
+     "sleep": 1.0
+    },
+    {
+     "mouse": [
+      "click",
+      "sidebar.welcomeWordsRow"
+     ]
+    },
+    {
+     "sleep": 0.8
+    },
+    {
+     "mouse": [
+      "move",
+      1203,
+      491
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 1,
+     "at": 1.3,
+     "mouse": [
+      "click",
+      "status.edit"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "editor.strip",
+     "lbl": [
+      "Slide strip",
+      "every slide, in order"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.5,
+     "mouse": [
+      "click",
+      "status.show"
+     ]
+    },
+    {
+     "line": 5,
+     "at": 1.2,
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    }
+   ]
+  },
+  "s9": {
+   "noclip": true,
+   "events": []
+  }
+ }
+}

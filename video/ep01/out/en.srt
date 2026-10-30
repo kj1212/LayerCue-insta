@@ -1,356 +1,360 @@
 1
-00:00:00,400 --> 00:00:02,430
-This is LayerCue.
+00:00:06,400 --> 00:00:08,440
+Hi there! This is LayerCue.
 
 2
-00:00:03,380 --> 00:00:07,320
-It sends a presentation to a screen, in layers.
+00:00:08,910 --> 00:00:11,830
+It puts your show on the big screen, in layers.
 
 3
-00:00:07,370 --> 00:00:10,290
+00:00:11,900 --> 00:00:13,910
 It runs on Mac and Windows.
 
 4
-00:00:10,340 --> 00:00:13,100
-A video runs underneath.
+00:00:14,280 --> 00:00:16,620
+Here, a video runs underneath.
 
 5
-00:00:13,150 --> 00:00:15,290
+00:00:16,690 --> 00:00:18,240
 Words sit on top.
 
 6
-00:00:15,340 --> 00:00:18,000
-A logo stays in a corner.
+00:00:18,310 --> 00:00:20,570
+And a logo stays up in the corner.
 
 7
-00:00:18,050 --> 00:00:21,410
+00:00:20,640 --> 00:00:23,010
 Each one comes and goes on its own.
 
 8
-00:00:23,360 --> 00:00:27,500
-By the end you will point at every part of this window.
+00:00:23,880 --> 00:00:27,040
+In this episode, we'll walk around the main window.
 
 9
-00:00:27,550 --> 00:00:29,740
-Today we only look.
+00:00:27,110 --> 00:00:28,630
+Today we just look.
 
 10
-00:00:29,790 --> 00:00:33,010
-You send nothing to the stage today.
+00:00:28,700 --> 00:00:30,640
+You won't send anything out yet.
 
 11
-00:00:35,610 --> 00:00:38,170
+00:00:32,660 --> 00:00:34,550
 The window has four areas.
 
 12
-00:00:38,220 --> 00:00:40,620
+00:00:34,620 --> 00:00:36,280
 The sidebar on the left.
 
 13
-00:00:40,670 --> 00:00:43,000
-The slides in the middle.
+00:00:36,350 --> 00:00:37,990
+Your slides in the middle.
 
 14
-00:00:43,050 --> 00:00:45,580
-The band across the top.
+00:00:38,060 --> 00:00:40,160
+The stage band across the top.
 
 15
-00:00:45,630 --> 00:00:48,620
-The status bar along the bottom.
+00:00:40,230 --> 00:00:42,420
+And the status bar along the bottom.
 
 16
-00:00:49,270 --> 00:00:50,990
-Pick on the left.
+00:00:42,990 --> 00:00:45,240
+Here's an easy way to remember it.
 
 17
-00:00:51,040 --> 00:00:52,780
-Click in the middle.
+00:00:45,310 --> 00:00:46,650
+Pick on the left.
 
 18
-00:00:52,830 --> 00:00:54,390
-Watch the top.
+00:00:46,720 --> 00:00:48,010
+Click in the middle.
 
 19
-00:00:54,440 --> 00:00:56,580
-Adjust on the right.
+00:00:48,080 --> 00:00:49,390
+Watch the top.
 
 20
-00:00:57,230 --> 00:01:00,920
-The right means Slide settings, at the band's end.
+00:00:49,460 --> 00:00:50,920
+Adjust on the right.
 
 21
-00:01:00,970 --> 00:01:04,210
-Every later episode hangs on it.
+00:00:51,390 --> 00:00:54,970
+Adjust means Slide settings, at the far right of the band.
 
 22
-00:01:06,810 --> 00:01:08,850
-I start on the left.
+00:00:56,890 --> 00:00:58,570
+Let's start on the left.
 
 23
-00:01:08,900 --> 00:01:11,260
-Cue Sheets sit on top.
+00:00:58,640 --> 00:01:00,350
+Cue Sheets are at the top.
 
 24
-00:01:11,310 --> 00:01:15,160
+00:01:00,420 --> 00:01:03,470
 A cue sheet is the running order for one event.
 
 25
-00:01:15,210 --> 00:01:18,730
-Tour lines up six short guides, in order.
+00:01:03,540 --> 00:01:06,510
+This one, Tour, lines up six short guides.
 
 26
-00:01:19,680 --> 00:01:23,010
-The Library drawer is below, under a line.
+00:01:06,980 --> 00:01:09,500
+Below the line is the Library drawer.
 
 27
-00:01:23,060 --> 00:01:26,840
+00:01:09,570 --> 00:01:12,480
 A library is a folder of presentations.
 
 28
-00:01:26,890 --> 00:01:30,310
-A presentation is one set of slides.
+00:01:12,550 --> 00:01:15,420
+And a presentation is one set of slides.
 
 29
-00:01:30,360 --> 00:01:33,600
-The number at right is the slide count.
+00:01:15,490 --> 00:01:18,530
+The number on the right is how many slides it has.
 
 30
-00:01:34,550 --> 00:01:36,750
-I press the double arrow.
+00:01:19,000 --> 00:01:21,500
+Press the double arrow to pull the drawer up.
 
 31
-00:01:37,700 --> 00:01:40,370
-I press it again to lower it.
+00:01:22,070 --> 00:01:23,880
+Press it again to lower it.
 
 32
-00:01:40,420 --> 00:01:43,300
-Pointing at it does not raise it.
+00:01:23,950 --> 00:01:25,960
+Just pointing at it won't raise it.
 
 33
-00:01:45,900 --> 00:01:49,440
-I click Start here, inside the Tour cue sheet.
+00:01:27,880 --> 00:01:31,080
+Now I'll click Start here, inside the Tour cue sheet.
 
 34
-00:01:49,490 --> 00:01:53,580
+00:01:31,150 --> 00:01:34,420
 The middle shows every presentation in it, in order.
 
 35
-00:01:54,530 --> 00:01:58,710
-Each has a title bar with its name and slide count.
+00:01:34,790 --> 00:01:38,300
+Each one has a title bar with its name and slide count.
 
 36
-00:01:58,760 --> 00:02:01,430
-Five buttons sit at its right.
+00:01:38,370 --> 00:01:40,340
+On the right are five buttons.
 
 37
-00:02:01,480 --> 00:02:02,920
+00:01:40,410 --> 00:01:41,590
 Add File.
 
 38
-00:02:02,970 --> 00:02:04,040
+00:01:41,660 --> 00:01:42,640
 Link.
 
 39
-00:02:04,090 --> 00:02:05,150
+00:01:42,710 --> 00:01:43,670
 Edit.
 
 40
-00:02:05,200 --> 00:02:07,060
+00:01:43,740 --> 00:01:45,280
 Layer for this list.
 
 41
-00:02:07,110 --> 00:02:09,230
-Presentation settings.
+00:01:45,350 --> 00:01:47,290
+And Presentation settings.
 
 42
-00:02:09,280 --> 00:02:12,260
-Under the bar are the slide cards.
+00:01:47,660 --> 00:01:49,900
+Below the bar are the slide cards.
 
 43
-00:02:12,310 --> 00:02:15,780
-Under the picture, a Text badge and the name.
+00:01:49,970 --> 00:01:53,190
+Under each picture, you'll see its kind and its name.
 
 44
-00:02:15,830 --> 00:02:18,940
-A click on a card's picture sends it out.
+00:01:53,560 --> 00:01:56,840
+Here's the big one: a click on the picture sends it out.
 
 45
-00:02:18,990 --> 00:02:22,200
+00:01:56,910 --> 00:01:59,560
 No confirmation, no second step.
 
 46
-00:02:23,150 --> 00:02:25,800
-I do not click a picture today.
+00:02:00,030 --> 00:02:02,240
+So we won't click any pictures today.
 
 47
-00:02:25,850 --> 00:02:28,340
-That is Episode 3.
+00:02:02,310 --> 00:02:03,980
+That's Episode 3.
 
 48
-00:02:30,940 --> 00:02:33,750
-Now the top band, where you watch.
+00:02:05,900 --> 00:02:08,010
+Up top is where you watch the stage.
 
 49
-00:02:33,800 --> 00:02:36,800
-The tile at the left is Screen 1.
+00:02:08,080 --> 00:02:10,240
+The tile on the left is Screen 1.
 
 50
-00:02:36,850 --> 00:02:40,780
-Here it is a virtual screen, no projector needed.
+00:02:10,310 --> 00:02:13,770
+Here it's a virtual screen, so no projector is needed.
 
 51
-00:02:40,830 --> 00:02:45,540
-The power switch at the right end turns the output on and off.
+00:02:13,840 --> 00:02:17,200
+The switch at the right end turns the output on and off.
 
 52
-00:02:46,490 --> 00:02:51,430
-Under the preview, Layers shown picks which layers this monitor shows.
+00:02:17,570 --> 00:02:21,460
+Under the preview, Layers shown picks what this monitor shows.
 
 53
-00:02:51,480 --> 00:02:55,510
-Beside the preview, the layer column shows what is up.
+00:02:21,530 --> 00:02:25,240
+Beside the preview, the layer column shows what's up right now.
 
 54
-00:02:55,560 --> 00:02:58,470
-CLEAR on top, then seven layers.
+00:02:25,310 --> 00:02:27,800
+Clear at the top, then seven layers.
 
 55
-00:02:58,520 --> 00:03:00,350
+00:02:27,870 --> 00:02:29,240
 Five overlays.
 
 56
-00:03:00,400 --> 00:03:02,320
+00:02:29,310 --> 00:02:30,770
 F for foreground.
 
 57
-00:03:02,370 --> 00:03:04,310
-B for background.
+00:02:30,840 --> 00:02:32,430
+And B for background.
 
 58
-00:03:05,260 --> 00:03:07,340
-Next, the sound meter.
+00:02:32,900 --> 00:02:34,740
+Next comes the sound meter.
 
 59
-00:03:07,390 --> 00:03:10,290
-Then Music, on its own channel.
+00:02:34,810 --> 00:02:37,380
+Then Music, which has its own channel.
 
 60
-00:03:10,340 --> 00:03:13,210
-At the right end, Slide settings.
+00:02:37,450 --> 00:02:39,870
+And at the right end, Slide settings.
 
 61
-00:03:13,260 --> 00:03:17,210
-Option + slide to load means look, not send.
+00:02:39,940 --> 00:02:43,590
+Option-click a slide to look at it here, without sending it.
 
 62
-00:03:19,810 --> 00:03:22,900
-The status bar reads left to right.
+00:02:45,510 --> 00:02:48,100
+The status bar reads from left to right.
 
 63
-00:03:22,950 --> 00:03:24,690
+00:02:48,170 --> 00:02:49,450
 Show and Edit.
 
 64
-00:03:24,740 --> 00:03:28,510
+00:02:49,520 --> 00:02:52,630
 The On air chip counts the monitors that are showing.
 
 65
-00:03:28,560 --> 00:03:31,860
+00:02:52,700 --> 00:02:55,100
 The speaker box is your sound device.
 
 66
-00:03:31,910 --> 00:03:35,510
-The dot and title say what is on stage.
+00:02:55,170 --> 00:02:57,700
+The dot and title tell you what's on stage.
 
 67
-00:03:36,460 --> 00:03:39,120
+00:02:58,070 --> 00:03:00,230
 Tell us what's wrong sends us a note.
 
 68
-00:03:39,170 --> 00:03:41,470
-The slider sets card size.
+00:03:00,300 --> 00:03:02,570
+The slider changes the card size.
 
 69
-00:03:41,520 --> 00:03:44,400
+00:03:02,640 --> 00:03:04,660
 The pencil is Lock editing.
 
 70
-00:03:44,450 --> 00:03:46,690
-The gear is Settings.
+00:03:04,730 --> 00:03:06,600
+And the gear opens Settings.
 
 71
-00:03:49,290 --> 00:03:52,930
-This demo is scripted, on a virtual screen.
+00:03:08,520 --> 00:03:10,470
+Now let's see layers in action.
 
 72
-00:03:52,980 --> 00:03:55,080
-The event is made up.
+00:03:10,540 --> 00:03:13,770
+This demo is scripted, and the event is made up.
 
 73
-00:03:55,130 --> 00:03:58,020
+00:03:14,140 --> 00:03:16,310
 A video goes to the background.
 
 74
-00:03:58,070 --> 00:04:00,610
+00:03:16,380 --> 00:03:18,130
 The B cell turns amber.
 
 75
-00:04:01,260 --> 00:04:04,430
-Words go to the foreground, on top.
+00:03:18,500 --> 00:03:20,820
+Words go on top, in the foreground.
 
 76
-00:04:04,480 --> 00:04:06,520
+00:03:20,890 --> 00:03:22,380
 F turns indigo.
 
 77
-00:04:06,570 --> 00:04:09,530
+00:03:22,450 --> 00:03:24,490
 A logo goes to overlay one.
 
 78
-00:04:09,580 --> 00:04:12,030
-Cell 1 turns green.
+00:03:24,560 --> 00:03:26,400
+And cell 1 turns green.
 
 79
-00:04:12,680 --> 00:04:14,650
-I change the words.
+00:03:26,870 --> 00:03:28,530
+Now I'll change the words.
 
 80
-00:04:14,700 --> 00:04:17,040
-The video never stops.
+00:03:28,600 --> 00:03:30,280
+The video keeps playing.
 
 81
-00:04:17,090 --> 00:04:21,040
-The x beside F takes only the words down.
+00:03:30,650 --> 00:03:33,890
+The little x next to F takes just the words down.
 
 82
-00:04:21,690 --> 00:04:24,600
-That is the whole point of layers.
+00:03:34,460 --> 00:03:36,610
+That's the whole idea of layers!
 
 83
-00:04:26,900 --> 00:04:29,970
-I click Edit in the status bar.
+00:03:38,630 --> 00:03:41,630
+One last stop: Edit, in the status bar.
 
 84
-00:04:30,920 --> 00:04:34,390
+00:03:42,100 --> 00:03:44,780
 The whole window becomes the slide editor.
 
 85
-00:04:34,440 --> 00:04:37,760
-The slides stand in a strip down the left.
+00:03:44,850 --> 00:03:47,490
+Your slides line up in a strip down the left.
 
 86
-00:04:37,810 --> 00:04:40,150
-I click Show to come back.
+00:03:47,860 --> 00:03:49,480
+Click Show to come back.
 
 87
-00:04:41,100 --> 00:04:43,600
-That is the main window.
+00:03:49,950 --> 00:03:51,740
+And that's the main window!
 
 88
-00:04:46,200 --> 00:04:49,610
-You can now point at every part of the window.
+00:03:53,660 --> 00:03:56,490
+You can now find your way around the whole window.
 
 89
-00:04:50,560 --> 00:04:55,270
-Next: Episode 2 — Install, First Launch and Settings.
+00:03:56,560 --> 00:04:00,460
+Next up: Episode 2, Install, First Launch and Settings.
+
+90
+00:04:00,530 --> 00:04:01,720
+See you there!
 

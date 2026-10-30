@@ -1,792 +1,800 @@
 {
  "title": "Meet LayerCue: The Main Window — LayerCue from Zero, Episode 1",
- "goalLine": "By the end you will point at every part of the LayerCue window, and you have seen the seven layers once, on screen.",
+ "goalLine": "By the end you'll know every part of the LayerCue window, and you'll have seen layers in action.",
  "segments": [
   {
    "id": "s1",
    "chapter": "What LayerCue is",
    "start": 0,
-   "end": 35,
+   "end": 0,
    "lines": [
     {
-     "text": "This is LayerCue.",
-     "screen": "stage output full frame: dark bokeh loop, the word Welcome, Riverside logo top-left",
-     "action": "setup, this take only: set Screen 1 to the main display and switch its power on; mcp: present Welcome loop slide 1, Welcome words slide 1, Summit logo slide 1; record the output window full screen; afterwards set Screen 1 back to Virtual screen 1920×1080 and mcp: clear",
-     "caption": "",
-     "keys": "",
-     "pause": 1
-    },
-    {
-     "text": "It sends a presentation to a screen, in layers.",
-     "screen": "same stage output",
+     "text": "Hi there! This is LayerCue.",
+     "pause": 0.4,
+     "screen": "",
      "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
+    },
+    {
+     "text": "It puts your show on the big screen, in layers.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
      "text": "It runs on Mac and Windows.",
-     "screen": "same stage output",
-     "action": "ae: caption Mac and Windows",
-     "caption": "Mac and Windows",
-     "keys": "",
-     "pause": 0
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
-     "text": "A video runs underneath.",
-     "screen": "stage output, only the loop video lit",
-     "action": "ae: dim everything except the loop video",
+     "text": "Here, a video runs underneath.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "Words sit on top.",
-     "screen": "stage output, only the Welcome words lit",
-     "action": "ae: dim everything except the Welcome words",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "A logo stays in a corner.",
-     "screen": "stage output, only the logo top-left lit",
-     "action": "ae: dim everything except the logo",
+     "text": "And a logo stays up in the corner.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "Each one comes and goes on its own.",
-     "screen": "stage output, all three lit again, then the title card",
-     "action": "ae: undim; then title card Episode 1 — Meet LayerCue: The Main Window during the pause",
-     "caption": "",
-     "keys": "",
-     "pause": 2
-    },
-    {
-     "text": "By the end you will point at every part of this window.",
-     "screen": "cut to the main window: Start here (READ ME) in the middle; Cue Sheets shows Tour and Summit Day 1, both open; Library drawer lowered; status bar reads On air 1/1 · Screen 1, LG HDR 4K, Stage clear",
-     "action": "setup: before the main-window take, pick LG HDR 4K in the status bar speaker box and keep it for every take; mcp: clear; ae: cut to the main window; caption",
-     "caption": "By the end you will point at every part of the window.",
-     "keys": "",
-     "pause": 0
-    },
-    {
-     "text": "Today we only look.",
-     "screen": "main window, nothing changes",
+     "pause": 0.8,
+     "screen": "",
      "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "You send nothing to the stage today.",
-     "screen": "main window, nothing changes",
+     "text": "In this episode, we'll walk around the main window.",
+     "pause": 0,
+     "screen": "",
      "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
+    },
+    {
+     "text": "Today we just look.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "You won't send anything out yet.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     }
    ]
   },
   {
    "id": "s2",
    "chapter": "The four areas",
-   "start": 35,
-   "end": 65,
+   "start": 0,
+   "end": 0,
    "lines": [
     {
      "text": "The window has four areas.",
-     "screen": "main window, everything dimmed",
-     "action": "ae: dim the whole window",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "The sidebar on the left.",
-     "screen": "sidebar lit: Cue Sheets, Tour, Summit Day 1, Library drawer",
-     "action": "ae: highlight box around the sidebar",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The slides in the middle.",
-     "screen": "slide list lit: the Start here cards",
-     "action": "ae: highlight box around the slide list",
+     "text": "Your slides in the middle.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The band across the top.",
-     "screen": "top band lit: monitor tile, meter, Music, Slide settings",
-     "action": "ae: highlight box around the top band",
+     "text": "The stage band across the top.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The status bar along the bottom.",
-     "screen": "status bar lit: Show, Edit, On air 1/1 · Screen 1, LG HDR 4K, Stage clear, Tell us what's wrong, slider, pencil, gear",
-     "action": "ae: highlight box around the status bar",
+     "text": "And the status bar along the bottom.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0.7
+     "keys": ""
+    },
+    {
+     "text": "Here's an easy way to remember it.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
      "text": "Pick on the left.",
-     "screen": "sidebar lit",
-     "action": "ae: highlight box around the sidebar; caption line 1",
-     "caption": "Pick on the left.",
-     "keys": "",
-     "pause": 0
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
      "text": "Click in the middle.",
-     "screen": "slide list lit",
-     "action": "ae: highlight box around the slide list; caption line 2",
-     "caption": "Pick on the left. Click in the middle.",
-     "keys": "",
-     "pause": 0
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
      "text": "Watch the top.",
-     "screen": "monitor tile lit",
-     "action": "ae: highlight box around the monitor tile; caption line 3",
-     "caption": "Pick on the left. Click in the middle. Watch the top.",
-     "keys": "",
-     "pause": 0
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
      "text": "Adjust on the right.",
-     "screen": "Slide settings panel lit at the right end of the band",
-     "action": "ae: highlight box around Slide settings; caption line 4",
-     "caption": "Pick on the left. Click in the middle. Watch the top. Adjust on the right.",
-     "keys": "",
-     "pause": 0.7
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
-     "text": "The right means Slide settings, at the band's end.",
-     "screen": "Slide settings panel lit, caption still up",
-     "action": "ae: callout label on the Slide settings heading",
-     "caption": "Pick on the left. Click in the middle. Watch the top. Adjust on the right.",
-     "keys": "",
-     "pause": 0
-    },
-    {
-     "text": "Every later episode hangs on it.",
-     "screen": "main window undimmed, caption still up",
-     "action": "ae: undim",
-     "caption": "Pick on the left. Click in the middle. Watch the top. Adjust on the right.",
-     "keys": "",
-     "pause": 1
+     "text": "Adjust means Slide settings, at the far right of the band.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     }
    ]
   },
   {
    "id": "s3",
    "chapter": "The sidebar",
-   "start": 65,
-   "end": 105,
+   "start": 0,
+   "end": 0,
    "lines": [
     {
-     "text": "I start on the left.",
-     "screen": "zoomed upper sidebar: Cue Sheets, Tour with six rows, Summit Day 1, Library heading, READ ME with Start here",
-     "action": "ae: zoom 1.6x on the sidebar, framed from Cue Sheets down to READ ME › Working with slides",
+     "text": "Let's start on the left.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Cue Sheets sit on top.",
-     "screen": "Cue Sheets heading with its + at the right",
-     "action": "ae: highlight box around the Cue Sheets heading",
+     "text": "Cue Sheets are at the top.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "A cue sheet is the running order for one event.",
-     "screen": "Tour row with its list icon",
-     "action": "ae: callout label on the Tour row: cue sheet",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Tour lines up six short guides, in order.",
-     "screen": "the rows under Tour: Start here 4, Working with slides 5, Bring it in 5, Make it with AI 4, Stage output 5, Libraries & cue sheets 4",
-     "action": "ae: highlight box around the rows under Tour",
+     "text": "This one, Tour, lines up six short guides.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
-     "text": "The Library drawer is below, under a line.",
-     "screen": "Library heading with the double arrow and +, under the thin line",
-     "action": "ae: highlight box around the Library heading",
+     "text": "Below the line is the Library drawer.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "A library is a folder of presentations.",
-     "screen": "READ ME row with its folder icon",
-     "action": "ae: callout label on the READ ME row: library",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "A presentation is one set of slides.",
-     "screen": "Start here row under READ ME, two-stacked-cards icon",
-     "action": "ae: callout label on the Start here row: presentation",
+     "text": "And a presentation is one set of slides.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The number at right is the slide count.",
-     "screen": "the 4 at the right of Start here",
-     "action": "ae: highlight box around the slide count 4",
+     "text": "The number on the right is how many slides it has.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
-     "text": "I press the double arrow.",
-     "screen": "pointer on the double arrow at the Library heading; the drawer rises over most of the sidebar, cue sheets cut off above it",
-     "action": "mouse: click the double arrow at the Library heading",
+     "text": "Press the double arrow to pull the drawer up.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
-     "text": "I press it again to lower it.",
-     "screen": "drawer back at the bottom",
-     "action": "mouse: click the double arrow again",
+     "text": "Press it again to lower it.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Pointing at it does not raise it.",
-     "screen": "pointer resting on the Library heading, the drawer stays down",
-     "action": "mouse: hover the Library heading for 1 s",
+     "text": "Just pointing at it won't raise it.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     }
    ]
   },
   {
    "id": "s4",
    "chapter": "The middle: slides",
-   "start": 105,
-   "end": 150,
+   "start": 0,
+   "end": 0,
    "lines": [
     {
-     "text": "I click Start here, inside the Tour cue sheet.",
-     "screen": "Start here under Tour gets the indigo bar; the middle shows Start here, Working with slides and Bring it in, more below",
-     "action": "ae: zoom back to the full window; mouse: click Start here under Tour in Cue Sheets",
+     "text": "Now I'll click Start here, inside the Tour cue sheet.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "The middle shows every presentation in it, in order.",
-     "screen": "Start here 4, Working with slides 5, Bring it in 5 stacked down the middle",
-     "action": "ae: highlight box around the slide list",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
-     "text": "Each has a title bar with its name and slide count.",
-     "screen": "Start here title bar: Start here 4",
-     "action": "ae: highlight box around the Start here title bar",
+     "text": "Each one has a title bar with its name and slide count.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Five buttons sit at its right.",
-     "screen": "zoomed title bar buttons: +, chain, pencil, stacked sheets, two circles",
-     "action": "ae: zoom 1.6x on the right end of the Start here title bar",
+     "text": "On the right are five buttons.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "Add File.",
-     "screen": "tooltip Add File on the +",
-     "action": "mouse: move to the + during the previous line, so the Add File tooltip is already up when the word is spoken",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "Link.",
-     "screen": "tooltip Link on the chain",
-     "action": "mouse: move to the chain during the previous line, so the Link tooltip is already up when the word is spoken",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "Edit.",
-     "screen": "tooltip Edit on the pencil",
-     "action": "mouse: move to the pencil during the previous line, so the Edit tooltip is already up when the word is spoken",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "Layer for this list.",
-     "screen": "tooltip Layer for this list on the stacked sheets",
-     "action": "mouse: move to the stacked sheets during the previous line, so the Layer for this list tooltip is already up when the words are spoken",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Presentation settings.",
-     "screen": "tooltip Presentation settings on the two circles",
-     "action": "mouse: move to the two overlapping circles during the previous line, so the Presentation settings tooltip is already up when the words are spoken",
+     "text": "And Presentation settings.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Under the bar are the slide cards.",
-     "screen": "zoom out; the four Start here cards",
-     "action": "ae: zoom back; highlight box around the Start here cards",
+     "text": "Below the bar are the slide cards.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Under the picture, a Text badge and the name.",
-     "screen": "Text badge and the name Run the big screen under card 1",
-     "action": "ae: callout label on the Text badge and the name",
+     "text": "Under each picture, you'll see its kind and its name.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "A click on a card's picture sends it out.",
-     "screen": "card 1's picture outlined, pointer away from it",
-     "action": "ae: highlight box around the picture of card 1; caption",
-     "caption": "A click on the picture sends it out. No confirmation.",
-     "keys": "",
-     "pause": 0
+     "text": "Here's the big one: a click on the picture sends it out.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
      "text": "No confirmation, no second step.",
-     "screen": "same, caption still up",
-     "action": "",
-     "caption": "A click on the picture sends it out. No confirmation.",
-     "keys": "",
-     "pause": 1
-    },
-    {
-     "text": "I do not click a picture today.",
-     "screen": "pointer moves to empty space below the cards",
-     "action": "mouse: move the pointer to empty space below the cards",
-     "caption": "",
-     "keys": "",
-     "pause": 0
-    },
-    {
-     "text": "That is Episode 3.",
-     "screen": "slide list, nothing selected",
+     "pause": 0.4,
+     "screen": "",
      "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
+    },
+    {
+     "text": "So we won't click any pictures today.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "That's Episode 3.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     }
    ]
   },
   {
    "id": "s5",
    "chapter": "The top band",
-   "start": 150,
-   "end": 200,
+   "start": 0,
+   "end": 0,
    "lines": [
     {
-     "text": "Now the top band, where you watch.",
-     "screen": "zoomed top band: monitor tile, meter, Music, Slide settings",
-     "action": "ae: zoom 1.4x on the top band",
+     "text": "Up top is where you watch the stage.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The tile at the left is Screen 1.",
-     "screen": "monitor tile with tab 01 in orange and Virtual screen 1920×1080; callout Screen 1 on the 01 tab",
-     "action": "ae: highlight box around the monitor tile; callout label Screen 1 on the 01 tab",
+     "text": "The tile on the left is Screen 1.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Here it is a virtual screen, no projector needed.",
-     "screen": "header text Virtual screen 1920×1080",
-     "action": "ae: callout label on Virtual screen 1920×1080",
+     "text": "Here it's a virtual screen, so no projector is needed.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The power switch at the right end turns the output on and off.",
-     "screen": "orange power switch at the right end of the header",
-     "action": "ae: highlight box around the power switch",
+     "text": "The switch at the right end turns the output on and off.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
-     "text": "Under the preview, Layers shown picks which layers this monitor shows.",
-     "screen": "Layers shown strip B F 1 2 3 4 5 under the black preview",
-     "action": "ae: highlight box around the Layers shown strip",
+     "text": "Under the preview, Layers shown picks what this monitor shows.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Beside the preview, the layer column shows what is up.",
-     "screen": "layer column: CLEAR, 1 2 3 4 5 F B, all cells empty",
-     "action": "ae: highlight box around the layer column",
+     "text": "Beside the preview, the layer column shows what's up right now.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "CLEAR on top, then seven layers.",
-     "screen": "CLEAR at the head of the column",
-     "action": "ae: callout label on CLEAR",
+     "text": "Clear at the top, then seven layers.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "Five overlays.",
-     "screen": "cells 1 to 5",
-     "action": "ae: callout label on cells 1–5: overlays",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "F for foreground.",
-     "screen": "F cell with its white outline",
-     "action": "ae: callout label on F: foreground",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "B for background.",
-     "screen": "B cell",
-     "action": "ae: callout label on B: background",
+     "text": "And B for background.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
-     "text": "Next, the sound meter.",
-     "screen": "meter with 0.0 dB, MUTE and SOLO",
-     "action": "ae: highlight box around the meter",
+     "text": "Next comes the sound meter.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Then Music, on its own channel.",
-     "screen": "Music panel: folder bar Default, Drop music here, its own transport",
-     "action": "ae: highlight box around the Music panel",
+     "text": "Then Music, which has its own channel.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "At the right end, Slide settings.",
-     "screen": "Slide settings panel: empty preview, To Screen button",
-     "action": "ae: highlight box around Slide settings",
+     "text": "And at the right end, Slide settings.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Option + slide to load means look, not send.",
-     "screen": "the words Option + slide to load beside the Slide settings heading",
-     "action": "ae: highlight box around Option + slide to load; caption",
-     "caption": "Option + slide to load · Alt + slide to load",
-     "keys": "Option · Alt",
-     "pause": 1
+     "text": "Option-click a slide to look at it here, without sending it.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     }
    ]
   },
   {
    "id": "s6",
    "chapter": "The status bar",
-   "start": 200,
-   "end": 230,
+   "start": 0,
+   "end": 0,
    "lines": [
     {
-     "text": "The status bar reads left to right.",
-     "screen": "zoomed status bar, left group: Show | Edit, On air 1/1 · Screen 1, LG HDR 4K, Stage clear",
-     "action": "ae: zoom 1.8x on the left group of the status bar, Show through Stage clear",
+     "text": "The status bar reads from left to right.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "Show and Edit.",
-     "screen": "Show | Edit segmented control, Show filled",
-     "action": "ae: highlight box around Show | Edit",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "The On air chip counts the monitors that are showing.",
-     "screen": "chip ● On air 1/1 · Screen 1 with the orange dot",
-     "action": "ae: callout label on the On air chip",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "The speaker box is your sound device.",
-     "screen": "speaker icon and LG HDR 4K",
-     "action": "ae: callout label on LG HDR 4K",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The dot and title say what is on stage.",
-     "screen": "grey dot and Stage clear",
-     "action": "ae: callout label on Stage clear",
+     "text": "The dot and title tell you what's on stage.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
      "text": "Tell us what's wrong sends us a note.",
-     "screen": "zoom pans to the right group: envelope button Tell us what's wrong, slider, pencil, gear",
-     "action": "ae: pan the zoom to the right group; highlight box around Tell us what's wrong",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The slider sets card size.",
-     "screen": "card-size slider",
-     "action": "ae: highlight box around the slider",
+     "text": "The slider changes the card size.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "The pencil is Lock editing.",
-     "screen": "tooltip Lock editing on the pencil",
-     "action": "mouse: hover the pencil for 1 s",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The gear is Settings.",
-     "screen": "gear at the right end",
-     "action": "ae: callout label on the gear",
+     "text": "And the gear opens Settings.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     }
    ]
   },
   {
    "id": "s7",
    "chapter": "Layers, in a demo",
-   "start": 230,
-   "end": 265,
+   "start": 0,
+   "end": 0,
    "lines": [
     {
-     "text": "This demo is scripted, on a virtual screen.",
-     "screen": "Welcome loop under Summit Day 1 gets the indigo bar; Summit Day 1 cue sheet in the middle: Welcome loop (Background chip), Welcome words, Summit logo (1 Overlay chip); preview black; Stage clear",
-     "action": "ae: zoom back to the full window; mouse: click Welcome loop under Summit Day 1 in Cue Sheets (the cue sheet already open); ae: caption",
-     "caption": "Scripted demo on a virtual screen — no projector is live.",
-     "keys": "",
-     "pause": 0
+     "text": "Now let's see layers in action.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
-     "text": "The event is made up.",
-     "screen": "Summit Day 1 cards, caption still up",
+     "text": "This demo is scripted, and the event is made up.",
+     "pause": 0.3,
+     "screen": "",
      "action": "",
-     "caption": "Scripted demo on a virtual screen — no projector is live.",
-     "keys": "",
-     "pause": 0
+     "caption": "",
+     "keys": ""
     },
     {
      "text": "A video goes to the background.",
-     "screen": "preview shows the loop; Welcome loop card gets an orange border; orange bar on its title bar",
-     "action": "mcp: present Welcome loop slide 1",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "The B cell turns amber.",
-     "screen": "B cell amber with an × beside it; control row reads B Background",
-     "action": "ae: highlight box around the B cell",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0.7
+     "keys": ""
     },
     {
-     "text": "Words go to the foreground, on top.",
-     "screen": "preview shows Welcome over the loop; status bar title Welcome with an orange dot",
-     "action": "mcp: present Welcome words slide 1",
+     "text": "Words go on top, in the foreground.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "F turns indigo.",
-     "screen": "F cell indigo with an ×",
-     "action": "ae: highlight box around the F cell",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
      "text": "A logo goes to overlay one.",
-     "screen": "preview shows the Riverside logo top-left",
-     "action": "mcp: present Summit logo slide 1",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "Cell 1 turns green.",
-     "screen": "layer column: 1 green, F indigo, B amber, an × beside each",
-     "action": "ae: highlight box around cell 1",
+     "text": "And cell 1 turns green.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0.7
+     "keys": ""
     },
     {
-     "text": "I change the words.",
-     "screen": "preview shows Doors open 9:00 over the loop; B and 1 unchanged",
-     "action": "mcp: present Welcome words slide 2 (scripted — no picture is clicked in this episode)",
+     "text": "Now I'll change the words.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The video never stops.",
-     "screen": "preview shows Keynote over the loop; loop still moving; B and 1 untouched",
-     "action": "mcp: present Welcome words slide 3; ae: highlight box around the B cell and cell 1",
+     "text": "The video keeps playing.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The x beside F takes only the words down.",
-     "screen": "words fade out; F cell goes dark; loop and logo stay",
-     "action": "mouse: click the × beside F",
+     "text": "The little x next to F takes just the words down.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0.7
+     "keys": ""
     },
     {
-     "text": "That is the whole point of layers.",
-     "screen": "layer column: 1 green, B amber, F dark; preview shows loop and logo",
-     "action": "ae: highlight box around the layer column",
+     "text": "That's the whole idea of layers!",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0.7
+     "keys": ""
     }
    ]
   },
   {
    "id": "s8",
    "chapter": "Edit and back",
-   "start": 265,
-   "end": 285,
+   "start": 0,
+   "end": 0,
    "lines": [
     {
-     "text": "I click Edit in the status bar.",
-     "screen": "window becomes the slide editor: Show on output top-left, slide strip left, ribbon above a large canvas, Background row at the bottom",
-     "action": "setup selects Welcome words (editor opens on the last words slide shown); mouse: click Edit in the status bar",
+     "text": "One last stop: Edit, in the status bar.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
      "text": "The whole window becomes the slide editor.",
-     "screen": "slide editor, Edit filled in the status bar and a presentation picker",
+     "pause": 0,
+     "screen": "",
      "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "The slides stand in a strip down the left.",
-     "screen": "slide strip with New Slide and Duplicate slide at its bottom",
-     "action": "ae: highlight box around the slide strip",
+     "text": "Your slides line up in a strip down the left.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 0
+     "keys": ""
     },
     {
-     "text": "I click Show to come back.",
-     "screen": "main window returns: sidebar, top band, Summit Day 1 in the middle",
-     "action": "mouse: click Show in the status bar",
+     "text": "Click Show to come back.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     },
     {
-     "text": "That is the main window.",
-     "screen": "full main window; in the pause after the line the preview goes black and the title reads Stage clear",
-     "action": "in the 1 s pause after the line: mcp: clear",
+     "text": "And that's the main window!",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
      "caption": "",
-     "keys": "",
-     "pause": 1
+     "keys": ""
     }
    ]
   },
   {
    "id": "s9",
-   "chapter": "End card",
-   "start": 285,
-   "end": 300,
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
    "lines": [
     {
-     "text": "You can now point at every part of the window.",
-     "screen": "series roadmap card: 18 episodes plus the What's New slot, Episode 1 highlighted",
-     "action": "ae: roadmap card with Episode 1 highlighted; caption",
-     "caption": "Not installed yet? Episode 2 walks you through it, on Mac and Windows.",
-     "keys": "",
-     "pause": 1
+     "text": "You can now find your way around the whole window.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
-     "text": "Next: Episode 2 — Install, First Launch and Settings.",
-     "screen": "roadmap card, Episode 2 lit beside Episode 1",
-     "action": "ae: roadmap card stays (Episode 2 already carries the NEXT outline)",
-     "caption": "Not installed yet? Episode 2 walks you through it, on Mac and Windows.",
-     "keys": "",
-     "pause": 2
+     "text": "Next up: Episode 2, Install, First Launch and Settings.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "See you there!",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     }
    ]
   }
  ],
- "descriptionYouTube": "By the end you will point at every part of the LayerCue window, and you have seen the seven layers once, on screen.\nNot installed yet? Episode 2 walks you through it, on Mac and Windows.\nNo prior episode needed.\nLost? Start with Episode 1.\nRecorded on LayerCue 0.9.12.\nNo account is needed to run a show; Settings needs a one-time Google sign-in.\nManual: https://layercue.com/docs/start/tour/\nThe narration is AI-generated and the background music was synthesized on a Mac. The event in the demo, Riverside Tech Summit 2026, is fictional; the demo is scripted on a virtual screen.",
- "rationale": "리바이저 패스. must 이슈 5건과 should 이슈 14건을 모두 반영했고, 게이트 이슈는 없었다. 스피커 박스가 한글(System default · MacBook Pro 스…)로 뜨는 문제: s1 8번째 줄 action에 \"메인 창 테이크 전에 상태 바 스피커 박스에서 LG HDR 4K를 고르고 모든 테이크에서 유지\"를 setup 지시로 넣었고, 같은 줄 screen에 Summit Day 1이 처음부터 Cue Sheets에 열려 있어야 한다는 연속성 조건을 적었다. s1 1번째 줄은 가상 화면이 출력 창을 열지 않으므로 \"이 테이크만 Screen 1을 main display로 바꿔 전원을 켜고 출력 창을 전체 화면으로 녹화한 뒤 Virtual screen 1920×1080으로 되돌리고 clear\"로 action을 바꿨다. 매뉴얼(start/tour.md 44–46행)대로 큐시트 행 클릭은 열고 닫기이므로 s4 1번째 줄은 \"I click Start here, inside the Tour cue sheet.\"(줌 복귀 후 Tour 아래 Start here 클릭), s7 1번째 줄은 Summit Day 1 아래 Welcome loop 클릭으로 고쳤다. 매뉴얼 표현에 맞춰 바꾼 줄: s1 10 \"You send nothing to the stage today.\", s3 4 \"Tour lines up the READ ME guides, in order.\"(매뉴얼이 5개, 녹화가 6개라 숫자를 뺌), s3 12 \"Pointing at it does not raise it.\", s5 4 전원 스위치는 출력을 켜고 끈다, s5 5 Layers shown은 이 모니터가 보여줄 레이어, s5 6 레이어 컬럼은 무대 전체, s6 3 On air 칩은 보여주는 모니터 수. 연출: s3 줌은 Cue Sheets부터 READ ME › Working with slides까지 프레이밍, s6 줌은 왼쪽 그룹에서 시작해 6번째 줄에서 오른쪽 그룹으로 팬, s5 2는 01 탭에 Screen 1 콜아웃, s4 5–9는 앞 줄 동안 미리 호버해 툴팁이 떠 있는 상태로 말하고 9번째 줄 뒤 pause 0, s7 9는 Welcome words 2번 카드 실제 클릭, s8 5의 mcp: clear는 줄 뒤 1초 pause로 이동. 단어 예산을 맞추기 위해 세 줄을 뺐다(s3 \"The drawer rises over the cue sheets.\" — 클릭 뒤 pause에서 눈에 보임, s4 \"The number sits top left.\", s5 \"Here you adjust one slide before it goes out.\" — s2에서 이미 두 번 말함). 결과: s1 63/69, s2 56/59, s3 78/79, s4 86/89, s5 95/99, s6 58/59, s7 65/69, s8 34/39, s9 19/29, 모든 줄 15단어 이하, 구간 시각과 s9 두 문장은 그대로. 샷 01–05는 스피커 박스가 한글이라 LG HDR 4K 상태로 재촬영이 필요하고, 내레이션 재녹음은 필요 없다."
+ "descriptionYouTube": "A friendly four-minute tour of the LayerCue main window: what every part is called, what it does, and how layers work.\nNot installed yet? Episode 2 walks you through it, on Mac and Windows.\nNo prior episode needed.\nLost? Start with Episode 1.\nRecorded on LayerCue 0.9.12.\nNo account is needed to run a show; Settings needs a one-time Google sign-in.\nManual: https://layercue.com/docs/start/tour/\nThe narration is AI-generated and the music is built from GarageBand loops. The event in the demo, Riverside Tech Summit 2026, is fictional; the demo is scripted on a virtual screen.",
+ "version": 2
 }

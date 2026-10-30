@@ -41,19 +41,24 @@ def do(m, a):
 def main(path):
     take = json.load(open(path))
     out = HERE / "rec"; out.mkdir(exist_ok=True)
-    mov = out / f"{take['name']}.mov"; mov.unlink(missing_ok=True)
+    sub = out / os.environ.get("REC_SUB", "v2"); sub.mkdir(exist_ok=True)
+    mov = sub / f"{take['name']}.mp4"; mov.unlink(missing_ok=True)
     m = M()
     for a in take.get("setup", []):
         do(m, a)
     time.sleep(0.8)
-    rec = subprocess.Popen(["screencapture", "-x", "-v", "-V", str(take["sec"]), "-D", "2", str(mov)])
+    # ffmpeg 로 LG 화면(Capture screen 1)을 처음부터 30 fps 고정으로 — screencapture 는 가변 프레임률이라 AE 가 시각을 잘못 읽었다
+    rec = subprocess.Popen(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-f", "avfoundation", "-capture_cursor", os.environ.get("REC_CURSOR", "1"),
+                            "-capture_mouse_clicks", "0", "-framerate", "30", "-pixel_format", "nv12", "-i", os.environ.get("REC_DEV", "3:none"),
+                            "-t", str(take["sec"]), "-c:v", "h264_videotoolbox", "-b:v", "50M", "-pix_fmt", "yuv420p", "-r", "30", str(mov)],
+                           stdin=subprocess.DEVNULL)
     time.sleep(PRE)
     t0 = time.time(); m.t0 = t0; m.mark("rec")
     for a in sorted(take.get("actions", []), key=lambda a: a["t"]):
         time.sleep(max(0, a["t"] - (time.time() - t0)))
         do(m, a)
     rec.wait()
-    m.save(out / f"{take['name']}.mouse.json")
+    m.save(sub / f"{take['name']}.mouse.json")
     print("rec", mov.name, round(time.time() - t0, 1), "s")
 
 

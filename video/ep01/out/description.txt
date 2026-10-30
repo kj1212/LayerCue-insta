@@ -1,21 +1,22 @@
 Episode 1 — Meet LayerCue: The Main Window
 
-By the end you will point at every part of the LayerCue window, and you have seen the seven layers once, on screen.
+A friendly four-minute tour of the LayerCue main window: what every part is called, what it does, and how layers work.
 Not installed yet? Episode 2 walks you through it, on Mac and Windows.
 No prior episode needed.
 Lost? Start with Episode 1.
 Recorded on LayerCue 0.9.12.
 No account is needed to run a show; Settings needs a one-time Google sign-in.
 Manual: https://layercue.com/docs/start/tour/
-The narration is AI-generated and the background music was synthesized on a Mac. The event in the demo, Riverside Tech Summit 2026, is fictional; the demo is scripted on a virtual screen.
+The narration is AI-generated and the music is built from GarageBand loops. The event in the demo, Riverside Tech Summit 2026, is fictional; the demo is scripted on a virtual screen.
 
 Chapters
-0:00 What LayerCue is
-0:35 The four areas
-1:06 The sidebar
-1:45 The middle: slides
-2:30 The top band
-3:19 The status bar
-3:48 Layers, in a demo
-4:26 Edit and back
-4:45 What's next
+0:00 Intro
+0:06 What LayerCue is
+0:32 The four areas
+0:56 The sidebar
+1:27 The middle: slides
+2:05 The top band
+2:45 The status bar
+3:08 Layers, in a demo
+3:38 Edit and back
+3:53 What's next

@@ -16,3 +16,11 @@ video/frames/
 youtube/*/*.mp4
 video/ep01/qa/
 video/ep01/thumb-stage.png
+video/ep01/rec/
+video/ep01/frames/
+video/ep01/parts2/
+video/ep01/take2/
+video/ep01/qa2/
+video/ep01/times2.json
+video/ep01/timeline2.js
+video/ep01/out/*.png

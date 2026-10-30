@@ -1,9 +1,10 @@
-0:00 What LayerCue is
-0:35 The four areas
-1:06 The sidebar
-1:45 The middle: slides
-2:30 The top band
-3:19 The status bar
-3:48 Layers, in a demo
-4:26 Edit and back
-4:45 What's next
+0:00 Intro
+0:06 What LayerCue is
+0:32 The four areas
+0:56 The sidebar
+1:27 The middle: slides
+2:05 The top band
+2:45 The status bar
+3:08 Layers, in a demo
+3:38 Edit and back
+3:53 What's next

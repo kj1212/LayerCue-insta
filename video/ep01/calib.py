@@ -15,7 +15,7 @@ p = HERE / "take" / "calib.json"; p.parent.mkdir(exist_ok=True); json.dump(take,
 subprocess.run([str(HERE / "record.py"), str(p)], check=True)
 lc.call("run_commands", {"commands": [{"op": "clear", "layer": "all"}]})
 
-mov = str(HERE / "rec" / "calib.mov")
+mov = str(HERE / "rec" / "v2" / "calib.mp4")
 asset = AVFoundation.AVURLAsset.alloc().initWithURL_options_(Foundation.NSURL.fileURLWithPath_(mov), None)
 gen = AVFoundation.AVAssetImageGenerator.alloc().initWithAsset_(asset)
 gen.setRequestedTimeToleranceBefore_(CoreMedia.kCMTimeZero); gen.setRequestedTimeToleranceAfter_(CoreMedia.kCMTimeZero)

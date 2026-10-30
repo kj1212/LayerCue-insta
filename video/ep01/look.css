@@ -1,0 +1,10 @@
+/* 1편 2판 「밝은」 룩 — 카드·태그·이름표가 같이 쓴다 */
+@font-face { font-family: 'Archivo'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/Archivo.ttf'); }
+:root { --paper: #F5F2EA; --ink: #15161A; --muted: #6E6A62; --indigo: #6C6DF0; --amber: #EDA233; --green: #3DBE68; --orange: #FF5A1F; }
+html, body { margin: 0; background: transparent; }
+.stage { width: 3840px; height: 2160px; position: relative; overflow: hidden; font-family: 'Archivo', sans-serif; color: var(--ink); background: var(--paper); }
+/* 흐릿한 색 덩어리 셋 — 밝고 따뜻하게 */
+.blob { position: absolute; border-radius: 50%; filter: blur(180px); opacity: 0.55; }
+.b1 { width: 1700px; height: 1500px; left: -380px; top: -420px; background: #FFD08A; }
+.b2 { width: 1600px; height: 1500px; right: -360px; top: -300px; background: #B9B9FF; }
+.b3 { width: 1900px; height: 1300px; left: 900px; bottom: -760px; background: #A8EBC0; }

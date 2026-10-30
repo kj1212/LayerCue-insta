@@ -9,7 +9,7 @@
 
 화면 캡처 픽셀 → 전역 포인트: LG 는 (-67, -1080) 에서 시작하고 2배 화소다.
 """
-import json, math, time
+import json, math, os, time
 import Quartz, AppKit
 
 def lg_origin():
@@ -22,12 +22,13 @@ def lg_origin():
 
 
 LG_X, LG_Y, SCALE = lg_origin()
-if SCALE != 2:
-    raise SystemExit(f"LG display is not in HiDPI mode (scale {SCALE}) — set it to 1920×1080 first")
 
 
 class M:
     def __init__(self, log=True):
+        # 송출 창이 LG 를 덮는 동안(무대 녹화)은 macOS 가 LG 를 원래 해상도(배율 1)로 바꾼다 — 그때는 마우스를 안 쓴다
+        if SCALE != 2 and not os.environ.get("MOUSE_ANY_SCALE"):
+            raise SystemExit(f"LG display is not in HiDPI mode (scale {SCALE}) — set it to 1920×1080 first")
         self.events = []; self.t0 = time.time(); self.log = log
 
     # ── 좌표 ──
