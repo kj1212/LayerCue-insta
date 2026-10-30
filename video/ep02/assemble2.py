@@ -182,7 +182,7 @@ def timeline():
             s, X0, Y0 = STAGE if space == "stage" else state_at(H, t)
             R = (X0 + x * s, Y0 + y * s, w * s, h * s)
         if kind == "hl":
-            hls.append({"t0": t, "t1": t1, "parent": space, "rect": [x, y, w, h], "color": e.get("color", "indigo"), "dim": bool(e.get("dim")), "s": s})
+            hls.append({"t0": t, "t1": t1, "parent": space, "rect": [x, y, w, h], "color": e.get("color", "indigo"), "dim": bool(e.get("dim")), "s": s, "fill": e.get("fill", 0)})
         elif kind == "lbl":
             lw, lh = sizes[f]; side = e.get("lblSide", "right"); P = 70
             pad = 8 * 1.0

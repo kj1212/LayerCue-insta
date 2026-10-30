@@ -6,7 +6,7 @@
 
 var P, comp, card, stage;
 var VOID = [11 / 255, 11 / 255, 13 / 255];
-var COL = { indigo: [139 / 255, 149 / 255, 245 / 255], amber: [217 / 255, 138 / 255, 43 / 255], green: [63 / 255, 178 / 255, 127 / 255],
+var COL = { panel: [35 / 255, 35 / 255, 36 / 255], indigo: [139 / 255, 149 / 255, 245 / 255], amber: [217 / 255, 138 / 255, 43 / 255], green: [63 / 255, 178 / 255, 127 / 255],
             hot: [255 / 255, 74 / 255, 26 / 255], white: [242 / 255, 238 / 255, 228 / 255] };
 $.evalFile(ROOT + "/ep02/timeline2.js");
 
@@ -122,7 +122,9 @@ for (i = 0; i < TL.hls.length; i++) {
     var B = comp.layers.addShape(); B.name = "hl " + i; B.inPoint = h.t0; B.outPoint = h.t1;
     adopt(B, par, [r[0] + r[2] / 2, r[1] + r[3] / 2]);
     rectShape(B, r[2] + 2 * pad, r[3] + 2 * pad, Math.min(rad, (r[3] + 2 * pad) / 2), col, 7 / s);
-    shadow(B, 85, 0, 36, col);
+    if (h.fill) { var fl = B.property("ADBE Root Vectors Group").property(1).property("ADBE Vectors Group").addProperty("ADBE Vector Graphic - Fill");
+                  fl.property("ADBE Vector Fill Color").setValue(col); fl.property("ADBE Vector Fill Opacity").setValue(h.fill); }
+    if (!h.fill) shadow(B, 85, 0, 36, col);
     fade(B, h.t0, h.t1, 0.2, 0.2);
 }
 
@@ -221,4 +223,6 @@ var rq = P.renderQueue.items.add(comp), om = rq.outputModule(1);
 try { om.applyTemplate("H.264 - Match Render Settings - 40 Mbps"); } catch (e1) { om.applyTemplate("H.264 - Match Render Settings - 15 Mbps"); }
 om.file = new File(OUT_DIR + "/" + OUT_NAME);
 P.save(new File(OUT_DIR + "/" + OUT_NAME + ".aep"));
+// 에펙을 켠 채로 바로 렌더한다(끄고 aerender 로 다시 읽을 까닭이 없다) — RENDER_NOW 가 참이면
+if (typeof RENDER_NOW !== "undefined" && RENDER_NOW) P.renderQueue.render();
 logTo(OUT_DIR + "/build.log", "ok: " + comp.numLayers + " layers, " + TL.clips.length + " clips, " + TL.voice.length + " voice, " + TL.hls.length + " hl, " + TL.lbls.length + " lbl");

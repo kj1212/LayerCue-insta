@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- 썸네일 새 안 셋(1280×720) — ?ep=01&title=...&sub=...&img=stage.png&ui=window.png
+  #A 층 판: 앱 아이콘처럼 비스듬히 쌓인 판 셋(배경 영상 · 글 · 로고)이 갈라져 있다
+  #B 큐 카드: 썸네일 전체가 LayerCue 의 슬라이드 카드 한 장(송출 중 주황 테 · 번호 · 배지와 이름)
+  #C 짚기: 실제 창을 크게 잘라 영상 속 그대로 인디고 테와 크림 이름표 -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="ep01/brand.css">
+<style>
+  .t { width: 1280px; height: 720px; position: relative; overflow: hidden; background: var(--void); color: var(--cream); font-family: var(--disp); }
+  .grid { background-image: linear-gradient(to right, var(--hair) 1px, transparent 1px); background-size: calc(100% / 6) 100%; position: absolute; inset: 0; }
+  .ttl { position: absolute; font-weight: 900; font-stretch: 84%; text-transform: uppercase; line-height: .9; letter-spacing: -.01em; }
+  .mic { position: absolute; font-family: var(--mono); font-weight: 500; font-size: 18px; letter-spacing: .2em; text-transform: uppercase; color: var(--fg3); }
+  .mic b { color: var(--cream); font-weight: 500; }
+  /* A */
+  #A .stack { position: absolute; left: 560px; top: 40px; width: 700px; height: 640px; perspective: 1800px; }
+  #A .pl { position: absolute; left: 60px; width: 600px; height: 338px; transform-origin: center; transform: rotateX(56deg) rotateZ(-34deg); border-radius: 18px; overflow: hidden; }
+  #A .pl img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #A .p1 { top: 330px; box-shadow: 0 0 0 4px var(--bg-lit), 0 30px 60px rgba(0,0,0,.6); }
+  #A .p2 { top: 190px; background: rgba(139,155,240,.10); box-shadow: 0 0 0 4px var(--fg-lit); display: flex; align-items: center; justify-content: center; }
+  #A .p2 span { font-weight: 900; font-size: 64px; color: var(--cream); }
+  #A .p3 { top: 50px; background: rgba(63,178,127,.08); box-shadow: 0 0 0 4px var(--ov-lit); }
+  #A .p3 i { position: absolute; left: 28px; top: 24px; width: 150px; height: 44px; border-radius: 6px; background: var(--cream); opacity: .9; }
+  #A .tag { position: absolute; white-space: nowrap; font-family: var(--mono); font-size: 16px; letter-spacing: .14em; padding: 5px 10px; color: #111; }
+  /* B */
+  #B .card { position: absolute; left: 70px; top: 70px; width: 1140px; height: 520px; border: 8px solid var(--hot); border-radius: 22px; overflow: hidden; background: #0B0B0B; box-shadow: 0 0 60px rgba(255,74,26,.35); }
+  #B .card img { position: absolute; inset: -30px; width: calc(100% + 60px); height: calc(100% + 60px); object-fit: cover; opacity: .7; filter: blur(14px); }
+  #B .num { position: absolute; left: 22px; top: 18px; background: rgba(0,0,0,.75); font-family: var(--mono); font-size: 30px; padding: 4px 14px; }
+  #B .bg { position: absolute; right: 22px; top: 18px; background: var(--bg-lit); color: #111; font-weight: 700; font-size: 26px; padding: 4px 12px; border-radius: 6px; }
+  #B .row { position: absolute; left: 70px; top: 612px; display: flex; gap: 18px; align-items: center; }
+  #B .row .b { background: rgba(217,138,43,.18); color: var(--bg-lit); font-weight: 600; font-size: 26px; padding: 6px 14px; border-radius: 6px; }
+  #B .row .n { font-weight: 600; font-size: 34px; color: var(--fg2); }
+  /* C */
+  #C .ui { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(.5); }
+  #C .hl { position: absolute; border: 6px solid var(--accent-soft); border-radius: 14px; box-shadow: 0 0 0 2000px rgba(5,5,8,.45), 0 0 40px rgba(139,149,245,.7); }
+  #C .lbl { position: absolute; background: var(--cream); color: var(--void); padding: 18px 26px 20px; box-shadow: 0 20px 50px rgba(0,0,0,.6); }
+  #C .lbl b { display: block; font-weight: 900; font-stretch: 84%; font-size: 92px; text-transform: uppercase; line-height: .9; }
+  #C .lbl small { display: block; font-family: var(--mono); font-size: 22px; margin-top: 10px; color: #3C3A35; }
+</style>
+<div id="A" class="t"><div class="grid"></div>
+  <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
+  <div class="ttl" style="left:56px;top:130px;font-size:120px;width:560px"></div>
+  <div class="stack"><div class="pl p1"><img class="img"></div><div class="pl p2"><span class="word2">Welcome</span></div><div class="pl p3"><i></i></div></div>
+  <div class="tag" style="left:1060px;top:600px;background:var(--bg-lit)">B · BACKGROUND</div>
+  <div class="tag" style="left:1060px;top:430px;background:var(--fg-lit)">F · FOREGROUND</div>
+  <div class="tag" style="left:1110px;top:240px;background:var(--ov-lit)">1 · OVERLAY</div>
+</div>
+<div id="B" class="t">
+  <div class="card"><img class="img"><span class="num"></span><span class="bg">BG</span>
+    <div class="ttl" style="left:50px;bottom:44px;font-size:132px;width:1000px"></div></div>
+  <div class="row"><span class="b">T Text</span><span class="n sub"></span></div>
+  <div class="mic" style="right:70px;top:628px"><b>LayerCue</b> from zero</div>
+</div>
+<div id="C" class="t"><img class="ui">
+  <div class="hl" style="left:4px;top:44px;width:132px;height:650px"></div>
+  <div class="lbl" style="left:380px;top:230px"><b class="ttl2"></b><small class="sub"></small></div>
+  <div class="mic" style="left:380px;top:180px;color:var(--cream)"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
+</div>
+<script>
+const Q = new URLSearchParams(location.search);
+document.querySelectorAll('.ttl, .ttl2').forEach(e => e.innerHTML = Q.get('title') || 'Meet the<br>main window');
+document.querySelectorAll('.sub').forEach(e => e.textContent = Q.get('sub') || 'The main window');
+document.querySelectorAll('.ep, .num').forEach(e => e.textContent = Q.get('ep') || '01');
+document.querySelectorAll('.img').forEach(e => e.src = Q.get('img'));
+document.querySelectorAll('.ui').forEach(e => e.src = Q.get('ui'));
+document.querySelectorAll(".word2").forEach(e => e.textContent = Q.get("word") || "Welcome");
+window.__ready = true;
+</script>

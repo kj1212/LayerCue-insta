@@ -111,134 +111,150 @@ Your work is kept in a LayerCue folder.
 That's inside Documents on a Mac, and in your user folder on Windows.
 
 29
-00:01:52,350 --> 00:01:55,700
-Now click the gear, at the right end of the status bar.
+00:01:51,000 --> 00:01:55,540
+You can also choose where your videos and pictures go. We'll see that in Settings.
 
 30
-00:01:55,770 --> 00:01:58,880
-The first time, Settings asks you to sign in once.
+00:01:57,460 --> 00:02:00,810
+Now click the gear, at the right end of the status bar.
 
 31
-00:01:59,250 --> 00:02:03,270
-The beta is free. In return, it asks for an email address.
+00:02:00,880 --> 00:02:03,990
+The first time, Settings asks you to sign in once.
 
 32
-00:02:03,340 --> 00:02:06,580
-Press Sign in with Google, and finish in your browser.
+00:02:04,360 --> 00:02:08,380
+The beta is free. In return, it asks for an email address.
 
 33
-00:02:07,050 --> 00:02:09,490
-Then come back, and Settings opens.
+00:02:08,450 --> 00:02:11,690
+Press Sign in with Google, and finish in your browser.
 
 34
-00:02:09,960 --> 00:02:14,010
-Good to know: everything you use in a show works without an account.
+00:02:12,160 --> 00:02:14,600
+Then come back, and Settings opens.
 
 35
-00:02:14,080 --> 00:02:17,540
-Only Settings and Tell us what's wrong need you signed in.
+00:02:15,070 --> 00:02:19,120
+Good to know: everything you use in a show works without an account.
 
 36
-00:02:19,460 --> 00:02:21,470
-This is the General page.
+00:02:19,190 --> 00:02:22,650
+Only Settings and Tell us what's wrong need you signed in.
 
 37
-00:02:21,540 --> 00:02:24,740
-Changes save as you make them. There's no Save button.
+00:02:24,570 --> 00:02:26,580
+This is the General page.
 
 38
-00:02:25,110 --> 00:02:27,600
-Language switches the menus right away.
+00:02:26,650 --> 00:02:29,850
+Changes save as you make them. There's no Save button.
 
 39
-00:02:27,670 --> 00:02:29,970
-Here's Korean, and back to English.
+00:02:30,220 --> 00:02:32,710
+Language switches the menus right away.
 
 40
-00:02:30,440 --> 00:02:33,170
-Slide card size sets how big the cards are.
+00:02:32,780 --> 00:02:35,080
+Here's Korean, and back to English.
 
 41
-00:02:33,240 --> 00:02:36,400
-Bigger cards mean fewer mis-clicks in a dark booth.
+00:02:35,550 --> 00:02:38,280
+Slide card size sets how big the cards are.
 
 42
-00:02:36,770 --> 00:02:40,650
-Remember window layout brings your windows back where you left them.
+00:02:38,350 --> 00:02:41,510
+Bigger cards mean fewer mis-clicks in a dark booth.
 
 43
-00:02:41,020 --> 00:02:44,050
-Remember master volume is off on purpose.
+00:02:41,880 --> 00:02:45,760
+Remember window layout brings your windows back where you left them.
 
 44
-00:02:44,120 --> 00:02:49,190
-So the master always starts at full, and a muted rehearsal never carries over.
+00:02:46,130 --> 00:02:49,160
+Remember master volume is off on purpose.
 
 45
-00:02:51,110 --> 00:02:52,890
-Next, the Tools page.
+00:02:49,230 --> 00:02:54,300
+So the master always starts at full, and a muted rehearsal never carries over.
 
 46
-00:02:52,960 --> 00:02:55,770
-The LayerCue row shows the version you have.
+00:02:56,220 --> 00:02:58,710
+First, the Files and YouTube page.
 
 47
-00:02:55,840 --> 00:02:57,790
-Press Check to look for a new one.
+00:02:58,780 --> 00:03:03,140
+Media folder is where your videos, pictures and music are copied.
 
 48
-00:02:58,160 --> 00:03:03,390
-The row below is the YouTube tool. A dot on the wrench means a newer one is ready.
+00:03:03,210 --> 00:03:06,810
+Press Choose to keep them somewhere else, like a bigger drive.
 
 49
-00:03:03,760 --> 00:03:07,440
-On a Mac, LayerCue also checks by itself, once a day.
+00:03:07,280 --> 00:03:09,060
+Next, the Tools page.
 
 50
-00:03:07,510 --> 00:03:11,680
-When there's a new version, an orange Update appears in the status bar.
+00:03:09,130 --> 00:03:11,940
+The LayerCue row shows the version you have.
 
 51
-00:03:11,750 --> 00:03:14,130
-Nothing installs until you press it.
+00:03:12,010 --> 00:03:13,970
+Press Check to look for a new one.
 
 52
-00:03:14,200 --> 00:03:18,290
-Just never update during a show, because the screen would go dark.
+00:03:14,340 --> 00:03:19,560
+The row below is the YouTube tool. A dot on the wrench means a newer one is ready.
 
 53
-00:03:20,210 --> 00:03:21,670
-Last thing: quitting.
+00:03:19,930 --> 00:03:23,600
+On a Mac, LayerCue also checks by itself, once a day.
 
 54
-00:03:21,740 --> 00:03:24,770
-Press Command Q, and LayerCue asks first.
+00:03:23,670 --> 00:03:27,840
+When there's a new version, an orange Update appears in the status bar.
 
 55
-00:03:24,840 --> 00:03:26,710
-Your work is already saved.
+00:03:27,910 --> 00:03:30,290
+Nothing installs until you press it.
 
 56
-00:03:27,080 --> 00:03:30,010
-If the output is on, it warns you in red.
+00:03:30,360 --> 00:03:34,450
+Just never update during a show, because the screen would go dark.
 
 57
-00:03:30,080 --> 00:03:32,020
-Quitting would black out the screen.
+00:03:36,370 --> 00:03:37,830
+Last thing: quitting.
 
 58
-00:03:32,090 --> 00:03:34,820
-So press Cancel, and the show goes on!
+00:03:37,900 --> 00:03:40,930
+Press Command Q, and LayerCue asks first.
 
 59
-00:03:36,740 --> 00:03:39,620
-You've got LayerCue installed and Settings open.
+00:03:41,000 --> 00:03:42,870
+Your work is already saved.
 
 60
-00:03:39,690 --> 00:03:42,350
-Next up: Episode 3, your first show.
+00:03:43,240 --> 00:03:46,170
+If the output is on, it warns you in red.
 
 61
-00:03:42,420 --> 00:03:43,610
+00:03:46,240 --> 00:03:48,180
+Quitting would black out the screen.
+
+62
+00:03:48,250 --> 00:03:50,980
+So press Cancel, and the show goes on!
+
+63
+00:03:52,900 --> 00:03:55,780
+You've got LayerCue installed and Settings open.
+
+64
+00:03:55,850 --> 00:03:58,510
+Next up: Episode 3, your first show.
+
+65
+00:03:58,580 --> 00:03:59,770
 See you there!
 

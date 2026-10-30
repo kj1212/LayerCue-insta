@@ -184,12 +184,12 @@
      ]
     },
     {
-     "line": 2,
-     "at": 0.0,
+     "line": 1,
+     "at": 1.5,
      "img": "manual-sign-in.png",
      "until": {
-      "line": 4,
-      "at": 3.2
+      "line": 5,
+      "at": 0.2
      },
      "chip": "chip-manual.png"
     },
@@ -336,7 +336,7 @@
      "at": 0.0,
      "mouse": [
       "click",
-      "settings.tools"
+      "settings.files"
      ]
     },
     {
@@ -350,7 +350,57 @@
      ]
     },
     {
+     "line": 1,
+     "at": -0.3,
+     "hl": "files.path",
+     "color": "panel",
+     "fill": 100,
+     "dur": 12.41
+    },
+    {
      "line": 2,
+     "at": 0.0,
+     "hl": "files.media",
+     "lbl": [
+      "Media folder",
+      "videos, pictures, music"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 2,
+     "at": 0.4,
+     "cap": "Out of the box — Mac: Documents › LayerCue   ·   Windows: C:\\Users\\<you>\\LayerCue",
+     "capdur": 4.0
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "files.choose",
+     "lbl": [
+      "Choose…",
+      "new files go there from now on"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "mouse": [
+      "hover",
+      "files.choose"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      "settings.tools"
+     ]
+    },
+    {
+     "line": 5,
      "at": 0.0,
      "hl": "tools.lc",
      "lbl": [
@@ -360,7 +410,7 @@
      "lblSide": "above"
     },
     {
-     "line": 3,
+     "line": 6,
      "at": 0.3,
      "mouse": [
       "click",
@@ -368,7 +418,7 @@
      ]
     },
     {
-     "line": 4,
+     "line": 7,
      "at": 0.0,
      "hl": "tools.yt",
      "lbl": [
@@ -378,12 +428,12 @@
      "lblSide": "below"
     },
     {
-     "line": 5,
+     "line": 8,
      "at": 0.0,
      "rest": true
     },
     {
-     "line": 5,
+     "line": 8,
      "at": 0.0,
      "mouse": [
       "move",
@@ -391,14 +441,14 @@
      ]
     },
     {
-     "line": 6,
+     "line": 9,
      "at": 0.0,
      "cap": "Update appears here, in orange — nothing installs until you press it",
      "capdur": 5.0,
      "capcolor": "hot"
     },
     {
-     "line": 8,
+     "line": 11,
      "at": 0.0,
      "cap": "Never update during a show",
      "capdur": 3.4,

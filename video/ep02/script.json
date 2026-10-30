@@ -255,6 +255,14 @@
      "action": "",
      "caption": "",
      "keys": ""
+    },
+    {
+     "text": "You can also choose where your videos and pictures go. We'll see that in Settings.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     }
    ]
   },
@@ -404,10 +412,34 @@
   },
   {
    "id": "s7",
-   "chapter": "Updates",
+   "chapter": "Files and updates",
    "start": 0,
    "end": 0,
    "lines": [
+    {
+     "text": "First, the Files and YouTube page.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Media folder is where your videos, pictures and music are copied.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Choose to keep them somewhere else, like a bigger drive.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
     {
      "text": "Next, the Tools page.",
      "pause": 0,

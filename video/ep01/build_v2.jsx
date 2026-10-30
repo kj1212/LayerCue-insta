@@ -203,4 +203,6 @@ var rq = P.renderQueue.items.add(comp), om = rq.outputModule(1);
 try { om.applyTemplate("H.264 - Match Render Settings - 40 Mbps"); } catch (e1) { om.applyTemplate("H.264 - Match Render Settings - 15 Mbps"); }
 om.file = new File(OUT_DIR + "/" + OUT_NAME);
 P.save(new File(OUT_DIR + "/" + OUT_NAME + ".aep"));
+// 에펙을 켠 채로 바로 렌더한다(끄고 aerender 로 다시 읽을 까닭이 없다) — RENDER_NOW 가 참이면
+if (typeof RENDER_NOW !== "undefined" && RENDER_NOW) P.renderQueue.render();
 logTo(OUT_DIR + "/build.log", "ok: " + comp.numLayers + " layers, " + TL.clips.length + " clips, " + TL.voice.length + " voice, " + TL.hls.length + " hl, " + TL.lbls.length + " lbl");
