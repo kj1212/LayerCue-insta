@@ -11,10 +11,11 @@ import json, os, subprocess, sys, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 BRIDGE = pathlib.Path.home() / "projects/LayerCue/build/LayerCue.app/Contents/MacOS/layercue-mcp"
-MCP = HERE / "sandbox" / "mcp"
+MCP = HERE / os.environ.get("LC_SANDBOX", "sandbox") / "mcp"     # LC_SANDBOX=sandbox-ep01 처럼 다른 모래상자를 고른다
 
 
 def call(tool, args=None):
+    """tool="tools/list" 면 도구 목록(설명 포함)을 돌려준다."""
     env = dict(os.environ, LAYERCUE_MCP_DIR=str(MCP), LAYERCUE_MCP_JSON=str(MCP / "mcp-layercue-dev.json"))
     p = subprocess.Popen([str(BRIDGE)], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
                          env=env, text=True, encoding="utf-8", bufsize=1)
@@ -27,7 +28,10 @@ def call(tool, args=None):
           "params": {"protocolVersion": "2025-06-18", "capabilities": {}, "clientInfo": {"name": "film", "version": "1"}}})
     wait(1)
     send({"jsonrpc": "2.0", "method": "notifications/initialized", "params": {}})
-    send({"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": tool, "arguments": args or {}}})
+    if tool == "tools/list":
+        send({"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}})
+    else:
+        send({"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": tool, "arguments": args or {}}})
     r = wait(2)
     p.stdin.close(); p.wait(5)
     return r

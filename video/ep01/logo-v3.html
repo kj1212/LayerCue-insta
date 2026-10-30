@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- 가상 행사 「Riverside Tech Summit 2026」 로고 3판 후보 셋 — 평면 · 단색. 각각 투명 PNG(1600×400), 비교용 시트(#sheet). 행사·이름은 지어낸 것. -->
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Archivo'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/Archivo.ttf'); }
+  html, body { margin: 0; background: transparent; font-family: 'Archivo', sans-serif; color: #F4F1EA; }
+  .logo { width: 1600px; height: 400px; position: relative; }
+
+  /* A — 타이포만: 가는 대문자 + 2026 알약 */
+  #a .w { position: absolute; left: 40px; top: 96px; font-weight: 600; font-size: 128px; letter-spacing: 0.10em; line-height: 1; }
+  #a .pill { position: absolute; left: 1118px; top: 110px; height: 96px; padding: 0 30px; border: 5px solid rgba(244,241,234,0.7); border-radius: 60px;
+             font-weight: 600; font-size: 60px; letter-spacing: 0.08em; line-height: 96px; }
+  #a .s { position: absolute; left: 46px; top: 250px; font-weight: 500; font-size: 44px; letter-spacing: 0.42em; color: rgba(244,241,234,0.62); }
+
+  /* B — 봉우리(summit) 위 강(river) 마크 + 굵은 소문자 */
+  #b .mark { position: absolute; left: 36px; top: 54px; width: 300px; height: 300px; }
+  #b .w { position: absolute; left: 372px; top: 88px; font-weight: 800; font-size: 152px; letter-spacing: -0.035em; line-height: 1; }
+  #b .s { position: absolute; left: 380px; top: 270px; font-weight: 500; font-size: 46px; letter-spacing: 0.30em; color: rgba(244,241,234,0.66); }
+
+  /* C — 한 줄: Riverside / Tech Summit · 2026 (슬래시형, 넓고 낮다) */
+  #c .row { position: absolute; left: 40px; top: 140px; display: flex; align-items: center; gap: 44px; white-space: nowrap; }
+  #c .w1 { font-weight: 800; font-size: 120px; letter-spacing: -0.03em; line-height: 1; }
+  #c .sl { width: 6px; height: 120px; background: rgba(244,241,234,0.45); transform: skewX(-18deg); }
+  #c .w2 { font-weight: 300; font-size: 112px; letter-spacing: -0.01em; line-height: 1; }
+  #c .yr { font-weight: 600; font-size: 44px; letter-spacing: 0.26em; padding: 14px 24px; border: 4px solid rgba(244,241,234,0.5); border-radius: 14px; margin-left: 10px; }
+
+  #sheet { width: 1800px; background: #0f1320; padding: 40px 0; display: flex; flex-direction: column; gap: 20px; align-items: center; }
+  #sheet .cell { position: relative; width: 1700px; height: 420px; background: radial-gradient(1200px 500px at 30% 60%, #1c2340, #0f1320 70%); border-radius: 24px; display: flex; align-items: center; justify-content: center; }
+  #sheet .tag { position: absolute; left: 28px; top: 20px; font-weight: 700; font-size: 40px; color: #7B7CF6; }
+  #sheet img { width: 1500px; }
+</style>
+
+<div id="a" class="logo">
+  <div class="w">RIVERSIDE</div>
+  <div class="pill">2026</div>
+  <div class="s">TECH SUMMIT</div>
+</div>
+
+<div id="b" class="logo">
+  <svg class="mark" viewBox="0 0 300 300" fill="none" stroke="#F4F1EA" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 196 L150 70 L260 196" stroke-width="16"/>
+    <path d="M40 246 C 80 214, 120 278, 160 246 S 230 214, 262 240" stroke-width="14" opacity="0.8"/>
+  </svg>
+  <div class="w">Riverside</div>
+  <div class="s">TECH SUMMIT 2026</div>
+</div>
+
+<div id="c" class="logo">
+  <div class="row"><div class="w1">Riverside</div><div class="sl"></div><div class="w2">Tech Summit</div><div class="yr">2026</div></div>
+</div>
+
+<div id="sheet">
+  <div class="cell"><div class="tag">A</div><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/logo-a.png"></div>
+  <div class="cell"><div class="tag">B</div><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/logo-b.png"></div>
+  <div class="cell"><div class="tag">C</div><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/logo-c.png"></div>
+</div>

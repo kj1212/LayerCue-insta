@@ -1,0 +1,356 @@
+1
+00:00:00,400 --> 00:00:02,430
+This is LayerCue.
+
+2
+00:00:03,380 --> 00:00:07,320
+It sends a presentation to a screen, in layers.
+
+3
+00:00:07,370 --> 00:00:10,290
+It runs on Mac and Windows.
+
+4
+00:00:10,340 --> 00:00:13,100
+A video runs underneath.
+
+5
+00:00:13,150 --> 00:00:15,290
+Words sit on top.
+
+6
+00:00:15,340 --> 00:00:18,000
+A logo stays in a corner.
+
+7
+00:00:18,050 --> 00:00:21,410
+Each one comes and goes on its own.
+
+8
+00:00:23,360 --> 00:00:27,500
+By the end you will point at every part of this window.
+
+9
+00:00:27,550 --> 00:00:29,740
+Today we only look.
+
+10
+00:00:29,790 --> 00:00:33,010
+You send nothing to the stage today.
+
+11
+00:00:35,610 --> 00:00:38,170
+The window has four areas.
+
+12
+00:00:38,220 --> 00:00:40,620
+The sidebar on the left.
+
+13
+00:00:40,670 --> 00:00:43,000
+The slides in the middle.
+
+14
+00:00:43,050 --> 00:00:45,580
+The band across the top.
+
+15
+00:00:45,630 --> 00:00:48,620
+The status bar along the bottom.
+
+16
+00:00:49,270 --> 00:00:50,990
+Pick on the left.
+
+17
+00:00:51,040 --> 00:00:52,780
+Click in the middle.
+
+18
+00:00:52,830 --> 00:00:54,390
+Watch the top.
+
+19
+00:00:54,440 --> 00:00:56,580
+Adjust on the right.
+
+20
+00:00:57,230 --> 00:01:00,920
+The right means Slide settings, at the band's end.
+
+21
+00:01:00,970 --> 00:01:04,210
+Every later episode hangs on it.
+
+22
+00:01:06,810 --> 00:01:08,850
+I start on the left.
+
+23
+00:01:08,900 --> 00:01:11,260
+Cue Sheets sit on top.
+
+24
+00:01:11,310 --> 00:01:15,160
+A cue sheet is the running order for one event.
+
+25
+00:01:15,210 --> 00:01:18,730
+Tour lines up six short guides, in order.
+
+26
+00:01:19,680 --> 00:01:23,010
+The Library drawer is below, under a line.
+
+27
+00:01:23,060 --> 00:01:26,840
+A library is a folder of presentations.
+
+28
+00:01:26,890 --> 00:01:30,310
+A presentation is one set of slides.
+
+29
+00:01:30,360 --> 00:01:33,600
+The number at right is the slide count.
+
+30
+00:01:34,550 --> 00:01:36,750
+I press the double arrow.
+
+31
+00:01:37,700 --> 00:01:40,370
+I press it again to lower it.
+
+32
+00:01:40,420 --> 00:01:43,300
+Pointing at it does not raise it.
+
+33
+00:01:45,900 --> 00:01:49,440
+I click Start here, inside the Tour cue sheet.
+
+34
+00:01:49,490 --> 00:01:53,580
+The middle shows every presentation in it, in order.
+
+35
+00:01:54,530 --> 00:01:58,710
+Each has a title bar with its name and slide count.
+
+36
+00:01:58,760 --> 00:02:01,430
+Five buttons sit at its right.
+
+37
+00:02:01,480 --> 00:02:02,920
+Add File.
+
+38
+00:02:02,970 --> 00:02:04,040
+Link.
+
+39
+00:02:04,090 --> 00:02:05,150
+Edit.
+
+40
+00:02:05,200 --> 00:02:07,060
+Layer for this list.
+
+41
+00:02:07,110 --> 00:02:09,230
+Presentation settings.
+
+42
+00:02:09,280 --> 00:02:12,260
+Under the bar are the slide cards.
+
+43
+00:02:12,310 --> 00:02:15,780
+Under the picture, a Text badge and the name.
+
+44
+00:02:15,830 --> 00:02:18,940
+A click on a card's picture sends it out.
+
+45
+00:02:18,990 --> 00:02:22,200
+No confirmation, no second step.
+
+46
+00:02:23,150 --> 00:02:25,800
+I do not click a picture today.
+
+47
+00:02:25,850 --> 00:02:28,340
+That is Episode 3.
+
+48
+00:02:30,940 --> 00:02:33,750
+Now the top band, where you watch.
+
+49
+00:02:33,800 --> 00:02:36,800
+The tile at the left is Screen 1.
+
+50
+00:02:36,850 --> 00:02:40,780
+Here it is a virtual screen, no projector needed.
+
+51
+00:02:40,830 --> 00:02:45,540
+The power switch at the right end turns the output on and off.
+
+52
+00:02:46,490 --> 00:02:51,430
+Under the preview, Layers shown picks which layers this monitor shows.
+
+53
+00:02:51,480 --> 00:02:55,510
+Beside the preview, the layer column shows what is up.
+
+54
+00:02:55,560 --> 00:02:58,470
+CLEAR on top, then seven layers.
+
+55
+00:02:58,520 --> 00:03:00,350
+Five overlays.
+
+56
+00:03:00,400 --> 00:03:02,320
+F for foreground.
+
+57
+00:03:02,370 --> 00:03:04,310
+B for background.
+
+58
+00:03:05,260 --> 00:03:07,340
+Next, the sound meter.
+
+59
+00:03:07,390 --> 00:03:10,290
+Then Music, on its own channel.
+
+60
+00:03:10,340 --> 00:03:13,210
+At the right end, Slide settings.
+
+61
+00:03:13,260 --> 00:03:17,210
+Option + slide to load means look, not send.
+
+62
+00:03:19,810 --> 00:03:22,900
+The status bar reads left to right.
+
+63
+00:03:22,950 --> 00:03:24,690
+Show and Edit.
+
+64
+00:03:24,740 --> 00:03:28,510
+The On air chip counts the monitors that are showing.
+
+65
+00:03:28,560 --> 00:03:31,860
+The speaker box is your sound device.
+
+66
+00:03:31,910 --> 00:03:35,510
+The dot and title say what is on stage.
+
+67
+00:03:36,460 --> 00:03:39,120
+Tell us what's wrong sends us a note.
+
+68
+00:03:39,170 --> 00:03:41,470
+The slider sets card size.
+
+69
+00:03:41,520 --> 00:03:44,400
+The pencil is Lock editing.
+
+70
+00:03:44,450 --> 00:03:46,690
+The gear is Settings.
+
+71
+00:03:49,290 --> 00:03:52,930
+This demo is scripted, on a virtual screen.
+
+72
+00:03:52,980 --> 00:03:55,080
+The event is made up.
+
+73
+00:03:55,130 --> 00:03:58,020
+A video goes to the background.
+
+74
+00:03:58,070 --> 00:04:00,610
+The B cell turns amber.
+
+75
+00:04:01,260 --> 00:04:04,430
+Words go to the foreground, on top.
+
+76
+00:04:04,480 --> 00:04:06,520
+F turns indigo.
+
+77
+00:04:06,570 --> 00:04:09,530
+A logo goes to overlay one.
+
+78
+00:04:09,580 --> 00:04:12,030
+Cell 1 turns green.
+
+79
+00:04:12,680 --> 00:04:14,650
+I change the words.
+
+80
+00:04:14,700 --> 00:04:17,040
+The video never stops.
+
+81
+00:04:17,090 --> 00:04:21,040
+The x beside F takes only the words down.
+
+82
+00:04:21,690 --> 00:04:24,600
+That is the whole point of layers.
+
+83
+00:04:26,900 --> 00:04:29,970
+I click Edit in the status bar.
+
+84
+00:04:30,920 --> 00:04:34,390
+The whole window becomes the slide editor.
+
+85
+00:04:34,440 --> 00:04:37,760
+The slides stand in a strip down the left.
+
+86
+00:04:37,810 --> 00:04:40,150
+I click Show to come back.
+
+87
+00:04:41,100 --> 00:04:43,600
+That is the main window.
+
+88
+00:04:46,200 --> 00:04:49,610
+You can now point at every part of the window.
+
+89
+00:04:50,560 --> 00:04:55,270
+Next: Episode 2 — Install, First Launch and Settings.
+

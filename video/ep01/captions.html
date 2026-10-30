@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- 아래쪽 자막(로어서드) 한 줄 — render_caps.mjs 가 글을 바꿔 가며 #cap 을 투명 PNG 로 찍는다. 3840 폭, 높이는 글에 맞춰. -->
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Archivo'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/Archivo.ttf'); }
+  html, body { margin: 0; background: transparent; }
+  #cap { width: 3840px; min-height: 200px; display: flex; justify-content: center; align-items: center; padding: 20px 0; box-sizing: border-box; }
+  .pill { display: inline-flex; align-items: center; gap: 28px; background: rgba(12, 13, 17, 0.86); border: 3px solid rgba(123, 124, 246, 0.55);
+          border-radius: 28px; padding: 26px 54px 28px 44px; font-family: 'Archivo', sans-serif; color: #F2EEE4; }
+  .bar { width: 14px; height: 60px; border-radius: 7px; background: #7B7CF6; flex: none; }
+  .pill.amber .bar { background: #E8A33A; } .pill.amber { border-color: rgba(232, 163, 58, 0.55); }
+  .pill.green .bar { background: #4CC06B; } .pill.green { border-color: rgba(76, 192, 107, 0.55); }
+  .pill.white .bar { background: #F2EEE4; } .pill.white { border-color: rgba(242, 238, 228, 0.35); }
+  .txt { font-weight: 600; font-size: 60px; letter-spacing: -0.005em; line-height: 1.15; white-space: pre-line; }
+  .keys { font-weight: 500; font-size: 48px; color: #B9B5AB; margin-left: 10px; letter-spacing: 0.02em; }
+</style>
+<div id="cap"><div class="pill" id="pill"><div class="bar"></div><div class="txt" id="txt"></div><div class="keys" id="keys"></div></div></div>
+<script>
+  // render_caps.mjs 가 부른다
+  window.setCap = (text, keys, color) => {
+    document.getElementById('txt').textContent = text;
+    const k = document.getElementById('keys'); k.textContent = keys || ''; k.style.display = keys ? '' : 'none';
+    document.getElementById('pill').className = 'pill ' + (color || '');
+  };
+</script>

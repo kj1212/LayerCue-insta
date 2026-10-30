@@ -5,7 +5,7 @@
 cd "$(dirname "$0")" || exit 1
 HERE="$PWD"; OUT="$HERE/render"; mkdir -p "$OUT"
 APP="${AE_APP:-Adobe After Effects 2026}"
-TMP="$OUT/.run-$1.jsx"
+TMP="$OUT/.run-$(basename "$1").jsx"      # ep01/build_ep01 처럼 하위 폴더의 스크립트도 된다
 {
   echo "var ROOT = \"$HERE\"; var OUT_DIR = \"$OUT\"; var AUDIO_DIR = \"${AUDIO_DIR:-audio}\"; var OUT_NAME = \"${OUT_NAME:-layercue-ask-short}\"; var MUSIC_FILE = \"${MUSIC_FILE:-}\";"
   echo 'function logTo(p, s) { var f = new File(p); f.encoding = "UTF-8"; f.open("a"); f.writeln(s); f.close(); }'

@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- 1편 정지 그래픽 — 타이틀 카드(#title) 와 로드맵 카드(#roadmap). 둘 다 3840×2160, render_png.mjs 로 찍는다. -->
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Archivo'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/Archivo.ttf'); }
+  html, body { margin: 0; background: transparent; }
+  .card { width: 3840px; height: 2160px; position: relative; overflow: hidden; background: #0C0D11; color: #F2EEE4;
+          font-family: 'Archivo', sans-serif; }
+  .kicker { position: absolute; left: 240px; top: 220px; font-weight: 600; font-size: 46px; letter-spacing: 0.32em; color: #8E8A80; }
+  .kicker b { color: #F2EEE4; font-weight: 700; }
+  /* 타이틀 카드 */
+  #title .ep   { position: absolute; left: 240px; top: 560px; font-weight: 600; font-size: 72px; letter-spacing: 0.2em; color: #7B7CF6; }
+  #title .big  { position: absolute; left: 230px; top: 680px; font-weight: 900; font-size: 236px; letter-spacing: -0.035em; line-height: 0.98; }
+  #title .big span { color: #8E8A80; }
+  #title .bars { position: absolute; left: 240px; top: 1360px; display: flex; gap: 22px; }
+  #title .bars i { display: block; width: 140px; height: 18px; border-radius: 9px; }
+  #title .foot { position: absolute; left: 240px; bottom: 200px; font-weight: 500; font-size: 48px; color: #8E8A80; letter-spacing: 0.02em; }
+  /* 로드맵 카드 */
+  #roadmap .head { position: absolute; left: 240px; top: 320px; font-weight: 900; font-size: 128px; letter-spacing: -0.03em; line-height: 1; }
+  #roadmap .sub  { position: absolute; left: 244px; top: 470px; font-weight: 500; font-size: 44px; color: #8E8A80; letter-spacing: 0.04em; }
+  .grid { position: absolute; left: 240px; top: 620px; width: 3360px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 26px; }
+  .tile { height: 350px; border-radius: 28px; background: #16171D; border: 3px solid #23242C; padding: 34px 38px; box-sizing: border-box; position: relative; }
+  .tile .n { font-weight: 800; font-size: 54px; color: #8E8A80; letter-spacing: -0.02em; }
+  .tile .t { position: absolute; left: 38px; right: 34px; bottom: 36px; font-weight: 700; font-size: 44px; line-height: 1.16; letter-spacing: -0.01em; }
+  .tile.now { background: #7B7CF6; border-color: #9C9DFF; color: #0C0D11; }
+  .tile.now .n { color: #0C0D11; }
+  .tile.now .tag, .tile.next .tag { position: absolute; right: 34px; top: 36px; font-weight: 800; font-size: 34px; letter-spacing: 0.18em; padding: 10px 20px; border-radius: 999px; }
+  .tile.now .tag { background: #0C0D11; color: #F2EEE4; }
+  .tile.next { border-color: #E8A33A; }
+  .tile.next .tag { background: #E8A33A; color: #0C0D11; }
+  .tile.wn { background: #101116; border-style: dashed; border-color: #3A3C47; }
+  .tile.wn .n { color: #4CC06B; font-size: 40px; letter-spacing: 0.12em; }
+  .tile.wn .t { color: #B9B5AB; font-size: 40px; }
+</style>
+
+<div id="title" class="card">
+  <div class="kicker"><b>LAYERCUE</b> FROM ZERO &nbsp;·&nbsp; RUN YOUR FIRST SHOW</div>
+  <div class="ep">EPISODE 1</div>
+  <div class="big">Meet LayerCue:<br><span>The Main Window</span></div>
+  <div class="bars"><i style="background:#E8A33A"></i><i style="background:#7B7CF6"></i><i style="background:#4CC06B"></i></div>
+  <div class="foot">Pick on the left · Click in the middle · Watch the top · Adjust on the right</div>
+</div>
+
+<div id="roadmap" class="card">
+  <div class="kicker"><b>LAYERCUE</b> FROM ZERO</div>
+  <div class="head">Run Your First Show</div>
+  <div class="sub">18 episodes · 3–5 minutes each · watch them in order</div>
+  <div class="grid">
+    <div class="tile now"><div class="n">01</div><div class="tag">NOW</div><div class="t">Meet LayerCue: The Main Window</div></div>
+    <div class="tile next"><div class="n">02</div><div class="tag">NEXT</div><div class="t">Install, First Launch and Settings</div></div>
+    <div class="tile"><div class="n">03</div><div class="t">Your First Show: Screen On, Slide Out, Clear</div></div>
+    <div class="tile"><div class="n">04</div><div class="t">Libraries, Presentations and Cue Sheets</div></div>
+    <div class="tile"><div class="n">05</div><div class="t">Adding Slides and Reading Cards</div></div>
+    <div class="tile"><div class="n">06</div><div class="t">Running the Slide List: Send, Select, Keys and Layers</div></div>
+    <div class="tile"><div class="n">07</div><div class="t">Slide Settings: Fit, Trim, Loop and Volume</div></div>
+    <div class="tile"><div class="n">08</div><div class="t">Presentation Settings: Fades, Auto-dismiss, Layer for This List</div></div>
+    <div class="tile"><div class="n">09</div><div class="t">Text Slides in the Editor</div></div>
+    <div class="tile"><div class="n">10</div><div class="t">Designing Slides: Shapes, Pictures, Styles</div></div>
+    <div class="tile"><div class="n">11</div><div class="t">Music: Your Own Channel</div></div>
+    <div class="tile"><div class="n">12</div><div class="t">Sound: Device, Meter, Master and the No-Sound Checklist</div></div>
+    <div class="tile"><div class="n">13</div><div class="t">YouTube Slides: Streaming, Downloading, Captions</div></div>
+    <div class="tile"><div class="n">14</div><div class="t">Bringing It In: PowerPoint, PDF and Export</div></div>
+    <div class="tile"><div class="n">15</div><div class="t">Your Files, Settings Pages and AI Helpers</div></div>
+    <div class="tile"><div class="n">16</div><div class="t">More Screens: Stage Output Window and Layers Shown</div></div>
+    <div class="tile"><div class="n">17</div><div class="t">Streaming Out: NDI, Syphon and Fill &amp; Key</div></div>
+    <div class="tile"><div class="n">18</div><div class="t">Show Day: Defaults, Lock, Messages and the Checklist</div></div>
+    <div class="tile wn" style="grid-column: span 2"><div class="n">WHAT'S NEW</div><div class="t">A short episode for each new version of LayerCue — what changed, in a few minutes</div></div>
+  </div>
+</div>

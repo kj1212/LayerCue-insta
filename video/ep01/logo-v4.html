@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- 로고 4판: B 뼈대 — 대문자 워드마크를 작게, 마크(봉우리+강) 후보 셋. 각각 1600×400 투명 PNG(#b1 #b2 #b3), 비교 시트(#sheet). -->
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Archivo'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/Archivo.ttf'); }
+  html, body { margin: 0; background: transparent; font-family: 'Archivo', sans-serif; color: #F4F1EA; }
+  .logo { width: 1600px; height: 400px; position: relative; }
+  .logo .mark { position: absolute; left: 60px; top: 70px; width: 260px; height: 260px; }
+  .logo .w { position: absolute; left: 372px; top: 116px; font-weight: 900; font-size: 114px; letter-spacing: 0.045em; line-height: 1; }
+  .logo .s { position: absolute; left: 380px; top: 256px; font-weight: 600; font-size: 40px; letter-spacing: 0.34em; color: rgba(244,241,234,0.7); line-height: 1; }
+  #sheet { width: 1800px; background: #0f1320; padding: 40px 0; display: flex; flex-direction: column; gap: 20px; align-items: center; }
+  #sheet .cell { position: relative; width: 1700px; height: 420px; background: radial-gradient(1200px 500px at 30% 60%, #1c2340, #0f1320 70%); border-radius: 24px; display: flex; align-items: center; justify-content: center; }
+  #sheet .tag { position: absolute; left: 28px; top: 20px; font-weight: 700; font-size: 40px; color: #7B7CF6; }
+  #sheet img { width: 1500px; }
+  /* B3 확정안 손질: 마크를 크게, 대문자 자간을 좁게 */
+  #b3 { width: 1180px; }
+  #b3 .mark { left: 30px; top: 32px; width: 336px; height: 336px; }
+  #b3 .w { left: 396px; letter-spacing: 0.012em; }
+  #b3 .s { left: 400px; letter-spacing: 0.30em; }
+</style>
+
+<!-- B1 — 지금 것: 열린 봉우리 + 강 한 줄 (선을 조금 가늘게) -->
+<div id="b1" class="logo">
+  <svg class="mark" viewBox="0 0 260 260" fill="none" stroke="#F4F1EA" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 170 L130 62 L226 170" stroke-width="14"/>
+    <path d="M34 214 C 68 186, 102 242, 136 214 S 196 186, 226 208" stroke-width="12" opacity="0.8"/>
+  </svg>
+  <div class="w">RIVERSIDE</div><div class="s">TECH SUMMIT 2026</div>
+</div>
+
+<!-- B2 — 꽉 찬 봉우리에 강이 지나가며 잘라 낸 모양(음각) -->
+<div id="b2" class="logo">
+  <svg class="mark" viewBox="0 0 260 260">
+    <defs>
+      <mask id="cut"><rect width="260" height="260" fill="#fff"/>
+        <path d="M10 176 C 50 146, 90 206, 130 176 S 210 146, 250 170" fill="none" stroke="#000" stroke-width="22" stroke-linecap="round"/>
+      </mask>
+    </defs>
+    <path d="M130 48 L236 212 L24 212 Z" fill="#F4F1EA" mask="url(#cut)"/>
+  </svg>
+  <div class="w">RIVERSIDE</div><div class="s">TECH SUMMIT 2026</div>
+</div>
+
+<!-- B3 — 두 봉우리(겹친 산)와 그 아래 수평선 두 줄 -->
+<div id="b3" class="logo">
+  <svg class="mark" viewBox="0 0 260 260" fill="none" stroke="#F4F1EA" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 178 L96 84 L146 150" stroke-width="14"/>
+    <path d="M118 178 L176 100 L236 178" stroke-width="14" opacity="0.85"/>
+    <line x1="40" y1="206" x2="220" y2="206" stroke-width="12"/>
+    <line x1="70" y1="234" x2="190" y2="234" stroke-width="12" opacity="0.85"/>
+  </svg>
+  <div class="w">RIVERSIDE</div><div class="s">TECH SUMMIT 2026</div>
+</div>
+
+<div id="sheet">
+  <div class="cell"><div class="tag">B1</div><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/logo-b1.png"></div>
+  <div class="cell"><div class="tag">B2</div><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/logo-b2.png"></div>
+  <div class="cell"><div class="tag">B3</div><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/logo-b3.png"></div>
+</div>

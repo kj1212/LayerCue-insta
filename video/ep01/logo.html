@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- 가상 행사 「Riverside Tech Summit 2026」 의 로고 2판 — 평면 · 단색 · 얇은 선. 투명 PNG 로 찍어 overlay 1 에 올린다. 행사·이름은 지어낸 것. -->
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Archivo'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/Archivo.ttf'); }
+  html, body { margin: 0; background: transparent; }
+  #logo { width: 1600px; height: 400px; position: relative; font-family: 'Archivo', sans-serif; color: #F4F1EA; }
+  .mark { position: absolute; left: 40px; top: 70px; width: 260px; height: 260px; }
+  .word { position: absolute; left: 356px; top: 86px; font-weight: 700; font-size: 150px; letter-spacing: -0.03em; line-height: 1; }
+  .rule { position: absolute; left: 364px; top: 258px; width: 560px; height: 3px; background: rgba(244, 241, 234, 0.38); }
+  .sub  { position: absolute; left: 364px; top: 284px; font-weight: 500; font-size: 44px; letter-spacing: 0.24em; color: rgba(244, 241, 234, 0.72); line-height: 1; }
+</style>
+<div id="logo">
+  <svg class="mark" viewBox="0 0 260 260" fill="none" stroke="#F4F1EA" stroke-linecap="round">
+    <!-- 얇은 원(지평선) 과 그 아래를 지나는 강 한 줄 -->
+    <circle cx="130" cy="130" r="118" stroke-width="9"/>
+    <path d="M30 158 C 70 128, 100 188, 140 158 S 200 128, 232 150" stroke-width="12"/>
+    <line x1="60" y1="98" x2="200" y2="98" stroke-width="9" opacity="0.5"/>
+  </svg>
+  <div class="word">Riverside</div>
+  <div class="rule"></div>
+  <div class="sub">TECH SUMMIT 2026</div>
+</div>

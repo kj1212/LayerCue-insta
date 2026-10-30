@@ -1,3 +1,18 @@
 .DS_Store
 .env
 __pycache__/
+# 1편 제작 산출물 — 크거나 다시 만들 수 있는 것(녹화 · 음성 · 렌더 · 샌드박스 · 자막 PNG · 점검 샷)
+video/ep01/rec/
+video/ep01/audio/
+video/ep01/caps/
+video/ep01/take/
+video/ep01/shots/
+video/ep01/out/*.mp4
+video/ep01/times.json
+video/ep01/timeline.js
+video/render/
+video/sandbox-ep01/
+video/frames/
+youtube/*/*.mp4
+video/ep01/qa/
+video/ep01/thumb-stage.png
