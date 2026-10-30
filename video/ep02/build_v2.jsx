@@ -9,6 +9,7 @@ var VOID = [11 / 255, 11 / 255, 13 / 255];
 var COL = { panel: [35 / 255, 35 / 255, 36 / 255], indigo: [139 / 255, 149 / 255, 245 / 255], amber: [217 / 255, 138 / 255, 43 / 255], green: [63 / 255, 178 / 255, 127 / 255],
             hot: [255 / 255, 74 / 255, 26 / 255], white: [242 / 255, 238 / 255, 228 / 255] };
 $.evalFile(ROOT + "/ep02/timeline2.js");
+app.purge(PurgeTarget.ALL_CACHES);     // 프레임을 다시 그린 뒤라면 AE 가 예전(덜 그려진) 묶음을 기억하고 있을 수 있다
 
 function imp(path, seq) {
     var io = new ImportOptions(new File(path));
@@ -77,7 +78,15 @@ var i, L, e;
 L = comp.layers.add(imp(TL.bg)); L.outPoint = TL.duration; L.name = "bg";
 
 // ── 그래픽 장면(설치 등) ──
-for (i = 0; i < (TL.gfx || []).length; i++) { var gx = TL.gfx[i], gs = comp.layers.add(imp(gx.dir + "/00000.png", true)); gs.startTime = gx.t0; gs.name = "gfx " + i; }
+// ★ 프레임 묶음을 쓰는 동안 AE 가 폴더를 보면 앞 몇 초만 있는 묶음으로 기억한다 → 다시 읽히고 길이를 확인한다
+var gShort = [];
+for (i = 0; i < (TL.gfx || []).length; i++) {
+    var gx = TL.gfx[i], gi = imp(gx.dir + "/00000.png", true);
+    gi.mainSource.reload(); gi.mainSource.conformFrameRate = 30;
+    if (gi.duration < gx.t1 - gx.t0 - 0.1) gShort.push("gfx " + i + " " + gi.duration.toFixed(2) + "/" + (gx.t1 - gx.t0).toFixed(2));
+    var gs = comp.layers.add(gi); gs.startTime = gx.t0; gs.name = "gfx " + i;
+}
+if (gShort.length) { logTo(OUT_DIR + "/build.log", "오류: 그래픽 장면이 짧다 — " + gShort.join(", ")); throw new Error("gfx short"); }
 
 // ── 무대 카드 ──
 if (TL.stage) {
