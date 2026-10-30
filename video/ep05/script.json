@@ -1,0 +1,374 @@
+{
+ "title": "Adding Slides and Reading Cards — LayerCue from Zero, Episode 5",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "What a slide is",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today, we fill a presentation with real media.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A slide is one thing you put on the screen, or a sound you play.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Each card wears a badge: Video, Image, Music, or Text.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The file extension decides the kind.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Anything LayerCue can't play is refused up front, so it can't fail on stage.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Adding files",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "At the right of the title bar, the plus is Add File.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "New files go to the end. Sound files hide under the Audio file type.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "You can also drag files in from the Finder.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A line between the cards shows where they'll land.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "LayerCue copies every file into its own media folder.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Here's a text file. It's refused, with a notice.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Add or replace",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Now watch closely.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Hold one file over the middle of a card, and the card lights up.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Drop it, and it swaps that slide's picture.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Handy on purpose. Alarming by accident.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Command Z puts it back. On Windows, Control Z.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Between cards adds. The middle of a card replaces.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Pasting text",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Paste works too.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Copy some text, click an empty spot, and press Command V.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It splits at blank lines into text slides.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Paste a YouTube address, and you get a YouTube slide. That's Episode 13.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Reading a card",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Now, read a card.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Top left, its number. Top right, the layer chip.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Bottom right, how long it runs.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "An orange border means it's on the screen now.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Indigo means it's only selected.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "Arranging",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Drag a card to change the order.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Command click selects several.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Drag them onto another presentation, and they're copied there.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Hold Option as you let go to move them instead.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Command D duplicates the selection.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "chapter": "Deleting and card size",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "The Delete key removes only the slides. The files stay.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A notice offers Undo.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "LayerCue asks first only when a slide is on air, or ten or more go at once.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The slider in the status bar sets the card size.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Bigger cards mean fewer wrong clicks.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now fill a presentation with real media.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: running the slide list, with keys and layers.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

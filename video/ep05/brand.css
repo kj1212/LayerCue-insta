@@ -1,0 +1,27 @@
+/* 2판 룩 — LayerCue 앱(Theme.qml)·홈페이지(shell.css) 의 값을 그대로 쓴다. */
+@font-face { font-family: 'Archivo'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/Archivo.ttf'); font-weight: 100 900; font-stretch: 62% 125%; }
+@font-face { font-family: 'DM Mono'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/DMMono-Regular.ttf'); font-weight: 400; }
+@font-face { font-family: 'DM Mono'; src: url('file:///Users/kj1212/projects/LayerCue/qml/assets/fonts/DMMono-Medium.ttf'); font-weight: 500; }
+:root {
+  --void: #0B0B0D; --void2: #141417; --cream: #F2EEE4; --fg2: #9C988E; --fg3: #67645D;
+  --hair: rgba(242,238,228,.13); --rule: rgba(242,238,228,.34); --hot: #FF4A1A;
+  --bg-lit: #D98A2B; --fg-lit: #8B9BF0; --ov-lit: #3FB27F;          /* 층 이름표 색(앱 칩과 같다) */
+  --g-bg: #FF7A00; --g-fg: #7A2BFF; --g-ov: #00B96C;                /* 큰 글씨의 층 판(홈페이지 히어로) */
+  --accent: #5E6AD2; --accent-soft: #8B95F5; --card: #212121; --raised: #2A2A2A;
+  --disp: 'Archivo', sans-serif; --mono: 'DM Mono', ui-monospace, monospace;
+}
+html, body { margin: 0; background: transparent; }
+.frame { position: relative; width: 3840px; height: 2160px; overflow: hidden; background: var(--void); color: var(--cream); font-family: var(--disp); }
+/* 홈페이지의 세로 가는 선 — 여섯 칸 */
+.grid { position: absolute; inset: 0; background-image: linear-gradient(to right, var(--hair) 2px, transparent 2px); background-size: calc(100% / 6) 100%; }
+.micro { font-family: var(--mono); font-weight: 500; font-size: 40px; letter-spacing: .2em; text-transform: uppercase; color: var(--fg3); white-space: nowrap; }
+/* 큰 낱말 — 층 세 판이 어긋나 있다가 붙는다(홈페이지 히어로). --k 는 어긋남 정도(0 = 붙음) */
+.word { position: absolute; font-family: var(--disp); font-weight: 900; font-stretch: 118%; text-transform: uppercase; line-height: .78; letter-spacing: -.035em; white-space: nowrap; isolation: isolate; }
+.word .real { position: relative; z-index: 2; color: var(--cream); }
+.word .gh { position: absolute; inset: 0; z-index: 1; mix-blend-mode: screen; }
+.word .g1 { color: var(--g-bg); transform: translate(calc(-2.2% * var(--k, 1)), calc(-13% * var(--k, 1))); }
+.word .g2 { color: var(--g-fg); transform: translate(calc( 1.6% * var(--k, 1)), calc( -6% * var(--k, 1))); }
+.word .g3 { color: var(--g-ov); transform: translate(calc( 2.6% * var(--k, 1)), calc(  9% * var(--k, 1))); }
+/* 앱 칩(층 표시) */
+.chip { display: inline-flex; align-items: center; gap: 12px; padding: 8px 18px; border-radius: 12px; font-family: var(--disp); font-weight: 600; font-size: 34px; color: #111; }
+.chip.bg { background: var(--bg-lit); } .chip.fg { background: var(--fg-lit); } .chip.ov { background: var(--ov-lit); } .chip.hot { background: var(--hot); color: #fff; }
