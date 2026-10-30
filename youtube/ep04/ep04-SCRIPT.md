@@ -3,7 +3,7 @@
 ## Three words
 
 - Welcome back! Today, we put things in order.  
-  다시 만나요! 오늘은 정리하는 법을 배워요.
+  다시 오신 걸 환영해요! 오늘은 정리하는 법을 배워요.
 - First, three words.  
   먼저 낱말 세 개예요.
 - A presentation is one set of slides.  

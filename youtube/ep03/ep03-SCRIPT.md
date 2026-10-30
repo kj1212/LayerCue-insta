@@ -3,7 +3,7 @@
 ## Today's goal
 
 - Welcome back! Today, we go on air.  
-  다시 만나요! 오늘은 실제로 송출해 볼게요.
+  다시 오신 걸 환영해요! 오늘은 실제로 송출해 볼게요.
 - One slide on the projector, then down again, without a scare.  
   프로젝터에 슬라이드 한 장을 올리고, 놀랄 일 없이 다시 내립니다.
 - We'll use the READ ME guides as our slides.  

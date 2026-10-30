@@ -3,7 +3,7 @@
 ## What you need
 
 - Hi again! Let's get LayerCue onto your computer.  
-  다시 만나요! LayerCue를 컴퓨터에 설치해 볼게요.
+  또 만났네요! LayerCue를 컴퓨터에 설치해 볼게요.
 - It runs on Mac and Windows.  
   Mac과 Windows에서 돌아갑니다.
 - On a Mac, you need macOS 13 or later.  
