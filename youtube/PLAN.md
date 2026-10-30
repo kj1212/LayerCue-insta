@@ -74,11 +74,11 @@
 | 3:20 | 상태 바 좌→우: Show/Edit, On air 칩 "No output", 스피커 박스, 무대 제목 점, Tell us what's wrong, 카드 크기 슬라이더, 연필(Lock editing), (빈 자리: Update 칩 위치), 렌치, 기어. | The status bar reads left to right. Show and Edit. The on-air chip counts live screens. The speaker box is your sound device. The dot and title say what is on stage. Tell us what's wrong. The slider sets card size. The pencil locks editing. When an update is waiting, an Update chip appears here. The wrench is the YouTube tool. The gear is Settings. | `start/tour.md` (Status bar) |
 | 3:50 | 자막 "Scripted demo on a virtual screen — no projector is live." 영상→B(앰버), 텍스트→F(인디고), 로고→overlay 1(그린). 텍스트 슬라이드 3장 교체, 영상 멈추지 않음. ×(F)로 글자만 내림. | This part is a scripted demo on a virtual screen. Do not copy it on a live projector yet. A video goes to the background. The B cell turns amber. Words go on top. F turns indigo. A logo goes to overlay one. Green. I change the words. The video never stops. The small x beside F takes only the words down. That is the whole point of layers. | `index.md` (layers); `output/layers.md` (The seven layers) |
 | 4:25 | Edit 누름 → 에디터. Show로 복귀. | Press Edit and the whole window becomes the slide editor. Press Show to come back. That is the main window. | `start/tour.md` (Edit) |
-| 4:45 | 엔드 카드 + 로드맵 카드(1 하이라이트). | You can now point at every part of the window. Next: Episode 2 — Install, First Launch and Settings. | — |
+| 4:45 | 엔드 카드 + 로드맵 카드(1 하이라이트). 자막(내레이션 없음) "Not installed yet? Episode 2 walks you through it, on Mac and Windows." — 설치 없이 보는 편이라 따라 하려는 시청자를 2편으로 보내는 한 줄. 발화는 규약대로 두 문장만. | You can now point at every part of the window. Next: Episode 2 — Install, First Launch and Settings. | — |
 
 - **데모 자료**: 라이브러리 "Summit 2026": `Welcome loop`(추상 루프 mp4, BG), `Welcome words`(텍스트 3장: Welcome / Doors open 9:00 / Keynote: Dana Okafor, 9:30), `Summit logo`(투명 PNG). 사이드바는 신규 설치 상태(Tour, READ ME, My Stuff) + Summit 2026. Screen 1 = Virtual screen 1920×1080(프로젝터 불필요). 상태 바는 최신 상태(Update 칩·렌치 점 없음) 그대로 — 내레이션이 "When an update is waiting…"으로 조건부 설명.
 - **꼭 말할 주의점**: 카드 사진 클릭 = 즉시 송출, 확인창 없음. 3:50 데모는 스크립트/가상 화면임을 명시. 텍스트 애니메이션(줄이 하나씩 등장)은 앱에 없음. 드로어는 가리켜도 올라오지 않음.
-- **제작 메모**: 이 회차는 **가장 마지막에 녹화**(완성된 데모 라이브러리가 Ep 4–10 녹화 후에만 존재). 공개는 첫 번째.
+- **제작 메모**: 이 회차는 **가장 마지막에 녹화**(완성된 데모 라이브러리가 Ep 4–10 녹화 후에만 존재). 공개는 첫 번째. 설치보다 앞에 두는 이유: 이 편은 "보기만 하는" 편이라 설치가 필요 없고, 2편이 여기서 붙인 이름(기어·상태 바·사이드바·Tour·READ ME)을 그대로 쓴다. 설명란 첫 줄에도 `Not installed yet? Episode 2 walks you through it.`를 넣는다.
 
 ### Ep 2 — Install, First Launch and Settings (5:00)
 
