@@ -167,6 +167,12 @@ for (i = 0; i < TL.caps.length; i++) {
     fade(L, cp.t0, cp.t1, 0.2, 0.25);
 }
 
+// ── 대사 자막 ──
+for (i = 0; i < (TL.subs || []).length; i++) {
+    var sbt = TL.subs[i]; L = comp.layers.add(imp(sbt.file)); L.name = "sub"; L.inPoint = sbt.t0; L.outPoint = sbt.t1;
+    T(L).property("ADBE Position").setValue([sbt.x, sbt.y]); fade(L, sbt.t0, sbt.t1, 0.08, 0.08);
+}
+
 // ── 위쪽 그늘 + 챕터 태그 · 진행 막대 ──
 var scr = comp.layers.addSolid(VOID, "top scrim", 3840, 260, 1, TL.duration); T(scr).property("ADBE Position").setValue([1920, 130]);
 scr.inPoint = TL.tags[0].t0; scr.outPoint = TL.tags[TL.tags.length - 1].t1;

@@ -10,6 +10,16 @@ title_end = segs[0]["start"]; last_voice = segs[-1]["lines"][-1]["t"] + segs[-1]
 g = np.full(N, body_db)
 g[t < title_end] = edge_db; g[t > last_voice + 0.3] = edge_db
 k = int(1.0 * SR); g = np.convolve(np.pad(g, (k, k), mode="edge"), np.ones(k) / k, mode="same")[k:-k]   # 1 s 로 부드럽게 넘어간다
+# 말하는 동안 더 낮춘다(사용자: 말이 나올 때 음악이 크다) — 들어갈 때 0.1 s, 나올 때 0.6 s
+duck_db = float(sys.argv[3]) if len(sys.argv) > 3 else -9.0
+d = np.zeros(N)
+for s_ in segs:
+    for l in s_["lines"]:
+        d[int(max(0, l["t"] - 0.1) * SR): int((l["t"] + l["dur"] + 0.2) * SR)] = duck_db
+sm = np.copy(d); a, rl = 0.1 * SR, 0.6 * SR
+for i in range(1, N):
+    x = d[i] - sm[i - 1]; sm[i] = sm[i - 1] + x / (a if x < 0 else rl)
+g = g + sm
 mix = m * (10 ** (g / 20))[:, None]
 for s in segs:
     for l in s["lines"]:

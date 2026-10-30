@@ -15,6 +15,9 @@
   #cap .sq { width: 22px; height: 22px; background: var(--accent-soft); flex: none; }
   #cap .x { font-weight: 600; font-size: 64px; letter-spacing: -.01em; color: var(--cream); }
   #cap .k { font-family: var(--mono); font-weight: 500; font-size: 44px; padding: 6px 18px; border: 2px solid var(--rule); border-radius: 10px; color: var(--cream); }
+  /* 대사 자막 — 아래 가운데, 차분하게 */
+  #sub .box { display: inline-block; padding: 14px 34px 16px; background: rgba(11,11,13,.82); white-space: nowrap; }
+  #sub .x { font-weight: 600; font-size: 56px; letter-spacing: -.005em; color: var(--cream); }
   /* 챕터 태그 */
   #tag .box { display: inline-flex; align-items: center; gap: 30px; }
   #tag .n { font-family: var(--mono); font-weight: 500; font-size: 42px; letter-spacing: .1em; color: var(--void); background: var(--cream); padding: 10px 18px 8px; }
@@ -26,6 +29,7 @@
 </style>
 <div id="lbl" class="wrap"><div class="box"><div class="t"><i></i><span></span></div><div class="s"></div></div></div>
 <div id="cap" class="wrap"><div class="box"><span class="sq"></span><span class="x"></span><span class="k"></span></div></div>
+<div id="sub" class="wrap"><div class="box"><span class="x"></span></div></div>
 <div id="tag" class="wrap"><div class="box"><span class="n"></span><span class="t"></span></div></div>
 <div id="prog" class="wrap"><div class="box"></div></div>
 <script>
@@ -40,6 +44,7 @@
     const kk = document.querySelector('#cap .k'); kk.textContent = k || ''; kk.style.display = k ? '' : 'none';
     document.querySelector('#cap .sq').style.background = C[color] || 'var(--accent-soft)';
   };
+  window.setSub = x => { document.querySelector('#sub .x').textContent = x; };
   window.setTag = (n, t) => { document.querySelector('#tag .n').textContent = n; document.querySelector('#tag .t').textContent = t; };
   window.setProg = (k, n) => { document.querySelector('#prog .box').innerHTML = Array.from({ length: n }, (_, i) => `<i class="${i < k ? 'done' : i === k ? 'now' : ''}"></i>`).join(''); };
 </script>

@@ -161,6 +161,12 @@ def timeline():
             if "hl" in e: pending.append(("hl", seg, e, t, ln, None))
             if "cap" in e:
                 f = f"cap-{len(parts):03d}.png"; parts.append({"kind": "cap", "file": f, "args": [e["cap"], e.get("keys", ""), e.get("color", "")]}); pending.append(("cap", seg, e, t, ln, f))
+    subs = []
+    for seg in segs:
+        for l in seg["lines"]:
+            f = f"sub-{l['key']}.png"; parts.append({"kind": "sub", "file": f, "args": [l["text"]]}); subs.append({"t0": round(l["t"] - 0.05, 3), "t1": round(l["t"] + l["dur"] + 0.3, 3), "file": f})
+    for i in range(len(subs) - 1):
+        if subs[i]["t1"] > subs[i + 1]["t0"] - 0.04: subs[i]["t1"] = round(subs[i + 1]["t0"] - 0.04, 3)
     pd = HERE / "parts2"; pd.mkdir(exist_ok=True)
     json.dump(parts, open(pd / "list.json", "w"), ensure_ascii=False, indent=1)
     subprocess.run(["node", str(HERE.parent / "render_parts.mjs"), str(HERE / "parts.html"), str(pd / "list.json"), str(pd)], check=True)
@@ -194,6 +200,11 @@ def timeline():
         elif kind == "cap":
             cw, ch = sizes[f]
             caps.append({"t0": t, "t1": round(t + e.get("capdur", dur), 3), "file": str(pd / f), "x": 1920, "y": round(2160 - 44 - ch / 2, 1)})
+    capspans = [(c["t0"], c["t1"]) for c in caps]
+    subs_out = []
+    for sb in subs:
+        if any(a < sb["t1"] and sb["t0"] < b for a, b in capspans): continue     # 강조 자막이 떠 있는 동안은 대사 자막을 빼다(같은 말이다)
+        w, h = sizes[sb["file"]]; subs_out.append({"t0": sb["t0"], "t1": sb["t1"], "file": str(pd / sb["file"]), "x": 1920, "y": round(2160 - 40 - h / 2, 1)})
     for i, seg in enumerate(chapters):
         tw, th = sizes[f"tag-{seg['id']}.png"]; pw, ph = sizes[f"prog-{seg['id']}.png"]
         tags.append({"t0": seg["start"], "t1": seg["end"], "file": str(pd / f"tag-{seg['id']}.png"), "x": 270 - 24, "y": 40 - 24, "w": tw, "h": th})
@@ -217,7 +228,7 @@ def timeline():
           "bg": str(HERE / "parts2" / "bg.png"),
           "stage": {"file": str(rec / "stage.mp4"), "t0": round(s1["start"] - 0.5, 3), "t1": round(until + 0.5, 3), "in": round(REC_T0 + PRE - 0.5, 3), "xf": until},
           "card": {"t0": round(until - 0.1, 3), "t1": round(segs[-1]["start"] + 0.4, 3), "keys": card_keys(H)},
-          "clips": clips, "hls": hls, "lbls": lbls, "caps": caps, "tags": tags, "clicks": clicks, "voice": voice_,
+          "clips": clips, "hls": hls, "lbls": lbls, "caps": caps, "subs": subs_out, "tags": tags, "clicks": clicks, "voice": voice_,
           "music": str(HERE / "audio" / "music-ep01.wav"), "sfx": [], "checks": []}
     for seg in segs:
         for l in seg["lines"][:: max(1, len(seg["lines"]) // 3)]: TL["checks"].append(round(l["t"] + min(1.0, l["dur"] / 2), 2))
