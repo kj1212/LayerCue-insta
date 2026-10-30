@@ -1,5 +1,5 @@
 {
- "_note": "3편 연출표 — 조작 창은 맥북(녹화본을 3840×2100+위60 꼴로 맞춤), 프로젝터는 LG 를 동시에 녹화(proj). projOff = 출력이 꺼져 LG 에 바탕화면이 보이는 동안(그림으로 덮는다).",
+ "_note": "3편 연출표 — 조작 창은 맥북(녹화본을 3840×2100+위60 꼴로 맞춤). 프로젝터(LG)는 실시간 녹화가 해상도 바뀜에 끊겨서, 실제 송출을 한 장씩 찍은 proj/*.png 를 proj 이벤트 시각(클릭 + 0.9 s)에 바꿔 보여 준다(split 동안만).",
  "title_sec": 6.0,
  "lead": 0.45,
  "gap": 0.42,
@@ -8,6 +8,39 @@
  "segments": {
   "s1": {
    "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "output",
+       "on": true
+      },
+      {
+       "op": "useCue",
+       "name": "Tour"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "present",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "sleep": 4
+    },
+    {
+     "mouse": [
+      "click",
+      "middle.empty.low"
+     ]
+    },
     {
      "mouse": [
       "jump",
@@ -30,6 +63,12 @@
       "a READ ME guide, used as a slide"
      ],
      "lblSide": "below"
+    },
+    {
+     "line": 1,
+     "at": -0.5,
+     "proj": "slide1",
+     "fade": 0
     }
    ]
   },
@@ -179,16 +218,6 @@
      ]
     },
     {
-     "line": 4,
-     "at": 0.0,
-     "hl": "list.lg",
-     "lbl": [
-      "Plugged in",
-      "comes first"
-     ],
-     "lblSide": "right"
-    },
-    {
      "line": 5,
      "at": 0.0,
      "hl": "list.main",
@@ -225,9 +254,20 @@
     {
      "line": 8,
      "at": 3.2,
-     "key": [
-      53
+     "mouse": [
+      "click",
+      "middle.empty.low"
      ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "list.plugged",
+     "lbl": [
+      "Plugged in",
+      "come first"
+     ],
+     "lblSide": "right"
     }
    ]
   },
@@ -245,14 +285,6 @@
      "line": 1,
      "at": -0.5,
      "split": true
-    },
-    {
-     "line": 1,
-     "at": -0.5,
-     "projOff": {
-      "line": 2,
-      "at": 0.7
-     }
     },
     {
      "line": 1,
@@ -297,14 +329,6 @@
      ]
     },
     {
-     "line": 4,
-     "at": 0.6,
-     "projOff": {
-      "line": 5,
-      "at": 0.6
-     }
-    },
-    {
      "line": 5,
      "at": 0.3,
      "mouse": [
@@ -321,6 +345,30 @@
       "shows here when unplugged"
      ],
      "lblSide": "above"
+    },
+    {
+     "line": 1,
+     "at": -0.5,
+     "proj": "off",
+     "fade": 0
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "proj": "black",
+     "fade": 0.3
+    },
+    {
+     "line": 4,
+     "at": 1.2,
+     "proj": "off",
+     "fade": 0.3
+    },
+    {
+     "line": 5,
+     "at": 1.2,
+     "proj": "black",
+     "fade": 0.3
     }
    ]
   },
@@ -392,6 +440,24 @@
       "nothing changes"
      ],
      "lblSide": "below"
+    },
+    {
+     "line": 1,
+     "at": -0.5,
+     "proj": "black",
+     "fade": 0
+    },
+    {
+     "line": 1,
+     "at": 2.1,
+     "proj": "slide1",
+     "fade": 0.4
+    },
+    {
+     "line": 5,
+     "at": 0.45,
+     "proj": "slide2",
+     "fade": 0.4
     }
    ]
   },
@@ -489,6 +555,53 @@
      "at": 0.0,
      "cap": "F1 Clear All  ·  F2 Foreground  ·  F3 Background  ·  F4 Overlays",
      "capdur": 4.6
+    },
+    {
+     "line": 1,
+     "at": -0.5,
+     "proj": "slide2",
+     "fade": 0
+    },
+    {
+     "line": 1,
+     "at": 1.1,
+     "proj": "black",
+     "fade": 0.6
+    },
+    {
+     "line": 3,
+     "at": 0.9,
+     "proj": "slide3",
+     "fade": 0.4
+    },
+    {
+     "line": 3,
+     "at": 3.5,
+     "proj": "slide3bg",
+     "fade": 0.6
+    },
+    {
+     "line": 4,
+     "at": 0.9,
+     "proj": "slide1",
+     "fade": 0.4
+    },
+    {
+     "line": 4,
+     "at": 2.95,
+     "proj": "black",
+     "fade": 0.6
+    },
+    {
+     "line": 3,
+     "at": 3.6,
+     "hl": "layer.B",
+     "lbl": [
+      "B",
+      "the background stays"
+     ],
+     "lblSide": "right",
+     "dur": 2.2
     }
    ]
   },
@@ -496,6 +609,14 @@
    "setup": [
     {
      "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "output",
+       "on": true
+      },
       {
        "op": "useCue",
        "name": "Tour"
@@ -508,6 +629,15 @@
        "op": "present",
        "n": 1
       }
+     ]
+    },
+    {
+     "sleep": 4
+    },
+    {
+     "mouse": [
+      "click",
+      "middle.empty.low"
      ]
     },
     {
@@ -531,14 +661,15 @@
      ]
     },
     {
-     "line": 2,
-     "at": 0.0,
+     "line": 1,
+     "at": 2.2,
      "hl": "toast",
      "lbl": [
       "Reminder",
       "Esc does not stop output"
      ],
-     "lblSide": "above"
+     "lblSide": "above",
+     "dur": 3.0
     },
     {
      "line": 3,
@@ -555,14 +686,6 @@
       "click",
       "tile.power"
      ]
-    },
-    {
-     "line": 3,
-     "at": 1.9,
-     "projOff": {
-      "line": 4,
-      "at": 0.4
-     }
     },
     {
      "line": 4,
@@ -598,14 +721,6 @@
     },
     {
      "line": 5,
-     "at": 0.3,
-     "projOff": {
-      "line": 7,
-      "at": 0.5
-     }
-    },
-    {
-     "line": 5,
      "at": 0.7,
      "hl": "toast",
      "lbl": [
@@ -633,8 +748,9 @@
     {
      "line": 6,
      "at": 2.2,
-     "key": [
-      53
+     "mouse": [
+      "click",
+      "middle.empty.low"
      ]
     },
     {
@@ -646,12 +762,20 @@
      ]
     },
     {
+     "line": 8,
+     "at": 0.3,
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    },
+    {
      "line": 7,
      "at": 1.2,
      "mouse": [
       "lg",
-      0.975,
-      0.035
+      0.9896,
+      0.0185
      ]
     },
     {
@@ -659,25 +783,88 @@
      "at": 3.0,
      "mouse": [
       "lgclick",
-      0.975,
-      0.035
+      0.9896,
+      0.0185
+     ]
+    },
+    {
+     "line": 1,
+     "at": -0.5,
+     "proj": "slide1",
+     "fade": 0
+    },
+    {
+     "line": 3,
+     "at": 1.1,
+     "proj": "black",
+     "fade": 0.6
+    },
+    {
+     "line": 3,
+     "at": 2.5,
+     "proj": "off",
+     "fade": 0.3
+    },
+    {
+     "line": 4,
+     "at": 1.0,
+     "proj": "black",
+     "fade": 0.3
+    },
+    {
+     "line": 5,
+     "at": 0.9,
+     "proj": "off",
+     "fade": 0.3
+    },
+    {
+     "line": 7,
+     "at": 1.0,
+     "proj": "black",
+     "fade": 0.3
+    },
+    {
+     "line": 7,
+     "at": 1.6,
+     "proj": "xshow",
+     "fade": 0.15
+    },
+    {
+     "line": 7,
+     "at": 2.15,
+     "proj": "xhover",
+     "fade": 0.1
+    },
+    {
+     "line": 7,
+     "at": 4.6,
+     "proj": "off",
+     "fade": 0.3
+    },
+    {
+     "line": 1,
+     "at": 2.4,
+     "key": [
+      53
      ]
     },
     {
      "line": 7,
-     "at": 3.4,
-     "projOff": {
-      "line": 8,
-      "at": 4.0
-     }
-    },
-    {
-     "line": 8,
-     "at": 0.3,
-     "mouse": [
-      "jump",
-      "middle.empty.low"
-     ]
+     "at": 1.7,
+     "hl": [
+      3700,
+      0,
+      140,
+      110
+     ],
+     "space": "proj",
+     "lbl": [
+      "Round ×",
+      "switches this output off"
+     ],
+     "lblSide": "below",
+     "dur": 3.2,
+     "color": "hot"
     }
    ]
   },

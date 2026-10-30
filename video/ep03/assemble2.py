@@ -245,24 +245,21 @@ def timeline():
             if "img" in e:
                 t0 = round(ev_time(seg, e), 3); t1 = round(ev_time(seg, e["until"]), 3)
                 imgs.append({"file": str(HERE / e["img"]), "t0": t0, "t1": t1, "chip": str(HERE / e["chip"]) if e.get("chip") else ""})
-    # 3편: 프로젝터 — 나란히 보기(split) 동안만 보인다. 출력이 꺼진 동안(projOff)은 LG 바탕화면 대신 그림
-    proj = None
-    pclips = []
-    for seg in chapters:
-        f = rec / f"{seg['id']}-proj.mp4"
-        if f.exists(): pclips.append({"file": str(f), "t0": round(seg["start"] - 0.3, 3), "t1": seg["end"], "in": round(REC_T0 + PRE - 0.3, 3)})
-    spans = [[t0, t1] for t0, t1, st in H if st == SPLIT]
-    merged = []
-    for a, b in spans:
-        if merged and a - MOVE <= merged[-1][1] + MOVE + 1e-3: merged[-1][1] = b
-        else: merged.append([a, b])
-    off = []
+    # 3편: 프로젝터 — 나란히 보기(split) 동안만. 실제 송출을 찍은 proj/<이름>.png 를 proj 이벤트 시각에 바꾼다(fade 초 동안 겹쳐 들어온다)
+    shots = []
     for seg in segs:
         for e in SL["segments"].get(seg["id"], {}).get("events", []):
-            if "projOff" in e: off.append([round(ev_time(seg, e), 3), round(ev_time(seg, e["projOff"]), 3) if isinstance(e["projOff"], dict) else seg["end"]])
-    if pclips:
-        proj = {"clips": pclips, "spans": merged, "off": off, "state": PROJ, "split": SPLIT, "move": MOVE,
-                "offImg": str(HERE / "proj-off.png"), "chipProj": str(HERE / "chip-proj.png"), "chipCtl": str(HERE / "chip-ctl.png")}
+            if "proj" in e: shots.append([round(ev_time(seg, e), 3), e["proj"], e.get("fade", 0.3)])
+    shots.sort()
+    sh = [{"file": str(HERE / "proj" / f"{img}.png"), "t0": t, "t1": round((shots[i + 1][0] + shots[i + 1][2]) if i + 1 < len(shots) else total, 3), "fade": f}
+          for i, (t, img, f) in enumerate(shots)]
+    spans = [[t0, t1] for t0, t1, st in H if st == SPLIT]
+    merged = []
+    for a_, b_ in spans:
+        if merged and a_ - MOVE <= merged[-1][1] + MOVE + 1e-3: merged[-1][1] = b_
+        else: merged.append([a_, b_])
+    proj = {"shots": sh, "spans": merged, "state": PROJ, "split": SPLIT, "move": MOVE,
+            "chipProj": str(HERE / "chip-proj.png"), "chipCtl": str(HERE / "chip-ctl.png")} if sh else None
     first_win = next(s for s in chapters if not SL["segments"].get(s["id"], {}).get("gfx"))
     TL = {"name": "LayerCue-ep03", "duration": round(total, 3), "fps": 30,
           "title": {"dir": str(HERE / "frames" / "title2"), "t1": TITLE + 0.5},

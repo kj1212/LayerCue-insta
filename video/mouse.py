@@ -107,12 +107,10 @@ class M:
         self.move(px, py, dur); self._rec("hover", px, py); time.sleep(stay)
 
     def type_text(self, text, gap=0.07):
-        """글자를 사람처럼 한 자씩 친다(유니코드 그대로)."""
+        """글자를 사람처럼 한 자씩 친다 — System Events keystroke(유니코드 이벤트는 Qt 칸에 깨진 글자로 들어갔다)."""
+        import subprocess
         for ch in text:
-            for down in (True, False):
-                e = Quartz.CGEventCreateKeyboardEvent(None, 0, down)
-                Quartz.CGEventKeyboardSetUnicodeString(e, len(ch), ch)
-                Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.01)
+            subprocess.run(["osascript", "-e", 'tell application "System Events" to keystroke "%s"' % ch.replace('"', '\\"')])
             time.sleep(gap)
         self._rec("type", *self.where())
 

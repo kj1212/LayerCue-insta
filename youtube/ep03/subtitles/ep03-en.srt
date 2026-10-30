@@ -1,0 +1,188 @@
+1
+00:00:06,400 --> 00:00:08,830
+Welcome back! Today, we go on air.
+
+2
+00:00:08,900 --> 00:00:12,760
+One slide on the projector, then down again, without a scare.
+
+3
+00:00:12,830 --> 00:00:15,460
+We'll use the READ ME guides as our slides.
+
+4
+00:00:15,530 --> 00:00:18,500
+Plug in your projector or second screen first.
+
+5
+00:00:20,520 --> 00:00:23,220
+Everything starts in the tile at the top left.
+
+6
+00:00:23,290 --> 00:00:26,060
+This is Screen 1: what your audience sees.
+
+7
+00:00:26,130 --> 00:00:28,360
+The tab on the left says 01.
+
+8
+00:00:28,430 --> 00:00:31,410
+At the right end of the header is the power switch.
+
+9
+00:00:31,480 --> 00:00:33,860
+The preview shows what Screen 1 shows.
+
+10
+00:00:33,930 --> 00:00:37,320
+Beside it is the layer column, with CLEAR at the top.
+
+11
+00:00:38,740 --> 00:00:40,550
+Click the 01 tab.
+
+12
+00:00:41,220 --> 00:00:43,620
+Give it a name. We'll call it Audience.
+
+13
+00:00:45,090 --> 00:00:46,630
+Then open Screen.
+
+14
+00:00:47,300 --> 00:00:49,640
+Screens that are plugged in come first.
+
+15
+00:00:49,710 --> 00:00:53,010
+The one marked main display is the screen you work on.
+
+16
+00:00:53,080 --> 00:00:57,880
+Below the line are virtual screens: a size to build for, with no window.
+
+17
+00:00:57,950 --> 00:01:02,960
+Pick your projector. Here, it's a monitor called LG HDR 4K.
+
+18
+00:01:03,830 --> 00:01:07,570
+If it was plugged in at first launch, LayerCue already chose it.
+
+19
+00:01:09,590 --> 00:01:12,090
+The power switch is the output window.
+
+20
+00:01:12,160 --> 00:01:16,280
+Switch it on. The projector goes black, because nothing is up yet.
+
+21
+00:01:17,150 --> 00:01:21,010
+The 01 turns orange, and the status bar says On air.
+
+22
+00:01:21,080 --> 00:01:24,490
+Switch it off, and the projector shows its desktop again.
+
+23
+00:01:25,360 --> 00:01:29,130
+Turn it back on. LayerCue remembers the switch for next time.
+
+24
+00:01:29,800 --> 00:01:33,480
+If the screen is unplugged, the header says not connected.
+
+25
+00:01:34,900 --> 00:01:37,970
+Now, send a slide. Click its picture once.
+
+26
+00:01:38,840 --> 00:01:42,180
+It goes out that instant. There's no confirmation.
+
+27
+00:01:42,250 --> 00:01:45,400
+Look at what lit up. The card has an orange border.
+
+28
+00:01:45,470 --> 00:01:48,800
+And in the layer column, F lights up: the foreground.
+
+29
+00:01:48,870 --> 00:01:51,130
+Press the right arrow for the next slide.
+
+30
+00:01:52,000 --> 00:01:56,330
+Clicking the live slide again does nothing. It stays up, on purpose.
+
+31
+00:01:57,750 --> 00:01:59,650
+CLEAR takes everything down.
+
+32
+00:02:00,320 --> 00:02:03,200
+It fades out, and the projector goes black.
+
+33
+00:02:03,270 --> 00:02:06,690
+The small x beside a layer clears only that layer.
+
+34
+00:02:08,160 --> 00:02:13,180
+On the keyboard, Command 1 clears everything. On Windows, it's Control 1.
+
+35
+00:02:14,450 --> 00:02:18,450
+2 is the foreground, 3 the background, 4 the overlays.
+
+36
+00:02:18,520 --> 00:02:23,560
+F1 to F4 work too, but on a Mac those keys often change brightness.
+
+37
+00:02:23,630 --> 00:02:25,910
+And Clear All doesn't stop the music.
+
+38
+00:02:27,330 --> 00:02:31,220
+Your hand will reach for Escape. Press it, and nothing goes dark.
+
+39
+00:02:32,690 --> 00:02:35,140
+LayerCue shows a reminder instead.
+
+40
+00:02:35,210 --> 00:02:37,850
+So: clear first, then switch the power off.
+
+41
+00:02:39,520 --> 00:02:42,520
+What if you pick the main display while the power is on?
+
+42
+00:02:44,590 --> 00:02:47,770
+LayerCue switches the power off, and tells you why.
+
+43
+00:02:49,240 --> 00:02:52,100
+It never covers its own window by itself.
+
+44
+00:02:53,970 --> 00:02:58,770
+If an output ever covers your screen, move the mouse and click the round x.
+
+45
+00:03:01,440 --> 00:03:05,250
+Closing the output clears nothing. Clear first, then close.
+
+46
+00:03:06,670 --> 00:03:10,550
+You can now put a slide on the projector, and take it down safely.
+
+47
+00:03:10,620 --> 00:03:14,360
+Next time: libraries, presentations and cue sheets.
+

@@ -46,6 +46,16 @@
   #D .store .btn { position: absolute; left: 170px; top: 112px; padding: 8px 30px; border-radius: 6px; background: #5E6AD2; font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 600; font-size: 20px; }
   #D .os { position: absolute; display: flex; gap: 10px; }
   #D .os span { font-family: var(--mono); font-weight: 500; font-size: 18px; letter-spacing: .16em; padding: 6px 12px; color: #111; }
+  /* E — 첫 송출 편: 프로젝터 화면(실제 송출) + 전원 스위치 · CLEAR */
+  #E .proj { position: absolute; left: 590px; top: 110px; width: 640px; height: 360px; border-radius: 16px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 6px var(--hot), 0 0 70px rgba(255,74,26,.45), 0 40px 90px rgba(0,0,0,.7); }
+  #E .proj img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #E .onair { position: absolute; left: 610px; top: 70px; transform: rotate(-3deg); background: var(--hot); color: #111; font-family: var(--mono); font-weight: 500; font-size: 20px; letter-spacing: .18em; padding: 6px 14px; }
+  #E .ctl { position: absolute; left: 700px; top: 500px; display: flex; gap: 18px; align-items: center; transform: rotate(2deg); background: #1b1b1d; padding: 20px 26px; border-radius: 14px; box-shadow: 0 0 0 2px var(--hair), 0 30px 70px rgba(0,0,0,.7); }
+  #E .ctl .n { font-family: var(--mono); font-size: 34px; color: var(--hot); }
+  #E .ctl .nm { font-size: 34px; font-weight: 600; margin-right: 10px; }
+  #E .ctl .sw { width: 92px; height: 46px; border-radius: 6px; background: var(--hot); position: relative; }
+  #E .ctl .sw::after { content: ""; position: absolute; right: 8px; top: 8px; width: 30px; height: 30px; border-radius: 4px; background: #fff; }
+  #E .ctl .clr { font-family: var(--mono); font-weight: 500; font-size: 26px; letter-spacing: .12em; padding: 8px 18px; border: 2px solid var(--cream); border-radius: 6px; }
 </style>
 <div id="A" class="t"><div class="grid"></div>
   <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
@@ -72,6 +82,14 @@
   <div class="os" style="left:60px;top:610px"><span style="background:var(--fg-lit)">MAC</span><span style="background:var(--bg-lit)">WINDOWS</span></div>
   <div class="win"><img class="img"></div>
   <div class="store"><img class="icon"><div class="nm">LayerCue</div><div class="pub">CastPad · Free</div><div class="btn">Install</div></div>
+</div>
+<div id="E" class="t"><div class="grid"></div>
+  <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
+  <div class="ttl" style="left:56px;top:130px;font-size:132px;width:540px"></div>
+  <div class="mic" style="left:60px;top:620px;color:var(--fg2)">screen on · slide out · <b>clear</b></div>
+  <div class="onair">● ON AIR</div>
+  <div class="proj"><img class="img"></div>
+  <div class="ctl"><span class="n">01</span><span class="nm">Audience</span><span class="sw"></span><span class="clr">CLEAR</span></div>
 </div>
 <script>
 const Q = new URLSearchParams(location.search);

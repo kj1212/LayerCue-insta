@@ -1,5 +1,5 @@
 // 시리즈 썸네일 — node thumb.mjs <ep> <title(html)> <img.png> <word> <out.png> [top.png] [variant=A]
-//   A 층 판(1편) · D 설치(2편: img = DMG 창, top = 앱 아이콘). 편마다 다른 그림을 쓴다.
+//   A 층 판(1편) · D 설치(2편: img = DMG 창, top = 앱 아이콘) · E 첫 송출(3편: img = 실제 송출 한 장). 편마다 다른 그림을 쓴다.
 import puppeteer from 'puppeteer-core';
 import path from 'node:path';
 const [ep, title, img, word, out, top, variant = 'A'] = process.argv.slice(2);

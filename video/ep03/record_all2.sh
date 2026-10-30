@@ -3,7 +3,7 @@
 cd "${0:a:h}/.." || exit 1
 export LC_SANDBOX=sandbox-ep03 REC_SUB=v2
 # 3편: 조작 창은 맥북(주 화면) · 프로젝터는 LG — 둘 다 찍는다. 창 자리(포인트)와 자를 자리(px)는 ep03/place.sh 와 같아야 한다
-export MOUSE_WIN="60,110,1680,919" REC_DEV="2:none" REC_DEV2="3:none" REC_CROP="3360:1838:120:220"
+export MOUSE_WIN="60,110,1680,919" REC_DEV="2:none" REC_CROP="3360:1838:120:220"
 # 녹화 시작·끝을 알린다(맥북 화면 알림 + 소리) — 녹화 중에 마우스를 움직이면 화면에 그대로 찍힌다(2026-10-30 Dock 이 끼었다)
 note() { osascript -e "display notification \"$2\" with title \"LayerCue 녹화\" subtitle \"$1\" sound name \"$3\"" 2>/dev/null; }
 SEGS=("$@"); [ $# -eq 0 ] && SEGS=(s2 s3 s4 s5 s6 s7)

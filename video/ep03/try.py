@@ -4,8 +4,10 @@ import os, sys, pathlib
 os.environ.setdefault("MOUSE_WIN", "60,110,1680,919")
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from mouse import M
-m = M(log=False); op = sys.argv[1]; a = [float(v) for v in sys.argv[2:]]
+m = M(log=False); op = sys.argv[1]; a = [float(v) for v in sys.argv[2:]] if op != "type" else []
 if op == "click": m.click(*a)
 elif op == "rclick": m.right_click(*a)
 elif op == "move": m.move(*a)
 elif op == "key": m.key(int(a[0]))
+elif op == "cmdkey": m.key(int(a[0]), cmd=True)
+elif op == "type": m.type_text(" ".join(sys.argv[2:]))

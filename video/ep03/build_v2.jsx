@@ -121,14 +121,10 @@ adopt(cb, card, [1920, 1050]); rectShape(cb, 3840, 2100, 40, COL.white, 3, 16); 
 var projL = null;
 if (TL.proj) {
     var pr = TL.proj, pc = P.items.addComp("Proj", 3840, 2160, 1, TL.duration, TL.fps); pc.bgColor = [0, 0, 0];
-    for (i = 0; i < pr.clips.length; i++) {
-        var q = pr.clips[i]; L = pc.layers.add(imp(q.file)); L.startTime = q.t0 - q["in"]; L.inPoint = q.t0; L.outPoint = q.t1; L.name = "proj rec " + i;
+    for (i = 0; i < pr.shots.length; i++) {
+        var q = pr.shots[i]; L = pc.layers.add(imp(q.file)); L.inPoint = q.t0; L.outPoint = q.t1; L.name = "proj " + i;
         T(L).property("ADBE Position").setValue([1920, 1080]);
-    }
-    var offIt = imp(pr.offImg);
-    for (i = 0; i < pr.off.length; i++) {
-        L = pc.layers.add(offIt); L.inPoint = pr.off[i][0]; L.outPoint = pr.off[i][1]; L.name = "desktop cover " + i;
-        T(L).property("ADBE Position").setValue([1920, 1080]);
+        if (q.fade > 0) keys(T(L).property("ADBE Opacity"), [[q.t0, 0], [q.t0 + q.fade, 100]], 40);
     }
     projL = comp.layers.add(pc); projL.name = "proj";
     T(projL).property("ADBE Anchor Point").setValue([0, 0]); T(projL).property("ADBE Position").setValue([pr.state[1], pr.state[2]]);
