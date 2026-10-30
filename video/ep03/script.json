@@ -1,0 +1,452 @@
+{
+ "title": "Your First Show: Screen On, Slide Out, Clear — LayerCue from Zero, Episode 3",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Today's goal",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today, we go on air.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "One slide on the projector, then down again, without a scare.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "We'll use the READ ME guides as our slides.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": "",
+     "say": "We'll use the reed-me guides as our slides."
+    },
+    {
+     "text": "Plug in your projector or second screen first.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "The screen tile",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Everything starts in the tile at the top left.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "This is Screen 1: what your audience sees.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The tab on the left says 01.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": "",
+     "say": "The tab on the left says zero one."
+    },
+    {
+     "text": "At the right end of the header is the power switch.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The preview shows what Screen 1 shows.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Beside it is the layer column, with CLEAR at the top.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Choosing the screen",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Click the 01 tab.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": "",
+     "say": "Click the zero one tab."
+    },
+    {
+     "text": "Give it a name. We'll call it Audience.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then open Screen.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Screens that are plugged in come first.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The one marked main display is the screen you work on.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Below the line are virtual screens: a size to build for, with no window.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Pick your projector. Here, it's a monitor called LG HDR 4K.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "If it was plugged in at first launch, LayerCue already chose it.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Power on, power off",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "The power switch is the output window.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Switch it on. The projector goes black, because nothing is up yet.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The 01 turns orange, and the status bar says On air.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": "",
+     "say": "The zero one turns orange, and the status bar says On air."
+    },
+    {
+     "text": "Switch it off, and the projector shows its desktop again.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Turn it back on. LayerCue remembers the switch for next time.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "If the screen is unplugged, the header says not connected.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Sending a slide",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Now, send a slide. Click its picture once.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It goes out that instant. There's no confirmation.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Look at what lit up. The card has an orange border.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "And in the layer column, F lights up: the foreground.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press the right arrow for the next slide.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Clicking the live slide again does nothing. It stays up, on purpose.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "Taking it down",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "CLEAR takes everything down.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It fades out, and the projector goes black.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The small x beside a layer clears only that layer.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "On the keyboard, Command 1 clears everything. On Windows, it's Control 1.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "2 is the foreground, 3 the background, 4 the overlays.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": "",
+     "say": "Two is the foreground, three the background, four the overlays."
+    },
+    {
+     "text": "F1 to F4 work too, but on a Mac those keys often change brightness.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": "",
+     "say": "F one to F four work too, but on a Mac those keys often change brightness."
+    },
+    {
+     "text": "And Clear All doesn't stop the music.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "chapter": "Closing safely",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Your hand will reach for Escape. Press it, and nothing goes dark.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "LayerCue shows a reminder instead.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "So: clear first, then switch the power off.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "What if you pick the main display while the power is on?",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "LayerCue switches the power off, and tells you why.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It never covers its own window by itself.",
+     "pause": 1.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "If an output ever covers your screen, move the mouse and click the round x.",
+     "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Closing the output clears nothing. Clear first, then close.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now put a slide on the projector, and take it down safely.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: libraries, presentations and cue sheets.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

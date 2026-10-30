@@ -1,0 +1,689 @@
+{
+ "_note": "3편 연출표 — 조작 창은 맥북(녹화본을 3840×2100+위60 꼴로 맞춤), 프로젝터는 LG 를 동시에 녹화(proj). projOff = 출력이 꺼져 LG 에 바탕화면이 보이는 동안(그림으로 덮는다).",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.4,
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.4,
+     "split": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "card1.pic",
+     "lbl": [
+      "Start here",
+      "a READ ME guide, used as a slide"
+     ],
+     "lblSide": "below"
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "tile.box",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "tile.box",
+     "lbl": [
+      "Screen 1",
+      "what the audience sees"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "tile.tab",
+     "lbl": [
+      "01",
+      "the tab"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "tile.power",
+     "lbl": [
+      "Power switch",
+      "the output window"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "hl": "tile.preview",
+     "lbl": [
+      "Preview",
+      "what Screen 1 shows"
+     ],
+     "lblSide": "left"
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "hl": "tile.layercol",
+     "lbl": [
+      "Layer column",
+      "CLEAR at the top"
+     ],
+     "lblSide": "right"
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "output",
+       "on": false
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "tile.box",
+     "scale": 1.45,
+     "center": [
+      1920,
+      1180
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      "tile.tab"
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      "pop.name"
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.8,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.1,
+     "type": "Audience"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      "pop.screen"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "list.lg",
+     "lbl": [
+      "Plugged in",
+      "comes first"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "hl": "list.main",
+     "lbl": [
+      "— main display",
+      "the screen you work on"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "hl": "list.virtual",
+     "lbl": [
+      "Virtual screens",
+      "a size, no window"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 7,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      "list.lg"
+     ]
+    },
+    {
+     "line": 8,
+     "at": 0.0,
+     "cap": "Until you choose a screen yourself, LayerCue follows the cable.",
+     "capdur": 4.2
+    },
+    {
+     "line": 8,
+     "at": 3.2,
+     "key": [
+      53
+     ]
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.5,
+     "split": true
+    },
+    {
+     "line": 1,
+     "at": -0.5,
+     "projOff": {
+      "line": 2,
+      "at": 0.7
+     }
+    },
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "tile.power",
+     "lbl": [
+      "Power switch",
+      "on = output window open"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      "tile.power"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "tile.tab",
+     "lbl": [
+      "01",
+      "orange: on air"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "cap": "Mac: the projector's resolution may change while the power is on. It goes back when you switch off.",
+     "capdur": 4.4
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      "tile.power"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.6,
+     "projOff": {
+      "line": 5,
+      "at": 0.6
+     }
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      "tile.power"
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "hl": "tile.headerText",
+     "lbl": [
+      "not connected",
+      "shows here when unplugged"
+     ],
+     "lblSide": "above"
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.5,
+     "split": true
+    },
+    {
+     "line": 1,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      "card1.pic"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "card1.pic",
+     "lbl": [
+      "On air",
+      "orange border"
+     ],
+     "lblSide": "below",
+     "color": "hot"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "layer.F",
+     "lbl": [
+      "F",
+      "foreground"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "key": [
+      124
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      "card2.pic"
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.3,
+     "hl": "card2.pic",
+     "lbl": [
+      "Already live",
+      "nothing changes"
+     ],
+     "lblSide": "below"
+    }
+   ]
+  },
+  "s6": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.5,
+     "split": true
+    },
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      "tile.clear"
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.2,
+     "hl": "tile.clear",
+     "lbl": [
+      "CLEAR",
+      "Clear All"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      "card3.pic"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.5,
+     "mouse": [
+      "hover",
+      "layer.Fx"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      "layer.Fx"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.5,
+     "hl": "layer.Fx",
+     "lbl": [
+      "×",
+      "clear this layer"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      "card1.pic"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.8,
+     "key": [
+      18,
+      true
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "cap": "⌘/Ctrl + 1 Clear All  ·  2 Foreground  ·  3 Background  ·  4 Overlays",
+     "capdur": 4.0
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "cap": "F1 Clear All  ·  F2 Foreground  ·  F3 Background  ·  F4 Overlays",
+     "capdur": 4.6
+    }
+   ]
+  },
+  "s7": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "useCue",
+       "name": "Tour"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "present",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.5,
+     "split": true
+    },
+    {
+     "line": 1,
+     "at": 1.8,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "toast",
+     "lbl": [
+      "Reminder",
+      "Esc does not stop output"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      "tile.clear"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      "tile.power"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.9,
+     "projOff": {
+      "line": 4,
+      "at": 0.4
+     }
+    },
+    {
+     "line": 4,
+     "at": 0.1,
+     "mouse": [
+      "click",
+      "tile.power"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.1,
+     "mouse": [
+      "click",
+      "tile.tab"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.0,
+     "mouse": [
+      "click",
+      "pop.screen"
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      "list.main"
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "projOff": {
+      "line": 7,
+      "at": 0.5
+     }
+    },
+    {
+     "line": 5,
+     "at": 0.7,
+     "hl": "toast",
+     "lbl": [
+      "Power off",
+      "and why"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 6,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      "pop.screen"
+     ]
+    },
+    {
+     "line": 6,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      "list.lg"
+     ]
+    },
+    {
+     "line": 6,
+     "at": 2.2,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 7,
+     "at": 0.1,
+     "mouse": [
+      "click",
+      "tile.power"
+     ]
+    },
+    {
+     "line": 7,
+     "at": 1.2,
+     "mouse": [
+      "lg",
+      0.975,
+      0.035
+     ]
+    },
+    {
+     "line": 7,
+     "at": 3.0,
+     "mouse": [
+      "lgclick",
+      0.975,
+      0.035
+     ]
+    },
+    {
+     "line": 7,
+     "at": 3.4,
+     "projOff": {
+      "line": 8,
+      "at": 4.0
+     }
+    },
+    {
+     "line": 8,
+     "at": 0.3,
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ]
+  },
+  "s9": {
+   "noclip": true,
+   "events": []
+  }
+ }
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<!-- 3편 조각: 프로젝터 꺼짐 그림(LG 바탕화면 대신) · 카드 이름표 두 개 — node proj_parts.mjs ep03 으로(video 폴더에서) 찍는다 -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  html, body { margin: 0; background: transparent; font-family: var(--disp); }
+  #off { position: absolute; left: 0; top: 0; width: 3840px; height: 2160px; background: radial-gradient(120% 90% at 30% 20%, #2a2d35 0%, #1a1c21 55%, #121317 100%); overflow: hidden; }
+  #off .grid { position: absolute; inset: 0; background-image: linear-gradient(var(--hair) 2px, transparent 2px), linear-gradient(90deg, var(--hair) 2px, transparent 2px); background-size: 240px 240px; opacity: .5; }
+  #off .bar { position: absolute; left: 0; right: 0; top: 0; height: 64px; background: rgba(255,255,255,.06); }
+  #off .t { position: absolute; left: 0; right: 0; top: 860px; text-align: center; color: var(--cream); font-weight: 700; font-stretch: 90%; font-size: 260px; letter-spacing: -.02em; text-transform: uppercase; }
+  #off .s { position: absolute; left: 0; right: 0; top: 1180px; text-align: center; font-family: var(--mono); font-size: 84px; color: var(--fg2); }
+  .chip { position: absolute; display: inline-flex; align-items: center; gap: 18px; padding: 14px 26px; border-radius: 12px; background: var(--void2); border: 2px solid var(--rule);
+          font-family: var(--mono); font-size: 40px; letter-spacing: .14em; text-transform: uppercase; color: var(--cream); }
+  .chip i { width: 18px; height: 18px; border-radius: 50%; display: inline-block; }
+  #ctl { left: 0; top: 2300px; } #ctl i { background: var(--accent-soft); }
+  #prj { left: 0; top: 2400px; } #prj i { background: var(--hot); }
+</style>
+<div id="off"><div class="grid"></div><div class="bar"></div><div class="t">Output off</div><div class="s">the projector shows its own desktop</div></div>
+<div class="chip" id="ctl"><i></i>Your screen · control window</div>
+<div class="chip" id="prj"><i></i>Projector · what the room sees</div>
+<script>document.fonts.ready.then(() => window.__ready = true);</script>

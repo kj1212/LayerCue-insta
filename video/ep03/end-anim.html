@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- 1편 엔드 카드 — 움직임 판(시리즈를 큐시트처럼). window.render(t). 3840×2160 -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  #end .micro.top { position: absolute; left: 230px; top: 180px; }
+  #end h2 { position: absolute; left: 222px; top: 250px; margin: 0; font-weight: 900; font-stretch: 84%; font-size: 230px; line-height: .85; letter-spacing: -.022em; text-transform: uppercase; }
+  #end .bar { position: absolute; left: 230px; right: 230px; top: 560px; height: 92px; background: var(--card); display: flex; align-items: center; gap: 22px; padding-left: 30px;
+              border-left: 8px solid var(--accent); font-weight: 600; font-size: 46px; }
+  #end .bar i { font-style: normal; font-family: var(--mono); font-size: 38px; color: var(--fg3); }
+  #end .bar .say { margin-left: auto; margin-right: 40px; font-family: var(--mono); font-size: 36px; color: var(--fg2); }
+  #end .cards { position: absolute; left: 230px; right: 230px; top: 700px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 34px 30px; }
+  .sc { position: relative; }
+  .sc .pic { height: 250px; background: #0B0B0B; border: 4px solid #2E2E2E; border-radius: 12px; display: flex; align-items: center; justify-content: center; padding: 0 26px; text-align: center;
+             font-weight: 800; font-stretch: 90%; font-size: 40px; line-height: 1.05; text-transform: uppercase; color: var(--cream); }
+  .sc .num { position: absolute; left: 12px; top: 12px; background: rgba(0,0,0,.72); color: var(--cream); font-family: var(--mono); font-size: 30px; padding: 4px 12px; }
+  .sc .row { display: flex; align-items: center; gap: 14px; margin-top: 14px; font-size: 34px; color: var(--fg2); font-weight: 500; white-space: nowrap; overflow: hidden; }
+  .sc .row .chip { font-size: 26px; padding: 4px 12px; border-radius: 8px; }
+  .sc.now .pic { border-color: var(--hot); } .sc.next .pic { border-color: var(--accent-soft); }
+  .sc.new .pic { border-style: dashed; border-color: var(--ov-lit); color: var(--ov-lit); }
+  #end .say2 { position: absolute; left: 230px; bottom: 120px; font-family: var(--mono); font-size: 44px; color: var(--fg2); }
+
+  
+  #end .sc.now .pic { box-shadow: 0 0 0 0 rgba(255,74,26,0); }
+</style>
+<div id="end" class="frame">
+  <div class="grid"></div>
+  <div class="micro top">[ LayerCue from zero ]</div>
+  <h2>Run your first show.</h2>
+  <div class="bar">Run Your First Show <i>18</i><span class="say">Watch them in order · 3–5 min each</span></div>
+  <div class="cards">
+    <div class="sc"><div class="pic">Meet LayerCue</div><span class="num">01</span><div class="row">The main window</div></div>
+    <div class="sc"><div class="pic">Install &amp; first launch</div><span class="num">02</span><div class="row">Settings</div></div>
+    <div class="sc now"><div class="pic">Your first show</div><span class="num">03</span><div class="row"><span class="chip hot">NOW</span>Screen on, slide out</div></div>
+    <div class="sc next"><div class="pic">Libraries &amp; cue sheets</div><span class="num">04</span><div class="row"><span class="chip fg">NEXT</span>Organise</div></div>
+    <div class="sc"><div class="pic">Adding slides</div><span class="num">05</span><div class="row">Reading cards</div></div>
+    <div class="sc"><div class="pic">Running the list</div><span class="num">06</span><div class="row">Keys &amp; layers</div></div>
+    <div class="sc"><div class="pic">Slide settings</div><span class="num">07</span><div class="row">Fit, trim, loop</div></div>
+    <div class="sc"><div class="pic">Presentation settings</div><span class="num">08</span><div class="row">Fades</div></div>
+    <div class="sc"><div class="pic">Text slides</div><span class="num">09</span><div class="row">The editor</div></div>
+    <div class="sc"><div class="pic">Designing slides</div><span class="num">10</span><div class="row">Shapes &amp; styles</div></div>
+    <div class="sc"><div class="pic">Music</div><span class="num">11</span><div class="row">Its own channel</div></div>
+    <div class="sc"><div class="pic">Sound</div><span class="num">12</span><div class="row">Meter &amp; checklist</div></div>
+    <div class="sc"><div class="pic">YouTube slides</div><span class="num">13</span><div class="row">Stream &amp; download</div></div>
+    <div class="sc"><div class="pic">PowerPoint &amp; PDF</div><span class="num">14</span><div class="row">Bring it in</div></div>
+    <div class="sc"><div class="pic">Files &amp; AI helpers</div><span class="num">15</span><div class="row">Settings pages</div></div>
+    <div class="sc"><div class="pic">More screens</div><span class="num">16</span><div class="row">Stage output</div></div>
+    <div class="sc"><div class="pic">NDI, Syphon, fill &amp; key</div><span class="num">17</span><div class="row">Advanced</div></div>
+    <div class="sc"><div class="pic">Show day</div><span class="num">18</span><div class="row">The checklist</div></div>
+  </div>
+  <div class="say2">Next: libraries, presentations and cue sheets — keep your show in order.</div>
+</div>
+<script>
+  window.DUR = 2.8;
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const clamp = x => Math.max(0, Math.min(1, x)), cue = x => 1 - Math.pow(1 - clamp(x), 4.2), at = (t, t0, d) => cue((t - t0) / d);
+  const up = (el, p, dy) => { el.style.opacity = p; el.style.transform = `translateY(${(1 - p) * dy}px)`; };
+  window.render = t => {
+    $('.grid').style.opacity = at(t, 0, 0.5);
+    up($('#end .micro.top'), at(t, 0.05, 0.5), 20);
+    up($('#end h2'), at(t, 0.12, 0.7), 60);
+    const b = at(t, 0.35, 0.6); $('#end .bar').style.opacity = b; $('#end .bar').style.clipPath = `inset(0 ${(1 - b) * 100}% 0 0)`;
+    $$('#end .sc').forEach((c, i) => up(c, at(t, 0.55 + i * 0.045, 0.6), 50));
+    const g = at(t, 1.6, 0.6); $('#end .sc.now .pic').style.boxShadow = `0 0 ${60 * g}px ${8 * g}px rgba(255,74,26,${0.45 * g})`;
+    up($('#end .say2'), at(t, 1.5, 0.6), 20);
+  };
+  window.__ready = false;
+  document.fonts.ready.then(() => { window.render(0); window.__ready = true; });
+</script>
