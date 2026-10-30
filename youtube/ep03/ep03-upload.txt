@@ -13,11 +13,11 @@ Chapters
 0:06 Today's goal
 0:20 The screen tile
 0:38 Choosing the screen
-1:09 Power on, power off
-1:34 Sending a slide
-1:57 Taking it down
-2:26 Closing safely
-3:06 What's next
+1:07 Power on, power off
+1:32 Sending a slide
+1:55 Taking it down
+2:25 Closing safely
+3:04 What's next
 
 TAGS
 LayerCue, LayerCue tutorial, projector, second screen, live output, presentation software, event production, clear screen, Mac, Windows, beginner tutorial

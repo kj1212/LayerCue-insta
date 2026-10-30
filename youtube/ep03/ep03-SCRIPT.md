@@ -40,8 +40,8 @@
   main display라고 붙은 건 지금 작업하는 화면이에요.
 - Below the line are virtual screens: a size to build for, with no window.  
   선 아래는 가상 화면이에요. 만들 크기만 정하고, 창은 열리지 않아요.
-- Pick your projector. Here, it's a monitor called LG HDR 4K.  
-  프로젝터를 고르세요. 여기서는 LG HDR 4K라는 모니터예요.
+- Pick your projector. Here, it's my second monitor.  
+  프로젝터를 고르세요. 여기서는 두 번째 모니터예요.
 - If it was plugged in at first launch, LayerCue already chose it.  
   처음 실행할 때 연결돼 있었다면 LayerCue가 이미 골라 두었어요.
 

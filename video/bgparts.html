@@ -1,0 +1,16 @@
+<!doctype html>
+<!-- 움직이는 배경의 조각 — 격자(바탕색 포함) 한 장 + 빛 번짐 셋(투명, 5760×3240 캔버스 가운데에 3840×2160 화면) — node bg_parts.mjs epNN -->
+<meta charset="utf-8"><link rel="stylesheet" href="ep03/brand.css">
+<style>
+  html, body { margin: 0; background: transparent; }
+  #grid { position: absolute; left: 0; top: 0; width: 3840px; height: 2160px; background: var(--void); }
+  #grid .grid { position: absolute; inset: 0; }
+  .cv { position: absolute; left: 0; top: 2300px; width: 5760px; height: 3240px; }
+  .glow { position: absolute; filter: blur(170px); border-radius: 50%; }
+</style>
+<div id="grid"><div class="grid"></div></div>
+<!-- 화면 (0,0) = 캔버스 (960,540) -->
+<div class="cv" id="o"><div class="glow" style="left:700px; top:920px; width:1400px; height:1250px; background:#FF7A00; opacity:.20"></div></div>
+<div class="cv" id="p"><div class="glow" style="left:3500px; top:280px; width:1600px; height:1150px; background:#7A2BFF; opacity:.24"></div></div>
+<div class="cv" id="g"><div class="glow" style="left:2260px; top:2240px; width:1700px; height:1100px; background:#00B96C; opacity:.12"></div></div>
+<script>document.fonts.ready.then(() => window.__ready = true);</script>

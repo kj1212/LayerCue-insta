@@ -21,7 +21,7 @@ case "$1" in
     fi
     LAYERCUE_ORG=LayerCueFilm LAYERCUE_SETTINGS_DIR=$F/settings LAYERCUE_DOCS_ROOT=$F/docs \
       LAYERCUE_MCP_DIR=$F/mcp LAYERCUE_MCP_JSON=$F/mcp/mcp-layercue-dev.json \
-      nohup "$APP" > "$F/app.log" 2>&1 &
+      nohup "$APP" ${=LC_APP_ARGS} > "$F/app.log" 2>&1 &     # 3편: LC_APP_ARGS="-AppleLanguages (en)" — 화면 이름(맥이 번역한다)을 영어로
     echo "launched $SB (pid $!)"
     ;;
   place)

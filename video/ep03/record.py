@@ -38,7 +38,7 @@ def do(m, a):
         m.type_text(a["type"])
     if "front" in a:                    # LayerCue(촬영용) 창을 맨 앞으로 — 다른 앱이 맥북 화면을 덮고 있을 수 있다
         subprocess.run(["osascript", "-e", 'tell application "System Events" to set frontmost of (first process whose unix id is %s) to true' %
-                        subprocess.run(["pgrep", "-f", "LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue$"], capture_output=True, text=True).stdout.split()[0]])
+                        subprocess.run(["pgrep", "-f", "LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue( |$)"], capture_output=True, text=True).stdout.split()[0]])
     if "key" in a:
         m.key(*a["key"])
     if "sleep" in a:

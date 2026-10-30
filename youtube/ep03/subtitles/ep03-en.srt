@@ -63,126 +63,126 @@ The one marked main display is the screen you work on.
 Below the line are virtual screens: a size to build for, with no window.
 
 17
-00:00:57,950 --> 00:01:02,960
-Pick your projector. Here, it's a monitor called LG HDR 4K.
+00:00:57,950 --> 00:01:01,210
+Pick your projector. Here, it's my second monitor.
 
 18
-00:01:03,830 --> 00:01:07,570
+00:01:02,080 --> 00:01:05,820
 If it was plugged in at first launch, LayerCue already chose it.
 
 19
-00:01:09,590 --> 00:01:12,090
+00:01:07,840 --> 00:01:10,340
 The power switch is the output window.
 
 20
-00:01:12,160 --> 00:01:16,280
+00:01:10,410 --> 00:01:14,530
 Switch it on. The projector goes black, because nothing is up yet.
 
 21
-00:01:17,150 --> 00:01:21,010
+00:01:15,400 --> 00:01:19,260
 The 01 turns orange, and the status bar says On air.
 
 22
-00:01:21,080 --> 00:01:24,490
+00:01:19,330 --> 00:01:22,740
 Switch it off, and the projector shows its desktop again.
 
 23
-00:01:25,360 --> 00:01:29,130
+00:01:23,610 --> 00:01:27,380
 Turn it back on. LayerCue remembers the switch for next time.
 
 24
-00:01:29,800 --> 00:01:33,480
+00:01:28,050 --> 00:01:31,730
 If the screen is unplugged, the header says not connected.
 
 25
-00:01:34,900 --> 00:01:37,970
+00:01:33,150 --> 00:01:36,220
 Now, send a slide. Click its picture once.
 
 26
-00:01:38,840 --> 00:01:42,180
+00:01:37,090 --> 00:01:40,430
 It goes out that instant. There's no confirmation.
 
 27
-00:01:42,250 --> 00:01:45,400
+00:01:40,500 --> 00:01:43,650
 Look at what lit up. The card has an orange border.
 
 28
-00:01:45,470 --> 00:01:48,800
+00:01:43,720 --> 00:01:47,050
 And in the layer column, F lights up: the foreground.
 
 29
-00:01:48,870 --> 00:01:51,130
+00:01:47,120 --> 00:01:49,380
 Press the right arrow for the next slide.
 
 30
-00:01:52,000 --> 00:01:56,330
+00:01:50,250 --> 00:01:54,580
 Clicking the live slide again does nothing. It stays up, on purpose.
 
 31
-00:01:57,750 --> 00:01:59,650
+00:01:56,000 --> 00:01:57,900
 CLEAR takes everything down.
 
 32
-00:02:00,320 --> 00:02:03,200
+00:01:58,570 --> 00:02:01,450
 It fades out, and the projector goes black.
 
 33
-00:02:03,270 --> 00:02:06,690
+00:02:01,520 --> 00:02:04,940
 The small x beside a layer clears only that layer.
 
 34
-00:02:08,160 --> 00:02:13,180
+00:02:06,410 --> 00:02:11,430
 On the keyboard, Command 1 clears everything. On Windows, it's Control 1.
 
 35
-00:02:14,450 --> 00:02:18,450
+00:02:12,700 --> 00:02:16,700
 2 is the foreground, 3 the background, 4 the overlays.
 
 36
-00:02:18,520 --> 00:02:23,560
+00:02:16,770 --> 00:02:21,810
 F1 to F4 work too, but on a Mac those keys often change brightness.
 
 37
-00:02:23,630 --> 00:02:25,910
+00:02:21,880 --> 00:02:24,160
 And Clear All doesn't stop the music.
 
 38
-00:02:27,330 --> 00:02:31,220
+00:02:25,580 --> 00:02:29,470
 Your hand will reach for Escape. Press it, and nothing goes dark.
 
 39
-00:02:32,690 --> 00:02:35,140
+00:02:30,940 --> 00:02:33,390
 LayerCue shows a reminder instead.
 
 40
-00:02:35,210 --> 00:02:37,850
+00:02:33,460 --> 00:02:36,100
 So: clear first, then switch the power off.
 
 41
-00:02:39,520 --> 00:02:42,520
+00:02:37,770 --> 00:02:40,770
 What if you pick the main display while the power is on?
 
 42
-00:02:44,590 --> 00:02:47,770
+00:02:42,840 --> 00:02:46,020
 LayerCue switches the power off, and tells you why.
 
 43
-00:02:49,240 --> 00:02:52,100
+00:02:47,490 --> 00:02:50,350
 It never covers its own window by itself.
 
 44
-00:02:53,970 --> 00:02:58,770
+00:02:52,220 --> 00:02:57,020
 If an output ever covers your screen, move the mouse and click the round x.
 
 45
-00:03:01,440 --> 00:03:05,250
+00:02:59,690 --> 00:03:03,500
 Closing the output clears nothing. Clear first, then close.
 
 46
-00:03:06,670 --> 00:03:10,550
+00:03:04,920 --> 00:03:08,800
 You can now put a slide on the projector, and take it down safely.
 
 47
-00:03:10,620 --> 00:03:14,360
+00:03:08,870 --> 00:03:12,610
 Next time: libraries, presentations and cue sheets.
 

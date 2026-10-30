@@ -116,15 +116,21 @@ class M:
 
     def lg_move(self, fx, fy, dur=0.9, click=False, fps=120):
         """LG 화면(송출 창이 덮고 있는 화면) 위 — 좌표는 LG 의 비율(0–1). 3편: 송출 위 둥근 ✕. 클릭 링은 그리지 않는다(창 밖)."""
-        sc = [x for x in AppKit.NSScreen.screens() if "LG" in str(x.localizedName())][0]; H = AppKit.NSScreen.screens()[0].frame().size.height
-        f = sc.frame(); tx, ty = f.origin.x + fx * f.size.width, H - (f.origin.y + f.size.height) + fy * f.size.height
+        # ★ NSScreen 은 이벤트 루프 없는 프로세스에서 처음 값을 그대로 쥐고 있다 — 송출을 켜 LG 가 1:1 로 바뀐 뒤에도 옛 크기로 계산해
+        #   ✕ 대신 엉뚱한 곳을 눌렀다. Quartz 의 CGDisplayBounds 는 늘 지금 값(전역, 왼쪽 위 기준)
+        ids = Quartz.CGGetActiveDisplayList(8, None, None)[1]
+        d = [i for i in ids if not Quartz.CGDisplayIsMain(i)][0]; b = Quartz.CGDisplayBounds(d)
+        tx, ty = b.origin.x + fx * b.size.width, b.origin.y + fy * b.size.height
         p = Quartz.CGEventGetLocation(Quartz.CGEventCreate(None)); n = max(2, int(dur * fps))
         for i in range(1, n + 1):
             k = 0.5 - 0.5 * math.cos(math.pi * i / n)
             Quartz.CGEventPost(Quartz.kCGHIDEventTap, Quartz.CGEventCreateMouseEvent(None, Quartz.kCGEventMouseMoved, (p.x + (tx - p.x) * k, p.y + (ty - p.y) * k), 0))
             time.sleep(dur / n)
         if click:
-            time.sleep(0.6)
+            # ✕ 는 마우스가 움직일 때만 잠깐 뜬다 — 옆에서 다시 다가가 곧바로 누른다(가만히 기다리면 사라져 안 눌렸다)
+            for k in range(1, 25):
+                Quartz.CGEventPost(Quartz.kCGHIDEventTap, Quartz.CGEventCreateMouseEvent(None, Quartz.kCGEventMouseMoved, (tx - 40 + 40 * k / 24, ty + 30 - 30 * k / 24), 0)); time.sleep(0.012)
+            time.sleep(0.15)
             for kind in (Quartz.kCGEventLeftMouseDown, Quartz.kCGEventLeftMouseUp):
                 Quartz.CGEventPost(Quartz.kCGHIDEventTap, Quartz.CGEventCreateMouseEvent(None, kind, (tx, ty), Quartz.kCGMouseButtonLeft)); time.sleep(0.08)
         if self.log: self.events.append({"t": round(time.time() - self.t0, 3), "k": "lg", "x": fx, "y": fy})

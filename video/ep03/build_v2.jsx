@@ -75,7 +75,13 @@ comp.bgColor = VOID;
 var i, L, e;
 
 // ── 바탕 ──
-L = comp.layers.add(imp(TL.bg)); L.outPoint = TL.duration; L.name = "bg";
+if (TL.bgm) {     // 4편부터: 격자 + 빛 번짐 셋이 천천히 떠다닌다
+    L = comp.layers.add(imp(TL.bgm.grid)); L.outPoint = TL.duration; L.name = "bg grid";
+    for (var gi2 = 0; gi2 < TL.bgm.glows.length; gi2++) {
+        var gw = TL.bgm.glows[gi2], GL = comp.layers.add(imp(gw.file)); GL.outPoint = TL.duration; GL.name = "bg glow " + gi2;
+        keys(T(GL).property("ADBE Position"), gw.keys, 33);      // 바탕이 컴프의 첫 레이어라 격자 위에 차례로 쌓인다
+    }
+} else { L = comp.layers.add(imp(TL.bg)); L.outPoint = TL.duration; L.name = "bg"; }
 
 // ── 그래픽 장면(설치 등) ──
 // ★ 프레임 묶음을 쓰는 동안 AE 가 폴더를 보면 앞 몇 초만 있는 묶음으로 기억한다 → 다시 읽히고 길이를 확인한다
@@ -138,6 +144,7 @@ if (TL.proj) {
     }
     keys(T(projL).property("ADBE Opacity"), ok, 70); keys(T(projL).property("ADBE Position"), sx, 80);
     var pb = comp.layers.addShape(); pb.name = "proj border"; adopt(pb, projL, [1920, 1080]); rectShape(pb, 3840, 2160, 40, COL.white, 3, 18);
+    keys(T(pb).property("ADBE Opacity"), ok, 70);     // 부모의 불투명도는 물려받지 않는다 — 테두리만 남았었다
     // 이름표: 위에 "YOUR SCREEN" · "PROJECTOR"
     var chips = [[pr.chipCtl, pr.split[1], pr.split[2] - 26], [pr.chipProj, pr.state[1], pr.state[2] - 26]];
     for (var c2 = 0; c2 < chips.length; c2++) {

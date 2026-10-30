@@ -669,7 +669,8 @@
       "Esc does not stop output"
      ],
      "lblSide": "above",
-     "dur": 3.0
+     "dur": 2.5,
+     "exact": true
     },
     {
      "line": 3,
@@ -727,7 +728,9 @@
       "Power off",
       "and why"
      ],
-     "lblSide": "above"
+     "lblSide": "above",
+     "dur": 3.0,
+     "exact": true
     },
     {
      "line": 6,

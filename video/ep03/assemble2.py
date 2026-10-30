@@ -149,6 +149,27 @@ def png_size(p):
     b = open(p, "rb").read(24); return struct.unpack(">II", b[16:24])
 
 
+def bg_motion(total):
+    """움직이는 배경(4편부터) — 빛 번짐 셋이 편마다 다른 자리에서 천천히 떠다닌다. 연출표 "bg" 로 정하고,
+    없으면 4편부터는 편 번호로 자리를 정한다(3편까지는 None = 예전 한 장짜리 bg.png)."""
+    ep = int(HERE.name[2:]); cfg = SL.get("bg")
+    if cfg is None and ep < 4: return None
+    if cfg is None:
+        k = ep * 1.7
+        cfg = {"o": [round(420 * math.sin(k)), round(300 * math.cos(k * 1.3))], "p": [round(-380 * math.cos(k * 0.9)), round(260 * math.sin(k * 1.1))],
+               "g": [round(500 * math.sin(k * 0.7 + 1)), round(-220 * math.cos(k))], "drift": 170, "period": 26}
+    pd = HERE / "parts2"
+    if not (pd / "bg-o.png").exists():
+        subprocess.run(["node", str(HERE.parent / "bg_parts.mjs"), HERE.name], check=True, cwd=HERE.parent)
+    glows = []
+    for i, n in enumerate(("o", "p", "g")):
+        dx, dy = cfg.get(n, [0, 0]); D = cfg.get("drift", 170); T = cfg.get("period", 26) * (1 + 0.23 * i); ph = i * 2.1
+        keys = [[round(t, 2), [1920 + dx + D * math.sin(ph + 2 * math.pi * t / T), 1080 + dy + 0.6 * D * math.cos(ph * 1.3 + 2 * math.pi * t / (T * 1.4))]]
+                for t in [x * 4.0 for x in range(int(total / 4) + 2)]]
+        glows.append({"file": str(pd / f"bg-{n}.png"), "keys": keys})
+    return {"grid": str(pd / "bg-grid.png"), "glows": glows}
+
+
 def timeline():
     segs = times(); H = holds_for(segs); total = segs[-1]["end"]
     parts, caps, lbls, hls, tags, clicks, voice_ = [], [], [], [], [], [], []
@@ -179,7 +200,7 @@ def timeline():
     sizes = json.load(open(pd / "sizes.json"))
     # 2) 배치
     for kind, seg, e, t, ln, f in pending:
-        dur = max(e.get("dur", 0), ln["dur"] + 0.35); t1 = round(t + dur, 3)
+        dur = e["dur"] if e.get("exact") else max(e.get("dur", 0), ln["dur"] + 0.35); t1 = round(t + dur, 3)     # exact: 앱 안내처럼 정해진 동안만
         space = e.get("space", "card")
         if kind == "hl" or kind == "lbl":
             x, y, w, h = region(e["hl"]) if "hl" in e else (0, 0, 0, 0)
@@ -264,7 +285,7 @@ def timeline():
     TL = {"name": "LayerCue-ep03", "duration": round(total, 3), "fps": 30,
           "title": {"dir": str(HERE / "frames" / "title2"), "t1": TITLE + 0.5},
           "end": {"dir": str(HERE / "frames" / "end2"), "t0": round(segs[-1]["start"] - 0.5, 3)},
-          "bg": str(HERE / "parts2" / "bg.png"),
+          "bg": str(HERE / "parts2" / "bg.png"), "bgm": bg_motion(total),
           "stage": ({"file": str(rec / "stage.mp4"), "t0": round(s1["start"] - 0.5, 3), "t1": round(until + 0.5, 3), "in": round(REC_T0 + PRE - 0.5, 3), "xf": until} if until else None),
           "gfx": gfx, "imgs": imgs, "proj": proj,
           "card": {"t0": round((until - 0.1) if until else first_win["start"] - 0.3, 3), "t1": round(segs[-1]["start"] + 0.4, 3), "keys": card_keys(H)},
