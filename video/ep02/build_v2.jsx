@@ -112,7 +112,7 @@ adopt(cb, card, [1920, 1050]); rectShape(cb, 3840, 2100, 40, COL.white, 3, 16); 
 for (i = 0; i < TL.hls.length; i++) {
     var h = TL.hls[i], par = (h.parent === "stage") ? stage : card, r = h.rect, s = h.s, col = COL[h.color] || COL.indigo;
     var W = (h.parent === "stage") ? 3840 : 3840, Hh = (h.parent === "stage") ? 2160 : 2100;
-    var pad = 10 / s, rad = 14 / s;
+    var pad = h.fill ? 0 : 10 / s, rad = h.fill ? 6 / s : 14 / s;     // 가리개는 여백 없이 — 위 메뉴 이름을 덮지 않게
     if (h.dim) {
         var D = comp.layers.addSolid([0, 0, 0], "dim", W, Hh, 1, TL.duration); D.inPoint = h.t0; D.outPoint = h.t1;
         adopt(D, par, [W / 2, Hh / 2]);
