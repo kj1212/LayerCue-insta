@@ -22,8 +22,8 @@ def lines():
     out = []
     for g in s["segments"]:
         for j, l in enumerate(g["lines"]):
-            if l["text"].strip():
-                out.append((f"{g['id']}-l{j + 1:02d}", l["text"].strip()))
+            if l["text"].strip():     # "say" = 읽는 글(자막은 text) — 예: layercue.com → "layercue dot com"
+                out.append((f"{g['id']}-l{j + 1:02d}", (l.get("say") or l["text"]).strip()))
     return out
 
 

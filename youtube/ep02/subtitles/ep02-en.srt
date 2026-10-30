@@ -27,7 +27,7 @@ A projector or second screen is what LayerCue is for.
 But you don't need one to get started.
 
 8
-00:00:33,910 --> 00:00:37,380
+00:00:33,910 --> 00:00:37,400
 On a Mac, you download LayerCue from layercue.com.
 
 9
