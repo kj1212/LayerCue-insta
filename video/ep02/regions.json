@@ -1,0 +1,675 @@
+{
+ "_note": "창 캡처(3840×2100) 픽셀 기준 [x, y, w, h]. LG 화면 캡처(3840×2160) 좌표로 쓰려면 y 에 60 을 더한다. 2026-10-30 Summit Day 1 상태에서 잰 값.",
+ "window": [
+  0,
+  0,
+  3840,
+  2100
+ ],
+ "titlebar": [
+  0,
+  0,
+  3840,
+  62
+ ],
+ "titlebar.sidebarButton": [
+  165,
+  14,
+  36,
+  34
+ ],
+ "titlebar.slideSettingsButton": [
+  224,
+  14,
+  36,
+  34
+ ],
+ "sidebar": [
+  0,
+  72,
+  398,
+  1937
+ ],
+ "sidebar.cueSheets": [
+  0,
+  78,
+  398,
+  980
+ ],
+ "sidebar.cueSheetsHeading": [
+  12,
+  86,
+  160,
+  30
+ ],
+ "sidebar.cueSheetsPlus": [
+  343,
+  82,
+  34,
+  34
+ ],
+ "sidebar.tourRow": [
+  12,
+  170,
+  374,
+  38
+ ],
+ "sidebar.tourItems": [
+  40,
+  232,
+  350,
+  360
+ ],
+ "sidebar.summitDay1Row": [
+  12,
+  624,
+  374,
+  38
+ ],
+ "sidebar.library": [
+  0,
+  1058,
+  398,
+  980
+ ],
+ "sidebar.libraryHeading": [
+  12,
+  1062,
+  120,
+  34
+ ],
+ "sidebar.libraryArrow": [
+  290,
+  1062,
+  34,
+  34
+ ],
+ "sidebar.libraryPlus": [
+  343,
+  1062,
+  34,
+  34
+ ],
+ "sidebar.readMeRow": [
+  12,
+  1115,
+  374,
+  38
+ ],
+ "sidebar.summit2026Row": [
+  12,
+  1717,
+  374,
+  38
+ ],
+ "band": [
+  432,
+  81,
+  3400,
+  612
+ ],
+ "tile": [
+  445,
+  88,
+  778,
+  603
+ ],
+ "tile.header": [
+  445,
+  88,
+  778,
+  50
+ ],
+ "tile.tab": [
+  445,
+  88,
+  404,
+  50
+ ],
+ "tile.power": [
+  1029,
+  96,
+  62,
+  36
+ ],
+ "tile.clear": [
+  1110,
+  96,
+  113,
+  38
+ ],
+ "tile.preview": [
+  445,
+  138,
+  642,
+  365
+ ],
+ "tile.layersShown": [
+  445,
+  507,
+  642,
+  34
+ ],
+ "tile.layerColumn": [
+  1110,
+  150,
+  66,
+  350
+ ],
+ "tile.cell1": [
+  1110,
+  160,
+  66,
+  40
+ ],
+ "tile.cellF": [
+  1110,
+  408,
+  66,
+  40
+ ],
+ "tile.cellB": [
+  1110,
+  458,
+  66,
+  40
+ ],
+ "tile.cellF.x": [
+  1186,
+  416,
+  34,
+  30
+ ],
+ "tile.controls": [
+  445,
+  576,
+  778,
+  115
+ ],
+ "tile.controls.layerName": [
+  730,
+  640,
+  170,
+  44
+ ],
+ "tile.controls.stageOutputButton": [
+  934,
+  640,
+  40,
+  40
+ ],
+ "meter": [
+  1252,
+  88,
+  70,
+  603
+ ],
+ "music": [
+  1348,
+  88,
+  790,
+  603
+ ],
+ "music.heading": [
+  1336,
+  90,
+  96,
+  42
+ ],
+ "slideSettings": [
+  2183,
+  88,
+  545,
+  395
+ ],
+ "slideSettings.heading": [
+  2168,
+  90,
+  180,
+  42
+ ],
+ "slideSettings.toScreen": [
+  2190,
+  432,
+  190,
+  44
+ ],
+ "middle": [
+  445,
+  739,
+  3341,
+  1270
+ ],
+ "middle.firstTitleBar": [
+  445,
+  739,
+  3341,
+  64
+ ],
+ "middle.titleBarButtons": [
+  3470,
+  746,
+  320,
+  52
+ ],
+ "middle.btn.addFile": [
+  3480,
+  754,
+  36,
+  36
+ ],
+ "middle.btn.link": [
+  3544,
+  754,
+  36,
+  36
+ ],
+ "middle.btn.edit": [
+  3609,
+  754,
+  36,
+  36
+ ],
+ "middle.btn.layerForList": [
+  3672,
+  754,
+  36,
+  36
+ ],
+ "middle.btn.presentationSettings": [
+  3738,
+  754,
+  36,
+  36
+ ],
+ "middle.card1": [
+  453,
+  822,
+  394,
+  224
+ ],
+ "middle.card2": [
+  874,
+  822,
+  394,
+  224
+ ],
+ "middle.card3": [
+  1294,
+  822,
+  394,
+  224
+ ],
+ "middle.cardNames": [
+  453,
+  1058,
+  1240,
+  40
+ ],
+ "status": [
+  0,
+  2031,
+  3840,
+  62
+ ],
+ "status.showEdit": [
+  19,
+  2038,
+  366,
+  48
+ ],
+ "status.show": [
+  22,
+  2040,
+  180,
+  44
+ ],
+ "status.edit": [
+  204,
+  2040,
+  178,
+  44
+ ],
+ "status.onAir": [
+  420,
+  2038,
+  470,
+  48
+ ],
+ "status.speaker": [
+  912,
+  2038,
+  470,
+  48
+ ],
+ "status.stageTitle": [
+  1400,
+  2038,
+  220,
+  48
+ ],
+ "status.tellUs": [
+  3091,
+  2038,
+  296,
+  48
+ ],
+ "status.cardSize": [
+  3410,
+  2038,
+  230,
+  48
+ ],
+ "status.lock": [
+  3688,
+  2040,
+  40,
+  44
+ ],
+ "status.gear": [
+  3758,
+  2040,
+  40,
+  44
+ ],
+ "sidebar.upper": [
+  0,
+  70,
+  398,
+  1250
+ ],
+ "sidebar.startHereUnderTour": [
+  40,
+  232,
+  350,
+  38
+ ],
+ "sidebar.welcomeLoopRow": [
+  40,
+  689,
+  350,
+  38
+ ],
+ "sidebar.libraryArrowRaised": [
+  290,
+  482,
+  34,
+  34
+ ],
+ "sidebar.startHereUnderReadMe": [
+  40,
+  1177,
+  350,
+  38
+ ],
+ "sidebar.slideCount4": [
+  344,
+  1180,
+  42,
+  34
+ ],
+ "band.zoom": [
+  432,
+  81,
+  2743,
+  612
+ ],
+ "tile.cells15": [
+  1110,
+  158,
+  66,
+  240
+ ],
+ "slideSettings.optionHint": [
+  2332,
+  90,
+  236,
+  42
+ ],
+ "middle.titleBarRight": [
+  2900,
+  739,
+  886,
+  64
+ ],
+ "middle.cards": [
+  445,
+  815,
+  1260,
+  290
+ ],
+ "middle.card1.nameRow": [
+  453,
+  1058,
+  394,
+  40
+ ],
+ "middle.empty": [
+  1800,
+  1400,
+  400,
+  200
+ ],
+ "status.left": [
+  0,
+  2031,
+  1700,
+  62
+ ],
+ "status.right": [
+  2900,
+  2031,
+  940,
+  62
+ ],
+ "editor.strip": [
+  19,
+  140,
+  346,
+  850
+ ],
+ "stage.frame": [
+  40,
+  40,
+  3760,
+  2080
+ ],
+ "stage.words": [
+  940,
+  880,
+  1980,
+  690
+ ],
+ "stage.logo": [
+  130,
+  120,
+  1080,
+  280
+ ],
+ "sidebar.welcomeWordsRow": [
+  40,
+  754,
+  350,
+  38
+ ],
+ "middle.empty.low": [
+  1800,
+  1700,
+  400,
+  160
+ ],
+ "middle.empty.right": [
+  2700,
+  1700,
+  400,
+  160
+ ],
+ "stage.video": [
+  40,
+  40,
+  3760,
+  2080
+ ],
+ "settings.box": [
+  1160,
+  520,
+  1520,
+  1120
+ ],
+ "settings.nav": [
+  1176,
+  600,
+  360,
+  520
+ ],
+ "settings.general": [
+  1176,
+  616,
+  360,
+  60
+ ],
+ "settings.tools": [
+  1176,
+  902,
+  360,
+  60
+ ],
+ "settings.close": [
+  2610,
+  545,
+  56,
+  56
+ ],
+ "set.language": [
+  1540,
+  640,
+  1110,
+  110
+ ],
+ "set.lang.ko": [
+  2160,
+  676,
+  100,
+  50
+ ],
+ "set.lang.en": [
+  2262,
+  676,
+  112,
+  50
+ ],
+ "set.cardSize": [
+  1540,
+  770,
+  1110,
+  110
+ ],
+ "set.card.S": [
+  2172,
+  803,
+  50,
+  48
+ ],
+ "set.card.M": [
+  2241,
+  803,
+  52,
+  48
+ ],
+ "set.card.L": [
+  2310,
+  803,
+  52,
+  48
+ ],
+ "set.windowLayout": [
+  1540,
+  900,
+  1110,
+  110
+ ],
+ "set.masterVol": [
+  1540,
+  1030,
+  1110,
+  130
+ ],
+ "tools.lc": [
+  1540,
+  700,
+  1110,
+  130
+ ],
+ "tools.lc.check": [
+  2160,
+  726,
+  112,
+  50
+ ],
+ "tools.yt": [
+  1540,
+  840,
+  1110,
+  160
+ ],
+ "status.wrench": [
+  3690,
+  2040,
+  44,
+  44
+ ],
+ "sidebar.readMeLib": [
+  12,
+  1115,
+  374,
+  38
+ ],
+ "sidebar.myStuff": [
+  12,
+  1572,
+  374,
+  92
+ ],
+ "sidebar.tourAll": [
+  0,
+  162,
+  398,
+  480
+ ],
+ "sidebar.readMeAll": [
+  0,
+  1110,
+  398,
+  455
+ ],
+ "menu.delete": [
+  150,
+  1342,
+  300,
+  48
+ ],
+ "dlg.delete": [
+  1520,
+  920,
+  800,
+  380
+ ],
+ "dlg.delete.cancel": [
+  2040,
+  1180,
+  112,
+  48
+ ],
+ "dlg.quit": [
+  1540,
+  980,
+  760,
+  220
+ ],
+ "dlg.quit.cancel": [
+  2034,
+  1112,
+  112,
+  48
+ ]
+}

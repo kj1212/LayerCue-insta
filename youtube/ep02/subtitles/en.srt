@@ -1,0 +1,244 @@
+1
+00:00:06,400 --> 00:00:09,580
+Hi again! Let's get LayerCue onto your computer.
+
+2
+00:00:10,050 --> 00:00:12,060
+It runs on Mac and Windows.
+
+3
+00:00:12,130 --> 00:00:15,190
+On a Mac, you need macOS 13 or later.
+
+4
+00:00:15,260 --> 00:00:19,030
+Apple silicon and Intel Macs each have their own download.
+
+5
+00:00:19,400 --> 00:00:25,870
+On Windows, you need Windows 10, version 1809 or later, on a 64-bit PC.
+
+6
+00:00:26,240 --> 00:00:29,870
+A projector or second screen is what LayerCue is for.
+
+7
+00:00:29,940 --> 00:00:31,990
+But you don't need one to get started.
+
+8
+00:00:33,910 --> 00:00:37,380
+On a Mac, you download LayerCue from layercue.com.
+
+9
+00:00:37,450 --> 00:00:41,690
+Not sure which Mac you have? Check About This Mac, in the Apple menu.
+
+10
+00:00:42,060 --> 00:00:44,280
+Open the disk image you downloaded.
+
+11
+00:00:44,350 --> 00:00:47,780
+Then drag LayerCue onto the Applications folder.
+
+12
+00:00:48,150 --> 00:00:52,150
+Eject the disk image, and open LayerCue from Applications.
+
+13
+00:00:52,220 --> 00:00:55,090
+LayerCue is signed and notarized by Apple.
+
+14
+00:00:55,160 --> 00:00:58,570
+If macOS asks the first time, just choose Open.
+
+15
+00:01:00,490 --> 00:01:03,800
+On Windows, LayerCue comes from the Microsoft Store.
+
+16
+00:01:03,870 --> 00:01:06,540
+It's published by CastPad, and it's free.
+
+17
+00:01:06,910 --> 00:01:10,310
+Install it, then open LayerCue from the Start menu.
+
+18
+00:01:10,380 --> 00:01:14,780
+A small window shows what it's getting ready, and the main window follows.
+
+19
+00:01:15,150 --> 00:01:17,500
+LayerCue only runs once at a time.
+
+20
+00:01:17,570 --> 00:01:21,430
+Open it again, and the window you already have comes to the front.
+
+21
+00:01:23,350 --> 00:01:25,390
+LayerCue doesn't start empty.
+
+22
+00:01:25,460 --> 00:01:27,330
+Under Cue Sheets, there's Tour.
+
+23
+00:01:27,400 --> 00:01:30,920
+Under Library, READ ME holds the same short guides.
+
+24
+00:01:30,990 --> 00:01:35,300
+And My Stuff has one empty presentation, ready for your own work.
+
+25
+00:01:35,770 --> 00:01:39,440
+When you're done with the READ ME, right-click it and choose Delete.
+
+26
+00:01:39,510 --> 00:01:42,760
+LayerCue asks first, so you can still press Cancel.
+
+27
+00:01:43,230 --> 00:01:45,710
+Your work is kept in a LayerCue folder.
+
+28
+00:01:45,780 --> 00:01:50,430
+That's inside Documents on a Mac, and in your user folder on Windows.
+
+29
+00:01:52,350 --> 00:01:55,700
+Now click the gear, at the right end of the status bar.
+
+30
+00:01:55,770 --> 00:01:58,880
+The first time, Settings asks you to sign in once.
+
+31
+00:01:59,250 --> 00:02:03,270
+The beta is free. In return, it asks for an email address.
+
+32
+00:02:03,340 --> 00:02:06,580
+Press Sign in with Google, and finish in your browser.
+
+33
+00:02:07,050 --> 00:02:09,490
+Then come back, and Settings opens.
+
+34
+00:02:09,960 --> 00:02:14,010
+Good to know: everything you use in a show works without an account.
+
+35
+00:02:14,080 --> 00:02:17,540
+Only Settings and Tell us what's wrong need you signed in.
+
+36
+00:02:19,460 --> 00:02:21,470
+This is the General page.
+
+37
+00:02:21,540 --> 00:02:24,740
+Changes save as you make them. There's no Save button.
+
+38
+00:02:25,110 --> 00:02:27,600
+Language switches the menus right away.
+
+39
+00:02:27,670 --> 00:02:29,970
+Here's Korean, and back to English.
+
+40
+00:02:30,440 --> 00:02:33,170
+Slide card size sets how big the cards are.
+
+41
+00:02:33,240 --> 00:02:36,400
+Bigger cards mean fewer mis-clicks in a dark booth.
+
+42
+00:02:36,770 --> 00:02:40,650
+Remember window layout brings your windows back where you left them.
+
+43
+00:02:41,020 --> 00:02:44,050
+Remember master volume is off on purpose.
+
+44
+00:02:44,120 --> 00:02:49,190
+So the master always starts at full, and a muted rehearsal never carries over.
+
+45
+00:02:51,110 --> 00:02:52,890
+Next, the Tools page.
+
+46
+00:02:52,960 --> 00:02:55,770
+The LayerCue row shows the version you have.
+
+47
+00:02:55,840 --> 00:02:57,790
+Press Check to look for a new one.
+
+48
+00:02:58,160 --> 00:03:03,390
+The row below is the YouTube tool. A dot on the wrench means a newer one is ready.
+
+49
+00:03:03,760 --> 00:03:07,440
+On a Mac, LayerCue also checks by itself, once a day.
+
+50
+00:03:07,510 --> 00:03:11,680
+When there's a new version, an orange Update appears in the status bar.
+
+51
+00:03:11,750 --> 00:03:14,130
+Nothing installs until you press it.
+
+52
+00:03:14,200 --> 00:03:18,290
+Just never update during a show, because the screen would go dark.
+
+53
+00:03:20,210 --> 00:03:21,670
+Last thing: quitting.
+
+54
+00:03:21,740 --> 00:03:24,770
+Press Command Q, and LayerCue asks first.
+
+55
+00:03:24,840 --> 00:03:26,710
+Your work is already saved.
+
+56
+00:03:27,080 --> 00:03:30,010
+If the output is on, it warns you in red.
+
+57
+00:03:30,080 --> 00:03:32,020
+Quitting would black out the screen.
+
+58
+00:03:32,090 --> 00:03:34,820
+So press Cancel, and the show goes on!
+
+59
+00:03:36,740 --> 00:03:39,620
+You've got LayerCue installed and Settings open.
+
+60
+00:03:39,690 --> 00:03:42,350
+Next up: Episode 3, your first show.
+
+61
+00:03:42,420 --> 00:03:43,610
+See you there!
+

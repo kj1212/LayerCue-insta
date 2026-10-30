@@ -24,3 +24,15 @@ video/ep01/qa2/
 video/ep01/times2.json
 video/ep01/timeline2.js
 video/ep01/out/*.png
+video/ep*/qa*/
+video/ep*/frames/
+video/ep*/parts2/
+video/ep*/take2/
+video/ep*/rec/
+video/ep*/render/
+video/ep*/audio/
+video/ep*/ae/*Logs/
+video/ep*/times2.json
+video/ep*/timeline2.js
+video/ep*/out/*.png
+video/sandbox-ep*/

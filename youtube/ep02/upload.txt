@@ -1,0 +1,31 @@
+TITLE
+Install, First Launch and Settings | LayerCue from Zero, Episode 2
+
+DESCRIPTION
+Get LayerCue onto your Mac or Windows PC, see what's there the first time you open it, sign in once for Settings, and learn the General and Tools pages and how to quit safely.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12.
+Mac download: https://layercue.com/download/  ·  Windows: Microsoft Store (search LayerCue, published by CastPad)
+Manual: https://layercue.com/docs/start/install/
+The narration is AI-generated and the music is built from GarageBand loops. The install screens are illustrations; the sign-in panel is from the manual.
+
+Chapters
+0:00 Intro
+0:06 What you need
+0:33 Installing on a Mac
+1:00 Installing on Windows
+1:22 The first time you open it
+1:51 Sign in once
+2:19 General settings
+2:50 Updates
+3:19 Quitting safely
+3:36 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, install LayerCue, presentation software, live production, event production, projection software, Mac, Windows, Microsoft Store, beginner tutorial
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ko.srt (Korean) and subtitles/ja.srt (Japanese) as 'With timing'. English is burned in.

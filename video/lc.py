@@ -10,7 +10,7 @@
 import json, os, subprocess, sys, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
-BRIDGE = pathlib.Path.home() / "projects/LayerCue/build/LayerCue.app/Contents/MacOS/layercue-mcp"
+BRIDGE = pathlib.Path(os.environ.get("LC_BUILD", str(pathlib.Path.home() / "projects/LayerCue-film-0912/build"))) / "LayerCue.app/Contents/MacOS/layercue-mcp"
 MCP = HERE / os.environ.get("LC_SANDBOX", "sandbox") / "mcp"     # LC_SANDBOX=sandbox-ep01 처럼 다른 모래상자를 고른다
 
 

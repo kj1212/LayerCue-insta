@@ -1,0 +1,566 @@
+{
+ "title": "Install, First Launch and Settings — LayerCue from Zero, Episode 2",
+ "version": 2,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "What you need",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Hi again! Let's get LayerCue onto your computer.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It runs on Mac and Windows.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "On a Mac, you need macOS 13 or later.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Apple silicon and Intel Macs each have their own download.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "On Windows, you need Windows 10, version 1809 or later, on a 64-bit PC.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A projector or second screen is what LayerCue is for.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "But you don't need one to get started.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Installing on a Mac",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "On a Mac, you download LayerCue from layercue.com.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Not sure which Mac you have? Check About This Mac, in the Apple menu.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Open the disk image you downloaded.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then drag LayerCue onto the Applications folder.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Eject the disk image, and open LayerCue from Applications.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "LayerCue is signed and notarized by Apple.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "If macOS asks the first time, just choose Open.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Installing on Windows",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "On Windows, LayerCue comes from the Microsoft Store.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It's published by CastPad, and it's free.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Install it, then open LayerCue from the Start menu.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A small window shows what it's getting ready, and the main window follows.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "LayerCue only runs once at a time.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Open it again, and the window you already have comes to the front.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "The first time you open it",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "LayerCue doesn't start empty.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Under Cue Sheets, there's Tour.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Under Library, READ ME holds the same short guides.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "And My Stuff has one empty presentation, ready for your own work.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "When you're done with the READ ME, right-click it and choose Delete.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "LayerCue asks first, so you can still press Cancel.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Your work is kept in a LayerCue folder.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "That's inside Documents on a Mac, and in your user folder on Windows.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Sign in once",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Now click the gear, at the right end of the status bar.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The first time, Settings asks you to sign in once.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The beta is free. In return, it asks for an email address.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Sign in with Google, and finish in your browser.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then come back, and Settings opens.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Good to know: everything you use in a show works without an account.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Only Settings and Tell us what's wrong need you signed in.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "General settings",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "This is the General page.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Changes save as you make them. There's no Save button.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Language switches the menus right away.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Here's Korean, and back to English.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Slide card size sets how big the cards are.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Bigger cards mean fewer mis-clicks in a dark booth.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Remember window layout brings your windows back where you left them.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Remember master volume is off on purpose.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "So the master always starts at full, and a muted rehearsal never carries over.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "chapter": "Updates",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Next, the Tools page.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The LayerCue row shows the version you have.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Check to look for a new one.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The row below is the YouTube tool. A dot on the wrench means a newer one is ready.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "On a Mac, LayerCue also checks by itself, once a day.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "When there's a new version, an orange Update appears in the status bar.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Nothing installs until you press it.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Just never update during a show, because the screen would go dark.",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "chapter": "Quitting safely",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Last thing: quitting.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Command Q, and LayerCue asks first.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Your work is already saved.",
+     "pause": 0.3,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "If the output is on, it warns you in red.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Quitting would black out the screen.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "So press Cancel, and the show goes on!",
+     "pause": 0.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You've got LayerCue installed and Settings open.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next up: Episode 3, your first show.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "See you there!",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

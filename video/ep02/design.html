@@ -1,0 +1,191 @@
+<!doctype html>
+<!-- 1편 2판 디자인 보드 — #title · #walk(어두운 바탕) · #walkLight(밝은 바탕) · #zoom · #end · #thumb -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  /* ── 타이틀 ── */
+  #title .micro.top { position: absolute; left: 230px; top: 200px; }
+  #title .claim { position: absolute; left: 226px; top: 300px; font-weight: 500; font-stretch: 96%; font-size: 150px; line-height: 1.02; letter-spacing: -.026em; }
+  #title .claim span { color: var(--fg2); }
+  #title .lines { position: absolute; left: 230px; top: 680px; display: flex; gap: 22px; }
+  #title .lines i { display: block; width: 150px; height: 14px; }
+  #title .idx { position: absolute; right: 230px; top: 196px; text-align: right; }
+  #title .idx div { font-weight: 600; font-stretch: 88%; font-size: 62px; line-height: 1.32; letter-spacing: -.01em; text-transform: uppercase; color: var(--fg2); }
+  #title .idx div i { font-family: var(--mono); font-style: normal; font-weight: 400; font-size: 34px; letter-spacing: .1em; color: var(--fg3); margin-right: 26px; vertical-align: 6px; }
+  #title .word { left: 214px; bottom: 300px; font-size: 455px; }
+  #title .base { position: absolute; left: 230px; bottom: 170px; font-family: var(--mono); font-size: 44px; color: var(--fg2); letter-spacing: .02em; }
+  #title .base b { color: var(--cream); font-weight: 500; }
+
+  /* ── 본편 프레임 ── */
+  .card { position: absolute; left: 270px; top: 150px; width: 3300px; height: 1805px; border-radius: 34px; overflow: hidden; isolation: isolate;
+          box-shadow: 0 0 0 2px var(--hair), 0 70px 160px rgba(0,0,0,.65); }
+  .card img { position: absolute; left: 0; top: -51.6px; width: 3300px; display: block; }     /* 메뉴 막대(60 px × 0.86) 를 위로 밀어 숨긴다 */
+  .glow { position: absolute; filter: blur(160px); opacity: .32; border-radius: 50%; }
+  .tagbar { position: absolute; left: 270px; top: 46px; display: flex; align-items: center; gap: 30px; }
+  .tagbar .n { font-family: var(--mono); font-weight: 500; font-size: 40px; letter-spacing: .1em; color: var(--void); background: var(--cream); padding: 10px 18px 8px; }
+  .tagbar .t { font-weight: 700; font-stretch: 88%; font-size: 62px; text-transform: uppercase; letter-spacing: -.005em; }
+  .prog { position: absolute; right: 270px; top: 76px; display: flex; gap: 10px; }
+  .prog i { display: block; width: 74px; height: 8px; background: var(--hair); }
+  .prog i.done { background: var(--fg2); } .prog i.now { background: var(--cream); }
+  .hl { position: absolute; border: 7px solid var(--accent-soft); border-radius: 14px; box-shadow: 0 0 0 9999px rgba(5,5,8,.55), 0 0 36px rgba(139,149,245,.55); }
+  .lbl { position: absolute; background: var(--cream); color: var(--void); padding: 22px 34px 24px; }
+  .lbl b { display: block; font-weight: 800; font-stretch: 88%; font-size: 58px; text-transform: uppercase; letter-spacing: .03em; line-height: 1; }
+  .lbl small { display: block; font-family: var(--mono); font-size: 34px; margin-top: 14px; color: #3C3A35; letter-spacing: .01em; }
+  .wire { position: absolute; height: 3px; background: var(--cream); }
+  .cap { position: absolute; left: 50%; transform: translateX(-50%); bottom: 42px; display: flex; align-items: center; gap: 28px; white-space: nowrap;
+         font-weight: 600; font-size: 66px; letter-spacing: -.01em; }
+  .cap .sq { width: 22px; height: 22px; background: var(--accent-soft); }
+  .key { font-family: var(--mono); font-weight: 500; font-size: 44px; padding: 6px 18px; border: 2px solid var(--rule); border-radius: 10px; color: var(--cream); }
+  .micro.corner { position: absolute; left: 270px; bottom: 60px; }
+
+  /* 밝은 바탕 판 */
+  #walkLight { background: #F3EFE6; color: var(--void); }
+  #walkLight .grid { background-image: linear-gradient(to right, rgba(11,11,13,.10) 2px, transparent 2px); }
+  #walkLight .tagbar .n { background: var(--void); color: var(--cream); }
+  #walkLight .prog i { background: rgba(11,11,13,.12); } #walkLight .prog i.done { background: #8B877D; } #walkLight .prog i.now { background: var(--void); }
+  #walkLight .card { box-shadow: 0 0 0 2px rgba(11,11,13,.08), 0 60px 140px rgba(30,25,20,.35); }
+  #walkLight .lbl { background: var(--void); color: var(--cream); } #walkLight .lbl small { color: var(--fg2); } #walkLight .wire { background: var(--void); }
+  #walkLight .cap { color: var(--void); }
+
+  /* 확대 판 */
+  #zoom .card { left: 558px; top: 200px; width: 6271px; height: 3430px; }
+  #zoom .card img { width: 6271px; top: -98px; }
+  #zoom .capbg { position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, rgba(11,11,13,.92), rgba(11,11,13,0)); }
+
+  /* ── 엔드 카드: 큐시트처럼 ── */
+  #end .micro.top { position: absolute; left: 230px; top: 180px; }
+  #end h2 { position: absolute; left: 222px; top: 250px; margin: 0; font-weight: 900; font-stretch: 84%; font-size: 230px; line-height: .85; letter-spacing: -.022em; text-transform: uppercase; }
+  #end .bar { position: absolute; left: 230px; right: 230px; top: 560px; height: 92px; background: var(--card); display: flex; align-items: center; gap: 22px; padding-left: 30px;
+              border-left: 8px solid var(--accent); font-weight: 600; font-size: 46px; }
+  #end .bar i { font-style: normal; font-family: var(--mono); font-size: 38px; color: var(--fg3); }
+  #end .bar .say { margin-left: auto; margin-right: 40px; font-family: var(--mono); font-size: 36px; color: var(--fg2); }
+  #end .cards { position: absolute; left: 230px; right: 230px; top: 700px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 34px 30px; }
+  .sc { position: relative; }
+  .sc .pic { height: 250px; background: #0B0B0B; border: 4px solid #2E2E2E; border-radius: 12px; display: flex; align-items: center; justify-content: center; padding: 0 26px; text-align: center;
+             font-weight: 800; font-stretch: 90%; font-size: 40px; line-height: 1.05; text-transform: uppercase; color: var(--cream); }
+  .sc .num { position: absolute; left: 12px; top: 12px; background: rgba(0,0,0,.72); color: var(--cream); font-family: var(--mono); font-size: 30px; padding: 4px 12px; }
+  .sc .row { display: flex; align-items: center; gap: 14px; margin-top: 14px; font-size: 34px; color: var(--fg2); font-weight: 500; white-space: nowrap; overflow: hidden; }
+  .sc .row .chip { font-size: 26px; padding: 4px 12px; border-radius: 8px; }
+  .sc.now .pic { border-color: var(--hot); } .sc.next .pic { border-color: var(--accent-soft); }
+  .sc.new .pic { border-style: dashed; border-color: var(--ov-lit); color: var(--ov-lit); }
+  #end .say2 { position: absolute; left: 230px; bottom: 120px; font-family: var(--mono); font-size: 44px; color: var(--fg2); }
+
+  /* ── 썸네일 1280×720 ── */
+  #thumb { width: 1280px; height: 720px; }
+  #thumb .grid { background-size: calc(100% / 6) 100%; background-image: linear-gradient(to right, var(--hair) 1px, transparent 1px); }
+  /* 썸네일 층 판 — 세 방향으로 갈라 둔다(왼쪽 위 · 오른쪽 위 · 오른쪽 아래), 글자 크기에 맞춘 px */
+  #thumb .word .g1 { transform: translate(-4px, -3px); }
+  #thumb .word .g2 { transform: translate(4px, -3px); }
+  #thumb .word .g3 { transform: translate(3px, 4px); }
+  #thumb .micro { position: absolute; left: 64px; top: 58px; font-size: 18px; }
+  #thumb .micro b { color: var(--cream); font-weight: 500; }
+  #thumb .word { left: 58px; top: 150px; font-size: 128px; line-height: .9; font-stretch: 84%; letter-spacing: -.01em; }
+  #thumb .scr { position: absolute; right: 48px; top: 300px; width: 620px; height: 349px; border-radius: 14px; overflow: hidden; box-shadow: 0 0 0 2px var(--hair), 0 30px 70px rgba(0,0,0,.7); }
+  #thumb .scr img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #thumb .scr .chip { position: absolute; right: 14px; top: 14px; font-size: 16px; padding: 4px 10px; border-radius: 6px; font-family: var(--mono); letter-spacing: .12em; }
+  #thumb .sub { position: absolute; left: 64px; bottom: 64px; font-weight: 600; font-size: 34px; color: var(--fg2); line-height: 1.25; }
+  #thumb .sub b { color: var(--cream); }
+</style>
+
+<!-- 타이틀 -->
+<div id="title" class="frame">
+  <div class="grid"></div>
+  <div class="micro top">[ LayerCue from zero &nbsp;—&nbsp; episode 01 ]</div>
+  <div class="claim">Meet LayerCue.<br><span>Every part of the window, one by one.</span></div>
+  <div class="lines"><i style="background:var(--bg-lit)"></i><i style="background:var(--fg-lit)"></i><i style="background:var(--ov-lit)"></i></div>
+  <div class="idx">
+    <div><i>01</i>What it is</div><div><i>02</i>Four areas</div><div><i>03</i>Sidebar</div><div><i>04</i>Slides</div>
+    <div><i>05</i>Top band</div><div><i>06</i>Status bar</div><div><i>07</i>Layers</div><div><i>08</i>Edit</div>
+  </div>
+  <div class="word" data-fit="3400" style="--k:.35"><span class="gh g1">Main window</span><span class="gh g2">Main window</span><span class="gh g3">Main window</span><span class="real">Main window</span></div>
+  <div class="base"><b>Pick</b> on the left · <b>Click</b> in the middle · <b>Watch</b> the top · <b>Adjust</b> on the right</div>
+</div>
+
+<!-- 본편 — 어두운 바탕 -->
+<div id="walk" class="frame">
+  <div class="grid"></div>
+  <div class="glow" style="left:-200px; top:300px; width:1400px; height:1200px; background:var(--g-bg)"></div>
+  <div class="glow" style="right:-260px; top:-200px; width:1500px; height:1100px; background:var(--g-fg)"></div>
+  <div class="tagbar"><span class="n">03</span><span class="t">The sidebar</span></div>
+  <div class="prog"><i class="done"></i><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="card"><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/shots/win-tour.png">
+    <div class="hl" style="left:4px; top:136px; width:329px; height:50px;"></div></div>
+  <div class="wire" style="left:612px; top:311px; width:90px;"></div>
+  <div class="lbl" style="left:700px; top:250px;"><b>Cue sheet</b><small>the running order for one event</small></div>
+  <div class="cap"><span class="sq"></span>A cue sheet is the running order for one event.</div>
+</div>
+
+<!-- 본편 — 밝은 바탕(비교용) -->
+<div id="walkLight" class="frame">
+  <div class="grid"></div>
+  <div class="tagbar"><span class="n">03</span><span class="t">The sidebar</span></div>
+  <div class="prog"><i class="done"></i><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="card"><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/shots/win-tour.png">
+    <div class="hl" style="left:4px; top:136px; width:329px; height:50px;"></div></div>
+  <div class="wire" style="left:612px; top:311px; width:90px;"></div>
+  <div class="lbl" style="left:700px; top:250px;"><b>Cue sheet</b><small>the running order for one event</small></div>
+  <div class="cap"><span class="sq"></span>A cue sheet is the running order for one event.</div>
+</div>
+
+<!-- 확대 — 레이어 데모 중 -->
+<div id="zoom" class="frame">
+  <div class="grid"></div>
+  <div class="card"><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/shots/win-demo.png">
+    <!-- 레이어 컬럼(창 px 1110,150 66×350) × 1.633 -->
+    <div class="hl" style="left:1801px; top:229px; width:128px; height:600px;"></div></div>
+  <div class="wire" style="left:2500px; top:640px; width:110px;"></div>
+  <div class="lbl" style="left:2610px; top:560px;"><b>Layer column</b><small>what is up — for the whole stage</small></div>
+  <div style="position:absolute; left:2610px; top:790px; display:flex; flex-direction:column; gap:18px;">
+    <span class="chip ov">1 · Overlay</span><span class="chip fg">F · Foreground</span><span class="chip bg">B · Background</span></div>
+  <div class="tagbar"><span class="n">07</span><span class="t">Layers, in a demo</span></div>
+  <div class="capbg"></div>
+  <div class="cap"><span class="sq" style="background:var(--ov-lit)"></span>A logo goes to overlay one. <span class="key">⌘1 · Ctrl+1</span></div>
+</div>
+
+<!-- 엔드 카드 -->
+<div id="end" class="frame">
+  <div class="grid"></div>
+  <div class="micro top">[ LayerCue from zero ]</div>
+  <h2>Run your first show.</h2>
+  <div class="bar">Run Your First Show <i>18</i><span class="say">Watch them in order · 3–5 min each</span></div>
+  <div class="cards">
+    <div class="sc now"><div class="pic">Meet LayerCue</div><span class="num">01</span><div class="row"><span class="chip hot">NOW</span>The main window</div></div>
+    <div class="sc next"><div class="pic">Install &amp; first launch</div><span class="num">02</span><div class="row"><span class="chip fg">NEXT</span>Settings</div></div>
+    <div class="sc"><div class="pic">Your first show</div><span class="num">03</span><div class="row">Screen on, slide out</div></div>
+    <div class="sc"><div class="pic">Libraries &amp; cue sheets</div><span class="num">04</span><div class="row">Organise</div></div>
+    <div class="sc"><div class="pic">Adding slides</div><span class="num">05</span><div class="row">Reading cards</div></div>
+    <div class="sc"><div class="pic">Running the list</div><span class="num">06</span><div class="row">Keys &amp; layers</div></div>
+    <div class="sc"><div class="pic">Slide settings</div><span class="num">07</span><div class="row">Fit, trim, loop</div></div>
+    <div class="sc"><div class="pic">Presentation settings</div><span class="num">08</span><div class="row">Fades</div></div>
+    <div class="sc"><div class="pic">Text slides</div><span class="num">09</span><div class="row">The editor</div></div>
+    <div class="sc"><div class="pic">Designing slides</div><span class="num">10</span><div class="row">Shapes &amp; styles</div></div>
+    <div class="sc"><div class="pic">Music</div><span class="num">11</span><div class="row">Its own channel</div></div>
+    <div class="sc"><div class="pic">Sound</div><span class="num">12</span><div class="row">Meter &amp; checklist</div></div>
+    <div class="sc"><div class="pic">YouTube slides</div><span class="num">13</span><div class="row">Stream &amp; download</div></div>
+    <div class="sc"><div class="pic">PowerPoint &amp; PDF</div><span class="num">14</span><div class="row">Bring it in</div></div>
+    <div class="sc"><div class="pic">Files &amp; AI helpers</div><span class="num">15</span><div class="row">Settings pages</div></div>
+    <div class="sc"><div class="pic">More screens</div><span class="num">16</span><div class="row">Stage output</div></div>
+    <div class="sc"><div class="pic">NDI, Syphon, fill &amp; key</div><span class="num">17</span><div class="row">Advanced</div></div>
+    <div class="sc"><div class="pic">Show day</div><span class="num">18</span><div class="row">The checklist</div></div>
+  </div>
+  <div class="say2">Not installed yet? Episode 2 walks you through it — on Mac and Windows.</div>
+</div>
+
+<!-- 썸네일 -->
+<div id="thumb" class="frame">
+  <div class="grid"></div>
+  <div class="micro"><b>LayerCue</b> from zero · ep 02</div>
+  <div class="word" data-fit="520" style="--k:.12"><span class="gh g1">Install &amp;<br>first<br>launch</span><span class="gh g2">Install &amp;<br>first<br>launch</span><span class="gh g3">Install &amp;<br>first<br>launch</span><span class="real">Install &amp;<br>first<br>launch</span></div>
+  <div class="scr"><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep02/thumb-shot.png"><span class="chip fg">SETTINGS</span></div>
+  </div>
+
+<script>
+  // data-fit="px" — 큰 낱말을 그 폭에 꼭 맞춘다(실측). 폰트가 다 읽힌 뒤에.
+  document.fonts.ready.then(() => {
+    for (const w of document.querySelectorAll('.word[data-fit]')) {
+      const real = w.querySelector('.real'); real.style.display = 'inline-block';
+      const target = +w.dataset.fit, fs = parseFloat(getComputedStyle(w).fontSize);
+      w.style.fontSize = (fs * target / real.getBoundingClientRect().width) + 'px';
+    }
+  });
+</script>

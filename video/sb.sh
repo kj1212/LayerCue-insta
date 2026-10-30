@@ -7,7 +7,7 @@ set -e
 HERE=${0:a:h}
 SB=${2:-${LC_SANDBOX:-sandbox-ep01}}
 F=$HERE/$SB
-APP=$HOME/projects/LayerCue/build/LayerCue.app/Contents/MacOS/LayerCue
+APP=${LC_BUILD:-$HOME/projects/LayerCue-film-0912/build}/LayerCue.app/Contents/MacOS/LayerCue      # 촬영용 0.9.12(win-0.9.12 가지를 따로 풀어 지은 것)
 case "$1" in
   launch)
     mkdir -p "$F/settings/LayerCueFilm" "$F/docs" "$F/mcp"

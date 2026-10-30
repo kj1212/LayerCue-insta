@@ -73,9 +73,13 @@
   /* ── 썸네일 1280×720 ── */
   #thumb { width: 1280px; height: 720px; }
   #thumb .grid { background-size: calc(100% / 6) 100%; background-image: linear-gradient(to right, var(--hair) 1px, transparent 1px); }
+  /* 썸네일 층 판 — 세 방향으로 갈라 둔다(왼쪽 위 · 오른쪽 위 · 오른쪽 아래), 글자 크기에 맞춘 px */
+  #thumb .word .g1 { transform: translate(-4px, -3px); }
+  #thumb .word .g2 { transform: translate(4px, -3px); }
+  #thumb .word .g3 { transform: translate(3px, 4px); }
   #thumb .micro { position: absolute; left: 64px; top: 58px; font-size: 18px; }
   #thumb .micro b { color: var(--cream); font-weight: 500; }
-  #thumb .word { left: 58px; top: 118px; font-size: 118px; line-height: .86; font-stretch: 100%; }
+  #thumb .word { left: 58px; top: 150px; font-size: 128px; line-height: .9; font-stretch: 84%; letter-spacing: -.01em; }
   #thumb .scr { position: absolute; right: 48px; top: 300px; width: 620px; height: 349px; border-radius: 14px; overflow: hidden; box-shadow: 0 0 0 2px var(--hair), 0 30px 70px rgba(0,0,0,.7); }
   #thumb .scr img { width: 100%; height: 100%; object-fit: cover; display: block; }
   #thumb .scr .chip { position: absolute; right: 14px; top: 14px; font-size: 16px; padding: 4px 10px; border-radius: 6px; font-family: var(--mono); letter-spacing: .12em; }
@@ -171,10 +175,9 @@
 <div id="thumb" class="frame">
   <div class="grid"></div>
   <div class="micro"><b>LayerCue</b> from zero · ep 01</div>
-  <div class="word" data-fit="560" style="--k:.45"><span class="gh g1">Meet the<br>main<br>window</span><span class="gh g2">Meet the<br>main<br>window</span><span class="gh g3">Meet the<br>main<br>window</span><span class="real">Meet the<br>main<br>window</span></div>
+  <div class="word" data-fit="520" style="--k:.12"><span class="gh g1">Meet the<br>main<br>window</span><span class="gh g2">Meet the<br>main<br>window</span><span class="gh g3">Meet the<br>main<br>window</span><span class="real">Meet the<br>main<br>window</span></div>
   <div class="scr"><img src="file:///Users/kj1212/projects/LayerCue-insta/video/ep01/thumb-stage.png"><span class="chip hot">ON AIR</span></div>
-  <div class="sub"><b>4-minute tutorial</b><br>Mac &amp; Windows</div>
-</div>
+  </div>
 
 <script>
   // data-fit="px" — 큰 낱말을 그 폭에 꼭 맞춘다(실측). 폰트가 다 읽힌 뒤에.

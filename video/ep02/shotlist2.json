@@ -1,0 +1,475 @@
+{
+ "_note": "2편 연출표 — 1편과 같은 꼴. gfx = gfx.html 의 장면(창 대신 그림), img = 창 위에 뜨는 그림(매뉴얼 화면).",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.4,
+ "segments": {
+  "s1": {
+   "gfx": "req",
+   "events": []
+  },
+  "s2": {
+   "gfx": "mac",
+   "events": []
+  },
+  "s3": {
+   "gfx": "win",
+   "events": []
+  },
+  "s4": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "useCue",
+       "name": "Tour"
+      },
+      {
+       "op": "openCue",
+       "name": "Tour"
+      },
+      {
+       "op": "usePt",
+       "name": "Start here"
+      },
+      {
+       "op": "select",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      1920,
+      90
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.right"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "sidebar.tourAll",
+     "lbl": [
+      "Tour",
+      "a cue sheet of short guides"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "sidebar.readMeAll",
+     "lbl": [
+      "READ ME",
+      "the same guides, in a library"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "sidebar.myStuff",
+     "lbl": [
+      "My Stuff",
+      "one empty presentation"
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "mouse": [
+      "rclick",
+      "sidebar.readMeLib"
+     ]
+    },
+    {
+     "line": 5,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      "menu.delete"
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "hl": "dlg.delete",
+     "color": "hot"
+    },
+    {
+     "line": 6,
+     "at": 2.2,
+     "mouse": [
+      "click",
+      "dlg.delete.cancel"
+     ]
+    },
+    {
+     "line": 7,
+     "at": 0.0,
+     "cap": "Mac: Documents › LayerCue      Windows: C:\\Users\\<you>\\LayerCue",
+     "capdur": 6.5
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      1920,
+      90
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.right"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "status.gear",
+     "lbl": [
+      "Settings",
+      "the gear"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 1,
+     "at": 1.4,
+     "mouse": [
+      "click",
+      "status.gear"
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.2,
+     "mouse": [
+      "click",
+      "settings.general"
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.4,
+     "mouse": [
+      "move",
+      "middle.empty.low"
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "img": "manual-sign-in.png",
+     "until": {
+      "line": 4,
+      "at": 3.2
+     },
+     "chip": "chip-manual.png"
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "hl": "settings.box",
+     "lbl": [
+      "Settings",
+      "seven pages"
+     ],
+     "lblSide": "left"
+    }
+   ]
+  },
+  "s6": {
+   "setup": [
+    {
+     "mouse": [
+      "click",
+      "settings.general"
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "settings.box",
+     "scale": 1.45,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "set.language",
+     "lbl": [
+      "Language",
+      "applies at once"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 4,
+     "at": 0.1,
+     "mouse": [
+      "click",
+      "set.lang.ko"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      "set.lang.en"
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "hl": "set.cardSize",
+     "lbl": [
+      "Slide card size",
+      "S · M · L"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 6,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      "set.card.L"
+     ]
+    },
+    {
+     "line": 6,
+     "at": 2.0,
+     "mouse": [
+      "click",
+      "set.card.M"
+     ]
+    },
+    {
+     "line": 7,
+     "at": 0.0,
+     "hl": "set.windowLayout",
+     "lbl": [
+      "Remember window layout",
+      "on"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 8,
+     "at": 0.0,
+     "hl": "set.masterVol",
+     "color": "amber",
+     "lbl": [
+      "Remember master volume",
+      "off on purpose"
+     ],
+     "lblColor": "amber",
+     "lblSide": "below"
+    },
+    {
+     "line": 9,
+     "at": 1.0,
+     "mouse": [
+      "move",
+      "middle.empty.low"
+     ]
+    }
+   ]
+  },
+  "s7": {
+   "setup": [
+    {
+     "mouse": [
+      "click",
+      "settings.general"
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      "settings.tools"
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "zoom": "settings.box",
+     "scale": 1.45,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "tools.lc",
+     "lbl": [
+      "LayerCue",
+      "the version you have"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      "tools.lc.check"
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "tools.yt",
+     "lbl": [
+      "YouTube tool",
+      "its own updates"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "mouse": [
+      "move",
+      "middle.empty.low"
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "cap": "Update appears here, in orange — nothing installs until you press it",
+     "capdur": 5.0,
+     "capcolor": "hot"
+    },
+    {
+     "line": 8,
+     "at": 0.0,
+     "cap": "Never update during a show",
+     "capdur": 3.4,
+     "capcolor": "hot"
+    }
+   ]
+  },
+  "s8": {
+   "setup": [
+    {
+     "mouse": [
+      "click",
+      "settings.close"
+     ]
+    },
+    {
+     "sleep": 0.8
+    },
+    {
+     "mouse": [
+      "click",
+      1920,
+      90
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      "middle.empty.low"
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 0.2,
+     "key": [
+      12,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "dlg.quit",
+     "lbl": [
+      "Quit LayerCue?",
+      "your work is saved"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "cap": "You are on air — quitting will black out the screen.",
+     "capdur": 5.2,
+     "capcolor": "hot"
+    },
+    {
+     "line": 6,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      "dlg.quit.cancel"
+     ]
+    }
+   ]
+  },
+  "s9": {
+   "noclip": true,
+   "events": []
+  }
+ }
+}

@@ -10,11 +10,13 @@ rmSync(out, { recursive: true, force: true }); mkdirSync(out, { recursive: true 
 const browser = await puppeteer.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, args: ['--allow-file-access-from-files', '--hide-scrollbars'] });
 const page = await browser.newPage();
 await page.setViewport({ width: W, height: H, deviceScaleFactor: scale });
-await page.goto(pathToFileURL(path.resolve(html)).href);
+const [hp, hq] = html.split('?'); await page.goto(pathToFileURL(path.resolve(hp)).href + (hq ? '?' + hq : ''));
 await page.waitForFunction('window.__ready === true');
+const only = process.env.AT ? process.env.AT.split(',').map(Number) : null;   // AT=1,3.5 → 그 시각만(미리보기)
 const n = Math.round((await page.evaluate('window.DUR')) * fps), el = await page.$(sel);
+if (only) { for (const t of only) { await page.evaluate(x => window.render(x), t); await el.screenshot({ path: path.join(out, 'at-' + t + '.png') }); } await browser.close(); process.exit(0); }
 for (let i = 0; i < n; i++) {
   await page.evaluate(t => window.render(t), i / fps);
-  await el.screenshot({ path: path.join(out, String(i).padStart(5, '0') + '.png') });
+  await el.screenshot({ path: path.join(out, String(i).padStart(5, '0') + '.png'), omitBackground: true });   // 그래픽 장면은 바탕(그리드)이 비쳐야 한다
 }
 await browser.close(); console.log(`${n} frames @ ${fps} → ${out}`);

@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/kj1212/projects/LayerCue-insta/video/ep02/voice.py", line 100, in <module>
+    check()
+  File "/Users/kj1212/projects/LayerCue-insta/video/ep02/voice.py", line 68, in check
+    a, sr = sf.read(VO / f"e02-{k}.wav"); parts += [a, np.zeros(int(1.2 * sr))]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kj1212/Documents/AIvoice/.venv/lib/python3.12/site-packages/soundfile.py", line 313, in read
+    with SoundFile(file, 'r', samplerate, channels,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kj1212/Documents/AIvoice/.venv/lib/python3.12/site-packages/soundfile.py", line 708, in __init__
+    self._file = self._open(file, mode_int, closefd)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kj1212/Documents/AIvoice/.venv/lib/python3.12/site-packages/soundfile.py", line 1296, in _open
+    raise LibsndfileError(err, prefix=f"Error opening {self.name!r}: ")
+soundfile.LibsndfileError: Error opening '/Users/kj1212/projects/LayerCue-insta/video/ep02/audio/vo-heart/e02-s7-l08.wav': System error.

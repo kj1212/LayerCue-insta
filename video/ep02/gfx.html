@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- 2편 그래픽 장면 — ?scene=req|mac|win&dur=초&beats=[줄 시작 초,…] · window.render(t). 3840×2160, 어두운 브랜드 룩.
+     설치 장면은 이 맥에서 실제로 설치하지 않으려고(쓰고 있는 앱을 덮어쓴다) 그림으로 짠다. DMG 창 배경은 실제 배포판의 dmg-bg 그림. -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  .frame { background: transparent; }
+  .glow { position: absolute; filter: blur(170px); border-radius: 50%; }
+  .h { position: absolute; left: 270px; top: 200px; font-weight: 900; font-stretch: 84%; font-size: 190px; line-height: .86; letter-spacing: -.022em; text-transform: uppercase; }
+  .micro.k { position: absolute; left: 276px; top: 150px; }
+  .col { position: absolute; top: 560px; width: 1560px; border-top: 2px solid var(--rule); padding-top: 40px; }
+  .col .os { display: flex; align-items: center; gap: 26px; font-weight: 800; font-stretch: 88%; font-size: 92px; text-transform: uppercase; }
+  .col .os i { width: 30px; height: 30px; display: block; }
+  .row { display: grid; grid-template-columns: 420px 1fr; gap: 30px; padding: 30px 0; border-bottom: 2px solid var(--hair); font-size: 58px; }
+  .row b { font-family: var(--mono); font-weight: 500; font-size: 40px; letter-spacing: .14em; text-transform: uppercase; color: var(--fg3); padding-top: 14px; }
+  .note { position: absolute; left: 270px; bottom: 260px; display: flex; gap: 26px; align-items: center; font-size: 60px; color: var(--fg2); }
+  .note .chip { font-size: 40px; padding: 10px 20px; }
+  /* 단계 목록 */
+  .steps { position: absolute; left: 270px; top: 560px; width: 1300px; }
+  .st { display: grid; grid-template-columns: 120px 1fr; gap: 20px; padding: 34px 0; border-bottom: 2px solid var(--hair); }
+  .st .n { font-family: var(--mono); font-weight: 500; font-size: 46px; color: var(--fg3); padding-top: 8px; }
+  .st .t { font-weight: 700; font-size: 66px; line-height: 1.12; }
+  .st .t small { display: block; font-family: var(--mono); font-weight: 400; font-size: 38px; color: var(--fg2); margin-top: 10px; }
+  .st.on .n { color: var(--accent-soft); }
+  /* DMG 창 */
+  .win { position: absolute; left: 1760px; top: 470px; width: 1810px; border-radius: 26px; overflow: hidden; box-shadow: 0 0 0 2px var(--hair), 0 60px 140px rgba(0,0,0,.7); background: #1E1E20; }
+  .win .bar { height: 84px; background: #2A2A2D; display: flex; align-items: center; gap: 18px; padding-left: 30px; font-family: -apple-system, 'SF Pro Text', sans-serif; font-size: 34px; color: #C9C6BE; }
+  .win .bar i { width: 24px; height: 24px; border-radius: 50%; display: block; }
+  .win .bar span { margin-left: auto; margin-right: auto; transform: translateX(-60px); }
+  .win .body { position: relative; height: 1050px; background-size: cover; background-position: center; }
+  .app { position: absolute; width: 330px; text-align: center; font-family: -apple-system, "SF Pro Text", sans-serif; font-size: 36px; color: #2A2824; }
+  .app img { width: 300px; height: 300px; display: block; margin: 0 auto 14px; }
+  .apps-folder { width: 300px; height: 250px; margin: 25px auto 39px; border-radius: 26px; background: linear-gradient(#6FB6F2, #3D8EDB); position: relative; }
+  .apps-folder:after { content: "A"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: 700 120px -apple-system, sans-serif; color: rgba(255,255,255,.85); }
+  .ghost { opacity: .0; }
+  .badge { position: absolute; display: flex; align-items: center; gap: 22px; padding: 22px 34px; background: var(--cream); color: var(--void); font-weight: 800; font-stretch: 88%; font-size: 52px; text-transform: uppercase; letter-spacing: .03em; box-shadow: 0 18px 50px rgba(0,0,0,.55); }
+  .badge small { font-family: var(--mono); font-weight: 400; font-size: 36px; text-transform: none; letter-spacing: 0; color: #3C3A35; }
+  /* 스토어 카드 · 시작 창 */
+  .store { position: absolute; left: 1760px; top: 470px; width: 1810px; height: 760px; border-radius: 26px; background: #202022; box-shadow: 0 0 0 2px var(--hair), 0 60px 140px rgba(0,0,0,.7); }
+  .store img { position: absolute; left: 80px; top: 80px; width: 360px; height: 360px; }
+  .store .nm { position: absolute; left: 500px; top: 110px; font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 600; font-size: 96px; color: #F2F2F2; }
+  .store .pub { position: absolute; left: 504px; top: 240px; font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 46px; color: #9FB8FF; }
+  .store .free { position: absolute; left: 504px; top: 320px; font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 46px; color: #C8C8C8; }
+  .store .btn { position: absolute; left: 504px; top: 430px; padding: 26px 90px; border-radius: 12px; background: #5E6AD2; font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 600; font-size: 50px; color: #fff; }
+  .store .lbl { position: absolute; right: 50px; bottom: 40px; font-family: var(--mono); font-size: 34px; color: var(--fg3); }
+  .splash { position: absolute; left: 2230px; top: 1330px; width: 880px; height: 420px; border-radius: 20px; background: #161616; box-shadow: 0 0 0 2px var(--hair), 0 40px 100px rgba(0,0,0,.7); }
+  .splash img { position: absolute; left: 50px; top: 60px; width: 150px; height: 150px; }
+  .splash .w { position: absolute; left: 230px; top: 90px; font-weight: 800; font-stretch: 118%; font-size: 64px; letter-spacing: -.02em; text-transform: uppercase; }
+  .splash .p { position: absolute; left: 54px; bottom: 60px; font-size: 40px; color: var(--fg2); }
+  .splash .v { position: absolute; right: 54px; bottom: 60px; font-family: var(--mono); font-size: 34px; color: var(--fg3); }
+  .splash .bar2 { position: absolute; left: 54px; right: 54px; bottom: 130px; height: 8px; background: var(--hair); }
+  .splash .bar2 i { display: block; height: 100%; background: var(--accent-soft); }
+</style>
+<div id="g" class="frame"></div>
+<script>
+const Q = new URLSearchParams(location.search), SC = Q.get('scene'), B = JSON.parse(Q.get('beats') || '[]');
+window.DUR = +(Q.get('dur') || 20);
+const g = document.getElementById('g');
+const ICON = 'gfx-icon.png';
+if (SC === 'req') g.innerHTML = `
+  <div class="micro k">[ episode 02 — before you install ]</div><div class="h">What you need</div>
+  <div class="col" id="mac" style="left:270px"><div class="os"><i style="background:var(--fg-lit)"></i>Mac</div>
+    <div class="row"><b>System</b><span>macOS 13 Ventura or later</span></div>
+    <div class="row"><b>Computer</b><span>Apple silicon or Intel<br><span style="color:var(--fg2);font-size:46px">— separate downloads</span></span></div>
+    <div class="row"><b>Get it</b><span>layercue.com</span></div></div>
+  <div class="col" id="pc" style="left:2010px"><div class="os"><i style="background:var(--bg-lit)"></i>Windows</div>
+    <div class="row"><b>System</b><span>Windows 10, version 1809 or later</span></div>
+    <div class="row"><b>Computer</b><span>64-bit (x64) PC</span></div>
+    <div class="row"><b>Get it</b><span>Microsoft Store</span></div></div>
+  <div class="note" id="nt"><span class="chip ov">Optional</span>A projector or second screen — not needed to start</div>`;
+if (SC === 'mac') g.innerHTML = `
+  <div class="micro k">[ on a mac ]</div><div class="h">Install on a Mac</div>
+  <div class="steps">
+    <div class="st"><div class="n">01</div><div class="t">Download from layercue.com<small>Apple silicon or Intel — Apple menu › About This Mac</small></div></div>
+    <div class="st"><div class="n">02</div><div class="t">Open the .dmg</div></div>
+    <div class="st"><div class="n">03</div><div class="t">Drag LayerCue onto Applications</div></div>
+    <div class="st"><div class="n">04</div><div class="t">Eject, then open it from Applications<small>not from the disk image</small></div></div></div>
+  <div class="win" id="dmg"><div class="bar"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span>LayerCue</span></div>
+    <div class="body" style="background-image:url(gfx-dmgbg.png)">
+      <div class="app" style="left:269px;top:355px"><img src="${ICON}" style="width:250px;height:250px">LayerCue</div>
+      <div class="app" style="left:1199px;top:355px"><div class="apps-folder" style="width:250px;height:210px;margin:20px auto 34px"></div>Applications</div>
+      <img id="drag" src="${ICON}" style="position:absolute;width:250px;height:250px;left:309px;top:355px;opacity:0;filter:drop-shadow(0 20px 30px rgba(0,0,0,.4))"></div></div>
+  <div class="badge" id="ok" style="left:2200px;top:1700px">Signed &amp; notarized<small>if macOS asks, choose Open</small></div>`;
+if (SC === 'win') g.innerHTML = `
+  <div class="micro k">[ on windows ]</div><div class="h">Install on Windows</div>
+  <div class="steps">
+    <div class="st"><div class="n">01</div><div class="t">Install from the Microsoft Store<small>published by CastPad · free</small></div></div>
+    <div class="st"><div class="n">02</div><div class="t">Open LayerCue from the Start menu</div></div>
+    <div class="st"><div class="n">03</div><div class="t">It runs once at a time<small>open it again — the window comes forward</small></div></div></div>
+  <div class="store" id="store"><img src="${ICON}"><div class="nm">LayerCue</div><div class="pub">CastPad</div><div class="free">Free</div><div class="btn" id="get">Install</div><div class="lbl">illustration</div></div>
+  <div class="splash" id="spl"><img src="${ICON}"><div class="w">LayerCue</div><div class="bar2"><i id="pb" style="width:0"></i></div><div class="p" id="pt">Preparing the screen…</div><div class="v">0.9.12</div></div>`;
+const $ = s => g.querySelector(s), $$ = s => [...g.querySelectorAll(s)];
+const clamp = x => Math.max(0, Math.min(1, x)), cue = x => 1 - Math.pow(1 - clamp(x), 4.2), at = (t, t0, d) => cue((t - t0) / d);
+const up = (el, p, dy = 40) => { if (!el) return; el.style.opacity = p; el.style.transform = `translateY(${(1 - p) * dy}px)`; };
+const b = i => (B[i] !== undefined ? B[i] : 1 + i * 2.5);
+const fadeAll = t => { const o = 1 - clamp((t - (window.DUR - 0.5)) / 0.5); g.style.opacity = o; };
+window.render = t => {
+  up($('.micro.k'), at(t, 0, .5), 20); up($('.h'), at(t, .1, .7), 60);
+  if (SC === 'req') {
+    up($('#mac'), at(t, b(2) - .2, .7)); up($('#pc'), at(t, b(4) - .2, .7));
+    $$('#mac .row').forEach((r, i) => up(r, at(t, b(2) + i * .25 + (i == 1 ? b(3) - b(2) - .5 : 0), .5), 20));
+    $$('#pc .row').forEach((r, i) => up(r, at(t, b(4) + i * .3, .5), 20));
+    up($('#nt'), at(t, b(5), .6), 20);
+  }
+  if (SC === 'mac' || SC === 'win') {
+    const order = SC === 'mac' ? [0, 2, 3, 4] : [0, 2, 4];
+    $$('.st').forEach((s, i) => { up(s, at(t, b(order[i]) - .1, .5), 26); s.classList.toggle('on', t >= b(order[i]) - .1); });
+  }
+  if (SC === 'mac') {
+    up($('#dmg'), at(t, b(2) - .3, .7), 60);
+    const d = $('#drag'), p = at(t, b(3) + .5, 1.6);                     // 아이콘을 Applications 로 끈다
+    d.style.opacity = (t > b(3) + .4 && t < b(3) + 2.4) ? .9 : 0; d.style.left = (309 + 930 * p) + 'px'; d.style.top = (355 - 80 * Math.sin(Math.PI * p)) + 'px';
+    up($('#ok'), at(t, b(5), .6), 30);
+  }
+  if (SC === 'win') {
+    up($('#store'), at(t, b(0) + .3, .7), 60);
+    const press = t > b(2) - .4 && t < b(2) - .1; $('#get').style.filter = press ? 'brightness(1.3)' : '';
+    up($('#spl'), at(t, b(3) - .1, .6), 40);
+    $('#pb').style.width = (100 * clamp((t - b(3)) / 3.5)) + '%';
+    $('#pt').textContent = t < b(3) + 1.6 ? 'Preparing the screen…' : 'Loading presentations…';
+  }
+  fadeAll(t);
+};
+window.__ready = false; document.fonts.ready.then(() => { window.render(0); window.__ready = true; });
+</script>
