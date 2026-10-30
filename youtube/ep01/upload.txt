@@ -1,5 +1,7 @@
-Episode 1 — Meet LayerCue: The Main Window
+TITLE
+Meet LayerCue: The Main Window | LayerCue from Zero, Episode 1
 
+DESCRIPTION
 A friendly four-minute tour of the LayerCue main window: what every part is called, what it does, and how layers work.
 Not installed yet? Episode 2 walks you through it, on Mac and Windows.
 No prior episode needed.
@@ -20,3 +22,12 @@ Chapters
 3:08 Layers, in a demo
 3:38 Edit and back
 3:53 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, presentation software, live production, event production, projection software, stage display, church media, conference AV, Mac, Windows, beginner tutorial
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ko.srt (Korean) and subtitles/ja.srt (Japanese) as 'With timing'. English is burned in.
