@@ -28,4 +28,4 @@ PLAYLIST
 LayerCue from Zero: Run Your First Show
 
 SUBTITLES
-Upload subtitles/ko.srt (Korean) and subtitles/ja.srt (Japanese) as 'With timing'. English is burned in.
+Upload subtitles/ep02-en.srt (English), ep02-ko.srt (Korean) and ep02-ja.srt (Japanese) as 'With timing'.
