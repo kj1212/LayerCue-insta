@@ -10,7 +10,8 @@ const browser = await puppeteer.launch({ executablePath: '/Applications/Google C
 const page = await browser.newPage();
 await page.setViewport({ width: 3840, height: 1200, deviceScaleFactor: 1 });
 await page.goto(pathToFileURL(path.resolve(html)).href);
-await page.evaluate(() => document.fonts.ready);
+// ★ 글자가 비어 있으면 글꼴을 아예 안 불러 fonts.ready 가 바로 끝난다 → 대체 글꼴로 찍혔다(2026-10-30). 쓰는 모양을 미리 불러 둔다.
+await page.evaluate(async () => { for (const f of ['400 60px Archivo', '600 60px Archivo', '700 60px Archivo', '800 60px Archivo', '900 60px Archivo', '400 40px "DM Mono"', '500 40px "DM Mono"']) await document.fonts.load(f); await document.fonts.ready; });
 const FN = { lbl: 'setLbl', cap: 'setCap', tag: 'setTag', prog: 'setProg' }, sizes = {};
 for (const it of list) {
   await page.evaluate((fn, args) => window[fn](...args), FN[it.kind], it.args);
