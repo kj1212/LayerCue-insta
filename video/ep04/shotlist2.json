@@ -4,7 +4,7 @@
  "lead": 0.45,
  "gap": 0.42,
  "pre": 1.0,
- "rec_t0": 1.4,
+ "rec_t0": 0.8,
  "segments": {
   "s1": {
    "setup": [
@@ -181,13 +181,18 @@
     },
     {
      "line": 3,
-     "at": 0.6,
+     "at": 1.6,
      "hl": "cue.bringitin",
      "lbl": [
       "In a cue sheet",
       "the whole running order"
      ],
-     "lblSide": "right"
+     "lblSide": "right",
+     "end": {
+      "line": 4,
+      "at": 0.4
+     },
+     "endpad": 0.9
     },
     {
      "line": 4,
@@ -200,7 +205,7 @@
     },
     {
      "line": 4,
-     "at": 0.4,
+     "at": 1.3,
      "hl": "lib.bringitin",
      "lbl": [
       "In the Library",
@@ -282,7 +287,12 @@
       "+",
       "New Cue Sheet"
      ],
-     "lblSide": "right"
+     "lblSide": "right",
+     "end": {
+      "line": 1,
+      "at": 1.4
+     },
+     "endpad": 0.9
     },
     {
      "line": 2,
@@ -304,7 +314,12 @@
       "Rename",
       "name it now"
      ],
-     "lblSide": "above"
+     "lblSide": "above",
+     "end": {
+      "line": 2,
+      "at": 2.6
+     },
+     "endpad": 0.15
     },
     {
      "line": 3,
@@ -332,7 +347,12 @@
       "+",
       "New Library"
      ],
-     "lblSide": "right"
+     "lblSide": "right",
+     "end": {
+      "line": 3,
+      "at": 1.3
+     },
+     "endpad": 0.9
     },
     {
      "line": 4,
@@ -372,7 +392,12 @@
       "Its own +",
       "picks this library"
      ],
-     "lblSide": "right"
+     "lblSide": "right",
+     "end": {
+      "line": 5,
+      "at": 1.6
+     },
+     "endpad": 0.9
     },
     {
      "line": 6,
@@ -387,7 +412,12 @@
       "New Presentation",
       "name · library · cue sheet"
      ],
-     "lblSide": "left"
+     "lblSide": "left",
+     "end": {
+      "line": 7,
+      "at": 2.2
+     },
+     "endpad": 0.9
     },
     {
      "line": 7,
@@ -557,15 +587,18 @@
     },
     {
      "line": 2,
-     "at": 0.5,
+     "at": 1.1,
      "hl": "menu.cue",
      "lbl": [
       "In a cue sheet",
       "Remove from Cue Sheet"
      ],
      "lblSide": "right",
-     "dur": 2.4,
-     "exact": true
+     "end": {
+      "line": 2,
+      "at": 2.9
+     },
+     "endpad": 0.1
     },
     {
      "line": 2,
@@ -585,15 +618,18 @@
     },
     {
      "line": 3,
-     "at": 0.6,
+     "at": 1.2,
      "hl": "menu.lib",
      "lbl": [
       "In the Library",
       "Rename · Move · Delete"
      ],
      "lblSide": "right",
-     "dur": 3.4,
-     "exact": true
+     "end": {
+      "line": 4,
+      "at": 0.3
+     },
+     "endpad": 0.9
     },
     {
      "line": 4,
@@ -683,14 +719,14 @@
     },
     {
      "line": 3,
-     "at": 0.9,
+     "at": 0.6,
      "hl": "toast",
      "lbl": [
       "Undone",
       "Delete cue sheet"
      ],
      "lblSide": "above",
-     "dur": 2.6,
+     "dur": 2.2,
      "exact": true
     },
     {
@@ -735,7 +771,12 @@
       "Picker",
       "every presentation"
      ],
-     "lblSide": "above"
+     "lblSide": "above",
+     "end": {
+      "line": 3,
+      "at": 0.3
+     },
+     "endpad": 0.1
     },
     {
      "line": 3,
@@ -766,7 +807,12 @@
       "Find",
       "names and slide text"
      ],
-     "lblSide": "right"
+     "lblSide": "right",
+     "end": {
+      "line": 6,
+      "at": 0.4
+     },
+     "endpad": 0.1
     },
     {
      "line": 6,
@@ -781,5 +827,6 @@
    "noclip": true,
    "events": []
   }
- }
+ },
+ "_rec_t0_note": "맥북 화면 ffmpeg 녹화: 녹화 파일 시각 = 마우스 기록 시각 + 0.8 s (4편 실측 — 이름 창이 닫힌 프레임 10.15 s, Enter 기록 9.36 s). LG 녹화(1–2편)는 1.4."
 }

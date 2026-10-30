@@ -106,12 +106,13 @@ class M:
     def hover(self, px, py, dur=0.7, stay=1.5):
         self.move(px, py, dur); self._rec("hover", px, py); time.sleep(stay)
 
-    def type_text(self, text, gap=0.07):
-        """글자를 사람처럼 한 자씩 친다 — System Events keystroke(유니코드 이벤트는 Qt 칸에 깨진 글자로 들어갔다)."""
+    def type_text(self, text, gap=0.06):
+        """글자를 사람처럼 한 자씩 친다 — System Events keystroke 를 **한 번의** osascript 안에서 돌린다.
+        (예전엔 글자마다 osascript 를 새로 띄워 한 자 0.18 s — 4편에서 뒤 동작이 2 초씩 밀렸다)"""
         import subprocess
-        for ch in text:
-            subprocess.run(["osascript", "-e", 'tell application "System Events" to keystroke "%s"' % ch.replace('"', '\\"')])
-            time.sleep(gap)
+        esc = text.replace("\\", "\\\\").replace('"', '\\"')
+        subprocess.run(["osascript", "-e", 'tell application "System Events"', "-e",
+                        'repeat with c in characters of "%s"' % esc, "-e", "keystroke c", "-e", "delay %s" % gap, "-e", "end repeat", "-e", "end tell"])
         self._rec("type", *self.where())
 
     def lg_move(self, fx, fy, dur=0.9, click=False, fps=120):

@@ -170,6 +170,38 @@ def bg_motion(total):
     return {"grid": str(pd / "bg-grid.png"), "glows": glows}
 
 
+
+# ── 실제 동작 시각에 맞추기 ── 녹화 때 적어 둔 마우스·키 기록(rec/v2/sN.mouse.json)으로, 계획보다 늦어진 만큼 테·이름표를 민다.
+#   (4편: 글자 입력이 느려 뒤 동작이 2–3 초 밀렸는데 테는 계획 시각에 떴다 사라져, 닫힌 창 자리에 빈 테가 남았다)
+NOMINAL = {"click": 0.9, "rclick": 0.9, "dbl": 0.9, "drag": 0.8}
+def lags_for(seg):
+    ml = HERE / "rec" / "v2" / f"{seg['id']}.mouse.json"; tk = HERE / "take2" / f"{seg['id']}.json"
+    if not (ml.exists() and tk.exists()): return []
+    log = json.load(open(ml)); i0 = next((i for i, e in enumerate(log) if e["k"] == "mark:rec"), None)
+    if i0 is None: return []
+    log = [e for e in log[i0 + 1:] if e["k"] in ("down", "rclick", "dbl", "type") or e["k"].startswith("key:")]
+    out, j = [], 0
+    for a in sorted(json.load(open(tk))["actions"], key=lambda a: a["t"]):
+        if "mouse" in a:
+            op = a["mouse"][0]
+            if op not in NOMINAL: continue
+            want, nom = ("down" if op in ("click", "drag") else op), NOMINAL[op]
+        elif "key" in a: want, nom = "key:%d" % a["key"][0], 0.05
+        elif "type" in a: want, nom = "type", 0.07 * len(a["type"])
+        else: continue
+        k = next((k for k in range(j, len(log)) if log[k]["k"] == want), None)
+        if k is None: continue
+        j = k + 1; out.append((a["t"], max(0.0, log[k]["t"] - (a["t"] + nom))))
+    return out       # [(계획 시각(녹화 안), 늦어진 초)]
+
+def shift(seg, t):
+    """타임라인 시각 t(계획) → 실제로 화면에 일어난 시각. 그 앞의 마지막 동작이 늦어진 만큼 민다."""
+    L = SHIFTS.setdefault(seg["id"], lags_for(seg)); rt = t - seg["start"] + PRE; d = 0.0
+    for pt, lag in L:
+        if pt <= rt + 1e-3: d = lag
+    return round(t + d, 3)
+SHIFTS = {}
+
 def timeline():
     segs = times(); H = holds_for(segs); total = segs[-1]["end"]
     parts, caps, lbls, hls, tags, clicks, voice_ = [], [], [], [], [], [], []
@@ -201,6 +233,10 @@ def timeline():
     # 2) 배치
     for kind, seg, e, t, ln, f in pending:
         dur = e["dur"] if e.get("exact") else max(e.get("dur", 0), ln["dur"] + 0.35); t1 = round(t + dur, 3)     # exact: 앱 안내처럼 정해진 동안만
+        if kind in ("hl", "lbl") and not e.get("nosync"):
+            t = shift(seg, t); t1 = shift(seg, t1)
+            if "end" in e:          # 메뉴·창을 닫는 동작의 (실제) 시각에 끝낸다 — end = {"line", "at"} (그 동작의 계획 시각) + "endpad"
+                t1 = round(shift(seg, ev_time(seg, e["end"])) + e.get("endpad", 0.9), 3)
         space = e.get("space", "card")
         if kind == "hl" or kind == "lbl":
             x, y, w, h = region(e["hl"]) if "hl" in e else (0, 0, 0, 0)
