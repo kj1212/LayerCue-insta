@@ -1,0 +1,430 @@
+{
+ "title": "Libraries, Presentations and Cue Sheets — LayerCue from Zero, Episode 4",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Three words",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today, we put things in order.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "First, three words.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A presentation is one set of slides.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A library is where it lives: a real folder on your disk.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A cue sheet is the running order for one event.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It holds links, not copies. Edit once, and every cue sheet shows the change.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Reading the sidebar",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "In the sidebar, a folder icon is a library.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "An indigo name with a list icon is a cue sheet.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Click a presentation inside a cue sheet, and you see the whole running order.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Click it in the Library, and you see that one alone.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A short orange bar means something from it is on stage.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Making things",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Press the plus beside Cue Sheets, and choose New Cue Sheet.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Name it right away. We'll call it Summit Day 1.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The plus in the Library drawer makes a new library.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "This one is Summit 2026.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Now point at the library row, and press its own plus.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The dialog asks for a name, a library, and a cue sheet.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Pick Summit Day 1, and press Create.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It lands at the end of the cue sheet.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Building the running order",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "There are three ways in. You just saw one: the dialog.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Or right-click a presentation, and choose Add to Cue Sheet.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Or drag it from the drawer, up onto the cue sheet.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Drag rows to change the order.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Remove from Cue Sheet changes only the order.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The presentation stays in its library.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Organising",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "The right-click menu depends on where you click.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Inside a cue sheet, you get Remove from Cue Sheet.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "In the Library, you get Rename, Move to Library, and Delete.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Rename changes the file on your disk too.",
+     "pause": 2.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Every presentation lives in exactly one library.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Drag it onto another library to move it there.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "Deleting and undo",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Delete a cue sheet, and only the order goes.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Its presentations stay in their libraries.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Command Z brings it back. On Windows, it's Control Z.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Delete a library, and every presentation in it goes too.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Nothing is gone for good. It goes to the Trash, and undo works up to fifty steps.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "One rule for show day: leave the sidebar alone during the show.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "chapter": "Hide and find",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Command backslash hides the sidebar.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A picker in the status bar takes its place.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press it again, and the sidebar comes back.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Command F opens Find. There's no button for it.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It searches names and slide text.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Return jumps there. Nothing goes out to the screen.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now build a running order from scratch.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: adding slides, and reading the cards.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}
