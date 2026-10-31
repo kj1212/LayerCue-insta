@@ -121,6 +121,30 @@
      "keys": ""
     },
     {
+     "text": "With Fit, the Anchor decides where the picture sits, and where the empty space goes.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Pick the left, and the picture moves to the left. Pick the right, and it moves right.",
+     "pause": 2.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "With Fill, the Anchor decides which side is kept, and which is cut.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
      "text": "Every change is saved at once. Done just closes the sheet.",
      "pause": 1.2,
      "screen": "",

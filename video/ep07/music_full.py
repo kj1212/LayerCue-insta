@@ -17,8 +17,8 @@ import assemble2 as A
 
 SR, BAR = MU.SR, MU.BAR
 segs = A.times(); total = segs[-1]["end"]; nb = int(np.ceil(total / 2.0)) + 1
-D = {k: "Throwback Funk Beat 02" for k in ("intro", "verse", "bridge", "chorus", "outro")}     # 7편: Throwback/Electric Funk 브라스·신스
-BASS, RG, PAD, STAB, LEAD = "Throwback Funk Synth Bass", "Electric Funk Guitar 01", "Disco Pop Synth Pad", "Electric Funk Synth Stabs", "Throwback Funk Brass 01"
+D = {"intro": "Duncan - Intro", "verse": "Duncan - Verse", "bridge": "Duncan - Bridge", "chorus": "Duncan - Chorus", "outro": "Duncan - Outro"}     # 7편(다시): Road Trip Summer(칠웨이브) + Duncan 드럼 — 처음 판(브라스 펑크)은 사용자가 이상하다고 함
+BASS, RG, PAD, STAB, LEAD = "Road Trip Summer Bass", "Road Trip Summer Guitar", "Road Trip Summer Synth", "Landing in LA Synth 01", "Landing in LA Guitar"
 
 def bar_of(t): return int(round(t / 2.0))
 plan = {}                                   # 마디 → {루프: dB}
