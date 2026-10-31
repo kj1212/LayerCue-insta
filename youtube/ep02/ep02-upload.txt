@@ -29,3 +29,59 @@ LayerCue from Zero: Run Your First Show
 
 SUBTITLES
 Upload subtitles/ep02-en.srt (English), ep02-ko.srt (Korean) and ep02-ja.srt (Japanese) as 'With timing'.
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+설치, 첫 실행, 설정 | LayerCue 처음부터, 2편
+
+DESCRIPTION
+Mac이나 Windows PC에 LayerCue를 설치하고, 처음 열었을 때 무엇이 있는지 살펴봐요. 설정을 위해 한 번 로그인하고, General·Files·Tools 페이지(미디어가 저장되는 곳 포함)와 안전하게 끄는 법을 배워요.
+Mac 다운로드: https://layercue.com/download/ · Windows: Microsoft Store(LayerCue 검색, 게시자 CastPad)
+설치 화면은 그림이고, 로그인 화면은 매뉴얼의 이미지예요.
+처음이라면 1편 「LayerCue 메인 창」부터 보세요.
+LayerCue 0.9.12로 녹화했어요.
+매뉴얼: https://layercue.com/docs/start/install/
+나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물·미디어는 가상이에요.
+
+챕터
+0:00 처음
+0:06 준비물
+0:33 Mac에 설치하기
+1:00 Windows에 설치하기
+1:22 처음 열었을 때
+1:57 한 번 로그인하기
+2:24 일반 설정
+2:55 파일과 업데이트
+3:35 안전하게 끄기
+3:52 다음 편
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+インストール・初回起動・設定 | ゼロから LayerCue 第2回
+
+DESCRIPTION
+Mac または Windows PC に LayerCue をインストールし、初めて開いたときの中身を確認します。設定のために一度ログインし、General・Files・Tools ページ(メディアの保存先を含む)と安全な終了方法を学びます。
+Mac のダウンロード: https://layercue.com/download/ ・ Windows: Microsoft Store(LayerCue で検索、発行元 CastPad)
+インストール画面はイラスト、ログイン画面はマニュアルの画像です。
+初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。
+LayerCue 0.9.12 で収録しています。
+マニュアル: https://layercue.com/docs/start/install/
+ナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物・メディアは架空のものです。
+
+チャプター
+0:00 イントロ
+0:06 必要なもの
+0:33 Mac へのインストール
+1:00 Windows へのインストール
+1:22 初めて開いたとき
+1:57 一度だけログイン
+2:24 一般設定
+2:55 ファイルとアップデート
+3:35 安全な終了
+3:52 次回

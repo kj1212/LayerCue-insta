@@ -15,5 +15,29 @@
   "Mac",
   "Windows"
  ],
- "playlist": "LayerCue from Zero: Run Your First Show"
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "Slide settings: 맞춤, 자르기, 반복, 볼륨 | LayerCue 처음부터, 7편",
+ "title_ja": "Slide settings:フィット・トリム・ループ・音量 | ゼロから LayerCue 第7回",
+ "description_ko": "슬라이드가 나가기 전에 손봐요. 컨트롤 줄(지금만)과 Slide settings(저장)의 차이, 송출하지 않고 불러오기, Scale(Fit·Fill·Stretch·세로 영상용 Fit + blur), Crop & fit, In/Out 지점, 속도와 반복, 슬라이드 볼륨, 그리고 신호까지 영상을 한 장면에 세워 두는 To Screen을 다뤄요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요.\n매뉴얼: https://layercue.com/docs/slides/settings/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물·미디어는 가상이에요.",
+ "description_ja": "スライドを出す前に整えます。コントロール行(今だけ)と Slide settings(保存)の違い、送出せずに読み込む方法、Scale(Fit・Fill・Stretch・縦動画向けの Fit + blur)、Crop & fit、In/Out ポイント、速度とリピート、スライド音量、合図まで動画を1コマで止めておく To Screen を扱います。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。\nマニュアル: https://layercue.com/docs/slides/settings/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物・メディアは架空のものです。",
+ "chapters_ko": [
+  "두 군데",
+  "Scale",
+  "Crop & fit",
+  "In/Out 지점",
+  "속도와 반복",
+  "슬라이드 볼륨",
+  "To Screen",
+  "다음 편"
+ ],
+ "chapters_ja": [
+  "2つの場所",
+  "Scale",
+  "Crop & fit",
+  "In/Out ポイント",
+  "速度とリピート",
+  "スライド音量",
+  "To Screen",
+  "次回"
+ ]
 }

@@ -15,5 +15,31 @@
   "Windows",
   "beginner tutorial"
  ],
- "playlist": "LayerCue from Zero: Run Your First Show"
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "메인 창 둘러보기 | LayerCue 처음부터, 1편",
+ "title_ja": "メインウィンドウを知る | ゼロから LayerCue 第1回",
+ "description_ko": "LayerCue 메인 창을 4분 안에 둘러봐요. 각 부분의 이름과 하는 일, 그리고 레이어가 어떻게 작동하는지 알려 드려요.\n아직 설치 전이라면 2편에서 Mac과 Windows 설치를 안내해요.\n행사를 운영하는 데에는 계정이 필요 없어요. 설정 화면만 처음 한 번 Google 로그인이 필요해요.\nLayerCue 0.9.10로 녹화했어요.\n매뉴얼: https://layercue.com/docs/start/tour/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물·미디어는 가상이에요.",
+ "description_ja": "LayerCue のメインウィンドウを4分で一周します。各部分の名前と役割、レイヤーのしくみを紹介します。\nまだインストールしていない方は、第2回で Mac と Windows のインストールを説明します。\n本番の操作にアカウントは不要です。設定画面だけ、最初に一度 Google ログインが必要です。\nLayerCue 0.9.10 で収録しています。\nマニュアル: https://layercue.com/docs/start/tour/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物・メディアは架空のものです。",
+ "chapters_ko": [
+  "LayerCue란",
+  "네 영역",
+  "사이드바",
+  "가운데: 슬라이드",
+  "위쪽 띠",
+  "상태 표시줄",
+  "데모로 보는 레이어",
+  "편집 모드와 돌아오기",
+  "다음 편"
+ ],
+ "chapters_ja": [
+  "LayerCue とは",
+  "4つのエリア",
+  "サイドバー",
+  "中央:スライド",
+  "上の帯",
+  "ステータスバー",
+  "デモで見るレイヤー",
+  "編集モードと戻り方",
+  "次回"
+ ]
 }

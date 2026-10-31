@@ -14,5 +14,29 @@
   "Windows",
   "beginner tutorial"
  ],
- "playlist": "LayerCue from Zero: Run Your First Show"
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "라이브러리, 프레젠테이션, 큐시트 | LayerCue 처음부터, 4편",
+ "title_ja": "ライブラリ・プレゼンテーション・キューシート | ゼロから LayerCue 第4回",
+ "description_ko": "진행 순서를 처음부터 만들어요. 프레젠테이션·라이브러리·큐시트가 무엇인지, 사이드바 읽는 법, 각각 만드는 법, 큐시트에 넣는 세 가지 방법, 이름 바꾸기와 옮기기, 되돌리기로 안전하게 지우기, 사이드바 숨기기와 Command F로 찾기를 다뤄요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요.\n매뉴얼: https://layercue.com/docs/library/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물·미디어는 가상이에요.",
+ "description_ja": "進行順を一から作ります。プレゼンテーション・ライブラリ・キューシートとは何か、サイドバーの読み方、それぞれの作り方、キューシートに入れる3つの方法、名前の変更と移動、取り消しで安全に削除、サイドバーを隠す方法と Command F での検索を扱います。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。\nマニュアル: https://layercue.com/docs/library/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物・メディアは架空のものです。",
+ "chapters_ko": [
+  "세 가지 낱말",
+  "사이드바 읽기",
+  "만들기",
+  "진행 순서 짜기",
+  "정리하기",
+  "삭제와 되돌리기",
+  "숨기기와 찾기",
+  "다음 편"
+ ],
+ "chapters_ja": [
+  "3つの言葉",
+  "サイドバーを読む",
+  "作る",
+  "進行順を組む",
+  "整理する",
+  "削除と取り消し",
+  "隠す・探す",
+  "次回"
+ ]
 }
