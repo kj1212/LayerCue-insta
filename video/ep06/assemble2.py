@@ -70,6 +70,7 @@ def takes():
             if "type" in ev: acts.append({"t": t, "type": ev["type"]})
             if "finder" in ev: acts.append({"t": t, "finder": 1})
             if "fclear" in ev: acts.append({"t": t, "fclear": 1})
+            if "optkey" in ev: acts.append({"t": t, "optkey": ev["optkey"]})
             if "clip" in ev: acts.append({"t": t, "clip": ev["clip"]})
         setup = [{"front": 1}] + [({"mouse": conv_mouse(a["mouse"])} if "mouse" in a else a) for a in sl.get("setup", [])]     # 3편: 창을 먼저 맨 앞으로
         take = {"name": seg["id"], "sec": round(seg["end"] - seg["start"] + PRE + 1.5, 1), "setup": setup, "actions": acts}
@@ -176,7 +177,7 @@ def bg_motion(total):
 
 # ── 실제 동작 시각에 맞추기 ── 녹화 때 적어 둔 마우스·키 기록(rec/v2/sN.mouse.json)으로, 계획보다 늦어진 만큼 테·이름표를 민다.
 #   (4편: 글자 입력이 느려 뒤 동작이 2–3 초 밀렸는데 테는 계획 시각에 떴다 사라져, 닫힌 창 자리에 빈 테가 남았다)
-NOMINAL = {"click": 0.9, "rclick": 0.9, "dbl": 0.9, "drag": 0.8, "cmdclick": 0.8, "slowdrag": 0.7}
+NOMINAL = {"click": 0.9, "rclick": 0.9, "dbl": 0.9, "drag": 0.8, "cmdclick": 0.8, "slowdrag": 0.7, "hold": 0.7}
 def lags_for(seg):
     ml = HERE / "rec" / "v2" / f"{seg['id']}.mouse.json"; tk = HERE / "take2" / f"{seg['id']}.json"
     if not (ml.exists() and tk.exists()): return []
@@ -188,7 +189,7 @@ def lags_for(seg):
         if "mouse" in a:
             op = a["mouse"][0]
             if op not in NOMINAL: continue
-            want, nom = ("down" if op in ("click", "drag", "cmdclick", "slowdrag") else op), NOMINAL[op]
+            want, nom = ("down" if op in ("click", "drag", "cmdclick", "slowdrag", "hold") else op), NOMINAL[op]
         elif "key" in a: want, nom = "key:%d" % a["key"][0], 0.05
         elif "type" in a: want, nom = "type", 0.07 * len(a["type"])
         else: continue

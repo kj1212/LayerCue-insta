@@ -135,6 +135,21 @@ class M:
             self._post(Quartz.kCGEventLeftMouseDragged, x2 + (i % 2), y2); time.sleep(1 / 30)
         self._post(Quartz.kCGEventLeftMouseUp, x2, y2); self._rec("up", x2, y2)
 
+    def hold(self, px, py, sec=1.0, dur=0.6):
+        """눌러서 sec 초 머문 뒤 뗀다(칩 길게 누르기)."""
+        self.move(px, py, dur); time.sleep(0.1)
+        self._post(Quartz.kCGEventLeftMouseDown, px, py); self._rec("down", px, py); time.sleep(sec)
+        self._post(Quartz.kCGEventLeftMouseUp, px, py); self._rec("up", px, py)
+
+    def opt_key(self, keycode):
+        """⌥ + 키 — ⌥ 도 수식키 바뀜으로 눌렀다 뗀다."""
+        F = Quartz.kCGEventFlagMaskAlternate
+        e = Quartz.CGEventCreateKeyboardEvent(None, 58, True); Quartz.CGEventSetType(e, Quartz.kCGEventFlagsChanged); Quartz.CGEventSetFlags(e, F); Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.05)
+        for d in (True, False):
+            k = Quartz.CGEventCreateKeyboardEvent(None, keycode, d); Quartz.CGEventSetFlags(k, F); Quartz.CGEventPost(Quartz.kCGHIDEventTap, k); time.sleep(0.04)
+        e = Quartz.CGEventCreateKeyboardEvent(None, 58, False); Quartz.CGEventSetType(e, Quartz.kCGEventFlagsChanged); Quartz.CGEventSetFlags(e, 0); Quartz.CGEventPost(Quartz.kCGHIDEventTap, e)
+        self._rec("key:%d" % keycode, *self.where())
+
     def hover(self, px, py, dur=0.7, stay=1.5):
         self.move(px, py, dur); self._rec("hover", px, py); time.sleep(stay)
 

@@ -154,7 +154,7 @@
     },
     {
      "text": "Press and hold the chip, and it goes to overlay one.",
-     "pause": 1.8,
+     "pause": 3.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -178,7 +178,7 @@
     },
     {
      "text": "Send another slide to the same overlay, and it replaces the first.",
-     "pause": 2.4,
+     "pause": 4.2,
      "screen": "",
      "action": "",
      "caption": "",

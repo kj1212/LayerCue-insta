@@ -1,0 +1,30 @@
+TITLE
+Running the Slide List: Send, Select, Keys and Layers | LayerCue from Zero, Episode 6
+
+DESCRIPTION
+Run one presentation live: clicking a picture sends, clicking the name only loads it; the arrow keys and Option + arrows; the seven layers; the layer chip (foreground, background, overlays); how overlays replace and stack; the orange on-air trail; the control row; and Lock editing before a show.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12.
+Manual: https://layercue.com/docs/output/layers/
+The narration is AI-generated and the music is built from GarageBand loops. The school, sponsor and media in the demo are fictional.
+
+Chapters
+0:00 Intro
+0:06 Send or select
+0:26 The keys
+0:47 Seven layers
+1:03 The layer chip
+1:26 Overlays
+1:48 Following the orange
+2:00 One layer at a time
+2:20 Lock editing
+2:40 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, layers, overlay, live presentation, keyboard shortcuts, presentation software, event production, show control, Mac, Windows
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep06-en.srt (English), ep06-ko.srt (Korean) and ep06-ja.srt (Japanese) as 'With timing'.

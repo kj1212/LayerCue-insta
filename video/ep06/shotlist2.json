@@ -7,28 +7,646 @@
  "rec_t0": 0.8,
  "segments": {
   "s1": {
-   "events": []
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      1700,
+      1900
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      1206,
+      1125
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.0,
+     "hl": "card2.pic",
+     "color": "hot",
+     "lbl": [
+      "Picture",
+      "send"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      1677,
+      1284
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.7,
+     "hl": "slideset",
+     "lbl": [
+      "Slide settings",
+      "loaded — nothing goes out"
+     ],
+     "lblSide": "below"
+    }
+   ]
   },
   "s2": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.3,
+     "key": [
+      124
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.0,
+     "key": [
+      123
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "optkey": 124
+    },
+    {
+     "line": 3,
+     "at": 1.1,
+     "optkey": 124
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "cap": "⌥ Option / Alt + arrows: move without sending",
+     "capdur": 4.2
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "key": [
+      36
+     ]
+    }
+   ]
   },
   "s3": {
-   "events": []
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "stage",
+     "scale": 1.9,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "col.ov",
+     "lbl": [
+      "1–5",
+      "overlays, on top"
+     ],
+     "lblSide": "right",
+     "dur": 1.3,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 1.4,
+     "hl": "cell.F",
+     "lbl": [
+      "F",
+      "foreground"
+     ],
+     "lblSide": "right",
+     "dur": 1.3,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 2.8,
+     "hl": "cell.B",
+     "lbl": [
+      "B",
+      "background"
+     ],
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
+    }
+   ]
   },
   "s4": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "mouse": [
+      "move",
+      1206,
+      1125
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "hl": "chip2",
+     "lbl": [
+      "Layer chip",
+      "FG shows on hover"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 2,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      918,
+      1035
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.0,
+     "hl": "chip1",
+     "lbl": [
+      "BG",
+      "background"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      735,
+      1125
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.0,
+     "mouse": [
+      "click",
+      1206,
+      1125
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.8,
+     "hl": "cell.B",
+     "lbl": [
+      "B",
+      "the video"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 3,
+     "at": 1.8,
+     "hl": "cell.F"
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "mouse": [
+      "hold",
+      3744,
+      1035,
+      1.0
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.6,
+     "hl": "chip7",
+     "lbl": [
+      "1 Overlay",
+      "press and hold"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 4,
+     "at": 2.8,
+     "mouse": [
+      "hold",
+      918,
+      1371,
+      1.0
+     ]
+    }
+   ]
   },
   "s5": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      3561,
+      1125
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.5,
+     "hl": "cell.1",
+     "lbl": [
+      "1",
+      "school crest"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 2,
+     "at": 0.5,
+     "mouse": [
+      "click",
+      735,
+      1470
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.7,
+     "hl": "cell.1",
+     "lbl": [
+      "1",
+      "replaced by the sponsor"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 2,
+     "at": 3.0,
+     "mouse": [
+      "hold",
+      3273,
+      1035,
+      1.0
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.4,
+     "mouse": [
+      "click",
+      3273,
+      1035
+     ]
+    },
+    {
+     "line": 2,
+     "at": 5.0,
+     "mouse": [
+      "click",
+      3273,
+      1035
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      3090,
+      1125
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.0,
+     "hl": "cell.3",
+     "lbl": [
+      "1 and 3",
+      "both stay up"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 3,
+     "at": 1.0,
+     "hl": "cell.1"
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      918,
+      1035
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.0,
+     "hl": "cell.B",
+     "lbl": [
+      "Still on B",
+      "the chip moved nothing"
+     ],
+     "lblSide": "right"
+    }
+   ]
   },
   "s6": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "card2.pic",
+     "color": "hot",
+     "lbl": [
+      "Card border",
+      "on air"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "hl": "side.prize",
+     "color": "hot",
+     "lbl": [
+      "Sidebar bar",
+      "something is up"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "col.lit",
+     "color": "hot",
+     "lbl": [
+      "Lit cells",
+      "what's on each layer"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "status.title",
+     "color": "hot",
+     "lbl": [
+      "Status bar",
+      "names it"
+     ],
+     "lblSide": "above"
+    }
+   ]
   },
   "s7": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "ctl.row",
+     "lbl": [
+      "Control row",
+      "one layer"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      1305,
+      603
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.9,
+     "hl": "cell.B",
+     "lbl": [
+      "B",
+      "white outline"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      552,
+      816
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      552,
+      816
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "cap": "Stage controls are for now only — they are not saved",
+     "capdur": 3.6
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      638,
+      816
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "hl": "ctl.stop",
+     "color": "hot",
+     "lbl": [
+      "■",
+      "this layer's video only"
+     ],
+     "lblSide": "below"
+    }
+   ]
   },
   "s8": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      1900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.6,
+     "mouse": [
+      "click",
+      3618,
+      2115
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.2,
+     "hl": "lock",
+     "lbl": [
+      "Lock editing",
+      "padlock"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "drag",
+      1677,
+      1125,
+      600,
+      1125
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.3,
+     "hl": "toast",
+     "lbl": [
+      "Locked",
+      "the list can't change"
+     ],
+     "lblSide": "above",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 3.0,
+     "mouse": [
+      "click",
+      2148,
+      1125
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "cap": "The lock doesn't cover the sidebar or Presentation settings",
+     "capdur": 4.0
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      3618,
+      2115
+     ]
+    }
+   ]
   },
   "s9": {
    "noclip": true,

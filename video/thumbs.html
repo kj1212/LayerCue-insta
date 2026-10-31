@@ -68,6 +68,10 @@
   #G .file { position: absolute; left: 760px; top: 100px; width: 150px; height: 110px; border-radius: 10px; background: #2b2b2e; box-shadow: 0 0 0 3px var(--cream), 0 30px 60px rgba(0,0,0,.6); transform: rotate(6deg); display:flex; align-items:center; justify-content:center; font-family: var(--mono); font-size: 22px; letter-spacing:.1em; color: var(--cream); }
   #G .plus { position: absolute; left: 888px; top: 80px; width: 48px; height: 48px; border-radius: 50%; background: #2ecc71; color: #fff; font-size: 40px; font-weight: 700; display:flex; align-items:center; justify-content:center; }
   #G .tg { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 22px; letter-spacing: .16em; padding: 8px 14px; color: #111; }
+  /* H — 레이어 편: 실제 무대 미리보기 + 층 칩 셋(1 · F · B) 이 비스듬히 */
+  #H .stage { position: absolute; left: 600px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 5px var(--hot), 0 40px 90px rgba(0,0,0,.7); }
+  #H .stage img { width: 100%; display: block; }
+  #H .lt { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 24px; letter-spacing: .14em; padding: 8px 14px; color: #111; transform: rotate(-3deg); }
 </style>
 <div id="A" class="t"><div class="grid"></div>
   <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
@@ -118,6 +122,15 @@
   <div class="row"><img class="img"></div>
   <div class="bar"></div><div class="file">.MP4</div><div class="plus">+</div>
   <div class="tg" style="left:640px;top:520px;background:var(--accent-soft)">BETWEEN = ADD</div>
+</div>
+<div id="H" class="t"><div class="grid"></div>
+  <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
+  <div class="ttl" style="left:56px;top:130px;font-size:132px;width:540px"></div>
+  <div class="mic" style="left:60px;top:620px;color:var(--fg2)">send · keys · <b>layers</b></div>
+  <div class="stage"><img class="img"></div>
+  <div class="lt" style="left:1010px;top:110px;background:var(--ov-lit)">1 · OVERLAY</div>
+  <div class="lt" style="left:700px;top:520px;background:var(--fg-lit)">F · FOREGROUND</div>
+  <div class="lt" style="left:930px;top:560px;background:var(--bg-lit)">B · BACKGROUND</div>
 </div>
 <script>
 const Q = new URLSearchParams(location.search);

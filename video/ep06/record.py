@@ -32,6 +32,7 @@ def do(m, a):
         elif op == "jump": m.jump(*xy)
         elif op == "cmdclick": m.cmd_click(*xy)
         elif op == "slowdrag": m.slow_drag(*xy)
+        elif op == "hold": m.hold(*xy)
         elif op == "lg": m.lg_move(xy[0], xy[1], click=False)          # 3편: LG(송출) 위로
         elif op == "lgclick": m.lg_move(xy[0], xy[1], click=True)
     if "mcp" in a:
@@ -47,6 +48,8 @@ def do(m, a):
         subprocess.run(["osascript", "-e", 'tell application "Finder" to set selection to {}'])
     if "finder" in a:                   # 5편: Finder(데모 폴더 창)를 앞으로 — 끌어 넣기 전에
         subprocess.run(["osascript", "-e", 'tell application "Finder" to activate'])
+    if "optkey" in a:
+        m.opt_key(a["optkey"])
     if "key" in a:
         m.key(*a["key"])
     if "sleep" in a:

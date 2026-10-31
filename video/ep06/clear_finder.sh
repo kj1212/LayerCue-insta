@@ -1,9 +1,9 @@
 #!/bin/zsh
-# 데모 창("Summit media")이 아닌 Finder 창을 치운다 — 접고, 안 접히면 LG 화면 쪽으로 옮긴다(닫지는 않는다).
+# 데모 창("Prize media")이 아닌 Finder 창을 치운다 — 접고, 안 접히면 LG 화면 쪽으로 옮긴다(닫지는 않는다).
 # 끌어 놓는 자리에 다른 Finder 창이 있으면 파일이 그 폴더로 옮겨진다(2026-10-31 실제로 youtube/ep01 로 옮겨졌다)
 osascript <<'AS'
 tell application "Finder"
-  repeat with w in (every Finder window whose name is not "Summit media")
+  repeat with w in (every Finder window whose name is not "Prize media")
     try
       set collapsed of w to true
     on error

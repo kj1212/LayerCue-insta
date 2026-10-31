@@ -26,3 +26,12 @@ elif op == "slowdrag":
         m._post(Quartz.kCGEventLeftMouseDragged,x2+(i%2),y2); time.sleep(1/30)
     m._post(Quartz.kCGEventLeftMouseUp,x2,y2)
 elif op == "cmdclick": m.cmd_click(*a)
+elif op == "hold":
+    import Quartz
+    m.move(a[0],a[1],0.5); time.sleep(0.1); m._post(Quartz.kCGEventLeftMouseDown,a[0],a[1]); time.sleep(a[2]); m._post(Quartz.kCGEventLeftMouseUp,a[0],a[1])
+elif op == "optkey":
+    import Quartz
+    e=Quartz.CGEventCreateKeyboardEvent(None,58,True); Quartz.CGEventSetType(e,Quartz.kCGEventFlagsChanged); Quartz.CGEventSetFlags(e,Quartz.kCGEventFlagMaskAlternate); Quartz.CGEventPost(Quartz.kCGHIDEventTap,e); time.sleep(0.05)
+    for d in (True,False):
+        k=Quartz.CGEventCreateKeyboardEvent(None,int(a[0]),d); Quartz.CGEventSetFlags(k,Quartz.kCGEventFlagMaskAlternate); Quartz.CGEventPost(Quartz.kCGHIDEventTap,k); time.sleep(0.04)
+    e=Quartz.CGEventCreateKeyboardEvent(None,58,False); Quartz.CGEventSetType(e,Quartz.kCGEventFlagsChanged); Quartz.CGEventSetFlags(e,0); Quartz.CGEventPost(Quartz.kCGHIDEventTap,e)

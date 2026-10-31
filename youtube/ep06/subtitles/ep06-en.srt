@@ -1,0 +1,136 @@
+1
+00:00:06,400 --> 00:00:10,100
+Welcome back! Today, we run a whole presentation, live.
+
+2
+00:00:10,170 --> 00:00:13,890
+One rule runs the show: a click on the picture is a send.
+
+3
+00:00:14,760 --> 00:00:19,270
+Click the name under it instead, and it only loads into Slide settings.
+
+4
+00:00:20,740 --> 00:00:24,960
+Nothing goes out. So you can set up the next slide while one is live.
+
+5
+00:00:26,980 --> 00:00:31,270
+The right arrow sends the next slide. The left arrow, the one before.
+
+6
+00:00:32,940 --> 00:00:35,390
+Careful: the arrows send as they go.
+
+7
+00:00:35,460 --> 00:00:40,010
+To look without sending, hold Option with the arrows. On Windows, Alt.
+
+8
+00:00:42,080 --> 00:00:44,910
+Then press Return to send the one you've chosen.
+
+9
+00:00:47,530 --> 00:00:50,610
+Everything on stage sits on seven layers.
+
+10
+00:00:50,680 --> 00:00:55,280
+Five overlays on top. Then the foreground, F. Then the background, B.
+
+11
+00:00:56,350 --> 00:00:59,360
+A slide goes to the foreground unless you choose.
+
+12
+00:00:59,430 --> 00:01:02,810
+Where a slide draws nothing, you see the layers below it.
+
+13
+00:01:04,230 --> 00:01:07,100
+The chip at the top right of a card picks the layer.
+
+14
+00:01:07,970 --> 00:01:11,080
+Click it, and the foreground turns into the background.
+
+15
+00:01:12,750 --> 00:01:16,740
+Now the video plays on B, and the text sits on top, on F.
+
+16
+00:01:18,210 --> 00:01:21,660
+Press and hold the chip, and it goes to overlay one.
+
+17
+00:01:26,680 --> 00:01:28,450
+One slide per overlay.
+
+18
+00:01:28,520 --> 00:01:32,890
+Send another slide to the same overlay, and it replaces the first.
+
+19
+00:01:37,160 --> 00:01:40,200
+Different overlays stack. Both stay up together.
+
+20
+00:01:42,270 --> 00:01:45,670
+Changing a chip never moves what's already on stage.
+
+21
+00:01:48,490 --> 00:01:50,120
+Learn the orange trail.
+
+22
+00:01:50,190 --> 00:01:52,770
+The card border. The bar in the sidebar.
+
+23
+00:01:53,840 --> 00:01:55,930
+The lit cells in the layer column.
+
+24
+00:01:56,800 --> 00:01:59,260
+And the status bar names what's on stage.
+
+25
+00:02:00,680 --> 00:02:04,750
+The control row works on one layer: the cell with the white outline.
+
+26
+00:02:05,820 --> 00:02:08,040
+Click another lit cell to switch to it.
+
+27
+00:02:09,510 --> 00:02:13,030
+Pause, speed and volume here are for this moment only.
+
+28
+00:02:14,700 --> 00:02:17,830
+The red square takes down only this layer's video.
+
+29
+00:02:21,050 --> 00:02:24,680
+Before a show, press the pencil. It becomes a padlock.
+
+30
+00:02:26,350 --> 00:02:29,390
+Now the list can't change. Sending still works.
+
+31
+00:02:31,860 --> 00:02:35,770
+The lock doesn't cover the sidebar. Leave it alone during the show.
+
+32
+00:02:35,840 --> 00:02:38,090
+Press the padlock again to unlock.
+
+33
+00:02:40,910 --> 00:02:44,400
+You can now run a presentation live, layers and all.
+
+34
+00:02:44,470 --> 00:02:47,870
+Next time: slide settings, to fit, trim and loop.
+
