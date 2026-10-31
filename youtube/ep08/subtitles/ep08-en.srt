@@ -1,0 +1,92 @@
+1
+00:00:06,400 --> 00:00:10,740
+Welcome back! Today: the settings a whole presentation carries.
+
+2
+00:00:10,810 --> 00:00:15,490
+There are four: Crossfade, Fade out, Auto-dismiss, and Layer for this list.
+
+3
+00:00:15,560 --> 00:00:18,730
+The two circles on the title row open the fades.
+
+4
+00:00:20,200 --> 00:00:22,380
+The stacked sheets open the layer list.
+
+5
+00:00:24,050 --> 00:00:28,930
+They belong to the presentation, so it behaves the same in every cue sheet.
+
+6
+00:00:30,350 --> 00:00:35,700
+Crossfade is how long a slide takes to come in. Fade out is how long it takes to go.
+
+7
+00:00:36,370 --> 00:00:40,550
+Here, the crossfade is two seconds, so the videos overlap slowly.
+
+8
+00:00:44,820 --> 00:00:48,810
+Set fade out to zero, and taking it down is an instant cut.
+
+9
+00:00:52,280 --> 00:00:59,260
+Each slide uses its own presentation's values. So one cue sheet can mix slow videos and snappy words.
+
+10
+00:01:00,680 --> 00:01:02,860
+Auto-dismiss is for overlays.
+
+11
+00:01:04,530 --> 00:01:10,780
+Set it above zero, and this presentation's overlays take themselves down after that many seconds.
+
+12
+00:01:13,450 --> 00:01:16,340
+The clock starts when the overlay actually shows.
+
+13
+00:01:19,410 --> 00:01:22,410
+It does nothing for the foreground or the background.
+
+14
+00:01:26,830 --> 00:01:31,250
+Layer for this list puts every slide of a presentation on one layer.
+
+15
+00:01:33,320 --> 00:01:37,500
+Background, for a folder of loops. An overlay, for lower thirds.
+
+16
+00:01:38,970 --> 00:01:42,770
+A lock chip appears beside the title, and the card chips dim.
+
+17
+00:01:44,440 --> 00:01:48,730
+Per slide releases them, and each slide goes back to its own layer.
+
+18
+00:01:51,950 --> 00:01:56,930
+A new presentation follows the defaults in Settings. Its numbers are dim.
+
+19
+00:01:58,000 --> 00:02:02,930
+Move a slider, and that value becomes its own: solid, with a reset arrow.
+
+20
+00:02:04,400 --> 00:02:10,860
+If you change the defaults, every presentation that follows them changes too, even the one on stage.
+
+21
+00:02:11,930 --> 00:02:15,300
+So set the defaults before the event, not during it.
+
+22
+00:02:19,120 --> 00:02:23,140
+You can now set fades and a fixed layer for each presentation.
+
+23
+00:02:23,210 --> 00:02:25,880
+Next time: text slides, in the editor.
+

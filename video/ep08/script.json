@@ -26,7 +26,7 @@
     },
     {
      "text": "The two circles on the title row open the fades.",
-     "pause": 1.6,
+     "pause": 1.4,
      "screen": "",
      "action": "",
      "caption": "",
@@ -58,7 +58,7 @@
    "lines": [
     {
      "text": "Crossfade is how long a slide takes to come in. Fade out is how long it takes to go.",
-     "pause": 0,
+     "pause": 0.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -66,7 +66,7 @@
     },
     {
      "text": "Here, the crossfade is two seconds, so the videos overlap slowly.",
-     "pause": 2.4,
+     "pause": 4.2,
      "screen": "",
      "action": "",
      "caption": "",
@@ -74,7 +74,7 @@
     },
     {
      "text": "Set fade out to zero, and taking it down is an instant cut.",
-     "pause": 2.4,
+     "pause": 3.4,
      "screen": "",
      "action": "",
      "caption": "",
@@ -98,7 +98,7 @@
    "lines": [
     {
      "text": "Auto-dismiss is for overlays.",
-     "pause": 0,
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -106,7 +106,7 @@
     },
     {
      "text": "Set it above zero, and this presentation's overlays take themselves down after that many seconds.",
-     "pause": 2.0,
+     "pause": 2.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -114,7 +114,7 @@
     },
     {
      "text": "The clock starts when the overlay actually shows.",
-     "pause": 4.0,
+     "pause": 3.0,
      "screen": "",
      "action": "",
      "caption": "",
@@ -122,7 +122,7 @@
     },
     {
      "text": "It does nothing for the foreground or the background.",
-     "pause": 0,
+     "pause": 3.0,
      "screen": "",
      "action": "",
      "caption": "",
@@ -138,7 +138,7 @@
    "lines": [
     {
      "text": "Layer for this list puts every slide of a presentation on one layer.",
-     "pause": 0,
+     "pause": 2.0,
      "screen": "",
      "action": "",
      "caption": "",
@@ -146,7 +146,7 @@
     },
     {
      "text": "Background, for a folder of loops. An overlay, for lower thirds.",
-     "pause": 2.0,
+     "pause": 1.4,
      "screen": "",
      "action": "",
      "caption": "",
@@ -162,7 +162,7 @@
     },
     {
      "text": "Per slide releases them, and each slide goes back to its own layer.",
-     "pause": 1.6,
+     "pause": 1.8,
      "screen": "",
      "action": "",
      "caption": "",
@@ -178,7 +178,7 @@
    "lines": [
     {
      "text": "A new presentation follows the defaults in Settings. Its numbers are dim.",
-     "pause": 1.6,
+     "pause": 1.0,
      "screen": "",
      "action": "",
      "caption": "",
@@ -186,7 +186,7 @@
     },
     {
      "text": "Move a slider, and that value becomes its own: solid, with a reset arrow.",
-     "pause": 1.8,
+     "pause": 1.4,
      "screen": "",
      "action": "",
      "caption": "",
@@ -202,7 +202,7 @@
     },
     {
      "text": "So set the defaults before the event, not during it.",
-     "pause": 0,
+     "pause": 2.4,
      "screen": "",
      "action": "",
      "caption": "",

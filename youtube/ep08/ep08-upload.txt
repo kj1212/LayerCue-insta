@@ -1,0 +1,73 @@
+TITLE
+Presentation Settings: Fades, Auto-dismiss and Layer for This List | LayerCue from Zero, Episode 8
+
+DESCRIPTION
+Set the four values a whole presentation carries: Crossfade and Fade out (how slides come and go), Auto-dismiss (overlays that take themselves down), and Layer for this list (every slide on one layer). Plus the difference between following the defaults in Settings and a presentation's own value.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12.
+Manual: https://layercue.com/docs/library/presentation-settings/
+The narration is AI-generated and the music is built from GarageBand loops. The event, people and media in the demo are fictional.
+
+Chapters
+0:00 Intro
+0:06 Four values
+0:29 Crossfade and fade out
+1:00 Auto-dismiss
+1:26 Layer for this list
+1:51 Defaults or its own
+2:18 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, crossfade, fade out, lower third, overlay, presentation software, event production, Mac, Windows
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep08-en.srt (English), ep08-ko.srt (Korean) and ep08-ja.srt (Japanese) as 'With timing'.
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+Presentation settings: 페이드, 자동 내림, 레이어 고정 | LayerCue 처음부터, 8편
+
+DESCRIPTION
+프레젠테이션 전체에 붙는 네 가지 값을 정해요. Crossfade와 Fade out(슬라이드가 들어오고 나가는 시간), Auto-dismiss(저절로 내려가는 오버레이), Layer for this list(모든 슬라이드를 한 레이어로). 설정의 기본값을 따르는 것과 프레젠테이션 자기 값의 차이도 다뤄요.
+처음이라면 1편 「LayerCue 메인 창」부터 보세요.
+LayerCue 0.9.12로 녹화했어요.
+매뉴얼: https://layercue.com/docs/library/presentation-settings/
+나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물·미디어는 가상이에요.
+
+챕터
+0:00 처음
+0:06 네 가지 값
+0:29 Crossfade와 Fade out
+1:00 Auto-dismiss
+1:26 Layer for this list
+1:51 기본값 또는 자기 값
+2:18 다음 편
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+Presentation settings:フェード・自動で下げる・レイヤー固定 | ゼロから LayerCue 第8回
+
+DESCRIPTION
+プレゼンテーション全体に付く4つの値を設定します。Crossfade と Fade out(スライドの出入りの時間)、Auto-dismiss(自動で下がるオーバーレイ)、Layer for this list(すべてのスライドを1つのレイヤーに)。設定の既定値に従う場合と、プレゼンテーション自身の値の違いも扱います。
+初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。
+LayerCue 0.9.12 で収録しています。
+マニュアル: https://layercue.com/docs/library/presentation-settings/
+ナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物・メディアは架空のものです。
+
+チャプター
+0:00 イントロ
+0:06 4つの値
+0:29 Crossfade と Fade out
+1:00 Auto-dismiss
+1:26 Layer for this list
+1:51 既定値か自分の値か
+2:18 次回

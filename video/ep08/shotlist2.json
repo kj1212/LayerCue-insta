@@ -7,19 +7,539 @@
  "rec_t0": 1.4,
  "segments": {
   "s1": {
-   "events": []
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mcp": [
+      {
+       "op": "openCue",
+       "name": "Summit Day 1"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      200,
+      771
+     ]
+    },
+    {
+     "sleep": 0.6
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 3,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      3753,
+      1247
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.6,
+     "hl": "panel.loop",
+     "lbl": [
+      "Presentation settings",
+      "the fades"
+     ],
+     "lblSide": "left",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      3690,
+      1247
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.0,
+     "hl": "list.loop",
+     "lbl": [
+      "Layer for this list",
+      "one layer"
+     ],
+     "lblSide": "left",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "key": [
+      53
+     ]
+    }
+   ]
   },
   "s2": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      3753,
+      1247
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "hl": "panel.loop",
+     "lbl": [
+      "Crossfade · Fade out",
+      "in and out"
+     ],
+     "lblSide": "left",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "mouse": [
+      "drag",
+      3338,
+      1400,
+      3422,
+      1400
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.8,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.2,
+     "mouse": [
+      "click",
+      650,
+      1410
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.2,
+     "mouse": [
+      "click",
+      1070,
+      1410
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.6,
+     "hl": "stage",
+     "lbl": [
+      "2 s crossfade",
+      "slow overlap"
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      3753,
+      840
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.9,
+     "mouse": [
+      "drag",
+      3338,
+      1083,
+      3264,
+      1083
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.9,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.2,
+     "mouse": [
+      "click",
+      650,
+      970
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.8,
+     "key": [
+      19,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.9,
+     "hl": "stage",
+     "lbl": [
+      "Fade out 0",
+      "an instant cut"
+     ],
+     "lblSide": "right",
+     "dur": 1.6,
+     "exact": true
+    }
+   ]
   },
   "s3": {
-   "events": []
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      3690,
+      1666
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.0,
+     "mouse": [
+      "click",
+      3660,
+      1345
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      3753,
+      1666
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.9,
+     "mouse": [
+      "drag",
+      3282,
+      1446,
+      3306,
+      1446
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.6,
+     "hl": "panel.sponsor",
+     "lbl": [
+      "Auto-dismiss",
+      "8 s"
+     ],
+     "lblSide": "left",
+     "end": {
+      "line": 2,
+      "at": 2.0
+     },
+     "endpad": 0.2
+    },
+    {
+     "line": 2,
+     "at": 2.0,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      650,
+      1802
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "stage",
+     "lbl": [
+      "Overlay 3",
+      "goes by itself after 8 s"
+     ],
+     "lblSide": "right",
+     "dur": 5.0,
+     "exact": true
+    }
+   ]
   },
   "s4": {
-   "events": []
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      3690,
+      1247
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.9,
+     "hl": "list.loop",
+     "lbl": [
+      "Background",
+      "for a folder of loops"
+     ],
+     "lblSide": "left",
+     "end": {
+      "line": 1,
+      "at": 1.6
+     },
+     "endpad": 0.2
+    },
+    {
+     "line": 1,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      3660,
+      1772
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      650,
+      1410
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.4,
+     "hl": "stage",
+     "lbl": [
+      "On B",
+      "every slide here"
+     ],
+     "lblSide": "right"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "lockchip",
+     "lbl": [
+      "Lock chip",
+      "the whole list on B"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      3690,
+      1247
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      3660,
+      1366
+     ]
+    }
+   ]
   },
   "s5": {
-   "events": []
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      3753,
+      840
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.9,
+     "hl": "nums.words",
+     "lbl": [
+      "Dim",
+      "following the defaults"
+     ],
+     "lblSide": "left",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "drag",
+      3338,
+      982,
+      3380,
+      982
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "hl": "panel.words",
+     "lbl": [
+      "Its own value",
+      "solid, with a reset arrow"
+     ],
+     "lblSide": "left",
+     "dur": 3.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "cap": "Settings › Stage › Default fades — changes every presentation that follows them",
+     "capdur": 4.4
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      3742,
+      1319
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "reset.words",
+     "lbl": [
+      "Reset to default",
+      "back to following"
+     ],
+     "lblSide": "left",
+     "dur": 0.9,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 2.2,
+     "key": [
+      53
+     ]
+    }
+   ]
   },
   "s9": {
    "noclip": true,
