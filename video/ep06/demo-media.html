@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="brand.css">
+<style>html,body{margin:0;background:transparent}
+#wash{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;background:#0a0f2a}
+#wash .b{position:absolute;border-radius:50%;filter:blur(120px)}
+.logo{position:absolute;width:300px;height:300px} #crest{left:1560px;top:60px} #mark{left:1560px;top:60px} #full{position:absolute;left:0;top:0;width:1920px;height:1080px}
+</style>
+<div id="wash"><div class="b" id="b1" style="width:1100px;height:900px;background:#3b2bd6;opacity:.75"></div><div class="b" id="b2" style="width:900px;height:800px;background:#d6732b;opacity:.55"></div><div class="b" id="b3" style="width:1000px;height:700px;background:#1fa28a;opacity:.45"></div></div>
+<div id="full"><svg class="logo" id="crest" viewBox="0 0 600 600" style="display:none">
+ <path d="M300 40 L520 110 L520 300 Q520 470 300 560 Q80 470 80 300 L80 110 Z" fill="#14244f" stroke="#e8c45a" stroke-width="18"/>
+ <path d="M300 150 L330 240 L425 240 L348 295 L378 385 L300 330 L222 385 L252 295 L175 240 L270 240 Z" fill="#e8c45a"/>
+ <text x="300" y="470" text-anchor="middle" font-family="Archivo" font-weight="900" font-size="38" fill="#f2eee4" letter-spacing="1">NORTHFIELD</text></svg>
+<svg class="logo" id="mark" viewBox="0 0 600 600" style="display:none">
+ <rect x="40" y="200" width="520" height="200" rx="100" fill="#f2eee4"/>
+ <circle cx="140" cy="300" r="62" fill="#ff4a1a"/>
+ <text x="370" y="327" text-anchor="middle" font-family="Archivo" font-weight="900" font-size="78" fill="#111">LUMEN</text></svg></div>
+<script>
+window.frame=t=>{const T=10,a=2*Math.PI*t/T;
+ const s=(id,x,y)=>{const e=document.getElementById(id);e.style.left=x+'px';e.style.top=y+'px'};
+ s('b1',200+300*Math.cos(a),-100+150*Math.sin(a)); s('b2',900+250*Math.cos(a+2),300+180*Math.sin(a+2)); s('b3',400+300*Math.cos(a+4),500+120*Math.sin(a+4));};
+document.fonts.ready.then(()=>window.__ready=true);
+</script>
