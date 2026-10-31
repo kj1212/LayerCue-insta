@@ -44,3 +44,9 @@ for old in ["LayerCue-from-Zero-Ep01-Meet-LayerCue-The-Main-Window.mp4", "en.srt
             "video.mp4", "thumbnail.jpg", "upload.txt", "SCRIPT.md", "subtitles/en.srt", "subtitles/ko.srt", "subtitles/ja.srt"]:
     (OUT / old).unlink(missing_ok=True)
 print("packaged →", OUT); [print("  ", p.relative_to(OUT)) for p in sorted(OUT.rglob("*")) if p.is_file()]
+# 다른 컴퓨터에서 올리도록 원드라이브에도 같은 꼴로 복사한다(있을 때만)
+OD = pathlib.Path.home() / "OneDrive" / "LayerCue from Zero"
+if OD.parent.exists():
+    import subprocess
+    subprocess.run(["rsync", "-a", "--delete", "--exclude", ".DS_Store", str(OUT), str(OD) + "/"], check=True)
+    print("copied →", OD / OUT.name)
