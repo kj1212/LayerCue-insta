@@ -1,0 +1,222 @@
+{
+ "title": "Designing Slides: Shapes, Pictures, Styles — LayerCue from Zero, Episode 10",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Putting things on",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today, we design a lower third: the name band under a speaker.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The Insert group adds things: text, shapes, icons, pictures, and video.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "From the ribbon, they land in the middle of the slide, already selected.",
+     "pause": 1.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Right-click the canvas instead, and they land where you clicked.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Shapes and icons",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Insert shape offers fourteen shapes. Here's a star.",
+     "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It lands in the middle, ready to move or resize.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Insert icon searches about fifteen hundred icons.",
+     "pause": 3.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "An icon takes its color from the Text color.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "A fading band",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Now the band. Draw a wide rectangle near the bottom.",
+     "pause": 3.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Open Fill, and choose Linear.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Set the right end to No fill, and the band fades to transparent.",
+     "pause": 3.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Radius rounds the corners.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Exact placement",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Place sets the position and size as a percent of the slide.",
+     "pause": 7.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Type the numbers, and the band sits in exactly the same spot on every slide.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then place the name on the band the same way, and bring it to the front.",
+     "pause": 15.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "One style, many slides",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Right-click the name, and choose Copy style.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then right-click another box, and choose Paste style.",
+     "pause": 3.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The look comes along. The words and the position stay.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "In Show mode, select twenty cards, and paste a style onto all of them at once.",
+     "pause": 6.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now design a lower third, and restyle many slides at once.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: music, on its own channel.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

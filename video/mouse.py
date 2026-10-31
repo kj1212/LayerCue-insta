@@ -190,9 +190,13 @@ class M:
         if shift: flags |= Quartz.kCGEventFlagMaskShift
         if alt: flags |= Quartz.kCGEventFlagMaskAlternate
         if cmd: self._cmd(True); time.sleep(0.04)      # ⌘ 는 수식키 바뀜으로 눌렀다 뗀다 — 아니면 앱에 ⌘ 가 눌린 채로 남는다
+        if alt:
+            ea = Quartz.CGEventCreateKeyboardEvent(None, 58, True); Quartz.CGEventSetType(ea, Quartz.kCGEventFlagsChanged); Quartz.CGEventSetFlags(ea, flags); Quartz.CGEventPost(Quartz.kCGHIDEventTap, ea); time.sleep(0.04)
         for down in (True, False):
             e = Quartz.CGEventCreateKeyboardEvent(None, keycode, down)
             if flags: Quartz.CGEventSetFlags(e, flags)
             Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.04)
+        if alt:
+            ea = Quartz.CGEventCreateKeyboardEvent(None, 58, False); Quartz.CGEventSetType(ea, Quartz.kCGEventFlagsChanged); Quartz.CGEventSetFlags(ea, flags & ~Quartz.kCGEventFlagMaskAlternate); Quartz.CGEventPost(Quartz.kCGHIDEventTap, ea); time.sleep(0.04)
         if cmd: self._cmd(False); time.sleep(0.04)
         self._rec("key:%d" % keycode, *self.where())

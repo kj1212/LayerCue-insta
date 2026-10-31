@@ -1,0 +1,834 @@
+{
+ "_note": "10편 연출표 — LG 녹화, 편집기 확대.",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.4,
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      2400,
+      1950
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.6,
+     "mouse": [
+      "dbl",
+      640,
+      1135
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "insert",
+     "lbl": [
+      "Insert",
+      "text · shape · icon · picture · video"
+     ],
+     "lblSide": "below",
+     "dur": 3.2,
+     "exact": true
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2400,
+      1950
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      1083,
+      168
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.9,
+     "hl": "shapes",
+     "lbl": [
+      "14 shapes",
+      "Insert shape"
+     ],
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      1044,
+      340
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      1149,
+      168
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.8,
+     "type": "microphone"
+    },
+    {
+     "line": 3,
+     "at": 2.0,
+     "mouse": [
+      "click",
+      888,
+      332
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.8,
+     "hl": "iconpick",
+     "lbl": [
+      "Insert icon",
+      "search 1,500+"
+     ],
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 1.6,
+     "key": [
+      6,
+      true
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.0,
+     "key": [
+      6,
+      true
+     ]
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2400,
+      1950
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.6,
+     "mouse": [
+      "click",
+      776,
+      168
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.4,
+     "mouse": [
+      "drag",
+      1100,
+      1530,
+      2700,
+      1720
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "zoom": "fillpop",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1150
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      1515,
+      168
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.0,
+     "mouse": [
+      "click",
+      1494,
+      253
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      1560,
+      535
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.8,
+     "mouse": [
+      "click",
+      1753,
+      342
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      1293,
+      1068
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.6,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.8,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 3.2,
+     "hl": "band0",
+     "lbl": [
+      "Fades to transparent",
+      "Linear fill"
+     ],
+     "lblSide": "above",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1944,
+      168
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.7,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.8999999999999999,
+     "type": "1"
+    },
+    {
+     "line": 4,
+     "at": 1.3,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.0,
+     "key": [
+      53
+     ]
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2400,
+      1950
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "place",
+     "scale": 1.7,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1715,
+      244
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.0,
+     "mouse": [
+      "click",
+      1590,
+      410
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.5,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.7,
+     "type": "5"
+    },
+    {
+     "line": 1,
+     "at": 2.1,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      1872,
+      410
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.1,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.3,
+     "type": "78"
+    },
+    {
+     "line": 1,
+     "at": 3.7,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.2,
+     "mouse": [
+      "click",
+      1590,
+      514
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.7,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.9,
+     "type": "60"
+    },
+    {
+     "line": 1,
+     "at": 5.300000000000001,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 1,
+     "at": 5.8,
+     "mouse": [
+      "click",
+      1872,
+      514
+     ]
+    },
+    {
+     "line": 1,
+     "at": 6.3,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 1,
+     "at": 6.5,
+     "type": "12"
+    },
+    {
+     "line": 1,
+     "at": 6.9,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.2,
+     "hl": "place",
+     "lbl": [
+      "Place",
+      "X · Y · W · H in %"
+     ],
+     "lblSide": "right",
+     "dur": 4.0,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "rest": true
+    },
+    {
+     "line": 2,
+     "at": 0.6,
+     "hl": "band",
+     "lbl": [
+      "5 · 78 · 60 · 12",
+      "the same on every slide"
+     ],
+     "lblSide": "above",
+     "dur": 3.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      2118,
+      1250
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.0,
+     "mouse": [
+      "click",
+      1715,
+      244
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.8,
+     "mouse": [
+      "click",
+      1590,
+      410
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.3,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.5,
+     "type": "7"
+    },
+    {
+     "line": 3,
+     "at": 2.9000000000000004,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.4,
+     "mouse": [
+      "click",
+      1872,
+      410
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.9,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 4.1,
+     "type": "79"
+    },
+    {
+     "line": 3,
+     "at": 4.5,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 3,
+     "at": 5.0,
+     "mouse": [
+      "click",
+      1590,
+      514
+     ]
+    },
+    {
+     "line": 3,
+     "at": 5.5,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 5.7,
+     "type": "55"
+    },
+    {
+     "line": 3,
+     "at": 6.1,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 3,
+     "at": 6.6,
+     "mouse": [
+      "click",
+      1872,
+      514
+     ]
+    },
+    {
+     "line": 3,
+     "at": 7.1,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 7.3,
+     "type": "10"
+    },
+    {
+     "line": 3,
+     "at": 7.699999999999999,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 3,
+     "at": 8.4,
+     "mouse": [
+      "click",
+      1682,
+      617
+     ]
+    },
+    {
+     "line": 3,
+     "at": 9.2,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 3,
+     "at": 9.6,
+     "mouse": [
+      "click",
+      516,
+      396
+     ]
+    },
+    {
+     "line": 3,
+     "at": 10.4,
+     "mouse": [
+      "click",
+      1200,
+      321
+     ]
+    },
+    {
+     "line": 3,
+     "at": 11.2,
+     "mouse": [
+      "click",
+      1050,
+      321
+     ]
+    },
+    {
+     "line": 3,
+     "at": 11.7,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 11.899999999999999,
+     "type": "7"
+    },
+    {
+     "line": 3,
+     "at": 12.299999999999999,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 3,
+     "at": 13.4,
+     "hl": "name",
+     "lbl": [
+      "A lower third",
+      "band + name"
+     ],
+     "lblSide": "above",
+     "dur": 2.4,
+     "exact": true
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mouse": [
+      "click",
+      2400,
+      1950
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      2400,
+      1950
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.3,
+     "mouse": [
+      "rclick",
+      1500,
+      1689
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.9,
+     "hl": "menu1",
+     "lbl": [
+      "Copy style",
+      "right-click the name"
+     ],
+     "lblSide": "right",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 1.8,
+     "mouse": [
+      "click",
+      1620,
+      1802
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      189,
+      528
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "mouse": [
+      "rclick",
+      2118,
+      1329
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.8,
+     "hl": "menu2",
+     "lbl": [
+      "Paste style",
+      "on another box"
+     ],
+     "lblSide": "left",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 2.8,
+     "mouse": [
+      "click",
+      2238,
+      1817
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "cap": "Paste style brings the look — not the words, not the position",
+     "capdur": 3.4
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      105,
+      2121
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.4,
+     "mouse": [
+      "click",
+      1480,
+      1135
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.6,
+     "mouse": [
+      "rclick",
+      1488,
+      993
+     ]
+    },
+    {
+     "line": 4,
+     "at": 3.4,
+     "mouse": [
+      "click",
+      1610,
+      1548
+     ]
+    },
+    {
+     "line": 4,
+     "at": 3.8,
+     "hl": "cards",
+     "lbl": [
+      "Paste style",
+      "onto every selected card"
+     ],
+     "lblSide": "below",
+     "dur": 2.8,
+     "exact": true
+    }
+   ]
+  },
+  "s9": {
+   "noclip": true,
+   "events": []
+  }
+ }
+}

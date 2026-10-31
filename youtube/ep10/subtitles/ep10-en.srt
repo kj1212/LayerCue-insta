@@ -1,0 +1,84 @@
+1
+00:00:06,400 --> 00:00:11,360
+Welcome back! Today, we design a lower third: the name band under a speaker.
+
+2
+00:00:11,430 --> 00:00:16,580
+The Insert group adds things: text, shapes, icons, pictures, and video.
+
+3
+00:00:18,250 --> 00:00:22,320
+From the ribbon, they land in the middle of the slide, already selected.
+
+4
+00:00:24,190 --> 00:00:27,930
+Right-click the canvas instead, and they land where you clicked.
+
+5
+00:00:31,750 --> 00:00:35,210
+Insert shape offers fourteen shapes. Here's a star.
+
+6
+00:00:37,880 --> 00:00:41,110
+It lands in the middle, ready to move or resize.
+
+7
+00:00:42,180 --> 00:00:45,680
+Insert icon searches about fifteen hundred icons.
+
+8
+00:00:49,150 --> 00:00:52,050
+An icon takes its color from the Text color.
+
+9
+00:00:55,870 --> 00:00:59,310
+Now the band. Draw a wide rectangle near the bottom.
+
+10
+00:01:02,380 --> 00:01:04,530
+Open Fill, and choose Linear.
+
+11
+00:01:06,600 --> 00:01:10,620
+Set the right end to No fill, and the band fades to transparent.
+
+12
+00:01:14,090 --> 00:01:16,080
+Radius rounds the corners.
+
+13
+00:01:19,900 --> 00:01:23,710
+Place sets the position and size as a percent of the slide.
+
+14
+00:01:31,280 --> 00:01:36,220
+Type the numbers, and the band sits in exactly the same spot on every slide.
+
+15
+00:01:37,290 --> 00:01:41,270
+Then place the name on the band the same way, and bring it to the front.
+
+16
+00:01:57,690 --> 00:02:00,570
+Right-click the name, and choose Copy style.
+
+17
+00:02:02,640 --> 00:02:05,920
+Then right-click another box, and choose Paste style.
+
+18
+00:02:09,590 --> 00:02:12,950
+The look comes along. The words and the position stay.
+
+19
+00:02:14,220 --> 00:02:19,230
+In Show mode, select twenty cards, and paste a style onto all of them at once.
+
+20
+00:02:26,650 --> 00:02:31,000
+You can now design a lower third, and restyle many slides at once.
+
+21
+00:02:31,070 --> 00:02:33,720
+Next time: music, on its own channel.
+

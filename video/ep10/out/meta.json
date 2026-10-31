@@ -1,0 +1,36 @@
+{
+ "title": "Designing Slides: Shapes, Pictures, Styles | LayerCue from Zero, Episode 10",
+ "description": "Design a lower third in the LayerCue editor: the Insert group, shapes and Change shape, icons, a band that fades to transparent with a Linear fill, exact placement with Place, and passing one style to many boxes and slides with Copy style and Paste style.\nNew here? Start with Episode 1: Meet LayerCue — The Main Window.\nRecorded on LayerCue 0.9.12.\nManual: https://layercue.com/docs/slides/design/\nThe narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional.",
+ "tags": [
+  "LayerCue",
+  "LayerCue tutorial",
+  "lower third",
+  "slide design",
+  "gradient",
+  "presentation software",
+  "event production",
+  "Mac",
+  "Windows"
+ ],
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "슬라이드 디자인: 도형, 그림, 스타일 | LayerCue 처음부터, 10편",
+ "title_ja": "スライドのデザイン:図形・画像・スタイル | ゼロから LayerCue 第10回",
+ "description_ko": "LayerCue 편집기에서 로어서드를 디자인해요. Insert 그룹, 도형과 Change shape, 아이콘, Linear 채우기로 투명하게 사라지는 띠, Place로 정확한 위치 잡기, Copy style·Paste style로 여러 상자와 슬라이드에 스타일 한 번에 입히기를 다뤄요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요.\n매뉴얼: https://layercue.com/docs/slides/design/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요.",
+ "description_ja": "LayerCue のエディターでローワーサードをデザインします。Insert グループ、図形と Change shape、アイコン、Linear の塗りで透明にフェードする帯、Place による正確な配置、Copy style・Paste style で多くの箱やスライドにスタイルを一度に適用する方法を扱います。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。\nマニュアル: https://layercue.com/docs/slides/design/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。",
+ "chapters_ko": [
+  "넣기",
+  "도형과 아이콘",
+  "사라지는 띠",
+  "정확한 위치",
+  "한 스타일을 여러 슬라이드에",
+  "다음 편"
+ ],
+ "chapters_ja": [
+  "入れる",
+  "図形とアイコン",
+  "フェードする帯",
+  "正確な配置",
+  "1つのスタイルを多くのスライドに",
+  "次回"
+ ]
+}

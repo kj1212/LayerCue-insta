@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- 2판 그래픽 조각 — render_parts.mjs 가 종류마다 값을 바꿔 가며 찍는다(투명 PNG). 크기는 4K 화면 기준 px. -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  body { width: 3840px; font-family: var(--disp); }      /* .frame 밖이라 글꼴을 물려받지 못해 대체 글꼴로 찍혔다 */
+  .wrap { display: inline-block; padding: 24px; }          /* 그림자 자리 */
+  /* 이름표 — 홈페이지 버튼처럼 크림색 네모 */
+  #lbl .box { display: inline-flex; flex-direction: column; background: var(--cream); color: var(--void); padding: 24px 36px 26px; box-shadow: 0 18px 50px rgba(0,0,0,.55); }
+  #lbl .t { display: flex; align-items: center; gap: 18px; font-weight: 800; font-stretch: 88%; font-size: 60px; text-transform: uppercase; letter-spacing: .03em; line-height: 1; white-space: nowrap; }
+  #lbl .t i { display: none; width: 26px; height: 26px; }
+  #lbl .s { font-family: var(--mono); font-size: 36px; margin-top: 14px; color: #3C3A35; letter-spacing: .01em; white-space: nowrap; }
+  /* 자막 */
+  #cap .box { display: inline-flex; align-items: center; gap: 28px; padding: 22px 46px 24px 38px; background: rgba(11,11,13,.86); border: 2px solid var(--hair); white-space: nowrap; }
+  #cap .sq { width: 22px; height: 22px; background: var(--accent-soft); flex: none; }
+  #cap .x { font-weight: 600; font-size: 64px; letter-spacing: -.01em; color: var(--cream); }
+  #cap .k { font-family: var(--mono); font-weight: 500; font-size: 44px; padding: 6px 18px; border: 2px solid var(--rule); border-radius: 10px; color: var(--cream); }
+  /* 대사 자막 — 아래 가운데, 차분하게 */
+  #sub .box { display: inline-block; padding: 14px 34px 16px; background: rgba(11,11,13,.82); white-space: nowrap; }
+  #sub .x { font-weight: 600; font-size: 56px; letter-spacing: -.005em; color: var(--cream); }
+  /* 챕터 태그 */
+  #tag .box { display: inline-flex; align-items: center; gap: 30px; }
+  #tag .n { font-family: var(--mono); font-weight: 500; font-size: 42px; letter-spacing: .1em; color: var(--void); background: var(--cream); padding: 10px 18px 8px; }
+  #tag .t { font-weight: 700; font-stretch: 88%; font-size: 64px; text-transform: uppercase; letter-spacing: -.005em; color: var(--cream); white-space: nowrap; text-shadow: 0 4px 24px rgba(0,0,0,.6); }
+  /* 진행 막대 */
+  #prog .box { display: inline-flex; gap: 12px; padding: 8px 0; }
+  #prog .box i { display: block; width: 84px; height: 9px; background: rgba(242,238,228,.18); }
+  #prog .box i.done { background: var(--fg2); } #prog .box i.now { background: var(--cream); }
+</style>
+<div id="lbl" class="wrap"><div class="box"><div class="t"><i></i><span></span></div><div class="s"></div></div></div>
+<div id="cap" class="wrap"><div class="box"><span class="sq"></span><span class="x"></span><span class="k"></span></div></div>
+<div id="sub" class="wrap"><div class="box"><span class="x"></span></div></div>
+<div id="tag" class="wrap"><div class="box"><span class="n"></span><span class="t"></span></div></div>
+<div id="prog" class="wrap"><div class="box"></div></div>
+<script>
+  const C = { amber: 'var(--bg-lit)', indigo: 'var(--fg-lit)', green: 'var(--ov-lit)', hot: 'var(--hot)', white: 'var(--cream)' };
+  window.setLbl = (t, s, color) => {
+    const i = document.querySelector('#lbl .t i'); i.style.display = color ? 'block' : 'none'; if (color) i.style.background = C[color];
+    document.querySelector('#lbl .t span').textContent = t;
+    const ss = document.querySelector('#lbl .s'); ss.textContent = s || ''; ss.style.display = s ? '' : 'none';
+  };
+  window.setCap = (x, k, color) => {
+    document.querySelector('#cap .x').textContent = x;
+    const kk = document.querySelector('#cap .k'); kk.textContent = k || ''; kk.style.display = k ? '' : 'none';
+    document.querySelector('#cap .sq').style.background = C[color] || 'var(--accent-soft)';
+  };
+  window.setSub = x => { document.querySelector('#sub .x').textContent = x; };
+  window.setTag = (n, t) => { document.querySelector('#tag .n').textContent = n; document.querySelector('#tag .t').textContent = t; };
+  window.setProg = (k, n) => { document.querySelector('#prog .box').innerHTML = Array.from({ length: n }, (_, i) => `<i class="${i < k ? 'done' : i === k ? 'now' : ''}"></i>`).join(''); };
+</script>
