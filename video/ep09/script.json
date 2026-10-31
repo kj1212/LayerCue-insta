@@ -1,0 +1,286 @@
+{
+ "title": "Text Slides in the Editor — LayerCue from Zero, Episode 9",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Opening the editor",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today, we make text slides in the editor.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Open it with Edit on the switch at the bottom left, or the pencil on a title bar.",
+     "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "There's no Save button. Whatever you change is saved, however you leave.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Show to come back.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "The editor window",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Slides run down the left. New Slide adds one at the end.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Across the top is the ribbon, in four rows.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Row three is everything about letters. Row four: align, outline, shadow and fit.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Hover any button to see its name.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Typing",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Add text box puts a box in the middle of the slide.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Type straight away. Escape ends typing.",
+     "pause": 3.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A text slide names itself from its first line.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Font and size",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Search for a font by any part of its name.",
+     "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Font size is a percent of the screen's height, so it looks the same in HD and 4K.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Drag a number's label to change it. Hold Shift for bigger steps.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Readable on any photo",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Now, put a photo behind the words. Import image or video, in the Background row.",
+     "pause": 2.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "White text over a bright sky almost disappears.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Outline. The group turns blue, and the words stand out.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Text shadow works the same way.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "White with a black outline reads on a bright sky and a dark stage alike.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "When text doesn't fit",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "When text doesn't fit its box, a small blue plus appears under it.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press it to make the box bigger, or to shrink the text to fit.",
+     "pause": 2.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Look for this badge in rehearsal.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "chapter": "Sending from the editor",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Show on output sends the slide you're editing.",
+     "pause": 1.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "While it's on stage, your edits follow, live.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Fix a typo, and the audience sees the fix at once.",
+     "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now make a text slide that reads over any photo.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: designing slides, with shapes, pictures and styles.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

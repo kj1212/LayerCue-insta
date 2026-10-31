@@ -1,0 +1,41 @@
+{
+ "title": "Text Slides in the Editor | LayerCue from Zero, Episode 9",
+ "description": "Make text slides in the LayerCue editor: opening and leaving it (no Save button), the left column and the four-row ribbon, adding and typing in a text box, finding a font and setting its size, making white text readable over a bright photo with Outline and Text shadow, what to do when text doesn't fit, and sending from the editor while your edits follow live.\nNew here? Start with Episode 1: Meet LayerCue — The Main Window.\nRecorded on LayerCue 0.9.12.\nManual: https://layercue.com/docs/slides/text/\nThe narration is AI-generated and the music is built from GarageBand loops. The choir and photo in the demo are fictional.",
+ "tags": [
+  "LayerCue",
+  "LayerCue tutorial",
+  "text slides",
+  "lyrics slides",
+  "slide editor",
+  "text outline",
+  "presentation software",
+  "event production",
+  "Mac",
+  "Windows"
+ ],
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "편집기에서 텍스트 슬라이드 만들기 | LayerCue 처음부터, 9편",
+ "title_ja": "エディターでテキストスライドを作る | ゼロから LayerCue 第9回",
+ "description_ko": "LayerCue 편집기에서 텍스트 슬라이드를 만들어요. 열고 나가는 법(저장 버튼 없음), 왼쪽 슬라이드 열과 네 줄 리본, 텍스트 상자 넣고 입력하기, 글꼴 찾기와 크기, Outline과 Text shadow로 밝은 사진 위 흰 글자를 읽히게 하기, 글자가 넘칠 때, 편집기에서 송출하고 실시간으로 고치기를 다뤄요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요.\n매뉴얼: https://layercue.com/docs/slides/text/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 합창단·사진은 가상이에요.",
+ "description_ja": "LayerCue のエディターでテキストスライドを作ります。開き方と抜け方(保存ボタンなし)、左のスライド列と4段のリボン、テキストボックスの追加と入力、フォントの検索と大きさ、Outline と Text shadow で明るい写真の上の白い文字を読みやすくする方法、文字があふれたとき、エディターから送出して本番中に直す方法を扱います。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。\nマニュアル: https://layercue.com/docs/slides/text/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモの合唱団・写真は架空のものです。",
+ "chapters_ko": [
+  "편집기 열기",
+  "편집기 화면",
+  "입력하기",
+  "글꼴과 크기",
+  "어떤 사진 위에서도",
+  "글자가 넘칠 때",
+  "편집기에서 송출",
+  "다음 편"
+ ],
+ "chapters_ja": [
+  "エディターを開く",
+  "エディターの画面",
+  "入力する",
+  "フォントと大きさ",
+  "どんな写真の上でも",
+  "文字があふれたら",
+  "エディターから送出",
+  "次回"
+ ]
+}

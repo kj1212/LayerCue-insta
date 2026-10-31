@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><style>html,body{margin:0}
+#p{width:1920px;height:1080px;position:relative;overflow:hidden;background:linear-gradient(#bfe3ff 0%,#eaf6ff 45%,#fff6e3 70%,#f3d9b0 100%)}
+.sun{position:absolute;left:1300px;top:90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(#fffbe8,#ffe9a8 60%,transparent 70%)}
+.cl{position:absolute;border-radius:200px;background:#fff;opacity:.9}
+.row{position:absolute;left:0;right:0;height:120px}
+.h{position:absolute;border-radius:50% 50% 30% 30%}
+</style><div id="p"><div class="sun"></div>
+<div class="cl" style="left:200px;top:160px;width:520px;height:120px"></div><div class="cl" style="left:420px;top:110px;width:300px;height:120px"></div>
+<div class="cl" style="left:1500px;top:330px;width:380px;height:90px"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:420px;background:linear-gradient(#f7e2c0,#e5c38f)"></div>
+<div id="choir"></div></div>
+<script>let s='';const C=['#2a3f75','#7a2f45','#2f6a52','#5a4a8a','#9a6a2a'];for(let r=0;r<3;r++)for(let i=0;i<16;i++){const x=110+i*108+(r%2)*54,y=600+r*130,w=88;s+=`<div class="h" style="left:${x+18}px;top:${y}px;width:52px;height:62px;background:#e9c6a3"></div><div class="h" style="left:${x}px;top:${y+56}px;width:${w}px;height:140px;background:${C[(i+r)%5]}"></div>`}document.getElementById('choir').innerHTML=s;</script>
