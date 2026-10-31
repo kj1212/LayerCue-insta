@@ -80,6 +80,10 @@
   #J .panel { position: absolute; left: 640px; top: 140px; width: 560px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 3px var(--accent-soft), 0 40px 90px rgba(0,0,0,.7); }
   #J .panel img { width: 100%; display: block; }
   #J .lock { position: absolute; left: 700px; top: 540px; transform: rotate(-3deg); background: var(--bg-lit); color: #111; font-family: var(--disp); font-weight: 800; font-size: 34px; padding: 10px 22px; border-radius: 8px; }
+  /* K — 텍스트 편: 밝은 사진 위 외곽선 글자(실제 캔버스) + Outline 칩 */
+  #K .cv { position: absolute; left: 610px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 3px var(--cream), 0 40px 90px rgba(0,0,0,.7); }
+  #K .cv img { width: 100%; display: block; }
+  #K .ol { position: absolute; left: 660px; top: 530px; transform: rotate(-3deg); background: var(--accent-soft); color: #111; font-family: var(--mono); font-weight: 500; font-size: 26px; letter-spacing: .14em; padding: 10px 18px; }
 </style>
 <div id="A" class="t"><div class="grid"></div>
   <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
@@ -154,6 +158,13 @@
   <div class="mic" style="left:60px;top:620px;color:var(--fg2)">crossfade · fade out · <b>one layer</b></div>
   <div class="panel"><img class="img"></div>
   <div class="lock">🔒 Background</div>
+</div>
+<div id="K" class="t"><div class="grid"></div>
+  <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
+  <div class="ttl" style="left:56px;top:130px;font-size:132px;width:540px"></div>
+  <div class="mic" style="left:60px;top:620px;color:var(--fg2)">font · outline · <b>fit</b></div>
+  <div class="cv"><img class="img"></div>
+  <div class="ol">OUTLINE ON</div>
 </div>
 <script>
 const Q = new URLSearchParams(location.search);

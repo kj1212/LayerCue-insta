@@ -1,0 +1,79 @@
+TITLE
+Text Slides in the Editor | LayerCue from Zero, Episode 9
+
+DESCRIPTION
+Make text slides in the LayerCue editor: opening and leaving it (no Save button), the left column and the four-row ribbon, adding and typing in a text box, finding a font and setting its size, making white text readable over a bright photo with Outline and Text shadow, what to do when text doesn't fit, and sending from the editor while your edits follow live.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12.
+Manual: https://layercue.com/docs/slides/text/
+The narration is AI-generated and the music is built from GarageBand loops. The choir and photo in the demo are fictional.
+
+Chapters
+0:00 Intro
+0:06 Opening the editor
+0:26 The editor window
+0:46 Typing
+1:01 Font and size
+1:20 Readable on any photo
+1:48 When text doesn't fit
+2:03 Sending from the editor
+2:19 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, text slides, lyrics slides, slide editor, text outline, presentation software, event production, Mac, Windows
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep09-en.srt (English), ep09-ko.srt (Korean) and ep09-ja.srt (Japanese) as 'With timing'.
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+편집기에서 텍스트 슬라이드 만들기 | LayerCue 처음부터, 9편
+
+DESCRIPTION
+LayerCue 편집기에서 텍스트 슬라이드를 만들어요. 열고 나가는 법(저장 버튼 없음), 왼쪽 슬라이드 열과 네 줄 리본, 텍스트 상자 넣고 입력하기, 글꼴 찾기와 크기, Outline과 Text shadow로 밝은 사진 위 흰 글자를 읽히게 하기, 글자가 넘칠 때, 편집기에서 송출하고 실시간으로 고치기를 다뤄요.
+처음이라면 1편 「LayerCue 메인 창」부터 보세요.
+LayerCue 0.9.12로 녹화했어요.
+매뉴얼: https://layercue.com/docs/slides/text/
+나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 합창단·사진은 가상이에요.
+
+챕터
+0:00 처음
+0:06 편집기 열기
+0:26 편집기 화면
+0:46 입력하기
+1:01 글꼴과 크기
+1:20 어떤 사진 위에서도
+1:48 글자가 넘칠 때
+2:03 편집기에서 송출
+2:19 다음 편
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+エディターでテキストスライドを作る | ゼロから LayerCue 第9回
+
+DESCRIPTION
+LayerCue のエディターでテキストスライドを作ります。開き方と抜け方(保存ボタンなし)、左のスライド列と4段のリボン、テキストボックスの追加と入力、フォントの検索と大きさ、Outline と Text shadow で明るい写真の上の白い文字を読みやすくする方法、文字があふれたとき、エディターから送出して本番中に直す方法を扱います。
+初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。
+LayerCue 0.9.12 で収録しています。
+マニュアル: https://layercue.com/docs/slides/text/
+ナレーションは AI 音声、音楽は GarageBand のループで作っています。デモの合唱団・写真は架空のものです。
+
+チャプター
+0:00 イントロ
+0:06 エディターを開く
+0:26 エディターの画面
+0:46 入力する
+1:01 フォントと大きさ
+1:20 どんな写真の上でも
+1:48 文字があふれたら
+2:03 エディターから送出
+2:19 次回

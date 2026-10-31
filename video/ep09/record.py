@@ -42,6 +42,8 @@ def do(m, a):
     if "front" in a:                    # LayerCue(촬영용) 창을 맨 앞으로 — 다른 앱이 맥북 화면을 덮고 있을 수 있다
         subprocess.run(["osascript", "-e", 'tell application "System Events" to set frontmost of (first process whose unix id is %s) to true' %
                         subprocess.run(["pgrep", "-f", "LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue( |$)"], capture_output=True, text=True).stdout.split()[0]])
+    if "clip_img" in a:                 # 9편: 사진을 클립보드에(Paste background 용)
+        subprocess.run(["osascript", "-e", 'set the clipboard to (read (POSIX file "%s") as JPEG picture)' % str(HERE / a["clip_img"])])
     if "clip" in a:                     # 5편: 붙여넣을 글을 클립보드에
         subprocess.run(["pbcopy"], input=a["clip"].encode())
     if "fclear" in a:                   # Finder 선택을 비운다 — 남은 선택이 있으면 여러 파일이 함께 끌려갔다

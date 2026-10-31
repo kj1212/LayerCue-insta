@@ -13,8 +13,7 @@ osascript <<'AS'
 tell application "Finder"
   set w to (first Finder window whose name is "Choir media")
   set arrangement of icon view options of w to not arranged
-  set position of item "stage-wash.mp4" of w to {70, 60}
-  set position of item "keynote-intro.mp4" of w to {180, 60}
+  set position of item "choir-stage.jpg" of w to {70, 60}
   select {}
 end tell
 AS

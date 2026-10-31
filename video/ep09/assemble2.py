@@ -72,6 +72,7 @@ def takes():
             if "fclear" in ev: acts.append({"t": t, "fclear": 1})
             if "optkey" in ev: acts.append({"t": t, "optkey": ev["optkey"]})
             if "clip" in ev: acts.append({"t": t, "clip": ev["clip"]})
+            if "clip_img" in ev: acts.append({"t": t, "clip_img": ev["clip_img"]})
         setup = [{"front": 1}] + [({"mouse": conv_mouse(a["mouse"])} if "mouse" in a else a) for a in sl.get("setup", [])]     # 3편: 창을 먼저 맨 앞으로
         take = {"name": seg["id"], "sec": round(seg["end"] - seg["start"] + PRE + 1.5, 1), "setup": setup, "actions": acts}
         json.dump(take, open(HERE / "take2" / f"{seg['id']}.json", "w"), indent=1, ensure_ascii=False)

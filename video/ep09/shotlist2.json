@@ -7,25 +7,580 @@
  "rec_t0": 1.4,
  "segments": {
   "s1": {
-   "events": []
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      640,
+      1135
+     ]
+    },
+    {
+     "sleep": 0.6
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "switch",
+     "lbl": [
+      "Show / Edit",
+      "the switch"
+     ],
+     "lblSide": "above",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 2.6,
+     "hl": "pencil",
+     "lbl": [
+      "Pencil",
+      "on the title bar"
+     ],
+     "lblSide": "below",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      288,
+      2121
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.6,
+     "cap": "No Save button — everything is saved as you go",
+     "capdur": 3.6
+    }
+   ]
   },
   "s2": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "leftcol",
+     "lbl": [
+      "Slides",
+      "down the left"
+     ],
+     "lblSide": "right",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 2.2,
+     "mouse": [
+      "click",
+      132,
+      1977
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "zoom": "ribbon",
+     "scale": 1.7,
+     "center": [
+      1920,
+      800
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "hl": "ribbon",
+     "lbl": [
+      "Ribbon",
+      "four rows"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "row3",
+     "lbl": [
+      "Row 3",
+      "letters"
+     ],
+     "lblSide": "below",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 2.4,
+     "hl": "row4",
+     "lbl": [
+      "Row 4",
+      "align · outline · shadow · fit"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 1.6,
+     "rest": true
+    }
+   ]
   },
   "s3": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1014,
+      168
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "addtext",
+     "lbl": [
+      "Add text box",
+      "in the middle"
+     ],
+     "lblSide": "below",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "type": "Welcome to our Spring Concret"
+    },
+    {
+     "line": 2,
+     "at": 3.0,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "slide2",
+     "lbl": [
+      "Named",
+      "from its first line"
+     ],
+     "lblSide": "right",
+     "dur": 2.8,
+     "exact": true
+    }
+   ]
   },
   "s4": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "font",
+     "scale": 2.0,
+     "center": [
+      1920,
+      900
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      600,
+      321
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.0,
+     "type": "Archivo"
+    },
+    {
+     "line": 1,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      560,
+      516
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "hl": "font",
+     "lbl": [
+      "Font",
+      "search by name"
+     ],
+     "lblSide": "below",
+     "dur": 3.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "drag",
+      975,
+      321,
+      1060,
+      321
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "hl": "size",
+     "lbl": [
+      "Font size",
+      "% of screen height"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 3.0,
+     "rest": true
+    }
+   ]
   },
   "s5": {
-   "events": []
+   "setup": [
+    {
+     "clip_img": "media/Choir media/choir-stage.jpg"
+    },
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "bgrow",
+     "lbl": [
+      "Background row",
+      "a photo behind the words"
+     ],
+     "lblSide": "above",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 2.0,
+     "mouse": [
+      "click",
+      699,
+      2031
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "hl": "box",
+     "lbl": [
+      "White on a bright sky",
+      "hard to read"
+     ],
+     "lblSide": "below",
+     "dur": 2.8,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "zoom": "outline",
+     "scale": 1.4,
+     "center": [
+      1920,
+      700
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      1470,
+      396
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.6,
+     "hl": "outline",
+     "lbl": [
+      "Outline",
+      "on — the group turns blue"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      1700,
+      396
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.6,
+     "hl": "shadow",
+     "lbl": [
+      "Text shadow",
+      "the same way"
+     ],
+     "lblSide": "below",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 5,
+     "at": 0.2,
+     "hl": "box",
+     "lbl": [
+      "Readable",
+      "on any photo"
+     ],
+     "lblSide": "below",
+     "dur": 3.0,
+     "exact": true
+    }
+   ]
   },
   "s6": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "badge",
+     "lbl": [
+      "+",
+      "text is hidden"
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      2118,
+      1374
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.0,
+     "hl": "badgemenu",
+     "lbl": [
+      "Expand · Shrink",
+      "pick one"
+     ],
+     "lblSide": "right",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      2380,
+      1494
+     ]
+    }
+   ]
   },
   "s7": {
-   "events": []
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      1700,
+      2040
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      200,
+      97
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.0,
+     "hl": "showout",
+     "lbl": [
+      "Show on output",
+      "sends this slide"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "zoom": "box",
+     "scale": 1.5,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.2,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      2135,
+      1050
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.8,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.1,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.25,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.4,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.6,
+     "type": "ert"
+    },
+    {
+     "line": 3,
+     "at": 2.6,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.9,
+     "cap": "While it's on stage, the output follows every edit",
+     "capdur": 2.4
+    }
+   ]
   },
   "s9": {
    "noclip": true,

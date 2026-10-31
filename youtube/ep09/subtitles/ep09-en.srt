@@ -1,0 +1,108 @@
+1
+00:00:06,400 --> 00:00:09,730
+Welcome back! Today, we make text slides in the editor.
+
+2
+00:00:09,800 --> 00:00:14,740
+Open it with Edit on the switch at the bottom left, or the pencil on a title bar.
+
+3
+00:00:17,410 --> 00:00:21,760
+There's no Save button. Whatever you change is saved, however you leave.
+
+4
+00:00:21,830 --> 00:00:23,420
+Press Show to come back.
+
+5
+00:00:26,440 --> 00:00:30,310
+Slides run down the left. New Slide adds one at the end.
+
+6
+00:00:31,980 --> 00:00:34,990
+Across the top is the ribbon, in four rows.
+
+7
+00:00:36,060 --> 00:00:41,780
+Row three is everything about letters. Row four: align, outline, shadow and fit.
+
+8
+00:00:43,250 --> 00:00:45,420
+Hover any button to see its name.
+
+9
+00:00:46,840 --> 00:00:49,950
+Add text box puts a box in the middle of the slide.
+
+10
+00:00:51,220 --> 00:00:54,020
+Type straight away. Escape ends typing.
+
+11
+00:00:57,090 --> 00:00:59,940
+A text slide names itself from its first line.
+
+12
+00:01:02,360 --> 00:01:05,040
+Search for a font by any part of its name.
+
+13
+00:01:07,710 --> 00:01:13,130
+Font size is a percent of the screen's height, so it looks the same in HD and 4K.
+
+14
+00:01:13,200 --> 00:01:17,270
+Drag a number's label to change it. Hold Shift for bigger steps.
+
+15
+00:01:21,090 --> 00:01:26,690
+Now, put a photo behind the words. Import image or video, in the Background row.
+
+16
+00:01:29,560 --> 00:01:32,730
+White text over a bright sky almost disappears.
+
+17
+00:01:33,800 --> 00:01:37,630
+Press Outline. The group turns blue, and the words stand out.
+
+18
+00:01:39,300 --> 00:01:41,350
+Text shadow works the same way.
+
+19
+00:01:43,020 --> 00:01:47,490
+White with a black outline reads on a bright sky and a dark stage alike.
+
+20
+00:01:48,910 --> 00:01:53,050
+When text doesn't fit its box, a small blue plus appears under it.
+
+21
+00:01:54,720 --> 00:01:58,470
+Press it to make the box bigger, or to shrink the text to fit.
+
+22
+00:02:00,740 --> 00:02:02,740
+Look for this badge in rehearsal.
+
+23
+00:02:04,160 --> 00:02:06,970
+Show on output sends the slide you're editing.
+
+24
+00:02:08,840 --> 00:02:11,650
+While it's on stage, your edits follow, live.
+
+25
+00:02:12,720 --> 00:02:16,170
+Fix a typo, and the audience sees the fix at once.
+
+26
+00:02:20,190 --> 00:02:23,860
+You can now make a text slide that reads over any photo.
+
+27
+00:02:23,930 --> 00:02:27,950
+Next time: designing slides, with shapes, pictures and styles.
+
