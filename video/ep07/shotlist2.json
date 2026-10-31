@@ -255,7 +255,140 @@
     },
     {
      "line": 4,
-     "at": 1.0,
+     "at": 0.0,
+     "hl": "anchor",
+     "lbl": [
+      "Anchor",
+      "Fit: where it sits"
+     ],
+     "lblSide": "above"
+    },
+    {
+     "line": 5,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      2337,
+      1640
+     ]
+    },
+    {
+     "line": 5,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      2496,
+      1640
+     ]
+    },
+    {
+     "line": 5,
+     "at": 1.2,
+     "hl": "sheet.result",
+     "lbl": [
+      "Left",
+      "the picture moves left"
+     ],
+     "lblSide": "above",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 3.6,
+     "hl": "sheet.result",
+     "lbl": [
+      "Right",
+      "the picture moves right"
+     ],
+     "lblSide": "above",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      1866,
+      1569
+     ]
+    },
+    {
+     "line": 6,
+     "at": 1.4,
+     "mouse": [
+      "click",
+      2415,
+      1560
+     ]
+    },
+    {
+     "line": 6,
+     "at": 3.4,
+     "mouse": [
+      "click",
+      2415,
+      1720
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.9,
+     "hl": "scale.sheet",
+     "lbl": [
+      "Fill",
+      "fills the shape"
+     ],
+     "lblSide": "above",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 6,
+     "at": 2.3,
+     "hl": "sheet.result",
+     "lbl": [
+      "Top",
+      "keeps the face"
+     ],
+     "lblSide": "above",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 6,
+     "at": 4.3,
+     "hl": "sheet.result",
+     "lbl": [
+      "Bottom",
+      "keeps the lower part"
+     ],
+     "lblSide": "above",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 7,
+     "at": 0.6,
+     "mouse": [
+      "click",
+      2415,
+      1640
+     ]
+    },
+    {
+     "line": 7,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      2091,
+      1569
+     ]
+    },
+    {
+     "line": 7,
+     "at": 2.2,
      "mouse": [
       "click",
       2556,

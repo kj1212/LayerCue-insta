@@ -47,66 +47,78 @@ Drag the handles to choose the part you want to keep.
 The Result shows what the audience will see.
 
 13
-00:01:09,090 --> 00:01:12,880
-Every change is saved at once. Done just closes the sheet.
+00:01:09,090 --> 00:01:14,150
+With Fit, the Anchor decides where the picture sits, and where the empty space goes.
 
 14
-00:01:15,500 --> 00:01:19,670
-This video starts with two seconds of black, and ends with credits.
+00:01:15,420 --> 00:01:20,380
+Pick the left, and the picture moves to the left. Pick the right, and it moves right.
 
 15
-00:01:19,740 --> 00:01:23,020
-Move the bar to where it should start, and press In point.
+00:01:23,050 --> 00:01:27,090
+With Fill, the Anchor decides which side is kept, and which is cut.
 
 16
-00:01:25,490 --> 00:01:28,480
-Move it to where it should end, and press Out point.
+00:01:30,560 --> 00:01:34,350
+Every change is saved at once. Done just closes the sheet.
 
 17
-00:01:30,950 --> 00:01:34,280
-Now a click on the card plays only the part in between.
+00:01:36,970 --> 00:01:41,140
+This video starts with two seconds of black, and ends with credits.
 
 18
-00:01:38,300 --> 00:01:41,070
-The speed chip here is saved with the slide.
+00:01:41,210 --> 00:01:44,490
+Move the bar to where it should start, and press In point.
 
 19
-00:01:42,740 --> 00:01:46,460
-The one in the control row looks the same, but it isn't saved.
+00:01:46,960 --> 00:01:49,950
+Move it to where it should end, and press Out point.
 
 20
-00:01:46,530 --> 00:01:49,350
-The repeat button chooses Loop or Play once.
+00:01:52,420 --> 00:01:55,750
+Now a click on the card plays only the part in between.
 
 21
-00:01:53,170 --> 00:01:56,770
-The purple bar is the slide's own volume, and it's saved.
+00:01:59,770 --> 00:02:02,540
+The speed chip here is saved with the slide.
 
 22
-00:01:58,440 --> 00:02:01,810
-When the slide goes out, its layer starts at that level.
+00:02:04,210 --> 00:02:07,930
+The one in the control row looks the same, but it isn't saved.
 
 23
-00:02:03,880 --> 00:02:07,920
-On the background, a slide starts silent. That's on purpose.
+00:02:08,000 --> 00:02:10,820
+The repeat button chooses Loop or Play once.
 
 24
-00:02:11,740 --> 00:02:14,850
-To Screen puts the slide on stage without playing it.
+00:02:14,640 --> 00:02:18,240
+The purple bar is the slide's own volume, and it's saved.
 
 25
-00:02:16,520 --> 00:02:19,000
-It holds on the frame where the bar stands.
+00:02:19,910 --> 00:02:23,280
+When the slide goes out, its layer starts at that level.
 
 26
-00:02:19,870 --> 00:02:23,110
-Then start it on cue, with play in the control row.
+00:02:25,350 --> 00:02:29,390
+On the background, a slide starts silent. That's on purpose.
 
 27
-00:02:27,130 --> 00:02:29,790
-You can now fix a slide before it goes out.
+00:02:33,210 --> 00:02:36,320
+To Screen puts the slide on stage without playing it.
 
 28
-00:02:29,860 --> 00:02:33,640
+00:02:37,990 --> 00:02:40,470
+It holds on the frame where the bar stands.
+
+29
+00:02:41,340 --> 00:02:44,580
+Then start it on cue, with play in the control row.
+
+30
+00:02:48,600 --> 00:02:51,260
+You can now fix a slide before it goes out.
+
+31
+00:02:51,330 --> 00:02:55,110
 Next time: presentation settings, for fades and timing.
 

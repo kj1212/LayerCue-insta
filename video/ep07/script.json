@@ -130,7 +130,7 @@
     },
     {
      "text": "Pick the left, and the picture moves to the left. Pick the right, and it moves right.",
-     "pause": 2.8,
+     "pause": 2.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -138,7 +138,7 @@
     },
     {
      "text": "With Fill, the Anchor decides which side is kept, and which is cut.",
-     "pause": 1.0,
+     "pause": 3.4,
      "screen": "",
      "action": "",
      "caption": "",

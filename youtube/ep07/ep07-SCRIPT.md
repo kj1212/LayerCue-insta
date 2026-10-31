@@ -32,6 +32,12 @@
   손잡이를 끌어 남길 부분을 고르세요.
 - The Result shows what the audience will see.  
   Result가 관객이 보게 될 모습을 보여 줘요.
+- With Fit, the Anchor decides where the picture sits, and where the empty space goes.  
+  Fit일 때 Anchor는 그림이 놓일 자리와 빈 공간이 갈 쪽을 정해요.
+- Pick the left, and the picture moves to the left. Pick the right, and it moves right.  
+  왼쪽을 고르면 그림이 왼쪽으로, 오른쪽을 고르면 오른쪽으로 가요.
+- With Fill, the Anchor decides which side is kept, and which is cut.  
+  Fill일 때 Anchor는 어느 쪽을 남기고 어느 쪽을 자를지 정해요.
 - Every change is saved at once. Done just closes the sheet.  
   바꾸는 즉시 저장돼요. Done은 창을 닫기만 해요.
 

@@ -13,11 +13,11 @@ Chapters
 0:06 Two places
 0:30 Scale
 0:54 Crop and fit
-1:15 In and out points
-1:37 Speed and repeat
-1:52 Slide volume
-2:11 To Screen
-2:26 What's next
+1:36 In and out points
+1:59 Speed and repeat
+2:14 Slide volume
+2:32 To Screen
+2:48 What's next
 
 TAGS
 LayerCue, LayerCue tutorial, slide settings, crop, trim video, in point, out point, vertical video, presentation software, event production, Mac, Windows
@@ -47,11 +47,11 @@ LayerCue 0.9.12로 녹화했어요.
 0:06 두 군데
 0:30 Scale
 0:54 Crop & fit
-1:15 In/Out 지점
-1:37 속도와 반복
-1:52 슬라이드 볼륨
-2:11 To Screen
-2:26 다음 편
+1:36 In/Out 지점
+1:59 속도와 반복
+2:14 슬라이드 볼륨
+2:32 To Screen
+2:48 다음 편
 
 ========================================
 日本語 (JAPANESE)
@@ -72,8 +72,8 @@ LayerCue 0.9.12 で収録しています。
 0:06 2つの場所
 0:30 Scale
 0:54 Crop & fit
-1:15 In/Out ポイント
-1:37 速度とリピート
-1:52 スライド音量
-2:11 To Screen
-2:26 次回
+1:36 In/Out ポイント
+1:59 速度とリピート
+2:14 スライド音量
+2:32 To Screen
+2:48 次回
