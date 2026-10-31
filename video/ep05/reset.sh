@@ -19,6 +19,7 @@ tell application "Finder"
   set position of item "summit-hall.jpg" of w to {400, 60}
   set position of item "walk-on.mp3" of w to {510, 60}
   set position of item "keynote-intro.mp4" of w to {70, 180}
+  set position of item "The Main Window.mp4" of w to {180, 180}
   select {}
 end tell
 AS

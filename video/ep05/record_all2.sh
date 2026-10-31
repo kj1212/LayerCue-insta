@@ -8,6 +8,6 @@ export MOUSE_WIN="60,110,1680,919" REC_DEV="2:none" REC_CROP="3360:1838:120:220"
 note() { osascript -e "display notification \"$2\" with title \"LayerCue 녹화\" subtitle \"$1\" sound name \"$3\"" 2>/dev/null; }
 SEGS=("$@"); [ $# -eq 0 ] && SEGS=(s2 s3 s4 s5 s6 s7)
 note "● 곧 녹화 시작" "8 초 뒤 시작해요. 끝날 때까지 마우스·키보드를 건드리지 마세요 (${#SEGS} 구간)" "Submarine"
-sleep 8     # 알림 배너가 맥북 화면(녹화되는 창 위)에서 사라질 때까지
+ep05/clear_finder.sh; sleep 8     # 알림 배너가 맥북 화면(녹화되는 창 위)에서 사라질 때까지
 for s in $SEGS; do echo "── $s"; ep05/record.py ep05/take2/$s.json || { echo "FAILED $s"; exit 1; }; sleep 1.5; done
 python3 lc.py run_commands '{"commands":[{"op":"clear","layer":"all"}]}' >/dev/null; echo "all done"; note "■ 녹화 끝" "이제 마우스를 써도 됩니다" "Glass"

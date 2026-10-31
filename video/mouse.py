@@ -79,15 +79,23 @@ class M:
         time.sleep(hold)
         self._post(Quartz.kCGEventLeftMouseUp, px, py); self._rec("up", px, py)
 
+    @staticmethod
+    def _cmd(down):
+        """⌘ 를 누르고/뗀다 — 키 이벤트가 아니라 수식키 바뀜(FlagsChanged)으로 보낸다.
+        (키 이벤트로 보냈더니 앱이 ⌘ 를 뗀 줄 몰라, 그 뒤 모든 클릭이 ⌘클릭이 되어 송출 대신 선택만 됐다)"""
+        e = Quartz.CGEventCreateKeyboardEvent(None, 55, down)
+        Quartz.CGEventSetType(e, Quartz.kCGEventFlagsChanged)
+        Quartz.CGEventSetFlags(e, Quartz.kCGEventFlagMaskCommand if down else 0)
+        Quartz.CGEventPost(Quartz.kCGHIDEventTap, e)
+
     def cmd_click(self, px, py, dur=0.6):
-        """⌘ 를 누른 채 클릭(여러 장 고르기) — ⌘ 키를 실제로 눌렀다 뗀다(마우스 이벤트 플래그만으로는 Qt 가 못 읽었다)."""
+        """⌘ 를 누른 채 클릭(여러 장 고르기)."""
         self.move(px, py, dur); time.sleep(0.1)
-        F = Quartz.kCGEventFlagMaskCommand
-        k = Quartz.CGEventCreateKeyboardEvent(None, 55, True); Quartz.CGEventSetFlags(k, F); Quartz.CGEventPost(Quartz.kCGHIDEventTap, k); time.sleep(0.06)
+        self._cmd(True); time.sleep(0.06)
         for kind in (Quartz.kCGEventLeftMouseDown, Quartz.kCGEventLeftMouseUp):
             e = Quartz.CGEventCreateMouseEvent(None, kind, self.g(px, py), Quartz.kCGMouseButtonLeft)
-            Quartz.CGEventSetFlags(e, F); Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.08)
-        k = Quartz.CGEventCreateKeyboardEvent(None, 55, False); Quartz.CGEventSetFlags(k, 0); Quartz.CGEventPost(Quartz.kCGHIDEventTap, k)
+            Quartz.CGEventSetFlags(e, Quartz.kCGEventFlagMaskCommand); Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.08)
+        self._cmd(False); time.sleep(0.05)
         self._rec("down", px, py)
 
     def double_click(self, px, py, dur=0.7):
@@ -113,6 +121,7 @@ class M:
             s = i / n; s = 0.5 - 0.5 * math.cos(math.pi * s)
             self._post(Quartz.kCGEventLeftMouseDragged, x1 + (x2 - x1) * s, y1 + (y2 - y1) * s); time.sleep(dur / n)
         time.sleep(0.15); self._post(Quartz.kCGEventLeftMouseUp, x2, y2); self._rec("up", x2, y2)
+
 
     def slow_drag(self, x1, y1, x2, y2, hold=1.2, dur=1.0, fps=120):
         """끌어서 목표 위에 hold 초 머문 뒤 놓는다(카드 한가운데 교체 · Copy 배지를 보여 줄 때)."""
@@ -165,8 +174,10 @@ class M:
         if cmd: flags |= Quartz.kCGEventFlagMaskCommand
         if shift: flags |= Quartz.kCGEventFlagMaskShift
         if alt: flags |= Quartz.kCGEventFlagMaskAlternate
+        if cmd: self._cmd(True); time.sleep(0.04)      # ⌘ 는 수식키 바뀜으로 눌렀다 뗀다 — 아니면 앱에 ⌘ 가 눌린 채로 남는다
         for down in (True, False):
             e = Quartz.CGEventCreateKeyboardEvent(None, keycode, down)
             if flags: Quartz.CGEventSetFlags(e, flags)
             Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.04)
+        if cmd: self._cmd(False); time.sleep(0.04)
         self._rec("key:%d" % keycode, *self.where())

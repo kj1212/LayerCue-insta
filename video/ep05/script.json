@@ -145,7 +145,7 @@
      "keys": ""
     },
     {
-     "text": "To put it back, drop the right file on it again. Command Z undoes it too.",
+     "text": "Command Z puts it back. On Windows, Control Z.",
      "pause": 1.6,
      "screen": "",
      "action": "",
@@ -204,7 +204,7 @@
   },
   {
    "id": "s5",
-   "chapter": "Reading a card",
+   "chapter": "Reading and clicking a card",
    "start": 0,
    "end": 0,
    "lines": [
@@ -233,8 +233,32 @@
      "keys": ""
     },
     {
+     "text": "Click a video once, and it plays on the screen.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
      "text": "An orange border means it's on the screen now.",
      "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Click it again, and nothing changes. It keeps playing, on purpose.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Double-click it, and it starts again from the very beginning.",
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",

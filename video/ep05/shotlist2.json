@@ -113,8 +113,8 @@
      "at": 1.1,
      "mouse": [
       "drag",
-      2484,
-      1734,
+      2762,
+      1740,
       1500,
       1080
      ]
@@ -252,32 +252,27 @@
      "lblSide": "below"
     },
     {
-     "line": 5,
-     "at": -0.25,
-     "finder": 1
-    },
-    {
-     "line": 5,
-     "at": 0.0,
-     "fclear": 1
-    },
-    {
-     "line": 5,
-     "at": 0.9,
-     "mouse": [
-      "slowdrag",
-      3312,
-      1470,
-      1206,
-      1125,
-      1.0
-     ]
-    },
-    {
      "line": 6,
      "at": 0.0,
      "cap": "Between cards → add   ·   middle of a card → replace   ·   ⌘Z / Ctrl+Z undoes",
      "capdur": 4.0
+    },
+    {
+     "line": 5,
+     "at": -0.2,
+     "mouse": [
+      "click",
+      1700,
+      1700
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.5,
+     "key": [
+      6,
+      true
+     ]
     }
    ]
   },
@@ -323,6 +318,14 @@
   },
   "s5": {
    "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
     {
      "mouse": [
       "click",
@@ -381,7 +384,7 @@
     {
      "line": 3,
      "at": 0.0,
-     "hl": "card4.time",
+     "hl": "card1.time",
      "lbl": [
       "Run time",
       "bottom right"
@@ -390,21 +393,16 @@
     },
     {
      "line": 4,
-     "at": 0.0,
-     "mcp": [
-      {
-       "op": "usePt",
-       "name": "Opening keynote"
-      },
-      {
-       "op": "present",
-       "n": 1
-      }
+     "at": 0.3,
+     "mouse": [
+      "click",
+      735,
+      1125
      ]
     },
     {
-     "line": 4,
-     "at": 0.6,
+     "line": 5,
+     "at": 0.0,
      "hl": "card1",
      "color": "hot",
      "lbl": [
@@ -414,7 +412,36 @@
      "lblSide": "below"
     },
     {
-     "line": 5,
+     "line": 6,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      735,
+      1125
+     ]
+    },
+    {
+     "line": 7,
+     "at": 0.4,
+     "mouse": [
+      "dbl",
+      735,
+      1125
+     ]
+    },
+    {
+     "line": 7,
+     "at": 0.6,
+     "hl": "card1",
+     "color": "hot",
+     "lbl": [
+      "Double-click",
+      "from the beginning"
+     ],
+     "lblSide": "below"
+    },
+    {
+     "line": 8,
      "at": 0.0,
      "mouse": [
       "cmdclick",
@@ -423,7 +450,7 @@
      ]
     },
     {
-     "line": 5,
+     "line": 8,
      "at": 0.4,
      "hl": "card2",
      "lbl": [

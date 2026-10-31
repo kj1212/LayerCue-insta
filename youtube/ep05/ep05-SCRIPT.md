@@ -38,8 +38,8 @@
   놓으면 그 슬라이드의 그림이 바뀌어요.
 - Handy on purpose. Alarming by accident.  
   일부러 하면 편하고, 실수로 하면 놀라요.
-- To put it back, drop the right file on it again. Command Z undoes it too.  
-  되돌리려면 맞는 파일을 다시 그 위에 놓으세요. Command Z로도 되돌려요.
+- Command Z puts it back. On Windows, Control Z.  
+  Command Z로 되돌려요. Windows에서는 Control Z예요.
 - Between cards adds. The middle of a card replaces.  
   카드 사이는 추가, 카드 한가운데는 교체예요.
 
@@ -54,7 +54,7 @@
 - Paste a YouTube address, and you get a YouTube slide. That's Episode 13.  
   유튜브 주소를 붙여 넣으면 유튜브 슬라이드가 돼요. 13편에서 다뤄요.
 
-## Reading a card
+## Reading and clicking a card
 
 - Now, read a card.  
   이제 카드를 읽어 봐요.
@@ -62,8 +62,14 @@
   왼쪽 위는 번호, 오른쪽 위는 레이어 칩이에요.
 - Bottom right, how long it runs.  
   오른쪽 아래는 재생 길이예요.
+- Click a video once, and it plays on the screen.  
+  영상을 한 번 클릭하면 화면에 재생돼요.
 - An orange border means it's on the screen now.  
   주황 테두리는 지금 화면에 나가 있다는 뜻이에요.
+- Click it again, and nothing changes. It keeps playing, on purpose.  
+  한 번 더 클릭해도 아무 변화가 없어요. 일부러 그대로 재생돼요.
+- Double-click it, and it starts again from the very beginning.  
+  더블클릭하면 처음부터 다시 재생돼요.
 - Indigo means it's only selected.  
   남색은 선택만 된 거예요.
 

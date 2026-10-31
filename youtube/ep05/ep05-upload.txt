@@ -13,11 +13,11 @@ Chapters
 0:06 What a slide is
 0:27 Adding files
 0:55 Add or replace
-1:21 Pasting text
-1:40 Reading a card
-1:55 Arranging
-2:17 Deleting and card size
-2:39 What's next
+1:20 Pasting text
+1:39 Reading and clicking a card
+2:08 Arranging
+2:30 Deleting and card size
+2:52 What's next
 
 TAGS
 LayerCue, LayerCue tutorial, add slides, drag and drop, media playback, presentation software, event production, slide list, Mac, Windows, beginner tutorial

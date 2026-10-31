@@ -59,94 +59,106 @@ Drop it, and it swaps that slide's picture.
 Handy on purpose. Alarming by accident.
 
 16
-00:01:10,770 --> 00:01:15,600
-To put it back, drop the right file on it again. Command Z undoes it too.
+00:01:10,770 --> 00:01:14,180
+Command Z puts it back. On Windows, Control Z.
 
 17
-00:01:17,270 --> 00:01:20,750
+00:01:15,850 --> 00:01:19,330
 Between cards adds. The middle of a card replaces.
 
 18
-00:01:22,170 --> 00:01:23,610
+00:01:20,750 --> 00:01:22,190
 Paste works too.
 
 19
-00:01:23,680 --> 00:01:27,130
+00:01:22,260 --> 00:01:25,710
 Copy some text, select a card, and press Command V.
 
 20
-00:01:29,600 --> 00:01:33,770
+00:01:28,180 --> 00:01:32,350
 It splits at blank lines into text slides, right after that card.
 
 21
-00:01:35,040 --> 00:01:39,970
+00:01:33,620 --> 00:01:38,550
 Paste a YouTube address, and you get a YouTube slide. That's Episode 13.
 
 22
-00:01:41,390 --> 00:01:42,830
+00:01:39,970 --> 00:01:41,410
 Now, read a card.
 
 23
-00:01:42,900 --> 00:01:46,080
+00:01:41,480 --> 00:01:44,660
 Top left, its number. Top right, the layer chip.
 
 24
-00:01:46,750 --> 00:01:48,910
+00:01:45,330 --> 00:01:47,490
 Bottom right, how long it runs.
 
 25
-00:01:48,980 --> 00:01:51,770
-An orange border means it's on the screen now.
+00:01:47,560 --> 00:01:50,440
+Click a video once, and it plays on the screen.
 
 26
-00:01:52,440 --> 00:01:54,640
-Indigo means it's only selected.
+00:01:51,510 --> 00:01:54,300
+An orange border means it's on the screen now.
 
 27
-00:01:56,060 --> 00:01:58,130
-Drag a card to change the order.
+00:01:54,970 --> 00:01:59,010
+Click it again, and nothing changes. It keeps playing, on purpose.
 
 28
-00:01:59,800 --> 00:02:01,740
-Command click selects several.
+00:02:00,480 --> 00:02:03,800
+Double-click it, and it starts again from the very beginning.
 
 29
-00:02:03,210 --> 00:02:07,030
-Drag them onto another presentation, and they're copied there.
+00:02:05,470 --> 00:02:07,670
+Indigo means it's only selected.
 
 30
-00:02:09,100 --> 00:02:12,050
-Hold Option as you let go to move them instead.
+00:02:09,090 --> 00:02:11,160
+Drag a card to change the order.
 
 31
-00:02:12,120 --> 00:02:14,750
-Command D duplicates the selection.
+00:02:12,830 --> 00:02:14,770
+Command click selects several.
 
 32
-00:02:17,570 --> 00:02:21,210
-The Delete key removes only the slides. The files stay.
+00:02:16,240 --> 00:02:20,060
+Drag them onto another presentation, and they're copied there.
 
 33
-00:02:22,680 --> 00:02:24,490
-A notice offers Undo.
+00:02:22,130 --> 00:02:25,080
+Hold Option as you let go to move them instead.
 
 34
-00:02:25,560 --> 00:02:30,510
-LayerCue asks first only when a slide is on air, or ten or more go at once.
+00:02:25,150 --> 00:02:27,780
+Command D duplicates the selection.
 
 35
-00:02:30,580 --> 00:02:33,800
-The slider in the status bar sets the card size.
+00:02:30,600 --> 00:02:34,240
+The Delete key removes only the slides. The files stay.
 
 36
-00:02:35,870 --> 00:02:38,280
-Bigger cards mean fewer wrong clicks.
+00:02:35,710 --> 00:02:37,520
+A notice offers Undo.
 
 37
-00:02:39,700 --> 00:02:42,730
-You can now fill a presentation with real media.
+00:02:38,590 --> 00:02:43,540
+LayerCue asks first only when a slide is on air, or ten or more go at once.
 
 38
-00:02:42,800 --> 00:02:46,390
+00:02:43,610 --> 00:02:46,830
+The slider in the status bar sets the card size.
+
+39
+00:02:48,900 --> 00:02:51,310
+Bigger cards mean fewer wrong clicks.
+
+40
+00:02:52,730 --> 00:02:55,760
+You can now fill a presentation with real media.
+
+41
+00:02:55,830 --> 00:02:59,420
 Next time: running the slide list, with keys and layers.
 
