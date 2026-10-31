@@ -1,0 +1,29 @@
+{
+ "_note": "8편 연출표 — LG 녹화.",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.4,
+ "segments": {
+  "s1": {
+   "events": []
+  },
+  "s2": {
+   "events": []
+  },
+  "s3": {
+   "events": []
+  },
+  "s4": {
+   "events": []
+  },
+  "s5": {
+   "events": []
+  },
+  "s9": {
+   "noclip": true,
+   "events": []
+  }
+ }
+}

@@ -1,0 +1,238 @@
+{
+ "title": "Presentation Settings: Fades, Auto-dismiss and Layer for This List — LayerCue from Zero, Episode 8",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Four values",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today: the settings a whole presentation carries.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "There are four: Crossfade, Fade out, Auto-dismiss, and Layer for this list.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The two circles on the title row open the fades.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The stacked sheets open the layer list.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "They belong to the presentation, so it behaves the same in every cue sheet.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Crossfade and fade out",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Crossfade is how long a slide takes to come in. Fade out is how long it takes to go.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Here, the crossfade is two seconds, so the videos overlap slowly.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Set fade out to zero, and taking it down is an instant cut.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Each slide uses its own presentation's values. So one cue sheet can mix slow videos and snappy words.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Auto-dismiss",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Auto-dismiss is for overlays.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Set it above zero, and this presentation's overlays take themselves down after that many seconds.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The clock starts when the overlay actually shows.",
+     "pause": 4.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It does nothing for the foreground or the background.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Layer for this list",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Layer for this list puts every slide of a presentation on one layer.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Background, for a folder of loops. An overlay, for lower thirds.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A lock chip appears beside the title, and the card chips dim.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Per slide releases them, and each slide goes back to its own layer.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Defaults or its own",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "A new presentation follows the defaults in Settings. Its numbers are dim.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Move a slider, and that value becomes its own: solid, with a reset arrow.",
+     "pause": 1.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "If you change the defaults, every presentation that follows them changes too, even the one on stage.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "So set the defaults before the event, not during it.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now set fades and a fixed layer for each presentation.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: text slides, in the editor.",
+     "pause": 0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

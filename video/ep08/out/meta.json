@@ -1,0 +1,37 @@
+{
+ "title": "Presentation Settings: Fades, Auto-dismiss and Layer for This List | LayerCue from Zero, Episode 8",
+ "description": "Set the four values a whole presentation carries: Crossfade and Fade out (how slides come and go), Auto-dismiss (overlays that take themselves down), and Layer for this list (every slide on one layer). Plus the difference between following the defaults in Settings and a presentation's own value.\nNew here? Start with Episode 1: Meet LayerCue — The Main Window.\nRecorded on LayerCue 0.9.12.\nManual: https://layercue.com/docs/library/presentation-settings/\nThe narration is AI-generated and the music is built from GarageBand loops. The event, people and media in the demo are fictional.",
+ "tags": [
+  "LayerCue",
+  "LayerCue tutorial",
+  "crossfade",
+  "fade out",
+  "lower third",
+  "overlay",
+  "presentation software",
+  "event production",
+  "Mac",
+  "Windows"
+ ],
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "Presentation settings: 페이드, 자동 내림, 레이어 고정 | LayerCue 처음부터, 8편",
+ "title_ja": "Presentation settings:フェード・自動で下げる・レイヤー固定 | ゼロから LayerCue 第8回",
+ "description_ko": "프레젠테이션 전체에 붙는 네 가지 값을 정해요. Crossfade와 Fade out(슬라이드가 들어오고 나가는 시간), Auto-dismiss(저절로 내려가는 오버레이), Layer for this list(모든 슬라이드를 한 레이어로). 설정의 기본값을 따르는 것과 프레젠테이션 자기 값의 차이도 다뤄요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요.\n매뉴얼: https://layercue.com/docs/library/presentation-settings/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물·미디어는 가상이에요.",
+ "description_ja": "プレゼンテーション全体に付く4つの値を設定します。Crossfade と Fade out(スライドの出入りの時間)、Auto-dismiss(自動で下がるオーバーレイ)、Layer for this list(すべてのスライドを1つのレイヤーに)。設定の既定値に従う場合と、プレゼンテーション自身の値の違いも扱います。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。\nマニュアル: https://layercue.com/docs/library/presentation-settings/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物・メディアは架空のものです。",
+ "chapters_ko": [
+  "네 가지 값",
+  "Crossfade와 Fade out",
+  "Auto-dismiss",
+  "Layer for this list",
+  "기본값 또는 자기 값",
+  "다음 편"
+ ],
+ "chapters_ja": [
+  "4つの値",
+  "Crossfade と Fade out",
+  "Auto-dismiss",
+  "Layer for this list",
+  "既定値か自分の値か",
+  "次回"
+ ]
+}

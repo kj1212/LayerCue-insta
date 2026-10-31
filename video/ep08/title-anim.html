@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- 8편 타이틀 — 움직임 판. window.render(t) 로 한 순간을 그린다(render_anim.mjs 가 프레임마다 부른다). 3840×2160. -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  #title .micro.top { position: absolute; left: 230px; top: 200px; }
+  #title .claim { position: absolute; left: 226px; top: 300px; font-weight: 500; font-stretch: 96%; font-size: 150px; line-height: 1.02; letter-spacing: -.026em; }
+  #title .claim div:nth-child(2) { color: var(--fg2); }
+  #title .lines { position: absolute; left: 230px; top: 680px; display: flex; gap: 22px; }
+  #title .lines i { display: block; width: 150px; height: 14px; transform-origin: left center; }
+  #title .idx { position: absolute; right: 230px; top: 196px; text-align: right; }
+  #title .idx div { font-weight: 600; font-stretch: 88%; font-size: 62px; line-height: 1.32; letter-spacing: -.01em; text-transform: uppercase; color: var(--fg2); }
+  #title .idx div i { font-family: var(--mono); font-style: normal; font-weight: 400; font-size: 34px; letter-spacing: .1em; color: var(--fg3); margin-right: 26px; vertical-align: 6px; }
+  #title .word { left: 214px; bottom: 300px; font-size: 455px; }
+  #title .word .real { display: inline-block; }
+  #title .base { position: absolute; left: 230px; bottom: 170px; font-family: var(--mono); font-size: 44px; color: var(--fg2); letter-spacing: .02em; }
+  #title .base b { color: var(--cream); font-weight: 500; }
+</style>
+<div id="title" class="frame">
+  <div class="grid"></div>
+  <div class="micro top">[ LayerCue from zero &nbsp;—&nbsp; episode 08 ]</div>
+  <div class="claim"><div>Set the whole list.</div><div>Fades, auto-dismiss and one layer.</div></div>
+  <div class="lines"><i style="background:var(--bg-lit)"></i><i style="background:var(--fg-lit)"></i><i style="background:var(--ov-lit)"></i></div>
+  <div class="idx">
+    <div><i>01</i>Four values</div><div><i>02</i>Fades</div><div><i>03</i>Auto-dismiss</div><div><i>04</i>One layer</div><div><i>05</i>Defaults</div>
+  </div>
+  <div class="word" data-fit="3400"><span class="gh g1">Fades</span><span class="gh g2">Fades</span><span class="gh g3">Fades</span><span class="real">Fades</span></div>
+  <div class="base"><b>Dim</b> numbers follow the defaults · <b>solid</b> = its own</div>
+</div>
+<script>
+  window.DUR = 6.0;
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const clamp = x => Math.max(0, Math.min(1, x));
+  // 홈페이지의 --e-cue cubic-bezier(.16,1,.3,1) 근사 — 빠르게 들어와 길게 가라앉는다
+  const cue = x => 1 - Math.pow(1 - clamp(x), 4.2);
+  const at = (t, t0, d) => cue((t - t0) / d);
+  function up(el, p, dy = 40) { el.style.opacity = p; el.style.transform = `translateY(${(1 - p) * dy}px)`; }
+  const OFF = { g1: [-2.2, -13], g2: [1.6, -6], g3: [2.6, 9] };   // % (홈페이지 히어로와 같다)
+  window.render = t => {
+    $('.grid').style.opacity = at(t, 0.0, 0.6);
+    up($('.micro.top'), at(t, 0.15, 0.6), 24);
+    $$('.claim div').forEach((d, i) => up(d, at(t, 0.35 + i * 0.16, 0.7), 50));
+    $$('.lines i').forEach((l, i) => l.style.transform = `scaleX(${at(t, 0.9 + i * 0.09, 0.6)})`);
+    $$('.idx div').forEach((d, i) => up(d, at(t, 0.8 + i * 0.07, 0.6), 30));
+    // 큰 낱말: 흰 낱말이 아래에서 올라오고, 층 세 판은 크게 어긋났다가 붙는다(1.5 s, 0.13 s 씩 늦게)
+    const r = $('.word .real'), pr = at(t, 0.45, 0.8);
+    r.style.clipPath = `inset(${(1 - pr) * 100}% 0 0 0)`; r.style.transform = `translateY(${(1 - pr) * 18}%)`;
+    ['g1', 'g2', 'g3'].forEach((g, i) => {
+      const p = at(t, 0.55 + i * 0.13, 1.5), k = 2.4 * (1 - p), el = $('.word .' + g);
+      el.style.opacity = clamp((t - 0.45) / 0.25);
+      el.style.transform = `translate(${OFF[g][0] * k}%, ${OFF[g][1] * k}%)`;
+    });
+    up($('.base'), at(t, 1.7, 0.7), 20);
+  };
+  window.__ready = false;
+  document.fonts.ready.then(() => {
+    for (const w of document.querySelectorAll('.word[data-fit]')) {
+      const real = w.querySelector('.real'), fs = parseFloat(getComputedStyle(w).fontSize);
+      w.style.fontSize = (fs * (+w.dataset.fit) / real.getBoundingClientRect().width) + 'px';
+    }
+    window.render(0); window.__ready = true;
+  });
+</script>
