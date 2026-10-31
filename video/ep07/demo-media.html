@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="brand.css">
+<style>html,body{margin:0;background:#000}.f{position:absolute;left:0;top:0;overflow:hidden;font-family:var(--disp);color:#fff}
+.k{font-weight:900;font-stretch:84%;text-transform:uppercase;line-height:.9}</style>
+<div class="f" id="hl" style="width:1920px;height:1080px;background:#000">
+ <div id="t1" class="k" style="position:absolute;left:140px;top:360px;font-size:200px;color:#f2eee4;opacity:0">Summit<br>highlights</div>
+ <div id="sc" style="position:absolute;inset:0;opacity:0;background:linear-gradient(120deg,#0d1b4a,#3b1450)"><div id="ring" style="position:absolute;width:520px;height:520px;border-radius:50%;border:30px solid #ff4a1a"></div><div class="k" style="position:absolute;left:120px;bottom:120px;font-size:90px">Main stage · day 1</div></div>
+ <div id="cr" style="position:absolute;inset:0;background:#000;opacity:0"><div id="crt" style="position:absolute;left:0;right:0;text-align:center;font-family:var(--mono);font-size:54px;line-height:1.9;color:#bbb">CREDITS<br><br>Camera · R. Lane<br>Edit · J. Moss<br>Music · GarageBand loops<br>Riverside Tech Summit 2026<br><br>THE END</div></div></div>
+<div class="f" id="vt" style="width:1080px;height:1920px;display:none;background:linear-gradient(#1b2b5c,#0a0f22)">
+ <div id="spot" style="position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(#ffd27a88,transparent 70%)"></div>
+ <div class="k" style="position:absolute;left:80px;top:180px;font-size:150px;color:#ffd9a8">Back<br>stage</div>
+ <div style="position:absolute;left:80px;bottom:200px;font-family:var(--mono);font-size:48px;color:#9fb8ff">Riverside Tech Summit · 2026</div></div>
+<div class="f" id="pt" style="width:1600px;height:1200px;display:none;background:linear-gradient(135deg,#2a2d35,#121317)">
+ <div style="position:absolute;left:1000px;top:180px;width:360px;height:360px;border-radius:50%;background:#c8936b"></div>
+ <div style="position:absolute;left:880px;top:560px;width:600px;height:700px;border-radius:300px 300px 0 0;background:#2b4c8c"></div>
+ <div class="k" style="position:absolute;left:100px;top:880px;font-size:110px;color:#f2eee4">Dana Okafor</div>
+ <div style="position:absolute;left:104px;top:1000px;font-family:var(--mono);font-size:44px;color:#9c988e">Keynote · Riverside Tech Summit</div></div>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.max(0,Math.min(1,x));
+window.hl=t=>{ $('t1').style.opacity=cl((t-2)/0.4)*cl((4.6-t)/0.4); $('sc').style.opacity=cl((t-4.4)/0.4)*cl((11.2-t)/0.4);
+ $('ring').style.left=(300+900*((t-4)/7))+'px'; $('ring').style.top=(260+120*Math.sin(t))+'px';
+ $('cr').style.opacity=cl((t-11)/0.4); $('crt').style.top=(1080-(t-11)*260)+'px'; };
+window.vt=t=>{ $('spot').style.left=(90+200*Math.sin(t*0.9))+'px'; $('spot').style.top=(700+300*Math.cos(t*0.7))+'px'; };
+document.fonts.ready.then(()=>window.__ready=true);
+</script>
