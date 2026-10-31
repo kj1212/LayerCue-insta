@@ -2,8 +2,9 @@
 # 2판 창 녹화 — ep07/take2/sN.json 차례로(기본 s1–s8). ffmpeg 30 fps 고정 → ep07/rec/v2/sN.mp4
 cd "${0:a:h}/.." || exit 1
 export LC_SANDBOX=sandbox-ep07 REC_SUB=v2
-# 3편: 조작 창은 맥북(주 화면) · 프로젝터는 LG — 둘 다 찍는다. 창 자리(포인트)와 자를 자리(px)는 ep07/place.sh 와 같아야 한다
-export MOUSE_WIN="60,110,1680,919" REC_DEV="2:none" REC_CROP="3360:1838:120:220"
+# 창은 ./sb.sh place 로 LG 에 꽉 채운다
+# 7편부터 다시 LG(1920×1080 HiDPI, 4K 그대로)에서 찍는다 — 맥북은 3360 px 를 3840 으로 늘려 덜 선명했다. 3편만 맥북+LG 두 화면이었다
+export REC_DEV="3:none"
 # 녹화 시작·끝을 알린다(맥북 화면 알림 + 소리) — 녹화 중에 마우스를 움직이면 화면에 그대로 찍힌다(2026-10-30 Dock 이 끼었다)
 note() { osascript -e "display notification \"$2\" with title \"LayerCue 녹화\" subtitle \"$1\" sound name \"$3\"" 2>/dev/null; }
 SEGS=("$@"); [ $# -eq 0 ] && SEGS=(s2 s3 s4 s5 s6 s7)

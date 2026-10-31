@@ -72,6 +72,10 @@
   #H .stage { position: absolute; left: 600px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 5px var(--hot), 0 40px 90px rgba(0,0,0,.7); }
   #H .stage img { width: 100%; display: block; }
   #H .lt { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 24px; letter-spacing: .14em; padding: 8px 14px; color: #111; transform: rotate(-3deg); }
+  /* I — 슬라이드 설정 편: 세로 영상이 Fit + blur 로 가로 화면을 채운 실제 미리보기 + Scale 아이콘 줄 */
+  #I .stage { position: absolute; left: 600px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 4px var(--accent-soft), 0 40px 90px rgba(0,0,0,.7); }
+  #I .stage img { width: 100%; display: block; }
+  #I .tg { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 24px; letter-spacing: .14em; padding: 8px 14px; color: #111; transform: rotate(-3deg); }
 </style>
 <div id="A" class="t"><div class="grid"></div>
   <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
@@ -131,6 +135,14 @@
   <div class="lt" style="left:1010px;top:110px;background:var(--ov-lit)">1 · OVERLAY</div>
   <div class="lt" style="left:700px;top:520px;background:var(--fg-lit)">F · FOREGROUND</div>
   <div class="lt" style="left:930px;top:560px;background:var(--bg-lit)">B · BACKGROUND</div>
+</div>
+<div id="I" class="t"><div class="grid"></div>
+  <div class="mic" style="left:60px;top:56px"><b>LayerCue</b> from zero · ep <span class="ep"></span></div>
+  <div class="ttl" style="left:56px;top:130px;font-size:132px;width:540px"></div>
+  <div class="mic" style="left:60px;top:620px;color:var(--fg2)">fit · trim · loop · <b>volume</b></div>
+  <div class="stage"><img class="img"></div>
+  <div class="tg" style="left:640px;top:520px;background:var(--accent-soft)">FIT + BLUR</div>
+  <div class="tg" style="left:900px;top:560px;background:var(--cream)">IN 0:02 → OUT 0:11</div>
 </div>
 <script>
 const Q = new URLSearchParams(location.search);

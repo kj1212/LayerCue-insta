@@ -1,0 +1,29 @@
+TITLE
+Slide Settings: Fit, Trim, Loop and Volume | LayerCue from Zero, Episode 7
+
+DESCRIPTION
+Fix a slide before it goes out: what the control row changes (now only) versus Slide settings (saved), loading a slide without sending it, Scale (Fit, Fill, Stretch, Fit + blur for vertical video), Crop & fit, In and Out points, speed and repeat, slide volume, and To Screen to hold a video on a frame until its cue.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12.
+Manual: https://layercue.com/docs/slides/settings/
+The narration is AI-generated and the music is built from GarageBand loops. The event, people and media in the demo are fictional.
+
+Chapters
+0:00 Intro
+0:06 Two places
+0:30 Scale
+0:54 Crop and fit
+1:15 In and out points
+1:37 Speed and repeat
+1:52 Slide volume
+2:11 To Screen
+2:26 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, slide settings, crop, trim video, in point, out point, vertical video, presentation software, event production, Mac, Windows
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep07-en.srt (English), ep07-ko.srt (Korean) and ep07-ja.srt (Japanese) as 'With timing'.
