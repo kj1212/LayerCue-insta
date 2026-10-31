@@ -98,6 +98,31 @@
      "key": [
       53
      ]
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "zoom": "panel.loop",
+     "scale": 2.0,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.7,
+     "zoom": "list.loop",
+     "scale": 2.2,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.2,
+     "rest": true
     }
    ]
   },
@@ -236,6 +261,36 @@
      "lblSide": "right",
      "dur": 1.6,
      "exact": true
+    },
+    {
+     "line": 1,
+     "at": 0.3,
+     "zoom": "panel.loop",
+     "scale": 2.0,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.0,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "zoom": "panel.words",
+     "scale": 2.0,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.0,
+     "rest": true
     }
    ]
   },
@@ -305,11 +360,8 @@
       "8 s"
      ],
      "lblSide": "left",
-     "end": {
-      "line": 2,
-      "at": 2.0
-     },
-     "endpad": 0.2
+     "dur": 1.5,
+     "exact": true
     },
     {
      "line": 2,
@@ -338,6 +390,31 @@
      "lblSide": "right",
      "dur": 5.0,
      "exact": true
+    },
+    {
+     "line": 1,
+     "at": 0.3,
+     "zoom": "list.sponsor",
+     "scale": 2.2,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "zoom": "panel.sponsor",
+     "scale": 2.0,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.9,
+     "rest": true
     }
    ]
   },
@@ -378,11 +455,8 @@
       "for a folder of loops"
      ],
      "lblSide": "left",
-     "end": {
-      "line": 1,
-      "at": 1.6
-     },
-     "endpad": 0.2
+     "dur": 0.9,
+     "exact": true
     },
     {
      "line": 1,
@@ -410,7 +484,9 @@
       "On B",
       "every slide here"
      ],
-     "lblSide": "right"
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
     },
     {
      "line": 3,
@@ -439,6 +515,36 @@
       3660,
       1366
      ]
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "zoom": "list.loop",
+     "scale": 2.2,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.0,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "zoom": "lockchip",
+     "scale": 2.2,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "rest": true
     }
    ]
   },
@@ -538,6 +644,21 @@
      "key": [
       53
      ]
+    },
+    {
+     "line": 1,
+     "at": 0.5,
+     "zoom": "panel.words",
+     "scale": 2.2,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.2,
+     "rest": true
     }
    ]
   },

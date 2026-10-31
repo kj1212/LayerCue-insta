@@ -22,3 +22,4 @@
 - LG 녹화. 데모 Finder 창은 LG 위로 옮겨 끌어 넣었다(bounds 2900,-420…). 시작 상태 sandbox-ep08.base, 큐시트 Summit Day 1 = Welcome words · Welcome loop(영상 2) · Sponsor thanks(로어서드 2, HTML).
 - 패널은 버튼 아래(화면 아래쪽이면 위)로 열린다. 슬라이더 x: 0.8 s=3338, 2 s=3422, 0=3264 · Auto-dismiss 8 s=3306.
 - 패널 테두리는 끝 동작 대신 정해진 길이(exact)로 — Esc 가 기록보다 일찍 닫혀 빈 테두리가 남았다.
+- 확대: 설정 패널·레이어 목록이 열려 있는 동안은 확대(scale 2–2.2), 무대에 결과를 보여 줄 때는 원래 크기(rest). 확대가 바뀌는 동안 떠 있는 이름표는 자리가 어긋나므로 그 전에 끝낸다.
