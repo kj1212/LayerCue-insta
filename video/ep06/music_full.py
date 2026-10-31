@@ -49,10 +49,13 @@ mix = np.tanh(mix * 1.05) / 1.05
 
 # 덕킹 — 목소리 구간에서 −8 dB (들어갈 때 0.12 s, 나올 때 0.45 s)
 t = np.arange(N) / SR; g_db = np.zeros(N, np.float32)
-for s in segs:
-    for l in s["lines"]:
-        a, z = int(max(0, l["t"] - 0.08) * SR), int((l["t"] + l["dur"] + 0.15) * SR); g_db[a:z] = -8.0
-k_att, k_rel = int(0.12 * SR), int(0.45 * SR)
+# 덜 민감하게(7편부터): 2.5 s 보다 짧은 쉼은 낮춘 채로 잇는다
+iv = sorted([(max(0, l["t"] - 0.08), l["t"] + l["dur"] + 0.15) for s in segs for l in s["lines"]]); mg = []
+for a0, b0 in iv:
+    if mg and a0 - mg[-1][1] < 2.5: mg[-1][1] = max(mg[-1][1], b0)
+    else: mg.append([a0, b0])
+for a0, b0 in mg: g_db[int(a0 * SR): int(b0 * SR)] = -8.0
+k_att, k_rel = int(0.12 * SR), int(1.5 * SR)
 sm = np.copy(g_db)
 for i in range(1, N):                                          # 한쪽 방향 평활(빠르게 내려가고 천천히 올라온다)
     d = g_db[i] - sm[i - 1]
