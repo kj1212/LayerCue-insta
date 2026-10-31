@@ -1,0 +1,47 @@
+YOUTUBE POST (Community) — Create › Post › Image, add the 6 images in order (post01-whats-new-1.jpg …), paste the text.
+YouTube posts have one text box: post in English, or paste the Korean/Japanese version as a separate post.
+
+TEXT (ENGLISH)
+What's new in LayerCue since August — 0.9.4 through 0.9.12.
+
+Now on Windows. Free in the Microsoft Store, right alongside the Mac. Same layers, same one-click cues — on the PC in the booth, too.
+
+Every screen in the room. One stage on as many monitors as you have, sent over NDI® and Syphon, straight out of Blackmagic SDI on the Mac, or as fill & key over a switcher. As of 0.9.12 the music and video ride along over NDI® and SDI as well.
+
+Bring what you have. PowerPoint comes in still editable — text as text, pictures as pictures. PDF in and out. Search inside every song's lyrics without opening one. Cue sheets point at your slides instead of copying them, so a fix in one place is fixed everywhere.
+
+Ask for the slides. Connect Claude, LM Studio or Cursor from Settings › AI apps and say "make slides from these lyrics." LayerCue looks at what it actually drew — overflow, contrast, overlaps — so the AI can fix its own work, and every edit undoes.
+
+Still free while it's in beta, and still most interested in what broke. https://layercue.com
+
+#LayerCue #ChurchMedia #WorshipTech
+
+========================================
+한국어 (KOREAN)
+========================================
+8월 이후 LayerCue의 새 기능, 0.9.4부터 0.9.12까지.
+
+이제 Windows에서도 돼요. Mac과 함께 Microsoft Store에서 무료로 받을 수 있어요.
+
+공연장의 모든 화면으로. 무대 하나를 모니터 여러 대에, NDI®·Syphon으로, Mac에서는 Blackmagic SDI로, 스위처에는 fill & key로 보내요. 0.9.12부터는 음악과 영상 소리도 NDI®와 SDI로 함께 나가요.
+
+가진 걸 그대로. PowerPoint는 편집할 수 있는 상태로 들어와요. PDF도 넣고 내보내요. 모든 곡의 가사를 열지 않고 검색해요.
+
+말로 슬라이드를. Settings › AI apps에서 Claude, LM Studio, Cursor를 연결하고 "이 가사로 슬라이드 만들어 줘"라고 해 보세요.
+
+베타 기간 동안 무료: https://layercue.com
+
+========================================
+日本語 (JAPANESE)
+========================================
+8月以降の LayerCue の新機能、0.9.4 から 0.9.12 まで。
+
+Windows に対応しました。Mac と同じく Microsoft Store で無料です。
+
+会場のすべての画面へ。1つのステージを何台ものモニターに、NDI®・Syphon で、Mac では Blackmagic SDI で、スイッチャーには fill & key で。0.9.12 からは音楽と動画の音も NDI® と SDI で送れます。
+
+手持ちのものをそのまま。PowerPoint は編集できる形で取り込めます。PDF の読み込みと書き出しも。歌詞を開かずに全曲を検索できます。
+
+言葉でスライドを。Settings › AI apps で Claude、LM Studio、Cursor をつないで「この歌詞でスライドを作って」と頼んでみてください。
+
+ベータ期間中は無料: https://layercue.com

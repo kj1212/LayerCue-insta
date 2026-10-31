@@ -1,0 +1,36 @@
+1
+00:00:00,320 --> 00:00:02,900
+What if you could just ask?
+
+2
+00:00:03,120 --> 00:00:06,200
+Make a presentation that explains LayerCue's features.
+
+3
+00:00:06,320 --> 00:00:09,100
+Your AI builds it, straight into LayerCue.
+
+4
+00:00:09,280 --> 00:00:11,000
+Libraries for your slides.
+
+5
+00:00:11,120 --> 00:00:12,400
+Cue sheets for the night.
+
+6
+00:00:12,480 --> 00:00:13,100
+Click once.
+
+7
+00:00:13,200 --> 00:00:14,600
+It's live.
+
+8
+00:00:17,120 --> 00:00:18,100
+LayerCue.
+
+9
+00:00:18,240 --> 00:00:21,300
+Free while it's in beta, on Mac and Windows.
+

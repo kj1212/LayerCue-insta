@@ -1,0 +1,59 @@
+YOUTUBE SHORT — upload the vertical video; YouTube makes it a Short (under 3 min, 9:16).
+
+TITLE
+What if you could just ask? AI builds your slides in LayerCue #Shorts
+
+DESCRIPTION
+Connect your AI app to LayerCue over MCP (Claude, Cursor, LM Studio) and say "make a presentation that explains LayerCue's features." It builds the slides straight into LayerCue, checks what LayerCue actually drew, and lines them up in a cue sheet.
+
+Libraries for your slides. Cue sheets for the night. Click once, and it's live on the big screen.
+
+Free while it's in beta, on Mac and Windows: https://layercue.com
+
+The narration and music were made with AI running on a Mac.
+
+#LayerCue #MCP #LiveProduction
+
+TAGS
+LayerCue, LayerCue tutorial, presentation software, live production, event production, projection software, Mac, Windows
+
+PLAYLIST
+LayerCue Shorts (optional)
+
+SUBTITLES
+subtitles/short02-just-ask-en.srt, -ko.srt, -ja.srt as 'With timing'.
+
+COVER
+Shorts use a frame from the video; the app's mobile upload can also pick a cover. The Instagram cover is included.
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+그냥 말로 부탁한다면? AI가 LayerCue에 슬라이드를 만들어요 #Shorts
+
+DESCRIPTION
+AI 앱(Claude, Cursor, LM Studio)을 MCP로 LayerCue에 연결하고 "LayerCue 기능을 설명하는 프레젠테이션을 만들어 줘"라고 말해 보세요. 슬라이드를 LayerCue 안에 바로 만들고, LayerCue가 실제로 그린 결과를 확인한 뒤 큐시트에 차례로 넣어요.
+
+슬라이드는 라이브러리에, 그날 밤 순서는 큐시트에. 한 번 클릭하면 큰 화면에 나가요.
+
+베타 기간 동안 무료, Mac과 Windows: https://layercue.com
+
+나레이션과 음악은 Mac에서 AI로 만들었어요.
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+頼むだけでいいとしたら? AI が LayerCue にスライドを作る #Shorts
+
+DESCRIPTION
+AI アプリ(Claude、Cursor、LM Studio)を MCP で LayerCue につなぎ、「LayerCue の機能を説明するプレゼンを作って」と言うだけ。LayerCue の中に直接スライドを作り、実際に描かれた結果を確認して、キューシートに並べます。
+
+スライドはライブラリに、その夜の進行はキューシートに。ワンクリックで大きな画面に出ます。
+
+ベータ期間中は無料、Mac と Windows: https://layercue.com
+
+ナレーションと音楽は Mac 上の AI で作りました。

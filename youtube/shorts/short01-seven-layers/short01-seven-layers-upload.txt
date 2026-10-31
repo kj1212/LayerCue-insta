@@ -1,0 +1,62 @@
+YOUTUBE SHORT — upload the vertical video; YouTube makes it a Short (under 3 min, 9:16).
+
+TITLE
+Seven layers. Every screen. #Shorts
+
+DESCRIPTION
+A background that loops underneath, your slides on top, a logo and a name over it all. In LayerCue each one is its own layer, and each one goes live with a single click.
+
+Send the show to every screen in the room, and give each screen only the layers it needs.
+
+Free while it's in beta, on Mac and Windows: https://layercue.com
+Full tutorial series: LayerCue from Zero
+
+The narration and music were made with AI running on a Mac. The event in the demo is made up.
+
+#LayerCue #LiveProduction #EventProduction
+
+TAGS
+LayerCue, LayerCue tutorial, presentation software, live production, event production, projection software, Mac, Windows
+
+PLAYLIST
+LayerCue Shorts (optional)
+
+SUBTITLES
+subtitles/short01-seven-layers-en.srt, -ko.srt, -ja.srt as 'With timing'.
+
+COVER
+Shorts use a frame from the video; the app's mobile upload can also pick a cover. The Instagram cover is included.
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+레이어 일곱 개, 모든 화면으로 #Shorts
+
+DESCRIPTION
+반복되는 배경 영상 위에 슬라이드, 그 위에 로고와 이름. LayerCue에서는 하나하나가 따로 된 레이어이고, 클릭 한 번으로 송출돼요.
+
+공연장의 모든 화면으로 보내고, 화면마다 필요한 레이어만 골라 보여 주세요.
+
+베타 기간 동안 무료, Mac과 Windows: https://layercue.com
+전체 튜토리얼: LayerCue 처음부터
+
+나레이션과 음악은 Mac에서 AI로 만들었어요. 데모의 행사는 가상이에요.
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+7つのレイヤー。すべての画面へ #Shorts
+
+DESCRIPTION
+ループする背景の上にスライド、さらにその上にロゴと名前。LayerCue ではそれぞれが独立したレイヤーで、ワンクリックで本番に出せます。
+
+会場のすべての画面に送り、画面ごとに必要なレイヤーだけを表示できます。
+
+ベータ期間中は無料、Mac と Windows: https://layercue.com
+チュートリアル全編: ゼロから LayerCue
+
+ナレーションと音楽は Mac 上の AI で作りました。デモのイベントは架空です。
