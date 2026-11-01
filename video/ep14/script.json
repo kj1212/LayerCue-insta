@@ -1,0 +1,222 @@
+{
+ "title": "Bringing It In: PowerPoint, PDF and Export — LayerCue from Zero, Episode 14",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Three ways in",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today, a speaker's PowerPoint and a printed programme come into the running order, and a PDF goes out.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Files come in three ways. New Presentation has From PowerPoint and From PDF, beside Create.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Add File on a title bar puts them at the end. Or drag the file onto the slide list.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "PowerPoint doesn't need to be on this computer. LayerCue reads the file itself.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "A speaker's deck",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Dana's keynote deck goes right after her title slide. Drag it onto that card.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Six slides go in after it. Read the notice: charts and SmartArt didn't come across.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Each one is rebuilt from LayerCue's own boxes. The background goes out on B, the words on F.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Check it before the show",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Open it in the editor. A table comes in as one text box per cell, so you can fix any of them.",
+     "pause": 3.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The font, Segoe UI, isn't on this Mac, so it was replaced. Lines can break differently.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The chart slide has only its title. And hidden slides come in too: delete the ones you don't need.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "One Command Z takes back the whole import, if you need to.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "A PDF comes in as pictures",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Now the printed programme. Drag the PDF onto the last card, and a window opens.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Every page starts picked. Type a range: two to three.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Resolution is the long edge. 4K is the default, and JPEG keeps files small.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Each page is one picture slide. It looks exactly right, but the words can't be edited.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Export to PDF",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "The other way works too. Right-click a presentation, and choose Export to PDF.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Pick the slides. Leave out the picture pages: one to twelve.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Choose where to save it.",
+     "pause": 5.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "One slide per page, and the text stays text: you can select and search it. Handy for a printout.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now bring a speaker's deck into the running order.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: your files, the Settings pages, and AI helpers.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

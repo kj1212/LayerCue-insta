@@ -1,0 +1,663 @@
+{
+ "_note": "14편 연출표 — 세 입구 · Keynote-Okafor.pptx 를 Day 1 첫 카드에 끌어 놓기 · 에디터 확인(표 · 글꼴 · 차트 · 숨김 삭제) · Summit-Programme.pdf 2–3쪽 · Export to PDF 1–10. LG 녹화.",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.0,
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      132,
+      1807
+     ]
+    },
+    {
+     "sleep": 0.8
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1500
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      360,
+      1675
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.8,
+     "zoom": "z_center",
+     "scale": 1.8,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.3,
+     "hl": "frombtns",
+     "lbl": [
+      "From PowerPoint · From PDF",
+      "instead of Create"
+     ],
+     "lblSide": "below",
+     "dur": 4.2,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 6.32,
+     "mouse": [
+      "click",
+      2071,
+      1363
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "move",
+      3497,
+      830
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.8,
+     "hl": "addfile",
+     "lbl": [
+      "Add File",
+      "to the end"
+     ],
+     "lblSide": "below",
+     "dur": 1.8,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 2.6,
+     "finder": 1
+    },
+    {
+     "line": 3,
+     "at": 3.0,
+     "hl": "finder",
+     "lbl": [
+      "Or drag it in",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "cap": "Formats: .pptx and .pdf · old .ppt? save it as .pptx first",
+     "capdur": 4.2
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1500
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "finder": 1
+    },
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "drag",
+      1730,
+      2000,
+      1490,
+      1750
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.4,
+     "mouse": [
+      "slowdrag",
+      1546,
+      1735,
+      648,
+      1000,
+      0.9
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.2,
+     "hl": "card1",
+     "lbl": [
+      "Drop on her title",
+      "it goes in after it"
+     ],
+     "lblSide": "below",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 4.4,
+     "front": 1
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "hl": "cards27",
+     "lbl": [
+      "6 slides",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "cap": "Imported 6 slides from PowerPoint — May differ from the original: charts and SmartArt",
+     "capdur": 4.8
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "zoom": "z_list",
+     "scale": 1.25,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.6,
+     "hl": "bgchip",
+     "lbl": [
+      "BG",
+      "background on B · words on F"
+     ],
+     "lblSide": "below",
+     "dur": 3.0,
+     "exact": true
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1500
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1907,
+      1133
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.9,
+     "mouse": [
+      "click",
+      288,
+      2121
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.0,
+     "zoom": "z_editor",
+     "scale": 1.4,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.4,
+     "hl": "table",
+     "lbl": [
+      "One text box per cell",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 4.4,
+     "mouse": [
+      "dbl",
+      1171,
+      1478
+     ]
+    },
+    {
+     "line": 1,
+     "at": 5.1,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 1,
+     "at": 5.4,
+     "type": "30 m +"
+    },
+    {
+     "line": 1,
+     "at": 6.3,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "zoom": "z_left",
+     "scale": 1.4,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.6,
+     "hl": "fontfield",
+     "lbl": [
+      "Default font",
+      "Segoe UI isn't here"
+     ],
+     "lblSide": "below",
+     "dur": 3.6,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "hl": "thumb5",
+     "lbl": [
+      "The chart",
+      "didn't come across"
+     ],
+     "lblSide": "right",
+     "dur": 1.8,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 2.4,
+     "mouse": [
+      "rclick",
+      190,
+      1375
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      336,
+      1604
+     ]
+    },
+    {
+     "line": 3,
+     "at": 4.6,
+     "mouse": [
+      "rclick",
+      190,
+      1164
+     ]
+    },
+    {
+     "line": 3,
+     "at": 5.7,
+     "mouse": [
+      "click",
+      336,
+      1393
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "cap": "⌘Z takes back the whole import · Undone — PowerPoint import",
+     "capdur": 3.2
+    },
+    {
+     "line": 4,
+     "at": 3.2,
+     "mouse": [
+      "click",
+      105,
+      2121
+     ]
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1500
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.6,
+     "finder": 1
+    },
+    {
+     "line": 1,
+     "at": 0.8,
+     "mouse": [
+      "drag",
+      1400,
+      2000,
+      1200,
+      1700
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.0,
+     "mouse": [
+      "slowdrag",
+      1320,
+      1735,
+      1068,
+      1296,
+      0.8
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.2,
+     "front": 1
+    },
+    {
+     "line": 1,
+     "at": 4.4,
+     "zoom": "z_pdf",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.8,
+     "hl": "pdfdlg",
+     "lbl": [
+      "PDF import",
+      "6 pages, all picked"
+     ],
+     "lblSide": "below",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      1745,
+      1393
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.8,
+     "type": "2-3"
+    },
+    {
+     "line": 2,
+     "at": 2.5,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.8,
+     "hl": "range",
+     "lbl": [
+      "Range",
+      "pages 2 and 3"
+     ],
+     "lblSide": "below",
+     "dur": 1.2,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "hl": "res",
+     "lbl": [
+      "Resolution · Format",
+      "4K · JPEG"
+     ],
+     "lblSide": "below",
+     "dur": 4.6,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 5.62,
+     "mouse": [
+      "click",
+      2580,
+      1615
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "zoom": "z_list",
+     "scale": 1.25,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.8,
+     "hl": "newcards",
+     "lbl": [
+      "Picture slides",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 4.2,
+     "exact": true
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1500
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 2.6,
+     "mouse": [
+      "rclick",
+      132,
+      1807
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.8,
+     "mouse": [
+      "click",
+      300,
+      2054
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "zoom": "z_exp",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "hl": "exportdlg",
+     "lbl": [
+      "Export to PDF",
+      "every slide picked"
+     ],
+     "lblSide": "below",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      1702,
+      1447
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.0,
+     "type": "1-10"
+    },
+    {
+     "line": 2,
+     "at": 2.6,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 2,
+     "at": 3.4,
+     "mouse": [
+      "click",
+      2574,
+      1520
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "key": [
+      5,
+      true,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.1,
+     "type": "~/projects/LayerCue-insta/video/ep14/media/export"
+    },
+    {
+     "line": 3,
+     "at": 4.4,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 3,
+     "at": 5.4,
+     "mouse": [
+      "click",
+      2174,
+      1228
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "cap": "Exported to PDF · streaming YouTube and audio slides give no picture — leave them unpicked",
+     "capdur": 5.4
+    }
+   ]
+  }
+ }
+}

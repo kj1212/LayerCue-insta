@@ -1,0 +1,84 @@
+1
+00:00:06,400 --> 00:00:13,810
+Welcome back! Today, a speaker's PowerPoint and a printed programme come into the running order, and a PDF goes out.
+
+2
+00:00:14,480 --> 00:00:20,950
+Files come in three ways. New Presentation has From PowerPoint and From PDF, beside Create.
+
+3
+00:00:21,620 --> 00:00:27,140
+Add File on a title bar puts them at the end. Or drag the file onto the slide list.
+
+4
+00:00:27,810 --> 00:00:32,740
+PowerPoint doesn't need to be on this computer. LayerCue reads the file itself.
+
+5
+00:00:34,760 --> 00:00:39,940
+Dana's keynote deck goes right after her title slide. Drag it onto that card.
+
+6
+00:00:42,010 --> 00:00:47,630
+Six slides go in after it. Read the notice: charts and SmartArt didn't come across.
+
+7
+00:00:48,500 --> 00:00:54,900
+Each one is rebuilt from LayerCue's own boxes. The background goes out on B, the words on F.
+
+8
+00:00:56,920 --> 00:01:03,390
+Open it in the editor. A table comes in as one text box per cell, so you can fix any of them.
+
+9
+00:01:06,660 --> 00:01:12,570
+The font, Segoe UI, isn't on this Mac, so it was replaced. Lines can break differently.
+
+10
+00:01:13,240 --> 00:01:19,290
+The chart slide has only its title. And hidden slides come in too: delete the ones you don't need.
+
+11
+00:01:21,760 --> 00:01:25,510
+One Command Z takes back the whole import, if you need to.
+
+12
+00:01:27,530 --> 00:01:33,000
+Now the printed programme. Drag the PDF onto the last card, and a window opens.
+
+13
+00:01:33,870 --> 00:01:37,550
+Every page starts picked. Type a range: two to three.
+
+14
+00:01:38,420 --> 00:01:44,090
+Resolution is the long edge. 4K is the default, and JPEG keeps files small.
+
+15
+00:01:44,960 --> 00:01:50,650
+Each page is one picture slide. It looks exactly right, but the words can't be edited.
+
+16
+00:01:52,670 --> 00:01:58,180
+The other way works too. Right-click a presentation, and choose Export to PDF.
+
+17
+00:01:59,050 --> 00:02:03,010
+Pick the slides. Leave out the picture pages: one to twelve.
+
+18
+00:02:04,080 --> 00:02:05,590
+Choose where to save it.
+
+19
+00:02:11,460 --> 00:02:17,710
+One slide per page, and the text stays text: you can select and search it. Handy for a printout.
+
+20
+00:02:19,730 --> 00:02:23,030
+You can now bring a speaker's deck into the running order.
+
+21
+00:02:23,700 --> 00:02:27,910
+Next time: your files, the Settings pages, and AI helpers.
+
