@@ -73,8 +73,24 @@
      "keys": ""
     },
     {
-     "text": "Change shape cuts it into one of fourteen shapes. Here's a chevron.",
-     "pause": 1.6,
+     "text": "Change shape cuts it into one of fourteen shapes. Here, a cut corner.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Fill it with the same amber, from the recent colors.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then make the text dark, so it reads well.",
+     "pause": 2.6,
      "screen": "",
      "action": "",
      "caption": "",

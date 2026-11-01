@@ -27,66 +27,74 @@ Draw a rectangle above the title.
 Shapes hold text. Double-click, and type.
 
 8
-00:00:51,220 --> 00:00:55,330
-Change shape cuts it into one of fourteen shapes. Here's a chevron.
+00:00:51,220 --> 00:00:55,810
+Change shape cuts it into one of fourteen shapes. Here, a cut corner.
 
 9
-00:00:58,350 --> 00:01:00,420
-Now draw a band behind the name.
+00:00:57,280 --> 00:01:00,390
+Fill it with the same amber, from the recent colors.
 
 10
-00:01:02,090 --> 00:01:04,240
-Open Fill, and choose Linear.
+00:01:01,860 --> 00:01:04,520
+Then make the text dark, so it reads well.
 
 11
-00:01:05,310 --> 00:01:10,110
-Point it to the right, and set the right end to No fill. The band fades away.
+00:01:08,540 --> 00:01:10,610
+Now draw a band behind the name.
 
 12
-00:01:11,780 --> 00:01:15,690
-It covers the name, so right-click it, and choose Order, To back.
+00:01:12,280 --> 00:01:14,430
+Open Fill, and choose Linear.
 
 13
-00:01:19,510 --> 00:01:23,730
-Add picture puts a picture in a box. Or just paste one you copied.
+00:01:15,500 --> 00:01:20,300
+Point it to the right, and set the right end to No fill. The band fades away.
 
 14
-00:01:24,800 --> 00:01:27,600
-Drag a corner, and it keeps its proportions.
+00:01:21,970 --> 00:01:25,880
+It covers the name, so right-click it, and choose Order, To back.
 
 15
-00:01:28,470 --> 00:01:30,480
-Then drag it into the corner.
+00:01:29,700 --> 00:01:33,920
+Add picture puts a picture in a box. Or just paste one you copied.
 
 16
-00:01:33,500 --> 00:01:37,460
-For the next speaker, don't start over. Press Duplicate slide.
+00:01:34,990 --> 00:01:37,790
+Drag a corner, and it keeps its proportions.
 
 17
-00:01:38,530 --> 00:01:42,130
-Then change the words. Everything else stays where it was.
+00:01:38,660 --> 00:01:40,670
+Then drag it into the corner.
 
 18
-00:01:47,950 --> 00:01:52,110
-Copy style takes how text looks: its font, size and color.
+00:01:43,690 --> 00:01:47,650
+For the next speaker, don't start over. Press Duplicate slide.
 
 19
-00:01:53,580 --> 00:01:59,150
-In Show mode, pick the slides that should match. Click the first, then Shift-click the last.
+00:01:48,720 --> 00:01:52,320
+Then change the words. Everything else stays where it was.
 
 20
-00:02:00,220 --> 00:02:04,510
-Right-click, and choose Paste style. Four slides change at once.
+00:01:58,140 --> 00:02:02,300
+Copy style takes how text looks: its font, size and color.
 
 21
-00:02:06,180 --> 00:02:12,420
-The words and positions stay. Shapes and pictures don't come along; only the look of the text does.
+00:02:03,770 --> 00:02:09,340
+In Show mode, pick the slides that should match. Click the first, then Shift-click the last.
 
 22
-00:02:14,640 --> 00:02:19,350
-You can now decorate a title slide, and give many slides one look at once.
+00:02:10,410 --> 00:02:14,700
+Right-click, and choose Paste style. Four slides change at once.
 
 23
-00:02:19,420 --> 00:02:22,070
+00:02:16,370 --> 00:02:22,610
+The words and positions stay. Shapes and pictures don't come along; only the look of the text does.
+
+24
+00:02:24,830 --> 00:02:29,540
+You can now decorate a title slide, and give many slides one look at once.
+
+25
+00:02:29,610 --> 00:02:32,260
 Next time: music, on its own channel.
 

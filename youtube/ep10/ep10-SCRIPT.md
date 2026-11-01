@@ -19,8 +19,12 @@
   제목 위에 사각형을 그려요.
 - Shapes hold text. Double-click, and type.  
   도형에도 글자를 쓸 수 있어요. 더블클릭하고 입력하세요.
-- Change shape cuts it into one of fourteen shapes. Here's a chevron.  
-  Change shape로 14가지 모양 중 하나로 바꿀 수 있어요. 여기선 쉐브론이에요.
+- Change shape cuts it into one of fourteen shapes. Here, a cut corner.  
+  Change shape로 14가지 모양 중 하나로 바꿀 수 있어요. 여기선 모서리를 자른 모양이에요.
+- Fill it with the same amber, from the recent colors.  
+  최근 색에서 같은 주황색을 골라 채워요.
+- Then make the text dark, so it reads well.  
+  글자는 어둡게 바꿔야 잘 읽혀요.
 
 ## A band that fades
 

@@ -2,7 +2,7 @@ TITLE
 Designing Slides: Shapes, Pictures, Styles | LayerCue from Zero, Episode 10
 
 DESCRIPTION
-Decorate a title slide in the LayerCue editor: an icon placed right beside the speaker's name from the right-click menu and colored with Text color, a shape that holds text cut into a chevron, a band that fades to transparent with a Linear fill and goes behind the name with Order › To back, and a pasted logo. Then duplicate the slide for the next speaker, and give four slides the same text look at once with Copy style and Paste style in Show mode.
+Decorate a title slide in the LayerCue editor: an icon placed right beside the speaker's name from the right-click menu and colored with Text color, a shape that holds text, cut into a tag and filled with the same amber, a band that fades to transparent with a Linear fill and goes behind the name with Order › To back, and a pasted logo. Then duplicate the slide for the next speaker, and give four slides the same text look at once with Copy style and Paste style in Show mode.
 New here? Start with Episode 1: Meet LayerCue — The Main Window.
 Recorded on LayerCue 0.9.12.
 Manual: https://layercue.com/docs/slides/design/
@@ -12,11 +12,11 @@ Chapters
 0:00 Intro
 0:06 Decorating beside the words
 0:42 A shape that holds text
-0:57 A band that fades
-1:19 A logo picture
-1:33 The next speaker
-1:47 One look, many slides
-2:14 What's next
+1:08 A band that fades
+1:29 A logo picture
+1:43 The next speaker
+1:57 One look, many slides
+2:24 What's next
 
 TAGS
 LayerCue, LayerCue tutorial, title slide, slide design, icons, gradient, copy style, presentation software, event production, Mac, Windows
@@ -35,7 +35,7 @@ TITLE
 슬라이드 디자인: 도형, 그림, 스타일 | LayerCue 처음부터, 10편
 
 DESCRIPTION
-LayerCue 편집기에서 타이틀 슬라이드를 꾸며요. 우클릭 메뉴로 연사 이름 바로 옆에 아이콘을 넣고 Text color로 색 바꾸기, 글자를 담는 도형을 쉐브론으로 바꾸기, Linear 채우기로 투명하게 사라지는 띠를 만들어 Order › To back으로 이름 뒤에 두기, 로고 붙여 넣기를 다뤄요. 그다음 슬라이드를 복제해 다음 연사를 만들고, Show 모드에서 Copy style·Paste style로 네 장의 글자 모양을 한 번에 맞춰요.
+LayerCue 편집기에서 타이틀 슬라이드를 꾸며요. 우클릭 메뉴로 연사 이름 바로 옆에 아이콘을 넣고 Text color로 색 바꾸기, 글자를 담는 도형을 태그 모양으로 바꾸고 같은 주황색으로 채우기, Linear 채우기로 투명하게 사라지는 띠를 만들어 Order › To back으로 이름 뒤에 두기, 로고 붙여 넣기를 다뤄요. 그다음 슬라이드를 복제해 다음 연사를 만들고, Show 모드에서 Copy style·Paste style로 네 장의 글자 모양을 한 번에 맞춰요.
 처음이라면 1편 「LayerCue 메인 창」부터 보세요.
 LayerCue 0.9.12로 녹화했어요.
 매뉴얼: https://layercue.com/docs/slides/design/
@@ -45,11 +45,11 @@ LayerCue 0.9.12로 녹화했어요.
 0:00 처음
 0:06 글자 옆 꾸미기
 0:42 글자를 담는 도형
-0:57 사라지는 띠
-1:19 로고 그림
-1:33 다음 연사
-1:47 한 번에 같은 모양
-2:14 다음 편
+1:08 사라지는 띠
+1:29 로고 그림
+1:43 다음 연사
+1:57 한 번에 같은 모양
+2:24 다음 편
 
 ========================================
 日本語 (JAPANESE)
@@ -59,7 +59,7 @@ TITLE
 スライドのデザイン:図形・画像・スタイル | ゼロから LayerCue 第10回
 
 DESCRIPTION
-LayerCue のエディターでタイトルスライドを飾りつけます。右クリックメニューで登壇者の名前のすぐ横にアイコンを置いて Text color で色を変える、文字の入る図形をシェブロンにする、Linear の塗りで透明に消える帯を作って Order › To back で名前の後ろに回す、ロゴを貼り付ける、を扱います。そのあとスライドを複製して次の登壇者を作り、Show モードで Copy style・Paste style を使って4枚の文字の見た目を一度にそろえます。
+LayerCue のエディターでタイトルスライドを飾りつけます。右クリックメニューで登壇者の名前のすぐ横にアイコンを置いて Text color で色を変える、文字の入る図形をタグの形にして同じオレンジで塗る、Linear の塗りで透明に消える帯を作って Order › To back で名前の後ろに回す、ロゴを貼り付ける、を扱います。そのあとスライドを複製して次の登壇者を作り、Show モードで Copy style・Paste style を使って4枚の文字の見た目を一度にそろえます。
 初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。
 LayerCue 0.9.12 で収録しています。
 マニュアル: https://layercue.com/docs/slides/design/
@@ -69,8 +69,8 @@ LayerCue 0.9.12 で収録しています。
 0:00 イントロ
 0:06 文字の横を飾る
 0:42 文字の入る図形
-0:57 消えていく帯
-1:19 ロゴ画像
-1:33 次の登壇者
-1:47 まとめて同じ見た目に
-2:14 次回
+1:08 消えていく帯
+1:29 ロゴ画像
+1:43 次の登壇者
+1:57 まとめて同じ見た目に
+2:24 次回
