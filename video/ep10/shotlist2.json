@@ -1,10 +1,10 @@
 {
- "_note": "10편 연출표 — LG 녹화, 편집기 확대.",
+ "_note": "10편 연출표(2판) — 타이틀 슬라이드 꾸미기 → 복제 → 스타일 일괄. LG 녹화, 팝오버마다 확대.",
  "title_sec": 6.0,
  "lead": 0.45,
  "gap": 0.42,
  "pre": 1.0,
- "rec_t0": 1.4,
+ "rec_t0": 0.9,
  "segments": {
   "s1": {
    "setup": [
@@ -18,6 +18,26 @@
     },
     {
      "mouse": [
+      "click",
+      640,
+      1135
+     ]
+    },
+    {
+     "sleep": 0.6
+    },
+    {
+     "mouse": [
+      "click",
+      288,
+      2121
+     ]
+    },
+    {
+     "sleep": 1.4
+    },
+    {
+     "mouse": [
       "jump",
       2400,
       1950
@@ -26,24 +46,205 @@
    ],
    "events": [
     {
-     "line": 1,
-     "at": 0.6,
-     "mouse": [
-      "dbl",
-      640,
-      1135
+     "line": 2,
+     "at": 0.0,
+     "zoom": "z_insert",
+     "scale": 1.8,
+     "center": [
+      1920,
+      1080
      ]
     },
     {
      "line": 2,
-     "at": 0.0,
+     "at": 0.4,
      "hl": "insert",
      "lbl": [
       "Insert",
       "text · shape · icon · picture · video"
      ],
      "lblSide": "below",
+     "dur": 3.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 2.0,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 2.4,
+     "mouse": [
+      "rclick",
+      1132,
+      1454
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.9,
+     "zoom": "z_ctx",
+     "scale": 2.0,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.4,
+     "hl": "ctxins",
+     "lbl": [
+      "Right-click menu",
+      "lands where you clicked"
+     ],
+     "lblSide": "right",
+     "dur": 3.0,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      1281,
+      1688
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.8,
+     "zoom": "z_pick",
+     "scale": 2.0,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.2,
+     "hl": "iconpick",
+     "lbl": [
+      "Insert icon",
+      "search 1,500+"
+     ],
+     "lblSide": "right",
      "dur": 3.2,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 3.0,
+     "type": "microphone"
+    },
+    {
+     "line": 4,
+     "at": 4.8,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 4,
+     "at": 5.3,
+     "rest": true
+    },
+    {
+     "line": 4,
+     "at": 5.8,
+     "hl": "mic",
+     "lbl": [
+      "Beside the name",
+      "where you right-clicked"
+     ],
+     "lblSide": "left",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 1.0,
+     "mouse": [
+      "click",
+      1581,
+      321
+     ]
+    },
+    {
+     "line": 5,
+     "at": 1.4,
+     "zoom": "z_color",
+     "scale": 2.0,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 5,
+     "at": 1.8,
+     "hl": "colorpick",
+     "lbl": [
+      "Text color",
+      "colors the icon"
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      1520,
+      733
+     ]
+    },
+    {
+     "line": 5,
+     "at": 2.9,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 5,
+     "at": 3.1,
+     "type": "#F5B03A"
+    },
+    {
+     "line": 5,
+     "at": 3.9,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 5,
+     "at": 4.6,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 5,
+     "at": 5.0,
+     "rest": true
+    },
+    {
+     "line": 5,
+     "at": 5.4,
+     "hl": "mic",
+     "lbl": [
+      "Amber",
+      "from Text color"
+     ],
+     "lblSide": "left",
+     "dur": 2.2,
      "exact": true
     }
    ]
@@ -62,83 +263,114 @@
     {
      "line": 1,
      "at": 0.0,
+     "zoom": "z_chip",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.2,
      "mouse": [
       "click",
-      1083,
+      777,
       168
      ]
     },
     {
      "line": 1,
      "at": 0.9,
-     "hl": "shapes",
+     "hl": "hint",
      "lbl": [
-      "14 shapes",
-      "Insert shape"
+      "Rectangle tool",
+      "the hint line explains it"
      ],
-     "lblSide": "right",
+     "lblSide": "below",
      "dur": 2.0,
      "exact": true
     },
     {
      "line": 1,
-     "at": 2.4,
-     "mouse": [
-      "click",
-      1044,
-      340
-     ]
-    },
-    {
-     "line": 3,
-     "at": 0.0,
-     "mouse": [
-      "click",
-      1149,
-      168
-     ]
-    },
-    {
-     "line": 3,
-     "at": 0.8,
-     "type": "microphone"
-    },
-    {
-     "line": 3,
      "at": 2.0,
      "mouse": [
+      "drag",
+      1083,
+      830,
+      1626,
+      946
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "dbl",
+      1355,
+      888
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.3,
+     "type": "DAY 1"
+    },
+    {
+     "line": 2,
+     "at": 2.6,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
       "click",
-      888,
-      332
+      1137,
+      243
      ]
     },
     {
      "line": 3,
      "at": 0.8,
-     "hl": "iconpick",
+     "hl": "shapepop",
      "lbl": [
-      "Insert icon",
-      "search 1,500+"
+      "Change shape",
+      "14 shapes"
      ],
      "lblSide": "right",
      "dur": 2.0,
      "exact": true
     },
     {
-     "line": 4,
-     "at": 1.6,
-     "key": [
-      6,
-      true
+     "line": 3,
+     "at": 3.0,
+     "mouse": [
+      "click",
+      1100,
+      416
      ]
     },
     {
-     "line": 4,
-     "at": 2.0,
+     "line": 3,
+     "at": 4.0,
      "key": [
-      6,
-      true
+      53
      ]
+    },
+    {
+     "line": 3,
+     "at": 4.2,
+     "hl": "chip",
+     "lbl": [
+      "DAY 1",
+      "a shape that holds text"
+     ],
+     "lblSide": "right",
+     "dur": 1.6,
+     "exact": true
     }
    ]
   },
@@ -155,28 +387,28 @@
    "events": [
     {
      "line": 1,
-     "at": 0.6,
+     "at": 0.0,
      "mouse": [
       "click",
-      776,
+      777,
       168
      ]
     },
     {
      "line": 1,
-     "at": 1.4,
+     "at": 0.8,
      "mouse": [
       "drag",
-      1100,
-      1530,
-      2700,
-      1720
+      984,
+      1301,
+      2416,
+      1606
      ]
     },
     {
      "line": 2,
      "at": 0.0,
-     "zoom": "fillpop",
+     "zoom": "z_fill",
      "scale": 1.6,
      "center": [
       1920,
@@ -194,104 +426,146 @@
     },
     {
      "line": 2,
-     "at": 1.0,
+     "at": 1.4,
      "mouse": [
       "click",
-      1494,
+      1490,
       253
      ]
     },
     {
      "line": 3,
-     "at": 0.0,
+     "at": 0.3,
      "mouse": [
       "click",
-      1560,
+      1559,
       535
      ]
     },
     {
      "line": 3,
-     "at": 0.8,
+     "at": 1.4,
      "mouse": [
       "click",
-      1753,
-      342
+      1754,
+      344
      ]
     },
     {
      "line": 3,
-     "at": 1.6,
+     "at": 2.4,
      "mouse": [
       "click",
-      1293,
-      1068
+      1294,
+      1129
      ]
     },
     {
      "line": 3,
-     "at": 2.6,
+     "at": 3.6,
      "key": [
       53
      ]
     },
     {
      "line": 3,
-     "at": 2.8,
+     "at": 3.9,
      "rest": true
     },
     {
      "line": 3,
-     "at": 3.2,
-     "hl": "band0",
+     "at": 4.4,
+     "hl": "band",
      "lbl": [
-      "Fades to transparent",
-      "Linear fill"
+      "Fades away",
+      "Linear · right end No fill"
      ],
-     "lblSide": "above",
-     "dur": 2.4,
+     "lblSide": "below",
+     "dur": 2.0,
      "exact": true
     },
     {
      "line": 4,
-     "at": 0.2,
+     "at": 1.2,
      "mouse": [
-      "click",
-      1944,
-      168
+      "rclick",
+      2300,
+      1580
      ]
     },
     {
      "line": 4,
-     "at": 0.7,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 4,
-     "at": 0.8999999999999999,
-     "type": "1"
-    },
-    {
-     "line": 4,
-     "at": 1.3,
-     "key": [
-      36
+     "at": 1.8,
+     "zoom": "z_order",
+     "scale": 1.7,
+     "center": [
+      1920,
+      1080
      ]
     },
     {
      "line": 4,
      "at": 2.0,
-     "key": [
-      53
+     "mouse": [
+      "move",
+      2363,
+      2057
      ]
+    },
+    {
+     "line": 4,
+     "at": 3.3,
+     "mouse": [
+      "move",
+      2760,
+      2057
+     ]
+    },
+    {
+     "line": 4,
+     "at": 3.1,
+     "hl": "tobacksub",
+     "lbl": [
+      "Order",
+      "To back"
+     ],
+     "lblSide": "right",
+     "dur": 1.7,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 4.3,
+     "mouse": [
+      "click",
+      2800,
+      2118
+     ]
+    },
+    {
+     "line": 4,
+     "at": 5.3,
+     "rest": true
+    },
+    {
+     "line": 4,
+     "at": 5.6,
+     "hl": "band",
+     "lbl": [
+      "Behind the name",
+      "icon and name on top"
+     ],
+     "lblSide": "below",
+     "dur": 1.6,
+     "exact": true
     }
    ]
   },
   "s4": {
    "setup": [
+    {
+     "clip_img": "media/rts-logo.png"
+    },
     {
      "mouse": [
       "jump",
@@ -304,381 +578,82 @@
     {
      "line": 1,
      "at": 0.0,
-     "zoom": "place",
-     "scale": 1.7,
+     "zoom": "z_insert",
+     "scale": 1.8,
      "center": [
       1920,
-      1000
+      1080
      ]
     },
     {
      "line": 1,
-     "at": 0.2,
-     "mouse": [
-      "click",
-      1715,
-      244
-     ]
-    },
-    {
-     "line": 1,
-     "at": 1.0,
-     "mouse": [
-      "click",
-      1590,
-      410
-     ]
-    },
-    {
-     "line": 1,
-     "at": 1.5,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 1,
-     "at": 1.7,
-     "type": "5"
-    },
-    {
-     "line": 1,
-     "at": 2.1,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 1,
-     "at": 2.6,
-     "mouse": [
-      "click",
-      1872,
-      410
-     ]
-    },
-    {
-     "line": 1,
-     "at": 3.1,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 1,
-     "at": 3.3,
-     "type": "78"
-    },
-    {
-     "line": 1,
-     "at": 3.7,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 1,
-     "at": 4.2,
-     "mouse": [
-      "click",
-      1590,
-      514
-     ]
-    },
-    {
-     "line": 1,
-     "at": 4.7,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 1,
-     "at": 4.9,
-     "type": "60"
-    },
-    {
-     "line": 1,
-     "at": 5.300000000000001,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 1,
-     "at": 5.8,
-     "mouse": [
-      "click",
-      1872,
-      514
-     ]
-    },
-    {
-     "line": 1,
-     "at": 6.3,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 1,
-     "at": 6.5,
-     "type": "12"
-    },
-    {
-     "line": 1,
-     "at": 6.9,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 1,
-     "at": 1.2,
-     "hl": "place",
+     "at": 0.3,
+     "hl": "addpic",
      "lbl": [
-      "Place",
-      "X · Y · W · H in %"
+      "Add picture",
+      ""
      ],
-     "lblSide": "right",
-     "dur": 4.0,
+     "lblSide": "below",
+     "dur": 1.8,
      "exact": true
     },
     {
-     "line": 2,
-     "at": 0.0,
-     "key": [
-      53
-     ]
-    },
-    {
-     "line": 2,
-     "at": 0.2,
+     "line": 1,
+     "at": 2.2,
      "rest": true
     },
     {
-     "line": 2,
-     "at": 0.6,
-     "hl": "band",
+     "line": 1,
+     "at": 3.0,
+     "key": [
+      9,
+      true
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.6,
+     "hl": "logo0",
      "lbl": [
-      "5 · 78 · 60 · 12",
-      "the same on every slide"
+      "Pasted",
+      "lands in the middle"
      ],
-     "lblSide": "above",
-     "dur": 3.0,
+     "lblSide": "below",
+     "dur": 1.6,
      "exact": true
     },
     {
-     "line": 3,
+     "line": 2,
      "at": 0.2,
      "mouse": [
-      "click",
-      2118,
-      1250
+      "drag",
+      1070,
+      1483,
+      2626,
+      1090
      ]
     },
     {
      "line": 3,
-     "at": 1.0,
+     "at": 0.1,
      "mouse": [
-      "click",
-      1715,
-      244
+      "drag",
+      2897,
+      1023,
+      2984,
+      676
      ]
     },
     {
      "line": 3,
-     "at": 1.8,
-     "mouse": [
-      "click",
-      1590,
-      410
-     ]
-    },
-    {
-     "line": 3,
-     "at": 2.3,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 3,
-     "at": 2.5,
-     "type": "7"
-    },
-    {
-     "line": 3,
-     "at": 2.9000000000000004,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 3,
-     "at": 3.4,
-     "mouse": [
-      "click",
-      1872,
-      410
-     ]
-    },
-    {
-     "line": 3,
-     "at": 3.9,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 3,
-     "at": 4.1,
-     "type": "79"
-    },
-    {
-     "line": 3,
-     "at": 4.5,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 3,
-     "at": 5.0,
-     "mouse": [
-      "click",
-      1590,
-      514
-     ]
-    },
-    {
-     "line": 3,
-     "at": 5.5,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 3,
-     "at": 5.7,
-     "type": "55"
-    },
-    {
-     "line": 3,
-     "at": 6.1,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 3,
-     "at": 6.6,
-     "mouse": [
-      "click",
-      1872,
-      514
-     ]
-    },
-    {
-     "line": 3,
-     "at": 7.1,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 3,
-     "at": 7.3,
-     "type": "10"
-    },
-    {
-     "line": 3,
-     "at": 7.699999999999999,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 3,
-     "at": 8.4,
-     "mouse": [
-      "click",
-      1682,
-      617
-     ]
-    },
-    {
-     "line": 3,
-     "at": 9.2,
-     "key": [
-      53
-     ]
-    },
-    {
-     "line": 3,
-     "at": 9.6,
-     "mouse": [
-      "click",
-      516,
-      396
-     ]
-    },
-    {
-     "line": 3,
-     "at": 10.4,
-     "mouse": [
-      "click",
-      1200,
-      321
-     ]
-    },
-    {
-     "line": 3,
-     "at": 11.2,
-     "mouse": [
-      "click",
-      1050,
-      321
-     ]
-    },
-    {
-     "line": 3,
-     "at": 11.7,
-     "key": [
-      0,
-      true
-     ]
-    },
-    {
-     "line": 3,
-     "at": 11.899999999999999,
-     "type": "7"
-    },
-    {
-     "line": 3,
-     "at": 12.299999999999999,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 3,
-     "at": 13.4,
-     "hl": "name",
+     "at": 1.9,
+     "hl": "logo",
      "lbl": [
-      "A lower third",
-      "band + name"
+      "Logo",
+      "in the corner"
      ],
-     "lblSide": "above",
-     "dur": 2.4,
+     "lblSide": "below",
+     "dur": 2.2,
      "exact": true
     }
    ]
@@ -687,11 +662,149 @@
    "setup": [
     {
      "mouse": [
-      "click",
+      "jump",
       2400,
       1950
      ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 1.6,
+     "hl": "dupbtn",
+     "lbl": [
+      "Duplicate slide",
+      ""
+     ],
+     "lblSide": "above",
+     "dur": 1.6,
+     "exact": true
     },
+    {
+     "line": 1,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      135,
+      2043
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.3,
+     "hl": "slide2",
+     "lbl": [
+      "A copy",
+      "slide 2"
+     ],
+     "lblSide": "right",
+     "dur": 0.9,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "zoom": "z_text",
+     "scale": 1.5,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1716,
+      1086
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.9,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.5,
+     "type": "Design at Scale"
+    },
+    {
+     "line": 2,
+     "at": 3.2,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 2,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      1500,
+      1398
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.3,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.6,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.9,
+     "type": "Priya Natarajan"
+    },
+    {
+     "line": 2,
+     "at": 6.5,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 2,
+     "at": 6.9,
+     "rest": true
+    },
+    {
+     "line": 2,
+     "at": 7.3,
+     "hl": "slide2",
+     "lbl": [
+      "Same design",
+      "new words"
+     ],
+     "lblSide": "right",
+     "dur": 1.5,
+     "exact": true
+    }
+   ]
+  },
+  "s6": {
+   "setup": [
     {
      "mouse": [
       "jump",
@@ -706,79 +819,49 @@
      "at": 0.3,
      "mouse": [
       "rclick",
-      1500,
-      1689
+      1716,
+      1086
      ]
     },
     {
      "line": 1,
      "at": 0.9,
-     "hl": "menu1",
+     "zoom": "z_copy",
+     "scale": 1.7,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.3,
+     "hl": "copyitem",
      "lbl": [
       "Copy style",
-      "right-click the name"
+      "the look of the text"
      ],
      "lblSide": "right",
-     "dur": 1.4,
+     "dur": 1.7,
      "exact": true
     },
     {
      "line": 1,
-     "at": 1.8,
+     "at": 3.2,
      "mouse": [
       "click",
-      1620,
-      1802
+      1836,
+      1512
      ]
     },
     {
-     "line": 2,
-     "at": 0.0,
-     "mouse": [
-      "click",
-      189,
-      528
-     ]
+     "line": 1,
+     "at": 3.8,
+     "rest": true
     },
     {
      "line": 2,
-     "at": 1.2,
-     "mouse": [
-      "rclick",
-      2118,
-      1329
-     ]
-    },
-    {
-     "line": 2,
-     "at": 1.8,
-     "hl": "menu2",
-     "lbl": [
-      "Paste style",
-      "on another box"
-     ],
-     "lblSide": "left",
-     "dur": 1.4,
-     "exact": true
-    },
-    {
-     "line": 2,
-     "at": 2.8,
-     "mouse": [
-      "click",
-      2238,
-      1817
-     ]
-    },
-    {
-     "line": 3,
-     "at": 0.0,
-     "cap": "Paste style brings the look — not the words, not the position",
-     "capdur": 3.4
-    },
-    {
-     "line": 4,
-     "at": 0.0,
+     "at": 0.2,
      "mouse": [
       "click",
       105,
@@ -786,49 +869,104 @@
      ]
     },
     {
-     "line": 4,
-     "at": 1.4,
+     "line": 2,
+     "at": 2.2,
+     "zoom": "z_cards",
+     "scale": 1.8,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.6,
      "mouse": [
       "click",
-      1480,
+      1507,
       1135
      ]
     },
     {
-     "line": 4,
-     "at": 2.6,
-     "mouse": [
-      "rclick",
-      1488,
-      993
-     ]
-    },
-    {
-     "line": 4,
-     "at": 3.4,
-     "mouse": [
-      "click",
-      1610,
-      1548
-     ]
-    },
-    {
-     "line": 4,
+     "line": 2,
      "at": 3.8,
-     "hl": "cards",
+     "mouse": [
+      "shiftclick",
+      2788,
+      1135
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.8,
+     "hl": "cards36",
      "lbl": [
-      "Paste style",
-      "onto every selected card"
+      "4 slides",
+      "click, then Shift-click"
      ],
      "lblSide": "below",
-     "dur": 2.8,
+     "dur": 1.6,
      "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "rclick",
+      1911,
+      1005
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.9,
+     "hl": "pastestyle",
+     "lbl": [
+      "Paste style",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 1.2,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 1.8,
+     "mouse": [
+      "click",
+      2030,
+      1560
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.8,
+     "hl": "cards36",
+     "lbl": [
+      "Changed at once",
+      "font · size · color"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.2,
+     "cap": "Copy style carries the look of text — not shapes, not pictures",
+     "capdur": 4.6
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "zoom": "z_all6",
+     "scale": 1.4,
+     "center": [
+      1920,
+      1080
+     ]
     }
    ]
-  },
-  "s9": {
-   "noclip": true,
-   "events": []
   }
  }
 }

@@ -31,6 +31,7 @@ def do(m, a):
         elif op == "drag": m.drag(*xy)
         elif op == "jump": m.jump(*xy)
         elif op == "cmdclick": m.cmd_click(*xy)
+        elif op == "shiftclick": m.shift_click(*xy)
         elif op == "slowdrag": m.slow_drag(*xy)
         elif op == "hold": m.hold(*xy)
         elif op == "lg": m.lg_move(xy[0], xy[1], click=False)          # 3편: LG(송출) 위로
@@ -43,7 +44,8 @@ def do(m, a):
         subprocess.run(["osascript", "-e", 'tell application "System Events" to set frontmost of (first process whose unix id is %s) to true' %
                         subprocess.run(["pgrep", "-f", "LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue( |$)"], capture_output=True, text=True).stdout.split()[0]])
     if "clip_img" in a:                 # 9편: 사진을 클립보드에(Paste background 용)
-        subprocess.run(["osascript", "-e", 'set the clipboard to (read (POSIX file "%s") as JPEG picture)' % str(HERE / a["clip_img"])])
+        kind = "«class PNGf»" if a["clip_img"].lower().endswith(".png") else "JPEG picture"     # 10편: 투명 PNG 로고는 PNG 그대로
+        subprocess.run(["osascript", "-e", 'set the clipboard to (read (POSIX file "%s") as %s)' % (str(HERE / a["clip_img"]), kind)])
     if "clip" in a:                     # 5편: 붙여넣을 글을 클립보드에
         subprocess.run(["pbcopy"], input=a["clip"].encode())
     if "fclear" in a:                   # Finder 선택을 비운다 — 남은 선택이 있으면 여러 파일이 함께 끌려갔다

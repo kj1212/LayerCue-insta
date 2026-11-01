@@ -1,61 +1,68 @@
 # Designing Slides: Shapes, Pictures, Styles | LayerCue from Zero, Episode 10
 
-## Putting things on
+## Decorating beside the words
 
-- Welcome back! Today, we design a lower third: the name band under a speaker.  
-  다시 오신 걸 환영해요! 오늘은 연사 아래에 뜨는 이름 띠, 로어서드를 디자인해요.
-- The Insert group adds things: text, shapes, icons, pictures, and video.  
-  Insert 그룹으로 글, 도형, 아이콘, 그림, 영상을 넣어요.
-- From the ribbon, they land in the middle of the slide, already selected.  
-  리본에서 넣으면 슬라이드 가운데에 선택된 채로 들어가요.
-- Right-click the canvas instead, and they land where you clicked.  
-  캔버스를 우클릭해서 넣으면 누른 자리에 들어가요.
+- Welcome back! Today, we decorate a title slide, and give many slides one look at once.  
+  다시 오신 걸 환영해요! 오늘은 타이틀 슬라이드를 꾸미고, 여러 슬라이드를 한 번에 같은 모양으로 맞춰요.
+- The Insert group adds text, shapes, icons, pictures and video.  
+  Insert 그룹으로 글자, 도형, 아이콘, 그림, 영상을 넣어요.
+- From the ribbon, they land in the middle. Right-click the canvas, and they land where you clicked.  
+  리본에서 넣으면 가운데에 놓이고, 캔버스를 우클릭해서 넣으면 클릭한 자리에 놓여요.
+- Insert icon searches about fifteen hundred icons. Type microphone, and press Return.  
+  Insert icon으로 아이콘 1,500여 개를 찾을 수 있어요. microphone을 입력하고 Return을 누르세요.
+- An icon is colored like text. Pick a Text color, and it turns amber.  
+  아이콘 색은 글자처럼 정해요. Text color를 고르면 주황색으로 바뀌어요.
 
-## Shapes and icons
+## A shape that holds text
 
-- Insert shape offers fourteen shapes. Here's a star.  
-  Insert shape에는 도형이 열네 가지 있어요. 이건 별이에요.
-- It lands in the middle, ready to move or resize.  
-  가운데에 들어가고, 바로 옮기거나 크기를 바꿀 수 있어요.
-- Insert icon searches about fifteen hundred icons.  
-  Insert icon은 아이콘 1,500여 개를 찾아요.
-- An icon takes its color from the Text color.  
-  아이콘 색은 Text color를 따라요.
+- Draw a rectangle above the title.  
+  제목 위에 사각형을 그려요.
+- Shapes hold text. Double-click, and type.  
+  도형에도 글자를 쓸 수 있어요. 더블클릭하고 입력하세요.
+- Change shape cuts it into one of fourteen shapes. Here's a chevron.  
+  Change shape로 14가지 모양 중 하나로 바꿀 수 있어요. 여기선 쉐브론이에요.
 
-## A fading band
+## A band that fades
 
-- Now the band. Draw a wide rectangle near the bottom.  
-  이제 띠를 만들어요. 아래쪽에 넓은 사각형을 그려요.
+- Now draw a band behind the name.  
+  이번엔 이름 뒤에 띠를 그려요.
 - Open Fill, and choose Linear.  
   Fill을 열고 Linear를 고르세요.
-- Set the right end to No fill, and the band fades to transparent.  
-  오른쪽 끝을 No fill로 하면 띠가 투명하게 사라져요.
-- Radius rounds the corners.  
-  Radius는 모서리를 둥글게 해요.
+- Point it to the right, and set the right end to No fill. The band fades away.  
+  방향을 오른쪽으로 하고, 오른쪽 끝을 No fill로 하면 띠가 투명하게 사라져요.
+- It covers the name, so right-click it, and choose Order, To back.  
+  띠가 이름을 가리니까, 우클릭해서 Order에서 To back을 고르세요.
 
-## Exact placement
+## A logo picture
 
-- Place sets the position and size as a percent of the slide.  
-  Place는 위치와 크기를 슬라이드의 퍼센트로 정해요.
-- Type the numbers, and the band sits in exactly the same spot on every slide.  
-  숫자를 입력하면 모든 슬라이드에서 띠가 똑같은 자리에 놓여요.
-- Then place the name on the band the same way, and bring it to the front.  
-  그다음 이름도 같은 방법으로 띠 위에 놓고, 맨 앞으로 가져와요.
+- Add picture puts a picture in a box. Or just paste one you copied.  
+  Add picture로 그림을 상자에 넣을 수 있어요. 복사해 둔 그림을 붙여 넣어도 돼요.
+- Drag a corner, and it keeps its proportions.  
+  모서리를 끌면 비율이 그대로 유지돼요.
+- Then drag it into the corner.  
+  그다음 구석으로 옮겨요.
 
-## One style, many slides
+## The next speaker
 
-- Right-click the name, and choose Copy style.  
-  이름을 우클릭해 Copy style을 고르세요.
-- Then right-click another box, and choose Paste style.  
-  그리고 다른 상자를 우클릭해 Paste style을 고르세요.
-- The look comes along. The words and the position stay.  
-  모양만 따라오고, 글자와 위치는 그대로예요.
-- In Show mode, select twenty cards, and paste a style onto all of them at once.  
-  Show 모드에서는 카드 스무 장을 고르고 한 번에 스타일을 붙여 넣을 수 있어요.
+- For the next speaker, don't start over. Press Duplicate slide.  
+  다음 연사는 처음부터 만들 필요 없어요. Duplicate slide를 누르세요.
+- Then change the words. Everything else stays where it was.  
+  글자만 바꾸면 돼요. 나머지는 모두 그 자리에 그대로 있어요.
+
+## One look, many slides
+
+- Copy style takes how text looks: its font, size and color.  
+  Copy style은 글자의 모양을 복사해요. 글꼴, 크기, 색이요.
+- In Show mode, pick the slides that should match. Click the first, then Shift-click the last.  
+  Show 모드에서 맞출 슬라이드를 골라요. 첫 장을 클릭하고, 마지막 장을 Shift-클릭하세요.
+- Right-click, and choose Paste style. Four slides change at once.  
+  우클릭해서 Paste style을 고르면, 네 장이 한 번에 바뀌어요.
+- The words and positions stay. Shapes and pictures don't come along; only the look of the text does.  
+  글자와 위치는 그대로예요. 도형과 그림은 따라오지 않고, 글자의 모양만 옮겨져요.
 
 ## What's next
 
-- You can now design a lower third, and restyle many slides at once.  
-  이제 로어서드를 디자인하고, 여러 슬라이드의 스타일을 한 번에 바꿀 수 있어요.
+- You can now decorate a title slide, and give many slides one look at once.  
+  이제 타이틀 슬라이드를 꾸미고, 여러 슬라이드를 한 번에 같은 모양으로 맞출 수 있어요.
 - Next time: music, on its own channel.  
-  다음 시간에는 음악 전용 채널을 다뤄요.
+  다음 편은 음악, 음악만의 채널이에요.

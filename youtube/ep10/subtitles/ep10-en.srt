@@ -1,84 +1,92 @@
 1
-00:00:06,400 --> 00:00:11,360
-Welcome back! Today, we design a lower third: the name band under a speaker.
+00:00:06,400 --> 00:00:12,270
+Welcome back! Today, we decorate a title slide, and give many slides one look at once.
 
 2
-00:00:11,430 --> 00:00:16,580
-The Insert group adds things: text, shapes, icons, pictures, and video.
+00:00:12,940 --> 00:00:17,360
+The Insert group adds text, shapes, icons, pictures and video.
 
 3
-00:00:18,250 --> 00:00:22,320
-From the ribbon, they land in the middle of the slide, already selected.
+00:00:18,230 --> 00:00:23,610
+From the ribbon, they land in the middle. Right-click the canvas, and they land where you clicked.
 
 4
-00:00:24,190 --> 00:00:27,930
-Right-click the canvas instead, and they land where you clicked.
+00:00:25,680 --> 00:00:31,670
+Insert icon searches about fifteen hundred icons. Type microphone, and press Return.
 
 5
-00:00:31,750 --> 00:00:35,210
-Insert shape offers fourteen shapes. Here's a star.
+00:00:33,940 --> 00:00:38,740
+An icon is colored like text. Pick a Text color, and it turns amber.
 
 6
-00:00:37,880 --> 00:00:41,110
-It lands in the middle, ready to move or resize.
+00:00:42,560 --> 00:00:44,810
+Draw a rectangle above the title.
 
 7
-00:00:42,180 --> 00:00:45,680
-Insert icon searches about fifteen hundred icons.
+00:00:46,680 --> 00:00:49,550
+Shapes hold text. Double-click, and type.
 
 8
-00:00:49,150 --> 00:00:52,050
-An icon takes its color from the Text color.
+00:00:51,220 --> 00:00:55,330
+Change shape cuts it into one of fourteen shapes. Here's a chevron.
 
 9
-00:00:55,870 --> 00:00:59,310
-Now the band. Draw a wide rectangle near the bottom.
+00:00:58,350 --> 00:01:00,420
+Now draw a band behind the name.
 
 10
-00:01:02,380 --> 00:01:04,530
+00:01:02,090 --> 00:01:04,240
 Open Fill, and choose Linear.
 
 11
-00:01:06,600 --> 00:01:10,620
-Set the right end to No fill, and the band fades to transparent.
+00:01:05,310 --> 00:01:10,110
+Point it to the right, and set the right end to No fill. The band fades away.
 
 12
-00:01:14,090 --> 00:01:16,080
-Radius rounds the corners.
+00:01:11,780 --> 00:01:15,690
+It covers the name, so right-click it, and choose Order, To back.
 
 13
-00:01:19,900 --> 00:01:23,710
-Place sets the position and size as a percent of the slide.
+00:01:19,510 --> 00:01:23,730
+Add picture puts a picture in a box. Or just paste one you copied.
 
 14
-00:01:31,280 --> 00:01:36,220
-Type the numbers, and the band sits in exactly the same spot on every slide.
+00:01:24,800 --> 00:01:27,600
+Drag a corner, and it keeps its proportions.
 
 15
-00:01:37,290 --> 00:01:41,270
-Then place the name on the band the same way, and bring it to the front.
+00:01:28,470 --> 00:01:30,480
+Then drag it into the corner.
 
 16
-00:01:57,690 --> 00:02:00,570
-Right-click the name, and choose Copy style.
+00:01:33,500 --> 00:01:37,460
+For the next speaker, don't start over. Press Duplicate slide.
 
 17
-00:02:02,640 --> 00:02:05,920
-Then right-click another box, and choose Paste style.
+00:01:38,530 --> 00:01:42,130
+Then change the words. Everything else stays where it was.
 
 18
-00:02:09,590 --> 00:02:12,950
-The look comes along. The words and the position stay.
+00:01:47,950 --> 00:01:52,110
+Copy style takes how text looks: its font, size and color.
 
 19
-00:02:14,220 --> 00:02:19,230
-In Show mode, select twenty cards, and paste a style onto all of them at once.
+00:01:53,580 --> 00:01:59,150
+In Show mode, pick the slides that should match. Click the first, then Shift-click the last.
 
 20
-00:02:26,650 --> 00:02:31,000
-You can now design a lower third, and restyle many slides at once.
+00:02:00,220 --> 00:02:04,510
+Right-click, and choose Paste style. Four slides change at once.
 
 21
-00:02:31,070 --> 00:02:33,720
+00:02:06,180 --> 00:02:12,420
+The words and positions stay. Shapes and pictures don't come along; only the look of the text does.
+
+22
+00:02:14,640 --> 00:02:19,350
+You can now decorate a title slide, and give many slides one look at once.
+
+23
+00:02:19,420 --> 00:02:22,070
 Next time: music, on its own channel.
 

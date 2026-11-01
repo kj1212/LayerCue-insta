@@ -98,6 +98,20 @@ class M:
         self._cmd(False); time.sleep(0.05)
         self._rec("down", px, py)
 
+    def shift_click(self, px, py, dur=0.6):
+        """Shift 를 누른 채 클릭(처음 장부터 이 장까지 고르기) — ⌘ 처럼 수식키 바뀜으로 누르고 뗀다."""
+        self.move(px, py, dur); time.sleep(0.1)
+        for down in (True, False):
+            if not down:
+                for kind in (Quartz.kCGEventLeftMouseDown, Quartz.kCGEventLeftMouseUp):
+                    e = Quartz.CGEventCreateMouseEvent(None, kind, self.g(px, py), Quartz.kCGMouseButtonLeft)
+                    Quartz.CGEventSetFlags(e, Quartz.kCGEventFlagMaskShift); Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.08)
+            e = Quartz.CGEventCreateKeyboardEvent(None, 56, down)
+            Quartz.CGEventSetType(e, Quartz.kCGEventFlagsChanged)
+            Quartz.CGEventSetFlags(e, Quartz.kCGEventFlagMaskShift if down else 0)
+            Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.06)
+        self._rec("down", px, py)
+
     def double_click(self, px, py, dur=0.7):
         self.move(px, py, dur); time.sleep(0.12)
         for n in (1, 2):

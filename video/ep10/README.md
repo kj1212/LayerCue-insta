@@ -18,8 +18,10 @@
 - 음악 크기만: `final_mix.py <본편dB> <앞뒤dB> <말할때dB>` → ffmpeg 로 `render/ae-out.mp4` 에 다시 붙이기(재렌더 불필요)
 - 녹화 다시: LG 를 1920×1080(HiDPI)로, `record_all2.sh s3 s5`(구간만) · 무대 `record_stage.sh`
 
-## 10편 메모
-- LG 녹화, Finder 없음(reset.sh 에서 뺐다). 시작 상태: Summit 2026 › Speakers(이름 3장).
-- 팝오버(Radius 등)는 Esc 로 닫고 다음 동작 — 열린 채면 다음 클릭이 닫는 데 쓰인다.
-- 띠를 이름 뒤에 그리면 위에 놓인다 → 이름은 Place 의 맨 앞으로(1682,617). 스타일은 우클릭 메뉴(⌥⌘C/V 는 안 먹었다).
-- Insert icon 고르개는 왼쪽(830–1500)에 열린다.
+## 10편 메모(2판, 2026-11-01 다시 만듦)
+- 흐름: 밋밋한 타이틀 1장(Summit 2026 › Day 1)을 꾸민다 — 이름 옆 우클릭 → Insert icon(마이크) → Text color 주황 · 사각형 → "DAY 1" → Change shape 쉐브론 · 띠(Linear, 오른쪽 No fill) → 우클릭 Order › To back · 로고 붙여 넣기(media/rts-logo.png, 가상) → Duplicate slide 로 다음 연사 → 제목 Copy style → Show 모드에서 3–6장 고르고 Paste style.
+- 1판은 별·아이콘을 넣었다 지우고, 띠(도형)에 Copy style 을 써서 다른 장에 안 넘어간 채 끝났다. **Copy style 은 텍스트 상자만**(매뉴얼 slides/text.md) — 도형·그림은 따라가지 않는다고 말한다.
+- 시작 상태는 sandbox-ep10.base(plan/day1.html 을 set_slides_html 로 넣고 이름을 Day 1 로). Finder 없음.
+- Show 모드 카드는 **이름표**를 눌러 고른다(그림을 누르면 송출된다). 끝 장은 Shift-클릭(mouse.shift_click).
+- 우클릭 Order 하위 메뉴는 Order 위에 머물렀다가 옆으로 옮겨 가서 누른다(바로 가면 메뉴가 닫힌다).
+- 이 날 녹화는 rec_t0 0.9(1.4 이면 화면 동작이 0.5 초 일찍 나왔다) — 녹화 뒤 한 번 재고 맞춘다.

@@ -1,5 +1,5 @@
 #!/bin/zsh
-# 6편 촬영 시작 상태로 되돌린다 — 앱을 끄고 sandbox-ep10.base 를 다시 깔고 켠 뒤, 데모 Finder 창을 맨 앞에 둔다
+# 10편 촬영 시작 상태로 되돌린다 — 앱을 끄고 sandbox-ep10.base 를 다시 깔고 켠다(로고는 클립보드로 붙여 넣어 Finder 창은 쓰지 않는다)
 cd "${0:a:h}/.." || exit 1
 ./sb.sh quit >/dev/null; sleep 2
 rm -rf sandbox-ep10/docs sandbox-ep10/settings && cp -R sandbox-ep10.base/docs sandbox-ep10.base/settings sandbox-ep10/

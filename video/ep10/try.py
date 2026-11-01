@@ -26,6 +26,7 @@ elif op == "slowdrag":
         m._post(Quartz.kCGEventLeftMouseDragged,x2+(i%2),y2); time.sleep(1/30)
     m._post(Quartz.kCGEventLeftMouseUp,x2,y2)
 elif op == "cmdclick": m.cmd_click(*a)
+elif op == "shiftclick": m.shift_click(*a)
 elif op == "hold":
     import Quartz
     m.move(a[0],a[1],0.5); time.sleep(0.1); m._post(Quartz.kCGEventLeftMouseDown,a[0],a[1]); time.sleep(a[2]); m._post(Quartz.kCGEventLeftMouseUp,a[0],a[1])

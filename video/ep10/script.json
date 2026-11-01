@@ -1,39 +1,47 @@
 {
  "title": "Designing Slides: Shapes, Pictures, Styles — LayerCue from Zero, Episode 10",
- "version": 1,
+ "version": 2,
  "segments": [
   {
    "id": "s1",
-   "chapter": "Putting things on",
+   "chapter": "Decorating beside the words",
    "start": 0,
    "end": 0,
    "lines": [
     {
-     "text": "Welcome back! Today, we design a lower third: the name band under a speaker.",
-     "pause": 0,
+     "text": "Welcome back! Today, we decorate a title slide, and give many slides one look at once.",
+     "pause": 0.6,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "The Insert group adds things: text, shapes, icons, pictures, and video.",
-     "pause": 1.6,
+     "text": "The Insert group adds text, shapes, icons, pictures and video.",
+     "pause": 0.8,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "From the ribbon, they land in the middle of the slide, already selected.",
-     "pause": 1.8,
+     "text": "From the ribbon, they land in the middle. Right-click the canvas, and they land where you clicked.",
+     "pause": 2.0,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "Right-click the canvas instead, and they land where you clicked.",
+     "text": "Insert icon searches about fifteen hundred icons. Type microphone, and press Return.",
+     "pause": 2.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "An icon is colored like text. Pick a Text color, and it turns amber.",
      "pause": 2.4,
      "screen": "",
      "action": "",
@@ -44,37 +52,29 @@
   },
   {
    "id": "s2",
-   "chapter": "Shapes and icons",
+   "chapter": "A shape that holds text",
    "start": 0,
    "end": 0,
    "lines": [
     {
-     "text": "Insert shape offers fourteen shapes. Here's a star.",
-     "pause": 2.6,
+     "text": "Draw a rectangle above the title.",
+     "pause": 1.8,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "It lands in the middle, ready to move or resize.",
-     "pause": 1.0,
+     "text": "Shapes hold text. Double-click, and type.",
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "Insert icon searches about fifteen hundred icons.",
-     "pause": 3.4,
-     "screen": "",
-     "action": "",
-     "caption": "",
-     "keys": ""
-    },
-    {
-     "text": "An icon takes its color from the Text color.",
-     "pause": 2.4,
+     "text": "Change shape cuts it into one of fourteen shapes. Here's a chevron.",
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -84,13 +84,13 @@
   },
   {
    "id": "s3",
-   "chapter": "A fading band",
+   "chapter": "A band that fades",
    "start": 0,
    "end": 0,
    "lines": [
     {
-     "text": "Now the band. Draw a wide rectangle near the bottom.",
-     "pause": 3.0,
+     "text": "Now draw a band behind the name.",
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -98,22 +98,22 @@
     },
     {
      "text": "Open Fill, and choose Linear.",
-     "pause": 2.0,
+     "pause": 1.0,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "Set the right end to No fill, and the band fades to transparent.",
-     "pause": 3.4,
+     "text": "Point it to the right, and set the right end to No fill. The band fades away.",
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "Radius rounds the corners.",
+     "text": "It covers the name, so right-click it, and choose Order, To back.",
      "pause": 2.4,
      "screen": "",
      "action": "",
@@ -124,20 +124,12 @@
   },
   {
    "id": "s4",
-   "chapter": "Exact placement",
+   "chapter": "A logo picture",
    "start": 0,
    "end": 0,
    "lines": [
     {
-     "text": "Place sets the position and size as a percent of the slide.",
-     "pause": 7.5,
-     "screen": "",
-     "action": "",
-     "caption": "",
-     "keys": ""
-    },
-    {
-     "text": "Type the numbers, and the band sits in exactly the same spot on every slide.",
+     "text": "Add picture puts a picture in a box. Or just paste one you copied.",
      "pause": 1.0,
      "screen": "",
      "action": "",
@@ -145,8 +137,16 @@
      "keys": ""
     },
     {
-     "text": "Then place the name on the band the same way, and bring it to the front.",
-     "pause": 15.0,
+     "text": "Drag a corner, and it keeps its proportions.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then drag it into the corner.",
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -156,37 +156,61 @@
   },
   {
    "id": "s5",
-   "chapter": "One style, many slides",
+   "chapter": "The next speaker",
    "start": 0,
    "end": 0,
    "lines": [
     {
-     "text": "Right-click the name, and choose Copy style.",
-     "pause": 2.0,
+     "text": "For the next speaker, don't start over. Press Duplicate slide.",
+     "pause": 1.0,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "Then right-click another box, and choose Paste style.",
-     "pause": 3.6,
+     "text": "Then change the words. Everything else stays where it was.",
+     "pause": 4.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "One look, many slides",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Copy style takes how text looks: its font, size and color.",
+     "pause": 1.4,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "The look comes along. The words and the position stay.",
-     "pause": 1.2,
+     "text": "In Show mode, pick the slides that should match. Click the first, then Shift-click the last.",
+     "pause": 1.0,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
     },
     {
-     "text": "In Show mode, select twenty cards, and paste a style onto all of them at once.",
-     "pause": 6.0,
+     "text": "Right-click, and choose Paste style. Four slides change at once.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The words and positions stay. Shapes and pictures don't come along; only the look of the text does.",
+     "pause": 0.8,
      "screen": "",
      "action": "",
      "caption": "",
@@ -201,7 +225,7 @@
    "end": 0,
    "lines": [
     {
-     "text": "You can now design a lower third, and restyle many slides at once.",
+     "text": "You can now decorate a title slide, and give many slides one look at once.",
      "pause": 0,
      "screen": "",
      "action": "",
