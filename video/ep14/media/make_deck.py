@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""14편 데모 덱 — Dana Okafor 의 키노트(가상). 표 1, 차트 1(안 들어온다), 숨김 1, 윈도우 글꼴(Segoe UI) — 대체 글꼴로 바뀌는 것을 보여 준다.
+"""14편 데모 덱 — Dana Okafor 의 키노트(가상). 표 1, 숨김 1(차트는 사용자 요청으로 뺐다 — 앞으로 지원 예정), 윈도우 글꼴(Segoe UI) — 대체 글꼴로 바뀌는 것을 보여 준다.
     <venv with python-pptx>/bin/python ep14/media/make_deck.py  → ep14/media/Keynote-Okafor.pptx
 """
 import pathlib
 from pptx import Presentation
 from pptx.util import Emu, Pt
 from pptx.dml.color import RGBColor
-from pptx.chart.data import CategoryChartData
-from pptx.enum.chart import XL_CHART_TYPE
 from pptx.enum.text import PP_ALIGN
 H = pathlib.Path(__file__).resolve().parent
 P = Presentation(); P.slide_width, P.slide_height = Emu(12192000), Emu(6858000)
@@ -42,11 +40,6 @@ for i, r in enumerate(rows):
     for j, v in enumerate(r):
         c = t.cell(i, j); c.text = v; c.fill.solid(); c.fill.fore_color.rgb = RGBColor(0x1D, 0x3A, 0x8F) if i == 0 else RGBColor(0x14, 0x1D, 0x45)
         run = c.text_frame.paragraphs[0].runs[0]; run.font.size = Pt(24); run.font.name = F; run.font.color.rgb = AMBER if i == 0 else WHITE; run.font.bold = i == 0
-# 4 차트(안 들어온다)
-s = P.slides.add_slide(BL); bg(s)
-text(s, .08, .08, .84, .12, ["What the audience told us"], 40, bold=True)
-cd = CategoryChartData(); cd.categories = ["Too small", "Too dense", "Too fast", "Just right"]; cd.add_series("Votes", (38, 27, 19, 16))
-s.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED, Emu(int(W * .12)), Emu(int(Hh * .26)), Emu(int(W * .76)), Emu(int(Hh * .62)), cd)
 # 5 숨김
 s = P.slides.add_slide(BL); bg(s)
 text(s, .08, .10, .84, .12, ["Backup: Q&A notes"], 40, bold=True)

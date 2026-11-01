@@ -185,19 +185,19 @@
     {
      "line": 2,
      "at": 0.2,
-     "hl": "cards27",
+     "hl": "cards26",
      "lbl": [
-      "6 slides",
+      "5 slides",
       ""
      ],
      "lblSide": "below",
-     "dur": 1.6,
+     "dur": 2.4,
      "exact": true
     },
     {
      "line": 2,
      "at": 0.3,
-     "cap": "Imported 6 slides from PowerPoint — May differ from the original: charts and SmartArt",
+     "cap": "Imported 5 slides from PowerPoint",
      "capdur": 4.8
     },
     {
@@ -331,11 +331,11 @@
      "at": 0.2,
      "hl": "thumb5",
      "lbl": [
-      "The chart",
-      "didn't come across"
+      "Hidden in PowerPoint",
+      "it came in anyway"
      ],
      "lblSide": "right",
-     "dur": 1.8,
+     "dur": 2.0,
      "exact": true
     },
     {
@@ -344,30 +344,12 @@
      "mouse": [
       "rclick",
       190,
-      1375
-     ]
-    },
-    {
-     "line": 3,
-     "at": 3.6,
-     "mouse": [
-      "click",
-      336,
-      1604
-     ]
-    },
-    {
-     "line": 3,
-     "at": 4.6,
-     "mouse": [
-      "rclick",
-      190,
       1164
      ]
     },
     {
      "line": 3,
-     "at": 5.7,
+     "at": 3.6,
      "mouse": [
       "click",
       336,
@@ -618,28 +600,25 @@
     },
     {
      "line": 3,
-     "at": 0.4,
-     "key": [
-      5,
-      true,
-      true
+     "at": 0.3,
+     "mouse": [
+      "click",
+      1949,
+      1138
      ]
     },
     {
      "line": 3,
-     "at": 1.1,
-     "type": "~/projects/LayerCue-insta/video/ep14/media/export"
-    },
-    {
-     "line": 3,
-     "at": 4.4,
-     "key": [
-      36
+     "at": 1.5,
+     "mouse": [
+      "click",
+      1886,
+      1874
      ]
     },
     {
      "line": 3,
-     "at": 5.4,
+     "at": 2.7,
      "mouse": [
       "click",
       2174,

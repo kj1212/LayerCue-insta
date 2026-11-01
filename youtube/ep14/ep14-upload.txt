@@ -2,7 +2,7 @@ TITLE
 Bringing It In: PowerPoint, PDF and Export | LayerCue from Zero, Episode 14
 
 DESCRIPTION
-Bring a speaker's PowerPoint into the running order in LayerCue: drag the .pptx onto the card it should follow, read the notice (charts and SmartArt don't come across), and check it in the editor — a table arrives as one text box per cell, a missing font is replaced, hidden slides come in too. Then bring two pages of a printed programme in from a PDF as picture slides (pick a Range, 4K JPEG by default), and export the presentation back out as a PDF whose text stays text. PowerPoint doesn't need to be installed.
+Bring a speaker's PowerPoint into the running order in LayerCue: drag the .pptx onto the card it should follow, and check it in the editor — a table arrives as one text box per cell, a missing font is replaced, hidden slides come in too. Then bring two pages of a printed programme in from a PDF as picture slides (pick a Range, 4K JPEG by default), and export the presentation back out as a PDF, picking the folder from the save window whose text stays text. PowerPoint doesn't need to be installed.
 New here? Start with Episode 1: Meet LayerCue — The Main Window.
 Recorded on LayerCue 0.9.12.
 Manual: https://layercue.com/docs/import/powerpoint/ · https://layercue.com/docs/import/pdf/
@@ -12,10 +12,10 @@ Chapters
 0:00 Intro
 0:06 Three ways in
 0:34 A speaker's deck
-0:56 Check it before the show
-1:27 A PDF comes in as pictures
-1:52 Export to PDF
-2:19 What's next
+0:54 Check it before the show
+1:21 A PDF comes in as pictures
+1:46 Export to PDF
+2:10 What's next
 
 TAGS
 LayerCue, LayerCue tutorial, import PowerPoint, pptx, PDF import, export PDF, presentation software, event production, Mac, Windows
@@ -34,7 +34,7 @@ TITLE
 가져오기: PowerPoint, PDF, 내보내기 | LayerCue 처음부터, 14편
 
 DESCRIPTION
-연사의 PowerPoint를 LayerCue 진행 순서에 넣어요. .pptx를 뒤따를 카드 위에 끌어다 놓고, 알림(차트와 SmartArt는 들어오지 않음)을 읽고, 에디터에서 확인해요. 표는 칸마다 글상자 하나로 들어오고, 없는 글꼴은 바뀌고, 숨긴 슬라이드도 들어와요. 그다음 인쇄용 프로그램 PDF에서 두 쪽을 그림 슬라이드로 가져오고(Range로 고르기, 기본 4K JPEG), 프레젠테이션을 글자가 살아 있는 PDF로 내보내요. PowerPoint는 설치돼 있지 않아도 돼요.
+연사의 PowerPoint를 LayerCue 진행 순서에 넣어요. .pptx를 뒤따를 카드 위에 끌어다 놓고, 에디터에서 확인해요. 표는 칸마다 글상자 하나로 들어오고, 없는 글꼴은 바뀌고, 숨긴 슬라이드도 들어와요. 그다음 인쇄용 프로그램 PDF에서 두 쪽을 그림 슬라이드로 가져오고(Range로 고르기, 기본 4K JPEG), 프레젠테이션을 글자가 살아 있는 PDF로 내보내요. PowerPoint는 설치돼 있지 않아도 돼요.
 처음이라면 1편 「LayerCue 메인 창」부터 보세요.
 LayerCue 0.9.12로 녹화했어요.
 매뉴얼: https://layercue.com/docs/import/powerpoint/ · https://layercue.com/docs/import/pdf/
@@ -44,10 +44,10 @@ LayerCue 0.9.12로 녹화했어요.
 0:00 처음
 0:06 세 가지 입구
 0:34 연사의 덱
-0:56 쇼 전에 확인
-1:27 그림으로 들어오는 PDF
-1:52 PDF로 내보내기
-2:19 다음 편
+0:54 쇼 전에 확인
+1:21 그림으로 들어오는 PDF
+1:46 PDF로 내보내기
+2:10 다음 편
 
 ========================================
 日本語 (JAPANESE)
@@ -57,7 +57,7 @@ TITLE
 取り込み:PowerPoint・PDF・書き出し | ゼロから LayerCue 第14回
 
 DESCRIPTION
-登壇者の PowerPoint を LayerCue の進行に取り込みます。.pptx を後ろに続けたいカードへドラッグし、通知(グラフと SmartArt は入らない)を読んで、エディターで確認します。表はセルごとに一つのテキストボックスになり、ないフォントは置き換えられ、非表示のスライドも入ります。続いて印刷用プログラムの PDF から2ページを画像スライドとして取り込み(Range で選択、既定は 4K JPEG)、プレゼンテーションを文字が文字のままの PDF に書き出します。PowerPoint のインストールは不要です。
+登壇者の PowerPoint を LayerCue の進行に取り込みます。.pptx を後ろに続けたいカードへドラッグし、エディターで確認します。表はセルごとに一つのテキストボックスになり、ないフォントは置き換えられ、非表示のスライドも入ります。続いて印刷用プログラムの PDF から2ページを画像スライドとして取り込み(Range で選択、既定は 4K JPEG)、プレゼンテーションを文字が文字のままの PDF に書き出します。PowerPoint のインストールは不要です。
 初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。
 LayerCue 0.9.12 で収録しています。
 マニュアル: https://layercue.com/docs/import/powerpoint/ · https://layercue.com/docs/import/pdf/
@@ -67,7 +67,7 @@ LayerCue 0.9.12 で収録しています。
 0:00 イントロ
 0:06 三つの入口
 0:34 登壇者のデッキ
-0:56 本番前に確認
-1:27 画像で入る PDF
-1:52 PDF に書き出す
-2:19 次回
+0:54 本番前に確認
+1:21 画像で入る PDF
+1:46 PDF に書き出す
+2:10 次回

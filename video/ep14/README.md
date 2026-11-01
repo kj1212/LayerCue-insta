@@ -19,7 +19,7 @@
 - 녹화 다시: LG 를 1920×1480(HiDPI)로, `record_all2.sh s3 s5`(구간만) · 무대 `record_stage.sh`
 
 ## 14편 메모(2026-11-01)
-- 흐름: Summit 2026 › Day 1(꾸민 판) · 데모 Finder 창 "Speaker files"(finder.sh) → New Presentation 의 From PowerPoint/From PDF 보여 주고 Cancel · Add File 가리키기 → Keynote-Okafor.pptx 를 1번 카드에 끌어 놓기(6장, 알림은 자막으로) · BG 칩 → 에디터: 표 칸 하나 고치기 · 글꼴 Default font(Segoe UI 없음) · 숨김(6) · 차트(5) 슬라이드 지우기 → Summit-Programme.pdf 를 마지막 카드에 · Range 2-3 · Import → 우클릭 Export to PDF · Range 1-10 · ⌘⇧G 로 media/export 에 저장.
+- 흐름: Summit 2026 › Day 1(꾸민 판) · 데모 Finder 창 "Speaker files"(finder.sh) → New Presentation 의 From PowerPoint/From PDF 보여 주고 Cancel · Add File 가리키기 → Keynote-Okafor.pptx 를 1번 카드에 끌어 놓기(5장, 알림은 자막으로 — 차트는 사용자 요청으로 뺐다, 앞으로 지원 예정) · BG 칩 → 에디터: 표 칸 하나 고치기 · 글꼴 Default font(Segoe UI 없음) · 숨김(5) 슬라이드 지우기 → Summit-Programme.pdf 를 마지막 카드에 · Range 2-3 · Import → 우클릭 Export to PDF · Range 1-10 · 저장 창 Where 메뉴에서 Documents 를 클릭(사용자: 경로 타이핑은 사람 같지 않다). 메뉴가 열린 1.6 초 동안 개인 항목(컴퓨터 이름 · 클라우드 · 최근 폴더)을 patch_s5.sh 로 흐리게. 내보낸 Day 1.pdf 는 ~/Documents 에서 media/export 로 옮긴다(다시 찍기 전에 ~/Documents 에 같은 이름이 없어야 Replace 창이 안 뜬다).
 - 데모 파일: media/make_deck.py(python-pptx, 스크래치 venv) · media/programme.html → pdf.mjs(Chrome PDF).
 - 가져오기·내보내기 알림은 1.5 초쯤만 떠서 테두리 대신 자막으로 글을 보여 준다.
 - 저장 창 경로와 Exported 알림에 사용자 홈 경로(/Users/…)가 잠깐 보인다.

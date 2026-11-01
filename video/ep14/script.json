@@ -57,7 +57,7 @@
      "keys": ""
     },
     {
-     "text": "Six slides go in after it. Read the notice: charts and SmartArt didn't come across.",
+     "text": "Five slides go in after it, and the notice counts them.",
      "pause": 0.8,
      "screen": "",
      "action": "",
@@ -97,8 +97,8 @@
      "keys": ""
     },
     {
-     "text": "The chart slide has only its title. And hidden slides come in too: delete the ones you don't need.",
-     "pause": 2.4,
+     "text": "Hidden slides come in too. Delete the ones you don't need.",
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -177,8 +177,8 @@
      "keys": ""
     },
     {
-     "text": "Choose where to save it.",
-     "pause": 5.8,
+     "text": "Choose where to save it. Here, Documents.",
+     "pause": 1.4,
      "screen": "",
      "action": "",
      "caption": "",
