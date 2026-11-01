@@ -1,0 +1,286 @@
+{
+ "title": "YouTube Slides: Streaming, Downloading, Captions — LayerCue from Zero, Episode 13",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Adding a YouTube video",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today: a YouTube video on stage, with captions, and a copy that doesn't need the internet.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Day one opens with a video from YouTube. The chain button on the title bar is Link.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Paste the address, and press OK.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The slide goes to the end, with a YouTube badge, and the title arrives from YouTube.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A new YouTube slide streams. That means it needs the internet on the day.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Streaming on stage",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Click it, and it goes out like any slide.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "YouTube's own buttons stay off the stage. Use LayerCue's controls under the preview.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Only one streaming YouTube can be on stage at a time. To show two together, download them.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Load it into Slide settings. The ticks on its bar are chapters, read from YouTube.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Captions",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Captions also come from YouTube. Pick a language, and the stage changes at once.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The list holds only the languages you register. Manage languages adds more.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Type to filter, click to tick, and press OK.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Now Japanese is in the list too.",
+     "pause": 2.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The choice isn't saved with the slide. Each launch starts from Default captions in Settings.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "How captions look",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "How captions look is set once, for every YouTube. Open Settings, then Files and YouTube.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Caption position moves them to the top of the picture.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Caption size makes them larger. The stage follows as you change it.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Download it the day before",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "If a video has to play, download it. Clear the stage, and press Download in Slide settings.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Keep this slide loaded until it finishes. The file goes to the slide that is loaded.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Now it says Downloaded, and the card reads YouTube with an arrow.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It plays from the file: no internet, all four Scale modes, and crop. Captions are for streaming only.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Switch between Streaming and Downloaded with these two chips.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "The YouTube tool",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "LayerCue downloads with a small tool that comes with it, the YouTube tool. YouTube changes often.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "When a link that worked last month fails, the fix is usually a newer tool. Settings, Tools.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Check. A newer version is available. Update installs it; then quit and reopen LayerCue.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Do this the day before, not during the show.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now get a YouTube video ready, the day before.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: PowerPoint and PDF files, brought into LayerCue.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

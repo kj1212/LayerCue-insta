@@ -1,0 +1,112 @@
+1
+00:00:06,400 --> 00:00:13,210
+Welcome back! Today: a YouTube video on stage, with captions, and a copy that doesn't need the internet.
+
+2
+00:00:13,880 --> 00:00:19,050
+Day one opens with a video from YouTube. The chain button on the title bar is Link.
+
+3
+00:00:19,720 --> 00:00:21,850
+Paste the address, and press OK.
+
+4
+00:00:23,120 --> 00:00:28,340
+The slide goes to the end, with a YouTube badge, and the title arrives from YouTube.
+
+5
+00:00:29,010 --> 00:00:33,490
+A new YouTube slide streams. That means it needs the internet on the day.
+
+6
+00:00:35,510 --> 00:00:38,040
+Click it, and it goes out like any slide.
+
+7
+00:00:40,110 --> 00:00:45,400
+YouTube's own buttons stay off the stage. Use LayerCue's controls under the preview.
+
+8
+00:00:46,070 --> 00:00:51,850
+Only one streaming YouTube can be on stage at a time. To show two together, download them.
+
+9
+00:00:52,520 --> 00:00:57,720
+Load it into Slide settings. The ticks on its bar are chapters, read from YouTube.
+
+10
+00:00:59,740 --> 00:01:04,960
+Captions also come from YouTube. Pick a language, and the stage changes at once.
+
+11
+00:01:07,430 --> 00:01:12,460
+The list holds only the languages you register. Manage languages adds more.
+
+12
+00:01:13,130 --> 00:01:16,160
+Type to filter, click to tick, and press OK.
+
+13
+00:01:17,230 --> 00:01:19,400
+Now Japanese is in the list too.
+
+14
+00:01:21,670 --> 00:01:27,330
+The choice isn't saved with the slide. Each launch starts from Default captions in Settings.
+
+15
+00:01:29,350 --> 00:01:34,990
+How captions look is set once, for every YouTube. Open Settings, then Files and YouTube.
+
+16
+00:01:35,660 --> 00:01:39,010
+Caption position moves them to the top of the picture.
+
+17
+00:01:40,280 --> 00:01:44,460
+Caption size makes them larger. The stage follows as you change it.
+
+18
+00:01:47,280 --> 00:01:53,160
+If a video has to play, download it. Clear the stage, and press Download in Slide settings.
+
+19
+00:01:53,830 --> 00:01:59,170
+Keep this slide loaded until it finishes. The file goes to the slide that is loaded.
+
+20
+00:02:00,040 --> 00:02:03,960
+Now it says Downloaded, and the card reads YouTube with an arrow.
+
+21
+00:02:04,630 --> 00:02:11,180
+It plays from the file: no internet, all four Scale modes, and crop. Captions are for streaming only.
+
+22
+00:02:11,850 --> 00:02:15,380
+Switch between Streaming and Downloaded with these two chips.
+
+23
+00:02:17,400 --> 00:02:23,780
+LayerCue downloads with a small tool that comes with it, the YouTube tool. YouTube changes often.
+
+24
+00:02:24,450 --> 00:02:30,400
+When a link that worked last month fails, the fix is usually a newer tool. Settings, Tools.
+
+25
+00:02:31,070 --> 00:02:37,480
+Press Check. A newer version is available. Update installs it; then quit and reopen LayerCue.
+
+26
+00:02:38,150 --> 00:02:40,980
+Do this the day before, not during the show.
+
+27
+00:02:43,000 --> 00:02:46,370
+You can now get a YouTube video ready, the day before.
+
+28
+00:02:47,040 --> 00:02:51,220
+Next time: PowerPoint and PDF files, brought into LayerCue.
+

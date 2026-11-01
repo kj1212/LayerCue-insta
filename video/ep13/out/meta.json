@@ -1,0 +1,40 @@
+{
+ "title": "YouTube Slides: Streaming, Downloading, Captions | LayerCue from Zero, Episode 13",
+ "description": "Put a YouTube video on stage in LayerCue. Add it with Link (or paste the address onto the slide list), send it out while it streams, and use LayerCue's own controls — YouTube's buttons stay off the stage, and only one streaming YouTube can be up at a time. Turn on captions and watch the stage change at once, register another language under Manage languages, and set how every YouTube's captions look in Settings › Files & YouTube (position and size). Then download the video so it plays from a file on the day — no internet, all four Scale modes and crop — and keep the YouTube tool up to date in Settings › Tools, the day before.\nThe video in the demo is Episode 1 of this series.\nNew here? Start with Episode 1: Meet LayerCue — The Main Window.\nRecorded on LayerCue 0.9.12. The sound you hear in the demo is what LayerCue played.\nManual: https://layercue.com/docs/slides/youtube/\nThe narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional.",
+ "tags": [
+  "LayerCue",
+  "LayerCue tutorial",
+  "YouTube on stage",
+  "download YouTube",
+  "YouTube captions",
+  "streaming",
+  "yt-dlp",
+  "presentation software",
+  "event production",
+  "Mac",
+  "Windows"
+ ],
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "유튜브 슬라이드: 스트리밍, 다운로드, 자막 | LayerCue 처음부터, 13편",
+ "title_ja": "YouTube スライド:ストリーミング・ダウンロード・字幕 | ゼロから LayerCue 第13回",
+ "description_ko": "LayerCue로 유튜브 영상을 무대에 띄워요. Link로 넣거나(슬라이드 목록에 주소를 붙여 넣어도 돼요) 스트리밍 상태로 송출하고, LayerCue 컨트롤로 다뤄요. 유튜브 자체 버튼은 무대에 나오지 않고, 스트리밍 유튜브는 한 번에 하나만 올라가요. 자막을 켜면 무대가 바로 바뀌고, Manage languages로 언어를 등록하고, Settings › Files & YouTube에서 모든 유튜브의 자막 위치와 크기를 정해요. 그다음 영상을 다운로드해서 당일에는 파일로 재생해요. 인터넷이 필요 없고 Scale 네 가지와 자르기도 돼요. 마지막으로 행사 전날 Settings › Tools에서 YouTube tool을 최신으로 맞춰요.\n데모의 영상은 이 시리즈의 1편이에요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요. 데모에서 들리는 소리는 LayerCue가 실제로 낸 소리예요.\n매뉴얼: https://layercue.com/docs/slides/youtube/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요.",
+ "description_ja": "LayerCue で YouTube の映像をステージに出します。Link で追加し(スライドリストにアドレスを貼り付けても可)、ストリーミングのまま送出して、LayerCue のコントロールで操作します。YouTube 自体のボタンはステージに出ず、ストリーミングの YouTube は一度に一つだけです。字幕をオンにするとステージがすぐ変わり、Manage languages で言語を登録し、Settings › Files & YouTube ですべての YouTube の字幕の位置と大きさを決めます。そのあと映像をダウンロードして、当日はファイルから再生します。インターネット不要で、Scale の4種類と切り抜きも使えます。最後に、前日に Settings › Tools で YouTube tool を最新にします。\nデモの映像はこのシリーズの第1回です。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。デモで聞こえる音は LayerCue が実際に出した音です。\nマニュアル: https://layercue.com/docs/slides/youtube/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。",
+ "chapters_ko": [
+  "유튜브 영상 넣기",
+  "무대에서 스트리밍",
+  "자막",
+  "자막 모양",
+  "전날 다운로드",
+  "YouTube tool",
+  "다음 편"
+ ],
+ "chapters_ja": [
+  "YouTube の映像を追加",
+  "ステージでストリーミング",
+  "字幕",
+  "字幕の見た目",
+  "前日にダウンロード",
+  "YouTube tool",
+  "次回"
+ ]
+}

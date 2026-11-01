@@ -1,0 +1,727 @@
+{
+ "_note": "13편 연출표 — 1편 영상을 Day 1 에 링크로 · 스트리밍 송출 · 자막(한국어, 일본어 등록) · 자막 모양(위, 160%) · 다운로드 · YouTube tool Check. LG 녹화 + 앱 소리.",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.0,
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      132,
+      1807
+     ]
+    },
+    {
+     "sleep": 0.8
+    },
+    {
+     "clip": "https://youtu.be/55dioOOzick"
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      3562,
+      830
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.5,
+     "hl": "linkbtn",
+     "lbl": [
+      "Link",
+      "on the title bar"
+     ],
+     "lblSide": "below",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "zoom": "z_add",
+     "scale": 1.9,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "key": [
+      9,
+      "cmd"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.5,
+     "hl": "addlink",
+     "lbl": [
+      "Add Link",
+      "YouTube / Web"
+     ],
+     "lblSide": "below",
+     "dur": 1.8,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 1.5,
+     "mouse": [
+      "click",
+      2258,
+      1219
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 4,
+     "at": 0.6,
+     "hl": "card7",
+     "lbl": [
+      "YouTube",
+      "added at the end"
+     ],
+     "lblSide": "below",
+     "dur": 4.0,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "cap": "Or copy an address and press ⌘V on the slide list",
+     "capdur": 4.2
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "mouse": [
+      "click",
+      3168,
+      996
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.0,
+     "zoom": "z_stage_ss",
+     "scale": 1.35,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.4,
+     "hl": "stage",
+     "lbl": [
+      "Streaming",
+      "on stage"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 1.8,
+     "hl": "ctl",
+     "lbl": [
+      "LayerCue's controls",
+      "under the preview"
+     ],
+     "lblSide": "below",
+     "dur": 3.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "cap": "One streaming YouTube on stage at a time · two together? download them",
+     "capdur": 5.2
+    },
+    {
+     "line": 4,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      3168,
+      1133
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.0,
+     "hl": "ticks",
+     "lbl": [
+      "Chapters",
+      "read from YouTube"
+     ],
+     "lblSide": "below",
+     "dur": 2.8,
+     "exact": true
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "z_stage_ss",
+     "scale": 1.35,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "mouse": [
+      "click",
+      2964,
+      312
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.2,
+     "hl": "capmenu",
+     "lbl": [
+      "Captions",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 2.8,
+     "mouse": [
+      "click",
+      3088,
+      415
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.0,
+     "hl": "stage",
+     "lbl": [
+      "Korean captions",
+      "on stage at once"
+     ],
+     "lblSide": "below",
+     "dur": 3.2,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      2964,
+      312
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      3150,
+      542
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "zoom": "z_dlg",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.1,
+     "mouse": [
+      "click",
+      1918,
+      850
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "type": "Japanese"
+    },
+    {
+     "line": 3,
+     "at": 1.7,
+     "mouse": [
+      "click",
+      1704,
+      946
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.3,
+     "hl": "langdlg",
+     "lbl": [
+      "Caption languages",
+      "tick, then OK"
+     ],
+     "lblSide": "below",
+     "dur": 1.2,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 3.2,
+     "mouse": [
+      "click",
+      2218,
+      1554
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "zoom": "z_stage_ss",
+     "scale": 1.35,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      2964,
+      312
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.3,
+     "mouse": [
+      "click",
+      3088,
+      542
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.4,
+     "hl": "stage",
+     "lbl": [
+      "Japanese",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "cap": "Not saved with the slide · Settings › Files & YouTube › Default captions",
+     "capdur": 5.2
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 2.2,
+     "mouse": [
+      "click",
+      3780,
+      2119
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.2,
+     "mouse": [
+      "click",
+      1339,
+      926
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.0,
+     "mouse": [
+      "scroll",
+      2100,
+      1300,
+      -150
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.8,
+     "zoom": "z_setcap",
+     "scale": 1.35,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      2314,
+      1370
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.0,
+     "hl": "stage",
+     "lbl": [
+      "Top",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      2213,
+      1615
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.9,
+     "key": [
+      0,
+      "cmd"
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.1,
+     "type": "160"
+    },
+    {
+     "line": 3,
+     "at": 1.6,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.0,
+     "hl": "stage",
+     "lbl": [
+      "160%",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 3.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 4.93,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 3,
+     "at": 5.13,
+     "mouse": [
+      "click",
+      2635,
+      622
+     ]
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "z_ss",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      1166,
+      175
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.2,
+     "mouse": [
+      "click",
+      2798,
+      367
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.7,
+     "hl": "dlbtn",
+     "lbl": [
+      "Download",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "hl": "chips",
+     "lbl": [
+      "Downloaded",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 2.1,
+     "hl": "badge",
+     "lbl": [
+      "YouTube ↓",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "zoom": "z_ss",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.0,
+     "hl": "scale4",
+     "lbl": [
+      "All four Scale modes",
+      "and crop"
+     ],
+     "lblSide": "below",
+     "dur": 3.6,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "hl": "chips",
+     "lbl": [
+      "Streaming · Downloaded",
+      "switch any time"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 3.2,
+     "cap": "Download quality 1080p by default · Settings › Files & YouTube",
+     "capdur": 3.4
+    }
+   ]
+  },
+  "s6": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 2,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      3780,
+      2119
+     ]
+    },
+    {
+     "line": 2,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      1277,
+      998
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.4,
+     "zoom": "z_tools",
+     "scale": 1.9,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      2215,
+      936
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.6,
+     "hl": "toolrow",
+     "lbl": [
+      "YouTube tool",
+      "a newer version is available"
+     ],
+     "lblSide": "below",
+     "dur": 4.4,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 0.3,
+     "cap": "The YouTube tool is yt-dlp · ffmpeg converts",
+     "capdur": 4.6
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "cap": "After Update: quit LayerCue and open it again",
+     "capdur": 3.0
+    },
+    {
+     "line": 4,
+     "at": 2.88,
+     "mouse": [
+      "click",
+      2635,
+      622
+     ]
+    }
+   ]
+  }
+ }
+}
