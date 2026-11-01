@@ -13,6 +13,10 @@
       {
        "op": "clear",
        "layer": "all"
+      },
+      {
+       "op": "output",
+       "on": true
       }
      ]
     },
@@ -73,6 +77,18 @@
      "at": 1.6,
      "cap": "No Save button — everything is saved as you go",
      "capdur": 3.6
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "hl": "showbtn",
+     "lbl": [
+      "Show",
+      "back to the show"
+     ],
+     "lblSide": "above",
+     "dur": 1.8,
+     "exact": true
     }
    ]
   },
@@ -156,6 +172,15 @@
     },
     {
      "line": 4,
+     "at": 0.0,
+     "mouse": [
+      "move",
+      1014,
+      168
+     ]
+    },
+    {
+     "line": 4,
      "at": 1.6,
      "rest": true
     }
@@ -174,29 +199,29 @@
    "events": [
     {
      "line": 1,
-     "at": 0.2,
-     "mouse": [
-      "click",
-      1014,
-      168
-     ]
+     "at": 0.0,
+     "hl": "newbox",
+     "lbl": [
+      "Text box",
+      "on every new slide"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
     },
     {
      "line": 1,
-     "at": 0.0,
-     "hl": "addtext",
-     "lbl": [
-      "Add text box",
-      "in the middle"
-     ],
-     "lblSide": "below",
-     "dur": 1.6,
-     "exact": true
+     "at": 2.7,
+     "mouse": [
+      "dbl",
+      2118,
+      1218
+     ]
     },
     {
      "line": 2,
      "at": 0.2,
-     "type": "Welcome to our Spring Concret"
+     "type": "Welcome to our Spring Concert"
     },
     {
      "line": 2,
@@ -206,12 +231,21 @@
      ]
     },
     {
+     "line": 2,
+     "at": 3.4,
+     "mouse": [
+      "move",
+      1700,
+      2040
+     ]
+    },
+    {
      "line": 3,
      "at": 0.0,
      "hl": "slide2",
      "lbl": [
-      "Named",
-      "from its first line"
+      "Thumbnail",
+      "follows as you type"
      ],
      "lblSide": "right",
      "dur": 2.8,
@@ -256,11 +290,29 @@
     },
     {
      "line": 1,
-     "at": 2.4,
+     "at": 2.3,
      "mouse": [
-      "click",
+      "move",
       560,
       516
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.0,
+     "mouse": [
+      "move",
+      1050,
+      516
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      1064,
+      876
      ]
     },
     {
@@ -269,11 +321,21 @@
      "hl": "font",
      "lbl": [
       "Font",
-      "search by name"
+      "search, then a weight"
      ],
-     "lblSide": "below",
-     "dur": 3.0,
+     "lblSide": "above",
+     "dur": 3.6,
      "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "zoom": "size",
+     "scale": 1.4,
+     "center": [
+      555,
+      231
+     ]
     },
     {
      "line": 3,
@@ -325,15 +387,15 @@
      "hl": "bgrow",
      "lbl": [
       "Background row",
-      "a photo behind the words"
+      "import or paste"
      ],
      "lblSide": "above",
-     "dur": 2.6,
+     "dur": 4.6,
      "exact": true
     },
     {
      "line": 1,
-     "at": 2.0,
+     "at": 4.2,
      "mouse": [
       "click",
       699,
@@ -341,9 +403,18 @@
      ]
     },
     {
+     "line": 1,
+     "at": 4.9,
+     "mouse": [
+      "move",
+      1700,
+      2040
+     ]
+    },
+    {
      "line": 2,
      "at": 0.0,
-     "hl": "box",
+     "hl": "text5",
      "lbl": [
       "White on a bright sky",
       "hard to read"
@@ -358,8 +429,8 @@
      "zoom": "outline",
      "scale": 1.4,
      "center": [
-      1920,
-      700
+      1013,
+      292
      ]
     },
     {
@@ -385,7 +456,7 @@
     },
     {
      "line": 4,
-     "at": 0.3,
+     "at": 0.2,
      "mouse": [
       "click",
       1700,
@@ -394,25 +465,75 @@
     },
     {
      "line": 4,
-     "at": 0.6,
+     "at": 0.5,
      "hl": "shadow",
      "lbl": [
       "Text shadow",
       "the same way"
      ],
      "lblSide": "below",
-     "dur": 2.0,
+     "dur": 1.6,
      "exact": true
     },
     {
      "line": 5,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1755,
+      396
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.7,
+     "hl": "shadowpop",
+     "lbl": [
+      "Shadow options",
+      "distance · angle · blur"
+     ],
+     "lblSide": "right",
+     "dur": 4.2,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 2.4,
+     "mouse": [
+      "slowdrag",
+      1557,
+      728,
+      1768,
+      728,
+      0.3,
+      1.4
+     ]
+    },
+    {
+     "line": 5,
+     "at": 5.2,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 5,
+     "at": 5.5,
+     "mouse": [
+      "move",
+      1700,
+      2040
+     ]
+    },
+    {
+     "line": 6,
      "at": 0.0,
      "rest": true
     },
     {
-     "line": 5,
+     "line": 6,
      "at": 0.2,
-     "hl": "box",
+     "hl": "text5",
      "lbl": [
       "Readable",
       "on any photo"
@@ -437,13 +558,43 @@
     {
      "line": 1,
      "at": 0.0,
+     "zoom": "s6area",
+     "scale": 1.4,
+     "center": [
+      1920,
+      1000
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.4,
+     "mouse": [
+      "drag",
+      2118,
+      1770,
+      2118,
+      890
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.0,
+     "mouse": [
+      "move",
+      1700,
+      1500
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.2,
      "hl": "badge",
      "lbl": [
       "+",
       "text is hidden"
      ],
      "lblSide": "right",
-     "dur": 2.4,
+     "dur": 2.6,
      "exact": true
     },
     {
@@ -452,7 +603,7 @@
      "mouse": [
       "click",
       2118,
-      1374
+      936
      ]
     },
     {
@@ -472,9 +623,30 @@
      "at": 2.4,
      "mouse": [
       "click",
-      2380,
-      1494
+      2340,
+      976
      ]
+    },
+    {
+     "line": 2,
+     "at": 3.0,
+     "mouse": [
+      "move",
+      1700,
+      1500
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "hl": "box6",
+     "lbl": [
+      "Fits again",
+      "nothing hidden"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
     }
    ]
   },
@@ -495,7 +667,7 @@
      "mouse": [
       "click",
       200,
-      97
+      160
      ]
     },
     {
@@ -511,9 +683,9 @@
      "exact": true
     },
     {
-     "line": 3,
+     "line": 2,
      "at": 0.0,
-     "zoom": "box",
+     "zoom": "box6",
      "scale": 1.5,
      "center": [
       1920,
@@ -522,16 +694,11 @@
     },
     {
      "line": 3,
-     "at": 3.2,
-     "rest": true
-    },
-    {
-     "line": 3,
      "at": 0.2,
      "mouse": [
       "click",
-      2135,
-      1050
+      2119,
+      820
      ]
     },
     {
@@ -543,42 +710,71 @@
     },
     {
      "line": 3,
-     "at": 1.1,
-     "key": [
-      51
-     ]
+     "at": 1.2,
+     "type": " 2026"
     },
     {
      "line": 3,
-     "at": 1.25,
-     "key": [
-      51
-     ]
-    },
-    {
-     "line": 3,
-     "at": 1.4,
-     "key": [
-      51
-     ]
-    },
-    {
-     "line": 3,
-     "at": 1.6,
-     "type": "ert"
-    },
-    {
-     "line": 3,
-     "at": 2.6,
+     "at": 2.4,
      "key": [
       53
      ]
     },
     {
      "line": 3,
-     "at": 2.9,
-     "cap": "While it's on stage, the output follows every edit",
-     "capdur": 2.4
+     "at": 2.7,
+     "mouse": [
+      "move",
+      1700,
+      1500
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.2,
+     "rest": true
+    },
+    {
+     "line": 4,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      105,
+      2121
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.9,
+     "mouse": [
+      "move",
+      1700,
+      1700
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.0,
+     "hl": "preview",
+     "lbl": [
+      "Preview",
+      "already updated"
+     ],
+     "lblSide": "right",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 0.0,
+     "hl": "cardname",
+     "lbl": [
+      "Named",
+      "from its first line"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
     }
    ]
   },

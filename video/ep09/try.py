@@ -35,3 +35,4 @@ elif op == "optkey":
     for d in (True,False):
         k=Quartz.CGEventCreateKeyboardEvent(None,int(a[0]),d); Quartz.CGEventSetFlags(k,Quartz.kCGEventFlagMaskAlternate); Quartz.CGEventPost(Quartz.kCGHIDEventTap,k); time.sleep(0.04)
     e=Quartz.CGEventCreateKeyboardEvent(None,58,False); Quartz.CGEventSetType(e,Quartz.kCGEventFlagsChanged); Quartz.CGEventSetFlags(e,0); Quartz.CGEventPost(Quartz.kCGHIDEventTap,e)
+elif op == "dbl": m.double_click(*a)

@@ -89,8 +89,8 @@
    "end": 0,
    "lines": [
     {
-     "text": "Add text box puts a box in the middle of the slide.",
-     "pause": 1.2,
+     "text": "Every new slide comes with an empty text box. Double-click it.",
+     "pause": 1.0,
      "screen": "",
      "action": "",
      "caption": "",
@@ -105,7 +105,7 @@
      "keys": ""
     },
     {
-     "text": "A text slide names itself from its first line.",
+     "text": "The thumbnail on the left follows as you type.",
      "pause": 1.0,
      "screen": "",
      "action": "",
@@ -121,8 +121,8 @@
    "end": 0,
    "lines": [
     {
-     "text": "Search for a font by any part of its name.",
-     "pause": 2.6,
+     "text": "Search for a font by any part of its name, then pick a weight.",
+     "pause": 2.2,
      "screen": "",
      "action": "",
      "caption": "",
@@ -153,8 +153,8 @@
    "end": 0,
    "lines": [
     {
-     "text": "Now, put a photo behind the words. Import image or video, in the Background row.",
-     "pause": 2.8,
+     "text": "Now, put a photo behind the words. The Background row imports one, or pastes one you copied.",
+     "pause": 2.0,
      "screen": "",
      "action": "",
      "caption": "",
@@ -178,6 +178,14 @@
     },
     {
      "text": "Text shadow works the same way.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The arrow beside it opens distance, angle and blur. A wide blur keeps the shadow soft.",
      "pause": 1.6,
      "screen": "",
      "action": "",
@@ -201,7 +209,7 @@
    "end": 0,
    "lines": [
     {
-     "text": "When text doesn't fit its box, a small blue plus appears under it.",
+     "text": "Drag the box smaller. When the words no longer fit, a small blue plus appears under it.",
      "pause": 1.6,
      "screen": "",
      "action": "",
@@ -218,7 +226,7 @@
     },
     {
      "text": "Look for this badge in rehearsal.",
-     "pause": 0,
+     "pause": 0.6,
      "screen": "",
      "action": "",
      "caption": "",
@@ -249,8 +257,24 @@
      "keys": ""
     },
     {
-     "text": "Fix a typo, and the audience sees the fix at once.",
+     "text": "Change the text, and the audience sees it at once.",
      "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Back in Show, the preview already has it.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "And the slide is named from its first line.",
+     "pause": 0.6,
      "screen": "",
      "action": "",
      "caption": "",
