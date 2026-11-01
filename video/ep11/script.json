@@ -1,0 +1,310 @@
+{
+ "title": "Music: Your Own Channel — LayerCue from Zero, Episode 11",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Music on its own channel",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today, music for a prize night: walk-in tracks, a break, and a fanfare.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Music has its own column, and everything about music is sky blue.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Drop your tracks on the list. The first ones go into a folder called Default.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Each one is copied into LayerCue's own Music folder, so it still plays on the day.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Click a row, and the track fades in.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Now send a slide, and press Clear. The music keeps playing.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Only the square Stop under the list stops it.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Folders for each part of the night",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Right-click the folder to rename it. Walk-in.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Add folder makes another, and asks for its name. Break.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Only one folder is open at a time. Open Break, and drop the interval music in.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "New tracks go into the open folder. A closed folder shows its count and total length.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "One warning: nothing in the music list can be undone, so don't tidy it during a show.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "When a track ends",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Open Walk-in. The button at the end of each row says what happens when a track ends.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Stop at end is the default. One click makes it Play next.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Play next follows the open folder. After the last track, it goes back to the first.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "For the break, click twice: Repeat one. That track loops until you stop it.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Trim the spoken intro",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Open Doors starts with a spoken intro. Stop the music first, so the preview can be heard.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The sliders button opens Track settings on the right. Press play, and listen.",
+     "pause": 4.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press In point where the music begins.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then jump near the end, and press Out point, before the long fade.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The list now shows the trimmed length, in sky blue. Settings here stay with the track.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Lower the music under video",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "When a video speaks, the music should step back. Open Settings, then Stage.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Music while video plays is Keep by default. Choose Lower.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Play the walk-in music, and send the welcome video.",
+     "pause": 9.5,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The music stays low while the video is on screen. Clear it, and the music comes back.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "A fanfare in the running order",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "A fanfare belongs at one moment in the show, so it's a slide, with a Music chip.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Send the announcement, then click the fanfare.",
+     "pause": 5.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It takes over from the music, and the screen stays as it was. Then send the winner.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "At the interval, open Break, and click Interval. It loops until you press Stop.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now run music under a show, and lower it for video.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: sound devices, the meter, and what to check when there's no sound.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

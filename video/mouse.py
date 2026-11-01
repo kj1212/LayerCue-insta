@@ -149,6 +149,14 @@ class M:
             self._post(Quartz.kCGEventLeftMouseDragged, x2 + (i % 2), y2); time.sleep(1 / 30)
         self._post(Quartz.kCGEventLeftMouseUp, x2, y2); self._rec("up", x2, y2)
 
+    def scroll(self, px, py, lines=-60, dur=0.6):
+        """11편: 그 자리로 가서 휠을 굴린다(음수 = 아래로). 줄 단위로 나눠 보낸다."""
+        self.move(px, py, dur); time.sleep(0.1)
+        step = -5 if lines < 0 else 5
+        for _ in range(abs(int(lines)) // 5):
+            e = Quartz.CGEventCreateScrollWheelEvent(None, Quartz.kCGScrollEventUnitLine, 1, step)
+            Quartz.CGEventPost(Quartz.kCGHIDEventTap, e); time.sleep(0.03)
+
     def hold(self, px, py, sec=1.0, dur=0.6):
         """눌러서 sec 초 머문 뒤 뗀다(칩 길게 누르기)."""
         self.move(px, py, dur); time.sleep(0.1)

@@ -1,0 +1,76 @@
+TITLE
+Music: Your Own Channel | LayerCue from Zero, Episode 11
+
+DESCRIPTION
+Set up the music for a prize night in LayerCue. Drop tracks onto the music list, keep walk-in music and break music in their own folders, and choose what happens when a track ends: Stop at end, Play next or Repeat one. Trim a spoken intro and a long fade with In point and Out point in Track settings, lower the music automatically while a video speaks (Settings › Stage › Music while video plays), and fire an award fanfare from the running order as a sound slide. Music runs on its own channel: sending slides and Clear All leave it playing, and only Stop under the list stops it.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12. The music you hear in the demo is what LayerCue played.
+Manual: https://layercue.com/docs/music/
+The narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional.
+
+Chapters
+0:00 Intro
+0:06 Music on its own channel
+0:43 Folders for each part of the night
+1:11 When a track ends
+1:37 Trim the spoken intro
+2:08 Lower the music under video
+2:38 A fanfare in the running order
+3:06 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, background music, playlist, music cue, ducking, sound effects, presentation software, event production, Mac, Windows
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep11-en.srt (English), ep11-ko.srt (Korean) and ep11-ja.srt (Japanese) as 'With timing'.
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+음악: 따로 도는 채널 | LayerCue 처음부터, 11편
+
+DESCRIPTION
+시상식 밤의 음악을 LayerCue로 준비해요. 곡을 음악 목록에 끌어다 놓고, 입장 음악과 쉬는 시간 음악을 각각 폴더로 나누고, 곡이 끝났을 때 할 일(Stop at end · Play next · Repeat one)을 정해요. Track settings의 In point·Out point로 앞의 말소리와 긴 페이드를 잘라내고, 영상에서 말소리가 나올 때 음악을 자동으로 낮추고(Settings › Stage › Music while video plays), 진행 순서 안의 사운드 슬라이드로 수상 팡파르를 울려요. 음악은 따로 도는 채널이라 슬라이드를 보내거나 Clear All을 눌러도 계속 나오고, 목록 아래 Stop으로만 멈춰요.
+처음이라면 1편 「LayerCue 메인 창」부터 보세요.
+LayerCue 0.9.12로 녹화했어요. 데모에서 들리는 음악은 LayerCue가 실제로 재생한 소리예요.
+매뉴얼: https://layercue.com/docs/music/
+나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요.
+
+챕터
+0:00 처음
+0:06 따로 도는 음악 채널
+0:43 행사 순서별 폴더
+1:11 곡이 끝나면
+1:37 말소리 인트로 잘라내기
+2:08 영상 아래로 음악 낮추기
+2:38 진행 순서 속 팡파르
+3:06 다음 편
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+音楽:独立したチャンネル | ゼロから LayerCue 第11回
+
+DESCRIPTION
+授賞式の夜の音楽を LayerCue で準備します。曲を音楽リストにドロップし、入場の曲と休憩の曲をそれぞれフォルダに分け、曲が終わったときの動作(Stop at end・Play next・Repeat one)を決めます。Track settings の In point・Out point で冒頭の語りと長いフェードを切り、映像で人が話すあいだ音楽を自動で下げ(Settings › Stage › Music while video plays)、進行の中のサウンドスライドで受賞のファンファーレを鳴らします。音楽は独立したチャンネルなので、スライドを送っても Clear All を押しても流れ続け、止めるのはリストの下の Stop だけです。
+初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。
+LayerCue 0.9.12 で収録しています。デモで聞こえる音楽は LayerCue が実際に再生した音です。
+マニュアル: https://layercue.com/docs/music/
+ナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。
+
+チャプター
+0:00 イントロ
+0:06 独立した音楽チャンネル
+0:43 場面ごとのフォルダ
+1:11 曲が終わったら
+1:37 冒頭の語りを切る
+2:08 映像の下で音楽を下げる
+2:38 進行の中のファンファーレ
+3:06 次回
