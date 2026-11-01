@@ -26,3 +26,5 @@
 - s3 · s6 은 다시 찍었다(`RESHOOT=1 python3 ep12/plan/make_shot.py` 가 앞 구간 끝 상태를 setup 으로 만든다). 첫 판은 rec/v2/first/.
 - 본편 배경음악은 앱 소리가 없는 s1 에만 낮게(−12 dB).
 - rec_t0 1.0.
+- **영어 기기 이름 패치**(사용자 요청): macOS 가 시스템 언어로 붙인 "MacBook Pro 스피커" 를 녹화 위에서 "MacBook Pro Speakers" 로 덮는다 — `patch/make.mjs`(Pretendard JP 22 px · 400 · antialiased, 배경색 그대로) → `patch/apply.sh`(프레임 번호로 정확히, 마우스가 지나는 줄은 밝은 배경 패치). 원본 녹화는 rec/v2/orig/. 다시 찍으면 프레임 번호를 다시 잰다.
+- 엔드 카드 더킹(사용자 요청): 11·12편 final_mix 가 앱 소리만 낮추고 배경음악은 안 낮췄다 → 배경음악도 내레이션 아래 −9 dB(10편과 같은 방식).
