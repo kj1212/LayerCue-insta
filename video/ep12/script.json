@@ -1,0 +1,310 @@
+{
+ "title": "Sound: Device, Meter, Master and the No-Sound Checklist — LayerCue from Zero, Episode 12",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "One device for everything",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today: where the sound goes, how to read the meter, and what to check when there's none.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Everything LayerCue plays goes to one audio device. You choose it in the status bar.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "This show was set up for an interface that isn't plugged in. The box says Not connected, and the speaker turns orange.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Until it's back, the sound goes to the system default, so the room isn't silent.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Click the box. System default follows the computer. For a show, pick your mixer or interface by name.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Here, choose System default.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Reading the meter",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Play the walk-in music, and watch the tall meter beside the stage.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Green is below minus twenty. Orange from there, and red from minus nine.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The thin white line is the average, closer to how loud it feels.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The handle is the master. Zero dB is where it starts, three below the top.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Push it up, and the bars run into red. A red line across the top means clipping.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The whole meter is the fader, so a stray click moves it. Double-click for zero dB.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "MUTE is not turning it down",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "MUTE silences everything that goes out. It turns red, and the meter keeps moving, dimmed.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press it again, and the sound comes back at the same level.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Pull the master to the bottom instead, and the meter drops to nothing. Double-click, and it's back.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "No sound? Work down the list",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Doors open. You play the walk-in music, and the room hears nothing.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Work down the list. One: is MUTE red? No. Two: does the master read minus infinity? No.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Three: is the meter moving? Yes. For music, that points to the speaker under the music list.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It's off. Click it, and the music is back.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "If the meter moves and the room is still silent, check the device in the status bar.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "When a video is silent",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Now the welcome video. It plays, but there's no voice, and the meter doesn't move.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A still meter means it's turned down inside LayerCue. Four: the layer. Its speaker in the control row is off.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Five: the slide itself. Slide settings shows its volume at zero.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Raise it there, and it's saved with the slide. The control row is only for now.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Play it again, and the principal can be heard.",
+     "pause": 7.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "SOLO: one layer's own level",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "With music and video both up, SOLO splits the meter.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The left pair is still everything that goes out. The right pair is the layer you're controlling, here the foreground.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The room hears the same. SOLO only changes the meter.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "And the master starts at zero dB each time you open LayerCue, unless Remember master volume is on.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now find what's silencing a show, in under a minute.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: YouTube slides, streamed and downloaded.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

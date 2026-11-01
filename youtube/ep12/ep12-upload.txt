@@ -1,0 +1,76 @@
+TITLE
+Sound: Device, Meter, Master and the No-Sound Checklist | LayerCue from Zero, Episode 12
+
+DESCRIPTION
+Everything LayerCue plays goes to one audio device and through one master. Fix a show set up for an interface that isn't plugged in (Not connected, orange speaker), read the meter (green, orange from −20, red from −9, the white average line), push the master into the red and double-click back to 0 dB, and see why MUTE is not the same as pulling the master down. Then work the no-sound checklist on two real cases: walk-in music the room can't hear while the meter moves (the speaker under the music list), and a welcome video with no voice and a still meter (the layer's speaker and the slide's saved volume). SOLO shows one layer's own level without changing what the room hears.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12. The sound you hear in the demo is what LayerCue played.
+Manual: https://layercue.com/docs/output/sound/
+The narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional.
+
+Chapters
+0:00 Intro
+0:06 One device for everything
+0:43 Reading the meter
+1:19 MUTE is not turning it down
+1:39 No sound? Work down the list
+2:09 When a video is silent
+2:45 SOLO: one layer's own level
+3:10 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, audio device, level meter, master volume, mute, no sound, troubleshooting, presentation software, event production, Mac, Windows
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep12-en.srt (English), ep12-ko.srt (Korean) and ep12-ja.srt (Japanese) as 'With timing'.
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+소리: 장치, 미터, 마스터, 무음 점검 목록 | LayerCue 처음부터, 12편
+
+DESCRIPTION
+LayerCue가 내는 모든 소리는 오디오 장치 하나와 마스터 하나를 거쳐요. 꽂혀 있지 않은 인터페이스로 맞춰진 쇼(Not connected, 주황 스피커)를 바로잡고, 미터 읽는 법(초록, −20부터 주황, −9부터 빨강, 흰 평균선)을 보고, 마스터를 빨간 구간까지 올렸다가 더블클릭으로 0 dB로 되돌리고, MUTE와 마스터를 내리는 것의 차이를 봐요. 그다음 무음 점검 목록으로 두 가지 실제 상황을 풀어요. 미터는 움직이는데 객석에 안 들리는 입장 음악(음악 목록 아래 스피커), 목소리가 없고 미터도 멈춘 환영 영상(층의 스피커와 슬라이드에 저장된 볼륨). SOLO는 객석 소리는 그대로 두고 한 층의 크기만 미터에 보여 줘요.
+처음이라면 1편 「LayerCue 메인 창」부터 보세요.
+LayerCue 0.9.12로 녹화했어요. 데모에서 들리는 소리는 LayerCue가 실제로 낸 소리예요.
+매뉴얼: https://layercue.com/docs/output/sound/
+나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요.
+
+챕터
+0:00 처음
+0:06 모든 소리는 장치 하나로
+0:43 미터 읽기
+1:19 MUTE는 줄이는 것과 달라요
+1:39 소리가 안 나요? 목록대로
+2:09 영상이 조용할 때
+2:45 SOLO: 한 층의 크기
+3:10 다음 편
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+音:出力機器・メーター・マスターと無音チェックリスト | ゼロから LayerCue 第12回
+
+DESCRIPTION
+LayerCue が出す音は、すべて一つのオーディオ機器と一つのマスターを通ります。つながっていないインターフェースに設定されたショー(Not connected・オレンジのスピーカー)を直し、メーターの読み方(緑、−20 からオレンジ、−9 から赤、白い平均線)を見て、マスターを赤まで上げてからダブルクリックで 0 dB に戻し、MUTE とマスターを下げることの違いを確かめます。続いて無音チェックリストで実際の2つのケースを解きます。メーターは動くのに客席に聞こえない入場の曲(音楽リストの下のスピーカー)と、声が出ずメーターも止まった歓迎映像(レイヤーのスピーカーとスライドに保存された音量)。SOLO は客席の音はそのままに、一つのレイヤーの大きさだけをメーターに表示します。
+初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。
+LayerCue 0.9.12 で収録しています。デモで聞こえる音は LayerCue が実際に出した音です。
+マニュアル: https://layercue.com/docs/output/sound/
+ナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。
+
+チャプター
+0:00 イントロ
+0:06 音はすべて一つの機器へ
+0:43 メーターを読む
+1:19 MUTE は下げるのとは違う
+1:39 音が出ない?リストの順に
+2:09 映像が無音のとき
+2:45 SOLO:一つのレイヤーの大きさ
+3:10 次回
