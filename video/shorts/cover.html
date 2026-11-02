@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../ep14/brand.css">
+<style>
+body{margin:0;background:#0B0B0D}
+#c{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--void);font-family:var(--disp)}
+.top,.bot{position:absolute;left:40px;width:1000px;border-radius:14px;overflow:hidden;opacity:.55}
+.top{top:70px;box-shadow:0 0 0 2px rgba(242,238,228,.18)}
+.bot{bottom:70px;box-shadow:0 0 0 3px var(--hot)}
+.top img,.bot img{width:100%;display:block}
+.fade{position:absolute;left:0;right:0;top:0;bottom:0;background:linear-gradient(180deg,rgba(11,11,13,.25) 0%,rgba(11,11,13,.92) 33%,rgba(11,11,13,.97) 50%,rgba(11,11,13,.92) 67%,rgba(11,11,13,.25) 100%)}
+.mid{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center}
+.k{font:500 34px var(--mono);letter-spacing:.3em;color:var(--fg2)}
+.a,.b{font:900 150px/1 var(--disp);letter-spacing:-.01em;white-space:nowrap;display:inline-block}
+.a{color:var(--cream);margin-top:30px}.b{color:var(--hot);margin-top:8px}
+.ep{font:500 32px var(--mono);letter-spacing:.14em;color:var(--fg2);margin-top:40px}
+.ep b{color:var(--cream);font-weight:500}
+</style></head><body><div id="c">
+<div class="top"><img id="ti"></div><div class="bot"><img id="bi"></div><div class="fade"></div>
+<div class="mid"><div class="k">[ LAYERCUE ]</div><div><span class="a" id="a"></span></div><div><span class="b" id="b"></span></div>
+<div class="ep">LAYERCUE FROM ZERO · <b id="ep"></b></div></div></div>
+<script>
+const Q = new URLSearchParams(location.search);
+a.textContent = Q.get('a'); b.textContent = Q.get('b'); ep.textContent = 'EP ' + Q.get('ep');
+ti.src = Q.get('top'); bi.src = Q.get('bot');
+Promise.all(['900 150px Archivo', '500 34px "DM Mono"'].map(f => document.fonts.load(f))).then(() => Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => i.onload = i.onerror = r)))).then(() => {
+  for (const el of [a, b]) { let fs = 150; while (el.offsetWidth > 1000 && fs > 60) { fs -= 2; el.style.fontSize = fs + 'px'; } }
+  window.__ready = true;
+});
+</script></body></html>

@@ -13,7 +13,7 @@ def one(d):
     sp = json.load(open(d / "spec.json")); sid = sp["id"]; ep = int(sp["ep"]); out = d / "out"
     if not (out / f"{sid}.mp4").exists(): print("no video", sid); return
     cfg = json.loads((d / "cfg.js").read_text()[len("var CFG = "):].rstrip().rstrip(";"))
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(cfg["beats"][1]["t"] + 1.6), "-i", str(out / f"{sid}.mp4"), "-frames:v", "1", "-q:v", "2", str(out / f"{sid}-cover.jpg")], check=True)
+    # 표지는 shorts/make_covers.py 가 만든다(가운데에 훅 두 줄 — 목록에서는 세로 영상의 가운데만 보인다)
     T = [(sp["vo_at"][i], sp["vo_at"][i] + dur(d / "audio" / f"{i:02d}.wav")) for i in range(7)]
     for lang, L in (("en", sp["lines"]), ("ko", i18n.KO[sp["ep"]]), ("ja", i18n.JA[sp["ep"]])):
         (out / "subtitles" / f"{sid}-{lang}.srt").write_text("\n".join(f"{i+1}\n{ts(a)} --> {ts(b + .2)}\n{t}\n" for i, ((a, b), t) in enumerate(zip(T, L))))
