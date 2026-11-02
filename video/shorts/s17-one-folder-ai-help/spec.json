@@ -1,0 +1,57 @@
+{
+ "ep": "15",
+ "slug": "one-folder-ai-help",
+ "title": "One Folder, AI Help",
+ "hook": [
+  "ONE FOLDER.",
+  "AI CAN HELP."
+ ],
+ "hook_vo": "Keep your show in one folder, and let an AI help.",
+ "tags": "COPY.,MOVE.,LIVE.",
+ "beats": [
+  {
+   "b": 2,
+   "w": "IMPORT",
+   "s": "off the <b>USB stick</b>",
+   "vo": "Bring outside files in, before the stick comes loose."
+  },
+  {
+   "b": 4,
+   "w": "FOLDER",
+   "s": "ordinary <b>files</b>",
+   "vo": "Everything you make is ordinary files, in one folder."
+  },
+  {
+   "b": 7,
+   "w": "NARROW",
+   "s": "panels <b>fold</b>",
+   "vo": "On a narrow screen, panels fold into their own windows."
+  },
+  {
+   "b": 11,
+   "w": "AI",
+   "s": "copy, ask, <b>paste</b>",
+   "vo": "And any AI chat can rewrite your slides."
+  }
+ ],
+ "id": "s17-one-folder-ai-help",
+ "lines": [
+  "Keep your show in one folder, and let an AI help.",
+  "Bring outside files in, before the stick comes loose.",
+  "Everything you make is ordinary files, in one folder.",
+  "On a narrow screen, panels fold into their own windows.",
+  "And any AI chat can rewrite your slides.",
+  "Import. Folder. Narrow. Ai.",
+  "Episode fifteen walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.83,
+  7.74,
+  11.9,
+  16.2,
+  20.05,
+  22.45
+ ],
+ "dur": 29.19
+}

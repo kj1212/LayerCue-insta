@@ -1,0 +1,567 @@
+{
+ "_note": "15편 연출표 — Files & YouTube · Import external files(USB 의 sponsor-reel) · Open → Finder(아이콘 보기, LG) · Backups · Reset 창 Cancel · 좁은 창 · Music 따로 창 · AI apps 화면 · Copy as HTML for AI → 답 붙여 넣기. LG 녹화.",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.0,
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "click",
+      132,
+      1807
+     ]
+    },
+    {
+     "sleep": 0.8
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 3.0,
+     "hl": "card7",
+     "lbl": [
+      "sponsor-reel",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      3780,
+      2119
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      1339,
+      926
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.8,
+     "zoom": "z_set",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.4,
+     "hl": "filesrow",
+     "lbl": [
+      "04 Files & YouTube",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "hl": "importrow",
+     "lbl": [
+      "1 file outside",
+      "a USB stick"
+     ],
+     "lblSide": "below",
+     "dur": 5.4,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      2285,
+      934
+     ]
+    },
+    {
+     "line": 4,
+     "at": 5.38,
+     "mouse": [
+      "click",
+      1277,
+      998
+     ]
+    },
+    {
+     "line": 5,
+     "at": -0.6,
+     "mouse": [
+      "click",
+      1339,
+      926
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "hl": "importrow",
+     "lbl": [
+      "Every file is inside",
+      "the media folder"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.1,
+     "mouse": [
+      "click",
+      2366,
+      773
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.4,
+     "sh": "./finderwin.sh"
+    },
+    {
+     "line": 1,
+     "at": 2.0,
+     "zoom": "z_finder",
+     "scale": 1.5,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "hl": "finder",
+     "lbl": [
+      "The LayerCue folder",
+      "ordinary files"
+     ],
+     "lblSide": "below",
+     "dur": 4.8,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "cap": "Quit LayerCue first · settings are not in this folder",
+     "capdur": 3.0
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "cap": "Mac: ~/Documents/LayerCue · Windows: C:\\Users\\<you>\\LayerCue",
+     "capdur": 4.8
+    },
+    {
+     "line": 5,
+     "at": 0.1,
+     "mouse": [
+      "dbl",
+      840,
+      900
+     ]
+    },
+    {
+     "line": 5,
+     "at": 1.0,
+     "hl": "backups",
+     "lbl": [
+      "Backups",
+      "one step back"
+     ],
+     "lblSide": "below",
+     "dur": 3.4,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 5.21,
+     "sh": "osascript -e 'tell application \"Finder\" to close every Finder window'; osascript -e 'tell application \"System Events\" to set frontmost of (first process whose unix id is '$(pgrep -f \"LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue( |$)\" | head -1)') to true'"
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "z_set",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.1,
+     "cap": "07 Account › Keep settings in my account — off by default",
+     "capdur": 3.8
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1344,
+      1661
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.0,
+     "hl": "resetdlg",
+     "lbl": [
+      "Reset every setting",
+      "no undo"
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      1927,
+      1169
+     ]
+    },
+    {
+     "line": 3,
+     "at": 5.81,
+     "mouse": [
+      "click",
+      2635,
+      622
+     ]
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.4,
+     "mouse": [
+      "drag",
+      3837,
+      1200,
+      2300,
+      1200
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.8,
+     "zoom": "z_narrow",
+     "scale": 1.3,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "hl": "folded",
+     "lbl": [
+      "Folded",
+      "Slide settings · Music"
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      1548,
+      607
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.6,
+     "hl": "musicwin",
+     "lbl": [
+      "Music",
+      "in its own window"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "drag",
+      2300,
+      1200,
+      3837,
+      1200
+     ]
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.6,
+     "mouse": [
+      "click",
+      3780,
+      2119
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      1290,
+      1071
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.2,
+     "zoom": "z_set",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "hl": "aipage",
+     "lbl": [
+      "AI apps",
+      "Claude Desktop · LM Studio · Cursor"
+     ],
+     "lblSide": "right",
+     "dur": 5.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "cap": "Quit the AI app completely (⌘Q) and reopen it · not ChatGPT, the Gemini app or claude.ai yet",
+     "capdur": 6.4
+    },
+    {
+     "line": 3,
+     "at": 7.09,
+     "mouse": [
+      "click",
+      2635,
+      622
+     ]
+    }
+   ]
+  },
+  "s6": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "z_list",
+     "scale": 1.25,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1512,
+      1133
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.2,
+     "mouse": [
+      "shiftclick",
+      2232,
+      1133
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.4,
+     "mouse": [
+      "rclick",
+      1908,
+      996
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.4,
+     "hl": "copyhtml",
+     "lbl": [
+      "Copy as HTML for AI",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 5.97,
+     "mouse": [
+      "click",
+      2107,
+      1610
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "cap": "Paste into any AI chat · ask · copy its answer   (the chat isn't shown)",
+     "capdur": 6.0
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "clip": "<section data-id=\"029735\" data-slide=\"3\" data-rev=\"11191e\">\n  <div data-id=\"f5048e\" data-shape=\"rect\" data-role=\"backdrop\" style=\"left:0%;top:0%;width:100%;height:100%;background:radial-gradient(ellipse 90% 120% at 15% 20%,#1D3A8F 0%,#0B1230 60%,#070B1C 100%)\"></div>\n  <div data-id=\"c16733\" style=\"left:8%;top:34%;width:84%;height:auto;font-family:'Archivo';font-weight:900;font-size:13cqh;line-height:1.1\">Coffee Break</div>\n  <div style=\"left:8.3%;top:52%;width:84%;height:auto;font-family:'Archivo';font-weight:800;font-size:6cqh;letter-spacing:0.02em;color:#F5B03A\">10:30 · Foyer</div>\n</section>\n<section data-id=\"72ef97\" data-slide=\"4\" data-rev=\"6773a7\">\n  <div data-id=\"d83d6f\" data-shape=\"rect\" data-role=\"backdrop\" style=\"left:0%;top:0%;width:100%;height:100%;background:radial-gradient(ellipse 90% 120% at 15% 20%,#1D3A8F 0%,#0B1230 60%,#070B1C 100%)\"></div>\n  <div data-id=\"181f8d\" style=\"left:8%;top:34%;width:84%;height:auto;font-family:'Archivo';font-weight:900;font-size:13cqh;line-height:1.1\">Workshops</div>\n  <div style=\"left:8.3%;top:52%;width:84%;height:auto;font-family:'Archivo';font-weight:800;font-size:6cqh;letter-spacing:0.02em;color:#F5B03A\">13:30 · Rooms B &amp; C</div>\n</section>\n<section data-id=\"af95b0\" data-slide=\"5\" data-rev=\"98d11e\">\n  <div data-id=\"6782b6\" data-shape=\"rect\" data-role=\"backdrop\" style=\"left:0%;top:0%;width:100%;height:100%;background:radial-gradient(ellipse 90% 120% at 15% 20%,#1D3A8F 0%,#0B1230 60%,#070B1C 100%)\"></div>\n  <div data-id=\"9a568b\" style=\"left:8%;top:34%;width:84%;height:auto;font-family:'Archivo';font-weight:900;font-size:13cqh;line-height:1.1\">Lunch</div>\n  <div style=\"left:8.3%;top:52%;width:84%;height:auto;font-family:'Archivo';font-weight:800;font-size:6cqh;letter-spacing:0.02em;color:#F5B03A\">12:00 · Terrace</div>\n</section>\n"
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      2200,
+      1600
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.4,
+     "key": [
+      9,
+      true
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.8,
+     "hl": "cards35",
+     "lbl": [
+      "Updated",
+      "time on its own line, in amber"
+     ],
+     "lblSide": "below",
+     "dur": 4.6,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "cap": "From HTML: updated 3 · ⌘Z takes the whole paste back",
+     "capdur": 4.0
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,262 @@
+{
+ "title": "Your Files, Settings Pages and AI Helpers — LayerCue from Zero, Episode 15",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Everything in one folder",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today: where your work lives, how to back it up, and how an AI app can help.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Open Settings, then Files and YouTube. Check this page the day before a show.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "This sponsor reel still plays from a USB stick. If the stick comes loose, playback stops on stage.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Import external files. LayerCue copies it in, and plays its own copy.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Now every file is inside the media folder.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Back it up, move it",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Open shows the folder. Everything you make is ordinary files in here.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Libraries, cue sheets, and LayerCue's own copies of your videos, pictures and music.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "To back up, quit LayerCue, and copy the whole folder.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "To move to another computer, put the folder in the same place. Your shows are all there.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Backups keeps the version before each save. It's one step back, not a history.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Settings stay on this computer",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Your settings aren't in that folder. Screens have to be set up again on a new computer.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "With Keep settings in my account, most settings follow you when you sign in.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The red Reset puts every setting back. There's no undo, so Cancel, unless you mean it.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "A narrow window",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "On a laptop, the window may be narrow. Slide settings folds first, then Music.",
+     "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A folded heading is a button. Click it, and the panel opens in its own window.",
+     "pause": 2.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Widen the window, and it goes back in by itself.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "AI helpers",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "LayerCue has no AI of its own. An AI app on this computer can drive it.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Settings, AI apps connects Claude Desktop, LM Studio or Cursor with one button.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then quit that app completely, and open it again. Ask in plain words, and every action is one undo step.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "Without a connection",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "No connection? Pick the text slides, right-click, and choose Copy as HTML for AI.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Paste it into any AI chat, and say what you want. Here: put the time on its own line, in amber.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Copy the answer, and paste it into the slide list.",
+     "pause": 2.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The three slides are updated. One Command Z takes the whole paste back.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now move a show folder, and rewrite slides with an AI.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: more screens, and what each one shows.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

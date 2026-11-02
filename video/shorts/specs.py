@@ -2,7 +2,7 @@
 """편마다 숏츠 — 본편 4K 녹화를 잘라 만든다. 박자 넷은 beats.py 의 하이라이트 번호(b)로 고른다.
 훅 2줄(둘째 줄 주황) · 박자 4(낱말 · 작은 말 · 목소리 = 화면 자막) · 끝 카드 세 낱말. 영상에 베타 · 버전 숫자는 넣지 않는다."""
 NUM = {2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten",
-       11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen"}
+       11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen"}
 S = [
  dict(ep="02", slug="ready-in-a-minute", title="Ready in a Minute", hook=["INSTALLED.", "READY TO GO."],
       hook_vo="Install LayerCue, and it's ready in a minute.", tags="INSTALL.,OPEN.,GO.",
@@ -82,4 +82,10 @@ S = [
              dict(b=6, w="EDIT", s="every <b>cell</b>", vo="It comes in as real text. Edit any cell."),
              dict(b=12, w="PDF", s="as <b>pictures</b>", vo="A PDF comes in as pictures, page by page."),
              dict(b=13, w="EXPORT", s="text stays <b>text</b>", vo="And any list goes back out as a PDF.")]),
+dict(ep="15", slug="one-folder-ai-help", title="One Folder, AI Help", hook=["ONE FOLDER.", "AI CAN HELP."],
+      hook_vo="Keep your show in one folder, and let an AI help.", tags="COPY.,MOVE.,LIVE.",
+      beats=[dict(b=2, w="IMPORT", s="off the <b>USB stick</b>", vo="Bring outside files in, before the stick comes loose."),
+             dict(b=4, w="FOLDER", s="ordinary <b>files</b>", vo="Everything you make is ordinary files, in one folder."),
+             dict(b=7, w="NARROW", s="panels <b>fold</b>", vo="On a narrow screen, panels fold into their own windows."),
+             dict(b=11, w="AI", s="copy, ask, <b>paste</b>", vo="And any AI chat can rewrite your slides.")]),
 ]

@@ -4,7 +4,7 @@ import sys, json, pathlib, subprocess, shutil
 H = pathlib.Path(__file__).resolve().parent; sys.path.insert(0, str(H)); import i18n
 OD = pathlib.Path.home() / "OneDrive" / "LayerCue from Zero" / "shorts"
 YT = {1: "55dioOOzick", 2: "TN-k9CZu6HM", 3: "7n3y090k32o", 4: "tMJCwayL_Ac", 5: "spZ9ot7IEtY", 6: "PxVnaJuqgvg", 7: "ir3SPZcCopI",
-      8: "VYMQO1RbnFc", 9: "o2KG20shVno", 10: "SYOk30VlKHk", 11: "u0sWDknjsJQ"}
+      8: "VYMQO1RbnFc", 9: "o2KG20shVno", 10: "SYOk30VlKHk", 11: "u0sWDknjsJQ"}   # 12– 는 올리면 더한다(없으면 재생목록)
 PL = "https://www.youtube.com/playlist?list=PLbN0h6kQZtT8"
 EPT = json.load(open(H.parent / "ep14" / "out" / "meta.json"))   # 형식 참고용
 def ts(x): return f"{int(x//3600):02d}:{int(x%3600//60):02d}:{int(x%60):02d},{int(round((x-int(x))*1000)):03d}"
