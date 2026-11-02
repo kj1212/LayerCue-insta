@@ -1,0 +1,9 @@
+{"name": "main", "sec": 22,
+ "setup": [{"front": 1}, {"mcp": [{"op": "clear", "layer": "all"}]}, {"mouse": ["jump", 2600, 1700]}],
+ "actions": [
+  {"t": 3.4, "mouse": ["click", 132, 1807]},
+  {"t": 7.8, "mouse": ["click", 648, 996]},
+  {"t": 12.3, "mouse": ["click", 1068, 996]},
+  {"t": 16.6, "mouse": ["click", 1488, 1133]},
+  {"t": 19.5, "mouse": ["move", 2700, 1600]}
+ ]}

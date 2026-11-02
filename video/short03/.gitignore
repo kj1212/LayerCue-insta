@@ -1,0 +1,5 @@
+rec/
+out/*.mp4
+out/*.aep
+qa/
+audio/

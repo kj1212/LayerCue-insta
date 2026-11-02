@@ -1,0 +1,23 @@
+1
+00:00:00,350 --> 00:00:03,356
+This is LayerCue. Your whole show, in one window.
+
+2
+00:00:03,700 --> 00:00:06,933
+Pick on the left: your events, and the slides for each.
+
+3
+00:00:08,200 --> 00:00:10,825
+Click in the middle. One click, and it's live.
+
+4
+00:00:12,600 --> 00:00:15,486
+Watch the top: the stage, layer by layer.
+
+5
+00:00:17,000 --> 00:00:19,246
+Adjust on the right, before it goes out.
+
+6
+00:00:20,800 --> 00:00:24,499
+Pick. Click. Watch. Adjust. Episode one walks you through it.
