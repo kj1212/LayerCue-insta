@@ -10,6 +10,7 @@
   python3 publish.py post posts/<폴더>      # 게시물 발행
   python3 publish.py post posts/<폴더> --dry-run   # 보내지 않고 보낼 내용만 출력
   python3 publish.py refresh                # 단기 토큰을 장기 토큰(60일)으로 바꿔 .env 에 다시 씀
+  python3 publish.py page-cover brand/fb-cover.png [--dry-run]   # 페이스북 페이지 커버 사진 바꾸기(pages_manage_metadata 필요)
 
 게시물 폴더:
   post.json   {"media": ["1.jpg", "2.jpg"], "share_to_feed": true, "cover": "cover.jpg"}
@@ -263,6 +264,26 @@ def post_instagram(env, p):
             "timestamp": info.get("timestamp"), "kind": p["kind"]}
 
 
+def page_cover(env, image, dry_run):
+    """페이지 커버 사진을 바꾼다. 사진을 비공개로 올린 뒤 그 사진을 커버로 지정한다.
+    커버를 바꾸는 쪽(페이지 필드 수정)은 pages_manage_metadata 권한이 있어야 한다."""
+    path = Path(image).resolve()
+    url = media_url(env, path.parent, path.name)
+    print(f"커버 사진: {url}")
+    if dry_run:
+        print("[dry-run] 보내지 않았습니다.")
+        return
+    user_api = Api(env)
+    page_id = env["FB_PAGE_ID"]
+    page_token = user_api.call("GET", page_id, {"fields": "access_token"})["access_token"]
+    api = Api(env, token=page_token)
+    photo_id = api.call("POST", f"{page_id}/photos", {"url": url, "published": "false"})["id"]
+    # 커버를 바꿨다는 글을 피드에 따로 띄우지 않는다
+    api.call("POST", page_id, {"cover": photo_id, "no_feed_story": "true"})
+    cover = api.call("GET", page_id, {"fields": "cover"}).get("cover", {})
+    print(f"페이지 커버를 바꿨습니다: photo {photo_id} → {cover.get('source', '(주소 없음)')}")
+
+
 def main():
     args = sys.argv[1:]
     env = load_env()
@@ -272,6 +293,8 @@ def main():
         refresh(env)
     elif args[:1] == ["post"] and len(args) >= 2:
         post(env, args[1], "--dry-run" in args)
+    elif args[:1] == ["page-cover"] and len(args) >= 2:
+        page_cover(env, args[1], "--dry-run" in args)
     else:
         print(__doc__)
         sys.exit(1)
