@@ -10,11 +10,12 @@
   python3 publish.py post posts/<폴더>      # 게시물 발행
   python3 publish.py post posts/<폴더> --dry-run   # 보내지 않고 보낼 내용만 출력
   python3 publish.py refresh                # 단기 토큰을 장기 토큰(60일)으로 바꿔 .env 에 다시 씀
+  python3 publish.py fb-cover posts/<폴더>  # 이미 올린 페이지 릴스 표지를 post.json 의 cover 로 다시 지정
   python3 publish.py page-cover brand/fb-cover.png [--dry-run]   # 페이스북 페이지 커버 사진 바꾸기(pages_manage_metadata 필요)
 
 게시물 폴더:
   post.json   {"media": ["1.jpg", "2.jpg"], "share_to_feed": true, "cover": "cover.jpg"}
-              cover 는 릴스 표지(인스타). 없으면 thumb_offset(밀리초, 기본 2500)의 장면이 표지가 된다 —
+              cover 는 릴스 표지. 인스타는 cover_url 로, 페이지 릴스는 올린 뒤 썸네일로 따로 보낸다. 없으면 thumb_offset(밀리초, 기본 2500)의 장면이 표지가 된다 —
               첫 프레임은 검은 화면이기 쉽다(2026-10-30 첫 릴스가 그랬다).
   caption.txt 캡션(해시태그 포함)
   media 가 http 로 시작하면 그대로, 아니면 MEDIA_BASE_URL + 이 저장소 기준 경로로 씀.
@@ -26,6 +27,7 @@
 import json
 import sys
 import time
+import uuid
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -81,6 +83,25 @@ class Api:
         except urllib.error.HTTPError as e:
             body = e.read().decode(errors="replace")
             sys.exit(f"API 오류 {e.code} ({method} {path}): {body}")
+
+    def upload(self, path, params, file_field, file_path):
+        """파일을 multipart 로 직접 보낸다. 페이스북 동영상 썸네일은 URL 을 받지 않는다."""
+        boundary = uuid.uuid4().hex
+        body = b""
+        for k, v in params.items():
+            body += f"--{boundary}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode()
+        body += (f"--{boundary}\r\nContent-Disposition: form-data; name=\"{file_field}\"; "
+                 f"filename=\"{Path(file_path).name}\"\r\nContent-Type: image/jpeg\r\n\r\n").encode()
+        body += Path(file_path).read_bytes() + f"\r\n--{boundary}--\r\n".encode()
+        req = urllib.request.Request(f"{self.base}/{path}", data=body, method="POST")
+        req.add_header("Authorization", f"Bearer {self.token}")
+        req.add_header("Content-Type", f"multipart/form-data; boundary={boundary}")
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode(errors="replace")
+            sys.exit(f"API 오류 {e.code} (POST {path}): {body}")
 
 
 def whoami(env):
@@ -159,7 +180,8 @@ def plan_post(env, post_dir):
     cover = media_url(env, post_dir, meta["cover"]) if meta.get("cover") else None
     return {"kind": kind, "caption": caption, "urls": urls, "exts": exts,
             "share_to_feed": meta.get("share_to_feed", True),
-            "cover": cover, "thumb_offset": int(meta.get("thumb_offset", 2500))}
+            "cover": cover, "cover_file": post_dir / meta["cover"] if meta.get("cover") else None,
+            "thumb_offset": int(meta.get("thumb_offset", 2500))}
 
 
 def wait_ready(api, container_id):
@@ -201,15 +223,33 @@ def post(env, post_dir, dry_run):
         print(f"{target} 에 발행했습니다: {record['permalink']}")
 
 
-def post_facebook(env, p):
+def page_api(env):
     user_api = Api(env)
+    page_token = user_api.call("GET", env["FB_PAGE_ID"], {"fields": "access_token"})["access_token"]
+    return Api(env, token=page_token)
+
+
+def set_fb_reel_cover(api, video_id, cover_file):
+    """페이지 릴스 썸네일을 cover 로 바꾼다. 영상 처리 중이면 잠깐 거절될 수 있어 몇 번 다시 한다."""
+    for _ in range(5):
+        try:
+            return api.upload(f"{video_id}/thumbnails", {"is_preferred": "true"}, "source", cover_file)
+        except SystemExit as e:
+            last = e
+            time.sleep(15)
+    print(f"페이스북 릴스 표지를 바꾸지 못했습니다(게시물은 올라갔습니다): {last}")
+
+
+def post_facebook(env, p):
     page_id = env["FB_PAGE_ID"]
-    page_token = user_api.call("GET", page_id, {"fields": "access_token"})["access_token"]
-    api = Api(env, token=page_token)
+    api = page_api(env)
     if p["kind"] == "REELS":
         res = api.call("POST", f"{page_id}/videos", {
             "file_url": p["urls"][0], "description": p["caption"]})
         post_id = res["id"]
+        # 페이지 동영상은 표지 URL 을 받지 않는다 — 올린 뒤 썸네일로 따로 보낸다
+        if p["cover_file"]:
+            set_fb_reel_cover(api, post_id, p["cover_file"])
     elif p["kind"] == "IMAGE":
         res = api.call("POST", f"{page_id}/photos", {"url": p["urls"][0], "message": p["caption"]})
         post_id = res.get("post_id", res["id"])
@@ -284,6 +324,20 @@ def page_cover(env, image, dry_run):
     print(f"페이지 커버를 바꿨습니다: photo {photo_id} → {cover.get('source', '(주소 없음)')}")
 
 
+def fb_reel_cover(env, post_dir):
+    """이미 올린 페이지 릴스의 표지를 post.json 의 cover 로 다시 지정한다(표지를 새로 만들었을 때)."""
+    post_dir = Path(post_dir).resolve()
+    meta = json.loads((post_dir / "post.json").read_text(encoding="utf-8"))
+    done_path = post_dir / "published.json"
+    fb = json.loads(done_path.read_text(encoding="utf-8")).get("facebook") if done_path.exists() else None
+    if not fb or fb.get("kind") != "REELS":
+        sys.exit("페이스북에 올린 릴스 기록이 없습니다.")
+    if not meta.get("cover"):
+        sys.exit("post.json 에 cover 가 없습니다.")
+    if set_fb_reel_cover(page_api(env), fb["post_id"], post_dir / meta["cover"]):
+        print(f"페이스북 릴스 표지를 바꿨습니다: {fb['permalink']}")
+
+
 def main():
     args = sys.argv[1:]
     env = load_env()
@@ -293,6 +347,8 @@ def main():
         refresh(env)
     elif args[:1] == ["post"] and len(args) >= 2:
         post(env, args[1], "--dry-run" in args)
+    elif args[:1] == ["fb-cover"] and len(args) >= 2:
+        fb_reel_cover(env, args[1])
     elif args[:1] == ["page-cover"] and len(args) >= 2:
         page_cover(env, args[1], "--dry-run" in args)
     else:
