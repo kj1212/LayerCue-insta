@@ -142,7 +142,7 @@ function end(t) {
   h += `<div class="tag" style="top:${BETA ? 1262 : 1230}px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">MAC & WINDOWS</div>`;
   const c = outExpo(lin(t, 2.2, 2.7));
   h += `<div class="tag" style="top:1440px;font-size:96px;font-weight:900;font-stretch:100%;letter-spacing:-.02em;opacity:${c};transform:scale(${.94 + .06 * c})">LAYERCUE.COM</div>`;
-  h += `<div class="foot" style="opacity:${b}"><span>MADE BY CASTPAD</span><span><i></i>${BETA ? 'FREE BETA' : 'LAYERCUE.COM'}</span></div>`;
+  h += `<div class="foot" style="opacity:${b}"><span>MADE BY CASTPAD</span>${BETA ? '<span><i></i>FREE BETA</span>' : '<span></span>'}</div>`;
   S.innerHTML = h;
 }
 
