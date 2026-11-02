@@ -46,7 +46,7 @@ var CFG = {
    ],
    "line": "Claude worked for about five minutes. We cut the wait. Then it answers, and the new talk is already in LayerCue.",
    "zend": null,
-   "zbeg": null
+   "zbeg": 10.17
   },
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep15/rec/v2/s5.mp4",
