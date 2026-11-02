@@ -26,7 +26,7 @@ function rectLayer(c, name, w, h, color, stroke, tin, tout) {
 function freeze(c, item, srcT, tin, tout) {     // 한 장면을 멈춘 채로
     var L = c.layers.add(item); L.startTime = 0; L.timeRemapEnabled = true;
     L.property("ADBE Time Remapping").expression = "" + srcT.toFixed(3);     // 키를 지우면 속성이 숨어 버린다 — 식으로 멈춘다
-    L.outPoint = tout; L.inPoint = tin;
+    L.inPoint = tin; L.outPoint = tout;          // 앞을 먼저 — 끝을 먼저 두면 앞을 옮길 때 길이째 밀려 끝이 늘어났다
     T(L).property("ADBE Position").setValue([1920, 1020]); return L;
 }
 
@@ -45,7 +45,13 @@ for (var i = 0; i < 4; i++) {
     if (b.audio) { var au = imp(b.audio.file); var AL = win.layers.add(au); AL.startTime = L.startTime + b.audio.shift;
         AL.inPoint = Math.max(realIn, AL.startTime); AL.outPoint = tout;
         AL.property("ADBE Audio Group").property("ADBE Audio Levels").setValue([b.audio.db, b.audio.db]); }
-    if (i === 3) freeze(win, it, Math.min(b.src + b.d - 0.1, it.duration - 0.1), RT, DUR).moveToEnd();
+}
+// 다시 보기: 박자마다 그 장면(테를 그린 순간)을 0.45 s 씩 멈춰 보여 준다 — 한 장면에 네 테를 다 그리면 다른 화면의 테가 엉뚱한 곳에 떴다(사용자, short11)
+var SLOT = 0.45;
+function recapT(r) { return RT + 0.15 + r * SLOT; }
+for (var f = 0; f < 4; f++) {
+    var bf = C.beats[f], itf = recs[bf.rec], ft = Math.min(bf.src + 1.4, bf.src + bf.d - 0.2, itf.duration - 0.1);
+    freeze(win, itf, ft, f === 0 ? RT : recapT(f), f === 3 ? DUR : recapT(f + 1)).moveToEnd();
 }
 
 comp = P.items.addComp(C.id, 1080, 1920, 1, DUR, 30); comp.bgColor = VOID;
@@ -78,12 +84,11 @@ keys(T(wb[0]).property("ADBE Scale"), [[0, [104, 104]], [HK - 0.2, [100, 100]]])
 function mm(x, y) { return [540 + (x - 1920) * K, MY + (y - 1050) * K]; }
 var ob = rectLayer(comp, "zone", 100, 100, HOT, 5, B0, RT + 0.2);
 var op = T(ob[0]).property("ADBE Position"), os = ob[1].property("ADBE Vector Rect Size");
-for (var m = 0; m < 4; m++) { var zz = C.beats[m];
-    op.setValueAtTime(zz.t, mm(zz.ox, zz.oy)); os.setValueAtTime(zz.t, [zz.ow * K, zz.oh * K]);
-    if (m < 3) { op.setValueAtTime(C.beats[m + 1].t - 0.25, mm(zz.ox, zz.oy)); os.setValueAtTime(C.beats[m + 1].t - 0.25, [zz.ow * K, zz.oh * K]); } }
-easeAll(op); easeAll(os); fadeIn(ob[0], B0 + 0.1, .3);
-for (var r = 0; r < 4; r++) { var zr = C.beats[r], rq = rectLayer(comp, "recap zone " + r, zr.ow * K, zr.oh * K, HOT, 5, RT + 0.15 + r * 0.42, END0 + 0.1);
-    T(rq[0]).property("ADBE Position").setValue(mm(zr.ox, zr.oy)); fadeIn(rq[0], RT + 0.15 + r * 0.42, .15); fadeOut(rq[0], END0 + 0.1, .3); }
+// 테는 박자 경계에서 컷(창 장면이 바뀌는 순간과 같이) — 미리 미끄러지면 앞 장면 위에서 엇나가 보였다(사용자, short16)
+for (var m = 0; m < 4; m++) { var zz = C.beats[m]; op.setValueAtTime(zz.t, mm(zz.ox, zz.oy)); os.setValueAtTime(zz.t, [zz.ow * K, zz.oh * K]); }
+holdAll(op); holdAll(os); fadeIn(ob[0], B0 + 0.1, .3);
+for (var r = 0; r < 4; r++) { var zr = C.beats[r], te = (r === 3) ? END0 + 0.1 : recapT(r + 1), rq = rectLayer(comp, "recap zone " + r, zr.ow * K, zr.oh * K, HOT, 5, recapT(r), te);
+    T(rq[0]).property("ADBE Position").setValue(mm(zr.ox, zr.oy)); fadeIn(rq[0], recapT(r), .1); if (r === 3) fadeOut(rq[0], END0 + 0.1, .3); }
 
 // 글
 var pn = ["hook", "w1", "w2", "w3", "w4", "recap", "tag", "s1", "s2", "s3", "s4", "s5", "s6"], parts = {};

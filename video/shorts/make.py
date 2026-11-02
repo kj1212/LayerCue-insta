@@ -46,6 +46,38 @@ def tts(text, out):
 
 def dur(p): return len(sf.read(p)[0]) / sf.info(p).samplerate
 
+CONJ = {"and", "so", "while", "then", "but", "or", "until", "with", "without"}
+PREP = {"in", "on", "onto", "into", "for", "to", "from", "of", "by", "at", "under", "behind", "before", "after", "through", "as"}
+PART = {"out", "up", "down", "back", "off", "away", "over"}          # 동사에 붙는 말 — 그 앞에서는 끊지 않는다(black / out)
+OVR = {  # 규칙으로 안 되는 줄 — 주어 · 동사 경계에서 직접 끊는다
+ "A click on the picture sends it out.": "A click on the picture|sends it out.",
+ "The chip on the card picks the layer.": "The chip on the card|picks the layer.",
+ "Set how a whole list behaves, once.": "Set how a whole list|behaves, once.",
+ "And an orange border means it's on the screen.": "And an orange border|means it's on the screen.",
+ "An outline and a soft shadow read on any photo.": "An outline and a soft shadow|read on any photo.",
+ "Here, the slide's own volume was at zero.": "Here, the slide's own volume|was at zero.",
+ "Download it, and it plays without the internet.": "Download it,|and it plays without the internet.",
+ "The plus adds videos, pictures, music or text.": "The plus adds|videos, pictures, music or text.",
+}
+def brk(text, one=30, most=33):
+    """자막을 뜻에 맞게 두 줄로 — 짧으면 한 줄. 구두점 뒤 > 접속사 앞 > 전치사 앞 > 가운데에 가까운 낱말 사이 (사용자: 넘치는 것만 내리지 말 것)"""
+    if text in OVR: return "<br>".join(html.escape(x) for x in OVR[text].split("|"))
+    if len(text) <= one: return html.escape(text)
+    m = re.match(r"(Episode \w+) (walks you through it\.)$", text)
+    if m: return html.escape(m.group(1)) + "<br>" + html.escape(m.group(2))
+    w = text.split(" "); best = None
+    for i in range(1, len(w)):
+        a, b = " ".join(w[:i]), " ".join(w[i:])
+        if len(a) > most or len(b) > most: continue
+        prev, nxt = w[i - 1], w[i].lower().strip(",.")
+        pen = 0 if prev[-1] in ",.:;?!" else 2 if nxt in CONJ else 4 if nxt in PREP else 8
+        if b.rstrip(".").count(" ") == 0: pen += 20          # 끝 낱말 하나만 내려가지 않게(it.)
+        if nxt in PART: pen += 30
+        sc = pen * 6 + abs(len(a) - len(b))
+        if best is None or sc < best[0]: best = (sc, a, b)
+    if best is None: return html.escape(text)
+    return html.escape(best[1]) + "<br>" + html.escape(best[2])
+
 def zone(r):
     x, y, w, h = r; cx, cy = x + w / 2, y + h / 2
     ww = max(w * 1.35, h * 1.35 * ASPECT, 720.0); ww = min(ww, W); hh = ww / ASPECT
@@ -95,7 +127,7 @@ def make(sp, idx):
     rc = '<div class="p recap" id="recap">' + "".join(f'<div class="{"h" if i % 2 else ""}">{w}.</div>' for i, w in enumerate(words)) + "</div>"
     tag = f'<div class="p tag" id="tag">FULL TUTORIAL · <b>LAYERCUE FROM ZERO · EP {ep:02d}</b></div>'
     subs = [sp["hook_vo"]] + [b["vo"] for b in sp["beats"]] + [ep_vo]
-    sb = "".join(f'<div class="p sub" id="s{i+1}">{html.escape(t)}</div>' for i, t in enumerate(subs))
+    sb = "".join(f'<div class="p sub" id="s{i+1}">{brk(t)}</div>' for i, t in enumerate(subs))
     (D / "parts.html").write_text((H / "parts.tmpl.html").read_text().replace("%BODY%", hook + ws + rc + tag + sb))
     # ── 음악
     bars = int(np.ceil(DUR / 2.0)) + 1; SR = 48000
