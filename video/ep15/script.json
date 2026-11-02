@@ -164,12 +164,12 @@
   },
   {
    "id": "s5",
-   "chapter": "AI helpers",
+   "chapter": "An AI app works in LayerCue",
    "start": 0,
    "end": 0,
    "lines": [
     {
-     "text": "LayerCue has no AI of its own. An AI app on this computer can drive it.",
+     "text": "An AI app on this computer can work in LayerCue. Settings, AI apps connects Claude Desktop, LM Studio or Cursor.",
      "pause": 0.6,
      "screen": "",
      "action": "",
@@ -177,16 +177,32 @@
      "keys": ""
     },
     {
-     "text": "Settings, AI apps connects Claude Desktop, LM Studio or Cursor with one button.",
-     "pause": 0.6,
-     "screen": "",
-     "action": "",
-     "caption": "",
-     "keys": ""
-    },
-    {
-     "text": "Then quit that app completely, and open it again. Ask in plain words, and every action is one undo step.",
+     "text": "Press Connect, then quit that app completely and open it again. Here, Claude is connected.",
      "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Open a new chat, and ask in plain words.",
+     "pause": 13.07,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Claude reads Day 1, then adds the slide in the same style.",
+     "pause": 3.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Every AI action is one undo step, so Command Z can always take it back.",
+     "pause": 1.6,
      "screen": "",
      "action": "",
      "caption": "",

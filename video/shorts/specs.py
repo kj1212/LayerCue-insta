@@ -87,5 +87,5 @@ dict(ep="15", slug="one-folder-ai-help", title="One Folder, AI Help", hook=["ONE
       beats=[dict(b=2, w="IMPORT", s="off the <b>USB stick</b>", vo="Bring outside files in, before the stick comes loose."),
              dict(b=4, w="FOLDER", s="ordinary <b>files</b>", vo="Everything you make is ordinary files, in one folder."),
              dict(b=7, w="NARROW", s="panels <b>fold</b>", vo="On a narrow screen, panels fold into their own windows."),
-             dict(b=11, w="AI", s="copy, ask, <b>paste</b>", vo="And any AI chat can rewrite your slides.")]),
+             dict(b=12, w="AI", s="one plain <b>sentence</b>", vo="And in Claude, one plain sentence adds a slide.")]),
 ]

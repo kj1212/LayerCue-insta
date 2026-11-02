@@ -15,8 +15,8 @@ Everything you make is ordinary files, in one folder.
 On a narrow screen, panels fold into their own windows.
 
 5
-00:00:16,200 --> 00:00:18,691
-And any AI chat can rewrite your slides.
+00:00:16,200 --> 00:00:19,143
+And in Claude, one plain sentence adds a slide.
 
 6
 00:00:20,050 --> 00:00:22,345

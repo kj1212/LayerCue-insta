@@ -44,14 +44,18 @@
 - Widen the window, and it goes back in by itself.  
   창을 넓히면 저절로 다시 들어가요.
 
-## AI helpers
+## An AI app works in LayerCue
 
-- LayerCue has no AI of its own. An AI app on this computer can drive it.  
-  LayerCue에는 자체 AI가 없어요. 이 컴퓨터의 AI 앱이 LayerCue를 움직일 수 있어요.
-- Settings, AI apps connects Claude Desktop, LM Studio or Cursor with one button.  
-  설정의 AI apps에서 버튼 하나로 Claude Desktop, LM Studio, Cursor를 연결해요.
-- Then quit that app completely, and open it again. Ask in plain words, and every action is one undo step.  
-  그다음 그 앱을 완전히 껐다가 다시 켜요. 평범한 말로 부탁하면 되고, AI의 동작은 하나하나 되돌릴 수 있어요.
+- An AI app on this computer can work in LayerCue. Settings, AI apps connects Claude Desktop, LM Studio or Cursor.  
+  이 컴퓨터의 AI 앱이 LayerCue에서 일할 수 있어요. 설정의 AI apps에서 Claude Desktop, LM Studio, Cursor를 연결해요.
+- Press Connect, then quit that app completely and open it again. Here, Claude is connected.  
+  Connect를 누르고, 그 앱을 완전히 껐다가 다시 켜요. 여기선 Claude가 연결돼 있어요.
+- Open a new chat, and ask in plain words.  
+  새 대화를 열고, 평범한 말로 부탁해요.
+- Claude reads Day 1, then adds the slide in the same style.  
+  Claude가 Day 1을 읽고, 같은 모양으로 슬라이드를 넣어요.
+- Every AI action is one undo step, so Command Z can always take it back.  
+  AI의 동작은 하나하나가 되돌리기 한 단계라서, ⌘Z로 언제든 되돌릴 수 있어요.
 
 ## Without a connection
 

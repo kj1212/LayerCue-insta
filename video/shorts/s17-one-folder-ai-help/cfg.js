@@ -64,23 +64,23 @@ var CFG = {
    "line": "On a laptop, the window may be narrow. Slide settings folds first, then Music."
   },
   {
-   "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep15/rec/v2/s6.mp4",
-   "src": 16.93,
+   "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep15/rec/v2/s5.mp4",
+   "src": 33.24,
    "t": 16.05,
    "d": 3.8,
    "audio": null,
-   "zx": 1909.5,
+   "zx": 3480.0,
    "zy": 960.0,
-   "zw": 1675.4,
-   "ox": 1909.5,
+   "zw": 720.0,
+   "ox": 3591.5,
    "oy": 960.0,
-   "ow": 1261,
+   "ow": 421,
    "oh": 294,
    "lbl": [
-    "Updated",
-    "time on its own line, in amber"
+    "New slide",
+    "same look as Day 1"
    ],
-   "line": "Copy the answer, and paste it into the slide list."
+   "line": "Claude reads Day 1, then adds the slide in the same style."
   }
  ],
  "vo": [

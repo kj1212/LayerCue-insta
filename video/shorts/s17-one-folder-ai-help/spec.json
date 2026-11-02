@@ -28,10 +28,10 @@
    "vo": "On a narrow screen, panels fold into their own windows."
   },
   {
-   "b": 11,
+   "b": 12,
    "w": "AI",
-   "s": "copy, ask, <b>paste</b>",
-   "vo": "And any AI chat can rewrite your slides."
+   "s": "one plain <b>sentence</b>",
+   "vo": "And in Claude, one plain sentence adds a slide."
   }
  ],
  "id": "s17-one-folder-ai-help",
@@ -40,7 +40,7 @@
   "Bring outside files in, before the stick comes loose.",
   "Everything you make is ordinary files, in one folder.",
   "On a narrow screen, panels fold into their own windows.",
-  "And any AI chat can rewrite your slides.",
+  "And in Claude, one plain sentence adds a slide.",
   "Import. Folder. Narrow. Ai.",
   "Episode fifteen walks you through it."
  ],

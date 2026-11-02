@@ -17,8 +17,8 @@ import assemble2 as A
 
 SR, BAR = MU.SR, MU.BAR
 segs = A.times(); total = segs[-1]["end"]; nb = int(np.ceil(total / 2.0)) + 1
-D = {"intro": "Duncan - Intro", "verse": "Duncan - Verse", "bridge": "Duncan - Bridge", "chorus": "Duncan - Chorus", "outro": "Duncan - Outro"}
-BASS, RG, PAD, STAB, LEAD = "Shining Star Bass 01", "Shining Star Guitar 01", "Shining Star Electric Piano 01", "Electric Funk Synth Stabs", "Shining Star Guitar 02"     # 15편: Shining Star(G) + Duncan
+D = {"intro": "Minimal Backbeat 01", "verse": "Minimal Backbeat 01", "bridge": "Minimal Backbeat 02", "chorus": "Disco Swagger Beat 01", "outro": "Minimal Backbeat 02"}
+BASS, RG, PAD, STAB, LEAD = "Landing in LA Bass 01", "Landing in LA Guitar", "Landing in LA Synth 01", "Landing in LA Synth 02", "Landing in LA Synth 03"     # 15편: 새 스타일 landing-chill(music/styles.py)
 
 def bar_of(t): return int(round(t / 2.0))
 plan = {}                                   # 마디 → {루프: dB}

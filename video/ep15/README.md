@@ -23,3 +23,6 @@
 - 녹화 도구: record.py `sh` 동작 · 클립보드 LANG=en_US.UTF-8(없으면 · 가 깨졌다).
 - 기기 이름 패치: shorts/patch_status.py. rec_t0 1.0.
 - 숏츠: shorts/s17-one-folder-ai-help(본편과 같이 만듦).
+- **AI 다시 찍기(사용자 요청, 2026-11-02)**: 「LayerCue 에는 자체 AI 가 없다」 줄을 빼고, 실제 Claude Desktop(영어 UI) 새 대화에 한 문장 → Day 1 에 스폰서 감사 슬라이드가 생기는 장면으로. 설정: claude_desktop_config.json 의 layercue-dev 에 LAYERCUE_MCP_DIR · LAYERCUE_MCP_JSON(sandbox-ep15/mcp) — 찍은 뒤 qa/claude_desktop_config.backup.json 으로 되돌림. Claude 커넥터 메뉴에서 layercue(설치판) 를 끄고 layercue-dev 만 켜야 촬영용을 부른다.
+- s5 는 255 s 를 찍고 Claude 가 일하는 13.85 s 를 잘라 냈다(trim_s5.sh, 원본 rec/v2/old/s5-full.mp4). 새 대화 첫 화면의 이름(TAEHOON)과 한국어 법적 고지는 바탕색으로 덮었다. waitslides.py 의 되돌리기는 Claude 의 두 번째 수정만 취소해서 카드 8 이 남았고, s6 를 8 장인 채로 다시 찍어 이어지게 했다.
+- 배경음악: 새 스타일 landing-chill(music/styles.py).
