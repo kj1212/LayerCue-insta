@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,455
+Set how a whole list behaves, once.
+
+2
+00:00:03,500 --> 00:00:06,470
+Set the crossfade, and every slide eases in.
+
+3
+00:00:07,300 --> 00:00:09,696
+Or fade out at zero, for a clean cut.
+
+4
+00:00:11,100 --> 00:00:13,182
+Overlays can take themselves down.
+
+5
+00:00:14,900 --> 00:00:17,810
+And one setting puts a whole list on the background.
+
+6
+00:00:18,750 --> 00:00:20,766
+Fade. Cut. Auto. One layer.
+
+7
+00:00:20,870 --> 00:00:22,776
+Episode eight walks you through it.

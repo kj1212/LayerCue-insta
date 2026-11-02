@@ -1,0 +1,57 @@
+{
+ "ep": "06",
+ "slug": "send-and-stack",
+ "title": "Send and Stack",
+ "hook": [
+  "SEVEN LAYERS.",
+  "ONE CLICK EACH."
+ ],
+ "hook_vo": "One click sends. One chip picks the layer.",
+ "tags": "SEND.,STACK.,LIVE.",
+ "beats": [
+  {
+   "b": 0,
+   "w": "SEND",
+   "s": "click the <b>picture</b>",
+   "vo": "A click on the picture sends it out."
+  },
+  {
+   "b": 1,
+   "w": "LOAD",
+   "s": "click the <b>name</b>",
+   "vo": "Click the name instead, and nothing goes out."
+  },
+  {
+   "b": 6,
+   "w": "LAYER",
+   "s": "one <b>chip</b>",
+   "vo": "The chip on the card picks the layer."
+  },
+  {
+   "b": 12,
+   "w": "STACK",
+   "s": "overlays <b>stay up</b>",
+   "vo": "Overlays stack, and stay up together."
+  }
+ ],
+ "id": "s08-send-and-stack",
+ "lines": [
+  "One click sends. One chip picks the layer.",
+  "A click on the picture sends it out.",
+  "Click the name instead, and nothing goes out.",
+  "The chip on the card picks the layer.",
+  "Overlays stack, and stay up together.",
+  "Send. Load. Layer. Stack.",
+  "Episode six walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.3,
+  11.1,
+  14.9,
+  18.75,
+  20.67
+ ],
+ "dur": 27.24
+}

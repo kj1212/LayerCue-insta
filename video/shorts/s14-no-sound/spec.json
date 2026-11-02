@@ -1,0 +1,58 @@
+{
+ "ep": "12",
+ "slug": "no-sound",
+ "title": "No Sound?",
+ "hook": [
+  "NO SOUND?",
+  "ONE MINUTE."
+ ],
+ "hook_vo": "No sound? Find it in under a minute.",
+ "tags": "CHECK.,FIX.,LIVE.",
+ "app_audio": -14,
+ "beats": [
+  {
+   "b": 4,
+   "w": "METER",
+   "s": "what <b>goes out</b>",
+   "vo": "The tall meter shows what LayerCue sends out."
+  },
+  {
+   "b": 10,
+   "w": "MUTE",
+   "s": "still <b>moving</b>",
+   "vo": "MUTE silences it, but the meter keeps moving."
+  },
+  {
+   "b": 14,
+   "w": "CHECK",
+   "s": "MUTE · master · <b>meter</b>",
+   "vo": "Work down the list: MUTE, master, meter."
+  },
+  {
+   "b": 21,
+   "w": "SLIDE",
+   "s": "volume at <b>zero</b>",
+   "vo": "Here, the slide's own volume was at zero."
+  }
+ ],
+ "id": "s14-no-sound",
+ "lines": [
+  "No sound? Find it in under a minute.",
+  "The tall meter shows what LayerCue sends out.",
+  "MUTE silences it, but the meter keeps moving.",
+  "Work down the list: MUTE, master, meter.",
+  "Here, the slide's own volume was at zero.",
+  "Meter. Mute. Check. Slide.",
+  "Episode twelve walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.3,
+  11.1,
+  14.9,
+  18.75,
+  20.77
+ ],
+ "dur": 27.4
+}

@@ -1,0 +1,57 @@
+{
+ "ep": "03",
+ "slug": "first-show",
+ "title": "Your First Show",
+ "hook": [
+  "SCREEN ON.",
+  "SLIDE OUT."
+ ],
+ "hook_vo": "Your first show takes three moves.",
+ "tags": "POWER.,CLICK.,CLEAR.",
+ "beats": [
+  {
+   "b": 9,
+   "w": "POWER",
+   "s": "the output <b>on</b>",
+   "vo": "Switch the output on."
+  },
+  {
+   "b": 12,
+   "w": "CLICK",
+   "s": "a <b>slide</b>",
+   "vo": "Click a slide, and it's on the screen."
+  },
+  {
+   "b": 15,
+   "w": "CLEAR",
+   "s": "<b>everything</b> down",
+   "vo": "Clear takes everything down."
+  },
+  {
+   "b": 18,
+   "w": "ESCAPE",
+   "s": "won't go <b>dark</b>",
+   "vo": "And Escape won't black out your show by accident."
+  }
+ ],
+ "id": "s05-first-show",
+ "lines": [
+  "Your first show takes three moves.",
+  "Switch the output on.",
+  "Click a slide, and it's on the screen.",
+  "Clear takes everything down.",
+  "And Escape won't black out your show by accident.",
+  "Power. Click. Clear. Escape.",
+  "Episode three walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.3,
+  11.1,
+  14.9,
+  18.75,
+  20.76
+ ],
+ "dur": 27.36
+}

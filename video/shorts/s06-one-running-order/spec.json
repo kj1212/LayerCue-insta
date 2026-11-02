@@ -1,0 +1,57 @@
+{
+ "ep": "04",
+ "slug": "one-running-order",
+ "title": "One Running Order",
+ "hook": [
+  "ONE EVENT.",
+  "ONE RUNNING ORDER."
+ ],
+ "hook_vo": "Keep every event in its own running order.",
+ "tags": "ORGANISE.,CUE.,LIVE.",
+ "beats": [
+  {
+   "b": 1,
+   "w": "LIBRARY",
+   "s": "a real <b>folder</b>",
+   "vo": "A library is a real folder of presentations."
+  },
+  {
+   "b": 2,
+   "w": "CUE SHEET",
+   "s": "the running <b>order</b>",
+   "vo": "A cue sheet is the running order for one event."
+  },
+  {
+   "b": 3,
+   "w": "LINKS",
+   "s": "not <b>copies</b>",
+   "vo": "It holds links, so you edit once, everywhere."
+  },
+  {
+   "b": 21,
+   "w": "FIND",
+   "s": "names and <b>slide text</b>",
+   "vo": "And Find searches every name and every line."
+  }
+ ],
+ "id": "s06-one-running-order",
+ "lines": [
+  "Keep every event in its own running order.",
+  "A library is a real folder of presentations.",
+  "A cue sheet is the running order for one event.",
+  "It holds links, so you edit once, everywhere.",
+  "And Find searches every name and every line.",
+  "Library. Cue sheet. Links. Find.",
+  "Episode four walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.36,
+  11.16,
+  14.96,
+  18.81,
+  21.59
+ ],
+ "dur": 28.15
+}

@@ -1,0 +1,12 @@
+*/audio/
+*/out/*.mp4
+*/out/*.aep
+*/qa-check-*.png
+*/sheet.png
+*/render.log
+c*.png
+st*.png
+f*.png
+q*.png
+p*.png
+*.log

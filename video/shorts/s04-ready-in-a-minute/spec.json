@@ -1,0 +1,57 @@
+{
+ "ep": "02",
+ "slug": "ready-in-a-minute",
+ "title": "Ready in a Minute",
+ "hook": [
+  "INSTALLED.",
+  "READY TO GO."
+ ],
+ "hook_vo": "Install LayerCue, and it's ready in a minute.",
+ "tags": "INSTALL.,OPEN.,GO.",
+ "beats": [
+  {
+   "b": 0,
+   "w": "GUIDES",
+   "s": "built <b>in</b>",
+   "vo": "It opens with step-by-step guides already inside."
+  },
+  {
+   "b": 5,
+   "w": "SETTINGS",
+   "s": "seven <b>pages</b>",
+   "vo": "One gear opens every setting."
+  },
+  {
+   "b": 6,
+   "w": "LANGUAGE",
+   "s": "applies <b>at once</b>",
+   "vo": "Switch the language, and the menus change at once."
+  },
+  {
+   "b": 15,
+   "w": "SAVED",
+   "s": "<b>always</b>",
+   "vo": "And quitting is safe. Your work is already saved."
+  }
+ ],
+ "id": "s04-ready-in-a-minute",
+ "lines": [
+  "Install LayerCue, and it's ready in a minute.",
+  "It opens with step-by-step guides already inside.",
+  "One gear opens every setting.",
+  "Switch the language, and the menus change at once.",
+  "And quitting is safe. Your work is already saved.",
+  "Guides. Settings. Language. Saved.",
+  "Episode two walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.3,
+  11.1,
+  14.9,
+  18.75,
+  21.32
+ ],
+ "dur": 27.82
+}

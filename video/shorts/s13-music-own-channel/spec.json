@@ -1,0 +1,58 @@
+{
+ "ep": "11",
+ "slug": "music-own-channel",
+ "title": "Music on Its Own Channel",
+ "hook": [
+  "MUSIC.",
+  "ITS OWN CHANNEL."
+ ],
+ "hook_vo": "Music runs on its own channel.",
+ "tags": "PLAY.,DUCK.,LIVE.",
+ "app_audio": -10,
+ "beats": [
+  {
+   "b": 4,
+   "w": "CLEAR",
+   "s": "music <b>keeps playing</b>",
+   "vo": "Clear the stage, and the music keeps playing."
+  },
+  {
+   "b": 10,
+   "w": "NEXT",
+   "s": "or <b>repeat</b>",
+   "vo": "Each track plays next, or repeats."
+  },
+  {
+   "b": 15,
+   "w": "TRIM",
+   "s": "the spoken <b>intro</b>",
+   "vo": "Trim a spoken intro with an in point."
+  },
+  {
+   "b": 20,
+   "w": "DUCK",
+   "s": "under <b>video</b>",
+   "vo": "And the music steps back while a video speaks."
+  }
+ ],
+ "id": "s13-music-own-channel",
+ "lines": [
+  "Music runs on its own channel.",
+  "Clear the stage, and the music keeps playing.",
+  "Each track plays next, or repeats.",
+  "Trim a spoken intro with an in point.",
+  "And the music steps back while a video speaks.",
+  "Clear. Next. Trim. Duck.",
+  "Episode eleven walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.3,
+  11.1,
+  14.9,
+  18.75,
+  20.58
+ ],
+ "dur": 27.33
+}

@@ -1,0 +1,57 @@
+{
+ "ep": "14",
+ "slug": "their-deck-your-show",
+ "title": "Their Deck, Your Show",
+ "hook": [
+  "THEIR DECK.",
+  "YOUR SHOW."
+ ],
+ "hook_vo": "A speaker's deck, in your show, in a minute.",
+ "tags": "IMPORT.,CUE.,LIVE.",
+ "beats": [
+  {
+   "b": 3,
+   "w": "DROP",
+   "s": "the <b>.pptx</b>",
+   "vo": "Drop a PowerPoint onto the card it follows."
+  },
+  {
+   "b": 6,
+   "w": "EDIT",
+   "s": "every <b>cell</b>",
+   "vo": "It comes in as real text. Edit any cell."
+  },
+  {
+   "b": 12,
+   "w": "PDF",
+   "s": "as <b>pictures</b>",
+   "vo": "A PDF comes in as pictures, page by page."
+  },
+  {
+   "b": 13,
+   "w": "EXPORT",
+   "s": "text stays <b>text</b>",
+   "vo": "And any list goes back out as a PDF."
+  }
+ ],
+ "id": "s16-their-deck-your-show",
+ "lines": [
+  "A speaker's deck, in your show, in a minute.",
+  "Drop a PowerPoint onto the card it follows.",
+  "It comes in as real text. Edit any cell.",
+  "A PDF comes in as pictures, page by page.",
+  "And any list goes back out as a PDF.",
+  "Drop. Edit. Pdf. Export.",
+  "Episode fourteen walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.3,
+  11.1,
+  14.97,
+  18.82,
+  21.33
+ ],
+ "dur": 28.12
+}

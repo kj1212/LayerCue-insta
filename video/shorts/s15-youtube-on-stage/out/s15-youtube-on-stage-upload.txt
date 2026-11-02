@@ -1,0 +1,57 @@
+YOUTUBE SHORT — upload the vertical video; YouTube makes it a Short (under 3 min, 9:16).
+
+TITLE
+YouTube on Stage: Link. Stream. Captions. Download. #Shorts
+
+DESCRIPTION
+Put a YouTube video on stage. Paste the address, and it's a slide. It streams clean, with no YouTube buttons. Switch captions, and the stage changes at once. Download it, and it plays without the internet.
+
+Free while it's in beta, on Mac and Windows: https://layercue.com
+Full tutorial — LayerCue from Zero, Episode 13 (YouTube Slides: Streaming, Downloading, Captions): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8
+
+The narration and music were made with AI running on a Mac. The event in the demo is made up.
+
+#LayerCue #LiveProduction #EventProduction
+
+TAGS
+LayerCue, LayerCue tutorial, presentation software, live production, event production, projection software, Mac, Windows
+
+PLAYLIST
+LayerCue Shorts (optional)
+
+SUBTITLES
+subtitles/s15-youtube-on-stage-en.srt, -ko.srt, -ja.srt as 'With timing'.
+
+INSTAGRAM CAPTION
+Put a YouTube video on stage. Link. Stream. Captions. Download.
+Free on Mac & Windows while it's in beta.
+🎬 Full episode → link in bio (LayerCue from Zero, Ep 13)
+
+Narration and music made with AI on a Mac.
+#LayerCue #LiveProduction #EventProduction
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+링크. 스트리밍. 자막. 다운로드. #Shorts
+
+DESCRIPTION
+무대에 유튜브 영상을 띄워요. 주소를 붙여 넣으면 슬라이드가 돼요. 유튜브 버튼 없이 깔끔하게 스트리밍돼요. 자막을 바꾸면 무대가 바로 바뀌어요. 다운로드하면 인터넷 없이 재생돼요.
+
+베타 기간 무료, Mac과 Windows: https://layercue.com
+전체 강좌 — LayerCue 처음부터, 13편(유튜브 슬라이드: 스트리밍, 다운로드, 자막): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+リンク。ストリーミング。字幕。ダウンロード。 #Shorts
+
+DESCRIPTION
+YouTube の映像をステージに。アドレスを貼り付ければスライドに。YouTube のボタンなしで、きれいにストリーミング。字幕を変えると、ステージがすぐ変わります。ダウンロードすれば、インターネットなしで再生。
+
+ベータ期間は無料、Mac と Windows: https://layercue.com
+フル講座 — ゼロから LayerCue 第13回(YouTube スライド:ストリーミング・ダウンロード・字幕): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8

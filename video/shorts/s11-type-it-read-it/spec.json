@@ -1,0 +1,57 @@
+{
+ "ep": "09",
+ "slug": "type-it-read-it",
+ "title": "Type It, Read It",
+ "hook": [
+  "TYPE IT.",
+  "READ IT ANYWHERE."
+ ],
+ "hook_vo": "Write a title that reads on any photo.",
+ "tags": "TYPE.,STYLE.,LIVE.",
+ "beats": [
+  {
+   "b": 7,
+   "w": "TYPE",
+   "s": "on the <b>slide</b>",
+   "vo": "Every new slide comes with a text box. Just type."
+  },
+  {
+   "b": 9,
+   "w": "FONT",
+   "s": "pick a <b>weight</b>",
+   "vo": "Search any font, then pick a weight."
+  },
+  {
+   "b": 16,
+   "w": "OUTLINE",
+   "s": "reads on <b>any photo</b>",
+   "vo": "An outline and a soft shadow read on any photo."
+  },
+  {
+   "b": 21,
+   "w": "LIVE",
+   "s": "edits on <b>output</b>",
+   "vo": "And with Show on output, your edits go live."
+  }
+ ],
+ "id": "s11-type-it-read-it",
+ "lines": [
+  "Write a title that reads on any photo.",
+  "Every new slide comes with a text box. Just type.",
+  "Search any font, then pick a weight.",
+  "An outline and a soft shadow read on any photo.",
+  "And with Show on output, your edits go live.",
+  "Type. Font. Outline. Live.",
+  "Episode nine walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.57,
+  11.37,
+  15.17,
+  19.02,
+  21.07
+ ],
+ "dur": 27.67
+}

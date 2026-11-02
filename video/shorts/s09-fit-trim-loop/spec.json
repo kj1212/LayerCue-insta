@@ -1,0 +1,57 @@
+{
+ "ep": "07",
+ "slug": "fit-trim-loop",
+ "title": "Fit, Trim, Loop",
+ "hook": [
+  "EVERY SLIDE.",
+  "ITS OWN SETTINGS."
+ ],
+ "hook_vo": "Every slide keeps its own settings.",
+ "tags": "FIT.,TRIM.,LIVE.",
+ "beats": [
+  {
+   "b": 6,
+   "w": "FIT",
+   "s": "+ <b>blur</b> for vertical",
+   "vo": "Fit plus blur fills the sides of a vertical video."
+  },
+  {
+   "b": 14,
+   "w": "TRIM",
+   "s": "in and <b>out</b>",
+   "vo": "Set in and out points, and it plays just that part."
+  },
+  {
+   "b": 19,
+   "w": "LOOP",
+   "s": "or <b>play once</b>",
+   "vo": "Choose loop, or play once."
+  },
+  {
+   "b": 22,
+   "w": "HOLD",
+   "s": "start it <b>on cue</b>",
+   "vo": "To Screen holds the first frame until your cue."
+  }
+ ],
+ "id": "s09-fit-trim-loop",
+ "lines": [
+  "Every slide keeps its own settings.",
+  "Fit plus blur fills the sides of a vertical video.",
+  "Set in and out points, and it plays just that part.",
+  "Choose loop, or play once.",
+  "To Screen holds the first frame until your cue.",
+  "Fit. Trim. Loop. Hold.",
+  "Episode seven walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.52,
+  11.55,
+  15.35,
+  19.2,
+  21.18
+ ],
+ "dur": 27.92
+}

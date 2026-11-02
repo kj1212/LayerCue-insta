@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,512
+Every slide keeps its own settings.
+
+2
+00:00:03,500 --> 00:00:06,717
+Fit plus blur fills the sides of a vertical video.
+
+3
+00:00:07,520 --> 00:00:10,756
+Set in and out points, and it plays just that part.
+
+4
+00:00:11,550 --> 00:00:13,289
+Choose loop, or play once.
+
+5
+00:00:15,350 --> 00:00:18,088
+To Screen holds the first frame until your cue.
+
+6
+00:00:19,200 --> 00:00:21,078
+Fit. Trim. Loop. Hold.
+
+7
+00:00:21,180 --> 00:00:23,324
+Episode seven walks you through it.

@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,289
+Put a YouTube video on stage.
+
+2
+00:00:03,500 --> 00:00:05,508
+Paste the address, and it's a slide.
+
+3
+00:00:07,300 --> 00:00:09,980
+It streams clean, with no YouTube buttons.
+
+4
+00:00:11,100 --> 00:00:14,021
+Switch captions, and the stage changes at once.
+
+5
+00:00:14,900 --> 00:00:17,480
+Download it, and it plays without the internet.
+
+6
+00:00:18,750 --> 00:00:21,241
+Link. Stream. Captions. Download.
+
+7
+00:00:21,340 --> 00:00:23,540
+Episode thirteen walks you through it.

@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,718
+A speaker's deck, in your show, in a minute.
+
+2
+00:00:03,500 --> 00:00:06,007
+Drop a PowerPoint onto the card it follows.
+
+3
+00:00:07,300 --> 00:00:10,121
+It comes in as real text. Edit any cell.
+
+4
+00:00:11,100 --> 00:00:14,165
+A PDF comes in as pictures, page by page.
+
+5
+00:00:14,970 --> 00:00:17,453
+And any list goes back out as a PDF.
+
+6
+00:00:18,820 --> 00:00:21,226
+Drop. Edit. Pdf. Export.
+
+7
+00:00:21,330 --> 00:00:23,526
+Episode fourteen walks you through it.

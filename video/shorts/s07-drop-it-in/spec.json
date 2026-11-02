@@ -1,0 +1,57 @@
+{
+ "ep": "05",
+ "slug": "drop-it-in",
+ "title": "Drop It In",
+ "hook": [
+  "DROP IT IN.",
+  "READ THE CARD."
+ ],
+ "hook_vo": "Drop in any file, and read the card at a glance.",
+ "tags": "DROP.,READ.,LIVE.",
+ "beats": [
+  {
+   "b": 4,
+   "w": "ADD",
+   "s": "any <b>file</b>",
+   "vo": "The plus adds videos, pictures, music or text."
+  },
+  {
+   "b": 5,
+   "w": "SWAP",
+   "s": "drop on a <b>card</b>",
+   "vo": "Drop a file on a card, and it swaps the picture."
+  },
+  {
+   "b": 0,
+   "w": "BADGE",
+   "s": "the <b>kind</b> of slide",
+   "vo": "Every card wears a badge for its kind."
+  },
+  {
+   "b": 9,
+   "w": "ORANGE",
+   "s": "on <b>air</b>",
+   "vo": "And an orange border means it's on the screen."
+  }
+ ],
+ "id": "s07-drop-it-in",
+ "lines": [
+  "Drop in any file, and read the card at a glance.",
+  "The plus adds videos, pictures, music or text.",
+  "Drop a file on a card, and it swaps the picture.",
+  "Every card wears a badge for its kind.",
+  "And an orange border means it's on the screen.",
+  "Add. Swap. Badge. Orange.",
+  "Episode five walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.7,
+  7.74,
+  11.54,
+  15.34,
+  19.19,
+  21.19
+ ],
+ "dur": 27.84
+}

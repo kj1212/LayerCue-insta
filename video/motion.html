@@ -133,7 +133,9 @@ function end(t) {
   h += `<div class="word" style="position:absolute;left:0;right:0;font-size:150px;font-stretch:112%;opacity:${lin(t, .82, .95)}">LAYERCUE</div></div>`;
   // ASK. CUE. LIVE.
   // 세 낱말을 한 줄(flex)로 — 낱말 폭이 달라도 사이가 같다(STACK. 이 CUE. 와 붙던 것)
-  h += `<div class="tag" style="top:980px;font-size:84px;display:flex;justify-content:center;gap:56px">` + TAGS.map((w, i) => {
+  // 세 낱말이 길면(POWER. CLICK. CLEAR.) 화면 밖으로 나갔다 — 18 글자(PICK. CLICK. LIVE.)를 넘으면 그만큼 줄인다
+  const TL = TAGS.join(' ').length, TFS = Math.min(84, Math.floor(84 * 18 / TL)), TGAP = Math.round(56 * TFS / 84);
+  h += `<div class="tag" style="top:980px;font-size:${TFS}px;display:flex;justify-content:center;gap:${TGAP}px">` + TAGS.map((w, i) => {
     const k = outBack(lin(t, 1.0 + i * .22, 1.4 + i * .22));
     return `<span style="display:inline-block;color:${i === TAGS.length - 1 ? 'var(--hot)' : 'var(--cream)'};transform:scale(${k});opacity:${clamp(k)}">${w}</span>`;
   }).join('') + `</div>`;

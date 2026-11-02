@@ -1,0 +1,57 @@
+{
+ "ep": "10",
+ "slug": "design-in-a-minute",
+ "title": "Design in a Minute",
+ "hook": [
+  "PLAIN SLIDE.",
+  "DESIGNED."
+ ],
+ "hook_vo": "Turn a plain title into a designed slide.",
+ "tags": "INSERT.,STYLE.,LIVE.",
+ "beats": [
+  {
+   "b": 3,
+   "w": "ICON",
+   "s": "<b>1,500+</b> to search",
+   "vo": "Search fifteen hundred icons, and drop one in."
+  },
+  {
+   "b": 10,
+   "w": "SHAPE",
+   "s": "that holds <b>text</b>",
+   "vo": "Shapes hold text, in fourteen cuts."
+  },
+  {
+   "b": 13,
+   "w": "FADE",
+   "s": "a band behind the <b>name</b>",
+   "vo": "Add a band that fades away behind the name."
+  },
+  {
+   "b": 23,
+   "w": "STYLE",
+   "s": "four slides at <b>once</b>",
+   "vo": "Then paste one style onto four slides at once."
+  }
+ ],
+ "id": "s12-design-in-a-minute",
+ "lines": [
+  "Turn a plain title into a designed slide.",
+  "Search fifteen hundred icons, and drop one in.",
+  "Shapes hold text, in fourteen cuts.",
+  "Add a band that fades away behind the name.",
+  "Then paste one style onto four slides at once.",
+  "Icon. Shape. Fade. Style.",
+  "Episode ten walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.45,
+  11.25,
+  15.05,
+  18.9,
+  21.1
+ ],
+ "dur": 27.7
+}

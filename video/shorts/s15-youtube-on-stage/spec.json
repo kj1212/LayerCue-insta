@@ -1,0 +1,57 @@
+{
+ "ep": "13",
+ "slug": "youtube-on-stage",
+ "title": "YouTube on Stage",
+ "hook": [
+  "YOUTUBE.",
+  "ON STAGE."
+ ],
+ "hook_vo": "Put a YouTube video on stage.",
+ "tags": "LINK.,STREAM.,LIVE.",
+ "beats": [
+  {
+   "b": 1,
+   "w": "LINK",
+   "s": "paste the <b>address</b>",
+   "vo": "Paste the address, and it's a slide."
+  },
+  {
+   "b": 3,
+   "w": "STREAM",
+   "s": "no YouTube <b>buttons</b>",
+   "vo": "It streams clean, with no YouTube buttons."
+  },
+  {
+   "b": 7,
+   "w": "CAPTIONS",
+   "s": "switch on <b>stage</b>",
+   "vo": "Switch captions, and the stage changes at once."
+  },
+  {
+   "b": 13,
+   "w": "DOWNLOAD",
+   "s": "no <b>internet</b> needed",
+   "vo": "Download it, and it plays without the internet."
+  }
+ ],
+ "id": "s15-youtube-on-stage",
+ "lines": [
+  "Put a YouTube video on stage.",
+  "Paste the address, and it's a slide.",
+  "It streams clean, with no YouTube buttons.",
+  "Switch captions, and the stage changes at once.",
+  "Download it, and it plays without the internet.",
+  "Link. Stream. Captions. Download.",
+  "Episode thirteen walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.3,
+  11.1,
+  14.9,
+  18.75,
+  21.34
+ ],
+ "dur": 28.14
+}

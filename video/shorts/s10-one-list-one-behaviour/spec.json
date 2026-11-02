@@ -1,0 +1,57 @@
+{
+ "ep": "08",
+ "slug": "one-list-one-behaviour",
+ "title": "One List, One Behaviour",
+ "hook": [
+  "ONE LIST.",
+  "ONE BEHAVIOUR."
+ ],
+ "hook_vo": "Set how a whole list behaves, once.",
+ "tags": "FADE.,CUT.,LIVE.",
+ "beats": [
+  {
+   "b": 3,
+   "w": "FADE",
+   "s": "a slow <b>crossfade</b>",
+   "vo": "Set the crossfade, and every slide eases in."
+  },
+  {
+   "b": 4,
+   "w": "CUT",
+   "s": "fade out <b>zero</b>",
+   "vo": "Or fade out at zero, for a clean cut."
+  },
+  {
+   "b": 6,
+   "w": "AUTO",
+   "s": "overlays <b>dismiss</b>",
+   "vo": "Overlays can take themselves down."
+  },
+  {
+   "b": 8,
+   "w": "ONE LAYER",
+   "s": "for the <b>whole list</b>",
+   "vo": "And one setting puts a whole list on the background."
+  }
+ ],
+ "id": "s10-one-list-one-behaviour",
+ "lines": [
+  "Set how a whole list behaves, once.",
+  "Set the crossfade, and every slide eases in.",
+  "Or fade out at zero, for a clean cut.",
+  "Overlays can take themselves down.",
+  "And one setting puts a whole list on the background.",
+  "Fade. Cut. Auto. One layer.",
+  "Episode eight walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  3.5,
+  7.3,
+  11.1,
+  14.9,
+  18.75,
+  20.87
+ ],
+ "dur": 27.37
+}

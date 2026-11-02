@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,790
+Keep every event in its own running order.
+
+2
+00:00:03,500 --> 00:00:06,562
+A library is a real folder of presentations.
+
+3
+00:00:07,360 --> 00:00:10,223
+A cue sheet is the running order for one event.
+
+4
+00:00:11,160 --> 00:00:13,902
+It holds links, so you edit once, everywhere.
+
+5
+00:00:14,960 --> 00:00:17,732
+And Find searches every name and every line.
+
+6
+00:00:18,810 --> 00:00:21,494
+Library. Cue sheet. Links. Find.
+
+7
+00:00:21,590 --> 00:00:23,544
+Episode four walks you through it.
