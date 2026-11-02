@@ -1,4 +1,4 @@
-# Your Files, Settings Pages and AI Helpers | LayerCue from Zero, Episode 15
+# AI Builds Your Slides, Plus Files and Settings | LayerCue from Zero, Episode 15
 
 ## Everything in one folder
 
@@ -44,7 +44,7 @@
 - Widen the window, and it goes back in by itself.  
   창을 넓히면 저절로 다시 들어가요.
 
-## An AI app works in LayerCue
+## AI builds your slides
 
 - An AI app on this computer can work in LayerCue. Settings, AI apps connects Claude Desktop, LM Studio or Cursor.  
   이 컴퓨터의 AI 앱이 LayerCue에서 일할 수 있어요. 설정의 AI apps에서 Claude Desktop, LM Studio, Cursor를 연결해요.

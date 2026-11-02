@@ -45,7 +45,7 @@
 | 12 | Sound: Device, Meter, Master and the No-Sound Checklist | 4.5 | 장치 선택, 미터/마스터, MUTE/SOLO, 저장되는 볼륨 6곳, 무음 점검 | 6, 7, 11 |
 | 13 | YouTube Slides: Streaming, Downloading, Captions | 5.0 | 링크 추가, 다운로드, 무대 커버/품질, 자막·더빙·챕터, yt-dlp 갱신 | 5, 7, 9, 12 |
 | 14 | Bringing It In: PowerPoint, PDF and Export | 4.5 | PPTX 편집 가능 가져오기와 한계, PDF 그림 가져오기, PDF 내보내기 | 4, 5, 9, 10 |
-| 15 | Your Files, Settings Pages and AI Helpers | 5.0 | 미디어 폴더·Import external files·백업/이동·Import bundle·Account/Reset·창 접힘·AI 연결/Copy as HTML | 2, 14 |
+| 15 | AI Builds Your Slides, Plus Files and Settings | 5.0 | 미디어 폴더·Import external files·백업/이동·Import bundle·Account/Reset·창 접힘·AI 연결/Copy as HTML | 2, 14 |
 | 16 | More Screens: Stage Output Window and Layers Shown | 4.5 | 두 번째 화면(가사만), 가상 화면, 온에어 목록·Layout board, 분리/재연결 | 3, 6, 8 |
 | 17 | Streaming Out: NDI, Syphon and Fill & Key (Advanced) | 5.0 | NDI/Syphon로 무대를 보내고, 스위처용 fill & key를 만든다 | 16 |
 | 18 | Show Day: Defaults, Lock, Messages and the Checklist | 4.5 | 전날 점검, Lock editing while live, 기본값 사전 설정, 쇼 중 메시지, 6항목 체크리스트, 팩다운 | 전부(특히 3, 12, 13) |
@@ -336,12 +336,12 @@
 | 2:15 | From PDF… → PDF import 창: 썸네일, All/None/Range, Resolution FHD/2K/4K/6K, JPEG/PNG. Range "2-4" → Import → "Rendering…" → "Imported 3 pages". Cmd+F로 페이지 단어 검색. | A PDF comes in as pictures. The text cannot be edited. Every page starts picked. Click thumbnails or type a Range. Resolution is the long edge; 4K is the default. JPEG keeps files small. The words are kept for Find. A password-protected PDF is refused: remove the password first. | `import/pdf.md` (Importing a PDF) |
 | 3:00 | 사이드바 우클릭 → Export to PDF… → All/None/Range → 저장 → "Exported to PDF —". PDF 리더에서 텍스트 선택·검색. | The other way round works too. Right-click a presentation and Export to PDF. The text stays text: selectable, searchable. One slide per 16 by 9 page. Streaming YouTube and audio slides give no picture, so leave them unpicked. Handy for a programme or a printout. | `import/pdf.md` (Exporting) |
 | 3:35 | 가져온 덱 3장을 Ep 10 방식으로 빠르게 정리(Paste style 1회), 큐시트 순서에 끼움. | Now it is yours. Fix a title with Paste style. Drag it into the running order. | `slides/text.md` (Paste style); `library/index.md` |
-| 4:15 | 엔드 카드 + 로드맵 카드(14). | You can now bring a speaker's deck into the running order. Next: Episode 15 — Your Files, Settings Pages and AI Helpers. | — |
+| 4:15 | 엔드 카드 + 로드맵 카드(14). | You can now bring a speaker's deck into the running order. Next: Episode 15 — AI Builds Your Slides, Plus Files and Settings. | — |
 
 - **데모 자료**: `Keynote-Okafor.pptx`(24장, 표 1, 차트 1, 숨김 1, Windows 전용 폰트 1), `Summit-Programme.pdf`(6쪽, 텍스트 기반).
 - **꼭 말할 주의점**: Lock editing 중엔 가져오기 불가. 한 번에 한 파일. 차트·SmartArt·미디어·애니메이션은 안 들어옴. 스캔 PDF는 Find 불가.
 
-### Ep 15 — Your Files, Settings Pages and AI Helpers (5:00)
+### Ep 15 — AI Builds Your Slides, Plus Files and Settings (5:00)
 
 - **목표**: 모든 미디어를 LayerCue 폴더 안에 두고 백업·이동하고, Import bundle·Account·Reset을 알고, 좁은 창 팝아웃을 쓰고, AI 앱을 연결하거나 Copy as HTML로 슬라이드를 다시 쓴다.
 - **끝나면 할 수 있는 것**: 쇼 폴더를 다른 컴퓨터로 옮기고, AI로 가사 슬라이드를 만든다.

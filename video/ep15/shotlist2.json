@@ -560,6 +560,18 @@
     },
     {
      "line": 5,
+     "at": 3.0,
+     "hl": "sun",
+     "lbl": [
+      "Vector art",
+      "drawn by Claude"
+     ],
+     "lblSide": "above",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 5,
      "at": 4.0,
      "mouse": [
       "click",

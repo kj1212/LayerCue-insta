@@ -1,12 +1,14 @@
 {
- "title": "Your Files, Settings Pages and AI Helpers | LayerCue from Zero, Episode 15",
- "description": "Keep a show safe and movable in LayerCue. In Settings › Files & YouTube, bring a video that still plays from a USB stick into the media folder with Import external files, then open the LayerCue folder: libraries, cue sheets and LayerCue's own copies of your media are ordinary files. Back it up by quitting and copying the folder, move it by putting it in the same place on another computer, and know that Backups is one step back, not a history. Settings stay on the computer (Keep settings in my account brings most along), and Reset has no undo. On a narrow window Slide settings and Music fold, and a folded heading opens the panel in its own window. Finally, AI helpers: Settings › AI apps connects Claude Desktop, LM Studio or Cursor — and in a new Claude chat, one sentence asks for a five-slide school talk on the Solar System. Claude draws every picture as vector art and builds the talk in LayerCue on its own. The slides are Claude's real, unedited work; it took about five minutes, and the video cuts the wait and shows the finished chat. Without a connection, Copy as HTML for AI lets any AI chat rewrite your slides and paste them back.\nNew here? Start with Episode 1: Meet LayerCue — The Main Window.\nRecorded on LayerCue 0.9.12.\nManual: https://layercue.com/docs/help/files/ · https://layercue.com/docs/settings/ · https://layercue.com/docs/ai/\nThe narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional.",
+ "title": "AI Builds Your Slides, Plus Files and Settings | LayerCue from Zero, Episode 15",
+ "description": "Let an AI build your slides: in a new Claude chat, one sentence makes a five-slide talk with every picture drawn as vector art, right inside LayerCue. You'll also keep a show safe and movable. In Settings › Files & YouTube, bring a video that still plays from a USB stick into the media folder with Import external files, then open the LayerCue folder: libraries, cue sheets and LayerCue's own copies of your media are ordinary files. Back it up by quitting and copying the folder, move it by putting it in the same place on another computer, and know that Backups is one step back, not a history. Settings stay on the computer (Keep settings in my account brings most along), and Reset has no undo. On a narrow window Slide settings and Music fold, and a folded heading opens the panel in its own window. Finally, AI helpers: Settings › AI apps connects Claude Desktop, LM Studio or Cursor — and in a new Claude chat, one sentence asks for a five-slide school talk on the Solar System. Claude draws every picture as vector art and builds the talk in LayerCue on its own. The slides are Claude's real, unedited work; it took about five minutes, and the video cuts the wait and shows the finished chat. Without a connection, Copy as HTML for AI lets any AI chat rewrite your slides and paste them back.\nNew here? Start with Episode 1: Meet LayerCue — The Main Window.\nRecorded on LayerCue 0.9.12.\nManual: https://layercue.com/docs/help/files/ · https://layercue.com/docs/settings/ · https://layercue.com/docs/ai/\nThe narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional.",
  "tags": [
   "LayerCue",
   "LayerCue tutorial",
   "backup",
   "media folder",
   "move to another computer",
+  "AI presentation maker",
+  "AI slides",
   "AI",
   "Claude Desktop",
   "MCP",
@@ -16,16 +18,16 @@
   "Windows"
  ],
  "playlist": "LayerCue from Zero: Run Your First Show",
- "title_ko": "파일, 설정 페이지, AI 도우미 | LayerCue 처음부터, 15편",
- "title_ja": "ファイル・設定ページ・AI ヘルパー | ゼロから LayerCue 第15回",
- "description_ko": "LayerCue에서 쇼를 안전하게, 옮길 수 있게 지켜요. Settings › Files & YouTube에서 아직 USB에서 재생되는 영상을 Import external files로 미디어 폴더에 들여오고, LayerCue 폴더를 열어 봐요. 라이브러리, 큐시트, LayerCue가 복사해 둔 미디어가 모두 평범한 파일이에요. 앱을 끄고 폴더를 복사하면 백업, 다른 컴퓨터의 같은 자리에 두면 이동이고, Backups는 한 단계 뒤일 뿐 기록이 아니에요. 설정은 컴퓨터에 남고(Keep settings in my account를 켜면 대부분 따라와요), Reset은 되돌릴 수 없어요. 창이 좁으면 Slide settings와 Music이 접히고, 접힌 제목을 누르면 패널이 따로 창으로 열려요. 마지막으로 AI 도우미: Settings › AI apps에서 Claude Desktop, LM Studio, Cursor를 연결하고, Claude 새 대화에 한 문장으로 학교 행사용 태양계 발표 다섯 장을 부탁하면, Claude가 그림을 모두 벡터로 직접 그려 LayerCue에 발표를 만들어요. 슬라이드는 손대지 않은 Claude의 실제 작업물이에요. 5분쯤 걸려서, 영상에서는 기다리는 부분을 잘라 내고 끝난 대화를 보여 줘요. 연결이 없으면 Copy as HTML for AI로 아무 AI 채팅에서나 슬라이드를 고쳐 다시 붙여 넣어요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요.\n매뉴얼: https://layercue.com/docs/help/files/ · https://layercue.com/docs/settings/ · https://layercue.com/docs/ai/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요.",
- "description_ja": "LayerCue でショーを安全に、移せるように保ちます。Settings › Files & YouTube で、まだ USB から再生されている映像を Import external files でメディアフォルダに取り込み、LayerCue フォルダを開きます。ライブラリ、キューシート、LayerCue がコピーしたメディアはすべて普通のファイルです。アプリを終了してフォルダをコピーすればバックアップ、別のコンピューターの同じ場所に置けば移行。Backups は一つ前に戻れるだけで、履歴ではありません。設定はコンピューターに残り(Keep settings in my account で多くが付いてきます)、Reset は取り消せません。ウィンドウが狭いと Slide settings と Music が畳まれ、畳まれた見出しを押すとパネルが別ウィンドウで開きます。最後に AI ヘルパー:Settings › AI apps で Claude Desktop・LM Studio・Cursor を接続し、Claude の新しいチャットで一文、学校行事用の太陽系の発表5枚を頼むと、Claude が絵をすべてベクターで描き、LayerCue に発表を作ります。スライドは手を加えていない Claude の実際の作品です。5分ほどかかったので、動画では待ち時間をカットし、完了したチャットを見せています。接続がなければ Copy as HTML for AI でどの AI チャットでもスライドを書き直して貼り戻せます。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。\nマニュアル: https://layercue.com/docs/help/files/ · https://layercue.com/docs/settings/ · https://layercue.com/docs/ai/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。",
+ "title_ko": "AI가 슬라이드를 만들어요, 그리고 파일과 설정 | LayerCue 처음부터, 15편",
+ "title_ja": "AI がスライドを作る、そしてファイルと設定 | ゼロから LayerCue 第15回",
+ "description_ko": "AI에게 슬라이드를 맡겨 보세요. Claude 새 대화에 한 문장이면, 그림까지 모두 벡터로 그린 다섯 장 발표가 LayerCue 안에 생겨요. 쇼를 안전하게, 옮길 수 있게 지키는 법도 알려 드려요. Settings › Files & YouTube에서 아직 USB에서 재생되는 영상을 Import external files로 미디어 폴더에 들여오고, LayerCue 폴더를 열어 봐요. 라이브러리, 큐시트, LayerCue가 복사해 둔 미디어가 모두 평범한 파일이에요. 앱을 끄고 폴더를 복사하면 백업, 다른 컴퓨터의 같은 자리에 두면 이동이고, Backups는 한 단계 뒤일 뿐 기록이 아니에요. 설정은 컴퓨터에 남고(Keep settings in my account를 켜면 대부분 따라와요), Reset은 되돌릴 수 없어요. 창이 좁으면 Slide settings와 Music이 접히고, 접힌 제목을 누르면 패널이 따로 창으로 열려요. 마지막으로 AI 도우미: Settings › AI apps에서 Claude Desktop, LM Studio, Cursor를 연결하고, Claude 새 대화에 한 문장으로 학교 행사용 태양계 발표 다섯 장을 부탁하면, Claude가 그림을 모두 벡터로 직접 그려 LayerCue에 발표를 만들어요. 슬라이드는 손대지 않은 Claude의 실제 작업물이에요. 5분쯤 걸려서, 영상에서는 기다리는 부분을 잘라 내고 끝난 대화를 보여 줘요. 연결이 없으면 Copy as HTML for AI로 아무 AI 채팅에서나 슬라이드를 고쳐 다시 붙여 넣어요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요.\n매뉴얼: https://layercue.com/docs/help/files/ · https://layercue.com/docs/settings/ · https://layercue.com/docs/ai/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요.",
+ "description_ja": "スライドづくりを AI に任せてみましょう。Claude の新しいチャットで一文頼めば、絵まですべてベクターで描いた5枚の発表が LayerCue の中にできあがります。ショーを安全に、移せるように保つ方法もご紹介します。Settings › Files & YouTube で、まだ USB から再生されている映像を Import external files でメディアフォルダに取り込み、LayerCue フォルダを開きます。ライブラリ、キューシート、LayerCue がコピーしたメディアはすべて普通のファイルです。アプリを終了してフォルダをコピーすればバックアップ、別のコンピューターの同じ場所に置けば移行。Backups は一つ前に戻れるだけで、履歴ではありません。設定はコンピューターに残り(Keep settings in my account で多くが付いてきます)、Reset は取り消せません。ウィンドウが狭いと Slide settings と Music が畳まれ、畳まれた見出しを押すとパネルが別ウィンドウで開きます。最後に AI ヘルパー:Settings › AI apps で Claude Desktop・LM Studio・Cursor を接続し、Claude の新しいチャットで一文、学校行事用の太陽系の発表5枚を頼むと、Claude が絵をすべてベクターで描き、LayerCue に発表を作ります。スライドは手を加えていない Claude の実際の作品です。5分ほどかかったので、動画では待ち時間をカットし、完了したチャットを見せています。接続がなければ Copy as HTML for AI でどの AI チャットでもスライドを書き直して貼り戻せます。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。\nマニュアル: https://layercue.com/docs/help/files/ · https://layercue.com/docs/settings/ · https://layercue.com/docs/ai/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。",
  "chapters_ko": [
   "모든 것이 한 폴더에",
   "백업과 이동",
   "설정은 이 컴퓨터에",
   "좁은 창",
-  "AI 앱이 LayerCue에서 일해요",
+  "AI가 슬라이드를 만들어요",
   "연결 없이",
   "다음 편"
  ],
@@ -34,7 +36,7 @@
   "バックアップと移行",
   "設定はこのコンピューターに",
   "狭いウィンドウ",
-  "AI アプリが LayerCue で作業",
+  "AI がスライドを作る",
   "接続なしで",
   "次回"
  ]

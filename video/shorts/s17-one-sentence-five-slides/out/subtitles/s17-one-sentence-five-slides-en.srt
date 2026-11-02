@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:04,387
+Ask Claude in one sentence, and get a five-slide talk in LayerCue.
+
+2
+00:00:04,790 --> 00:00:07,976
+Open a new chat in Claude, and ask in plain words.
+
+3
+00:00:08,770 --> 00:00:11,850
+Minutes later, the whole talk is already in LayerCue.
+
+4
+00:00:12,650 --> 00:00:16,117
+Claude draws every picture itself, and you can still edit it.
+
+5
+00:00:16,920 --> 00:00:21,286
+No connection? Copy as HTML, and any AI chat can help.
+
+6
+00:00:22,140 --> 00:00:24,330
+Ask. Built. Drawn. Any chat.
+
+7
+00:00:24,430 --> 00:00:26,576
+Episode fifteen walks you through it.
