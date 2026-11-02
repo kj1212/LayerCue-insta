@@ -108,14 +108,16 @@ def make(sp, idx):
     bl = []
     for i, b in enumerate(sp["beats"]):
         c = cand[b["b"]]; rp = V / c["rec"]; rd = rec_dur(rp)
-        lead = 1.4; src = c["v"] - lead
+        lead = 1.4; src = c["v"] + b.get("lag", 0.0) - lead          # lag: 녹화에서 실제로 늦게 일어난 만큼(15편 메뉴 0.75 s)
         if i == 0: src = max(src, min(S[0], c["v"] - 0.6))      # 훅 동안 앞부분을 보여 줄 수 있게
         src = max(0.0, min(src, rd - Dd[i] - 0.2))
         z = zone(c["region"]); wav = rp.with_suffix(".wav"); aj = rp.with_suffix(".audio.json")
         aud = None
         if sp.get("app_audio") is not None and wav.exists() and aj.exists():
             aud = dict(file=str(wav), shift=round(SL["rec_t0"] + json.load(open(aj))["offset"], 3), db=sp["app_audio"])
-        bl.append(dict(rec=str(rp), src=round(src, 3), t=S[i], d=Dd[i], audio=aud, **z, lbl=c["lbl"], line=c["line"]))
+        zend = round(S[i] + b["until"] - src, 2) if "until" in b else None    # until: 가리킨 것이 녹화에서 사라지는 시각 — 그때 테도 뗀다
+        zbeg = round(S[i] + b["appear"] - src, 2) if "appear" in b else None    # appear: 가리킨 것이 녹화에 나타나는 시각 — 그때 테를 단다
+        bl.append(dict(rec=str(rp), src=round(src, 3), t=S[i], d=Dd[i], audio=aud, **z, lbl=b.get("lbl", c["lbl"]), line=c["line"], zend=zend, zbeg=zbeg))
     cfg = dict(id=sid, ep=ep, DUR=DUR, H=round(Hk, 2), Rt=Rt, END0=END0, beats=bl,
                vo=[dict(file=str(D / "audio" / f"{i:02d}.wav"), t=vo_at[i]) for i in range(len(lines))],
                subs=[[0.35, round(Hk - 0.1, 2)]] + [[round(S[i] + 0.1, 2), round(S[i] + Dd[i] - 0.1, 2)] for i in range(4)] + [[vo_at[6] - 0.1, END0]],

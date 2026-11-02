@@ -87,6 +87,12 @@ var op = T(ob[0]).property("ADBE Position"), os = ob[1].property("ADBE Vector Re
 // 테는 박자 경계에서 컷(창 장면이 바뀌는 순간과 같이) — 미리 미끄러지면 앞 장면 위에서 엇나가 보였다(사용자, short16)
 for (var m = 0; m < 4; m++) { var zz = C.beats[m]; op.setValueAtTime(zz.t, mm(zz.ox, zz.oy)); os.setValueAtTime(zz.t, [zz.ow * K, zz.oh * K]); }
 holdAll(op); holdAll(os); fadeIn(ob[0], B0 + 0.1, .3);
+if (C.beats[3].zend && C.beats[3].zend < RT + 0.2) ob[0].outPoint = C.beats[3].zend;     // 15편: 메뉴가 닫히면 테도 뗀다(사용자, short17)
+var oo = T(ob[0]).property("ADBE Opacity");      // appear/until: 가리킨 것이 화면에 있는 동안만 테를 단다(15편 메뉴 · 슬라이드)
+for (var zq = 1; zq < 4; zq++) { var zb2 = C.beats[zq], ph = C.beats[zq - 1].zend && zq - 1 < 3;
+    if (zb2.zbeg) { if (!ph) oo.setValueAtTime(zb2.t - 0.01, 100); oo.setValueAtTime(zb2.t, 0); oo.setValueAtTime(zb2.zbeg, 0); oo.setValueAtTime(zb2.zbeg + 0.08, 100); }
+    else if (ph) { oo.setValueAtTime(zb2.t - 0.01, 0); oo.setValueAtTime(zb2.t, 100); }
+    if (zb2.zend && zq < 3) { oo.setValueAtTime(zb2.zend, 100); oo.setValueAtTime(zb2.zend + 0.08, 0); } }
 for (var r = 0; r < 4; r++) { var zr = C.beats[r], te = (r === 3) ? END0 + 0.1 : recapT(r + 1), rq = rectLayer(comp, "recap zone " + r, zr.ow * K, zr.oh * K, HOT, 5, recapT(r), te);
     T(rq[0]).property("ADBE Position").setValue(mm(zr.ox, zr.oy)); fadeIn(rq[0], recapT(r), .1); if (r === 3) fadeOut(rq[0], END0 + 0.1, .3); }
 

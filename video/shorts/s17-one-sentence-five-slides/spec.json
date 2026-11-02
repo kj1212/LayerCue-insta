@@ -6,14 +6,14 @@
   "ONE SENTENCE.",
   "FIVE SLIDES."
  ],
- "hook_vo": "Ask Claude in one sentence, and get a five-slide talk in LayerCue.",
+ "hook_vo": "Ask an AI in one sentence, and get a five-slide talk in LayerCue.",
  "tags": "ASK.,DRAW.,PRESENT.",
  "beats": [
   {
    "b": 10,
    "w": "ASK",
    "s": "in plain <b>words</b>",
-   "vo": "Open a new chat in Claude, and ask in plain words."
+   "vo": "Open a new chat in your AI app, and ask in plain words."
   },
   {
    "b": 12,
@@ -25,33 +25,39 @@
    "b": 13,
    "w": "DRAWN",
    "s": "every picture, <b>vector</b>",
-   "vo": "Claude draws every picture itself, and you can still edit it."
+   "vo": "The AI draws every picture itself, and you can still edit it.",
+   "lag": 0.6,
+   "appear": 40.8,
+   "until": 42.6
   },
   {
    "b": 14,
    "w": "ANY CHAT",
    "s": "copy as <b>HTML</b>",
-   "vo": "No connection? Copy as HTML, and any AI chat can help."
+   "vo": "No connection? Copy as HTML, and any AI chat can help.",
+   "lag": 0.75,
+   "appear": 5.95,
+   "until": 9.3
   }
  ],
  "id": "s17-one-sentence-five-slides",
  "lines": [
-  "Ask Claude in one sentence, and get a five-slide talk in LayerCue.",
-  "Open a new chat in Claude, and ask in plain words.",
+  "Ask an AI in one sentence, and get a five-slide talk in LayerCue.",
+  "Open a new chat in your AI app, and ask in plain words.",
   "Minutes later, the whole talk is already in LayerCue.",
-  "Claude draws every picture itself, and you can still edit it.",
+  "The AI draws every picture itself, and you can still edit it.",
   "No connection? Copy as HTML, and any AI chat can help.",
   "Ask. Built. Drawn. Any chat.",
   "Episode fifteen walks you through it."
  ],
  "vo_at": [
   0.35,
-  4.79,
-  8.77,
-  12.65,
-  16.92,
-  22.14,
-  24.43
+  5.04,
+  9.37,
+  13.25,
+  17.86,
+  23.07,
+  25.36
  ],
- "dur": 31.18
+ "dur": 32.11
 }

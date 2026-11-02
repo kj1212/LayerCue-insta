@@ -83,9 +83,9 @@ S = [
              dict(b=12, w="PDF", s="as <b>pictures</b>", vo="A PDF comes in as pictures, page by page."),
              dict(b=13, w="EXPORT", s="text stays <b>text</b>", vo="And any list goes back out as a PDF.")]),
 dict(ep="15", slug="one-sentence-five-slides", title="One Sentence, Five Slides", hook=["ONE SENTENCE.", "FIVE SLIDES."],
-      hook_vo="Ask Claude in one sentence, and get a five-slide talk in LayerCue.", tags="ASK.,DRAW.,PRESENT.",
-      beats=[dict(b=10, w="ASK", s="in plain <b>words</b>", vo="Open a new chat in Claude, and ask in plain words."),
+      hook_vo="Ask an AI in one sentence, and get a five-slide talk in LayerCue.", tags="ASK.,DRAW.,PRESENT.",
+      beats=[dict(b=10, w="ASK", s="in plain <b>words</b>", vo="Open a new chat in your AI app, and ask in plain words."),
              dict(b=12, w="BUILT", s="right in <b>LayerCue</b>", vo="Minutes later, the whole talk is already in LayerCue."),
-             dict(b=13, w="DRAWN", s="every picture, <b>vector</b>", vo="Claude draws every picture itself, and you can still edit it."),
-             dict(b=14, w="ANY CHAT", s="copy as <b>HTML</b>", vo="No connection? Copy as HTML, and any AI chat can help.")]),
+             dict(b=13, w="DRAWN", s="every picture, <b>vector</b>", vo="The AI draws every picture itself, and you can still edit it.", lag=0.6, appear=40.8, until=42.6),
+             dict(b=14, w="ANY CHAT", s="copy as <b>HTML</b>", vo="No connection? Copy as HTML, and any AI chat can help.", lag=0.75, appear=5.95, until=9.3)]),
 ]

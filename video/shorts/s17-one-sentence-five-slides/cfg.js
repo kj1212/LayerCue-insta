@@ -1,16 +1,16 @@
 var CFG = {
  "id": "s17-one-sentence-five-slides",
  "ep": 15,
- "DUR": 31.18,
- "H": 4.59,
- "Rt": 21.94,
- "END0": 26.78,
+ "DUR": 32.11,
+ "H": 4.84,
+ "Rt": 22.87,
+ "END0": 27.71,
  "beats": [
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep15/rec/v2/s5.mp4",
    "src": 18.69,
-   "t": 4.64,
-   "d": 3.99,
+   "t": 4.89,
+   "d": 4.33,
    "audio": null,
    "zx": 882.2,
    "zy": 703.0,
@@ -23,12 +23,14 @@ var CFG = {
     "A new chat",
     "plain words"
    ],
-   "line": "Open a new chat, and ask in plain words. Here: a five-slide talk for a school science night, with every picture drawn by Claude."
+   "line": "Open a new chat, and ask in plain words. Here: a five-slide talk for a school science night, with every picture drawn by Claude.",
+   "zend": null,
+   "zbeg": null
   },
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep15/rec/v2/s5.mp4",
    "src": 32.9,
-   "t": 8.62,
+   "t": 9.22,
    "d": 3.88,
    "audio": null,
    "zx": 1488.0,
@@ -42,13 +44,15 @@ var CFG = {
     "Our Solar System",
     "in a new library, Science Night"
    ],
-   "line": "Claude worked for about five minutes. We cut the wait. Then it answers, and the new talk is already in LayerCue."
+   "line": "Claude worked for about five minutes. We cut the wait. Then it answers, and the new talk is already in LayerCue.",
+   "zend": null,
+   "zbeg": null
   },
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep15/rec/v2/s5.mp4",
-   "src": 39.23,
-   "t": 12.5,
-   "d": 4.27,
+   "src": 39.83,
+   "t": 13.1,
+   "d": 4.61,
    "audio": null,
    "zx": 2749.5,
    "zy": 1159.5,
@@ -61,12 +65,14 @@ var CFG = {
     "Vector art",
     "drawn by Claude"
    ],
-   "line": "Every picture is vector art that Claude drew itself, so you can still move or recolor any part."
+   "line": "Every picture is vector art that Claude drew itself, so you can still move or recolor any part.",
+   "zend": 15.87,
+   "zbeg": 14.07
   },
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep15/rec/v2/s6.mp4",
-   "src": 4.45,
-   "t": 16.77,
+   "src": 5.2,
+   "t": 17.71,
    "d": 5.17,
    "audio": null,
    "zx": 2108.5,
@@ -80,7 +86,9 @@ var CFG = {
     "Copy as HTML for AI",
     ""
    ],
-   "line": "No connection? Pick the text slides, right-click, and choose Copy as HTML for AI."
+   "line": "No connection? Pick the text slides, right-click, and choose Copy as HTML for AI.",
+   "zend": 21.81,
+   "zbeg": 18.46
   }
  ],
  "vo": [
@@ -90,53 +98,53 @@ var CFG = {
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s17-one-sentence-five-slides/audio/01.wav",
-   "t": 4.79
+   "t": 5.04
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s17-one-sentence-five-slides/audio/02.wav",
-   "t": 8.77
+   "t": 9.37
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s17-one-sentence-five-slides/audio/03.wav",
-   "t": 12.65
+   "t": 13.25
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s17-one-sentence-five-slides/audio/04.wav",
-   "t": 16.92
+   "t": 17.86
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s17-one-sentence-five-slides/audio/05.wav",
-   "t": 22.14
+   "t": 23.07
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s17-one-sentence-five-slides/audio/06.wav",
-   "t": 24.43
+   "t": 25.36
   }
  ],
  "subs": [
   [
    0.35,
-   4.49
+   4.74
   ],
   [
-   4.74,
-   8.53
+   4.99,
+   9.12
   ],
   [
-   8.72,
-   12.4
+   9.32,
+   13.0
   ],
   [
-   12.6,
-   16.67
+   13.2,
+   17.61
   ],
   [
-   16.87,
-   21.84
+   17.81,
+   22.78
   ],
   [
-   24.33,
-   26.78
+   25.259999999999998,
+   27.71
   ]
  ],
  "endframes": "/Users/kj1212/projects/LayerCue-insta/video/frames/end-s17-one-sentence-five-slides/00000.png",

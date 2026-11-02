@@ -1,27 +1,27 @@
 1
-00:00:00,350 --> 00:00:04,387
-Ask Claude in one sentence, and get a five-slide talk in LayerCue.
+00:00:00,350 --> 00:00:04,637
+Ask an AI in one sentence, and get a five-slide talk in LayerCue.
 
 2
-00:00:04,790 --> 00:00:07,976
-Open a new chat in Claude, and ask in plain words.
+00:00:05,040 --> 00:00:08,570
+Open a new chat in your AI app, and ask in plain words.
 
 3
-00:00:08,770 --> 00:00:11,850
+00:00:09,370 --> 00:00:12,450
 Minutes later, the whole talk is already in LayerCue.
 
 4
-00:00:12,650 --> 00:00:16,117
-Claude draws every picture itself, and you can still edit it.
+00:00:13,250 --> 00:00:17,061
+The AI draws every picture itself, and you can still edit it.
 
 5
-00:00:16,920 --> 00:00:21,286
+00:00:17,860 --> 00:00:22,226
 No connection? Copy as HTML, and any AI chat can help.
 
 6
-00:00:22,140 --> 00:00:24,330
+00:00:23,070 --> 00:00:25,260
 Ask. Built. Drawn. Any chat.
 
 7
-00:00:24,430 --> 00:00:26,576
+00:00:25,360 --> 00:00:27,506
 Episode fifteen walks you through it.
