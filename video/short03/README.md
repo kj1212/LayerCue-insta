@@ -8,7 +8,7 @@
 | 목소리 | `lines.json` → Kokoro af_heart 0.97 → `audio/01–06.wav` |
 | 음악 | `music.py`(Electric Funk + Duncan, ep11/media/make_tracks.song) |
 | 글판 | `parts.html` → `node parts.mjs <id…>`(판 하나씩 — 모두 보이게 두고 찍으면 겹친다) |
-| 끝 카드 | `node render.mjs end 30 'dur=4.4&tags=PICK.,CLICK.,LIVE.' end-s03` |
+| 끝 카드 | `node render.mjs end 30 'dur=4.4&tags=PICK.,CLICK.,LIVE.' end-s03` — 버전 숫자는 넣지 않는다. `&beta=0` 이면 베타 문구도 뺀다 |
 | AE | `RENDER_NOW=1 OUT_NAME=short03 ./ae.sh short03/build` → render/short03.mp4 → `out/` 로 옮기고 loudnorm −14 |
 
 짜임: 훅(창 전체 + 큰 글) 0–3.5 → 박자 넷(위 낱말 · 가운데 위 미니맵에 구역 테 · 아래 확대 칸 · 자막) 3.6–20.6 → 다시 보기(네 테) → 끝 카드 24.8–29.2.

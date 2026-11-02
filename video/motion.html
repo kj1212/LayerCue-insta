@@ -50,6 +50,8 @@ const P = Q.get('part') || 'open';
 // ?dur= 로 끝 장면 길이를, ?tags=STACK.,CUE.,LIVE. 로 끝의 세 낱말을 바꾼다 — 쇼츠마다 다르다
 const DUR = Number(Q.get('dur')) || { open: 8.6, end: 4.4, hook: 2.6 }[P];
 const TAGS = (Q.get('tags') || 'ASK.,CUE.,LIVE.').split(',');
+// ?beta=0 → 「베타 무료」 줄을 빼고(출시 뒤에도 남는 영상용) 「MAC & WINDOWS」 만. 버전 숫자는 늘 바뀌어서 넣지 않는다(사용자, 2026-11-02)
+const BETA = Q.get('beta') !== '0';
 const S = document.getElementById('stage');
 const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
 const lin = (t, a, b) => clamp((t - a) / (b - a));
@@ -136,11 +138,11 @@ function end(t) {
     return `<span style="display:inline-block;color:${i === TAGS.length - 1 ? 'var(--hot)' : 'var(--cream)'};transform:scale(${k});opacity:${clamp(k)}">${w}</span>`;
   }).join('') + `</div>`;
   const b = outExpo(lin(t, 1.9, 2.4));
-  h += `<div class="tag" style="top:1200px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">FREE WHILE IT’S IN BETA</div>`;
-  h += `<div class="tag" style="top:1262px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">MAC & WINDOWS</div>`;
+  if (BETA) h += `<div class="tag" style="top:1200px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">FREE WHILE IT’S IN BETA</div>`;
+  h += `<div class="tag" style="top:${BETA ? 1262 : 1230}px;font-size:38px;color:var(--mute);opacity:${b};transform:translateY(${(1 - b) * 30}px)">MAC & WINDOWS</div>`;
   const c = outExpo(lin(t, 2.2, 2.7));
   h += `<div class="tag" style="top:1440px;font-size:96px;font-weight:900;font-stretch:100%;letter-spacing:-.02em;opacity:${c};transform:scale(${.94 + .06 * c})">LAYERCUE.COM</div>`;
-  h += `<div class="foot" style="opacity:${b}"><span>MADE BY CASTPAD</span><span><i></i>FREE BETA · 0.9.12</span></div>`;
+  h += `<div class="foot" style="opacity:${b}"><span>MADE BY CASTPAD</span><span><i></i>${BETA ? 'FREE BETA' : 'LAYERCUE.COM'}</span></div>`;
   S.innerHTML = h;
 }
 
