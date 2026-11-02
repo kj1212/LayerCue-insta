@@ -4,7 +4,7 @@ TITLE
 One Folder, AI Help: Import. Folder. Narrow. Ai. #Shorts
 
 DESCRIPTION
-Keep your show in one folder, and let an AI help. Bring outside files in, before the stick comes loose. Everything you make is ordinary files, in one folder. On a narrow screen, panels fold into their own windows. And in Claude, one plain sentence adds a slide.
+Keep your show in one folder, and let an AI help. Bring outside files in, before the stick comes loose. Everything you make is ordinary files, in one folder. On a narrow screen, panels fold into their own windows. And in Claude, one sentence makes a five-slide talk, pictures and all.
 
 Free while it's in beta, on Mac and Windows: https://layercue.com
 Full tutorial — LayerCue from Zero, Episode 15 (Your Files, Settings Pages and AI Helpers): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8
@@ -38,7 +38,7 @@ TITLE
 들여오기. 폴더. 좁은 창. AI. #Shorts
 
 DESCRIPTION
-쇼는 한 폴더에, 그리고 AI의 도움을. USB가 빠지기 전에 바깥 파일을 들여와요. 만든 모든 것이 한 폴더 안의 평범한 파일이에요. 좁은 화면에선 패널이 접히고, 따로 창으로 열려요. 그리고 Claude에 한 문장이면 슬라이드가 생겨요.
+쇼는 한 폴더에, 그리고 AI의 도움을. USB가 빠지기 전에 바깥 파일을 들여와요. 만든 모든 것이 한 폴더 안의 평범한 파일이에요. 좁은 화면에선 패널이 접히고, 따로 창으로 열려요. 그리고 Claude에 한 문장이면, 그림까지 그린 다섯 장 발표가 생겨요.
 
 베타 기간 무료, Mac과 Windows: https://layercue.com
 전체 강좌 — LayerCue 처음부터, 15편(파일, 설정 페이지, AI 도우미): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8
@@ -51,7 +51,7 @@ TITLE
 取り込み。フォルダ。狭い画面。AI。 #Shorts
 
 DESCRIPTION
-ショーはひとつのフォルダに、そして AI の手助けを。USB が抜ける前に、外のファイルを取り込みます。作ったものは全部、ひとつのフォルダの普通のファイル。狭い画面ではパネルが畳まれ、別ウィンドウで開きます。そして Claude に一文頼めば、スライドができます。
+ショーはひとつのフォルダに、そして AI の手助けを。USB が抜ける前に、外のファイルを取り込みます。作ったものは全部、ひとつのフォルダの普通のファイル。狭い画面ではパネルが畳まれ、別ウィンドウで開きます。そして Claude に一文頼めば、絵まで描いた5枚の発表ができます。
 
 ベータ期間は無料、Mac と Windows: https://layercue.com
 フル講座 — ゼロから LayerCue 第15回(ファイル・設定ページ・AI ヘルパー): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8

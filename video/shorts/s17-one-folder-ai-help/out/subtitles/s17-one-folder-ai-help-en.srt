@@ -15,13 +15,13 @@ Everything you make is ordinary files, in one folder.
 On a narrow screen, panels fold into their own windows.
 
 5
-00:00:16,200 --> 00:00:19,143
-And in Claude, one plain sentence adds a slide.
+00:00:16,200 --> 00:00:20,496
+And in Claude, one sentence makes a five-slide talk, pictures and all.
 
 6
-00:00:20,050 --> 00:00:22,345
+00:00:21,350 --> 00:00:23,645
 Import. Folder. Narrow. Ai.
 
 7
-00:00:22,450 --> 00:00:24,596
+00:00:23,750 --> 00:00:25,896
 Episode fifteen walks you through it.

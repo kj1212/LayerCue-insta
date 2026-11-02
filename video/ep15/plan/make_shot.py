@@ -12,21 +12,21 @@ R = {
  "mediarow": k(645, 272, 1097, 322), "finder": k(301, 278, 1050, 658), "backups": k(325, 300, 1090, 662),
  "account": k(490, 441, 630, 463), "reset": k(490, 657, 630, 678), "resetdlg": k(707, 418, 893, 483),
  "folded": k(560, 37, 730, 290), "musicbtn": k(562, 217, 729, 240), "musicwin": k(970, 0, 1318, 297),
- "aipage": k(645, 228, 1097, 680), "connrow": k(645, 425, 1097, 520), "chatbox": k(33, 237, 567, 330), "card8": k(1413, 343, 1580, 457), "answer": k(20, 160, 595, 420), "aiapps": k(490, 411, 630, 433),
+ "aipage": k(645, 228, 1097, 680), "connrow": k(645, 425, 1097, 520), "chatbox": [68, 568, 1307, 270], "newdeck": k(187, 343, 1053, 457), "scilib": k(8, 750, 162, 798), "card8": k(1413, 343, 1580, 457), "answer": [40, 540, 1270, 1200], "aiapps": k(490, 411, 630, 433),
  "cards35": k(537, 343, 1054, 457), "copyhtml": k(797, 636, 960, 657), "notice": k(719, 794, 881, 821),
  "z_set": [1150, 500, 1550, 1200], "z_list": [430, 700, 3000, 900], "z_finder": [700, 600, 2000, 1050],
- "z_narrow": [430, 60, 2800, 1100], "stagearea": [0, 0, 1, 1],
+ "z_narrow": [430, 60, 2800, 1100], "z_canvas": [888, 466, 2465, 1385], "stagearea": [0, 0, 1, 1],
 }
 c = lambda x, y: ["click", x, y]
 Z = lambda r, s: {"zoom": r, "scale": s, "center": [1920, 1080]}
 def hl(line, at, r, a, b, dur, side="below"): return {"line": line, "at": at, "hl": r, "lbl": [a, b], "lblSide": side, "dur": dur, "exact": True}
 GEAR, FILES, TOOLS, IMPORT, OPEN, AIAPPS, RESET, CANCEL, CLOSE = c(3780, 2119), c(1339, 926), c(1277, 998), c(2285, 934), c(2366, 773), c(1290, 1071), c(1344, 1661), c(1927, 1169), c(2635, 622)
-PROMPT = "Add a slide to Day 1 thanking our sponsors: Northfield Labs, Harbor Audio and Lumen Displays. Same look as the others."
+PROMPT = "Make a new 5-slide talk in LayerCue for tonight's school science night: Our Solar System. Draw every picture yourself as vector art: the Sun, the planets and their orbits. Big titles, a few short lines, a deep-space look."
+EDIT, SHOW = c(288, 2119), c(108, 2119)
 FRONT = 'osascript -e \'tell application "System Events" to set frontmost of (first process whose unix id is \'$(pgrep -f "LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue( |$)" | head -1)\') to true\''
 S = {
  "s1": {"setup": [{"mcp": [{"op": "clear", "layer": "all"}]}, {"mouse": c(132, 1807)}, {"sleep": 0.8}, {"mouse": ["jump", 2600, 1700]}],
   "events": [
-   hl(1, 3.0, "card7", "sponsor-reel", "", 1.6),
    {"line": 2, "at": 0.2, "mouse": GEAR},
    {"line": 2, "at": 1.2, "mouse": FILES},
    {"line": 2, "at": 1.8, **Z("z_set", 1.6)},
@@ -76,16 +76,27 @@ S = {
    hl(1, 4.4, "aipage", "AI apps", "Claude Desktop · LM Studio · Cursor", 3.4, "right"),
    hl(2, 2.6, "connrow", "Connected", "Claude Desktop", 2.6, "right"),
    {"line": 2, "at": end("s5", 2, -0.4), "mouse": CLOSE},
+   # 리허설(2026-11-02)에 Claude Desktop 이 실제로 만든 덱을 쓴다: 새 대화에 같은 말을 쳐 보이고(보내지 않는다) ⌘] 로 그때의 대화로,
+   # 덱은 solar_replay.py 가 Claude 의 HTML 을 그대로 다시 넣는다 — 화면 글로 실제 결과임을 밝힌다
    {"line": 3, "at": 0.0, "rest": True},
    {"line": 3, "at": 0.0, "sh": "osascript -e 'tell application \"Claude\" to activate'"},
    {"line": 3, "at": 0.8, "mouse": c(720, 689)},
-   {"line": 3, "at": 1.4, "type": PROMPT},
-   hl(3, 2.4, "chatbox", "A new chat", "plain words", 5.0, "right"),
-   {"line": 3, "at": end("s5", 3, -8.2), "key": [36]},
-   {"line": 3, "at": end("s5", 3, -8.6), "sh": "LC_SANDBOX=sandbox-ep15 python3 waitslides.py 6.0 &"},
-   {"line": 4, "at": 0.0, "cap": "About 15 seconds later", "capdur": 1.6},
-   hl(4, 0.8, "card8", "New slide", "same look as Day 1", 3.4, "below"),
-   hl(5, 0.4, "answer", "Claude's answer", "", 3.6, "right"),
+   {"line": 3, "at": 1.3, "type": PROMPT, "gap": 0.025},
+   hl(3, 2.2, "chatbox", "A new chat", "plain words", 6.4, "right"),
+   {"line": 4, "at": 0.0, "key": [30, True]},
+   {"line": 4, "at": 0.0, "cap": "About 5 minutes later · Claude Desktop's real answer (only the wait is cut)", "capdur": 3.6},
+   hl(4, 0.5, "answer", "Claude's answer", "5 slides, checked", 3.0, "right"),
+   {"line": 4, "at": 3.9, "sh": FRONT + "; cd .. && LC_SANDBOX=sandbox-ep15 python3 lc.py run_commands '{\"commands\":[{\"op\":\"newFolder\",\"name\":\"Science Night\"}]}' >/dev/null && LC_SANDBOX=sandbox-ep15 python3 ep15/solar_replay.py >/dev/null"},
+   hl(4, 4.9, "newdeck", "Our Solar System", "in a new library, Science Night", 3.0),
+   {"line": 5, "at": 0.0, "mouse": EDIT},
+   {"line": 5, "at": 0.7, **Z("z_canvas", 1.45)},
+   {"line": 5, "at": 0.7, "cap": "Made by Claude in LayerCue · not touched by hand", "capdur": 8.2},
+   {"line": 5, "at": 2.2, "mouse": c(192, 528)},
+   {"line": 5, "at": 4.0, "mouse": c(192, 739)},
+   {"line": 5, "at": 5.8, "mouse": c(192, 953)},
+   {"line": 5, "at": 7.6, "mouse": c(192, 1164)},
+   {"line": 6, "at": 0.0, "rest": True},
+   {"line": 6, "at": 0.2, "mouse": SHOW},
   ]},
  "s6": {"setup": [{"sh": "osascript -e 'tell application \"System Events\" to set visible of process \"Claude\" to false'"}, {"sh": FRONT}, {"mouse": ["jump", 2600, 1700]}],
   "events": [

@@ -50,10 +50,12 @@
   이 컴퓨터의 AI 앱이 LayerCue에서 일할 수 있어요. 설정의 AI apps에서 Claude Desktop, LM Studio, Cursor를 연결해요.
 - Press Connect, then quit that app completely and open it again. Here, Claude is connected.  
   Connect를 누르고, 그 앱을 완전히 껐다가 다시 켜요. 여기선 Claude가 연결돼 있어요.
-- Open a new chat, and ask in plain words.  
-  새 대화를 열고, 평범한 말로 부탁해요.
-- Claude reads Day 1, then adds the slide in the same style.  
-  Claude가 Day 1을 읽고, 같은 모양으로 슬라이드를 넣어요.
+- Open a new chat, and ask in plain words. Here: a five-slide talk for a school science night, with every picture drawn by Claude.  
+  새 대화를 열고 평범한 말로 부탁하세요. 여기서는 학교 과학의 밤을 위한 다섯 장짜리 발표를, 그림까지 전부 Claude가 그려서 만들어 달라고 했어요.
+- Claude worked for about five minutes. We cut the wait. Then it answers, and the new talk is already in LayerCue.  
+  Claude는 5분쯤 일했어요. 기다리는 부분은 잘라 냈어요. 답이 오면 새 발표가 벌써 LayerCue에 들어와 있어요.
+- Every picture is vector art that Claude drew itself, so you can still move or recolor any part.  
+  그림은 모두 Claude가 직접 그린 벡터라, 어느 부분이든 옮기거나 색을 바꿀 수 있어요.
 - Every AI action is one undo step, so Command Z can always take it back.  
   AI의 동작은 하나하나가 되돌리기 한 단계라서, ⌘Z로 언제든 되돌릴 수 있어요.
 

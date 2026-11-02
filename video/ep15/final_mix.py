@@ -23,8 +23,7 @@ def smooth(target, att, rel):
 # 배경음악: 타이틀과 엔드 카드에서만(본편 −60 dB) — 1 s 로 넘어간다
 g = np.full(N, -60.0); g[t < title_end] = edge_db; g[t > end_start] = edge_db
 # 15편: 앱 소리가 없는 구간(s1 장치 고르기)에는 배경음악을 낮게 깐다
-for s in segs:
-    if True: g[(t >= s["start"]) & (t < s["end"] - 0.5)] = -12.0
+g[(t >= title_end) & (t <= end_start)] = -12.0     # 본편 내내 같은 크기로 이어서(구간 경계에서 0.5 s 씩 꺼지던 것 — 사용자 2026-11-02)
 k = int(1.0 * SR); g = np.convolve(np.pad(g, (k, k), mode="edge"), np.ones(k) / k, mode="same")[k:-k]
 # 배경음악도 내레이션 아래서 −9 dB(10편까지와 같다 — 엔드 카드의 다음 편 안내가 음악에 묻혔다). 2.5 s 보다 짧은 쉼은 낮춘 채, 1.5 s 에 걸쳐 올라온다
 bv = sorted([(max(0, l["t"] - 0.1), l["t"] + l["dur"] + 0.2) for s_ in segs for l in s_["lines"]]); bm = []

@@ -30,8 +30,8 @@
   {
    "b": 12,
    "w": "AI",
-   "s": "one plain <b>sentence</b>",
-   "vo": "And in Claude, one plain sentence adds a slide."
+   "s": "5 slides from one <b>sentence</b>",
+   "vo": "And in Claude, one sentence makes a five-slide talk, pictures and all."
   }
  ],
  "id": "s17-one-folder-ai-help",
@@ -40,7 +40,7 @@
   "Bring outside files in, before the stick comes loose.",
   "Everything you make is ordinary files, in one folder.",
   "On a narrow screen, panels fold into their own windows.",
-  "And in Claude, one plain sentence adds a slide.",
+  "And in Claude, one sentence makes a five-slide talk, pictures and all.",
   "Import. Folder. Narrow. Ai.",
   "Episode fifteen walks you through it."
  ],
@@ -50,8 +50,8 @@
   7.74,
   11.9,
   16.2,
-  20.05,
-  22.45
+  21.35,
+  23.75
  ],
- "dur": 29.19
+ "dur": 30.49
 }

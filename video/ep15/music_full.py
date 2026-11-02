@@ -21,30 +21,23 @@ D = {"intro": "Minimal Backbeat 01", "verse": "Minimal Backbeat 01", "bridge": "
 BASS, RG, PAD, STAB, LEAD = "Landing in LA Bass 01", "Landing in LA Guitar", "Landing in LA Synth 01", "Landing in LA Synth 02", "Landing in LA Synth 03"     # 15편: 새 스타일 landing-chill(music/styles.py)
 
 def bar_of(t): return int(round(t / 2.0))
-plan = {}                                   # 마디 → {루프: dB}
-title_end = bar_of(A.TITLE)
-for b in range(0, title_end): plan[b] = {D["intro"] if b < title_end - 1 else D["chorus"]: -5, STAB: -6, BASS: -4, PAD: -9}
-chap_bars = {bar_of(s["start"]) for s in segs if s["id"] not in ("s1", "s9")}
-end_b = bar_of(segs[-1]["start"])
-for b in range(title_end, end_b):
-    k = ((b - title_end) // 8) % 2
-    bed = {D["verse"]: -13, BASS: -7, RG: -10, PAD: -12} if k == 0 else {D["bridge"]: -14, BASS: -7, STAB: -13, PAD: -11}
-    if b in chap_bars: bed = {D["chorus"]: -9, BASS: -6, STAB: -8, PAD: -10, RG: -10}
-    plan[b] = bed
-for b in range(end_b, nb): plan[b] = {D["chorus"] if b < nb - 2 else D["outro"]: -5, BASS: -4, RG: -7, STAB: -7, PAD: -9, LEAD: -9}
-
-# 마디마다 루프를 위상 맞춰 붙인다(0 마디 기준)
-N = nb * BAR; mix = np.zeros((N, 2), np.float32); cache = {}
-for b, stems in plan.items():
-    s0, s1 = b * BAR, (b + 1) * BAR
-    for name, db in stems.items():
-        if name not in cache: cache[name] = MU.loop(name)
-        Lp = cache[name]; seg = Lp[np.arange(s0, s1) % len(Lp)] * (10 ** (db / 20))
-        f = 240; r = np.linspace(0, 1, f, dtype=np.float32)[:, None]
-        prev = plan.get(b - 1, {}); nxt = plan.get(b + 1, {})
-        if name not in prev: seg[:f] *= r                      # 새로 들어오는 줄만 살짝 연다(이어지는 줄은 이음매 없이)
-        if name not in nxt: seg[-f:] *= r[::-1]
-        mix[s0:s1] += seg
+# 2026-11-02 사용자: 「배경음악이 끊겼다 다시 재생되는 느낌」 — 마디마다 줄을 갈아 끼우지 않고, 줄마다 처음부터 끝까지 이어서 깔고
+# 크기만 천천히(1 마디에 걸쳐) 바꾼다. 8 마디 A/B 교대 · 챕터 첫 마디 올림은 뺐다.
+title_end = bar_of(A.TITLE); end_b = bar_of(segs[-1]["start"])
+LEVEL = {   # 줄 → (타이틀, 본편, 엔드) dB · None = 그 구간엔 없음
+ D["verse"]: (-6, -13, -6), BASS: (-4, -7, -4), RG: (None, -10, -7), PAD: (-9, -12, -9), STAB: (-6, -16, -7), LEAD: (None, None, -9)}
+N = nb * BAR; mix = np.zeros((N, 2), np.float32)
+idx = np.arange(N)
+for name, (a, b_, c) in LEVEL.items():
+    Lp = MU.loop(name); x = Lp[idx % len(Lp)]
+    g = np.full(nb, -90.0)
+    for bb in range(nb):
+        v = a if bb < title_end else (b_ if bb < end_b else c)
+        if v is not None: g[bb] = v
+    gb = np.repeat(g, BAR)                                       # 마디 단위 계단 → 1 마디 이동 평균으로 매끈하게
+    k = BAR; gb = np.convolve(np.pad(gb, (k, k), mode="edge"), np.ones(k) / k, mode="same")[k:-k]
+    mix += x * (10 ** (gb / 20))[:, None].astype(np.float32)
+fi = int(0.3 * SR); mix[:fi] *= np.linspace(0, 1, fi, dtype=np.float32)[:, None]
 mix = np.tanh(mix * 1.05) / 1.05
 
 # 덕킹 — 목소리 구간에서 −8 dB (들어갈 때 0.12 s, 나올 때 0.45 s)

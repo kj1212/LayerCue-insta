@@ -71,38 +71,42 @@ An AI app on this computer can work in LayerCue. Settings, AI apps connects Clau
 Press Connect, then quit that app completely and open it again. Here, Claude is connected.
 
 19
-00:02:03,190 --> 00:02:06,000
-Open a new chat, and ask in plain words.
+00:02:03,190 --> 00:02:11,630
+Open a new chat, and ask in plain words. Here: a five-slide talk for a school science night, with every picture drawn by Claude.
 
 20
-00:02:19,140 --> 00:02:22,900
-Claude reads Day 1, then adds the slide in the same style.
+00:02:14,700 --> 00:02:21,660
+Claude worked for about five minutes. We cut the wait. Then it answers, and the new talk is already in LayerCue.
 
 21
-00:02:25,970 --> 00:02:31,030
-Every AI action is one undo step, so Command Z can always take it back.
+00:02:22,930 --> 00:02:28,920
+Every picture is vector art that Claude drew itself, so you can still move or recolor any part.
 
 22
-00:02:34,050 --> 00:02:40,070
-No connection? Pick the text slides, right-click, and choose Copy as HTML for AI.
+00:02:32,990 --> 00:02:38,040
+Every AI action is one undo step, so Command Z can always take it back.
 
 23
-00:02:40,940 --> 00:02:47,260
-Paste it into any AI chat, and say what you want. Here: put the time on its own line, in amber.
+00:02:40,260 --> 00:02:46,280
+No connection? Pick the text slides, right-click, and choose Copy as HTML for AI.
 
 24
-00:02:48,130 --> 00:02:51,270
-Copy the answer, and paste it into the slide list.
+00:02:47,150 --> 00:02:53,470
+Paste it into any AI chat, and say what you want. Here: put the time on its own line, in amber.
 
 25
-00:02:53,540 --> 00:02:58,170
-The three slides are updated. One Command Z takes the whole paste back.
+00:02:54,340 --> 00:02:57,480
+Copy the answer, and paste it into the slide list.
 
 26
-00:03:00,190 --> 00:03:04,100
-You can now move a show folder, and rewrite slides with an AI.
+00:02:59,750 --> 00:03:04,380
+The three slides are updated. One Command Z takes the whole paste back.
 
 27
-00:03:04,770 --> 00:03:08,010
+00:03:06,400 --> 00:03:10,310
+You can now move a show folder, and rewrite slides with an AI.
+
+28
+00:03:10,980 --> 00:03:14,220
 Next time: more screens, and what each one shows.
 

@@ -67,7 +67,7 @@ def takes():
             if "mouse" in ev: acts.append({"t": t, "mouse": conv_mouse(ev["mouse"])})
             if "mcp" in ev: acts.append({"t": t, "mcp": ev["mcp"]})
             if "key" in ev: acts.append({"t": t, "key": ev["key"]})
-            if "type" in ev: acts.append({"t": t, "type": ev["type"]})
+            if "type" in ev: acts.append({"t": t, "type": ev["type"], **({"gap": ev["gap"]} if "gap" in ev else {})})
             if "finder" in ev: acts.append({"t": t, "finder": 1})
             if "fclear" in ev: acts.append({"t": t, "fclear": 1})
             if "front" in ev: acts.append({"t": t, "front": 1})
@@ -194,7 +194,7 @@ def lags_for(seg):
             if op not in NOMINAL: continue
             want, nom = ("down" if op in ("click", "drag", "cmdclick", "shiftclick", "slowdrag", "hold") else op), NOMINAL[op]
         elif "key" in a: want, nom = "key:%d" % a["key"][0], 0.05
-        elif "type" in a: want, nom = "type", 0.07 * len(a["type"])
+        elif "type" in a: want, nom = "type", (a.get("gap", 0.06) + 0.01) * len(a["type"])
         else: continue
         k = next((k for k in range(j, len(log)) if log[k]["k"] == want), None)
         if k is None: continue

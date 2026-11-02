@@ -40,7 +40,7 @@ def do(m, a):
     if "mcp" in a:
         lc.call("run_commands", {"commands": a["mcp"]})
     if "type" in a:
-        m.type_text(a["type"])
+        m.type_text(a["type"], a.get("gap", 0.06))      # 15편: 긴 프롬프트는 빠르게
     if "front" in a:                    # LayerCue(촬영용) 창을 맨 앞으로 — 다른 앱이 맥북 화면을 덮고 있을 수 있다
         subprocess.run(["osascript", "-e", 'tell application "System Events" to set frontmost of (first process whose unix id is %s) to true' %
                         subprocess.run(["pgrep", "-f", "LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue( |$)"], capture_output=True, text=True).stdout.split()[0]])

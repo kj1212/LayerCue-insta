@@ -36,18 +36,6 @@
    ],
    "events": [
     {
-     "line": 1,
-     "at": 3.0,
-     "hl": "card7",
-     "lbl": [
-      "sponsor-reel",
-      ""
-     ],
-     "lblSide": "below",
-     "dur": 1.6,
-     "exact": true
-    },
-    {
      "line": 2,
      "at": 0.2,
      "mouse": [
@@ -477,62 +465,139 @@
     },
     {
      "line": 3,
-     "at": 1.4,
-     "type": "Add a slide to Day 1 thanking our sponsors: Northfield Labs, Harbor Audio and Lumen Displays. Same look as the others."
+     "at": 1.3,
+     "type": "Make a new 5-slide talk in LayerCue for tonight's school science night: Our Solar System. Draw every picture yourself as vector art: the Sun, the planets and their orbits. Big titles, a few short lines, a deep-space look.",
+     "gap": 0.025
     },
     {
      "line": 3,
-     "at": 2.4,
+     "at": 2.2,
      "hl": "chatbox",
      "lbl": [
       "A new chat",
       "plain words"
      ],
      "lblSide": "right",
-     "dur": 5.0,
+     "dur": 6.4,
      "exact": true
-    },
-    {
-     "line": 3,
-     "at": 10.66,
-     "key": [
-      36
-     ]
-    },
-    {
-     "line": 3,
-     "at": 11.06,
-     "sh": "LC_SANDBOX=sandbox-ep15 python3 waitslides.py 6.0 &"
     },
     {
      "line": 4,
      "at": 0.0,
-     "cap": "About 15 seconds later",
-     "capdur": 1.6
+     "key": [
+      30,
+      true
+     ]
     },
     {
      "line": 4,
-     "at": 0.8,
-     "hl": "card8",
+     "at": 0.0,
+     "cap": "About 5 minutes later · Claude Desktop's real answer (only the wait is cut)",
+     "capdur": 3.6
+    },
+    {
+     "line": 4,
+     "at": 0.5,
+     "hl": "answer",
      "lbl": [
-      "New slide",
-      "same look as Day 1"
+      "Claude's answer",
+      "5 slides, checked"
+     ],
+     "lblSide": "right",
+     "dur": 3.0,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 3.9,
+     "sh": "osascript -e 'tell application \"System Events\" to set frontmost of (first process whose unix id is '$(pgrep -f \"LayerCue-film-0912/build/LayerCue.app/Contents/MacOS/LayerCue( |$)\" | head -1)') to true'; cd .. && LC_SANDBOX=sandbox-ep15 python3 lc.py run_commands '{\"commands\":[{\"op\":\"newFolder\",\"name\":\"Science Night\"}]}' >/dev/null && LC_SANDBOX=sandbox-ep15 python3 ep15/solar_replay.py >/dev/null"
+    },
+    {
+     "line": 4,
+     "at": 4.9,
+     "hl": "newdeck",
+     "lbl": [
+      "Our Solar System",
+      "in a new library, Science Night"
      ],
      "lblSide": "below",
-     "dur": 3.4,
+     "dur": 3.0,
      "exact": true
     },
     {
      "line": 5,
-     "at": 0.4,
-     "hl": "answer",
-     "lbl": [
-      "Claude's answer",
-      ""
-     ],
-     "lblSide": "right",
-     "dur": 3.6,
-     "exact": true
+     "at": 0.0,
+     "mouse": [
+      "click",
+      288,
+      2119
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.7,
+     "zoom": "z_canvas",
+     "scale": 1.45,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.7,
+     "cap": "Made by Claude in LayerCue · not touched by hand",
+     "capdur": 8.2
+    },
+    {
+     "line": 5,
+     "at": 2.2,
+     "mouse": [
+      "click",
+      192,
+      528
+     ]
+    },
+    {
+     "line": 5,
+     "at": 4.0,
+     "mouse": [
+      "click",
+      192,
+      739
+     ]
+    },
+    {
+     "line": 5,
+     "at": 5.8,
+     "mouse": [
+      "click",
+      192,
+      953
+     ]
+    },
+    {
+     "line": 5,
+     "at": 7.6,
+     "mouse": [
+      "click",
+      192,
+      1164
+     ]
+    },
+    {
+     "line": 6,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 6,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      108,
+      2119
+     ]
     }
    ]
   },

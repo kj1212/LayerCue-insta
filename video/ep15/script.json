@@ -185,15 +185,7 @@
      "keys": ""
     },
     {
-     "text": "Open a new chat, and ask in plain words.",
-     "pause": 13.07,
-     "screen": "",
-     "action": "",
-     "caption": "",
-     "keys": ""
-    },
-    {
-     "text": "Claude reads Day 1, then adds the slide in the same style.",
+     "text": "Open a new chat, and ask in plain words. Here: a five-slide talk for a school science night, with every picture drawn by Claude.",
      "pause": 3.0,
      "screen": "",
      "action": "",
@@ -201,8 +193,24 @@
      "keys": ""
     },
     {
+     "text": "Claude worked for about five minutes. We cut the wait. Then it answers, and the new talk is already in LayerCue.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Every picture is vector art that Claude drew itself, so you can still move or recolor any part.",
+     "pause": 4.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
      "text": "Every AI action is one undo step, so Command Z can always take it back.",
-     "pause": 1.6,
+     "pause": 0.8,
      "screen": "",
      "action": "",
      "caption": "",
