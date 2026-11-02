@@ -1,0 +1,13 @@
+LayerCue — a live media player for the big screen. Mac & Windows. Free while it's in beta.
+
+A background loops underneath. The slide you cued sits in front of it. Captions and logos go over the top. Each one is its own layer, and each one is one click away.
+
+We made it for the person at the back of the room. One laptop, one projector, two minutes before doors.
+
+If you run ProPresenter or something like it, you already know the job. LayerCue does the part most rooms actually use, and tries to do that part well — backgrounds, slides, captions, logos, YouTube, and a second screen that behaves. Nothing else in the way.
+
+More is on the way, and right now what we want most is to hear what broke.
+
+Free while it's in beta. layercue.com
+
+#LayerCue #LiveProduction #EventProduction
