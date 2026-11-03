@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,234
+Your first show takes three moves.
+
+2
+00:00:03,500 --> 00:00:04,932
+Switch the output on.
+
+3
+00:00:07,300 --> 00:00:09,385
+Click a slide, and it's on the screen.
+
+4
+00:00:11,100 --> 00:00:12,837
+Clear takes everything down.
+
+5
+00:00:14,900 --> 00:00:17,694
+And Escape won't black out your show by accident.
+
+6
+00:00:18,750 --> 00:00:20,657
+Power. Click. Clear. Escape.
+
+7
+00:00:20,760 --> 00:00:22,763
+Episode three walks you through it.
