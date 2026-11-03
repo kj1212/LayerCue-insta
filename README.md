@@ -7,9 +7,10 @@
 Facebook 로그인 방식(Instagram API with Facebook Login)을 쓴다. 이 Meta 앱에는 Instagram 로그인 방식이 열리지 않았다.
 
 1. **프로페셔널 계정**: @layercue 는 크리에이터 계정(카테고리: 소프트웨어)으로 전환해 두었다.
-2. **Meta 앱**: [LayerCue](https://developers.facebook.com/apps/1444173200564298/) (앱 ID 1444173200564298, 개발 모드). 이용 사례 "Instagram에서 메시지 및 콘텐츠 관리"에 콘텐츠 관리 권한(`instagram_basic`, `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`, `business_management`)을 추가해 두었다. 페이지 게시용으로 이용 사례 "페이지의 모든 부분 관리"를 더해 `pages_manage_posts` 를 추가해 두었다.
+2. **Meta 앱**: [LayerCue](https://developers.facebook.com/apps/1444173200564298/) (앱 ID 1444173200564298, 라이브 모드). 이용 사례 "Instagram에서 메시지 및 콘텐츠 관리"에 콘텐츠 관리 권한(`instagram_basic`, `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`, `business_management`)을 추가해 두었다. 페이지 게시용으로 이용 사례 "페이지의 모든 부분 관리"를 더해 `pages_manage_posts` 를 추가해 두었다.
    - 2026-11-02 추가: 페이지 커버(`publish.py page-cover`)용 `pages_manage_metadata`, 나중에 쓸 `pages_manage_engagement`·`pages_read_user_content`·`read_insights`(페이지 댓글·통계), `instagram_manage_comments`·`instagram_manage_insights`(인스타 댓글·통계). 토큰은 이 12개 권한으로 받는다.
    - 본인 계정만 쓰므로 앱 검수(App Review)는 필요 없다.
+   - 2026-11-03 라이브 모드로 전환: 개발 모드 앱이 올린 게시물은 앱 역할이 있는 사람에게만 보인다(페이지 팔로워에게도 안 보였다).
 3. **페이스북 페이지**: [LayerCue](https://www.facebook.com/profile.php?id=61596265250122) 페이지를 만들고 @layercue 를 연결해 두었다(페이지 설정 > 연결된 계정 > Instagram).
 4. **토큰 받기**: [그래프 API 탐색기](https://developers.facebook.com/tools/explorer/)에서 앱 LayerCue, "사용자 토큰"을 고르고 위 12개 권한을 넣어 *Generate Access Token* → LayerCue 페이지와 @layercue 를 허용한다.
 5. **`.env` 채우기**: `IG_ACCESS_TOKEN` 에 그 토큰을, `FB_APP_SECRET` 에 앱 설정 > 기본 설정의 앱 시크릿 코드를 직접 붙여 넣는다.
