@@ -63,5 +63,5 @@
 
 - You can now run an audience screen and a stage monitor from one stage.  
   이제 한 무대로 관객 화면과 무대 모니터를 함께 운영할 수 있어요.
-- Next time: streaming out, with NDI, Syphon, and fill and key.  
-  다음 편: NDI, Syphon, fill & key로 내보내기.
+- Next time: the words over a camera, with NDI, Syphon, and fill and key.  
+  다음 편: NDI, Syphon, fill & key로 카메라 위에 가사 올리기.

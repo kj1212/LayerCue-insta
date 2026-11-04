@@ -91,6 +91,6 @@ Screens, names and the layout are kept on this computer, not in your shows.
 You can now run an audience screen and a stage monitor from one stage.
 
 24
-00:02:41,520 --> 00:02:45,730
-Next time: streaming out, with NDI, Syphon, and fill and key.
+00:02:41,520 --> 00:02:46,450
+Next time: the words over a camera, with NDI, Syphon, and fill and key.
 

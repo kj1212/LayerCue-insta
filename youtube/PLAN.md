@@ -47,7 +47,7 @@
 | 14 | Bringing It In: PowerPoint, PDF and Export | 4.5 | PPTX 편집 가능 가져오기와 한계, PDF 그림 가져오기, PDF 내보내기 | 4, 5, 9, 10 |
 | 15 | AI Builds Your Slides, Plus Files and Settings | 5.0 | 미디어 폴더·Import external files·백업/이동·Import bundle·Account/Reset·창 접힘·AI 연결/Copy as HTML | 2, 14 |
 | 16 | More Screens: Stage Output Window and Layers Shown | 4.5 | 두 번째 화면(가사만), 가상 화면, 온에어 목록·Layout board, 분리/재연결 | 3, 6, 8 |
-| 17 | Streaming Out: NDI, Syphon and Fill & Key (Advanced) | 5.0 | NDI/Syphon로 무대를 보내고, 스위처용 fill & key를 만든다 | 16 |
+| 17 | Over the Camera: NDI, Syphon and Fill & Key | 5.0 | NDI/Syphon로 무대를 보내고, 스위처용 fill & key를 만든다 | 16 |
 | 18 | Show Day: Defaults, Lock, Messages and the Checklist | 4.5 | 전날 점검, Lock editing while live, 기본값 사전 설정, 쇼 중 메시지, 6항목 체크리스트, 팩다운 | 전부(특히 3, 12, 13) |
 
 합계 약 85분. 레이어·송출 안전(Ep 3)이 모든 제작 회차(Ep 4–10)보다 앞선다.
@@ -374,12 +374,12 @@
 | 1:30 | 상단 밴드에 02 "Stage" 타일. B OFF, 1–5 OFF. Background 슬라이드 송출: 관객=영상+가사, Stage=검정 위 가사. 전원 OFF 상태에서도 그림 표시. FG 슬라이드가 그림을 보이면 칩으로 Background. | A second tile appears. Only the stage tile has the layer column. Under each preview are the Layers shown cells. Turn B off on the Stage monitor, and the overlays. Send a slide with a video background: the audience sees everything, the stage sees words on black. The layer is still up; it is only hidden here. A tile shows its picture even while power is off. If a stage monitor still shows a picture, that slide is Foreground. Switch it to Background, or lock the whole presentation to Background, Episode 8. | `output/multi.md` (second tile; Layers shown); `help/index.md` (Layers shown and wrong-layer sends); `library/presentation-settings.md` (Layer for this list) |
 | 2:25 | On air 칩 클릭 → 모니터 목록·전원 스위치·Stage output 버튼. 점(전부) vs 링(일부). 02 전원을 목록에서 OFF/ON. | The on-air chip lists every monitor with its power switch. A solid dot: every monitor you turned on is showing. A ring: only some, usually one unplugged. You can switch a monitor from this list, and open the Stage output window from its bottom. | `output/multi.md` (on-air list) |
 | 3:15 | Layout board: 타일 배치, 리사이즈, Re-arrange. 선 상태(실선 오렌지/점선/희미한 점/회청). Stage 케이블 분리 → "not connected", 스위치 잠김 → 다시 연결 → 재개. | The Layout board is a picture for you; arrange it like your venue. It changes nothing about what goes out. Solid orange is on air. Dashed is power on with nothing out. Faint dots is off. Grey-blue is nowhere to go. Unplug a monitor: its row says not connected and the switch locks. Plug it back in and it resumes by itself. | `output/stage-window.md` (Layout board; nowhere to go) |
-| 4:15 | 엔드 카드 + 로드맵 카드(16). | You can now run an audience screen and a stage monitor from one stage. Next: Episode 17 — Streaming Out: NDI, Syphon and Fill & Key. | — |
+| 4:15 | 엔드 카드 + 로드맵 카드(16). | You can now run an audience screen and a stage monitor from one stage. Next: Episode 17 — Over the Camera: NDI, Syphon and Fill & Key. | — |
 
 - **데모 자료**: 가상 디스플레이 2개("Projector", "Stage monitor"). Prize Night의 Background 슬라이드 + Foreground 슬라이드. 가사 프레젠테이션(배경 없음). 케이블 분리는 디스플레이 스크립트(불가하면 B-roll).
 - **꼭 말할 주의점**: 새 화면 전원은 ON으로 시작. Layers shown OFF는 숨김, 지움 아님. 카드·에디터는 Screen 1 모양. 배경이 있는 Foreground 슬라이드는 B OFF여도 통째로 나감. 이 창의 설정은 이 컴퓨터에만 저장. Mac은 전원 ON 모니터를 1:1 해상도로 바꿈(Ep 3 자막 상기).
 
-### Ep 17 — Streaming Out: NDI, Syphon and Fill & Key (Advanced) (5:00)
+### Ep 17 — Over the Camera: NDI, Syphon and Fill & Key (5:00)
 
 - **목표**: NDI/Syphon로 무대를 OBS나 스위처에 보내고, 스위처용 fill & key를 만든다.
 - **끝나면 할 수 있는 것**: 스트리밍 PC나 스위처 위에 가사만 띄운다.

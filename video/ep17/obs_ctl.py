@@ -12,6 +12,8 @@ def osa(s): subprocess.run(["osascript", "-e", s], capture_output=True)
 cmd = sys.argv[1]
 if cmd == "reset":
     c = cl()
+    cam = str(__import__("pathlib").Path(__file__).resolve().parent / "media" / "choir-camera.png")
+    c.set_input_settings("Camera", {"file": ""}, True); c.set_input_settings("Camera", {"file": cam}, True)     # 그림을 바꿨을 때 다시 읽게
     c.set_input_settings("LayerCue (NDI)", {"ndi_source_name": ""}, False)
     c.set_scene_item_enabled("Stream", item(c, "LayerCue (NDI)"), True)
     if "LayerCue (Syphon)" in [i["inputName"] for i in c.get_input_list().inputs]: c.remove_input("LayerCue (Syphon)")     # Syphon 장면에서 새로 만든다

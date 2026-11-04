@@ -4,7 +4,7 @@
 cd "${0:a:h}/.." || exit 1
 ./sb.sh quit >/dev/null; sleep 2
 rm -rf sandbox-ep17/docs sandbox-ep17/settings && cp -R sandbox-ep17.base/docs sandbox-ep17.base/settings sandbox-ep17/
-pgrep -f "OBS.app/Contents/MacOS/OBS" >/dev/null || { open -a OBS; sleep 8; }
+pgrep -f "OBS.app/Contents/MacOS/OBS" >/dev/null || { open -a OBS; sleep 10; }
 .venv/bin/python ep17/obs_ctl.py reset; .venv/bin/python ep17/obs_ctl.py place
 LC_APP_ARGS="-AppleLanguages (en)" LC_SANDBOX=sandbox-ep17 ./sb.sh launch sandbox-ep17 >/dev/null; sleep 9; ./sb.sh place >/dev/null
 echo reset
