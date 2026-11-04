@@ -1,0 +1,60 @@
+{
+ "ep": "17",
+ "slug": "words-over-the-camera",
+ "title": "Words Over the Camera",
+ "hook": [
+  "YOUR WORDS.",
+  "OVER THE CAMERA."
+ ],
+ "hook_vo": "Put your lyrics over a live camera, in OBS or a switcher.",
+ "tags": "SEND.,CLEAR.,KEY.",
+ "beats": [
+  {
+   "b": 1,
+   "w": "SEND",
+   "s": "a stream, no <b>window</b>",
+   "vo": "Add a screen, and send it over the network instead of to a monitor.",
+   "appear": 15.1
+  },
+  {
+   "b": 4,
+   "w": "CLEAR",
+   "s": "see-through <b>alpha</b>",
+   "vo": "Make it transparent, and turn the background off.",
+   "appear": 16.25
+  },
+  {
+   "b": 8,
+   "w": "OBS",
+   "s": "over the <b>camera</b>",
+   "vo": "In OBS, pick the stream, and the words sit over the camera."
+  },
+  {
+   "b": 13,
+   "w": "SWITCHER",
+   "s": "fill and <b>key</b>",
+   "vo": "For a switcher, fill and key go out of one Blackmagic device.",
+   "appear": 13.1
+  }
+ ],
+ "id": "s19-words-over-the-camera",
+ "lines": [
+  "Put your lyrics over a live camera, in OBS or a switcher.",
+  "Add a screen, and send it over the network instead of to a monitor.",
+  "Make it transparent, and turn the background off.",
+  "In OBS, pick the stream, and the words sit over the camera.",
+  "For a switcher, fill and key go out of one Blackmagic device.",
+  "Send. Clear. Obs. Switcher.",
+  "Episode seventeen walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  4.41,
+  8.98,
+  12.78,
+  17.47,
+  21.96,
+  24.25
+ ],
+ "dur": 31.17
+}

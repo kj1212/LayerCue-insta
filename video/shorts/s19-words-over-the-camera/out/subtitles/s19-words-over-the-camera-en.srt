@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:04,014
+Put your lyrics over a live camera, in OBS or a switcher.
+
+2
+00:00:04,410 --> 00:00:08,176
+Add a screen, and send it over the network instead of to a monitor.
+
+3
+00:00:08,980 --> 00:00:11,805
+Make it transparent, and turn the background off.
+
+4
+00:00:12,780 --> 00:00:16,673
+In OBS, pick the stream, and the words sit over the camera.
+
+5
+00:00:17,470 --> 00:00:21,101
+For a switcher, fill and key go out of one Blackmagic device.
+
+6
+00:00:21,960 --> 00:00:24,150
+Send. Clear. Obs. Switcher.
+
+7
+00:00:24,250 --> 00:00:26,568
+Episode seventeen walks you through it.

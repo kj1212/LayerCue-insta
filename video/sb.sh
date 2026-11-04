@@ -10,7 +10,8 @@ F=$HERE/$SB
 APP=${LC_BUILD:-$HOME/projects/LayerCue-film-0912/build}/LayerCue.app/Contents/MacOS/LayerCue      # 촬영용 0.9.12(win-0.9.12 가지를 따로 풀어 지은 것)
 case "$1" in
   launch)
-    mkdir -p "$F/settings/LayerCueFilm" "$F/docs" "$F/mcp"
+    mkdir -p "$F/settings/LayerCueFilm" "$F/docs" "$F/mcp" "$F/ndi"
+    [ -f "$F/ndi/ndi-config.v1.json" ] || printf '{"ndi": {"machinename": "STAGE-MAC"}}\n' > "$F/ndi/ndi-config.v1.json"     # 17편: NDI 받는 쪽에 보이는 컴퓨터 이름(계정 이름 대신)
     INI=$F/settings/LayerCueFilm/LayerCueFilm.ini
     [ -f "$INI" ] || printf '[General]\nlang=en\n' > "$INI"
     NOW=$(date +%Y-%m-%dT%H:%M:%S)
@@ -20,7 +21,7 @@ case "$1" in
       sed -i '' "s|^\[General\]|[General]\nappUpdateLastCheck=$NOW|" "$INI"
     fi
     LAYERCUE_ORG=LayerCueFilm LAYERCUE_SETTINGS_DIR=$F/settings LAYERCUE_DOCS_ROOT=$F/docs \
-      LAYERCUE_MCP_DIR=$F/mcp LAYERCUE_MCP_JSON=$F/mcp/mcp-layercue-dev.json \
+      LAYERCUE_MCP_DIR=$F/mcp LAYERCUE_MCP_JSON=$F/mcp/mcp-layercue-dev.json NDI_CONFIG_DIR=$F/ndi \
       nohup "$APP" ${=LC_APP_ARGS} > "$F/app.log" 2>&1 &     # 3편: LC_APP_ARGS="-AppleLanguages (en)" — 화면 이름(맥이 번역한다)을 영어로
     echo "launched $SB (pid $!)"
     ;;

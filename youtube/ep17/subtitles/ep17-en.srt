@@ -1,0 +1,92 @@
+1
+00:00:06,400 --> 00:00:13,870
+Welcome back! Today: sending the stage to other apps and machines, like OBS, a switcher, or a streaming computer.
+
+2
+00:00:14,540 --> 00:00:22,750
+Open Stage output, and press Add screen. Under Send to, Network and apps sends a video stream instead of opening a window.
+
+3
+00:00:23,820 --> 00:00:31,010
+NDI goes over the network, to OBS, vMix or a switcher. Syphon goes to another app on this Mac.
+
+4
+00:00:33,030 --> 00:00:37,590
+Pick NDI, and give it a name. Receivers see this name in their list.
+
+5
+00:00:40,060 --> 00:00:44,870
+Choose the resolution and frame rate yourself. There's no window to take them from.
+
+6
+00:00:45,540 --> 00:00:51,080
+Set Alpha to transparent, and turn off B. Only the words go out; the rest is see-through.
+
+7
+00:00:52,150 --> 00:00:55,620
+Switch it on. The row counts its receivers: none yet.
+
+8
+00:00:57,840 --> 00:01:04,910
+In OBS, open an NDI source. LayerCue's stream is in the list, with this computer's name in front.
+
+9
+00:01:06,580 --> 00:01:11,010
+Pick it, and send a line from LayerCue. The words sit over the camera.
+
+10
+00:01:12,480 --> 00:01:14,530
+The next line follows at once.
+
+11
+00:01:15,800 --> 00:01:18,960
+Back in LayerCue, the row now says one receiving.
+
+12
+00:01:19,830 --> 00:01:31,330
+Two things to know. Renaming while it sends starts a new stream, so pick it again in each receiver. And allow the network permission the first time, or other computers can't find it.
+
+13
+00:01:32,000 --> 00:01:36,910
+Audio puts the stage sound into the stream, at its own level. It starts off.
+
+14
+00:01:39,130 --> 00:01:44,650
+On a Mac, Syphon hands the picture to an app on the same machine, straight from the graphics card.
+
+15
+00:01:45,520 --> 00:01:52,380
+The row says when an app is connected. If letter edges look dark there, try Straight instead of Premultiplied.
+
+16
+00:01:54,600 --> 00:02:03,140
+A switcher like an ATEM needs two signals: the fill is the picture, and the key is a black-and-white matte that says where it shows.
+
+17
+00:02:03,810 --> 00:02:14,050
+Press Add fill and key. A Blackmagic device that sends both, like this UltraStudio, is picked by itself: fill on SDI A, key on SDI B.
+
+18
+00:02:14,920 --> 00:02:22,290
+SDI format must match the switcher. Changing it while live drops the signal for a moment, so set it before the show.
+
+19
+00:02:22,960 --> 00:02:29,490
+Keying External is the usual setup: the switcher does the combining. Mix sets how strongly it keys.
+
+20
+00:02:30,160 --> 00:02:33,390
+Alpha follows the switcher's pre-multiplied key setting.
+
+21
+00:02:34,060 --> 00:02:40,580
+And turn off B here too. With the background on, the key is white everywhere, and it covers the camera.
+
+22
+00:02:43,200 --> 00:02:47,240
+You can now put the words over a camera, in OBS or a switcher.
+
+23
+00:02:47,910 --> 00:02:51,540
+Next time: show day, from the night before to the last cue.
+

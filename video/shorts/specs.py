@@ -94,4 +94,10 @@ dict(ep="16", slug="two-screens-one-stage", title="Two Screens, One Stage", hook
              dict(b=11, w="WORDS", s="B off on <b>stage</b>", vo="Turn the background off there, and the singers get the words on black."),
              dict(b=17, w="ON AIR", s="every screen, one <b>list</b>", vo="The on-air chip lists every screen, each with its own power switch.", lag=0.4, appear=7.65),
              dict(b=20, w="UNPLUG", s="back by <b>itself</b>", vo="Unplug a monitor, and it picks up again as soon as it's back.")]),
+dict(ep="17", slug="words-over-the-camera", title="Words Over the Camera", hook=["YOUR WORDS.", "OVER THE CAMERA."],
+      hook_vo="Put your lyrics over a live camera, in OBS or a switcher.", tags="SEND.,CLEAR.,KEY.",
+      beats=[dict(b=1, w="SEND", s="a stream, no <b>window</b>", vo="Add a screen, and send it over the network instead of to a monitor.", appear=15.1),
+             dict(b=4, w="CLEAR", s="see-through <b>alpha</b>", vo="Make it transparent, and turn the background off.", appear=16.25),
+             dict(b=8, w="OBS", s="over the <b>camera</b>", vo="In OBS, pick the stream, and the words sit over the camera."),
+             dict(b=13, w="SWITCHER", s="fill and <b>key</b>", vo="For a switcher, fill and key go out of one Blackmagic device.", appear=13.1)]),
 ]

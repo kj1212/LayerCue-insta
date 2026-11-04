@@ -1,0 +1,57 @@
+YOUTUBE SHORT — upload the vertical video; YouTube makes it a Short (under 3 min, 9:16).
+
+TITLE
+Words Over the Camera: Send. Clear. Obs. Switcher. #Shorts
+
+DESCRIPTION
+Put your lyrics over a live camera, in OBS or a switcher. Add a screen, and send it over the network instead of to a monitor. Make it transparent, and turn the background off. In OBS, pick the stream, and the words sit over the camera. For a switcher, fill and key go out of one Blackmagic device.
+
+Free while it's in beta, on Mac and Windows: https://layercue.com
+Full tutorial — LayerCue from Zero, Episode 17 (Streaming Out: NDI, Syphon and Fill & Key): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8
+
+The narration and music were made with AI running on a Mac. The event in the demo is made up.
+
+#LayerCue #LiveProduction #EventProduction
+
+TAGS
+LayerCue, LayerCue tutorial, presentation software, live production, event production, projection software, Mac, Windows
+
+PLAYLIST
+LayerCue Shorts (optional)
+
+SUBTITLES
+subtitles/s19-words-over-the-camera-en.srt, -ko.srt, -ja.srt as 'With timing'.
+
+INSTAGRAM CAPTION
+Put your lyrics over a live camera, in OBS or a switcher. Send. Clear. Obs. Switcher.
+Free on Mac & Windows while it's in beta.
+🎬 Full episode → link in bio (LayerCue from Zero, Ep 17)
+
+Narration and music made with AI on a Mac.
+#LayerCue #LiveProduction #EventProduction
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+보내기. 투명. OBS. 스위처. #Shorts
+
+DESCRIPTION
+OBS나 스위처에서, 라이브 카메라 위에 가사를 올려요. 화면을 하나 더해, 모니터 대신 네트워크로 보내요. 투명으로 바꾸고, 배경은 꺼요. OBS에서 스트림을 고르면, 가사가 카메라 위에 올라가요. 스위처에는 Blackmagic 장치 하나로 fill과 key를 보내요.
+
+베타 기간 무료, Mac과 Windows: https://layercue.com
+전체 강좌 — LayerCue 처음부터, 17편(내보내기: NDI, Syphon, Fill & Key): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+送る。透明。OBS。スイッチャー。 #Shorts
+
+DESCRIPTION
+OBS やスイッチャーで、ライブカメラの上に歌詞を。画面を一つ足して、モニターの代わりにネットワークへ送ります。透明にして、背景はオフ。OBS でストリームを選べば、歌詞がカメラの上に。スイッチャーには、Blackmagic 機器一台で fill と key を。
+
+ベータ期間は無料、Mac と Windows: https://layercue.com
+フル講座 — ゼロから LayerCue 第17回(送り出し:NDI・Syphon・Fill & Key): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8

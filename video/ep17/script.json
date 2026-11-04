@@ -1,0 +1,238 @@
+{
+ "title": "Streaming Out: NDI, Syphon and Fill & Key — LayerCue from Zero, Episode 17",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "A screen without a monitor",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today: sending the stage to other apps and machines, like OBS, a switcher, or a streaming computer.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Open Stage output, and press Add screen. Under Send to, Network and apps sends a video stream instead of opening a window.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "NDI goes over the network, to OBS, vMix or a switcher. Syphon goes to another app on this Mac.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "NDI out",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Pick NDI, and give it a name. Receivers see this name in their list.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Choose the resolution and frame rate yourself. There's no window to take them from.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Set Alpha to transparent, and turn off B. Only the words go out; the rest is see-through.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Switch it on. The row counts its receivers: none yet.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Into OBS",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "In OBS, open an NDI source. LayerCue's stream is in the list, with this computer's name in front.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Pick it, and send a line from LayerCue. The words sit over the camera.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The next line follows at once.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Back in LayerCue, the row now says one receiving.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Two things to know. Renaming while it sends starts a new stream, so pick it again in each receiver. And allow the network permission the first time, or other computers can't find it.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Audio puts the stage sound into the stream, at its own level. It starts off.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Syphon on the same Mac",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "On a Mac, Syphon hands the picture to an app on the same machine, straight from the graphics card.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The row says when an app is connected. If letter edges look dark there, try Straight instead of Premultiplied.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Fill and key for a switcher",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "A switcher like an ATEM needs two signals: the fill is the picture, and the key is a black-and-white matte that says where it shows.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Add fill and key. A Blackmagic device that sends both, like this UltraStudio, is picked by itself: fill on SDI A, key on SDI B.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "SDI format must match the switcher. Changing it while live drops the signal for a moment, so set it before the show.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Keying External is the usual setup: the switcher does the combining. Mix sets how strongly it keys.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Alpha follows the switcher's pre-multiplied key setting.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "And turn off B here too. With the background on, the key is white everywhere, and it covers the camera.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now put the words over a camera, in OBS or a switcher.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: show day, from the night before to the last cue.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}
