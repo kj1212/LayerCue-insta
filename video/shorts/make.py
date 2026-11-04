@@ -136,6 +136,12 @@ def make(sp, idx):
     a = song(120, [(bars, MUSIC[idx % len(MUSIC)])]); n = int(DUR * SR); a = a[:n]
     tt = np.arange(n) / SR; g = np.where(tt < END0 - 0.2, -10.0, -1.0)
     k = int(.6 * SR); g = np.convolve(np.pad(g, (k, k), mode="edge"), np.ones(k) / k, mode="same")[k:-k]
+    if int(ep) >= 16:     # 숏츠 18(16편)부터: 대사 동안 음악을 6 dB 더 낮춘다(사용자 2026-11-04 「대사할 때 배경음악이 좀 큰 것 같다」) — 이전 숏츠는 그대로
+        d = np.zeros(n)
+        for t0, dd in zip(vo_at, dv): d[max(0, int((t0 - 0.12) * SR)): min(n, int((t0 + dd + 0.2) * SR))] = -6.0
+        d[tt >= END0 - 0.2] = 0.0
+        q = int(.25 * SR); d = np.convolve(np.pad(d, (q, q), mode="edge"), np.ones(q) / q, mode="same")[q:-q]
+        g = g + d
     a = a * (10 ** (g / 20))[:, None]; f = int(1.4 * SR); a[-f:] *= np.linspace(1, 0, f)[:, None]; fi = int(.4 * SR); a[:fi] *= np.linspace(0, 1, fi)[:, None]
     sf.write(D / "audio" / "music.wav", (a / (np.abs(a).max() + 1e-9) * 0.8).astype(np.float32), SR)
     # ── 자막(srt, 목소리 시각) · 업로드 글
