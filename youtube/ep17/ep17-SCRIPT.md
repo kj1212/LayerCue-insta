@@ -1,4 +1,4 @@
-# Over the Camera: NDI, Syphon and Fill & Key | LayerCue from Zero, Episode 17
+# Send It Out: NDI, Syphon and Fill & Key | LayerCue from Zero, Episode 17
 
 ## A screen without a monitor
 
