@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:04,268
+Show day, without surprises: four checks that keep the screens up.
+
+2
+00:00:04,670 --> 00:00:09,063
+Run the show once. A red card means a file is missing; relink it.
+
+3
+00:00:09,860 --> 00:00:13,486
+Lock editing while live, so a stray drag can't change the show.
+
+4
+00:00:14,290 --> 00:00:18,347
+A cable comes out? Plug it back in, and the screen comes right back.
+
+5
+00:00:19,140 --> 00:00:22,288
+After the last slide: clear, power off, then quit.
+
+6
+00:00:23,140 --> 00:00:25,597
+Relink. Lock. Unplug. Pack down.
+
+7
+00:00:25,700 --> 00:00:27,799
+Episode eighteen walks you through it.

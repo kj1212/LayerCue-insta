@@ -1,0 +1,76 @@
+1
+00:00:06,400 --> 00:00:11,980
+Welcome back! This is the last episode: show day, from the night before to the last cue.
+
+2
+00:00:12,650 --> 00:00:18,090
+The day before, open Settings, Tools, and press Check. Here, a new version is out.
+
+3
+00:00:19,160 --> 00:00:25,220
+Leave it for after the event. Installing closes LayerCue, and the audience screen goes dark.
+
+4
+00:00:25,890 --> 00:00:34,500
+Then press Import external files on the Files and YouTube page, until every file is inside the media folder. Episode 15.
+
+5
+00:00:36,720 --> 00:00:44,500
+Run the whole show once, on the real screens. A red card says a file is missing. Here, the welcome video was renamed.
+
+6
+00:00:45,170 --> 00:00:50,110
+Right-click it, and choose Locate file. Pick the file, and the card is relinked.
+
+7
+00:00:52,780 --> 00:00:56,300
+Listen to every video and song once, at show volume.
+
+8
+00:00:58,320 --> 00:01:01,950
+In Settings, Stage, turn on Lock editing while live.
+
+9
+00:01:03,020 --> 00:01:09,470
+Now, while a screen is on, the first slide you send locks editing. The lock lights up in the status bar.
+
+10
+00:01:10,540 --> 00:01:16,220
+Slides still go out. But a stray drag can't move a card, or change a slide, mid-show.
+
+11
+00:01:18,290 --> 00:01:23,300
+It unlocks by itself when every screen is off. A lock you set by hand stays.
+
+12
+00:01:25,320 --> 00:01:31,790
+If a cable comes out, LayerCue says so: Output screen disconnected. The on-air chip shows a ring.
+
+13
+00:01:33,260 --> 00:01:36,490
+Plug it back in, and it comes right back by itself.
+
+14
+00:01:37,560 --> 00:01:40,690
+A message always says what happened, and what to do.
+
+15
+00:01:42,710 --> 00:01:46,660
+After the last slide: Clear the stage, and switch the screens off.
+
+16
+00:01:47,930 --> 00:01:54,020
+Then quit. With a screen still on, LayerCue warns you first: quitting will black out the screen.
+
+17
+00:01:54,690 --> 00:01:58,070
+Clear, power off, quit. That order, every time.
+
+18
+00:02:00,090 --> 00:02:03,300
+You can now run a show from the night before to pack down.
+
+19
+00:02:03,970 --> 00:02:09,380
+When a new version ships, a What's New episode joins this playlist. Thanks for watching!
+

@@ -1,0 +1,40 @@
+{
+ "title": "Show Day: Checks, Edit Lock, Messages and Pack Down | LayerCue from Zero, Episode 18",
+ "description": "Run a show in LayerCue from the night before to pack down — the last episode of LayerCue from Zero. The day before, press Check in Settings › Tools: if a new version is out, leave it until after the event, because installing closes LayerCue and the audience screen goes dark. Bring every outside file in with Import external files (Episode 15). Then run the whole show once on the real screens: a red File missing card means a file was renamed or moved — right-click it, choose Locate file, pick the file, and the card says Relinked. Listen to every video and song once at show volume. Turn on Settings › Stage › Lock editing while live: with a screen on, the first slide you send locks editing, so slides still go out but a stray drag can't change the show. It unlocks when every screen is off; a lock set by hand stays. If a cable comes out, LayerCue says Output screen disconnected and the on-air chip shows a ring; plug it back in and it comes right back. After the last slide: Clear, power off, quit — LayerCue warns you if a screen is still on.\nNew here? Start with Episode 1: Meet LayerCue — The Main Window.\nRecorded on LayerCue 0.9.12.\nManual: https://layercue.com/docs/help/ · https://layercue.com/docs/settings/ · https://layercue.com/docs/output/\nThe narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional. The stage monitor in this video is a virtual display.",
+ "tags": [
+  "LayerCue",
+  "LayerCue tutorial",
+  "show day",
+  "checklist",
+  "edit lock",
+  "missing file",
+  "relink",
+  "live event",
+  "presentation software",
+  "church presentation",
+  "event production",
+  "Mac",
+  "Windows"
+ ],
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "쇼 당일: 점검, 편집 잠금, 메시지, 정리 | LayerCue 처음부터, 18편",
+ "title_ja": "本番当日:点検・編集ロック・メッセージ・片付け | ゼロから LayerCue 第18回",
+ "description_ko": "LayerCue로 쇼를 전날 밤부터 정리까지 운영해요. 「LayerCue 처음부터」의 마지막 편이에요. 전날 Settings › Tools에서 Check를 누르고, 새 버전이 있어도 행사가 끝난 뒤로 미루세요. 설치하면 LayerCue가 닫히고 관객 화면이 꺼져요. 바깥 파일은 Import external files로 모두 들여오세요(15편). 그다음 실제 화면에서 쇼를 한 번 돌려요. 빨간 File missing 카드는 파일 이름이 바뀌었거나 옮겨졌다는 뜻이에요. 오른쪽 클릭 › Locate file로 파일을 고르면 Relinked가 떠요. 영상과 노래는 쇼 때의 크기로 한 번씩 들어 보세요. Settings › Stage › Lock editing while live를 켜면, 화면이 켜진 채 첫 슬라이드를 보낼 때 편집이 잠겨요. 슬라이드는 그대로 나가지만 실수로 끌어도 쇼가 바뀌지 않아요. 모든 화면을 끄면 풀리고, 직접 건 잠금은 남아요. 케이블이 빠지면 Output screen disconnected가 뜨고 온에어 칩이 고리 모양이 돼요. 다시 꽂으면 바로 돌아와요. 마지막 슬라이드 뒤엔 Clear, 전원 끄기, 끝내기. 화면이 켜져 있으면 LayerCue가 먼저 경고해요.\n처음이라면 1편 「LayerCue 메인 창」부터 보세요.\nLayerCue 0.9.12로 녹화했어요.\n매뉴얼: https://layercue.com/ko/docs/help/ · https://layercue.com/ko/docs/settings/ · https://layercue.com/ko/docs/output/\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요. 영상 속 무대 모니터는 가상 디스플레이예요.",
+ "description_ja": "LayerCue で、ショーを前の晩から片付けまで動かします。「ゼロから LayerCue」の最終回です。前日に Settings › Tools で Check を押し、新しいバージョンが出ていてもイベントの後まで待ちましょう。インストールすると LayerCue が閉じ、客席の画面が消えます。外のファイルは Import external files ですべて取り込みます(第15回)。それから本番の画面で一度通します。赤い File missing のカードは、ファイル名が変わったか移動したしるし。右クリック › Locate file でファイルを選ぶと Relinked と出ます。映像と曲は本番の音量で一度ずつ聞きましょう。Settings › Stage › Lock editing while live をオンにすると、画面がオンのまま最初のスライドを送ったときに編集がロックされます。スライドは出せますが、うっかりドラッグしてもショーは変わりません。すべての画面をオフにすると解除、手でかけたロックは残ります。ケーブルが抜けると Output screen disconnected と出て、オンエアチップはリングに。挿し直せばすぐ戻ります。最後のスライドの後は Clear、電源オフ、終了。画面がオンなら LayerCue が先に警告します。\n初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。\nLayerCue 0.9.12 で収録しています。\nマニュアル: https://layercue.com/ja/docs/help/ · https://layercue.com/ja/docs/settings/ · https://layercue.com/ja/docs/output/\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。動画のステージモニターは仮想ディスプレイです。",
+ "chapters_ko": [
+  "전날",
+  "한 번 돌려 보기",
+  "편집 잠금",
+  "문제가 생기면",
+  "정리",
+  "시리즈를 마치며"
+ ],
+ "chapters_ja": [
+  "前日",
+  "一度通す",
+  "編集ロック",
+  "トラブルのとき",
+  "片付け",
+  "シリーズのおわりに"
+ ]
+}

@@ -1,0 +1,558 @@
+{
+ "_note": "18편 연출표 — Tools Check(0.9.13 available) · Import · File missing → 메뉴 Locate file(카드 위 단추는 이슈 #10) · 편집 잠금 · 케이블 뽑기 · 정리 순서 · 끝내기. (옛 17편: — NDI(Stage Lyrics, 투명, B 끔) → OBS(Camera = 무대 사진) · Syphon(OBS 연결만 — 그림은 뒤집혀 보여 이슈 #9, 화면에 안 넣음) · fill & key(UltraStudio Mini Replay 12G). (옛 16편: — 무대 모니터(BetterDisplay 가상 디스플레이 Stage Monitor) · Add screen · Send to · 이름 · Layers shown(B 끔) · Foreground 칩 · 온에어 목록 · Layout · 뽑기/꽂기. LG 녹화. (옛 15편 메모: — Files & YouTube · Import external files(USB 의 sponsor-reel) · Open → Finder(아이콘 보기, LG) · Backups · Reset 창 Cancel · 좁은 창 · Music 따로 창 · AI apps 화면 · Copy as HTML for AI → 답 붙여 넣기. LG 녹화.",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.0,
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 2.0,
+     "cap": "The day before",
+     "capdur": 2.4
+    },
+    {
+     "line": 2,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      3780,
+      2119
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.4,
+     "mouse": [
+      "click",
+      1277,
+      998
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.0,
+     "zoom": "z_set",
+     "scale": 1.5,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.5,
+     "mouse": [
+      "click",
+      2215,
+      809
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.2,
+     "hl": "toolsrow",
+     "lbl": [
+      "0.9.13 available",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "hl": "upd",
+     "lbl": [
+      "Not on show day",
+      "it closes LayerCue"
+     ],
+     "lblSide": "below",
+     "dur": 3.6,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1337,
+      926
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.2,
+     "hl": "importrow",
+     "lbl": [
+      "Import external files",
+      "every file inside"
+     ],
+     "lblSide": "below",
+     "dur": 4.2,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 6.4,
+     "mouse": [
+      "click",
+      2635,
+      622
+     ]
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "mouse": [
+      "click",
+      648,
+      996
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.8,
+     "zoom": "z_cards",
+     "scale": 1.35,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.2,
+     "hl": "card3",
+     "lbl": [
+      "File missing",
+      "the file was renamed"
+     ],
+     "lblSide": "below",
+     "dur": 3.8,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "rclick",
+      1584,
+      972
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.1,
+     "hl": "locate",
+     "lbl": [
+      "Locate file",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      1723,
+      1010
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.6,
+     "mouse": [
+      "dbl",
+      1949,
+      905
+     ]
+    },
+    {
+     "line": 2,
+     "at": 5.4,
+     "hl": "card3",
+     "lbl": [
+      "Relinked",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.4,
+     "cap": "Listen to each video and song once, at show volume",
+     "capdur": 3.0
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "output",
+       "on": false
+      }
+     ]
+    },
+    {
+     "sleep": 1.5
+    },
+    {
+     "mcp": [
+      {
+       "op": "output",
+       "on": true
+      }
+     ]
+    },
+    {
+     "sleep": 2.0
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      3780,
+      2119
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.1,
+     "mouse": [
+      "click",
+      1279,
+      782
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.6,
+     "zoom": "z_set",
+     "scale": 1.5,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      2191,
+      766
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.9,
+     "hl": "lockrow",
+     "lbl": [
+      "Lock editing while live",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      2635,
+      622
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.4,
+     "mouse": [
+      "click",
+      1068,
+      996
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.4,
+     "hl": "lockicon",
+     "lbl": [
+      "Editing locked",
+      ""
+     ],
+     "lblSide": "above",
+     "dur": 3.2,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      1488,
+      996
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.6,
+     "mouse": [
+      "drag",
+      1908,
+      996,
+      2760,
+      996
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.6,
+     "hl": "card1",
+     "lbl": [
+      "Order unchanged",
+      "slides still go out"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.2,
+     "cap": "Unlocks when every screen is off · a lock set by hand stays",
+     "capdur": 4.0
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "sh": "betterdisplaycli set -name=\"Stage Monitor\" -connected=off >/dev/null 2>&1 &"
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "hl": "toast",
+     "lbl": [
+      "Output screen disconnected",
+      ""
+     ],
+     "lblSide": "above",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 4.6,
+     "hl": "chip",
+     "lbl": [
+      "On air 1/2",
+      "a ring"
+     ],
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.0,
+     "sh": "betterdisplaycli set -name=\"Stage Monitor\" -connected=on >/dev/null 2>&1 &"
+    },
+    {
+     "line": 2,
+     "at": 2.2,
+     "hl": "chip",
+     "lbl": [
+      "On air 2/2",
+      "back by itself"
+     ],
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      1166,
+      173
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.8,
+     "hl": "clear",
+     "lbl": [
+      "Clear",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 2.0,
+     "mouse": [
+      "click",
+      1058,
+      173
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      1858,
+      173
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.0,
+     "hl": "power",
+     "lbl": [
+      "Power off",
+      "every screen"
+     ],
+     "lblSide": "below",
+     "dur": 1.8,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "cap": "With a screen on, Quit warns: “You are on air — quitting will black out the screen.”",
+     "capdur": 5.4
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "key": [
+      12,
+      true
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.0,
+     "hl": "quitdlg",
+     "lbl": [
+      "Quit LayerCue?",
+      "your work is saved"
+     ],
+     "lblSide": "right",
+     "dur": 3.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      2088,
+      1195
+     ]
+    }
+   ]
+  }
+ }
+}

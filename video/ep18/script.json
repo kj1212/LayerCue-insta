@@ -1,0 +1,206 @@
+{
+ "title": "Show Day: Checks, Edit Lock, Messages and Pack Down — LayerCue from Zero, Episode 18",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "The day before",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! This is the last episode: show day, from the night before to the last cue.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The day before, open Settings, Tools, and press Check. Here, a new version is out.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Leave it for after the event. Installing closes LayerCue, and the audience screen goes dark.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then press Import external files on the Files and YouTube page, until every file is inside the media folder. Episode 15.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Run it once",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Run the whole show once, on the real screens. A red card says a file is missing. Here, the welcome video was renamed.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Right-click it, and choose Locate file. Pick the file, and the card is relinked.",
+     "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Listen to every video and song once, at show volume.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Lock editing",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "In Settings, Stage, turn on Lock editing while live.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Now, while a screen is on, the first slide you send locks editing. The lock lights up in the status bar.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Slides still go out. But a stray drag can't move a card, or change a slide, mid-show.",
+     "pause": 2.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It unlocks by itself when every screen is off. A lock you set by hand stays.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "If something goes wrong",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "If a cable comes out, LayerCue says so: Output screen disconnected. The on-air chip shows a ring.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Plug it back in, and it comes right back by itself.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A message always says what happened, and what to do.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Pack down",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "After the last slide: Clear the stage, and switch the screens off.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Then quit. With a screen still on, LayerCue warns you first: quitting will black out the screen.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Clear, power off, quit. That order, every time.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "That's the series",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now run a show from the night before to pack down.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "When a new version ships, a What's New episode joins this playlist. Thanks for watching!",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}
