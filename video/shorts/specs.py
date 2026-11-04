@@ -88,4 +88,10 @@ dict(ep="15", slug="one-sentence-five-slides", title="One Sentence, Five Slides"
              dict(b=12, w="BUILT", s="right in <b>LayerCue</b>", vo="Minutes later, the whole talk is already in LayerCue.", appear=33.85),
              dict(b=13, w="DRAWN", s="every picture, <b>vector</b>", vo="The AI draws every picture itself, and you can still edit it.", lag=0.6, appear=40.8, until=42.6),
              dict(b=14, w="ANY CHAT", s="copy as <b>HTML</b>", vo="No connection? Copy as HTML, and any AI chat can help.", lag=0.75, appear=5.95, until=9.3)]),
+dict(ep="16", slug="two-screens-one-stage", title="Two Screens, One Stage", hook=["TWO SCREENS.", "ONE STAGE."],
+      hook_vo="One stage, two screens: the video for the audience, the words for the singers.", tags="ADD.,HIDE.,PLUG.",
+      beats=[dict(b=4, w="ADD", s="one more <b>screen</b>", vo="Open Stage output, and add a screen for the stage monitor.", lag=0.8, appear=12.7),
+             dict(b=11, w="WORDS", s="B off on <b>stage</b>", vo="Turn the background off there, and the singers get the words on black."),
+             dict(b=17, w="ON AIR", s="every screen, one <b>list</b>", vo="The on-air chip lists every screen, each with its own power switch.", lag=0.4, appear=7.65),
+             dict(b=20, w="UNPLUG", s="back by <b>itself</b>", vo="Unplug a monitor, and it picks up again as soon as it's back.")]),
 ]

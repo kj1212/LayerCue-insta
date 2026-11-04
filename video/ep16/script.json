@@ -1,0 +1,246 @@
+{
+ "title": "More Screens: Stage Output Window and Layers Shown — LayerCue from Zero, Episode 16",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "One stage, many screens",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Welcome back! Today: more screens. The audience gets the video and the words, and the singers get the words alone.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "There is still one stage, with one set of seven layers. A screen only chooses which of those layers it shows.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "So every screen gets the same slides. No screen gets a slide of its own.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Add a stage monitor",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Screens are set up in the Stage output window. Open it with the small sliders button under the stage.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press Add screen. LayerCue picks a plugged-in screen that isn't used yet.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Here it picked the monitor LayerCue itself is on, so it kept the power off. Your own window is never covered.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Under Send to, choose the stage monitor. Then click the pencil, and name it Stage.",
+     "pause": 2.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Turn its power on, and the stage monitor goes live.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Layers shown",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Close the window. A second tile now sits beside the stage, and under each preview are its Layers shown.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "On the Stage tile, turn off B, the background.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Send the next line. The audience sees the video and the words. The stage sees the words on black.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The background is still up. It's only hidden on this screen.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "If a stage monitor still shows the picture, that slide is set to Foreground.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Click its chip to make it a Background slide, and send it again. Or lock the whole list to Background, as in Episode 8.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "The on-air list",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "In the status bar, the on-air chip sums up your screens.",
+     "pause": 0.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Click it for every screen, each with its own power switch. Stage output at the bottom opens the window again.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Switch a screen off and on right here, during the show.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Layout and unplugging",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "In the Stage output window, the Layout board is a picture of your room. Drag the tiles to match it. Nothing that goes out changes.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "A solid line means on air. A dashed line means the power is on, but nothing goes out.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Now unplug the stage monitor. Its row says not connected, and the on-air chip shows a ring: only some screens are showing.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Plug it back in, and it carries on by itself.",
+     "pause": 1.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Screens, names and the layout are kept on this computer, not in your shows.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "What's next",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "You can now run an audience screen and a stage monitor from one stage.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Next time: streaming out, with NDI, Syphon, and fill and key.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

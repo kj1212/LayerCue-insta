@@ -1,0 +1,73 @@
+TITLE
+More Screens: Stage Output Window and Layers Shown | LayerCue from Zero, Episode 16
+
+DESCRIPTION
+Run an audience screen and a stage monitor from one stage in LayerCue. There is still one stage with seven layers; each screen only chooses which layers it shows. Open the Stage output window, press Add screen, choose the stage monitor under Send to and name it Stage. A new screen that lands on the monitor LayerCue itself is on starts with its power off, so your own window is never covered. Under each preview, Layers shown picks the layers for that screen: turn B off on the stage monitor and a lyric slide with a moving background shows words on black there, while the audience still sees the video. If a stage monitor still shows the picture, that slide is set to Foreground — switch its chip to Background (or lock the list, Episode 8). The on-air chip in the status bar lists every screen with its power switch, the Layout board is a picture of your room, and an unplugged monitor says not connected and comes back on by itself.
+New here? Start with Episode 1: Meet LayerCue — The Main Window.
+Recorded on LayerCue 0.9.12.
+Manual: https://layercue.com/docs/output/multi/ · https://layercue.com/docs/output/stage-window/
+The narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional. The stage monitor in this video is a virtual display.
+
+Chapters
+0:00 Intro
+0:06 One stage, many screens
+0:28 Add a stage monitor
+1:02 Layers shown
+1:41 The on-air list
+1:59 Layout and unplugging
+2:35 What's next
+
+TAGS
+LayerCue, LayerCue tutorial, stage monitor, multiple screens, confidence monitor, lyrics on stage, Layers shown, presentation software, church presentation, event production, Mac, Windows
+
+PLAYLIST
+LayerCue from Zero: Run Your First Show
+
+SUBTITLES
+Upload subtitles/ep16-en.srt (English), ep16-ko.srt (Korean) and ep16-ja.srt (Japanese) as 'With timing'.
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+화면 늘리기: Stage output 창과 Layers shown | LayerCue 처음부터, 16편
+
+DESCRIPTION
+LayerCue 한 무대로 관객 화면과 무대 모니터를 함께 운영해요. 무대는 여전히 하나, 레이어도 일곱 개 한 벌이고, 화면마다 어떤 레이어를 보일지만 골라요. Stage output 창을 열어 Add screen을 누르고, Send to에서 무대 모니터를 고른 뒤 이름을 Stage로 바꿔요. 새 화면이 LayerCue가 떠 있는 모니터에 잡히면 전원이 꺼진 채 시작해서 내 창이 가려지지 않아요. 미리보기 아래 Layers shown에서 화면마다 레이어를 골라요. 무대 모니터에서 B를 끄면, 움직이는 배경이 있는 가사 슬라이드가 그곳에는 검정 위 가사로만 나가고 관객은 그대로 영상을 봐요. 무대 모니터에 그림이 계속 보이면 그 슬라이드가 Foreground라서예요. 칩을 Background로 바꾸세요(목록 전체 고정은 8편). 상태 막대의 온에어 칩은 화면마다 전원 스위치가 있는 목록을 보여 주고, Layout 판은 공연장 그림이에요. 케이블을 뽑으면 not connected가 뜨고, 다시 꽂으면 저절로 이어져요.
+처음이라면 1편 「LayerCue 메인 창」부터 보세요.
+LayerCue 0.9.12로 녹화했어요.
+매뉴얼: https://layercue.com/ko/docs/output/multi/ · https://layercue.com/ko/docs/output/stage-window/
+나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요. 영상 속 무대 모니터는 가상 디스플레이예요.
+
+챕터
+0:00 처음
+0:06 한 무대, 여러 화면
+0:28 무대 모니터 추가
+1:02 Layers shown
+1:41 온에어 목록
+1:59 배치와 케이블 뽑기
+2:35 다음 편
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+画面を増やす:Stage output ウィンドウと Layers shown | ゼロから LayerCue 第16回
+
+DESCRIPTION
+LayerCue の一つのステージで、客席画面とステージモニターを動かします。ステージは一つ、レイヤーも七つ一組のまま。画面ごとに、どのレイヤーを映すかだけを選びます。Stage output ウィンドウを開いて Add screen を押し、Send to でステージモニターを選び、名前を Stage にします。新しい画面が LayerCue 自身のモニターに割り当てられると電源オフで始まるので、自分のウィンドウが隠れることはありません。プレビューの下の Layers shown で画面ごとのレイヤーを選びます。ステージモニターで B をオフにすると、動く背景のある歌詞スライドがそこでは黒地に歌詞だけになり、客席には映像がそのまま映ります。ステージモニターに絵が残るなら、そのスライドは Foreground。チップを Background に切り替えます(一覧ごとの固定は第8回)。ステータスバーのオンエアチップは画面ごとの電源スイッチ付き一覧、Layout ボードは会場の見取り図。ケーブルを抜くと not connected と出て、挿し直せばひとりでに再開します。
+初めての方は第1回「LayerCue のメインウィンドウ」からどうぞ。
+LayerCue 0.9.12 で収録しています。
+マニュアル: https://layercue.com/ja/docs/output/multi/ · https://layercue.com/ja/docs/output/stage-window/
+ナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。動画のステージモニターは仮想ディスプレイです。
+
+チャプター
+0:00 イントロ
+0:06 一つのステージ、複数の画面
+0:28 ステージモニターを追加
+1:02 Layers shown
+1:41 オンエア一覧
+1:59 配置とケーブル
+2:35 次回

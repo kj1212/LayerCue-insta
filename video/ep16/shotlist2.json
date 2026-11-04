@@ -1,0 +1,657 @@
+{
+ "_note": "16편 연출표 — 무대 모니터(BetterDisplay 가상 디스플레이 Stage Monitor) · Add screen · Send to · 이름 · Layers shown(B 끔) · Foreground 칩 · 온에어 목록 · Layout · 뽑기/꽂기. LG 녹화. (옛 15편 메모: — Files & YouTube · Import external files(USB 의 sponsor-reel) · Open → Finder(아이콘 보기, LG) · Backups · Reset 창 Cancel · 좁은 창 · Music 따로 창 · AI apps 화면 · Copy as HTML for AI → 답 붙여 넣기. LG 녹화.",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.0,
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 2.2,
+     "mouse": [
+      "click",
+      648,
+      996
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.2,
+     "hl": "tile1",
+     "lbl": [
+      "01 Audience",
+      "video and words"
+     ],
+     "lblSide": "right",
+     "dur": 2.8,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "zoom": "z_tiles",
+     "scale": 1.35,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "hl": "layercol",
+     "lbl": [
+      "One stage",
+      "seven layers"
+     ],
+     "lblSide": "right",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 4.2,
+     "hl": "cells1",
+     "lbl": [
+      "Layers shown",
+      "what this screen shows"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "cap": "One stage → every screen shows the same slides",
+     "capdur": 3.6
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "hl": "sliders",
+     "lbl": [
+      "Stage output",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 4.2,
+     "mouse": [
+      "click",
+      955,
+      722
+     ]
+    },
+    {
+     "line": 1,
+     "at": 5.2,
+     "zoom": "z_win",
+     "scale": 1.55,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "mouse": [
+      "click",
+      3480,
+      170
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.2,
+     "hl": "row2",
+     "lbl": [
+      "Screen 2",
+      "a free screen"
+     ],
+     "lblSide": "below",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 1.2,
+     "hl": "switch2",
+     "lbl": [
+      "Off",
+      "LayerCue's own screen"
+     ],
+     "lblSide": "below",
+     "dur": 3.6,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      3384,
+      910
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.5,
+     "mouse": [
+      "click",
+      3220,
+      620
+     ]
+    },
+    {
+     "line": 4,
+     "at": 2.9,
+     "mouse": [
+      "click",
+      3050,
+      804
+     ]
+    },
+    {
+     "line": 4,
+     "at": 3.4,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 4,
+     "at": 3.6,
+     "type": "Stage",
+     "gap": 0.09
+    },
+    {
+     "line": 4,
+     "at": 4.6,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 5,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      3770,
+      804
+     ]
+    },
+    {
+     "line": 5,
+     "at": 1.4,
+     "hl": "row2",
+     "lbl": [
+      "02 Stage",
+      "on air"
+     ],
+     "lblSide": "below",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 1.6,
+     "cap": "Audience here is a virtual screen: it only shows in its tile",
+     "capdur": 2.6
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 1,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      2832,
+      91
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.1,
+     "zoom": "z_tiles",
+     "scale": 1.35,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.8,
+     "hl": "tile2",
+     "lbl": [
+      "02 Stage",
+      "Stage Monitor"
+     ],
+     "lblSide": "right",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 4.0,
+     "hl": "cells2",
+     "lbl": [
+      "Layers shown",
+      "B F 1 2 3 4 5"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.8,
+     "mouse": [
+      "click",
+      1294,
+      583
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.25,
+     "mouse": [
+      "move",
+      1584,
+      1404
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.5,
+     "hl": "bcell2",
+     "lbl": [
+      "B off",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      1068,
+      996
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.7,
+     "hl": "tile1",
+     "lbl": [
+      "Audience",
+      "video and words"
+     ],
+     "lblSide": "below",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 3.9,
+     "hl": "tile2",
+     "lbl": [
+      "Stage",
+      "words on black"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "hl": "layercol",
+     "lbl": [
+      "B is still up",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      1488,
+      996
+     ]
+    },
+    {
+     "line": 5,
+     "at": 2.0,
+     "hl": "tile2",
+     "lbl": [
+      "Stage",
+      "the picture is back"
+     ],
+     "lblSide": "below",
+     "dur": 2.6,
+     "exact": true
+    },
+    {
+     "line": 6,
+     "at": 0.6,
+     "mouse": [
+      "click",
+      1656,
+      914
+     ]
+    },
+    {
+     "line": 6,
+     "at": 1.2,
+     "hl": "card3chip",
+     "lbl": [
+      "FG → BG",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 6,
+     "at": 3.2,
+     "mouse": [
+      "click",
+      1488,
+      996
+     ]
+    },
+    {
+     "line": 6,
+     "at": 4.4,
+     "hl": "tile2",
+     "lbl": [
+      "Stage",
+      "words only"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 6,
+     "at": 5.0,
+     "cap": "Episode 8: lock a whole list to one layer",
+     "capdur": 2.8
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.0,
+     "zoom": "z_bar",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.6,
+     "hl": "chip",
+     "lbl": [
+      "On air 2/2",
+      "Audience · Stage"
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      648,
+      2119
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.3,
+     "hl": "airlist",
+     "lbl": [
+      "Every screen",
+      "its own power switch"
+     ],
+     "lblSide": "right",
+     "dur": 4.0,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "click",
+      1066,
+      1980
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.8,
+     "mouse": [
+      "click",
+      1066,
+      1980
+     ]
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": 0.2,
+     "mouse": [
+      "click",
+      600,
+      2042
+     ]
+    },
+    {
+     "line": 1,
+     "at": 0.4,
+     "rest": true
+    },
+    {
+     "line": 1,
+     "at": 1.2,
+     "zoom": "z_win",
+     "scale": 1.55,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.8,
+     "hl": "layout",
+     "lbl": [
+      "Layout",
+      "a picture of your room"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 4.6,
+     "mouse": [
+      "drag",
+      3432,
+      341,
+      3660,
+      504
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.4,
+     "hl": "layout",
+     "lbl": [
+      "Solid · on air",
+      "dashed · on, nothing out"
+     ],
+     "lblSide": "below",
+     "dur": 4.6,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "sh": "betterdisplaycli set -name=\"Stage Monitor\" -connected=off >/dev/null 2>&1 &"
+    },
+    {
+     "line": 3,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 1.8,
+     "hl": "row2",
+     "lbl": [
+      "not connected",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 4.6,
+     "hl": "chip",
+     "lbl": [
+      "A ring",
+      "only some are showing"
+     ],
+     "lblSide": "right",
+     "dur": 2.8,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.0,
+     "sh": "betterdisplaycli set -name=\"Stage Monitor\" -connected=on >/dev/null 2>&1 &"
+    },
+    {
+     "line": 4,
+     "at": 2.0,
+     "hl": "row2",
+     "lbl": [
+      "On air",
+      "again"
+     ],
+     "lblSide": "below",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 0.3,
+     "cap": "Kept on this computer — not in cue sheets or presentations",
+     "capdur": 3.8
+    }
+   ]
+  }
+ }
+}

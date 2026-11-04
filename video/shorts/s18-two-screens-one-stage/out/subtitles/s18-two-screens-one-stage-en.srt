@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:05,044
+One stage, two screens: the video for the audience, the words for the singers.
+
+2
+00:00:05,440 --> 00:00:08,957
+Open Stage output, and add a screen for the stage monitor.
+
+3
+00:00:09,760 --> 00:00:13,594
+Turn the background off there, and the singers get the words on black.
+
+4
+00:00:14,390 --> 00:00:18,358
+The on-air chip lists every screen, each with its own power switch.
+
+5
+00:00:19,160 --> 00:00:22,706
+Unplug a monitor, and it picks up again as soon as it's back.
+
+6
+00:00:23,560 --> 00:00:25,819
+Add. Words. On air. Unplug.
+
+7
+00:00:25,920 --> 00:00:28,083
+Episode sixteen walks you through it.

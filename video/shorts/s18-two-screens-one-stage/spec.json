@@ -1,0 +1,61 @@
+{
+ "ep": "16",
+ "slug": "two-screens-one-stage",
+ "title": "Two Screens, One Stage",
+ "hook": [
+  "TWO SCREENS.",
+  "ONE STAGE."
+ ],
+ "hook_vo": "One stage, two screens: the video for the audience, the words for the singers.",
+ "tags": "ADD.,HIDE.,PLUG.",
+ "beats": [
+  {
+   "b": 4,
+   "w": "ADD",
+   "s": "one more <b>screen</b>",
+   "vo": "Open Stage output, and add a screen for the stage monitor.",
+   "lag": 0.8,
+   "appear": 12.7
+  },
+  {
+   "b": 11,
+   "w": "WORDS",
+   "s": "B off on <b>stage</b>",
+   "vo": "Turn the background off there, and the singers get the words on black."
+  },
+  {
+   "b": 17,
+   "w": "ON AIR",
+   "s": "every screen, one <b>list</b>",
+   "vo": "The on-air chip lists every screen, each with its own power switch.",
+   "lag": 0.4,
+   "appear": 7.65
+  },
+  {
+   "b": 20,
+   "w": "UNPLUG",
+   "s": "back by <b>itself</b>",
+   "vo": "Unplug a monitor, and it picks up again as soon as it's back."
+  }
+ ],
+ "id": "s18-two-screens-one-stage",
+ "lines": [
+  "One stage, two screens: the video for the audience, the words for the singers.",
+  "Open Stage output, and add a screen for the stage monitor.",
+  "Turn the background off there, and the singers get the words on black.",
+  "The on-air chip lists every screen, each with its own power switch.",
+  "Unplug a monitor, and it picks up again as soon as it's back.",
+  "Add. Words. On air. Unplug.",
+  "Episode sixteen walks you through it."
+ ],
+ "vo_at": [
+  0.35,
+  5.44,
+  9.76,
+  14.39,
+  19.16,
+  23.56,
+  25.92
+ ],
+ "dur": 32.68
+}

@@ -1,0 +1,96 @@
+1
+00:00:06,400 --> 00:00:13,530
+Welcome back! Today: more screens. The audience gets the video and the words, and the singers get the words alone.
+
+2
+00:00:14,400 --> 00:00:21,390
+There is still one stage, with one set of seven layers. A screen only chooses which of those layers it shows.
+
+3
+00:00:22,260 --> 00:00:26,920
+So every screen gets the same slides. No screen gets a slide of its own.
+
+4
+00:00:28,940 --> 00:00:35,190
+Screens are set up in the Stage output window. Open it with the small sliders button under the stage.
+
+5
+00:00:36,260 --> 00:00:40,920
+Press Add screen. LayerCue picks a plugged-in screen that isn't used yet.
+
+6
+00:00:41,790 --> 00:00:48,490
+Here it picked the monitor LayerCue itself is on, so it kept the power off. Your own window is never covered.
+
+7
+00:00:49,160 --> 00:00:54,320
+Under Send to, choose the stage monitor. Then click the pencil, and name it Stage.
+
+8
+00:00:56,990 --> 00:01:00,440
+Turn its power on, and the stage monitor goes live.
+
+9
+00:01:02,860 --> 00:01:09,430
+Close the window. A second tile now sits beside the stage, and under each preview are its Layers shown.
+
+10
+00:01:10,100 --> 00:01:13,120
+On the Stage tile, turn off B, the background.
+
+11
+00:01:14,190 --> 00:01:20,500
+Send the next line. The audience sees the video and the words. The stage sees the words on black.
+
+12
+00:01:21,370 --> 00:01:24,700
+The background is still up. It's only hidden on this screen.
+
+13
+00:01:25,370 --> 00:01:30,210
+If a stage monitor still shows the picture, that slide is set to Foreground.
+
+14
+00:01:31,480 --> 00:01:38,890
+Click its chip to make it a Background slide, and send it again. Or lock the whole list to Background, as in Episode 8.
+
+15
+00:01:41,510 --> 00:01:45,050
+In the status bar, the on-air chip sums up your screens.
+
+16
+00:01:45,520 --> 00:01:52,530
+Click it for every screen, each with its own power switch. Stage output at the bottom opens the window again.
+
+17
+00:01:53,600 --> 00:01:56,580
+Switch a screen off and on right here, during the show.
+
+18
+00:01:59,600 --> 00:02:07,780
+In the Stage output window, the Layout board is a picture of your room. Drag the tiles to match it. Nothing that goes out changes.
+
+19
+00:02:09,050 --> 00:02:14,890
+A solid line means on air. A dashed line means the power is on, but nothing goes out.
+
+20
+00:02:15,560 --> 00:02:23,520
+Now unplug the stage monitor. Its row says not connected, and the on-air chip shows a ring: only some screens are showing.
+
+21
+00:02:24,790 --> 00:02:27,740
+Plug it back in, and it carries on by itself.
+
+22
+00:02:29,610 --> 00:02:34,280
+Screens, names and the layout are kept on this computer, not in your shows.
+
+23
+00:02:36,300 --> 00:02:40,850
+You can now run an audience screen and a stage monitor from one stage.
+
+24
+00:02:41,520 --> 00:02:45,730
+Next time: streaming out, with NDI, Syphon, and fill and key.
+
