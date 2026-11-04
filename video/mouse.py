@@ -1,4 +1,4 @@
-#!/private/tmp/claude-501/-Users-kj1212-projects-LayerCue-insta/40ec29a8-ed28-44bf-b3e5-52d2d8c01868/scratchpad/venv/bin/python
+#!/Users/kj1212/projects/LayerCue-insta/video/.venv/bin/python
 """촬영용 마우스 — Quartz 로 진짜 포인터를 움직이고 누른다. 움직인 자취는 적어 두어(JSON) 편집에서 큰 포인터·클릭 링을 그린다.
 
     from mouse import M

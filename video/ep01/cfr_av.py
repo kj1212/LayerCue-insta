@@ -1,4 +1,4 @@
-#!/private/tmp/claude-501/-Users-kj1212-projects-LayerCue-insta/40ec29a8-ed28-44bf-b3e5-52d2d8c01868/scratchpad/venv/bin/python
+#!/Users/kj1212/projects/LayerCue-insta/video/.venv/bin/python
 """화면 녹화(가변 프레임률 .mov)를 30 fps 고정으로 다시 담는다 — AVFoundation 으로(ffmpeg 는 이 파일들의 시각을 잘못 읽어 늘어났다).
 
     ep01/cfr_av.py [s4 s8 …]      → ep01/rec/cfr/<name>.mp4  (H.264 최고 화질 프리셋, 3840×2160, 30 fps, 소리 없음)

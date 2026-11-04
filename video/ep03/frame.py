@@ -1,4 +1,4 @@
-#!/private/tmp/claude-501/-Users-kj1212-projects-LayerCue-insta/40ec29a8-ed28-44bf-b3e5-52d2d8c01868/scratchpad/venv/bin/python
+#!/Users/kj1212/projects/LayerCue-insta/video/.venv/bin/python
 """영상에서 정지 그림 한 장 — ffmpeg 없이 AVFoundation 으로.
 
     ep01/frame.py <mov> <sec> <out.png> [maxWidth]

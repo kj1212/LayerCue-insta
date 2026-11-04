@@ -1,4 +1,4 @@
-#!/private/tmp/claude-501/-Users-kj1212-projects-LayerCue-insta/40ec29a8-ed28-44bf-b3e5-52d2d8c01868/scratchpad/venv/bin/python
+#!/Users/kj1212/projects/LayerCue-insta/video/.venv/bin/python
 """창 그림의 글자를 애플 Vision 으로 읽어 [글자, x, y, w, h](그림 픽셀, 왼쪽 위 기준) 목록을 낸다 — 영역(regions.json)을 눈대중 대신 실측으로.
 
     ep01/ocr.py <png> [찾을 글자 …]      → 전부(또는 그 글자가 든 것만) 출력, JSON 은 <png>.ocr.json

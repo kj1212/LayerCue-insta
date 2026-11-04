@@ -1,4 +1,4 @@
-#!/private/tmp/claude-501/-Users-kj1212-projects-LayerCue-insta/40ec29a8-ed28-44bf-b3e5-52d2d8c01868/scratchpad/venv/bin/python
+#!/Users/kj1212/projects/LayerCue-insta/video/.venv/bin/python
 """구간 하나를 녹화한다 — LG 화면(3840×2160) 을 screencapture 로 찍는 동안 정해진 시각에 마우스·MCP 동작을 보낸다.
 
     LC_SANDBOX=sandbox-ep01 ep01/record.py ep01/take/s03.json

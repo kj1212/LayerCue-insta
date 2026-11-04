@@ -1,4 +1,4 @@
-#!/private/tmp/claude-501/-Users-kj1212-projects-LayerCue-insta/40ec29a8-ed28-44bf-b3e5-52d2d8c01868/scratchpad/venv/bin/python
+#!/Users/kj1212/projects/LayerCue-insta/video/.venv/bin/python
 # 점검용: try.py click 547 190 | key 53 | move x y  (좌표 = 3편 녹화 꼴 px, 위 60 포함)
 import os, sys, pathlib
 os.environ.setdefault("MOUSE_WIN", "60,110,1680,919")

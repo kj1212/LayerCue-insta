@@ -1,4 +1,4 @@
-#!/private/tmp/claude-501/-Users-kj1212-projects-LayerCue-insta/40ec29a8-ed28-44bf-b3e5-52d2d8c01868/scratchpad/venv/bin/python
+#!/Users/kj1212/projects/LayerCue-insta/video/.venv/bin/python
 """녹화 시각 보정 — record.py 의 t=0 이 영상 파일의 몇 초에 해당하는지 잰다.
 
     LC_SANDBOX=sandbox-ep01 ep01/calib.py

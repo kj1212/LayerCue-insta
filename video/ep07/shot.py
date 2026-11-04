@@ -1,4 +1,4 @@
-#!/private/tmp/claude-501/-Users-kj1212-projects-LayerCue-insta/40ec29a8-ed28-44bf-b3e5-52d2d8c01868/scratchpad/venv/bin/python
+#!/Users/kj1212/projects/LayerCue-insta/video/.venv/bin/python
 """촬영용 LayerCue 의 창 그림 — ep01/shots/<name>.png (3840×2100, 창만). 보기용 작은 판도 같이(_s.png, 1600 너비).
 
     ep01/shot.py <name>            창을 찍는다
