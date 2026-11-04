@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="ep01/brand.css">
 <style>
+  /* 그림 테는 6–10 px — 유튜브 목록 크기(약 1/4)로 줄어도 2 px 넘게 남아 PC 에서 자글거리지 않게(2026-11-04) */
   .t { width: 1280px; height: 720px; position: relative; overflow: hidden; background: var(--void); color: var(--cream); font-family: var(--disp); }
   .grid { background-image: linear-gradient(to right, var(--hair) 1px, transparent 1px); background-size: calc(100% / 6) 100%; position: absolute; inset: 0; }
   .ttl { position: absolute; font-weight: 900; font-stretch: 84%; text-transform: uppercase; line-height: .9; letter-spacing: -.01em; }
@@ -15,10 +16,10 @@
   #A .stack { position: absolute; left: 560px; top: 40px; width: 700px; height: 640px; perspective: 1800px; }
   #A .pl { position: absolute; left: 60px; width: 600px; height: 338px; transform-origin: center; transform: rotateX(56deg) rotateZ(-34deg); border-radius: 18px; overflow: hidden; }
   #A .pl img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  #A .p1 { top: 330px; box-shadow: 0 0 0 4px var(--bg-lit), 0 30px 60px rgba(0,0,0,.6); }
-  #A .p2 { top: 190px; background: rgba(11,11,16,.62); box-shadow: 0 0 0 4px var(--fg-lit); display: flex; align-items: center; justify-content: center; }
+  #A .p1 { top: 330px; box-shadow: 0 0 0 8px var(--bg-lit), 0 30px 60px rgba(0,0,0,.6); }
+  #A .p2 { top: 190px; background: rgba(11,11,16,.62); box-shadow: 0 0 0 8px var(--fg-lit); display: flex; align-items: center; justify-content: center; }
   #A .p2 span { font-weight: 900; font-size: 64px; color: var(--cream); }
-  #A .p3 { top: 50px; background: rgba(63,178,127,.08); box-shadow: 0 0 0 4px var(--ov-lit); }
+  #A .p3 { top: 50px; background: rgba(63,178,127,.08); box-shadow: 0 0 0 8px var(--ov-lit); }
   #A .p3 i { position: absolute; left: 28px; top: 24px; width: 150px; height: 44px; border-radius: 6px; background: var(--cream); opacity: .9; }
   #A .tag { position: absolute; white-space: nowrap; font-family: var(--mono); font-size: 16px; letter-spacing: .14em; padding: 5px 10px; color: #111; }
   /* B */
@@ -36,10 +37,10 @@
   #C .lbl b { display: block; font-weight: 900; font-stretch: 84%; font-size: 92px; text-transform: uppercase; line-height: .9; }
   #C .lbl small { display: block; font-family: var(--mono); font-size: 22px; margin-top: 10px; color: #3C3A35; }
   /* D — 설치 편: 맥 DMG 창과 윈도우 스토어 카드를 겹쳐 띄운다 */
-  #D .win { position: absolute; left: 600px; top: 120px; width: 640px; border-radius: 18px; overflow: hidden; transform: rotate(-4deg); box-shadow: 0 0 0 2px var(--hair), 0 40px 90px rgba(0,0,0,.7); }
+  #D .win { position: absolute; left: 600px; top: 120px; width: 640px; border-radius: 18px; overflow: hidden; transform: rotate(-4deg); box-shadow: 0 0 0 6px var(--hair), 0 40px 90px rgba(0,0,0,.7); }
   #D .win img { width: 100%; display: block; }
   #D .store { position: absolute; left: 820px; top: 450px; width: 400px; height: 170px; border-radius: 16px; background: #202022; transform: rotate(3deg);
-              box-shadow: 0 0 0 2px var(--hair), 0 30px 70px rgba(0,0,0,.75); }
+              box-shadow: 0 0 0 6px var(--hair), 0 30px 70px rgba(0,0,0,.75); }
   #D .store img { position: absolute; left: 22px; top: 22px; width: 126px; height: 126px; }
   #D .store .nm { position: absolute; left: 168px; top: 26px; font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 600; font-size: 38px; }
   #D .store .pub { position: absolute; left: 170px; top: 76px; font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 20px; color: #9FB8FF; }
@@ -47,41 +48,41 @@
   #D .os { position: absolute; display: flex; gap: 10px; }
   #D .os span { font-family: var(--mono); font-weight: 500; font-size: 18px; letter-spacing: .16em; padding: 6px 12px; color: #111; }
   /* E — 첫 송출 편: 프로젝터 화면(실제 송출) + 전원 스위치 · CLEAR */
-  #E .proj { position: absolute; left: 590px; top: 110px; width: 640px; height: 360px; border-radius: 16px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 6px var(--hot), 0 0 70px rgba(255,74,26,.45), 0 40px 90px rgba(0,0,0,.7); }
+  #E .proj { position: absolute; left: 590px; top: 110px; width: 640px; height: 360px; border-radius: 16px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 10px var(--hot), 0 0 70px rgba(255,74,26,.45), 0 40px 90px rgba(0,0,0,.7); }
   #E .proj img { width: 100%; height: 100%; object-fit: cover; display: block; }
   #E .onair { position: absolute; left: 610px; top: 70px; transform: rotate(-3deg); background: var(--hot); color: #111; font-family: var(--mono); font-weight: 500; font-size: 20px; letter-spacing: .18em; padding: 6px 14px; }
-  #E .ctl { position: absolute; left: 700px; top: 500px; display: flex; gap: 18px; align-items: center; transform: rotate(2deg); background: #1b1b1d; padding: 20px 26px; border-radius: 14px; box-shadow: 0 0 0 2px var(--hair), 0 30px 70px rgba(0,0,0,.7); }
+  #E .ctl { position: absolute; left: 700px; top: 500px; display: flex; gap: 18px; align-items: center; transform: rotate(2deg); background: #1b1b1d; padding: 20px 26px; border-radius: 14px; box-shadow: 0 0 0 6px var(--hair), 0 30px 70px rgba(0,0,0,.7); }
   #E .ctl .n { font-family: var(--mono); font-size: 34px; color: var(--hot); }
   #E .ctl .nm { font-size: 34px; font-weight: 600; margin-right: 10px; }
   #E .ctl .sw { width: 92px; height: 46px; border-radius: 6px; background: var(--hot); position: relative; }
   #E .ctl .sw::after { content: ""; position: absolute; right: 8px; top: 8px; width: 30px; height: 30px; border-radius: 4px; background: #fff; }
   #E .ctl .clr { font-family: var(--mono); font-weight: 500; font-size: 26px; letter-spacing: .12em; padding: 8px 18px; border: 2px solid var(--cream); border-radius: 6px; }
   /* F — 정리 편: 실제 사이드바를 크게 + 큐시트 · 라이브러리 이름표 */
-  #F .side { position: absolute; left: 660px; top: 150px; width: 540px; border-radius: 14px; overflow: hidden; transform: rotate(-4deg) scale(1.0); transform-origin: top left; box-shadow: 0 0 0 2px var(--hair), 0 40px 90px rgba(0,0,0,.7); }
+  #F .side { position: absolute; left: 660px; top: 150px; width: 540px; border-radius: 14px; overflow: hidden; transform: rotate(-4deg) scale(1.0); transform-origin: top left; box-shadow: 0 0 0 6px var(--hair), 0 40px 90px rgba(0,0,0,.7); }
   #F .side img { width: 100%; display: block; }
   #F .chip { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 22px; letter-spacing: .16em; padding: 8px 14px; color: #111; }
   #F .ring { position: absolute; border: 5px solid; border-radius: 10px; }
   /* G — 슬라이드 넣기 편: 실제 카드 줄 + 사이에 끼어드는 파일 · 넣는 선 */
-  #G .row { position: absolute; left: 600px; top: 250px; width: 760px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 2px var(--hair), 0 40px 90px rgba(0,0,0,.7); }
+  #G .row { position: absolute; left: 600px; top: 250px; width: 760px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 6px var(--hair), 0 40px 90px rgba(0,0,0,.7); }
   #G .row img { width: 100%; display: block; }
   #G .bar { position: absolute; left: 826px; top: 240px; width: 10px; height: 230px; background: var(--accent-soft); transform: rotate(-3deg); box-shadow: 0 0 30px rgba(139,149,245,.9); }
-  #G .file { position: absolute; left: 760px; top: 100px; width: 150px; height: 110px; border-radius: 10px; background: #2b2b2e; box-shadow: 0 0 0 3px var(--cream), 0 30px 60px rgba(0,0,0,.6); transform: rotate(6deg); display:flex; align-items:center; justify-content:center; font-family: var(--mono); font-size: 22px; letter-spacing:.1em; color: var(--cream); }
+  #G .file { position: absolute; left: 760px; top: 100px; width: 150px; height: 110px; border-radius: 10px; background: #2b2b2e; box-shadow: 0 0 0 8px var(--cream), 0 30px 60px rgba(0,0,0,.6); transform: rotate(6deg); display:flex; align-items:center; justify-content:center; font-family: var(--mono); font-size: 22px; letter-spacing:.1em; color: var(--cream); }
   #G .plus { position: absolute; left: 888px; top: 80px; width: 48px; height: 48px; border-radius: 50%; background: #2ecc71; color: #fff; font-size: 40px; font-weight: 700; display:flex; align-items:center; justify-content:center; }
   #G .tg { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 22px; letter-spacing: .16em; padding: 8px 14px; color: #111; }
   /* H — 레이어 편: 실제 무대 미리보기 + 층 칩 셋(1 · F · B) 이 비스듬히 */
-  #H .stage { position: absolute; left: 600px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 5px var(--hot), 0 40px 90px rgba(0,0,0,.7); }
+  #H .stage { position: absolute; left: 600px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 10px var(--hot), 0 40px 90px rgba(0,0,0,.7); }
   #H .stage img { width: 100%; display: block; }
   #H .lt { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 24px; letter-spacing: .14em; padding: 8px 14px; color: #111; transform: rotate(-3deg); }
   /* I — 슬라이드 설정 편: 세로 영상이 Fit + blur 로 가로 화면을 채운 실제 미리보기 + Scale 아이콘 줄 */
-  #I .stage { position: absolute; left: 600px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 4px var(--accent-soft), 0 40px 90px rgba(0,0,0,.7); }
+  #I .stage { position: absolute; left: 600px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 8px var(--accent-soft), 0 40px 90px rgba(0,0,0,.7); }
   #I .stage img { width: 100%; display: block; }
   #I .tg { position: absolute; white-space: nowrap; font-family: var(--mono); font-weight: 500; font-size: 24px; letter-spacing: .14em; padding: 8px 14px; color: #111; transform: rotate(-3deg); }
   /* J — 프레젠테이션 설정 편: 실제 설정 패널(2.0 s · 0.0 s · 8 s) + 레이어 잠금 칩 */
-  #J .panel { position: absolute; left: 640px; top: 140px; width: 560px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 3px var(--accent-soft), 0 40px 90px rgba(0,0,0,.7); }
+  #J .panel { position: absolute; left: 640px; top: 140px; width: 560px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 8px var(--accent-soft), 0 40px 90px rgba(0,0,0,.7); }
   #J .panel img { width: 100%; display: block; }
   #J .lock { position: absolute; left: 700px; top: 540px; transform: rotate(-3deg); background: var(--bg-lit); color: #111; font-family: var(--disp); font-weight: 800; font-size: 34px; padding: 10px 22px; border-radius: 8px; }
   /* K — 텍스트 편: 밝은 사진 위 외곽선 글자(실제 캔버스) + Outline 칩 */
-  #K .cv, #L .cv, #M .cv, #N .cv, #O .cv, #P .cv, #Q .cv, #R .cv { position: absolute; left: 610px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 3px var(--cream), 0 40px 90px rgba(0,0,0,.7); }
+  #K .cv, #L .cv, #M .cv, #N .cv, #O .cv, #P .cv, #Q .cv, #R .cv { position: absolute; left: 610px; top: 150px; width: 620px; border-radius: 14px; overflow: hidden; transform: rotate(-3deg); box-shadow: 0 0 0 8px var(--cream), 0 40px 90px rgba(0,0,0,.7); }
   #K .cv img, #L .cv img, #M .cv img, #N .cv img, #O .cv img, #P .cv img, #Q .cv img, #R .cv img { width: 100%; display: block; }
   #K .ol, #L .ol, #M .ol, #N .ol, #O .ol, #P .ol, #Q .ol, #R .ol { position: absolute; left: 660px; top: 530px; transform: rotate(-3deg); background: var(--accent-soft); color: #111; font-family: var(--mono); font-weight: 500; font-size: 26px; letter-spacing: .14em; padding: 10px 18px; }
 </style>
