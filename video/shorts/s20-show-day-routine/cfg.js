@@ -1,10 +1,10 @@
 var CFG = {
  "id": "s20-show-day-routine",
  "ep": 18,
- "DUR": 32.4,
+ "DUR": 32.99,
  "H": 4.47,
- "Rt": 22.94,
- "END0": 28.0,
+ "Rt": 23.48,
+ "END0": 28.59,
  "beats": [
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep18/rec/v2/s2.mp4",
@@ -46,11 +46,11 @@ var CFG = {
    ],
    "line": "Now, while a screen is on, the first slide you send locks editing. The lock lights up in the status bar.",
    "zend": null,
-   "zbeg": 11.06
+   "zbeg": 9.86
   },
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep18/rec/v2/s4.mp4",
-   "src": 1.65,
+   "src": 1.55,
    "t": 14.14,
    "d": 4.86,
    "audio": null,
@@ -66,27 +66,27 @@ var CFG = {
     ""
    ],
    "line": "If a cable comes out, LayerCue says so: Output screen disconnected. The on-air chip shows a ring.",
-   "zend": 17.69,
-   "zbeg": 15.54
+   "zend": 17.39,
+   "zbeg": 15.49
   },
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep18/rec/v2/s5.mp4",
-   "src": 4.05,
+   "src": 19.51,
    "t": 18.99,
-   "d": 3.95,
+   "d": 4.48,
    "audio": null,
-   "zx": 1464.0,
-   "zy": 408.2,
-   "zw": 1166.4,
-   "ox": 1464.0,
-   "oy": 114.0,
-   "ow": 884,
-   "oh": 56,
+   "zx": 2121.5,
+   "zy": 1050.0,
+   "zw": 3000.0,
+   "ox": 2121.5,
+   "oy": 1165.0,
+   "ow": 3361,
+   "oh": 704,
    "lbl": [
-    "Power off",
-    "every screen"
+    "Large cards",
+    ""
    ],
-   "line": "After the last slide: Clear the stage, and switch the screens off.",
+   "line": "The screens you switched on are remembered too. Open LayerCue, and they come back on by themselves.",
    "zend": null,
    "zbeg": null
   }
@@ -114,11 +114,11 @@ var CFG = {
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s20-show-day-routine/audio/05.wav",
-   "t": 23.14
+   "t": 23.68
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s20-show-day-routine/audio/06.wav",
-   "t": 25.7
+   "t": 26.29
   }
  ],
  "subs": [
@@ -140,11 +140,11 @@ var CFG = {
   ],
   [
    19.09,
-   22.84
+   23.37
   ],
   [
-   25.599999999999998,
-   28.0
+   26.189999999999998,
+   28.59
   ]
  ],
  "endframes": "/Users/kj1212/projects/LayerCue-insta/video/frames/end-s20-show-day-routine/00000.png",

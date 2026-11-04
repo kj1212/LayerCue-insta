@@ -93,29 +93,8 @@
      "exact": true
     },
     {
-     "line": 4,
-     "at": 0.2,
-     "mouse": [
-      "click",
-      1337,
-      926
-     ]
-    },
-    {
-     "line": 4,
-     "at": 1.2,
-     "hl": "importrow",
-     "lbl": [
-      "Import external files",
-      "every file inside"
-     ],
-     "lblSide": "below",
-     "dur": 4.2,
-     "exact": true
-    },
-    {
-     "line": 4,
-     "at": 6.4,
+     "line": 3,
+     "at": 4.6,
      "mouse": [
       "click",
       2635,
@@ -173,17 +152,8 @@
     },
     {
      "line": 2,
-     "at": 0.3,
-     "mouse": [
-      "rclick",
-      1584,
-      972
-     ]
-    },
-    {
-     "line": 2,
-     "at": 1.1,
-     "hl": "locate",
+     "at": 0.2,
+     "hl": "locbtn",
      "lbl": [
       "Locate file",
       ""
@@ -194,16 +164,16 @@
     },
     {
      "line": 2,
-     "at": 2.6,
+     "at": 0.8,
      "mouse": [
       "click",
-      1723,
-      1010
+      1507,
+      1037
      ]
     },
     {
      "line": 2,
-     "at": 4.6,
+     "at": 4.2,
      "mouse": [
       "dbl",
       1949,
@@ -219,7 +189,7 @@
       ""
      ],
      "lblSide": "below",
-     "dur": 2.4,
+     "dur": 2.0,
      "exact": true
     },
     {
@@ -414,14 +384,14 @@
     },
     {
      "line": 1,
-     "at": 0.6,
+     "at": 0.5,
      "hl": "toast",
      "lbl": [
       "Output screen disconnected",
       ""
      ],
      "lblSide": "above",
-     "dur": 2.0,
+     "dur": 1.7,
      "exact": true
     },
     {
@@ -452,6 +422,36 @@
      "lblSide": "right",
      "dur": 2.0,
      "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      3010,
+      2119
+     ]
+    },
+    {
+     "line": 4,
+     "at": 1.4,
+     "hl": "fbtabs",
+     "lbl": [
+      "Question · Idea · Bug",
+      ""
+     ],
+     "lblSide": "left",
+     "dur": 3.0,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 5.6,
+     "mouse": [
+      "click",
+      2210,
+      1459
+     ]
     }
    ]
   },
@@ -468,89 +468,108 @@
    "events": [
     {
      "line": 1,
-     "at": 0.4,
+     "at": 0.6,
      "mouse": [
       "click",
-      1166,
-      173
+      3780,
+      2119
      ]
     },
     {
      "line": 1,
-     "at": 0.8,
-     "hl": "clear",
-     "lbl": [
-      "Clear",
-      ""
-     ],
-     "lblSide": "below",
-     "dur": 1.4,
-     "exact": true
+     "at": 1.5,
+     "mouse": [
+      "click",
+      1291,
+      710
+     ]
     },
     {
      "line": 1,
      "at": 2.0,
-     "mouse": [
-      "click",
-      1058,
-      173
+     "zoom": "z_set",
+     "scale": 1.5,
+     "center": [
+      1920,
+      1080
      ]
     },
     {
      "line": 1,
      "at": 2.6,
-     "mouse": [
-      "click",
-      1858,
-      173
-     ]
-    },
-    {
-     "line": 1,
-     "at": 3.0,
-     "hl": "power",
+     "hl": "sizerow",
      "lbl": [
-      "Power off",
-      "every screen"
+      "Slide card size",
+      "L"
      ],
      "lblSide": "below",
-     "dur": 1.8,
+     "dur": 2.4,
      "exact": true
     },
     {
-     "line": 2,
-     "at": 0.3,
-     "cap": "With a screen on, Quit warns: “You are on air — quitting will black out the screen.”",
-     "capdur": 5.4
-    },
-    {
-     "line": 2,
-     "at": 1.2,
-     "key": [
-      12,
-      true
+     "line": 1,
+     "at": 3.4,
+     "mouse": [
+      "click",
+      2335,
+      886
      ]
     },
     {
      "line": 2,
-     "at": 2.0,
-     "hl": "quitdlg",
+     "at": 0.4,
+     "hl": "layoutrow",
      "lbl": [
-      "Quit LayerCue?",
-      "your work is saved"
+      "Remember window layout",
+      "on to begin with"
      ],
-     "lblSide": "right",
-     "dur": 3.0,
+     "lblSide": "below",
+     "dur": 3.6,
      "exact": true
     },
     {
      "line": 3,
-     "at": 2.4,
+     "at": 0.0,
+     "rest": true
+    },
+    {
+     "line": 3,
+     "at": 0.2,
      "mouse": [
       "click",
-      2088,
-      1195
+      2635,
+      622
      ]
+    },
+    {
+     "line": 3,
+     "at": 1.2,
+     "hl": "cardsL",
+     "lbl": [
+      "Large cards",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 1.6,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 3.2,
+     "hl": "chip",
+     "lbl": [
+      "Screens remembered",
+      "back on at launch"
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.3,
+     "cap": "✓ Every screen on  ✓ Right layers shown  ✓ No red cards  ✓ Sound checked",
+     "capdur": 6.0
     }
    ]
   }

@@ -15,13 +15,13 @@ Lock editing while live, so a stray drag can't change the show.
 A cable comes out? Plug it back in, and the screen comes right back.
 
 5
-00:00:19,140 --> 00:00:22,288
-After the last slide: clear, power off, then quit.
+00:00:19,140 --> 00:00:22,824
+And make the cards big, so they're easy to hit in a dark booth.
 
 6
-00:00:23,140 --> 00:00:25,597
-Relink. Lock. Unplug. Pack down.
+00:00:23,680 --> 00:00:26,189
+Relink. Lock. Unplug. Big cards.
 
 7
-00:00:25,700 --> 00:00:27,799
+00:00:26,290 --> 00:00:28,389
 Episode eighteen walks you through it.

@@ -1,5 +1,5 @@
 {
- "title": "Show Day: Checks, Edit Lock, Messages and Pack Down — LayerCue from Zero, Episode 18",
+ "title": "Show Day: Checks, Edit Lock, Messages and the Booth — LayerCue from Zero, Episode 18",
  "version": 1,
  "segments": [
   {
@@ -31,14 +31,6 @@
      "action": "",
      "caption": "",
      "keys": ""
-    },
-    {
-     "text": "Then press Import external files on the Files and YouTube page, until every file is inside the media folder. Episode 15.",
-     "pause": 0.8,
-     "screen": "",
-     "action": "",
-     "caption": "",
-     "keys": ""
     }
    ]
   },
@@ -57,7 +49,7 @@
      "keys": ""
     },
     {
-     "text": "Right-click it, and choose Locate file. Pick the file, and the card is relinked.",
+     "text": "Press Locate file on the card. Pick the file, and the card is relinked.",
      "pause": 2.6,
      "screen": "",
      "action": "",
@@ -143,25 +135,33 @@
      "action": "",
      "caption": "",
      "keys": ""
-    }
-   ]
-  },
-  {
-   "id": "s5",
-   "chapter": "Pack down",
-   "start": 0,
-   "end": 0,
-   "lines": [
+    },
     {
-     "text": "After the last slide: Clear the stage, and switch the screens off.",
+     "text": "If LayerCue itself misbehaves, press Tell us what's wrong. Choose Question, Idea or Bug, and write what happened.",
      "pause": 1.2,
      "screen": "",
      "action": "",
      "caption": "",
      "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Make the booth easy",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Make the booth easy on yourself. In Settings, General, choose large slide cards. They're harder to miss in a dark room.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
     },
     {
-     "text": "Then quit. With a screen still on, LayerCue warns you first: quitting will black out the screen.",
+     "text": "Remember window layout is on to begin with. Set your windows up once in rehearsal, and show day opens the same way.",
      "pause": 0.6,
      "screen": "",
      "action": "",
@@ -169,8 +169,16 @@
      "keys": ""
     },
     {
-     "text": "Clear, power off, quit. That order, every time.",
-     "pause": 0.6,
+     "text": "The screens you switched on are remembered too. Open LayerCue, and they come back on by themselves.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "One last pass before the doors open: every screen on, the right layers shown, no red cards, and the sound checked.",
+     "pause": 1.0,
      "screen": "",
      "action": "",
      "caption": "",
@@ -185,7 +193,7 @@
    "end": 0,
    "lines": [
     {
-     "text": "You can now run a show from the night before to pack down.",
+     "text": "You can now run a show, from the night before to the last cue.",
      "pause": 0.6,
      "screen": "",
      "action": "",

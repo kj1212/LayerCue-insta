@@ -1,4 +1,4 @@
-# Show Day: Checks, Edit Lock, Messages and Pack Down | LayerCue from Zero, Episode 18
+# Show Day: Checks, Edit Lock, Messages and the Booth | LayerCue from Zero, Episode 18
 
 ## The day before
 
@@ -8,15 +8,13 @@
   전날, 설정의 Tools에서 Check를 누르세요. 여기서는 새 버전이 나와 있어요.
 - Leave it for after the event. Installing closes LayerCue, and the audience screen goes dark.  
   행사가 끝난 뒤로 미루세요. 설치하면 LayerCue가 닫히고 관객 화면이 꺼져요.
-- Then press Import external files on the Files and YouTube page, until every file is inside the media folder. Episode 15.  
-  그다음 Files & YouTube에서 Import external files를 눌러, 모든 파일을 미디어 폴더 안으로 들여오세요. 15편이에요.
 
 ## Run it once
 
 - Run the whole show once, on the real screens. A red card says a file is missing. Here, the welcome video was renamed.  
   실제 화면에서 쇼를 처음부터 끝까지 한 번 돌려 보세요. 빨간 카드는 파일을 찾지 못했다는 뜻이에요. 여기선 환영 영상 이름이 바뀌었어요.
-- Right-click it, and choose Locate file. Pick the file, and the card is relinked.  
-  오른쪽 클릭해서 Locate file을 고르고, 파일을 고르면 카드가 다시 이어져요.
+- Press Locate file on the card. Pick the file, and the card is relinked.  
+  카드의 Locate file을 누르고 파일을 고르면, 카드가 다시 이어져요.
 - Listen to every video and song once, at show volume.  
   영상과 노래는 모두 한 번씩, 쇼 때의 크기로 들어 보세요.
 
@@ -39,19 +37,23 @@
   다시 꽂으면 저절로 바로 돌아와요.
 - A message always says what happened, and what to do.  
   메시지는 늘 무슨 일이 있었고 무엇을 하면 되는지 알려 줘요.
+- If LayerCue itself misbehaves, press Tell us what's wrong. Choose Question, Idea or Bug, and write what happened.  
+  LayerCue 자체가 이상하게 굴면 Tell us what's wrong을 누르세요. Question, Idea, Bug 중에 고르고 무슨 일이 있었는지 적으면 돼요.
 
-## Pack down
+## Make the booth easy
 
-- After the last slide: Clear the stage, and switch the screens off.  
-  마지막 슬라이드가 끝나면, 무대를 Clear하고 화면 전원을 끄세요.
-- Then quit. With a screen still on, LayerCue warns you first: quitting will black out the screen.  
-  그다음 끝내요. 화면이 아직 켜져 있으면 LayerCue가 먼저 경고해요. 끝내면 화면이 꺼진다고요.
-- Clear, power off, quit. That order, every time.  
-  지우고, 끄고, 끝내기. 늘 이 순서로요.
+- Make the booth easy on yourself. In Settings, General, choose large slide cards. They're harder to miss in a dark room.  
+  부스를 편하게 만들어 두세요. 설정의 General에서 슬라이드 카드를 크게 고르면, 어두운 곳에서도 잘못 누르기 어려워요.
+- Remember window layout is on to begin with. Set your windows up once in rehearsal, and show day opens the same way.  
+  Remember window layout은 처음부터 켜져 있어요. 리허설 때 창을 한 번 배치해 두면 쇼 당일에도 그대로 열려요.
+- The screens you switched on are remembered too. Open LayerCue, and they come back on by themselves.  
+  켜 둔 화면도 기억해요. LayerCue를 열면 저절로 다시 켜져요.
+- One last pass before the doors open: every screen on, the right layers shown, no red cards, and the sound checked.  
+  문 열기 전 마지막 점검: 모든 화면 켜짐, 화면마다 맞는 레이어, 빨간 카드 없음, 소리 확인.
 
 ## That's the series
 
-- You can now run a show from the night before to pack down.  
-  이제 전날 밤부터 정리까지, 쇼 하나를 끝까지 운영할 수 있어요.
+- You can now run a show, from the night before to the last cue.  
+  이제 전날 밤부터 마지막 큐까지, 쇼 하나를 끝까지 운영할 수 있어요.
 - When a new version ships, a What's New episode joins this playlist. Thanks for watching!  
   새 버전이 나오면 What's New 편이 이 재생목록에 더해져요. 봐 주셔서 고마워요!

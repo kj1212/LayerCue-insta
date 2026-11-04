@@ -7,34 +7,34 @@
   "NO SURPRISES."
  ],
  "hook_vo": "Show day, without surprises: four checks that keep the screens up.",
- "tags": "CHECK.,LOCK.,CLEAR.",
+ "tags": "CHECK.,LOCK.,GO.",
  "beats": [
   {
-   "b": 3,
+   "b": 2,
    "w": "RELINK",
    "s": "no red <b>cards</b>",
    "vo": "Run the show once. A red card means a file is missing; relink it."
   },
   {
-   "b": 7,
+   "b": 6,
    "w": "LOCK",
    "s": "no stray <b>edits</b>",
    "vo": "Lock editing while live, so a stray drag can't change the show.",
-   "appear": 9.5
+   "appear": 8.3
   },
   {
-   "b": 9,
+   "b": 8,
    "w": "UNPLUG",
    "s": "back by <b>itself</b>",
    "vo": "A cable comes out? Plug it back in, and the screen comes right back.",
-   "appear": 3.05,
-   "until": 5.2
+   "appear": 2.9,
+   "until": 4.8
   },
   {
-   "b": 13,
-   "w": "PACK DOWN",
-   "s": "in this <b>order</b>",
-   "vo": "After the last slide: clear, power off, then quit."
+   "b": 14,
+   "w": "BIG CARDS",
+   "s": "easy in the <b>dark</b>",
+   "vo": "And make the cards big, so they're easy to hit in a dark booth."
   }
  ],
  "id": "s20-show-day-routine",
@@ -43,8 +43,8 @@
   "Run the show once. A red card means a file is missing; relink it.",
   "Lock editing while live, so a stray drag can't change the show.",
   "A cable comes out? Plug it back in, and the screen comes right back.",
-  "After the last slide: clear, power off, then quit.",
-  "Relink. Lock. Unplug. Pack down.",
+  "And make the cards big, so they're easy to hit in a dark booth.",
+  "Relink. Lock. Unplug. Big cards.",
   "Episode eighteen walks you through it."
  ],
  "vo_at": [
@@ -53,8 +53,8 @@
   9.86,
   14.29,
   19.14,
-  23.14,
-  25.7
+  23.68,
+  26.29
  ],
- "dur": 32.4
+ "dur": 32.99
 }

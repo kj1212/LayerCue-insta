@@ -31,7 +31,8 @@ case "$1" in
       ObjC.import("AppKit"); var s = $.NSScreen.screens; var H = s.objectAtIndex(0).frame.size.height; var lg = null;
       for (var i = 0; i < s.count; i++) { var sc = s.objectAtIndex(i); if (sc.localizedName.js.indexOf("LG") >= 0) lg = sc.frame; }
       var x = lg.origin.x, y = H - (lg.origin.y + lg.size.height);
-      var w = Application("System Events").processes.byName("LayerCue").windows[0];
+      var ws = Application("System Events").processes.byName("LayerCue").windows; var w = ws[0];
+      for (var j = 0; j < ws.length; j++) if (ws[j].name() === "LayerCue") { w = ws[j]; break; }     // 18편: 송출 창(이름 없음)이 먼저 잡혀 LG 를 덮었다
       w.position = [x, y]; w.size = [1920, 1050];     // 메뉴 막대 30 pt 아래로 1050 — 1080 을 주면 아래 30 pt 가 화면 밖으로 나간다
       JSON.stringify({ position: w.position(), size: w.size() })'
     ;;

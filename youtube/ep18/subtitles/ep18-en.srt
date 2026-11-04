@@ -11,66 +11,70 @@ The day before, open Settings, Tools, and press Check. Here, a new version is ou
 Leave it for after the event. Installing closes LayerCue, and the audience screen goes dark.
 
 4
-00:00:25,890 --> 00:00:34,500
-Then press Import external files on the Files and YouTube page, until every file is inside the media folder. Episode 15.
-
-5
-00:00:36,720 --> 00:00:44,500
+00:00:27,240 --> 00:00:35,020
 Run the whole show once, on the real screens. A red card says a file is missing. Here, the welcome video was renamed.
 
-6
-00:00:45,170 --> 00:00:50,110
-Right-click it, and choose Locate file. Pick the file, and the card is relinked.
+5
+00:00:35,690 --> 00:00:40,370
+Press Locate file on the card. Pick the file, and the card is relinked.
 
-7
-00:00:52,780 --> 00:00:56,300
+6
+00:00:43,040 --> 00:00:46,560
 Listen to every video and song once, at show volume.
 
-8
-00:00:58,320 --> 00:01:01,950
+7
+00:00:48,580 --> 00:00:52,210
 In Settings, Stage, turn on Lock editing while live.
 
-9
-00:01:03,020 --> 00:01:09,470
+8
+00:00:53,280 --> 00:00:59,730
 Now, while a screen is on, the first slide you send locks editing. The lock lights up in the status bar.
 
-10
-00:01:10,540 --> 00:01:16,220
+9
+00:01:00,800 --> 00:01:06,480
 Slides still go out. But a stray drag can't move a card, or change a slide, mid-show.
 
-11
-00:01:18,290 --> 00:01:23,300
+10
+00:01:08,550 --> 00:01:13,560
 It unlocks by itself when every screen is off. A lock you set by hand stays.
 
-12
-00:01:25,320 --> 00:01:31,790
+11
+00:01:15,580 --> 00:01:22,050
 If a cable comes out, LayerCue says so: Output screen disconnected. The on-air chip shows a ring.
 
-13
-00:01:33,260 --> 00:01:36,490
+12
+00:01:23,520 --> 00:01:26,750
 Plug it back in, and it comes right back by itself.
 
-14
-00:01:37,560 --> 00:01:40,690
+13
+00:01:27,820 --> 00:01:30,950
 A message always says what happened, and what to do.
 
+14
+00:01:31,620 --> 00:01:38,810
+If LayerCue itself misbehaves, press Tell us what's wrong. Choose Question, Idea or Bug, and write what happened.
+
 15
-00:01:42,710 --> 00:01:46,660
-After the last slide: Clear the stage, and switch the screens off.
+00:01:41,430 --> 00:01:49,040
+Make the booth easy on yourself. In Settings, General, choose large slide cards. They're harder to miss in a dark room.
 
 16
-00:01:47,930 --> 00:01:54,020
-Then quit. With a screen still on, LayerCue warns you first: quitting will black out the screen.
+00:01:50,510 --> 00:01:58,020
+Remember window layout is on to begin with. Set your windows up once in rehearsal, and show day opens the same way.
 
 17
-00:01:54,690 --> 00:01:58,070
-Clear, power off, quit. That order, every time.
+00:01:58,690 --> 00:02:04,810
+The screens you switched on are remembered too. Open LayerCue, and they come back on by themselves.
 
 18
-00:02:00,090 --> 00:02:03,300
-You can now run a show from the night before to pack down.
+00:02:05,680 --> 00:02:13,010
+One last pass before the doors open: every screen on, the right layers shown, no red cards, and the sound checked.
 
 19
-00:02:03,970 --> 00:02:09,380
+00:02:15,430 --> 00:02:19,000
+You can now run a show, from the night before to the last cue.
+
+20
+00:02:19,670 --> 00:02:25,080
 When a new version ships, a What's New episode joins this playlist. Thanks for watching!
 
