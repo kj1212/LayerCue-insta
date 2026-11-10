@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:03,094
+One click sends. One chip picks the layer.
+
+2
+00:00:03,500 --> 00:00:05,454
+A click on the picture sends it out.
+
+3
+00:00:07,300 --> 00:00:10,008
+Click the name instead, and nothing goes out.
+
+4
+00:00:11,100 --> 00:00:13,087
+The chip on the card picks the layer.
+
+5
+00:00:14,900 --> 00:00:17,292
+Overlays stack, and stay up together.
+
+6
+00:00:18,750 --> 00:00:20,570
+Send. Load. Layer. Stack.
+
+7
+00:00:20,670 --> 00:00:22,642
+Episode six walks you through it.
