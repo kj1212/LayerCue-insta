@@ -1,0 +1,10 @@
+Run your ATEM from mobile.
+
+CastPad is a remote control app for Blackmagic ATEM switchers, on your phone or tablet. It talks to your switcher directly, over your own network: no cloud, no account. Choose your next shot in Preview, then take it with CUT or AUTO. And the layout is yours to build.
+
+Try it in your browser, no install: castpad.app/demo
+📥 App Store & Google Play — link in bio
+🎬 Full episode on YouTube
+
+Recorded in CastPad's demo mode — no switcher or camera used. Narration made with AI.
+#ATEM #BlackmagicDesign #livestreaming #videoswitcher #CastPad

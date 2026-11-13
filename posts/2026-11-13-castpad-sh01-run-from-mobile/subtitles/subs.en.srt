@@ -1,0 +1,31 @@
+1
+00:00:00,550 --> 00:00:02,967
+Run your ATEM from mobile.
+
+2
+00:00:04,267 --> 00:00:08,733
+This is CastPad: a remote control app for Blackmagic ATEM.
+
+3
+00:00:09,033 --> 00:00:12,900
+It talks to your switcher directly: no cloud, no account.
+
+4
+00:00:13,600 --> 00:00:15,950
+Choose your next shot in Preview.
+
+5
+00:00:16,300 --> 00:00:18,500
+Tap CUT, and it's on air.
+
+6
+00:00:19,050 --> 00:00:21,067
+Or fade it in with AUTO.
+
+7
+00:00:22,067 --> 00:00:24,450
+And the layout is yours to build.
+
+8
+00:00:25,550 --> 00:00:29,517
+Try it in your browser, at castpad.app/demo.
