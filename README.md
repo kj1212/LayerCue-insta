@@ -29,6 +29,7 @@ posts/2026-10-29-v0.9.12/
 - 사진은 JPEG 만 된다. 1장이면 사진, 2~10장이면 캐러셀, `.mp4` 1개면 릴스.
 - `python3 publish.py post posts/<폴더> --dry-run` 으로 먼저 확인하고, `--dry-run` 을 빼면 발행한다.
 - 인스타에 먼저 올리고, `FB_PAGE_ID` 가 있으면 같은 사진·캡션을 페이스북 페이지에도 올린다. 페이지 쪽 캐러셀은 사진만 묶인다.
+- **CastPad 는 계정이 따로다**: `post.json` 에 `"account": "castpad.app"` 을 넣으면 @castpad.app 과 거기 연결된 페이스북 CastPad 페이지에 올린다. 빼면 @layercue 와 LayerCue 페이지. 폴더 이름은 `posts/<날짜>-castpad-<slug>/` 로 구분한다. dry run 첫 줄에 계정과 페이지가 나오니 확인하고 올린다. 페이지 커버는 `page-cover <그림> --account castpad.app`.
 - 올린 곳마다 `published.json` 에 기록된다. 한쪽만 실패했으면 다시 실행할 때 남은 쪽만 올라간다.
 - 24시간에 API 발행은 100건까지.
 

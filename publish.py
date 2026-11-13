@@ -11,10 +11,13 @@
   python3 publish.py post posts/<폴더> --dry-run   # 보내지 않고 보낼 내용만 출력
   python3 publish.py refresh                # 단기 토큰을 장기 토큰(60일)으로 바꿔 .env 에 다시 씀
   python3 publish.py fb-cover posts/<폴더>  # 이미 올린 페이지 릴스 표지를 post.json 의 cover 로 다시 지정
-  python3 publish.py page-cover brand/fb-cover.png [--dry-run]   # 페이스북 페이지 커버 사진 바꾸기(pages_manage_metadata 필요)
+  python3 publish.py page-cover brand/fb-cover.png [--account castpad.app] [--dry-run]   # 페이스북 페이지 커버 사진 바꾸기(pages_manage_metadata 필요)
 
 게시물 폴더:
   post.json   {"media": ["1.jpg", "2.jpg"], "share_to_feed": true, "cover": "cover.jpg"}
+              account 는 올릴 인스타 계정 이름. 없으면 .env 의 계정(@layercue)과 FB_PAGE_ID 페이지.
+              다른 제품은 계정을 따로 쓴다 — 예: "account": "castpad.app" 이면 @castpad.app 과
+              거기 연결된 페이스북 CastPad 페이지에 올린다. 같은 토큰이 두 페이지를 다 관리해야 한다.
               cover 는 릴스 표지. 인스타는 cover_url 로, 페이지 릴스는 올린 뒤 썸네일로 따로 보낸다. 없으면 thumb_offset(밀리초, 기본 2500)의 장면이 표지가 된다 —
               첫 프레임은 검은 화면이기 쉽다(2026-10-30 첫 릴스가 그랬다).
   caption.txt 캡션(해시태그 포함)
@@ -147,6 +150,21 @@ def refresh(env):
     print(f"장기 토큰으로 바꿨습니다. 남은 기간 약 {days}일." if days else "장기 토큰으로 바꿨습니다.")
 
 
+def account_env(env, account):
+    """account(인스타 사용자 이름)가 기본 계정과 다르면, 그 계정과 연결된 페이지로 IG_USER_ID·FB_PAGE_ID 를 바꾼 env 를 돌려준다."""
+    account = (account or "").lstrip("@")
+    if not account or account == env.get("IG_USERNAME", "layercue"):
+        return env
+    pages = Api(env).call("GET", "me/accounts", {
+        "fields": "id,name,instagram_business_account{id,username}"}).get("data", [])
+    for p in pages:
+        ig = p.get("instagram_business_account")
+        if ig and ig.get("username") == account:
+            return {**env, "IG_USERNAME": account, "IG_USER_ID": ig["id"], "FB_PAGE_ID": p["id"],
+                    "FB_PAGE_NAME": p["name"]}
+    sys.exit(f"@{account} 가 연결된 페이스북 페이지를 토큰에서 찾지 못했습니다. 페이지-인스타 연결과 토큰의 페이지 권한을 확인하세요.")
+
+
 def media_url(env, post_dir, item):
     if item.startswith(("http://", "https://")):
         return item
@@ -200,12 +218,16 @@ def post(env, post_dir, dry_run):
     post_dir = Path(post_dir).resolve()
     done_path = post_dir / "published.json"
     done = json.loads(done_path.read_text(encoding="utf-8")) if done_path.exists() else {}
+    meta = json.loads((post_dir / "post.json").read_text(encoding="utf-8"))
+    env = account_env(env, meta.get("account"))
     targets = ["instagram"] + (["facebook"] if env.get("FB_PAGE_ID") else [])
     todo = [t for t in targets if t not in done]
     if not todo:
         sys.exit("이미 발행한 게시물입니다: " + ", ".join(d["permalink"] for d in done.values()))
     p = plan_post(env, post_dir)
     if dry_run:
+        page = env.get("FB_PAGE_NAME") or "LayerCue"
+        print(f"[dry-run] 계정: @{env.get('IG_USERNAME', 'layercue')} / 페이스북 {page} 페이지 ({env.get('FB_PAGE_ID')})")
         print(f"[dry-run] 올릴 곳: {', '.join(todo)}")
         print(f"[dry-run] 종류: {p['kind']}")
         for u in p["urls"]:
@@ -304,12 +326,13 @@ def post_instagram(env, p):
             "timestamp": info.get("timestamp"), "kind": p["kind"]}
 
 
-def page_cover(env, image, dry_run):
+def page_cover(env, image, dry_run, account=None):
     """페이지 커버 사진을 바꾼다. 사진을 비공개로 올린 뒤 그 사진을 커버로 지정한다.
     커버를 바꾸는 쪽(페이지 필드 수정)은 pages_manage_metadata 권한이 있어야 한다."""
+    env = account_env(env, account)
     path = Path(image).resolve()
     url = media_url(env, path.parent, path.name)
-    print(f"커버 사진: {url}")
+    print(f"페이지 {env.get('FB_PAGE_NAME') or 'LayerCue'} ({env['FB_PAGE_ID']}) 커버 사진: {url}")
     if dry_run:
         print("[dry-run] 보내지 않았습니다.")
         return
@@ -334,6 +357,7 @@ def fb_reel_cover(env, post_dir):
         sys.exit("페이스북에 올린 릴스 기록이 없습니다.")
     if not meta.get("cover"):
         sys.exit("post.json 에 cover 가 없습니다.")
+    env = account_env(env, meta.get("account"))
     if set_fb_reel_cover(page_api(env), fb["post_id"], post_dir / meta["cover"]):
         print(f"페이스북 릴스 표지를 바꿨습니다: {fb['permalink']}")
 
@@ -350,7 +374,8 @@ def main():
     elif args[:1] == ["fb-cover"] and len(args) >= 2:
         fb_reel_cover(env, args[1])
     elif args[:1] == ["page-cover"] and len(args) >= 2:
-        page_cover(env, args[1], "--dry-run" in args)
+        account = args[args.index("--account") + 1] if "--account" in args else None
+        page_cover(env, args[1], "--dry-run" in args, account)
     else:
         print(__doc__)
         sys.exit(1)
