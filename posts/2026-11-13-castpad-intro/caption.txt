@@ -1,4 +1,4 @@
-Run your Blackmagic ATEM switcher from your tablet — no expensive control panel needed. 📱🎬
+Run your Blackmagic ATEM switcher from your mobile — no expensive control panel needed. 📱🎬
 
 CastPad puts live switcher control in your hands, with a touch interface built for running a show from across the room.
 
