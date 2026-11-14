@@ -1,0 +1,39 @@
+1
+00:00:00,700 --> 00:00:02,733
+ATEM won't connect?
+
+2
+00:00:03,533 --> 00:00:06,650
+CastPad keeps knocking, but nothing answers.
+
+3
+00:00:06,950 --> 00:00:09,050
+Check the first three numbers.
+
+4
+00:00:09,150 --> 00:00:11,367
+Your phone and router match.
+
+5
+00:00:11,417 --> 00:00:14,433
+Your ATEM's factory address doesn't.
+
+6
+00:00:14,733 --> 00:00:17,233
+Same router, different network.
+
+7
+00:00:17,733 --> 00:00:21,150
+CastPad even tells you: different IP range.
+
+8
+00:00:21,400 --> 00:00:26,967
+Fix it in ATEM Setup: turn on DHCP, or pick an address in your range.
+
+9
+00:00:27,167 --> 00:00:29,500
+Rescan, and you're connected.
+
+10
+00:00:30,600 --> 00:00:34,567
+Try it in your browser, at castpad.app/demo.

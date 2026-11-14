@@ -1,0 +1,12 @@
+ATEM won't connect? Check the first three numbers.
+
+On most networks, your phone, your router and your ATEM need the same first three numbers in their IP address. An ATEM usually leaves the factory at 192.168.10.240, while many routers hand out 192.168.0.x or 192.168.1.x. Same router, different network, and nothing gets through.
+
+CastPad, a remote control app for Blackmagic ATEM switchers on your phone or tablet, flags it in Select device: "Can't connect — different IP range". The fix: connect the ATEM to a computer by USB, open ATEM Setup, and turn on DHCP or give it an address in your range, like 192.168.0.240. Then tap Rescan.
+
+Try CastPad in your browser, no install: castpad.app/demo
+📥 App Store & Google Play — link in bio
+🎬 Full episode on YouTube
+
+Shown with CastPad's demo mode and illustrations — no switcher used. Narration made with AI.
+#ATEM #BlackmagicDesign #livestreaming #videoswitcher #CastPad
