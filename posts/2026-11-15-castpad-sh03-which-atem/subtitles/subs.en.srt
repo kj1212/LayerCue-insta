@@ -1,0 +1,27 @@
+1
+00:00:00,700 --> 00:00:02,833
+Which ATEM do you have?
+
+2
+00:00:03,633 --> 00:00:06,617
+CastPad reshapes itself to fit it.
+
+3
+00:00:07,617 --> 00:00:11,267
+An ATEM Mini: four cameras, and no ON AIR card.
+
+4
+00:00:12,217 --> 00:00:16,150
+A Mini Extreme: eight cameras, four keys, and streaming.
+
+5
+00:00:17,600 --> 00:00:22,550
+A 2 M/E Constellation: twenty inputs, and a tab for each M/E.
+
+6
+00:00:22,900 --> 00:00:26,333
+No dead buttons. Only what your switcher can do.
+
+7
+00:00:27,433 --> 00:00:31,400
+Try it in your browser, at castpad.app/demo.

@@ -1,0 +1,12 @@
+Which ATEM do you have? CastPad reshapes itself to fit it.
+
+CastPad, a remote control app for Blackmagic ATEM switchers on your phone or tablet, asks your switcher what it can do and shows only those controls. An ATEM Mini gets four cameras and no ON AIR card. A Mini Extreme gets eight cameras, four keys and streaming. A 2 M/E Constellation HD gets twenty inputs, and an M/E tab on the program, key and transition cards.
+
+No dead buttons. Only what your switcher can do.
+
+Try CastPad in your browser, no install: castpad.app/demo (the browser demo runs the Mini Extreme; pick any model in the app's Offline / Demo mode)
+📥 App Store & Google Play — link in bio
+🎬 Full episode on YouTube
+
+Recorded in CastPad's demo mode — no switcher used. Narration made with AI.
+#ATEM #BlackmagicDesign #livestreaming #videoswitcher #CastPad
