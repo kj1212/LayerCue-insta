@@ -1,0 +1,12 @@
+Too many buttons? Keep only what your show needs.
+
+In CastPad, the remote control app for Blackmagic ATEM switchers on your phone or tablet, press and hold a source button, then drop it on the grey plus button to hide it. Need it back? Tap plus and pick it. It's a real take: it goes straight to air, and the button returns to its row. To move whole cards, open + Card › Layout edit, drag a card, and tap Layout done.
+
+None of this changes the switcher itself. Your layout is saved per model, on that device.
+
+Try CastPad in your browser, no install: castpad.app/demo
+📥 App Store & Google Play — link in bio
+🎬 Full episode on YouTube
+
+Recorded in CastPad's demo mode — no switcher used. Narration made with AI.
+#ATEM #BlackmagicDesign #livestreaming #videoswitcher #CastPad

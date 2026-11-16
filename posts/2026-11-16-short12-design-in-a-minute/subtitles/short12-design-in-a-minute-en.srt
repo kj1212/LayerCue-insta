@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,841
+Turn a plain title into a designed slide.
+
+2
+00:00:03,500 --> 00:00:06,654
+Search fifteen hundred icons, and drop one in.
+
+3
+00:00:07,450 --> 00:00:09,858
+Shapes hold text, in fourteen cuts.
+
+4
+00:00:11,250 --> 00:00:13,619
+Add a band that fades away behind the name.
+
+5
+00:00:15,050 --> 00:00:18,016
+Then paste one style onto four slides at once.
+
+6
+00:00:18,900 --> 00:00:21,003
+Icon. Shape. Fade. Style.
+
+7
+00:00:21,100 --> 00:00:23,101
+Episode ten walks you through it.

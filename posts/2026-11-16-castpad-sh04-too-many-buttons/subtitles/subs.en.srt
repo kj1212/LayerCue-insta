@@ -1,0 +1,31 @@
+1
+00:00:00,700 --> 00:00:02,717
+Too many buttons?
+
+2
+00:00:03,517 --> 00:00:05,833
+Keep only what your show needs.
+
+3
+00:00:06,283 --> 00:00:09,500
+Press and hold a button, then drop it on plus.
+
+4
+00:00:10,050 --> 00:00:12,733
+Need it back? Tap plus, and pick it.
+
+5
+00:00:12,933 --> 00:00:15,817
+It goes straight to air, and back into its row.
+
+6
+00:00:16,467 --> 00:00:19,100
+Move whole cards in Layout edit.
+
+7
+00:00:19,750 --> 00:00:22,083
+Your Pad, built for your show.
+
+8
+00:00:23,183 --> 00:00:27,150
+Try it in your browser, at castpad.app/demo.
