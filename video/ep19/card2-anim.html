@@ -1,0 +1,122 @@
+<!doctype html>
+<!-- 19편 What's New 기능 카드 2판 — 장면 전환. ?id=s2&dur=4.2&style=a|b · window.render(t). 3840×2160
+     a = 쇼케이스: 왼쪽 글 · 오른쪽에 그 기능의 실제 화면(4K 녹화에서 자른 것) · 뒤에 큰 번호
+     b = 큰 번호: 왼쪽 거대한 그라데이션 번호 · 오른쪽 글
+     둘 다 아래에 다섯 기능 진행 줄. 썸네일(thumb.html #d)과 같은 바탕(빛 · 세로줄 · 질감). 들어올 때 앰버 → 핑크 띠가 쓸고 지나간다. -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  :root { --a1: #FFC94D; --a2: #FF5E8A; --a3: #FF8A5C; }
+  body { margin: 0; background: transparent; }
+  #card { position: relative; width: 3840px; height: 2160px; overflow: hidden; background: transparent; font-family: var(--disp); color: #F2EEE4; }
+  .wipe { position: absolute; inset: 0; background: linear-gradient(90deg, var(--a1), var(--a3) 50%, var(--a2)); }
+  .frame { position: absolute; inset: 0; background: #0B0A0F; overflow: hidden; }
+  .glow { position: absolute; inset: -10%; background:
+      radial-gradient(ellipse 45% 55% at 86% 22%, rgba(255,94,138,.30), transparent 62%),
+      radial-gradient(ellipse 40% 50% at 64% 98%, rgba(255,201,77,.15), transparent 60%),
+      radial-gradient(ellipse 45% 65% at 0% 0%, rgba(94,106,210,.18), transparent 60%); }
+  .cols { position: absolute; inset: 0; background-image: linear-gradient(to right, rgba(242,238,228,.04) 3px, transparent 3px); background-size: calc(100% / 6) 100%; }
+  .noise { position: absolute; inset: 0; opacity: .06; mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='480' height='480'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='2' stitchTiles='stitch'/></filter><rect width='480' height='480' filter='url(%23n)'/></svg>"); }
+  .grad { background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; color: transparent; }
+  .kick { position: absolute; font-family: var(--mono); font-weight: 500; font-size: 42px; letter-spacing: .22em; text-transform: uppercase; color: rgba(242,238,228,.45); white-space: nowrap; }
+  .pill { position: absolute; font-family: var(--mono); font-weight: 500; font-size: 64px; letter-spacing: .12em; padding: 16px 34px 13px; border-radius: 999px; color: #141414;
+          background: linear-gradient(90deg, var(--a1), var(--a2)); box-shadow: 0 16px 60px rgba(255,94,138,.35); white-space: nowrap; }
+  .pill.chg { background: #F2EEE4; box-shadow: 0 16px 60px rgba(242,238,228,.18); }
+  .name { position: absolute; font-weight: 800; letter-spacing: -.045em; line-height: .9; white-space: nowrap; }
+  .sub { position: absolute; font-weight: 500; font-size: 76px; letter-spacing: -.015em; color: rgba(242,238,228,.62); white-space: nowrap; }
+  /* 진행 줄 — 다섯 칸, 지금 것만 그라데이션 */
+  .prog { position: absolute; left: 230px; right: 230px; bottom: 150px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px; }
+  .prog div { font-family: var(--mono); font-weight: 500; font-size: 34px; letter-spacing: .1em; text-transform: uppercase; color: rgba(242,238,228,.32); white-space: nowrap; }
+  .prog div::before { content: ""; display: block; height: 8px; border-radius: 4px; background: rgba(242,238,228,.14); margin-bottom: 22px; }
+  .prog div.done { color: rgba(242,238,228,.5); } .prog div.done::before { background: rgba(242,238,228,.38); }
+  .prog div.on { color: #F2EEE4; } .prog div.on::before { background: linear-gradient(90deg, var(--a1), var(--a2)); box-shadow: 0 0 30px rgba(255,94,138,.6); }
+  /* a — 쇼케이스 */
+  .a .kick { left: 230px; top: 560px; }
+  .a .pill { left: 226px; top: 660px; }
+  .a .name { left: 214px; top: 880px; font-size: 270px; }
+  .a .sub { left: 230px; top: 1230px; }
+  .a .num { position: absolute; right: 120px; top: 120px; font-weight: 900; font-size: 1500px; line-height: .8; letter-spacing: -.06em; color: transparent;
+            -webkit-text-stroke: 5px rgba(255,138,92,.28); }
+  .a .show { position: absolute; left: 2050px; top: 470px; width: 1560px; height: 940px; border-radius: 48px; background: rgba(20,16,28,.88);
+             box-shadow: 0 80px 160px rgba(0,0,0,.6), 0 0 0 3px rgba(242,238,228,.12), 0 0 260px rgba(255,94,138,.16); overflow: hidden; }
+  .a .show::after { content: ""; position: absolute; inset: 0; border-radius: 48px; box-shadow: inset 0 3px 0 rgba(255,255,255,.08); pointer-events: none; }
+  .a .show .lbl { position: absolute; left: 60px; top: 52px; font-family: var(--mono); font-size: 34px; letter-spacing: .18em; color: rgba(242,238,228,.4); text-transform: uppercase; }
+  .a .show .in { position: absolute; left: 0; right: 0; top: 120px; bottom: 0; display: flex; align-items: center; justify-content: center; }
+  .a .show img { display: block; border-radius: 18px; }
+  /* b — 큰 번호 */
+  .b .num { position: absolute; left: 190px; top: 400px; font-weight: 900; font-stretch: 100%; font-size: 1180px; line-height: .8; letter-spacing: -.06em; padding-right: 20px; }
+  .b .num.chg { top: 700px; padding: 0; } .b .num.chg img { display: block; width: 1500px; border-radius: 16px; box-shadow: 0 40px 100px rgba(0,0,0,.55), 0 0 160px rgba(255,138,92,.18); }
+  .b .txt { position: absolute; top: 0; left: var(--x, 1900px); }
+  .b .kick { left: 4px; top: 520px; }
+  .b .pill { left: 0; top: 620px; }
+  .b .name { left: -14px; top: 850px; font-size: 230px; }
+  .b .sub { left: 4px; top: 1250px; }
+  .b .rule { position: absolute; left: 4px; top: 1170px; width: 360px; height: 12px; border-radius: 6px; background: linear-gradient(90deg, var(--a1), var(--a2)); transform-origin: left center; }
+</style>
+<div id="card">
+  <div class="frame">
+    <div class="glow"></div><div class="cols"></div><div class="noise"></div>
+    <div id="body"></div>
+    <div class="prog"><div data-id="s1">01 Update output</div><div data-id="s2">02 Gradient text</div><div data-id="s3">03 Round &amp; slant</div><div data-id="s5">04 Auto-dismiss bar</div><div data-id="s6">·· Layer order</div></div>
+  </div>
+  <div class="wipe"></div>
+</div>
+<script>
+  const C = {
+    s1: { tag: "NEW 01", num: "01", name: "Update <span class='grad'>output</span>", sub: "Edit what's on air. Send it when you're ready.", lbl: "Top left of the editor",
+          vis: `<img src="media/cc-s1.png" style="width:1300px;box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 120px rgba(94,106,210,.55)">` },
+    s2: { tag: "NEW 02", num: "02", name: "Gradient <span class='grad'>text</span>", sub: "Linear or radial, across the letters.", lbl: "Text color · Linear",
+          vis: `<img src="media/cc-s2.png" style="width:1380px;box-shadow:0 30px 80px rgba(0,0,0,.5)">` },
+    s3: { tag: "NEW 03", num: "03", name: "Round <span class='grad'>&amp;</span> slant", sub: "Corner and slant handles, one corner at a time.", lbl: "Shapes and text boxes", vis: "SHAPE" },
+    s5: { tag: "NEW 04", num: "04", name: "Auto-dismiss <span class='grad'>bar</span>", sub: "See the time left, right on the card.", lbl: "Overlay · Auto-dismiss 8 s",
+          vis: `<img src="media/cc-s5.png" style="width:1150px;box-shadow:0 30px 80px rgba(0,0,0,.5)">` },
+    s6: { tag: "CHANGED", num: "··", name: "Layer <span class='grad'>order</span>", sub: "1 2 3 4 5 F B, like the layer column.", lbl: "Under the preview",
+          vis: `<img src="media/cc-s6.png" style="width:1400px;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.5)">` },
+  };
+  const SHAPE = `<svg width="1320" height="810" viewBox="40 0 360 220"><defs><linearGradient id="sh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6A74E6"/><stop offset="1" stop-color="#4F57C8"/></linearGradient></defs>
+      <path d="M 370 62 L 330.4 161 Q 310 212 256 212 L 70 212 L 109.6 113 Q 130 62 184 62 Z" fill="url(#sh)"/>
+      <rect x="70" y="62" width="300" height="150" fill="none" stroke="#8C90FF" stroke-width="1.2"/>
+      <g fill="#fff" stroke="#3A3D8C" stroke-width=".8"><rect x="66" y="58" width="8" height="8"/><rect x="216" y="58" width="8" height="8"/><rect x="366" y="58" width="8" height="8"/><rect x="66" y="133" width="8" height="8"/><rect x="366" y="133" width="8" height="8"/><rect x="66" y="208" width="8" height="8"/><rect x="216" y="208" width="8" height="8"/><rect x="366" y="208" width="8" height="8"/></g>
+      <g fill="#FFC83D"><circle cx="136" cy="62" r="4.5"/><circle cx="354" cy="62" r="4.5"/><circle cx="300" cy="212" r="4.5"/><circle cx="86" cy="212" r="4.5"/></g>
+      <g fill="none" stroke="#FFC83D" stroke-width="2" stroke-linecap="round"><path d="M 154 57.5 h -5 a 4.5 4.5 0 0 0 0 9 h 5"/><path d="M 160 57.5 h 5 a 4.5 4.5 0 0 1 0 9 h -5"/></g>
+      <polygon points="246,206 262,206 256,218 240,218" fill="#36C5F0"/><polygon points="364,150 376,156 376,172 364,166" fill="#36C5F0"/>
+      <circle cx="220" cy="36" r="7" fill="none" stroke="#8C90FF" stroke-width="1.8"/><line x1="220" y1="43" x2="220" y2="58" stroke="#8C90FF" stroke-width="1.2"/></svg>`;
+  const q = new URLSearchParams(location.search), id = q.get("id") || "s2", st = q.get("style") || "a", d = C[id];
+  window.DUR = +(q.get("dur") || 4);
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const chg = d.tag === "CHANGED";
+  $('#body').className = st;
+  $('#body').innerHTML = st === "a"
+    ? `<div class="kick">What's new · LayerCue 0.9.14</div><div class="pill ${chg ? 'chg' : ''}">${d.tag}</div>
+       <div class="name">${d.name}</div><div class="sub">${d.sub}</div>
+       <div class="show"><div class="lbl">${d.lbl}</div><div class="in">${d.vis === "SHAPE" ? SHAPE : d.vis}</div></div>`
+    : `<div class="num ${chg ? 'chg' : 'grad'}">${chg ? '<img src="media/cc-s6.png">' : d.num}</div><div class="txt"><div class="kick">What's new · LayerCue 0.9.14</div><div class="pill ${chg ? 'chg' : ''}">${d.tag}</div>
+       <div class="name">${d.name}</div><div class="rule"></div><div class="sub">${d.sub}</div></div>`;
+  const order = ["s1", "s2", "s3", "s5", "s6"], me = order.indexOf(id);
+  $$('.prog div').forEach((e, i) => { e.classList.toggle('on', i === me); e.classList.toggle('done', i < me); });
+  const clamp = x => Math.max(0, Math.min(1, x)), cue = x => 1 - Math.pow(1 - clamp(x), 4.2);
+  const inout = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+  const at = (t, t0, dd) => cue((t - t0) / dd);
+  const up = (el, p, dy = 40) => { if (!el) return; el.style.opacity = p; el.style.transform = `translateY(${(1 - p) * dy}px)`; };
+  window.render = t => {
+    const a = inout(t / 0.42), b = inout((t - 0.2) / 0.5);
+    $('.wipe').style.clipPath = `inset(0 ${(1 - a) * 100}% 0 ${b * 100}%)`;
+    $('.frame').style.clipPath = `inset(0 ${(1 - b) * 100}% 0 0)`;
+    const T0 = 0.42;
+    $('.glow').style.transform = `translate(${-30 * t}px, ${12 * t}px)`;
+    up($('.kick'), at(t, T0 + 0.05, 0.6), 30);
+    up($('.pill'), at(t, T0 + 0.12, 0.6), 50);
+    const n = $('.name'), pn = at(t, T0 + 0.2, 0.8);
+    n.style.clipPath = `inset(0 0 ${(1 - pn) * 100}% 0)`; n.style.transform = `translateY(${(1 - pn) * 120}px)`;
+    up($('.sub'), at(t, T0 + 0.55, 0.7), 40);
+    const r = $('.rule'); if (r) r.style.transform = `scaleX(${at(t, T0 + 0.5, 0.7)})`;
+    const num = $('.num'), pm = at(t, T0, 1.4);
+    if (num) { num.style.opacity = pm; num.style.transform = st === "a" ? `translateX(${(1 - pm) * 220 - 40 * t}px)` : `translateY(${(1 - pm) * 160}px) scale(${0.96 + 0.04 * pm})`; num.style.transformOrigin = "left bottom"; }
+    const sh = $('.show'); if (sh) { const ps = at(t, T0 + 0.3, 0.9); sh.style.opacity = ps; sh.style.transform = `translateY(${(1 - ps) * 140}px) scale(${0.94 + 0.06 * ps})`; }
+    $$('.prog div').forEach((e, i) => up(e, at(t, T0 + 0.6 + i * 0.05, 0.6), 24));
+  };
+  window.__ready = false;
+  Promise.all([document.fonts.ready.then(() => {
+    const an = document.querySelector('.a .name'); if (an) { let fs = 270; while (an.getBoundingClientRect().right > 1940 && fs > 150) { fs -= 6; an.style.fontSize = fs + 'px'; } } const n = document.querySelector('.b .num'); if (n) document.querySelector('.b .txt').style.setProperty('--x', Math.round(n.getBoundingClientRect().right + 110) + 'px'); }), ...[...document.images].map(i => i.decode().catch(() => 0))]).then(() => { window.render(0); window.__ready = true; });
+</script>

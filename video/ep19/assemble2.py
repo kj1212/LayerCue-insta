@@ -257,7 +257,7 @@ def timeline():
             s, X0, Y0 = STAGE if space == "stage" else PROJ if space == "proj" else state_at(H, t)
             R = (X0 + x * s, Y0 + y * s, w * s, h * s)
         if kind == "hl":
-            hls.append({"t0": t, "t1": t1, "parent": space, "rect": [x, y, w, h], "color": e.get("color", "indigo"), "dim": bool(e.get("dim")), "s": s, "fill": e.get("fill", 0)})
+            hls.append({"t0": t, "t1": t1, "parent": space, "rect": [x, y, w, h], "color": e.get("color", "pink"), "dim": bool(e.get("dim")), "s": s, "fill": e.get("fill", 0)})
         elif kind == "lbl":
             lw, lh = sizes[f]; side = e.get("lblSide", "right"); P = 70
             pad = 8 * 1.0
@@ -322,7 +322,7 @@ def timeline():
     for k, seg in enumerate([s for s in chapters if s.get("card")]):
         c0, c1 = seg["card"]; d = HERE / "frames" / f"card-{seg['id']}"
         if not os.environ.get("NO_CARDS"):
-            subprocess.run(["node", str(HERE.parent / "render_anim.mjs"), f"{HERE / 'card-anim.html'}?id={seg['id']}&dur={round(c1 - c0 + 0.1, 2)}", "#card", "30", str(d)], check=True)
+            subprocess.run(["node", str(HERE.parent / "render_anim.mjs"), f"{HERE / 'card2-anim.html'}?id={seg['id']}&dur={round(c1 - c0 + 0.1, 2)}&style=a", "#card", "30", str(d)], check=True)
         scenes.append({"dir": str(d), "t0": c0, "t1": c1})
     # 3편: 프로젝터 — 나란히 보기(split) 동안만. 실제 송출을 찍은 proj/<이름>.png 를 proj 이벤트 시각에 바꾼다(fade 초 동안 겹쳐 들어온다)
     shots = []

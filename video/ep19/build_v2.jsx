@@ -6,7 +6,7 @@
 
 var P, comp, card, stage;
 var VOID = [11 / 255, 11 / 255, 13 / 255];
-var COL = { panel: [35 / 255, 35 / 255, 36 / 255], indigo: [139 / 255, 149 / 255, 245 / 255], amber: [217 / 255, 138 / 255, 43 / 255], green: [63 / 255, 178 / 255, 127 / 255],
+var COL = { pink: [255 / 255, 94 / 255, 138 / 255], panel: [35 / 255, 35 / 255, 36 / 255], indigo: [139 / 255, 149 / 255, 245 / 255], amber: [217 / 255, 138 / 255, 43 / 255], green: [63 / 255, 178 / 255, 127 / 255],
             hot: [255 / 255, 74 / 255, 26 / 255], white: [242 / 255, 238 / 255, 228 / 255] };
 $.evalFile(ROOT + "/ep19/timeline2.js");
 app.purge(PurgeTarget.ALL_CACHES);     // 프레임을 다시 그린 뒤라면 AE 가 예전(덜 그려진) 묶음을 기억하고 있을 수 있다
@@ -160,7 +160,7 @@ if (TL.proj) {
 for (i = 0; i < TL.hls.length; i++) {
     var h = TL.hls[i], par = (h.parent === "stage") ? stage : (h.parent === "proj") ? projL : card, r = h.rect, s = h.s, col = COL[h.color] || COL.indigo;
     var W = 3840, Hh = (h.parent === "stage" || h.parent === "proj") ? 2160 : 2100;
-    var pad = h.fill ? 0 : 10 / s, rad = h.fill ? 6 / s : 14 / s;     // 가리개는 여백 없이 — 위 메뉴 이름을 덮지 않게
+    var pad = h.fill ? 0 : 12 / s, rad = h.fill ? 6 / s : 24 / s;     // 19편: 카드 A 처럼 더 둥글게     // 가리개는 여백 없이 — 위 메뉴 이름을 덮지 않게
     if (h.dim) {
         var D = comp.layers.addSolid([0, 0, 0], "dim", W, Hh, 1, TL.duration); D.inPoint = h.t0; D.outPoint = h.t1;
         adopt(D, par, [W / 2, Hh / 2]);
@@ -197,7 +197,7 @@ for (i = 0; i < TL.clicks.length; i++) {
     var el = kv.addProperty("ADBE Vector Shape - Ellipse"), rr = 150 / (ck.s || 0.86);
     keys(el.property("ADBE Vector Ellipse Size"), [[ck.t, [rr * 0.15, rr * 0.15]], [ck.t + 0.45, [rr, rr]]], 30);
     var ks = kv.addProperty("ADBE Vector Graphic - Stroke");
-    ks.property("ADBE Vector Stroke Color").setValue(COL.indigo); ks.property("ADBE Vector Stroke Width").setValue(7 / (ck.s || 0.86));
+    ks.property("ADBE Vector Stroke Color").setValue(COL.pink);     // 19편: 앰버 → 핑크 결 ks.property("ADBE Vector Stroke Width").setValue(7 / (ck.s || 0.86));
     keys(T(K).property("ADBE Opacity"), [[ck.t, 95], [ck.t + 0.45, 0]], 30);
 }
 
@@ -227,6 +227,10 @@ for (i = 0; i < TL.lbls.length; i++) {
     keys(T(L).property("ADBE Position"), [[lb.t0, [lb.x + dx, lb.y + dy]], [lb.t0 + 0.22, [lb.x, lb.y]]], 70);
     fade(L, lb.t0, lb.t1, 0.18, 0.2);
 }
+
+// ── 타이틀 — 19편: 카드 장면 아래에 둔다(첫 카드의 띠가 타이틀 위로 쓸고 지나가게. 위에 두면 사라지는 타이틀과 카드가 겹쳐 흐려 보였다) ──
+var ti = holdLast(TL.title.dir, 0, TL.title.t1);
+fade(ti[1], ti[1].inPoint, TL.title.t1, 0, 0.6);
 
 // ── 19편: 기능 카드 장면(장면 전환) — 창 · 테 · 이름표 위, 자막 아래. 들어오는 쓸기는 프레임 안에 있고, 나갈 때 0.5 초 걷힌다 ──
 for (i = 0; i < (TL.scenes || []).length; i++) {
@@ -264,8 +268,6 @@ for (i = 0; i < TL.tags.length; i++) {
 }
 
 // ── 타이틀 · 엔드 카드 (맨 위) ──
-var ti = holdLast(TL.title.dir, 0, TL.title.t1);
-fade(ti[1], ti[1].inPoint, TL.title.t1, 0, 0.6);
 var en = holdLast(TL.end.dir, TL.end.t0, TL.duration);
 fade(en[0], TL.end.t0, en[2], 0.5, 0);
 
