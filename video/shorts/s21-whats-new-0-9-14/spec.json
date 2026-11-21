@@ -3,9 +3,10 @@
  "slug": "whats-new-0-9-14",
  "title": "What's New in 0.9.14",
  "hook": [
-  "LAYERCUE 0.9.14.",
-  "WHAT'S NEW?"
+  "LayerCue 0.9.14",
+  "What's new?"
  ],
+ "theme": "whatsnew",
  "hook_vo": "LayerCue zero point nine point fourteen is out. Here's what's new.",
  "tags": "UPDATE.,PAINT.,SHAPE.",
  "hook_sub": "LayerCue 0.9.14 is out. Here's what's new.",
@@ -14,27 +15,27 @@
  "beats": [
   {
    "b": 0,
-   "w": "HOLD",
+   "w": "Update output",
    "s": "edit what's <b>on air</b>",
    "vo": "Edit the slide on air. The audience keeps the old one until you update."
   },
   {
    "b": 5,
-   "w": "GRADIENT",
+   "w": "Gradient text",
    "s": "on the <b>letters</b>",
    "vo": "Paint text with a gradient, linear or radial."
   },
   {
    "b": 10,
    "lag": -3.0,
-   "w": "HANDLES",
-   "s": "round and <b>slant</b>",
+   "w": "Round & slant",
+   "s": "one corner at a <b>time</b>",
    "vo": "Round the corners and slant the box with new handles."
   },
   {
    "b": 11,
-   "w": "TIME LEFT",
-   "s": "on the <b>card</b>",
+   "w": "Auto-dismiss bar",
+   "s": "time left on the <b>card</b>",
    "vo": "And see an overlay's time left right on its card."
   }
  ],
@@ -45,7 +46,7 @@
   "Paint text with a gradient, linear or radial.",
   "Round the corners and slant the box with new handles.",
   "And see an overlay's time left right on its card.",
-  "Hold. Gradient. Handles. Time left.",
+  "Update output. Gradient text. Round & slant. Auto-dismiss bar.",
   "The What's New video walks you through it."
  ],
  "vo_at": [
@@ -55,7 +56,7 @@
   13.64,
   17.64,
   21.51,
-  24.15
+  26.39
  ],
- "dur": 30.82
+ "dur": 33.06
 }

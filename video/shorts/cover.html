@@ -13,15 +13,24 @@ body{margin:0;background:#0B0B0D}
 .a{color:var(--cream);margin-top:30px}.b{color:var(--hot);margin-top:8px}
 .ep{font:500 32px var(--mono);letter-spacing:.14em;color:var(--fg2);margin-top:40px}
 .ep b{color:var(--cream);font-weight:500}
+.whatsnew #c{background:url(themes/whatsnew-bg.png) center/cover,#0B0A0F}
+.whatsnew .fade{background:linear-gradient(180deg,rgba(11,10,15,.2) 0%,rgba(11,10,15,.9) 33%,rgba(11,10,15,.95) 50%,rgba(11,10,15,.9) 67%,rgba(11,10,15,.2) 100%)}
+.whatsnew .top,.whatsnew .bot{border-radius:28px}.whatsnew .bot{box-shadow:0 0 0 3px #FF5E8A}
+.whatsnew .k{display:none}
+.whatsnew .a,.whatsnew .b{font-weight:800;letter-spacing:-.04em}
+.whatsnew .b{background:linear-gradient(90deg,#FFC94D,#FF5E8A);-webkit-background-clip:text;color:transparent;padding-bottom:12px}
+.whatsnew .ep{display:inline-block;padding:14px 30px 12px;border-radius:999px;border:2px solid rgba(242,238,228,.3)}
 </style></head><body><div id="c">
 <div class="top"><img id="ti"></div><div class="bot"><img id="bi"></div><div class="fade"></div>
 <div class="mid"><div class="k">[ LAYERCUE ]</div><div><span class="a" id="a"></span></div><div><span class="b" id="b"></span></div>
 <div class="ep">LAYERCUE FROM ZERO · <b id="ep"></b></div></div></div>
 <script>
 const Q = new URLSearchParams(location.search);
-a.textContent = Q.get('a'); b.textContent = Q.get('b'); ep.textContent = 'EP ' + Q.get('ep');
+const [EP, TH] = (Q.get('ep') || '').split('|');
+a.textContent = Q.get('a'); b.textContent = Q.get('b'); ep.textContent = 'EP ' + EP;
+if (TH === 'whatsnew') document.body.classList.add('whatsnew');     // 21(What's New): 본편 카드 A 결
 ti.src = Q.get('top'); bi.src = Q.get('bot');
-Promise.all(['900 150px Archivo', '500 34px "DM Mono"'].map(f => document.fonts.load(f))).then(() => Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => i.onload = i.onerror = r)))).then(() => {
+Promise.all(['800 150px Archivo', '900 150px Archivo', '500 34px "DM Mono"'].map(f => document.fonts.load(f))).then(() => Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => i.onload = i.onerror = r)))).then(() => {
   for (const el of [a, b]) { let fs = 150; while (el.offsetWidth > 1000 && fs > 60) { fs -= 2; el.style.fontSize = fs + 'px'; } }
   window.__ready = true;
 });

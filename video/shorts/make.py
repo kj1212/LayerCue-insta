@@ -121,16 +121,19 @@ def make(sp, idx):
     cfg = dict(id=sid, ep=ep, DUR=DUR, H=round(Hk, 2), Rt=Rt, END0=END0, beats=bl,
                vo=[dict(file=str(D / "audio" / f"{i:02d}.wav"), t=vo_at[i]) for i in range(len(lines))],
                subs=[[0.35, round(Hk - 0.1, 2)]] + [[round(S[i] + 0.1, 2), round(S[i] + Dd[i] - 0.1, 2)] for i in range(4)] + [[vo_at[6] - 0.1, END0]],
-               endframes=str(V / "frames" / f"end-{sid}" / "00000.png"), music=str(D / "audio" / "music.wav"), root=str(D))
+               endframes=str(V / "frames" / f"end-{sid}" / "00000.png"), music=str(D / "audio" / "music.wav"), root=str(D),
+               theme=sp.get("theme", ""), bg=str(H / "themes" / f"{sp['theme']}-bg.png") if sp.get("theme") else "")
     (D / "cfg.js").write_text("var CFG = " + json.dumps(cfg, indent=1) + ";\n")
     # ── 글판
     hook = f'<div class="p hook" id="hook"><div class="k">[ LAYERCUE ]</div><div class="a">{sp["hook"][0]}</div><div class="b">{sp["hook"][1]}</div></div>'
-    ws = "".join(f'<div class="p word" id="w{i+1}"><div class="w">{b["w"]}</div><div class="s">{b["s"]}</div></div>' for i, b in enumerate(sp["beats"]))
-    rc = '<div class="p recap" id="recap">' + "".join(f'<div class="{"h" if i % 2 else ""}">{w}.</div>' for i, w in enumerate(words)) + "</div>"
+    th = sp.get("theme", "")     # 21(What's New): 본편 카드 A 결 — 둥근 알약 · 앰버 → 핑크 · 문장 대소문자
+    pill = (lambda i: f'<div class="pl">NEW {i + 1:02d}</div>') if th == "whatsnew" else (lambda i: "")
+    ws = "".join(f'<div class="p word" id="w{i+1}">{pill(i)}<div class="w">{html.escape(b["w"])}</div><div class="s">{b["s"]}</div></div>' for i, b in enumerate(sp["beats"]))
+    rc = '<div class="p recap" id="recap">' + "".join(f'<div class="{"h" if i % 2 else ""}">{html.escape(w)}.</div>' for i, w in enumerate(words)) + "</div>"
     tag = f'<div class="p tag" id="tag">{sp.get("tag_html") or f"FULL TUTORIAL · <b>LAYERCUE FROM ZERO · EP {ep:02d}</b>"}</div>'
     subs = [sp.get("hook_sub") or sp["hook_vo"]] + [b["vo"] for b in sp["beats"]] + [ep_vo]     # hook_sub: 읽는 말과 화면 글이 다를 때(21: 0.9.14)
     sb = "".join(f'<div class="p sub" id="s{i+1}">{brk(t)}</div>' for i, t in enumerate(subs))
-    (D / "parts.html").write_text((H / "parts.tmpl.html").read_text().replace("%BODY%", hook + ws + rc + tag + sb))
+    (D / "parts.html").write_text((H / "parts.tmpl.html").read_text().replace("%BODY%", hook + ws + rc + tag + sb).replace("<body>", f'<body class="{th}">'))
     # ── 음악
     bars = int(np.ceil(DUR / 2.0)) + 1; SR = 48000
     a = song(120, [(bars, MUSIC[idx % len(MUSIC)])]); n = int(DUR * SR); a = a[:n]

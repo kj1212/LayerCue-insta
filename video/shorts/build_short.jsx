@@ -3,6 +3,8 @@
 $.evalFile(new File(ROOT + "/shorts/" + OUT_NAME + "/cfg.js"));
 var P, comp, C = CFG, R = C.root;
 var VOID = [11 / 255, 11 / 255, 13 / 255], HOT = [1, 74 / 255, 26 / 255], CREAM = [242 / 255, 238 / 255, 228 / 255];
+var WN = C.theme === "whatsnew", RR = WN ? 26 : 10;     // 21(What's New): 본편 카드 A 결 — 핑크 테 · 더 둥근 모서리 · 썸네일 바탕
+if (WN) HOT = [1, 94 / 255, 138 / 255];
 var DUR = C.DUR, K = 1000 / 3840, MY = 620, ZY = 1300, HK = C.H, RT = C.Rt, END0 = C.END0;
 function imp(path, seq) { var io = new ImportOptions(new File(path)); if (seq) { io.sequence = true; io.forceAlphabetical = true; }
     var it = P.importFile(io); if (seq) it.mainSource.conformFrameRate = 30; return it; }
@@ -18,7 +20,7 @@ function fadeOut(L, t, d) { var o = T(L).property("ADBE Opacity"); o.setValueAtT
 function rectLayer(c, name, w, h, color, stroke, tin, tout) {
     var L = c.layers.addShape(); L.name = name; L.inPoint = tin; L.outPoint = tout;
     var g = L.property("ADBE Root Vectors Group").addProperty("ADBE Vector Group").property("ADBE Vectors Group");
-    var r = g.addProperty("ADBE Vector Shape - Rect"); r.property("ADBE Vector Rect Size").setValue([w, h]); r.property("ADBE Vector Rect Roundness").setValue(10);
+    var r = g.addProperty("ADBE Vector Shape - Rect"); r.property("ADBE Vector Rect Size").setValue([w, h]); r.property("ADBE Vector Rect Roundness").setValue(RR);
     var s = g.addProperty("ADBE Vector Graphic - Stroke"); s.property("ADBE Vector Stroke Color").setValue(color); s.property("ADBE Vector Stroke Width").setValue(stroke);
     r = L.property("ADBE Root Vectors Group").property(1).property("ADBE Vectors Group").property("ADBE Vector Shape - Rect");
     return [L, r];
@@ -55,6 +57,7 @@ for (var f = 0; f < 4; f++) {
 }
 
 comp = P.items.addComp(C.id, 1080, 1920, 1, DUR, 30); comp.bgColor = VOID;
+if (C.bg) { var BG = comp.layers.add(imp(C.bg)); BG.startTime = 0; BG.outPoint = DUR; T(BG).property("ADBE Position").setValue([540, 960]); BG.name = "bg"; }
 
 // 확대 칸 — 박자 경계에서 컷(창 내용도 거기서 바뀐다), 박자 안에서는 천천히 4 % 다가간다
 var zc = P.items.addComp("zoom", 1000, 700, 1, DUR, 30);

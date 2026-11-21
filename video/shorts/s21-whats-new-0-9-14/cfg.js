@@ -1,10 +1,10 @@
 var CFG = {
  "id": "s21-whats-new-0-9-14",
  "ep": 19,
- "DUR": 30.82,
+ "DUR": 33.06,
  "H": 4.48,
  "Rt": 21.31,
- "END0": 26.42,
+ "END0": 28.66,
  "beats": [
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep19/rec/v2/s1.mp4",
@@ -118,7 +118,7 @@ var CFG = {
   },
   {
    "file": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s21-whats-new-0-9-14/audio/06.wav",
-   "t": 24.15
+   "t": 26.39
   }
  ],
  "subs": [
@@ -143,11 +143,13 @@ var CFG = {
    21.21
   ],
   [
-   24.049999999999997,
-   26.42
+   26.29,
+   28.66
   ]
  ],
  "endframes": "/Users/kj1212/projects/LayerCue-insta/video/frames/end-s21-whats-new-0-9-14/00000.png",
  "music": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s21-whats-new-0-9-14/audio/music.wav",
- "root": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s21-whats-new-0-9-14"
+ "root": "/Users/kj1212/projects/LayerCue-insta/video/shorts/s21-whats-new-0-9-14",
+ "theme": "whatsnew",
+ "bg": "/Users/kj1212/projects/LayerCue-insta/video/shorts/themes/whatsnew-bg.png"
 };

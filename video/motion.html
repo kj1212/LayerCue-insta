@@ -52,6 +52,9 @@ const DUR = Number(Q.get('dur')) || { open: 8.6, end: 4.4, hook: 2.6 }[P];
 const TAGS = (Q.get('tags') || 'ASK.,CUE.,LIVE.').split(',');
 // ?beta=0 → 「베타 무료」 줄을 빼고(출시 뒤에도 남는 영상용) 「MAC & WINDOWS」 만. 버전 숫자는 늘 바뀌어서 넣지 않는다(사용자, 2026-11-02)
 const BETA = Q.get('beta') !== '0';
+// ?theme=whatsnew → 21(What's New) 숏츠: 핑크 강조 · 썸네일 바탕(빛 · 세로줄 · 질감)
+if (Q.get('theme') === 'whatsnew') { document.documentElement.style.setProperty('--hot', '#FF5E8A'); document.documentElement.style.setProperty('--void', 'transparent');
+  document.getElementById('stage').style.background = "url(shorts/themes/whatsnew-bg.png) center / cover, #0B0A0F"; }
 const S = document.getElementById('stage');
 const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
 const lin = (t, a, b) => clamp((t - a) / (b - a));

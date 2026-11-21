@@ -6,7 +6,7 @@ H = pathlib.Path(__file__).resolve().parent; V = H.parent; args = []
 items = [("short03", "YOUR WHOLE SHOW.", "ONE WINDOW.", "01", V / "short03/out/short03-pick-click-watch-adjust.mp4", 10.5, V / "short03/out/short03-pick-click-watch-adjust-cover.jpg")]
 for d in sorted(p for p in H.glob("s[0-9]*") if p.is_dir()):
     sp = json.load(open(d / "spec.json")); cfg = json.loads((d / "cfg.js").read_text()[10:].rstrip().rstrip(";"))
-    items.append((sp["id"], sp["hook"][0], sp["hook"][1], f"{int(sp['ep']):02d}", d / "out" / f"{sp['id']}.mp4", cfg["beats"][1]["t"] + 1.6, d / "out" / f"{sp['id']}-cover.jpg"))
+    items.append((sp["id"], sp["hook"][0], sp["hook"][1], f"{int(sp['ep']):02d}" + (f"|{sp['theme']}" if sp.get("theme") else ""), d / "out" / f"{sp['id']}.mp4", cfg["beats"][1]["t"] + 1.6, d / "out" / f"{sp['id']}-cover.jpg"))
 fr = H / "cover-src"; fr.mkdir(exist_ok=True)
 for sid, a, b, ep, mp4, t, out in items:
     top, bot = fr / f"{sid}-top.png", fr / f"{sid}-bot.png"

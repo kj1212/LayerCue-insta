@@ -15,12 +15,23 @@ body{margin:0;background:transparent;font-family:var(--disp)}
 .recap div{font:900 132px/1.02 var(--disp);color:var(--cream);white-space:nowrap} .recap .h{color:var(--hot)}
 .tag{width:1000px;text-align:center;font:500 28px var(--mono);letter-spacing:.12em;color:var(--fg2);white-space:nowrap}
 .tag b{color:var(--cream);font-weight:500}
-</style></head><body>
-<div class="p hook" id="hook"><div class="k">[ LAYERCUE ]</div><div class="a">LAYERCUE 0.9.14.</div><div class="b">WHAT'S NEW?</div></div><div class="p word" id="w1"><div class="w">HOLD</div><div class="s">edit what's <b>on air</b></div></div><div class="p word" id="w2"><div class="w">GRADIENT</div><div class="s">on the <b>letters</b></div></div><div class="p word" id="w3"><div class="w">HANDLES</div><div class="s">round and <b>slant</b></div></div><div class="p word" id="w4"><div class="w">TIME LEFT</div><div class="s">on the <b>card</b></div></div><div class="p recap" id="recap"><div class="">HOLD.</div><div class="h">GRADIENT.</div><div class="">HANDLES.</div><div class="h">TIME LEFT.</div></div><div class="p tag" id="tag">WHAT'S NEW · <b>LAYERCUE 0.9.14</b></div><div class="p sub" id="s1">LayerCue 0.9.14 is out.<br>Here&#x27;s what&#x27;s new.</div><div class="p sub" id="s2">Edit the slide on air. The audience keeps the old one until you update.</div><div class="p sub" id="s3">Paint text with a gradient,<br>linear or radial.</div><div class="p sub" id="s4">Round the corners and slant<br>the box with new handles.</div><div class="p sub" id="s5">And see an overlay&#x27;s time<br>left right on its card.</div><div class="p sub" id="s6">The What&#x27;s New video walks you<br>through it.</div>
+/* 21(What's New) — 본편 카드 A · 썸네일과 같은 결: 둥근 알약 · 앰버 → 핑크 그라데이션 · 문장 대소문자(Archivo 800, 좁은 자간) */
+.whatsnew .hook .k{display:none}
+.whatsnew .hook .a{font-weight:800;letter-spacing:-.04em;color:var(--cream)}
+.whatsnew .hook .b,.whatsnew .recap .h,.whatsnew .word .s b{background:linear-gradient(90deg,#FFC94D,#FF5E8A);-webkit-background-clip:text;color:transparent}
+.whatsnew .hook .b{font-weight:800;letter-spacing:-.04em;padding-bottom:10px}
+.whatsnew .word .pl{display:inline-block;font:500 34px var(--mono);letter-spacing:.12em;color:#141414;background:linear-gradient(90deg,#FFC94D,#FF5E8A);padding:9px 24px 7px;border-radius:999px;margin-bottom:18px;box-shadow:0 8px 30px rgba(255,94,138,.4)}
+.whatsnew .word{text-transform:none}.whatsnew .word .w{text-transform:none;font-weight:800;font-size:150px;letter-spacing:-.045em;line-height:1.02}
+.whatsnew .word .s{letter-spacing:.08em;text-transform:uppercase}
+.whatsnew .recap div{font-weight:800;letter-spacing:-.04em;font-size:120px}
+.whatsnew .tag{display:inline-block;width:auto;padding:14px 30px 12px;border-radius:999px;border:2px solid rgba(242,238,228,.3)}
+.whatsnew .tag b{background:linear-gradient(90deg,#FFC94D,#FF5E8A);-webkit-background-clip:text;color:transparent}
+</style></head><body class="whatsnew">
+<div class="p hook" id="hook"><div class="k">[ LAYERCUE ]</div><div class="a">LayerCue 0.9.14</div><div class="b">What's new?</div></div><div class="p word" id="w1"><div class="pl">NEW 01</div><div class="w">Update output</div><div class="s">edit what's <b>on air</b></div></div><div class="p word" id="w2"><div class="pl">NEW 02</div><div class="w">Gradient text</div><div class="s">on the <b>letters</b></div></div><div class="p word" id="w3"><div class="pl">NEW 03</div><div class="w">Round &amp; slant</div><div class="s">one corner at a <b>time</b></div></div><div class="p word" id="w4"><div class="pl">NEW 04</div><div class="w">Auto-dismiss bar</div><div class="s">time left on the <b>card</b></div></div><div class="p recap" id="recap"><div class="">Update output.</div><div class="h">Gradient text.</div><div class="">Round &amp; slant.</div><div class="h">Auto-dismiss bar.</div></div><div class="p tag" id="tag">WHAT'S NEW · <b>LAYERCUE 0.9.14</b></div><div class="p sub" id="s1">LayerCue 0.9.14 is out.<br>Here&#x27;s what&#x27;s new.</div><div class="p sub" id="s2">Edit the slide on air. The audience keeps the old one until you update.</div><div class="p sub" id="s3">Paint text with a gradient,<br>linear or radial.</div><div class="p sub" id="s4">Round the corners and slant<br>the box with new handles.</div><div class="p sub" id="s5">And see an overlay&#x27;s time<br>left right on its card.</div><div class="p sub" id="s6">The What&#x27;s New video walks you<br>through it.</div>
 <script>
 // 넘치는 줄은 1000 px 안에 들어가게 글자를 줄인다
 // 숨긴 판은 글꼴을 불러오지 않는다 — 재기 전에 직접 불러 둔다(안 그러면 대체 글꼴 폭으로 재서 잘렸다)
-Promise.all(['900 108px Archivo', '900 170px Archivo', '500 40px "DM Mono"', '800 54px Archivo'].map(f => document.fonts.load(f))).then(() => document.fonts.ready).then(() => {
+Promise.all(['900 108px Archivo', '900 170px Archivo', '800 150px Archivo', '500 40px "DM Mono"', '800 54px Archivo'].map(f => document.fonts.load(f))).then(() => document.fonts.ready).then(() => {
   for (const el of document.querySelectorAll('.a,.b,.w,.recap div')) {
     const p = el.closest('.p'); const old = p.style.display; p.style.display = 'inline-block';
     const disp = el.style.display; el.style.display = 'inline-block';      // 블록은 늘 1000 px — 글 폭을 재려면 인라인으로
