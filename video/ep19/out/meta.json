@@ -1,0 +1,40 @@
+{
+ "title": "What's New in LayerCue 0.9.14: Update Output, Gradient Text and Shape Handles",
+ "description": "LayerCue 0.9.14 is out — on the Mac now, and on Windows through the Microsoft Store once the review is done. Here's what's new, one feature at a time.\n• Update output: edit the slide that's on air and the audience screen keeps showing it as it was. The button at the top left turns into Update output — press it and your changes go out in one go. Turn on the lightning bolt for live updates, as before.\n• Gradient text: in Text color, pick Linear or Radial. The gradient spreads over the letters, not the box.\n• Round and slant: the yellow dot rounds the corners of a text box or rectangle; the light-blue handles slant it side to side or up and down, and the rounding stays.\n• Editor zoom: 10% to 200% at the bottom right of the editor, and Fit to window to come back.\n• Auto-dismiss bar: a slide on an overlay with Auto-dismiss shows a bar on its card that fills as the time runs out.\n• Changed: the layer strips now read 1 2 3 4 5 F B, the same order as the layer column. Each cell still switches the same layer.\nFull list: https://layercue.com/changelog/\nNew here? Start with LayerCue from Zero, Episode 1: Meet LayerCue — The Main Window.\nThe narration is AI-generated and the music is built from GarageBand loops. The event and people in the demo are fictional.",
+ "tags": [
+  "LayerCue",
+  "LayerCue 0.9.14",
+  "what's new",
+  "update",
+  "gradient text",
+  "presentation software",
+  "live event",
+  "church presentation",
+  "event production",
+  "Mac",
+  "Windows"
+ ],
+ "playlist": "LayerCue from Zero: Run Your First Show",
+ "title_ko": "LayerCue 0.9.14 새 기능: Update output, 그라데이션 글자, 도형 핸들",
+ "title_ja": "LayerCue 0.9.14 の新機能:Update output・グラデーション文字・図形ハンドル",
+ "description_ko": "LayerCue 0.9.14가 나왔어요. 맥은 지금, 윈도우는 Microsoft Store 심사가 끝나는 대로 받을 수 있어요. 새로 생긴 것들을 하나씩 볼게요.\n• Update output: 송출 중인 슬라이드를 고쳐도 관객 화면은 그대로예요. 왼쪽 위 버튼이 Update output으로 바뀌고, 누르면 고친 내용이 한 번에 나가요. 번개 버튼을 켜면 예전처럼 바로 반영돼요.\n• 그라데이션 글자: Text color에서 Linear나 Radial을 골라요. 상자가 아니라 글자 위에 칠해져요.\n• 둥글게·기울이기: 노란 점으로 글 상자나 사각형의 모서리를 둥글게, 하늘색 핸들로 좌우·위아래로 기울여요. 둥근 모서리는 그대로예요.\n• 편집기 확대: 편집기 오른쪽 아래에서 10%~200%, Fit to window로 돌아와요.\n• Auto-dismiss 막대: Auto-dismiss가 걸린 오버레이 슬라이드는 카드에 남은 시간 막대가 차올라요.\n• 바뀐 점: 레이어 칸 순서가 1 2 3 4 5 F B로, 오른쪽 레이어 열과 같아졌어요. 칸마다 켜고 끄는 레이어는 그대로예요.\n전체 목록: https://layercue.com/ko/changelog/\n처음이라면 「LayerCue 처음부터」 1편 「LayerCue 메인 창」부터 보세요.\n나레이션은 AI 음성이고, 음악은 GarageBand 루프로 만들었어요. 데모의 행사·인물은 가상이에요.",
+ "description_ja": "LayerCue 0.9.14 が出ました。Mac は今すぐ、Windows は Microsoft Store の審査が終わりしだい。新しいところを一つずつ紹介します。\n• Update output:送出中のスライドを編集しても、客席の画面はそのまま。左上のボタンが Update output に変わり、押すと変更がまとめて出ます。稲妻ボタンをオンにすれば、前のようにすぐ反映。\n• グラデーション文字:Text color で Linear か Radial を選びます。箱ではなく文字にかかります。\n• 丸め・傾け:黄色い点でテキストボックスや四角形の角を丸く、水色のハンドルで左右・上下に傾けます。角の丸みはそのまま。\n• エディターの拡大:右下で 10%〜200%、Fit to window で戻ります。\n• Auto-dismiss バー:Auto-dismiss のかかったオーバーレイのスライドは、カードに残り時間のバーが伸びます。\n• 変更:レイヤーの列が 1 2 3 4 5 F B の順になり、右のレイヤー列と同じに。各セルが切り替えるレイヤーはそのまま。\nすべての変更:https://layercue.com/ja/changelog/\n初めての方は「ゼロから LayerCue」第1回「LayerCue のメインウィンドウ」からどうぞ。\nナレーションは AI 音声、音楽は GarageBand のループで作っています。デモのイベント・人物は架空のものです。",
+ "chapters_ko": [
+  "Update output",
+  "그라데이션 글자",
+  "둥글게·기울이기",
+  "편집기 확대",
+  "Auto-dismiss 막대",
+  "달라진 점",
+  "0.9.14 정리"
+ ],
+ "chapters_ja": [
+  "Update output",
+  "グラデーション文字",
+  "丸め・傾け",
+  "エディターの拡大",
+  "Auto-dismiss バー",
+  "変わったところ",
+  "0.9.14 まとめ"
+ ]
+}

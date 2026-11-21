@@ -1,0 +1,754 @@
+{
+ "_note": "19편 What's New 0.9.14 — Update output(관객 화면 = Stage Monitor 를 따로 찍어 오른쪽 위 작은 창으로) · 그라데이션 · 핸들 · 확대 · Auto-dismiss 막대 · 레이어 칸 순서. 가상 화면 Rec 4K 녹화. (옛 18편: — Tools Check(0.9.13 available) · Import · File missing → 메뉴 Locate file(카드 위 단추는 이슈 #10) · 편집 잠금 · 케이블 뽑기 · 정리 순서 · 끝내기. (옛 17편: — NDI(Stage Lyrics, 투명, B 끔) → OBS(Camera = 무대 사진) · Syphon(OBS 연결만 — 그림은 뒤집혀 보여 이슈 #9, 화면에 안 넣음) · fill & key(UltraStudio Mini Replay 12G). (옛 16편: — 무대 모니터(BetterDisplay 가상 디스플레이 Stage Monitor) · Add screen · Send to · 이름 · Layers shown(B 끔) · Foreground 칩 · 온에어 목록 · Layout · 뽑기/꽂기. LG 녹화. (옛 15편 메모: — Files & YouTube · Import external files(USB 의 sponsor-reel) · Open → Finder(아이콘 보기, LG) · Backups · Reset 창 Cancel · 좁은 창 · Music 따로 창 · AI apps 화면 · Copy as HTML for AI → 답 붙여 넣기. LG 녹화.",
+ "title_sec": 6.0,
+ "lead": 0.45,
+ "gap": 0.42,
+ "pre": 1.0,
+ "rec_t0": 1.0,
+ "segments": {
+  "s1": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      },
+      {
+       "op": "usePt",
+       "name": "Prize Night 2026"
+      },
+      {
+       "op": "output",
+       "on": true
+      },
+      {
+       "op": "present",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "sleep": 1.5
+    },
+    {
+     "front": 1
+    },
+    {
+     "sleep": 0.4
+    },
+    {
+     "mouse": [
+      "click",
+      2160,
+      1740
+     ]
+    },
+    {
+     "sleep": 0.4
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.2,
+     "img": "media/card-s1.png",
+     "until": {
+      "line": 1,
+      "at": 1.5
+     }
+    },
+    {
+     "line": 1,
+     "at": 0.0,
+     "sh": "mkdir -p rec/v2/aud; screencapture -x -D 3 rec/v2/aud/s1-0.png &"
+    },
+    {
+     "line": 1,
+     "at": 2.4,
+     "mouse": [
+      "click",
+      288,
+      2119
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      190,
+      528
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "mouse": [
+      "dbl",
+      2256,
+      1078
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.0,
+     "key": [
+      124,
+      true
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.25,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.37,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.49,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.61,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.73,
+     "key": [
+      51
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.0,
+     "type": "19:00",
+     "gap": 0.1
+    },
+    {
+     "line": 2,
+     "at": 3.1,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 2,
+     "at": 3.5,
+     "mouse": [
+      "click",
+      3216,
+      1620
+     ]
+    },
+    {
+     "line": 2,
+     "at": 3.9,
+     "sh": "mkdir -p rec/v2/aud; screencapture -x -D 3 rec/v2/aud/s1-1.png &"
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "hl": "inset",
+     "lbl": [
+      "Audience screen",
+      "still 18:30"
+     ],
+     "lblSide": "left",
+     "dur": 2.8,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 3.6,
+     "hl": "updbtn",
+     "lbl": [
+      "Update output",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 2.2,
+     "exact": true
+    },
+    {
+     "line": 4,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      151,
+      163
+     ]
+    },
+    {
+     "line": 4,
+     "at": 0.9,
+     "sh": "mkdir -p rec/v2/aud; screencapture -x -D 3 rec/v2/aud/s1-2.png &"
+    },
+    {
+     "line": 4,
+     "at": 1.0,
+     "hl": "inset",
+     "lbl": [
+      "Audience screen",
+      "now 19:00"
+     ],
+     "lblSide": "left",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 5,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      350,
+      163
+     ]
+    },
+    {
+     "line": 5,
+     "at": 3.0,
+     "hl": "bolt",
+     "lbl": [
+      "Live updates",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 2.4,
+     "exact": true
+    }
+   ]
+  },
+  "s2": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.2,
+     "img": "media/card-s2.png",
+     "until": {
+      "line": 1,
+      "at": 1.5
+     }
+    },
+    {
+     "line": 1,
+     "at": 0.0,
+     "sh": "mkdir -p rec/v2/aud; screencapture -x -D 3 rec/v2/aud/s2-0.png &"
+    },
+    {
+     "line": 1,
+     "at": 1.8,
+     "mouse": [
+      "click",
+      2112,
+      1078
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      1582,
+      319
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      1562,
+      406
+     ]
+    },
+    {
+     "line": 1,
+     "at": 4.2,
+     "hl": "picker",
+     "lbl": [
+      "Linear · Radial",
+      ""
+     ],
+     "lblSide": "right",
+     "dur": 1.8,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 0.1,
+     "mouse": [
+      "click",
+      1584,
+      1114
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.4,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.6,
+     "type": "FFC94D",
+     "gap": 0.06
+    },
+    {
+     "line": 2,
+     "at": 1.2,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.45,
+     "sh": "mkdir -p rec/v2/aud; screencapture -x -D 3 rec/v2/aud/s2-1.png &"
+    },
+    {
+     "line": 2,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      1824,
+      494
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.1,
+     "mouse": [
+      "click",
+      1584,
+      1114
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.4,
+     "key": [
+      0,
+      true
+     ]
+    },
+    {
+     "line": 2,
+     "at": 2.6,
+     "type": "FF5E8A",
+     "gap": 0.06
+    },
+    {
+     "line": 2,
+     "at": 3.2,
+     "key": [
+      36
+     ]
+    },
+    {
+     "line": 2,
+     "at": 3.45,
+     "sh": "mkdir -p rec/v2/aud; screencapture -x -D 3 rec/v2/aud/s2-2.png &"
+    },
+    {
+     "line": 2,
+     "at": 3.7,
+     "mouse": [
+      "click",
+      1630,
+      686
+     ]
+    },
+    {
+     "line": 2,
+     "at": 4.2,
+     "sh": "mkdir -p rec/v2/aud; screencapture -x -D 3 rec/v2/aud/s2-3.png &"
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "key": [
+      53
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.7,
+     "mouse": [
+      "click",
+      3216,
+      1620
+     ]
+    },
+    {
+     "line": 3,
+     "at": 1.0,
+     "hl": "title2",
+     "lbl": [
+      "On the letters",
+      "not the box"
+     ],
+     "lblSide": "below",
+     "dur": 2.4,
+     "exact": true
+    },
+    {
+     "line": 3,
+     "at": 3.6,
+     "hl": "inset",
+     "lbl": [
+      "Audience screen",
+      "already live"
+     ],
+     "lblSide": "left",
+     "dur": 2.2,
+     "exact": true
+    }
+   ]
+  },
+  "s3": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.2,
+     "img": "media/card-s3.png",
+     "until": {
+      "line": 1,
+      "at": 1.5
+     }
+    },
+    {
+     "line": 1,
+     "at": 0.4,
+     "mouse": [
+      "click",
+      190,
+      953
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.4,
+     "mouse": [
+      "click",
+      775,
+      168
+     ]
+    },
+    {
+     "line": 1,
+     "at": 1.9,
+     "mouse": [
+      "drag",
+      2160,
+      1452,
+      3000,
+      1740
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.2,
+     "hl": "dot",
+     "lbl": [
+      "Corner radius",
+      ""
+     ],
+     "lblSide": "left",
+     "dur": 1.4,
+     "exact": true
+    },
+    {
+     "line": 2,
+     "at": 1.0,
+     "mouse": [
+      "slowdrag",
+      2191,
+      1450,
+      2292,
+      1450
+     ]
+    },
+    {
+     "line": 3,
+     "at": 0.3,
+     "mouse": [
+      "slowdrag",
+      2628,
+      1740,
+      2731,
+      1740
+     ]
+    },
+    {
+     "line": 3,
+     "at": 2.0,
+     "mouse": [
+      "slowdrag",
+      3000,
+      1596,
+      3000,
+      1529
+     ]
+    },
+    {
+     "line": 3,
+     "at": 3.6,
+     "hl": "rect",
+     "lbl": [
+      "Rounded and slanted",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 2.0,
+     "exact": true
+    }
+   ]
+  },
+  "s4": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.2,
+     "img": "media/card-s4.png",
+     "until": {
+      "line": 1,
+      "at": 1.5
+     }
+    },
+    {
+     "line": 1,
+     "at": 0.4,
+     "hl": "zoomctl",
+     "lbl": [
+      "10–200%",
+      ""
+     ],
+     "lblSide": "above",
+     "dur": 2.0,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      3722,
+      2033
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.1,
+     "mouse": [
+      "click",
+      3722,
+      2033
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      3722,
+      2033
+     ]
+    },
+    {
+     "line": 2,
+     "at": 1.8,
+     "mouse": [
+      "click",
+      3780,
+      2033
+     ]
+    }
+   ]
+  },
+  "s5": {
+   "setup": [
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.2,
+     "img": "media/card-s5.png",
+     "until": {
+      "line": 1,
+      "at": 1.5
+     }
+    },
+    {
+     "line": 1,
+     "at": 1.6,
+     "mouse": [
+      "click",
+      108,
+      2119
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "mouse": [
+      "click",
+      192,
+      1464
+     ]
+    },
+    {
+     "line": 1,
+     "at": 3.6,
+     "mouse": [
+      "click",
+      648,
+      996
+     ]
+    },
+    {
+     "line": 2,
+     "at": 0.3,
+     "hl": "bar",
+     "lbl": [
+      "Time left",
+      "Auto-dismiss 8 s"
+     ],
+     "lblSide": "below",
+     "dur": 3.4,
+     "exact": true
+    }
+   ]
+  },
+  "s6": {
+   "setup": [
+    {
+     "mcp": [
+      {
+       "op": "clear",
+       "layer": "all"
+      }
+     ]
+    },
+    {
+     "mouse": [
+      "jump",
+      2600,
+      1700
+     ]
+    }
+   ],
+   "events": [
+    {
+     "line": 1,
+     "at": -0.2,
+     "img": "media/card-s6.png",
+     "until": {
+      "line": 1,
+      "at": 1.5
+     }
+    },
+    {
+     "line": 1,
+     "at": 1.4,
+     "zoom": "preview",
+     "scale": 1.6,
+     "center": [
+      1920,
+      1080
+     ]
+    },
+    {
+     "line": 1,
+     "at": 2.6,
+     "hl": "strip",
+     "lbl": [
+      "1 2 3 4 5 F B",
+      ""
+     ],
+     "lblSide": "below",
+     "dur": 3.2,
+     "exact": true
+    },
+    {
+     "line": 1,
+     "at": 5.8,
+     "hl": "layercol",
+     "lbl": [
+      "Same order",
+      "as the layer column"
+     ],
+     "lblSide": "right",
+     "dur": 2.6,
+     "exact": true
+    }
+   ]
+  }
+ }
+}

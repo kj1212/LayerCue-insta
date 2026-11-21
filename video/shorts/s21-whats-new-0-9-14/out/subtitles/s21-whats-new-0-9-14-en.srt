@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:04,282
+LayerCue zero point nine point fourteen is out. Here's what's new.
+
+2
+00:00:04,680 --> 00:00:09,042
+Edit the slide on air. The audience keeps the old one until you update.
+
+3
+00:00:09,840 --> 00:00:12,829
+Paint text with a gradient, linear or radial.
+
+4
+00:00:13,640 --> 00:00:16,832
+Round the corners and slant the box with new handles.
+
+5
+00:00:17,640 --> 00:00:20,661
+And see an overlay's time left right on its card.
+
+6
+00:00:21,510 --> 00:00:24,045
+Hold. Gradient. Handles. Time left.
+
+7
+00:00:24,150 --> 00:00:26,222
+The What's New video walks you through it.

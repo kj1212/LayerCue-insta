@@ -1,0 +1,223 @@
+{
+ "title": "What's New in LayerCue 0.9.14: Update Output, Gradient Text and Shape Handles",
+ "version": 1,
+ "segments": [
+  {
+   "id": "s1",
+   "chapter": "Update output",
+   "tag": "NEW 01",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "LayerCue 0.9.14 is out. Here's what's new. First: editing the slide that's on air.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": "",
+     "say": "LayerCue zero point nine point fourteen is out. Here's what's new. First: editing the slide that's on air."
+    },
+    {
+     "text": "Doors open later tonight, so change the time on the slide that's showing.",
+     "pause": 2.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The audience screen keeps the old time. And the button at the top left now says Update output.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Press it, and every change goes out in one go.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Prefer the old way? Turn on the lightning bolt, and edits go out as you make them.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "chapter": "Gradient text",
+   "tag": "NEW 02",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Next, gradient text. Open Text color, and choose Linear or Radial.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Pick a color for each end, and the direction.",
+     "pause": 3.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The gradient covers the letters, not the box. And with the bolt on, it's already on screen.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "chapter": "Round and slant",
+   "tag": "NEW 03",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "Shapes and text boxes get new handles.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Drag the yellow dot to round the corners.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "The blue handles slant the box, side to side or up and down. The rounding stays.",
+     "pause": 1.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "chapter": "Zoom in the editor",
+   "tag": "NEW 04",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "The editor zooms now, from ten to two hundred percent, at the bottom right.",
+     "pause": 1.4,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Zoom in for small details. Fit to window brings it back.",
+     "pause": 1.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "chapter": "Auto-dismiss bar",
+   "tag": "NEW 05",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "A slide on an overlay with Auto-dismiss now shows a bar on its card.",
+     "pause": 1.2,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "It fills as the time runs out, and the overlay goes off when it's full.",
+     "pause": 3.0,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "chapter": "What looks different",
+   "tag": "CHANGED",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "One thing looks different. The layer strips now read one to five, then F and B, in the same order as the layer column.",
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Each cell still switches the same layer. Nothing else in the series changes.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "chapter": "That's 0.9.14",
+   "tag": "",
+   "start": 0,
+   "end": 0,
+   "lines": [
+    {
+     "text": "That's LayerCue 0.9.14.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": "",
+     "say": "That's LayerCue zero point nine point fourteen."
+    },
+    {
+     "text": "New here? Start with Episode 1. And when the next version ships, we'll be back.",
+     "pause": 0.6,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    }
+   ]
+  }
+ ]
+}

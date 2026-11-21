@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- 19편(What's New 0.9.14) 기능 카드 — 구간 첫머리에 화면 위로 잠깐 뜬다. ?id=s1 … · cards.mjs 가 찍는다. 1800×760 -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  :root { --a1: #FFC94D; --a2: #FF5E8A; }
+  body { margin: 0; background: transparent; }
+  #c { position: relative; width: 1800px; height: 760px; border-radius: 40px; overflow: hidden; background: #111114; font-family: var(--disp); color: var(--cream); }
+  #c::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 90% at 100% 0%, rgba(255,94,138,.28), transparent 60%), radial-gradient(ellipse 60% 80% at 0% 100%, rgba(255,201,77,.20), transparent 60%); }
+  #c .edge { position: absolute; left: 0; top: 0; bottom: 0; width: 22px; background: linear-gradient(180deg, var(--a1), var(--a2)); }
+  #c .tag { position: absolute; left: 120px; top: 120px; display: inline-flex; gap: 24px; align-items: center; font-family: var(--mono); font-weight: 500; font-size: 52px; letter-spacing: .14em; }
+  #c .tag b { color: #141414; background: linear-gradient(90deg, var(--a1), var(--a2)); padding: 12px 26px 10px; border-radius: 14px; font-weight: 500; }
+  #c .tag span { color: var(--fg2); }
+  #c .t { position: absolute; left: 112px; top: 270px; font-weight: 900; font-stretch: 112%; font-size: 210px; line-height: .92; letter-spacing: -.03em; text-transform: uppercase; white-space: nowrap; }
+  #c .t em { font-style: normal; background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; color: transparent; }
+  #c .s { position: absolute; left: 120px; bottom: 110px; font-weight: 500; font-size: 64px; color: var(--fg2); letter-spacing: -.01em; }
+</style>
+<div id="c"><div class="edge"></div><div class="tag"><b></b><span>LAYERCUE 0.9.14</span></div><div class="t"></div><div class="s"></div></div>
+<script>
+const C = {
+  s1: ["NEW 01", "Update <em>output</em>", "Edit what's on air — send it when you're ready"],
+  s2: ["NEW 02", "Gradient <em>text</em>", "Linear or radial, across the letters"],
+  s3: ["NEW 03", "Round &amp; <em>slant</em>", "New handles on shapes and text boxes"],
+  s4: ["NEW 04", "Editor <em>zoom</em>", "From 10% to 200%"],
+  s5: ["NEW 05", "Auto-dismiss <em>bar</em>", "See the time left on the card"],
+  s6: ["CHANGED", "Layer <em>order</em>", "1 2 3 4 5 F B — like the layer column"],
+};
+const id = new URLSearchParams(location.search).get("id") || "s1", d = C[id];
+document.querySelector(".tag b").textContent = d[0]; document.querySelector(".t").innerHTML = d[1]; document.querySelector(".s").textContent = d[2];
+// 길면 줄인다
+const t = document.querySelector(".t"); document.fonts.ready.then(() => { let fs = 210; while (t.scrollWidth > 1600 && fs > 120) { fs -= 6; t.style.fontSize = fs + "px"; } window.__ok = true; });
+</script>

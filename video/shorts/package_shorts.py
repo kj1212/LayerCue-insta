@@ -28,7 +28,7 @@ TITLE
 {sp['title']}: {words} #Shorts
 
 DESCRIPTION
-{sp['hook_vo']} {' '.join(b['vo'] for b in sp['beats'])}
+{sp.get('hook_sub') or sp['hook_vo']} {' '.join(b['vo'] for b in sp['beats'])}
 
 Free while it's in beta, on Mac and Windows: https://layercue.com
 Full tutorial — LayerCue from Zero, Episode {ep} ({eptitle}): {eplink}
@@ -47,7 +47,7 @@ SUBTITLES
 subtitles/{sid}-en.srt, -ko.srt, -ja.srt as 'With timing'.
 
 INSTAGRAM CAPTION
-{sp['hook_vo']} {words}
+{sp.get('hook_sub') or sp['hook_vo']} {words}
 Free on Mac & Windows while it's in beta.
 🎬 Full episode → link in bio (LayerCue from Zero, Ep {ep})
 

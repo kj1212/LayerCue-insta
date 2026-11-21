@@ -28,8 +28,8 @@ case "$1" in
   place)
     # LG 의 자리를 그때그때 읽는다 — 배치가 바뀐 적이 있다(위 → 오른쪽 위)
     osascript -l JavaScript -e '
-      ObjC.import("AppKit"); var s = $.NSScreen.screens; var H = s.objectAtIndex(0).frame.size.height; var lg = null;
-      for (var i = 0; i < s.count; i++) { var sc = s.objectAtIndex(i); if (sc.localizedName.js.indexOf("LG") >= 0) lg = sc.frame; }
+      ObjC.import("AppKit"); var REC = "'"${REC_SCREEN:-LG}"'"; var s = $.NSScreen.screens; var H = s.objectAtIndex(0).frame.size.height; var lg = null;
+      for (var i = 0; i < s.count; i++) { var sc = s.objectAtIndex(i); if (sc.localizedName.js.indexOf(REC) >= 0) lg = sc.frame; }
       var x = lg.origin.x, y = H - (lg.origin.y + lg.size.height);
       var ws = Application("System Events").processes.byName("LayerCue").windows; var w = ws[0];
       for (var j = 0; j < ws.length; j++) if (ws[j].name() === "LayerCue") { w = ws[j]; break; }     // 18편: 송출 창(이름 없음)이 먼저 잡혀 LG 를 덮었다

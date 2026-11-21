@@ -12,13 +12,22 @@
 import json, math, os, time
 import Quartz, AppKit
 
+def _find_screen():
+    """화면 이름(REC_SCREEN, 기본 LG) → CG 디스플레이 번호와 배율."""
+    want = os.environ.get("REC_SCREEN", "LG")     # 19편: LG 대신 BetterDisplay 가상 화면 「Rec 4K」(1920×1080 HiDPI)
+    for sc in AppKit.NSScreen.screens():
+        if want in str(sc.localizedName()):
+            return int(sc.deviceDescription()["NSScreenNumber"]), float(sc.backingScaleFactor())
+    raise SystemExit(want + " display not found")
+
+
+_DID, _SCALE = None, None
 def lg_origin():
-    """LG 화면의 왼쪽 위(전역 포인트, Quartz 좌표)와 화소 배율 — 배치·모드가 바뀌어도 그때그때 읽는다."""
-    screens = AppKit.NSScreen.screens(); H = screens[0].frame().size.height
-    for sc in screens:
-        if "LG" in str(sc.localizedName()):
-            f = sc.frame(); return (f.origin.x, H - (f.origin.y + f.size.height), float(sc.backingScaleFactor()))
-    raise SystemExit("LG display not found")
+    """화면의 왼쪽 위(전역 포인트, Quartz 좌표)와 화소 배율 — CGDisplayBounds 로 그때그때 읽는다(송출을 켜면 맥이 배치를 바꾼다, 19편)."""
+    global _DID, _SCALE
+    if _DID is None: _DID, _SCALE = _find_screen()
+    b = Quartz.CGDisplayBounds(_DID)
+    return (b.origin.x, b.origin.y, _SCALE)
 
 
 LG_X, LG_Y, SCALE = lg_origin()
@@ -38,12 +47,14 @@ class M:
     @staticmethod
     def g(px, py):
         if WIN: return (WIN[0] + px * WIN[2] / 3840, WIN[1] + (py - 60) * WIN[3] / 2100)
-        return (LG_X + px / SCALE, LG_Y + py / SCALE)
+        x0, y0, sc = lg_origin() if os.environ.get("REC_SCREEN") else (LG_X, LG_Y, SCALE)     # 19편: 송출을 켜면 맥이 화면 배치를 바꾼다 — 그때그때 읽는다
+        return (x0 + px / sc, y0 + py / sc)
 
     def where(self):
         p = Quartz.CGEventGetLocation(Quartz.CGEventCreate(None))
         if WIN: return ((p.x - WIN[0]) * 3840 / WIN[2], (p.y - WIN[1]) * 2100 / WIN[3] + 60)
-        return ((p.x - LG_X) * SCALE, (p.y - LG_Y) * SCALE)
+        x0, y0, sc = lg_origin() if os.environ.get("REC_SCREEN") else (LG_X, LG_Y, SCALE)
+        return ((p.x - x0) * sc, (p.y - y0) * sc)
 
     # ── 기록 ──
     def _rec(self, kind, px, py):

@@ -1,0 +1,57 @@
+YOUTUBE SHORT — upload the vertical video; YouTube makes it a Short (under 3 min, 9:16).
+
+TITLE
+What's New in 0.9.14: Hold. Gradient. Handles. Time left. #Shorts
+
+DESCRIPTION
+LayerCue 0.9.14 is out. Here's what's new. Edit the slide on air. The audience keeps the old one until you update. Paint text with a gradient, linear or radial. Round the corners and slant the box with new handles. And see an overlay's time left right on its card.
+
+Free while it's in beta, on Mac and Windows: https://layercue.com
+Full tutorial — LayerCue from Zero, Episode 19 (What's New in LayerCue 0.9.14: Update Output, Gradient Text and Shape Handles): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8
+
+The narration and music were made with AI running on a Mac. The event in the demo is made up.
+
+#LayerCue #LiveProduction #EventProduction
+
+TAGS
+LayerCue, LayerCue tutorial, presentation software, live production, event production, projection software, Mac, Windows
+
+PLAYLIST
+LayerCue Shorts (optional)
+
+SUBTITLES
+subtitles/s21-whats-new-0-9-14-en.srt, -ko.srt, -ja.srt as 'With timing'.
+
+INSTAGRAM CAPTION
+LayerCue 0.9.14 is out. Here's what's new. Hold. Gradient. Handles. Time left.
+Free on Mac & Windows while it's in beta.
+🎬 Full episode → link in bio (LayerCue from Zero, Ep 19)
+
+Narration and music made with AI on a Mac.
+#LayerCue #LiveProduction #EventProduction
+
+========================================
+한국어 (KOREAN)
+========================================
+
+TITLE
+보류. 그라데이션. 핸들. 남은 시간. #Shorts
+
+DESCRIPTION
+LayerCue 0.9.14가 나왔어요. 새로 생긴 걸 볼게요. 송출 중인 슬라이드를 고쳐도, 업데이트할 때까지 관객 화면은 그대로예요. 글자에 그라데이션을 칠해요. 선형이나 원형으로. 새 핸들로 모서리를 둥글게, 상자를 기울게. 그리고 오버레이의 남은 시간이 카드에 보여요.
+
+베타 기간 무료, Mac과 Windows: https://layercue.com
+전체 강좌 — LayerCue 처음부터, 19편(LayerCue 0.9.14 새 기능: Update output, 그라데이션 글자, 도형 핸들): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8
+
+========================================
+日本語 (JAPANESE)
+========================================
+
+TITLE
+保留。グラデーション。ハンドル。残り時間。 #Shorts
+
+DESCRIPTION
+LayerCue 0.9.14 が出ました。新しいところを見ていきます。送出中のスライドを編集しても、更新するまで客席はそのまま。文字にグラデーション。線形か円形で。新しいハンドルで角を丸く、箱を斜めに。そしてオーバーレイの残り時間がカードに。
+
+ベータ期間は無料、Mac と Windows: https://layercue.com
+フル講座 — ゼロから LayerCue 第19回(LayerCue 0.9.14 の新機能:Update output・グラデーション文字・図形ハンドル): https://www.youtube.com/playlist?list=PLbN0h6kQZtT8

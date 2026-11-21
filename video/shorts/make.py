@@ -94,7 +94,7 @@ def make(sp, idx):
     # ── 목소리
     words = [b["w"] for b in sp["beats"]]
     recap_vo = " ".join(w.capitalize() + "." for w in words)
-    ep_vo = f"Episode {specs.NUM[ep]} walks you through it."
+    ep_vo = sp.get("ep_vo") or f"Episode {specs.NUM[ep]} walks you through it."     # 19편(What's New) 은 따로
     lines = [sp["hook_vo"]] + [b["vo"] for b in sp["beats"]] + [recap_vo, ep_vo]
     for i, t in enumerate(lines): tts(t, D / "audio" / f"{i:02d}.wav")
     dv = [dur(D / "audio" / f"{i:02d}.wav") for i in range(len(lines))]
@@ -127,8 +127,8 @@ def make(sp, idx):
     hook = f'<div class="p hook" id="hook"><div class="k">[ LAYERCUE ]</div><div class="a">{sp["hook"][0]}</div><div class="b">{sp["hook"][1]}</div></div>'
     ws = "".join(f'<div class="p word" id="w{i+1}"><div class="w">{b["w"]}</div><div class="s">{b["s"]}</div></div>' for i, b in enumerate(sp["beats"]))
     rc = '<div class="p recap" id="recap">' + "".join(f'<div class="{"h" if i % 2 else ""}">{w}.</div>' for i, w in enumerate(words)) + "</div>"
-    tag = f'<div class="p tag" id="tag">FULL TUTORIAL · <b>LAYERCUE FROM ZERO · EP {ep:02d}</b></div>'
-    subs = [sp["hook_vo"]] + [b["vo"] for b in sp["beats"]] + [ep_vo]
+    tag = f'<div class="p tag" id="tag">{sp.get("tag_html") or f"FULL TUTORIAL · <b>LAYERCUE FROM ZERO · EP {ep:02d}</b>"}</div>'
+    subs = [sp.get("hook_sub") or sp["hook_vo"]] + [b["vo"] for b in sp["beats"]] + [ep_vo]     # hook_sub: 읽는 말과 화면 글이 다를 때(21: 0.9.14)
     sb = "".join(f'<div class="p sub" id="s{i+1}">{brk(t)}</div>' for i, t in enumerate(subs))
     (D / "parts.html").write_text((H / "parts.tmpl.html").read_text().replace("%BODY%", hook + ws + rc + tag + sb))
     # ── 음악
@@ -146,7 +146,7 @@ def make(sp, idx):
     sf.write(D / "audio" / "music.wav", (a / (np.abs(a).max() + 1e-9) * 0.8).astype(np.float32), SR)
     # ── 자막(srt, 목소리 시각) · 업로드 글
     def ts(x): return f"{int(x//3600):02d}:{int(x%3600//60):02d}:{int(x%60):02d},{int(round((x-int(x))*1000)):03d}"
-    srt_lines = [(vo_at[i], vo_at[i] + dv[i], lines[i]) for i in range(len(lines))]
+    srt_lines = [(vo_at[i], vo_at[i] + dv[i], (sp.get("hook_sub") if i == 0 and sp.get("hook_sub") else lines[i])) for i in range(len(lines))]
     (D / "out" / "subtitles").mkdir(parents=True, exist_ok=True)
     (D / "out" / "subtitles" / f"{sid}-en.srt").write_text("\n".join(f"{i+1}\n{ts(a)} --> {ts(b + .2)}\n{t}\n" for i, (a, b, t) in enumerate(srt_lines)))
     (D / "spec.json").write_text(json.dumps(dict(sp, id=sid, lines=lines, vo_at=vo_at, dur=DUR), ensure_ascii=False, indent=1))
