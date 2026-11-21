@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,222
+Music runs on its own channel.
+
+2
+00:00:03,500 --> 00:00:06,186
+Clear the stage, and the music keeps playing.
+
+3
+00:00:07,300 --> 00:00:09,559
+Each track plays next, or repeats.
+
+4
+00:00:11,100 --> 00:00:13,331
+Trim a spoken intro with an in point.
+
+5
+00:00:14,900 --> 00:00:17,514
+And the music steps back while a video speaks.
+
+6
+00:00:18,750 --> 00:00:20,479
+Clear. Next. Trim. Duck.
+
+7
+00:00:20,580 --> 00:00:22,730
+Episode eleven walks you through it.
