@@ -28,15 +28,10 @@
   도형과 글 상자에 새 핸들이 생겼어요.
 - Drag the yellow dot to round the corners.  
   노란 점을 끌면 모서리가 둥글어져요.
+- Click the link next to it, and each corner gets its own dot. Round only the corners you want.  
+  옆의 링크를 누르면 모서리마다 점이 하나씩 생겨요. 원하는 모서리만 둥글게 할 수 있어요.
 - The blue handles slant the box, side to side or up and down. The rounding stays.  
   파란 핸들은 상자를 좌우나 위아래로 기울여요. 둥근 모서리는 그대로예요.
-
-## Zoom in the editor
-
-- The editor zooms now, from ten to two hundred percent, at the bottom right.  
-  이제 편집기를 확대할 수 있어요. 오른쪽 아래에서 10%부터 200%까지요.
-- Zoom in for small details. Fit to window brings it back.  
-  작은 부분은 크게 보고, Fit to window로 돌아와요.
 
 ## Auto-dismiss bar
 

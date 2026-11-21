@@ -25,13 +25,14 @@
    "vo": "Paint text with a gradient, linear or radial."
   },
   {
-   "b": 8,
+   "b": 10,
+   "lag": -3.0,
    "w": "HANDLES",
    "s": "round and <b>slant</b>",
    "vo": "Round the corners and slant the box with new handles."
   },
   {
-   "b": 10,
+   "b": 11,
    "w": "TIME LEFT",
    "s": "on the <b>card</b>",
    "vo": "And see an overlay's time left right on its card."

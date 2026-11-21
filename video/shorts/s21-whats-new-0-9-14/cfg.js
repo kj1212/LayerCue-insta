@@ -50,7 +50,7 @@ var CFG = {
   },
   {
    "rec": "/Users/kj1212/projects/LayerCue-insta/video/ep19/rec/v2/s3.mp4",
-   "src": 12.73,
+   "src": 19.04,
    "t": 13.49,
    "d": 3.99,
    "audio": null,

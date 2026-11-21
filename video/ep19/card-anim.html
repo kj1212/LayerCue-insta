@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- 19편 What's New 기능 카드 — 장면 전환(타이틀과 같은 결: 큰 낱말 + 층 세 판이 어긋났다 붙는다). ?id=s2&dur=4.2 · window.render(t). 3840×2160
+     들어올 때 앰버 → 핑크 띠가 왼쪽에서 쓸고 지나가며 카드가 드러난다(바탕은 투명 — 앞 장면 위로). 나갈 때는 AE 가 0.5 초 걷는다. -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  body { margin: 0; background: transparent; }
+  #card { position: relative; width: 3840px; height: 2160px; overflow: hidden; background: transparent; }
+  #card .wipe { position: absolute; inset: 0; background: linear-gradient(90deg, #FFC94D, #FF8A5C 50%, #FF5E8A); }
+  #card .frame { position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 70% at 92% 8%, rgba(255,94,138,.22), transparent 60%), radial-gradient(ellipse 50% 60% at 4% 100%, rgba(255,201,77,.16), transparent 60%), var(--void); }
+  #card .micro.top { position: absolute; left: 230px; top: 330px; }
+  #card .pill { position: absolute; left: 226px; top: 430px; font-family: var(--mono); font-weight: 500; font-size: 96px; letter-spacing: .12em; padding: 18px 40px 14px; border-radius: 24px;
+                color: #141414; background: linear-gradient(90deg, #FFC94D, #FF5E8A); }
+  #card .pill.chg { background: var(--cream); }
+  #card .idx { position: absolute; right: 230px; top: 330px; text-align: right; }
+  #card .idx div { font-weight: 600; font-stretch: 88%; font-size: 62px; line-height: 1.32; letter-spacing: -.01em; text-transform: uppercase; color: var(--fg3); }
+  #card .idx div i { font-family: var(--mono); font-style: normal; font-weight: 400; font-size: 34px; letter-spacing: .1em; margin-right: 26px; vertical-align: 6px; }
+  #card .idx div.on { color: var(--cream); }
+  #card .idx div.on i { color: #FF8A5C; }
+  #card .word { left: 214px; bottom: 470px; font-size: 400px; }
+  #card .word .g1 { color: #FFC94D; } #card .word .g2 { color: #FF5E8A; } #card .word .g3 { color: #FF8A5C; }
+  #card .sub { position: absolute; left: 230px; bottom: 250px; font-weight: 500; font-size: 92px; letter-spacing: -.012em; color: var(--fg2); }
+  #card .lines { position: absolute; left: 230px; bottom: 190px; display: flex; gap: 22px; }
+  #card .lines i { display: block; width: 150px; height: 14px; transform-origin: left center; }
+</style>
+<div id="card">
+  <div class="frame">
+    <div class="grid"></div>
+    <div class="micro top">[ LayerCue 0.9.14 &nbsp;—&nbsp; what's new ]</div>
+    <div class="pill"></div>
+    <div class="idx">
+      <div data-id="s1"><i>01</i>Update output</div><div data-id="s2"><i>02</i>Gradient text</div><div data-id="s3"><i>03</i>Round &amp; slant</div><div data-id="s5"><i>04</i>Auto-dismiss bar</div><div data-id="s6"><i>··</i>Layer order</div>
+    </div>
+    <div class="word" data-fit="3200"><span class="gh g1"></span><span class="gh g2"></span><span class="gh g3"></span><span class="real"></span></div>
+    <div class="sub"></div>
+    <div class="lines"><i style="background:#FFC94D"></i><i style="background:#FF8A5C"></i><i style="background:#FF5E8A"></i></div>
+  </div>
+  <div class="wipe"></div>
+</div>
+<script>
+  const C = {
+    s1: ["NEW 01", "Update output", "Edit what's on air, send it when you're ready"],
+    s2: ["NEW 02", "Gradient text", "Linear or radial, across the letters"],
+    s3: ["NEW 03", "Round & slant", "Corner and slant handles, one corner at a time"],
+    s5: ["NEW 04", "Auto-dismiss bar", "See the time left on the card"],
+    s6: ["CHANGED", "Layer order", "1 2 3 4 5 F B, like the layer column"],
+  };
+  const q = new URLSearchParams(location.search), id = q.get("id") || "s1", d = C[id];
+  window.DUR = +(q.get("dur") || 4);
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  $('.pill').textContent = d[0]; if (d[0] === "CHANGED") $('.pill').classList.add('chg');
+  $$('.word span').forEach(e => e.textContent = d[1]); $('.sub').textContent = d[2];
+  $$('.idx div').forEach(e => e.classList.toggle('on', e.dataset.id === id));
+  const clamp = x => Math.max(0, Math.min(1, x));
+  const cue = x => 1 - Math.pow(1 - clamp(x), 4.2);
+  const inout = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+  const at = (t, t0, dd) => cue((t - t0) / dd);
+  function up(el, p, dy = 40) { el.style.opacity = p; el.style.transform = `translateY(${(1 - p) * dy}px)`; }
+  const OFF = { g1: [-2.2, -13], g2: [1.6, -6], g3: [2.6, 9] };
+  window.render = t => {
+    // 쓸기: 띠가 왼쪽에서 들어와 화면을 덮고(0–0.42), 카드가 그 뒤를 따라 드러나며 띠는 오른쪽으로 빠진다(0.2–0.7)
+    const a = inout(t / 0.42), b = inout((t - 0.2) / 0.5);
+    $('.wipe').style.clipPath = `inset(0 ${(1 - a) * 100}% 0 ${b * 100}%)`;
+    $('.frame').style.clipPath = `inset(0 ${(1 - b) * 100}% 0 0)`;
+    const T0 = 0.45;
+    $('.grid').style.opacity = at(t, T0, 0.6);
+    up($('.micro.top'), at(t, T0 + 0.1, 0.6), 24);
+    up($('.pill'), at(t, T0 + 0.2, 0.6), 40);
+    $$('.idx div').forEach((e, i) => up(e, at(t, T0 + 0.3 + i * 0.07, 0.6), 30));
+    const r = $('.word .real'), pr = at(t, T0 + 0.25, 0.8);
+    r.style.clipPath = `inset(${(1 - pr) * 100}% 0 0 0)`; r.style.transform = `translateY(${(1 - pr) * 18}%)`;
+    ['g1', 'g2', 'g3'].forEach((g, i) => {
+      const p = at(t, T0 + 0.35 + i * 0.13, 1.5), k = 2.4 * (1 - p), el = $('.word .' + g);
+      el.style.opacity = clamp((t - T0 - 0.25) / 0.25);
+      el.style.transform = `translate(${OFF[g][0] * k}%, ${OFF[g][1] * k}%)`;
+    });
+    up($('.sub'), at(t, T0 + 0.9, 0.7), 30);
+    $$('.lines i').forEach((l, i) => l.style.transform = `scaleX(${at(t, T0 + 1.0 + i * 0.09, 0.6)})`);
+  };
+  window.__ready = false;
+  document.fonts.ready.then(() => {
+    const w = $('.word'), real = w.querySelector('.real'), fs = parseFloat(getComputedStyle(w).fontSize);
+    w.style.fontSize = Math.min(560, fs * (+w.dataset.fit) / real.getBoundingClientRect().width) + 'px';
+    window.render(0); window.__ready = true;
+  });
+</script>

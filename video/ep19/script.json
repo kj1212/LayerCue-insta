@@ -102,7 +102,15 @@
     },
     {
      "text": "Drag the yellow dot to round the corners.",
-     "pause": 1.4,
+     "pause": 0.8,
+     "screen": "",
+     "action": "",
+     "caption": "",
+     "keys": ""
+    },
+    {
+     "text": "Click the link next to it, and each corner gets its own dot. Round only the corners you want.",
+     "pause": 2.4,
      "screen": "",
      "action": "",
      "caption": "",
@@ -119,34 +127,9 @@
    ]
   },
   {
-   "id": "s4",
-   "chapter": "Zoom in the editor",
-   "tag": "NEW 04",
-   "start": 0,
-   "end": 0,
-   "lines": [
-    {
-     "text": "The editor zooms now, from ten to two hundred percent, at the bottom right.",
-     "pause": 1.4,
-     "screen": "",
-     "action": "",
-     "caption": "",
-     "keys": ""
-    },
-    {
-     "text": "Zoom in for small details. Fit to window brings it back.",
-     "pause": 1.0,
-     "screen": "",
-     "action": "",
-     "caption": "",
-     "keys": ""
-    }
-   ]
-  },
-  {
    "id": "s5",
    "chapter": "Auto-dismiss bar",
-   "tag": "NEW 05",
+   "tag": "NEW 04",
    "start": 0,
    "end": 0,
    "lines": [

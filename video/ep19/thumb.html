@@ -1,22 +1,60 @@
 <!doctype html>
-<!-- 19편 What's New 썸네일 — 본편(어두운 바탕 · 기운 화면)과 확 다르게: 밝은 앰버→핑크 바탕, 검정 큰 글씨. 1280×720 (×2) -->
+<!-- 19편 What's New 썸네일 — ?v=a|b|c. 1280×720(×2). 본편(어두운 바탕 + 기운 화면 + 큰 대문자)과 달라 보이게, 그러나 차분하게 -->
 <meta charset="utf-8">
 <link rel="stylesheet" href="brand.css">
 <style>
+  :root { --a1: #FFC94D; --a2: #FF5E8A; --ink: #0D0C10; }
   body { margin: 0; }
-  #t { position: relative; width: 1280px; height: 720px; overflow: hidden; background: linear-gradient(120deg, #FFC94D 0%, #FF8A5C 48%, #FF5E8A 100%); font-family: var(--disp); color: #141414; }
-  #t .tag { position: absolute; left: 56px; top: 50px; font-family: var(--mono); font-weight: 500; font-size: 26px; letter-spacing: .18em; }
-  #t .tag b { background: #141414; color: #FFC94D; padding: 6px 14px; border-radius: 8px; font-weight: 500; margin-right: 12px; }
-  #t .w { position: absolute; left: 48px; top: 112px; font-weight: 900; font-stretch: 110%; font-size: 112px; line-height: .86; letter-spacing: -.03em; text-transform: uppercase; }
-  #t .v { position: absolute; left: 44px; bottom: 40px; font-weight: 900; font-stretch: 118%; font-size: 200px; line-height: .8; letter-spacing: -.04em; color: #141414; }
-  #t .shot { position: absolute; right: -40px; top: 96px; width: 700px; border-radius: 22px; overflow: hidden; box-shadow: 0 30px 70px rgba(60,10,30,.45), 0 0 0 6px #141414; transform: rotate(3deg); }
-  #t .shot img { width: 100%; display: block; }
-  #t .chip { position: absolute; right: 70px; top: 470px; background: #141414; color: #F2EEE4; font-family: var(--mono); font-weight: 500; font-size: 24px; letter-spacing: .14em; padding: 10px 18px; border-radius: 10px; transform: rotate(3deg); }
+  .t { position: relative; width: 1280px; height: 720px; overflow: hidden; font-family: var(--disp); display: none; }
+  .grad { background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; color: transparent; }
+  .mono { font-family: var(--mono); font-weight: 500; letter-spacing: .2em; text-transform: uppercase; }
+
+  .pill { display: inline-block; font-family: var(--mono); font-weight: 500; font-size: 24px; letter-spacing: .12em; padding: 8px 16px 7px; border-radius: 999px; }
+
+  /* A — 어두운 바탕: 왼쪽 글, 오른쪽 실제 화면 두 장 */
+  #a { background: radial-gradient(ellipse 70% 80% at 100% 0%, rgba(255,94,138,.18), transparent 60%), var(--ink); color: #F2EEE4; }
+  #a .pill { position: absolute; left: 64px; top: 72px; color: #141414; background: linear-gradient(90deg, var(--a1), var(--a2)); }
+  #a .h { position: absolute; left: 60px; top: 150px; font-weight: 800; font-size: 118px; line-height: .95; letter-spacing: -.035em; }
+  #a .s { position: absolute; left: 64px; bottom: 74px; font-size: 32px; font-weight: 500; color: #B9B4A8; line-height: 1.4; }
+  #a .s b { color: #F2EEE4; font-weight: 600; }
+  #a .p1 { position: absolute; right: -30px; top: 120px; width: 640px; border-radius: 16px; box-shadow: 0 24px 50px rgba(0,0,0,.5), 0 0 0 1px rgba(242,238,228,.16); }
+  #a .p2 { position: absolute; right: 70px; top: 360px; width: 440px; border-radius: 16px; box-shadow: 0 24px 50px rgba(0,0,0,.5), 0 0 0 1px rgba(242,238,228,.16); }
+
+  /* B — 크림 바탕 + 어두운 판 */
+  #b { background: #F2EEE4; color: #141414; }
+  #b .pill { position: absolute; left: 64px; top: 72px; color: #F2EEE4; background: #141414; }
+  #b .h { position: absolute; left: 58px; top: 150px; font-weight: 800; font-size: 112px; line-height: .95; letter-spacing: -.035em; }
+  #b .bar { position: absolute; left: 64px; top: 390px; width: 220px; height: 10px; border-radius: 5px; background: linear-gradient(90deg, var(--a1), var(--a2)); }
+  #b .s { position: absolute; left: 64px; top: 440px; font-size: 34px; font-weight: 600; letter-spacing: -.01em; line-height: 1.3; }
+  #b .panel { position: absolute; right: 0; top: 0; bottom: 0; width: 560px; background: #111014; }
+  #b .panel .p1 { position: absolute; left: 40px; top: 150px; width: 640px; border-radius: 14px; box-shadow: 0 0 0 1px rgba(242,238,228,.14); }
+  #b .panel .p2 { position: absolute; left: 90px; top: 380px; width: 420px; border-radius: 14px; box-shadow: 0 0 0 1px rgba(242,238,228,.14); }
+
+  /* C — 그라데이션 글자를 크게(기능 자체가 그림) */
+  #c { background: radial-gradient(ellipse 80% 90% at 70% 40%, #2A1638, #0D0C10 70%); color: #F2EEE4; }
+  #c .pill { position: absolute; left: 64px; top: 66px; color: #F2EEE4; border: 2px solid rgba(242,238,228,.35); }
+  #c .big { position: absolute; left: 56px; top: 170px; font-weight: 900; font-stretch: 108%; font-size: 150px; line-height: .92; letter-spacing: -.035em; }
+  #c .s { position: absolute; left: 64px; bottom: 70px; font-size: 32px; font-weight: 500; color: #B9B4A8; }
+  #c .s b { color: #F2EEE4; font-weight: 600; }
+  #c .shape { position: absolute; right: 70px; bottom: 60px; width: 360px; height: 150px; border-radius: 75px; background: #5E6AD2; transform: skewX(-24deg); box-shadow: 0 20px 50px rgba(0,0,0,.45); }
 </style>
-<div id="t">
-  <div class="tag"><b>LAYERCUE</b>NEW VERSION</div>
-  <div class="w">What's<br>new</div>
-  <div class="v">0.9.14</div>
-  <div class="shot"><img src="thumb-canvas.png"></div>
-  <div class="chip">UPDATE OUTPUT · GRADIENTS · HANDLES</div>
+<div id="a" class="t">
+  <div class="pill">LAYERCUE 0.9.14</div>
+  <div class="h">What's<br><span class="grad">new</span></div>
+  <div class="s"><b>Update output</b><br>Gradient text · Shape handles</div>
+  <img class="p1" src="media/th-title.png"><img class="p2" src="media/th-shape.png">
 </div>
+<div id="b" class="t">
+  <div class="pill">LAYERCUE 0.9.14</div>
+  <div class="h">What's<br>new</div>
+  <div class="bar"></div>
+  <div class="s">Update output,<br>gradient text,<br>shape handles.</div>
+  <div class="panel"><img class="p1" src="media/th-title.png"><img class="p2" src="media/th-shape.png"></div>
+</div>
+<div id="c" class="t">
+  <div class="pill">WHAT'S NEW · 0.9.14</div>
+  <div class="big"><span class="grad">Gradient</span><br>text &amp; more</div>
+  <div class="s"><b>Update output</b> · shape handles · auto-dismiss bar</div>
+  <div class="shape"></div>
+</div>
+<script>const v = new URLSearchParams(location.search).get("v") || "a"; document.getElementById(v).style.display = "block";</script>

@@ -29,14 +29,14 @@ for lang in ["en", "ko", "ja"]:
     if miss: sys.exit(f"{lang}: missing {miss}")
     (OUT / "subtitles" / f"{P}{lang}.srt").write_text("".join(f"{i}\n{ts(a)} --> {ts(b)}\n{tr[k]}\n\n" for i, (a, b, k, _) in enumerate(cues, 1)), encoding="utf-8")
 
-chap = ["0:00 Intro"] + [f"{int(g['start'] // 60)}:{int(g['start'] % 60):02d} {g['chapter']}" for g in segs]
+chap = ["0:00 Intro"] + [f"{int(g.get('card', [g['start']])[0] // 60)}:{int(g.get('card', [g['start']])[0] % 60):02d} {g['chapter']}" for g in segs]
 up = [f"TITLE\n{meta['title']}\n", "DESCRIPTION", meta["description"].strip(), "", "Chapters", *chap, "",
       f"TAGS\n{', '.join(meta['tags'])}\n", f"PLAYLIST\n{meta['playlist']}\n",
       f"SUBTITLES\nUpload subtitles/{P}en.srt (English), {P}ko.srt (Korean) and {P}ja.srt (Japanese) as 'With timing'."]
 # 한국어 · 일본어 제목과 설명 — 유튜브 스튜디오 › 번역(Translations) › 언어 추가 › 제목·설명에 붙인다
 for lang, name, intro in (("ko", "한국어 (KOREAN)", "처음"), ("ja", "日本語 (JAPANESE)", "イントロ")):
     if f"title_{lang}" not in meta: continue
-    ch = [f"0:00 {intro}"] + [f"{int(g['start'] // 60)}:{int(g['start'] % 60):02d} {c}" for g, c in zip(segs, meta[f"chapters_{lang}"])]
+    ch = [f"0:00 {intro}"] + [f"{int(g.get('card', [g['start']])[0] // 60)}:{int(g.get('card', [g['start']])[0] % 60):02d} {c}" for g, c in zip(segs, meta[f"chapters_{lang}"])]
     up += ["", "=" * 40, name, "=" * 40, "", f"TITLE\n{meta[f'title_{lang}']}\n", "DESCRIPTION", meta[f"description_{lang}"].strip(), "",
            "챕터" if lang == "ko" else "チャプター", *ch]
 (OUT / f"{P}upload.txt").write_text("\n".join(up) + "\n", encoding="utf-8")

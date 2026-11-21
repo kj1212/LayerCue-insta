@@ -38,6 +38,12 @@ for name, (a, b_, c) in LEVEL.items():
     k = BAR; gb = np.convolve(np.pad(gb, (k, k), mode="edge"), np.ones(k) / k, mode="same")[k:-k]
     mix += x * (10 ** (gb / 20))[:, None].astype(np.float32)
 fi = int(0.3 * SR); mix[:fi] *= np.linspace(0, 1, fi, dtype=np.float32)[:, None]
+# 기능 카드 장면(장면 전환) 동안은 +4 dB — 타이틀처럼 음악이 한 번 올라온다(0.3 s 경사)
+lift = np.zeros(N, np.float32)
+for s_ in segs:
+    if s_.get("card"): lift[int(s_["card"][0] * SR): int(s_["card"][1] * SR)] = 4.0
+kk = int(0.3 * SR); lift = np.convolve(np.pad(lift, (kk, kk), mode="edge"), np.ones(kk) / kk, mode="same")[kk:-kk].astype(np.float32)
+mix *= (10 ** (lift / 20))[:, None]
 mix = np.tanh(mix * 1.05) / 1.05
 
 # 덕킹 — 목소리 구간에서 −8 dB (들어갈 때 0.12 s, 나올 때 0.45 s)

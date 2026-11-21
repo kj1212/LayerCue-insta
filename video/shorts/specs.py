@@ -111,6 +111,6 @@ dict(ep="19", slug="whats-new-0-9-14", title="What's New in 0.9.14", hook=["LAYE
       hook_sub="LayerCue 0.9.14 is out. Here's what's new.", ep_vo="The What's New video walks you through it.", tag_html="WHAT'S NEW · <b>LAYERCUE 0.9.14</b>",
       beats=[dict(b=0, w="HOLD", s="edit what's <b>on air</b>", vo="Edit the slide on air. The audience keeps the old one until you update."),
              dict(b=5, w="GRADIENT", s="on the <b>letters</b>", vo="Paint text with a gradient, linear or radial."),
-             dict(b=8, w="HANDLES", s="round and <b>slant</b>", vo="Round the corners and slant the box with new handles."),
-             dict(b=10, w="TIME LEFT", s="on the <b>card</b>", vo="And see an overlay's time left right on its card.")]),
+             dict(b=10, lag=-3.0, w="HANDLES", s="round and <b>slant</b>", vo="Round the corners and slant the box with new handles."),
+             dict(b=11, w="TIME LEFT", s="on the <b>card</b>", vo="And see an overlay's time left right on its card.")]),
 ]

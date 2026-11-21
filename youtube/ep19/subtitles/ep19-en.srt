@@ -1,76 +1,72 @@
 1
-00:00:06,400 --> 00:00:13,420
+00:00:07,200 --> 00:00:14,220
 LayerCue 0.9.14 is out. Here's what's new. First: editing the slide that's on air.
 
 2
-00:00:14,090 --> 00:00:18,390
+00:00:14,890 --> 00:00:19,190
 Doors open later tonight, so change the time on the slide that's showing.
 
 3
-00:00:20,860 --> 00:00:26,680
+00:00:21,660 --> 00:00:27,480
 The audience screen keeps the old time. And the button at the top left now says Update output.
 
 4
-00:00:27,550 --> 00:00:30,510
+00:00:28,350 --> 00:00:31,310
 Press it, and every change goes out in one go.
 
 5
-00:00:31,580 --> 00:00:36,490
+00:00:32,380 --> 00:00:37,290
 Prefer the old way? Turn on the lightning bolt, and edits go out as you make them.
 
 6
-00:00:38,710 --> 00:00:43,680
+00:00:41,310 --> 00:00:46,280
 Next, gradient text. Open Text color, and choose Linear or Radial.
 
 7
-00:00:44,750 --> 00:00:47,450
+00:00:47,350 --> 00:00:50,050
 Pick a color for each end, and the direction.
 
 8
-00:00:50,520 --> 00:00:56,080
+00:00:53,120 --> 00:00:58,680
 The gradient covers the letters, not the box. And with the bolt on, it's already on screen.
 
 9
-00:00:58,500 --> 00:01:01,190
+00:01:01,700 --> 00:01:04,390
 Shapes and text boxes get new handles.
 
 10
-00:01:02,460 --> 00:01:05,110
+00:01:05,660 --> 00:01:08,310
 Drag the yellow dot to round the corners.
 
 11
-00:01:06,580 --> 00:01:11,910
-The blue handles slant the box, side to side or up and down. The rounding stays.
+00:01:09,180 --> 00:01:15,120
+Click the link next to it, and each corner gets its own dot. Round only the corners you want.
 
 12
-00:01:14,930 --> 00:01:19,570
-The editor zooms now, from ten to two hundred percent, at the bottom right.
+00:01:17,590 --> 00:01:22,920
+The blue handles slant the box, side to side or up and down. The rounding stays.
 
 13
-00:01:21,040 --> 00:01:24,850
-Zoom in for small details. Fit to window brings it back.
-
-14
-00:01:27,270 --> 00:01:31,770
+00:01:28,940 --> 00:01:33,440
 A slide on an overlay with Auto-dismiss now shows a bar on its card.
 
-15
-00:01:33,040 --> 00:01:37,560
+14
+00:01:34,710 --> 00:01:39,230
 It fills as the time runs out, and the overlay goes off when it's full.
 
-16
-00:01:41,980 --> 00:01:49,700
+15
+00:01:45,550 --> 00:01:53,270
 One thing looks different. The layer strips now read one to five, then F and B, in the same order as the layer column.
 
-17
-00:01:50,570 --> 00:01:55,200
+16
+00:01:54,140 --> 00:01:58,770
 Each cell still switches the same layer. Nothing else in the series changes.
 
-18
-00:01:57,220 --> 00:02:00,050
+17
+00:02:00,790 --> 00:02:03,620
 That's LayerCue 0.9.14.
 
-19
-00:02:00,720 --> 00:02:05,710
+18
+00:02:04,290 --> 00:02:09,280
 New here? Start with Episode 1. And when the next version ships, we'll be back.
 

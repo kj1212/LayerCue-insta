@@ -24,13 +24,12 @@
 <div id="title" class="frame">
   <div class="grid"></div>
   <div class="micro top">[ LayerCue &nbsp;—&nbsp; what's new ]</div>
-  <div class="claim"><div><b>What's new</b> in LayerCue.</div><div>Five new things, one change.</div></div>
+  <div class="claim"><div><b>What's new</b> in LayerCue.</div><div>Four new things, one change.</div></div>
   <div class="lines"><i style="background:var(--bg-lit)"></i><i style="background:var(--fg-lit)"></i><i style="background:var(--ov-lit)"></i></div>
   <div class="idx">
-    <div><i>01</i>Update output</div><div><i>02</i>Gradient text</div><div><i>03</i>Round &amp; slant</div><div><i>04</i>Editor zoom</div><div><i>05</i>Auto-dismiss bar</div>
+    <div><i>01</i>Update output</div><div><i>02</i>Gradient text</div><div><i>03</i>Round &amp; slant</div><div><i>04</i>Auto-dismiss bar</div><div><i>··</i>Layer order</div>
   </div>
   <div class="word" data-fit="3400"><span class="gh g1">0.9.14</span><span class="gh g2">0.9.14</span><span class="gh g3">0.9.14</span><span class="real">0.9.14</span></div>
-  <div class="base">Mac now · <b>Windows</b> after the Store review</div>
 </div>
 <script>
   window.DUR = 6.0;
@@ -55,7 +54,6 @@
       el.style.opacity = clamp((t - 0.45) / 0.25);
       el.style.transform = `translate(${OFF[g][0] * k}%, ${OFF[g][1] * k}%)`;
     });
-    up($('.base'), at(t, 1.7, 0.7), 20);
   };
   window.__ready = false;
   document.fonts.ready.then(() => {

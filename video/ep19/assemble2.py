@@ -29,6 +29,9 @@ def voice():
 def times():
     vl = voice(); out = []; t = TITLE
     for g in S["segments"]:
+        cd = SL["segments"].get(g["id"], {}).get("card")       # 19편: 기능 카드 장면 — 구간 앞에 pre 초를 더 둔다(녹화는 그대로)
+        c0 = (TITLE - 0.4) if g is S["segments"][0] else t
+        if cd: t += cd["pre"]
         seg = {"id": g["id"], "chapter": g["chapter"], "start": round(t, 3), "lines": []}
         cur = t + LEAD
         for j, l in enumerate(g["lines"]):
@@ -36,7 +39,10 @@ def times():
             seg["lines"].append({"key": key, "n": j + 1, "t": round(cur, 3), "dur": dur, "text": l["text"]})
             cur += dur + GAP + l.get("pause", 0)
         end = cur + 0.9 if g["id"] != "s9" else t + 15.0
-        seg["end"] = round(end, 3); out.append(seg); t = end
+        seg["end"] = round(end, 3)
+        if cd:
+            l = seg["lines"][cd["until"]["line"] - 1]; seg["card"] = [round(c0, 3), round(l["t"] + cd["until"]["at"] + 0.5, 3)]
+        out.append(seg); t = end
     return out
 
 
@@ -278,8 +284,9 @@ def timeline():
         w, h = sizes[sb["file"]]; subs_out.append({"t0": sb["t0"], "t1": sb["t1"], "file": str(pd / sb["file"]), "x": 1920, "y": round(2160 - 40 - h / 2, 1)})
     for i, seg in enumerate(chapters):
         tw, th = sizes[f"tag-{seg['id']}.png"]; pw, ph = sizes[f"prog-{seg['id']}.png"]
-        tags.append({"t0": seg["start"], "t1": seg["end"], "file": str(pd / f"tag-{seg['id']}.png"), "x": 270 - 24, "y": 40 - 24, "w": tw, "h": th})
-        tags.append({"t0": seg["start"], "t1": seg["end"], "file": str(pd / f"prog-{seg['id']}.png"), "x": 3570 - pw + 24, "y": 70 - 24, "w": pw, "h": ph, "prog": True})
+        tg0 = round(seg["card"][1] - 0.4, 3) if seg.get("card") else seg["start"]
+        tags.append({"t0": tg0, "t1": seg["end"], "file": str(pd / f"tag-{seg['id']}.png"), "x": 270 - 24, "y": 40 - 24, "w": tw, "h": th})
+        tags.append({"t0": tg0, "t1": seg["end"], "file": str(pd / f"prog-{seg['id']}.png"), "x": 3570 - pw + 24, "y": 70 - 24, "w": pw, "h": ph, "prog": True})
     # 3) 녹화 · 클릭 · 목소리
     rec = HERE / "rec" / "v2"; clips = []
     for seg in chapters:
@@ -310,6 +317,13 @@ def timeline():
             if "img" in e:
                 t0 = round(ev_time(seg, e), 3); t1 = round(ev_time(seg, e["until"]), 3)
                 imgs.append({"file": str(HERE / e["img"]), "t0": t0, "t1": t1, "chip": str(HERE / e["chip"]) if e.get("chip") else ""})
+    # 19편: 기능 카드 장면(타이틀처럼 화면 전체 — 앞 장면 위로 쓸며 들어와 머물다 걷힌다)
+    scenes = []
+    for k, seg in enumerate([s for s in chapters if s.get("card")]):
+        c0, c1 = seg["card"]; d = HERE / "frames" / f"card-{seg['id']}"
+        if not os.environ.get("NO_CARDS"):
+            subprocess.run(["node", str(HERE.parent / "render_anim.mjs"), f"{HERE / 'card-anim.html'}?id={seg['id']}&dur={round(c1 - c0 + 0.1, 2)}", "#card", "30", str(d)], check=True)
+        scenes.append({"dir": str(d), "t0": c0, "t1": c1})
     # 3편: 프로젝터 — 나란히 보기(split) 동안만. 실제 송출을 찍은 proj/<이름>.png 를 proj 이벤트 시각에 바꾼다(fade 초 동안 겹쳐 들어온다)
     shots = []
     for seg in segs:
@@ -331,7 +345,7 @@ def timeline():
           "end": {"dir": str(HERE / "frames" / "end2"), "t0": round(segs[-1]["start"] - 0.5, 3)},
           "bg": str(HERE / "parts2" / "bg.png"), "bgm": bg_motion(total),
           "stage": ({"file": str(rec / "stage.mp4"), "t0": round(s1["start"] - 0.5, 3), "t1": round(until + 0.5, 3), "in": round(REC_T0 + PRE - 0.5, 3), "xf": until} if until else None),
-          "gfx": gfx, "imgs": imgs, "proj": proj,
+          "gfx": gfx, "imgs": imgs, "proj": proj, "scenes": scenes,
           "card": {"t0": round((until - 0.1) if until else first_win["start"] - 0.3, 3), "t1": round(segs[-1]["start"] + 0.4, 3), "keys": card_keys(H)},
           "clips": clips, "hls": hls, "lbls": lbls, "caps": caps, "subs": subs_out, "tags": tags, "clicks": clicks, "voice": voice_,
           "music": str(HERE / "audio" / "music-ep19.wav"), "sfx": [], "checks": []}

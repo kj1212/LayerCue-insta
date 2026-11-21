@@ -228,6 +228,16 @@ for (i = 0; i < TL.lbls.length; i++) {
     fade(L, lb.t0, lb.t1, 0.18, 0.2);
 }
 
+// ── 19편: 기능 카드 장면(장면 전환) — 창 · 테 · 이름표 위, 자막 아래. 들어오는 쓸기는 프레임 안에 있고, 나갈 때 0.5 초 걷힌다 ──
+for (i = 0; i < (TL.scenes || []).length; i++) {
+    var sn = TL.scenes[i], si = imp(sn.dir + "/00000.png", true);
+    si.mainSource.reload(); si.mainSource.conformFrameRate = 30;
+    if (si.duration < sn.t1 - sn.t0 - 0.05) { logTo(OUT_DIR + "/build.log", "오류: 카드 장면이 짧다 " + i); throw new Error("scene short"); }
+    L = comp.layers.add(si); L.startTime = sn.t0; L.outPoint = sn.t1; L.name = "scene " + i;
+    fade(L, sn.t0, sn.t1, 0, 0.5);
+    keys(T(L).property("ADBE Scale"), [[sn.t1 - 0.5, [100, 100]], [sn.t1, [104, 104]]], 60);
+}
+
 // ── 자막 ──
 for (i = 0; i < TL.caps.length; i++) {
     var cp = TL.caps[i]; L = comp.layers.add(imp(cp.file)); L.name = "cap " + i; L.inPoint = cp.t0; L.outPoint = cp.t1;
