@@ -37,6 +37,30 @@
   #c .s { position: absolute; left: 64px; bottom: 70px; font-size: 32px; font-weight: 500; color: #B9B4A8; }
   #c .s b { color: #F2EEE4; font-weight: 600; }
   #c .shape { position: absolute; right: 70px; bottom: 60px; width: 360px; height: 150px; border-radius: 75px; background: #5E6AD2; transform: skewX(-24deg); box-shadow: 0 20px 50px rgba(0,0,0,.45); }
+
+  /* D — A 다듬은 판: 어두운 바탕 · 실제 4K 화면(슬라이드 + Update output 단추) · 모서리마다 둥글기 + 기울이기를 그린 상자 */
+  #d { background: #0B0A0F; color: #F2EEE4; }
+  #d .glow { position: absolute; inset: 0; background:
+      radial-gradient(ellipse 52% 60% at 88% 18%, rgba(255,94,138,.30), transparent 62%),
+      radial-gradient(ellipse 40% 55% at 62% 96%, rgba(255,201,77,.16), transparent 60%),
+      radial-gradient(ellipse 50% 70% at 0% 0%, rgba(94,106,210,.16), transparent 60%); }
+  #d .noise { position: absolute; inset: 0; opacity: .07; mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>"); }
+  #d .cols { position: absolute; inset: 0; background-image: linear-gradient(to right, rgba(242,238,228,.045) 1px, transparent 1px); background-size: calc(100% / 6) 100%; }
+  #d .pill { position: absolute; left: 64px; top: 64px; color: #141414; background: linear-gradient(90deg, var(--a1), var(--a2)); font-size: 22px; padding: 9px 16px 8px; box-shadow: 0 6px 24px rgba(255,94,138,.35); }
+  #d .h { position: absolute; left: 58px; top: 118px; font-weight: 800; font-size: 158px; line-height: .9; letter-spacing: -.045em; }
+  #d .h .grad { padding-right: 8px; }
+  #d .list { position: absolute; left: 66px; top: 470px; display: grid; gap: 14px; }
+  #d .list div { display: flex; align-items: baseline; gap: 16px; font-size: 33px; font-weight: 650; letter-spacing: -.012em; color: #F2EEE4; }
+  #d .list i { font-style: normal; font-family: var(--mono); font-weight: 500; font-size: 20px; letter-spacing: .08em; color: #FF8A5C; transform: translateY(-4px); }
+  #d .scr { position: absolute; left: 600px; top: 86px; width: 640px; height: 360px; border-radius: 18px; overflow: hidden;
+      background: url(media/th-canvas-clean.png) 12% 38% / 150% auto no-repeat, #1A1028; box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(242,238,228,.14), 0 0 120px rgba(255,94,138,.18); }
+  #d .scr::after { content: ""; position: absolute; inset: 0; border-radius: 18px; box-shadow: inset 0 1px 0 rgba(255,255,255,.12); }
+  #d .btn { position: absolute; left: 556px; top: 58px; width: 293px; height: 38px; border-radius: 7px; background: url(media/th-btn.png) center / cover;
+      box-shadow: 0 16px 36px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.18), 0 0 40px rgba(94,106,210,.55); transform: scale(1.18); transform-origin: left top; }
+  #d .tool { position: absolute; left: 770px; top: 388px; width: 440px; height: 270px; border-radius: 18px; background: rgba(18,15,26,.92);
+      box-shadow: 0 40px 80px rgba(0,0,0,.65), 0 0 0 1px rgba(242,238,228,.14); backdrop-filter: blur(6px); }
+  #d .tool svg { position: absolute; inset: 0; }
 </style>
 <div id="a" class="t">
   <div class="pill">LAYERCUE 0.9.14</div>
@@ -56,5 +80,29 @@
   <div class="big"><span class="grad">Gradient</span><br>text &amp; more</div>
   <div class="s"><b>Update output</b> · shape handles · auto-dismiss bar</div>
   <div class="shape"></div>
+</div>
+<div id="d" class="t">
+  <div class="glow"></div><div class="cols"></div><div class="noise"></div>
+  <div class="scr"></div>
+  <div class="btn"></div>
+  <div class="tool">
+    <svg width="440" height="270" viewBox="0 0 440 270">
+      <defs><linearGradient id="sh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6A74E6"/><stop offset="1" stop-color="#4F57C8"/></linearGradient></defs>
+      <!-- 상자 틀 70,62 – 370,212 · 모양: 왼쪽 위 · 오른쪽 아래만 둥근 평행사변형(좌우 기울기) -->
+      <path d="M 370 62 L 330.4 161 Q 310 212 256 212 L 70 212 L 109.6 113 Q 130 62 184 62 Z" fill="url(#sh)"/>
+      <rect x="70" y="62" width="300" height="150" fill="none" stroke="#8C90FF" stroke-width="1.5"/>
+      <g fill="#fff" stroke="#3A3D8C" stroke-width="1"><rect x="65" y="57" width="10" height="10"/><rect x="215" y="57" width="10" height="10"/><rect x="365" y="57" width="10" height="10"/>
+        <rect x="65" y="132" width="10" height="10"/><rect x="365" y="132" width="10" height="10"/>
+        <rect x="65" y="207" width="10" height="10"/><rect x="215" y="207" width="10" height="10"/><rect x="365" y="207" width="10" height="10"/></g>
+      <g fill="#FFC83D"><circle cx="136" cy="62" r="5"/><circle cx="354" cy="62" r="5"/><circle cx="300" cy="212" r="5"/><circle cx="86" cy="212" r="5"/></g>
+      <g fill="none" stroke="#FFC83D" stroke-width="2.2" stroke-linecap="round"><path d="M 154 57.5 h -5 a 4.5 4.5 0 0 0 0 9 h 5"/><path d="M 160 57.5 h 5 a 4.5 4.5 0 0 1 0 9 h -5"/></g>
+      <polygon points="246,206 262,206 256,218 240,218" fill="#36C5F0"/>
+      <polygon points="364,150 376,156 376,172 364,166" fill="#36C5F0"/>
+      <circle cx="220" cy="34" r="8" fill="none" stroke="#8C90FF" stroke-width="2"/><line x1="220" y1="42" x2="220" y2="57" stroke="#8C90FF" stroke-width="1.5"/>
+    </svg>
+  </div>
+  <div class="pill">LAYERCUE 0.9.14</div>
+  <div class="h">What's<br><span class="grad">new</span></div>
+  <div class="list"><div><i>01</i>Update output</div><div><i>02</i>Gradient text</div><div><i>03</i>Corner &amp; slant handles</div></div>
 </div>
 <script>const v = new URLSearchParams(location.search).get("v") || "a"; document.getElementById(v).style.display = "block";</script>
