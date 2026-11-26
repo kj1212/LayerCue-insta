@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,629
+No sound? Find it in under a minute.
+
+2
+00:00:03,500 --> 00:00:06,285
+The tall meter shows what LayerCue sends out.
+
+3
+00:00:07,300 --> 00:00:10,117
+MUTE silences it, but the meter keeps moving.
+
+4
+00:00:11,100 --> 00:00:13,841
+Work down the list: MUTE, master, meter.
+
+5
+00:00:14,900 --> 00:00:17,544
+Here, the slide's own volume was at zero.
+
+6
+00:00:18,750 --> 00:00:20,674
+Meter. Mute. Check. Slide.
+
+7
+00:00:20,770 --> 00:00:22,797
+Episode twelve walks you through it.
