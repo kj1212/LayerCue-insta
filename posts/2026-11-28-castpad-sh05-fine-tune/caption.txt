@@ -1,0 +1,12 @@
+Fine-tune your ATEM with one thumb. Big moves or tiny steps, it's quick either way.
+
+In CastPad, the remote control app for Blackmagic ATEM switchers on your phone or tablet, hold minus or plus and the value keeps going, faster the longer you hold. Need an exact value? Tap the number and type it. Hold a rate on a card, and a small editor opens. Times are seconds:frames: 1:00 is one second, and a plain 25 means 25 frames.
+
+Quick with the buttons, exact with the numbers.
+
+Try it in your browser, no install: castpad.app/demo
+📥 App Store & Google Play — link in bio
+🎬 Full episode on YouTube
+
+Recorded in CastPad's demo mode — no switcher used. Narration made with AI.
+#ATEM #BlackmagicDesign #livestreaming #videoswitcher #CastPad

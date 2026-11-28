@@ -1,0 +1,31 @@
+1
+00:00:00,700 --> 00:00:03,533
+Fine-tune your ATEM with one thumb.
+
+2
+00:00:04,333 --> 00:00:07,633
+Big moves or tiny steps, it's quick either way.
+
+3
+00:00:08,083 --> 00:00:12,117
+Hold minus or plus, and it speeds up the longer you hold.
+
+4
+00:00:12,767 --> 00:00:16,183
+Need an exact value? Tap the number and type it.
+
+5
+00:00:16,833 --> 00:00:19,783
+Hold a rate, and a small editor opens.
+
+6
+00:00:20,133 --> 00:00:26,517
+1:00 is one second. A plain 25 means 25 frames.
+
+7
+00:00:27,167 --> 00:00:30,183
+Quick with the buttons, exact with the numbers.
+
+8
+00:00:31,283 --> 00:00:35,250
+Try it in your browser, at castpad.app/demo.
